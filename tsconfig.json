@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "types": [],
+    "strict": true
+  },
+  "tstl": {
+    "buildMode": "default",
+    "luaTarget": "universal",
+    "luaBundleEntry": "src/index.ts",
+    "luaBundle": "startup.lua",
+    "measurePerformance": true,
+    "noHeader": true
+  }
+}
