@@ -1,4 +1,5 @@
 import Logger from "./Logger";
+import RecipeManager from "./RecipeManager";
 
 export interface StorageLocation {
   peripheral: string;
@@ -8,17 +9,74 @@ export interface StorageLocation {
 }
 
 interface StoredResource {
-    locations: StorageLocation[],
-    name: string,
-    tags: {}
+  locations: StorageLocation[];
+  name: string;
+  tags: {};
+}
+
+class Cache {
+  cache = new LuaMap<string, any>();
+
+  set(name: string, value: any) {
+    this.cache.set(name, value);
+  }
+
+  flush(): void {
+    this.cache = new LuaMap<string, any>();
+  }
+
+  delete(name: string): boolean {
+    return this.cache.delete(name);
+  }
+
+  get(name: string): any | undefined {
+    return this.cache.get(name);
+  }
+
+  has(name: string): boolean {
+    return true === this.cache.has(name);
+  }
+
+  remember(name: string, fn: () => any): any {
+    let value = this.get(name);
+
+    if (value) {
+      return value;
+    }
+
+    value = fn();
+
+    this.set(name, value);
+
+    return value;
+  }
+
+  memoize<T extends Function>(name: string, fn: T): T {
+    return ((...args: any): any => {
+      const key = `${name}|${args.join('|')}`;
+
+      return this.remember(key, () => fn(...args));
+    }) as unknown as T;
+  }
 }
 
 export default class StorageManager {
-  storagePool: LuaMap<string, Inventory> = new LuaMap<string, Inventory>;
+  storagePool: LuaMap<string, Inventory> = new LuaMap<string, Inventory>();
   logger: Logger;
+  recipeManager: RecipeManager;
+  cache: Cache;
 
-  constructor(logger?: Logger) {
+  constructor(recipeManager: RecipeManager, logger?: Logger, cache?: Cache) {
     this.logger = logger ?? new Logger();
+    this.cache = cache ?? new Cache();
+    this.recipeManager = recipeManager;
+
+    this.count = this.cache.memoize('count', this.count.bind(this));
+    this.size = this.cache.memoize('size', this.size.bind(this));
+    this.used = this.cache.memoize('used', this.used.bind(this));
+    this.getFragmented = this.cache.memoize('getFragmented', this.getFragmented.bind(this));
+    this.getEmpty = this.cache.memoize('getEmpty', this.getEmpty.bind(this));
+    this.findItemByKey = this.cache.memoize('findItemByKey', this.findItemByKey.bind(this));
   }
 
   addAllChests() {
@@ -29,6 +87,8 @@ export default class StorageManager {
         this.addStorage(name);
       }
     }
+
+    this.cache.flush();
   }
 
   addStorage(storageName: string): boolean {
@@ -39,19 +99,22 @@ export default class StorageManager {
     const storage = peripheral.wrap(storageName) as Inventory;
 
     if (!storage) {
-        return false;
+      return false;
     }
 
     this.storagePool.set(storageName, storage);
+    this.cache.flush();
 
     return true;
   }
 
   removeStorage(storageName: string): boolean {
+    this.cache.flush();
+
     return this.storagePool.delete(storageName);
   }
 
-  getStorage(storageName: string): Inventory|undefined {
+  getStorage(storageName: string): Inventory | undefined {
     return this.storagePool.get(storageName);
   }
 
@@ -127,8 +190,8 @@ export default class StorageManager {
               target.slot
             ) ?? 0;
 
-            target.count += count;
-            fragmented[i].count -= count;
+          target.count += count;
+          fragmented[i].count -= count;
         }
 
         if (fragmented[i].count <= 0) {
@@ -138,6 +201,8 @@ export default class StorageManager {
         }
       }
     }
+
+    this.cache.flush();
 
     return freed;
   }
@@ -187,51 +252,64 @@ export default class StorageManager {
     const storage = this.getStorage(storageName);
 
     if (!storage) {
-        return;
+      return;
     }
 
     for (const [slot, { count }] of storage.list()) {
-        this.store(storageName, slot, count);
+      this.store(storageName, slot, count);
     }
+
+    this.cache.flush();
   }
 
   store(storageName: string, slot: number, count?: number): boolean {
-    let remaining = count ?? peripheral.call(storageName, 'getItemDetail')?.count ?? 0;
+    let remaining =
+      count ?? peripheral.call(storageName, "getItemDetail")?.count ?? 0;
 
     if (remaining === 0) {
-        return true;
+      return true;
     }
 
-    for (const [_, storage] of this.storagePool) {
-        remaining -= storage.pullItems(storageName, slot, remaining);
+    this.cache.flush();
 
-        if (remaining <= 0) 
-            return true;
+    for (const [_, storage] of this.storagePool) {
+      remaining -= storage.pullItems(storageName, slot, remaining);
+
+      if (remaining <= 0) return true;
     }
 
     return false;
   }
 
-  withdrawl(storageName: string, key: string, count: number, slot?: number): number {
+  withdrawl(
+    storageName: string,
+    key: string,
+    count: number,
+    slot?: number
+  ): number {
     let sent = 0;
     const sources = this.findItemByKey(key, count);
 
-    for(const source of sources) {
-        sent += this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
+    for (const source of sources) {
+      sent +=
+        this.getStorage(source.peripheral)?.pushItems(
+          storageName,
+          source.slot,
+          source.count,
+          slot
+        ) ?? 0;
     }
 
-    return sent;
-  }
+    this.cache.flush();
 
-  count(key?: string): number {
-    return 0;
+    return sent;
   }
 
   size(): number {
     let total = 0;
 
     for (const [_, storage] of this.storagePool) {
-        total += storage.size();
+      total += storage.size();
     }
 
     return total;
@@ -245,11 +323,19 @@ export default class StorageManager {
     let total = 0;
 
     for (const [_, storage] of this.storagePool) {
-        for (const [_,__] of storage.list()) {
-            total++;
-        }
+      for (const [_, __] of storage.list()) {
+        total++;
+      }
     }
 
     return total;
+  }
+
+  count(key?: string): number {
+    throw "unimplemented";
+  }
+
+  craft(name: string, count: number): number {
+    throw "unimplemented";
   }
 }

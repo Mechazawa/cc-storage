@@ -10,14 +10,14 @@ declare interface Inventory extends WrappedPeripheral {
    * List all items in this inventory.
    * @returns All items in this inventory.
    */
-  list(): LuaPairsIterable<number, {name: string, count: number}>;
+  list(): LuaPairsIterable<number, { name: string; count: number }>;
 
   /**
    * Get detailed information about an item.
    * @param slot The slot to get information about.
    * @returns Information about the item in this slot, or nil if not present.
    */
-  getItemDetail(slot: number): undefined|ItemStack;
+  getItemDetail(slot: number): undefined | ItemStack;
 
   /**
    * Get the maximum number of items which can be stored in this slot.

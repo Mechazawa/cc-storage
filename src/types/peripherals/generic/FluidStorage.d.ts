@@ -3,7 +3,7 @@ declare interface FluidStorage extends WrappedPeripheral {
   /**
    * Get all "tanks" in this fluid storage.
    */
-  tanks(): (LuaMap|undefined)[];
+  tanks(): (LuaMap | undefined)[];
 
   /**
    * Move a fluid from one fluid container to another connected one.

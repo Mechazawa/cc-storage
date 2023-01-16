@@ -1,6 +1,6 @@
 /** @noSelf */
 declare interface EnergyStorage extends WrappedPeripheral {
-  /** 
+  /**
    * Get the energy of this block.
    * @returns The energy stored in this block, in FE.
    */

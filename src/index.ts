@@ -8,7 +8,7 @@ const logger = new Logger(true, "log.txt");
 logger.log("Initialising");
 
 const recipeManager = new RecipeManager();
-const storageManager = new StorageManager(logger);
+const storageManager = new StorageManager(recipeManager, logger);
 
 storageManager.addAllChests();
 
@@ -17,7 +17,7 @@ logger.log(`Loaded ${Object.keys(recipeManager.recipes).length} recipes`);
 
 logger.log('Defragmenting...')
 logger.log(`Freed ${storageManager.defragment()} slots`);
-
+logger.log('checking stats');
 logger.log(`Slots used: ${storageManager.used()}/${storageManager.size()}`);
 
 export default storageManager
