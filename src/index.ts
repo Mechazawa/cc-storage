@@ -17,7 +17,11 @@ logger.log(`Loaded ${Object.keys(recipeManager.recipes).length} recipes`);
 
 logger.log('Defragmenting...')
 logger.log(`Freed ${storageManager.defragment()} slots`);
-logger.log('checking stats');
+logger.log('checking stats...');
+
+for(const resource of storageManager.list()) {
+  logger.log(`[${resource.count}] ${resource.displayName}`);
+}
 logger.log(`Slots used: ${storageManager.used()}/${storageManager.size()}`);
 
 export default storageManager

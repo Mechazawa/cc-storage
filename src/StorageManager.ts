@@ -1,3 +1,4 @@
+import Cache from "./Cache";
 import Logger from "./Logger";
 import RecipeManager from "./RecipeManager";
 
@@ -8,56 +9,13 @@ export interface StorageLocation {
   name?: string;
 }
 
-interface StoredResource {
-  locations: StorageLocation[];
+interface Resource {
+  key: string;
   name: string;
-  tags: {};
-}
-
-class Cache {
-  cache = new LuaMap<string, any>();
-
-  set(name: string, value: any) {
-    this.cache.set(name, value);
-  }
-
-  flush(): void {
-    this.cache = new LuaMap<string, any>();
-  }
-
-  delete(name: string): boolean {
-    return this.cache.delete(name);
-  }
-
-  get(name: string): any | undefined {
-    return this.cache.get(name);
-  }
-
-  has(name: string): boolean {
-    return true === this.cache.has(name);
-  }
-
-  remember(name: string, fn: () => any): any {
-    let value = this.get(name);
-
-    if (value) {
-      return value;
-    }
-
-    value = fn();
-
-    this.set(name, value);
-
-    return value;
-  }
-
-  memoize<T extends Function>(name: string, fn: T): T {
-    return ((...args: any): any => {
-      const key = `${name}|${args.join('|')}`;
-
-      return this.remember(key, () => fn(...args));
-    }) as unknown as T;
-  }
+  displayName: string;
+  tags: LuaMap<string, boolean>;
+  nbt?: string;
+  count: number;
 }
 
 export default class StorageManager {
@@ -77,6 +35,7 @@ export default class StorageManager {
     this.getFragmented = this.cache.memoize('getFragmented', this.getFragmented.bind(this));
     this.getEmpty = this.cache.memoize('getEmpty', this.getEmpty.bind(this));
     this.findItemByKey = this.cache.memoize('findItemByKey', this.findItemByKey.bind(this));
+    this.list = this.cache.memoize('list', this.list.bind(this));
   }
 
   addAllChests() {
@@ -241,8 +200,9 @@ export default class StorageManager {
       key = key.substring(4);
       return stack.tags.get(key) === true;
     } else if (key.startsWith("item:")) {
-      key = key.substring(5);
-      return stack.name === key;
+      return stack.name === key.substring(5);
+    } else if (key.startsWith("nbt:")) {
+      return stack.nbt === key.substring(4);
     }
 
     return false;
@@ -303,6 +263,45 @@ export default class StorageManager {
     this.cache.flush();
 
     return sent;
+  }
+
+  list(): Resource[] {
+    const resources = new LuaMap<string, Resource>();
+
+    for (const [_, storage] of this.storagePool) {
+      for (const [slot, __] of storage.list()) {
+        const stack = storage.getItemDetail(slot);
+
+        if(stack) {
+          const key = stack.nbt !== undefined ? `nbt:${stack.nbt}` : `name:${stack.name}`;
+
+          if (resources.has(key)) {
+            const resource = resources.get(key) as Resource;
+
+            resource.count += stack.count;
+
+            resources.set(key, resource);
+          } else {
+            resources.set(key, {
+              key: key,
+              name: stack.name,
+              displayName: stack.displayName,
+              tags: stack.tags,
+              nbt: stack.nbt,
+              count: stack.count,
+            });
+          }
+        }
+      }
+    }
+
+    const output = [];
+
+    for (const [_, resource] of resources) {
+      output.push(resource);
+    }
+
+    return output;
   }
 
   size(): number {

@@ -1,5 +1,5 @@
 export default class Logger {
-  timestampFormat: string = "[%d-%m %H:%M:%S] ";
+  timestampFormat: string = "[%H:%M:%S] ";
   file?: WriteHandle;
   timestamp: boolean;
 
@@ -31,6 +31,6 @@ export default class Logger {
     }
 
     print(message);
-    this._writeLine(message);
+    this._writeLine('[L]' + message);
   }
 }
