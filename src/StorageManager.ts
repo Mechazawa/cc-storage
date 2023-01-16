@@ -1,6 +1,7 @@
 import Cache from "./Cache";
 import Logger from "./Logger";
-import RecipeManager from "./RecipeManager";
+import Recipe from "./crafting/Recipe";
+import RecipeManager from "./crafting/RecipeManager";
 
 export interface StorageLocation {
   peripheral: string;
@@ -174,7 +175,7 @@ export default class StorageManager {
       for (const [slot, _] of storage.list()) {
         const stack = storage.getItemDetail(slot);
 
-        if (stack && this.testStackKey(key, stack)) {
+        if (stack && this.testKey(key, stack)) {
           const loc: StorageLocation = {
             peripheral: storageName,
             slot: slot,
@@ -195,7 +196,7 @@ export default class StorageManager {
     return [];
   }
 
-  testStackKey(key: string, stack: ItemStack): boolean {
+  testKey(key: string, stack: ItemStack | Resource): boolean {
     if (key.startsWith("tag:")) {
       key = key.substring(4);
       return stack.tags.get(key) === true;
@@ -331,10 +332,15 @@ export default class StorageManager {
   }
 
   count(key?: string): number {
-    throw "unimplemented";
+    if (key === undefined) {
+      return this.list().reduce((acc: number, v: Resource) => acc + v.count, 0);
+    }
+
+    // We gotta iterate through everything anyways so why not do it this way?
+    return this.list().find(resource => this.testKey(key, resource))?.count ?? 0;
   }
 
-  craft(name: string, count: number): number {
+  craft(recipe: Recipe, count: number): number {
     throw "unimplemented";
   }
 }

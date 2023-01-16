@@ -18,3 +18,4 @@ declare const colors: Colors;
 declare const turtle: Turtle;
 declare const peripheral: Peripheral;
 declare const commands: Commands;
+declare const term: Term;

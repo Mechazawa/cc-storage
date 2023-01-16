@@ -1,21 +1,21 @@
 /** @noSelf */
 declare interface Colors {
-  readonly white: string;
-  readonly orange: string;
-  readonly magenta: string;
-  readonly lightBlue: string;
-  readonly yellow: string;
-  readonly lime: string;
-  readonly pink: string;
-  readonly gray: string;
-  readonly lightGray: string;
-  readonly cyan: string;
-  readonly purple: string;
-  readonly blue: string;
-  readonly brown: string;
-  readonly green: string;
-  readonly red: string;
-  readonly black: string;
+  readonly white: number;
+  readonly orange: number;
+  readonly magenta: number;
+  readonly lightBlue: number;
+  readonly yellow: number;
+  readonly lime: number;
+  readonly pink: number;
+  readonly gray: number;
+  readonly lightGray: number;
+  readonly cyan: number;
+  readonly purple: number;
+  readonly blue: number;
+  readonly brown: number;
+  readonly green: number;
+  readonly red: number;
+  readonly black: number;
 
   combine(...colors: number[]): number;
   subtract(color: number, ...colors: number[]): number;

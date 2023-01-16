@@ -1,7 +1,7 @@
 import Logger from "./Logger";
-import RecipeManager from "./RecipeManager";
 import StorageManager from "./StorageManager";
-import initRecipes from "./recipes/craftingTable";
+import RecipeManager from "./crafting/RecipeManager";
+import initRecipes from "./crafting/recipes/craftingTable";
 
 const logger = new Logger(true, "log.txt");
 
@@ -22,6 +22,11 @@ logger.log('checking stats...');
 for(const resource of storageManager.list()) {
   logger.log(`[${resource.count}] ${resource.displayName}`);
 }
-logger.log(`Slots used: ${storageManager.used()}/${storageManager.size()}`);
+logger.log(`Slots used: ${storageManager.used()}/${storageManager.size()} (${storageManager.count()} items)`);
+
+for (const key of ['item:minecraft:grass_block', 'create:belt_connector']) {
+  logger.debug(`${key}: ${storageManager.count(key)}`);
+}
+
 
 export default storageManager
