@@ -1,1 +1,3 @@
-startup.lua
+./recipes/craftingTable.lua
+./types/ItemStack.lua
+./startup.lua

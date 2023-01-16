@@ -1,8 +1,6 @@
-import {
-  ShapedCraftingRecipe,
-  ShapelessCraftingRecipe,
-  RecipeManager,
-} from "../Recipe";
+import RecipeManager from "../RecipeManager";
+import ShapedCraftingRecipe from "../ShapedCraftingRecipe";
+import ShapelessCraftingRecipe from "../ShapelessCraftingRecipe";
 
 export default function initRecipes(manager: RecipeManager) {
   manager.add(
