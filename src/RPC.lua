@@ -42,9 +42,9 @@ function RPC.host(hostname, methods)
 		local response = { id = data.id }
 
 		print('---------')
-		tprint(data)
+		RPC.tprint(data)
 		-- print('[' .. client .. '] ' .. data.method)
-		-- if data.params then tprint(data.params) else print("nil") end
+		-- if data.params then RPC.tprint(data.params) else print("nil") end
 		
 		if not methods[data.method] and data.method ~= '?' then
 			response.error = "RPC ERROR: Uknown method \"" .. data.method .. "\""
@@ -132,13 +132,13 @@ end
 
 --debug
 
-function tprint (tbl, indent)
+function RPC.tprint (tbl, indent)
   if not indent then indent = 0 end
   for k, v in pairs(tbl) do
     formatting = string.rep("  ", indent) .. k .. ": "
     if type(v) == "table" then
       print(formatting)
-      tprint(v, indent+1)
+      RPC.tprint(v, indent+1)
     elseif type(v) == 'boolean' then
       print(formatting .. tostring(v))		
     else
