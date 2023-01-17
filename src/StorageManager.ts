@@ -2,6 +2,7 @@ import Cache from "./Cache";
 import Logger from "./Logger";
 import Recipe, { RecipeType } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
+import * as RPC from "./RPC";
 
 export interface StorageLocation {
   peripheral: string;
@@ -21,7 +22,7 @@ export interface Resource {
 
 export interface Crafter {
   storageName: string;
-  host: string;
+  host: number;
   type: RecipeType; 
 }
 
@@ -59,7 +60,7 @@ export default class StorageManager {
     this.cache.flush();
   }
 
-  registerCrafter(storageName: string, host: string, type: RecipeType): boolean {
+  registerCrafter(storageName: string, host: number, type: RecipeType): boolean {
     const exists = this.crafters.findIndex(
       c => c.host === host && c.storageName === storageName && c.type === type
     ) !== -1;
@@ -392,9 +393,7 @@ export default class StorageManager {
       this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count);
     }
 
-    // todo call crafter through RPC
-    // RPC.call
-    if(!recipe.craft(inputItems, count)) return 0;
+    RPC.call(crafter.host, 'craft', { recipeName: recipe.name, inputItems });
 
     this.storeAll(crafter.storageName);
 

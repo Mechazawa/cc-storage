@@ -33,6 +33,7 @@
  * @see rednet_message Queued when a rednet message is received.
  * @see modem Rednet is built on top of the modem peripheral. Modems provide a more
  * bare-bones but flexible interface.
+ * @noSelf
  */
 declare interface Rednet {
    /** 
@@ -109,7 +110,7 @@ declare interface Rednet {
   * @usage Send a message to computer #2.
   *     rednet.send(2, "Hello from rednet!")
   */
-  send(recipient: number, message: LuaMap | string | number | boolean, protocol?: string): boolean;
+  send(recipient: number, message: object | LuaMap | string | number | boolean, protocol?: string): boolean;
   
   /** Broadcasts a string message over the predefined @{CHANNEL_BROADCAST}
    * channel. The message will be received by every device listening to rednet.
