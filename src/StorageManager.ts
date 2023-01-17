@@ -1,6 +1,6 @@
 import Cache from "./Cache";
 import Logger from "./Logger";
-import Recipe from "./crafting/Recipe";
+import Recipe, { RecipeType } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 
 export interface StorageLocation {
@@ -10,7 +10,7 @@ export interface StorageLocation {
   name?: string;
 }
 
-interface Resource {
+export interface Resource {
   key: string;
   name: string;
   displayName: string;
@@ -19,16 +19,24 @@ interface Resource {
   count: number;
 }
 
+export interface Crafter {
+  storageName: string;
+  host: string;
+  type: RecipeType; 
+}
+
 export default class StorageManager {
   storagePool: LuaMap<string, Inventory> = new LuaMap<string, Inventory>();
   logger: Logger;
   recipeManager: RecipeManager;
   cache: Cache;
+  crafters: Crafter[];
 
   constructor(recipeManager: RecipeManager, logger?: Logger, cache?: Cache) {
     this.logger = logger ?? new Logger();
     this.cache = cache ?? new Cache();
     this.recipeManager = recipeManager;
+    this.crafters = [];
 
     this.count = this.cache.memoize('count', this.count.bind(this));
     this.size = this.cache.memoize('size', this.size.bind(this));
@@ -49,6 +57,20 @@ export default class StorageManager {
     }
 
     this.cache.flush();
+  }
+
+  registerCrafter(storageName: string, host: string, type: RecipeType): boolean {
+    const exists = this.crafters.findIndex(
+      c => c.host === host && c.storageName === storageName && c.type === type
+    ) !== -1;
+
+    if (exists) {
+      return false;
+    }
+
+    this.crafters.push({storageName, host, type});
+
+    return true;
   }
 
   addStorage(storageName: string): boolean {
@@ -209,37 +231,42 @@ export default class StorageManager {
     return false;
   }
 
-  storeAll(storageName: string) {
+  storeAll(storageName: string): number {
     const storage = this.getStorage(storageName);
 
     if (!storage) {
-      return;
+      return 0;
     }
+
+    let total = 0;
 
     for (const [slot, { count }] of storage.list()) {
-      this.store(storageName, slot, count);
+      total += this.store(storageName, slot, count);
     }
 
     this.cache.flush();
+
+    return total;
   }
 
-  store(storageName: string, slot: number, count?: number): boolean {
-    let remaining =
-      count ?? peripheral.call(storageName, "getItemDetail")?.count ?? 0;
+  store(storageName: string, slot: number, _count?: number): number {
+    const count = _count ?? peripheral.call(storageName, "getItemDetail")?.count ?? 0;
 
-    if (remaining === 0) {
-      return true;
+    if (count === 0) {
+      return 0;
     }
 
     this.cache.flush();
 
-    for (const [_, storage] of this.storagePool) {
-      remaining -= storage.pullItems(storageName, slot, remaining);
+    let total = 0;
 
-      if (remaining <= 0) return true;
+    for (const [_, storage] of this.storagePool) {
+      total += storage.pullItems(storageName, slot, count - total);
+
+      if (count - total <= 0) return total;
     }
 
-    return false;
+    return total;
   }
 
   withdrawl(
@@ -341,6 +368,38 @@ export default class StorageManager {
   }
 
   craft(recipe: Recipe, count: number): number {
-    throw "unimplemented";
+    const crafter = this.crafters.find(x => x.type === recipe.type);
+
+    if (!crafter) {
+      this.logger.error(`Missing crafter for "${recipe.name}"`);
+      return 0;
+    }
+
+    const inputItems = recipe.getInput();
+
+    for (const item of inputItems) {
+      count = Math.min(this.count(item), count);
+
+      if (count === 0) {
+        this.logger.error(`Not enough resources to craft "${recipe.name}"`);
+        return 0;
+      }
+    }
+
+    const itemLocations = inputItems.map(key => this.findItemByKey(key, count)).flat();
+
+    for (const location of itemLocations) {
+      this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count);
+    }
+
+    // todo call crafter through RPC
+    // RPC.call
+    if(!recipe.craft(inputItems, count)) return 0;
+
+    this.storeAll(crafter.storageName);
+
+    this.cache.flush();
+
+    return count;
   }
 }

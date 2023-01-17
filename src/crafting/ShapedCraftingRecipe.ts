@@ -1,8 +1,9 @@
-import Recipe from "./Recipe";
+import Recipe, { RecipeType } from "./Recipe";
 
 export default class ShapedCraftingRecipe implements Recipe {
   readonly MAX_WIDTH: number = 3;
   readonly MAX_HEIGHT: number = 3;
+  readonly type = RecipeType.CRAFTING_TABLE;
 
   name: string;
   output: string;

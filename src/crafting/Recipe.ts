@@ -5,7 +5,12 @@ export interface Ingredient {
   source: string;
 }
 
+export enum RecipeType {
+  CRAFTING_TABLE,
+}
+
 export default interface Recipe {
+  readonly type: RecipeType;
   name: string;
   getInput(): string[];
   getOutput(): string[];

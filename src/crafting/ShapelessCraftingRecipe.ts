@@ -1,8 +1,9 @@
-import Recipe from "./Recipe";
+import Recipe, { RecipeType } from "./Recipe";
 
 export default class ShapelessCraftingRecipe implements Recipe {
   readonly MAX_WIDTH: number = 4;
   readonly MAX_HEIGHT: number = 4;
+  readonly type = RecipeType.CRAFTING_TABLE;
 
   name: string;
   output: string;
