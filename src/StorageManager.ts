@@ -191,6 +191,11 @@ export default class StorageManager {
   }
 
   findItemByKey(key: string, count: number): StorageLocation[] {
+    print("key");
+    print(key);
+    print("count");
+    print(count);
+    
     const output = [];
     let found = 0;
 
@@ -220,6 +225,8 @@ export default class StorageManager {
   }
 
   testKey(key: string, stack: ItemStack | Resource): boolean {
+    if (key === undefined) return false;
+
     if (key.startsWith("tag:")) {
       key = key.substring(4);
       return stack.tags.get(key) === true;

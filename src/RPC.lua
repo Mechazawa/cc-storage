@@ -23,7 +23,7 @@
 local RPC = {protocol = "rpc"}
 
 function RPC.init()
-	peripheral.find("modem", rednet.open)
+  peripheral.find("modem", rednet.open);
 end
 
 function RPC.host(hostname, methods)
