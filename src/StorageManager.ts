@@ -48,18 +48,6 @@ export default class StorageManager {
     this.list = this.cache.memoize('list', this.list.bind(this));
   }
 
-  addAllChests() {
-    for (const name of peripheral.getNames()) {
-      if (name.startsWith("minecraft:chest_")) {
-        this.logger?.log(`Found ${name}`);
-
-        this.addStorage(name);
-      }
-    }
-
-    this.cache.flush();
-  }
-
   registerCrafter(storageName: string, host: number, type: RecipeType): boolean {
     const exists = this.crafters.findIndex(
       c => c.host === host && c.storageName === storageName && c.type === type
@@ -191,11 +179,6 @@ export default class StorageManager {
   }
 
   findItemByKey(key: string, count: number): StorageLocation[] {
-    print("key");
-    print(key);
-    print("count");
-    print(count);
-    
     const output = [];
     let found = 0;
 
@@ -240,7 +223,8 @@ export default class StorageManager {
   }
 
   storeAll(storageName: string): number {
-    const storage = this.getStorage(storageName);
+    this.logger.debug(storageName);
+    const storage = peripheral.wrap(storageName) as Inventory;
 
     if (!storage) {
       return 0;

@@ -11,7 +11,15 @@ logger.log("Initialising");
 const recipeManager = new RecipeManager();
 const storageManager = new StorageManager(recipeManager, logger);
 
-storageManager.addAllChests();
+
+for (const name of peripheral.wrap('back').getNamesRemote() as string[]) {
+  if (name.startsWith("minecraft:chest_")) {
+    logger.log(`Found ${name}`);
+
+    storageManager.addStorage(name);
+  }
+}
+
 
 initRecipes(recipeManager);
 logger.log(`Loaded ${Object.keys(recipeManager.recipes).length} recipes`);
@@ -29,6 +37,7 @@ logger.log(`Loaded ${Object.keys(recipeManager.recipes).length} recipes`);
 //   logger.debug(`${key}: ${storageManager.count(key)}`);
 // }
 
+// the passed object doesn't seem to be properly self-wrapped
 RPC.init();
 RPC.host('storage', {
   defragment: storageManager.defragment.bind(storageManager),

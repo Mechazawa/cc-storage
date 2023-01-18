@@ -20,3 +20,4 @@ declare const peripheral: Peripheral;
 declare const commands: Commands;
 declare const term: Term;
 declare const rednet: Rednet;
+declare const textutils: Textutils;
