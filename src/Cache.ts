@@ -10,6 +10,14 @@ export default class Cache {
   }
 
   delete(name: string): boolean {
+    if (name.endsWith("*")) {
+      name = name.slice(0, name.length - 1);
+
+      const keys = Object.keys(this.cache).filter(key => key.startsWith(name));
+
+      return keys.map(key => this.cache.delete(key)).includes(true);
+    }
+
     return this.cache.delete(name);
   }
 

@@ -36,7 +36,7 @@ export default class Config {
     this.data = new LuaMap<string, any>;
   }
 
-  get<T>(key: string): T {
+  get(key: string): any {
 
   }
   

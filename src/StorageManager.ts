@@ -39,13 +39,13 @@ export default class StorageManager {
     this.recipeManager = recipeManager;
     this.crafters = [];
 
-    this.count = this.cache.memoize('count', this.count.bind(this));
-    this.size = this.cache.memoize('size', this.size.bind(this));
-    this.used = this.cache.memoize('used', this.used.bind(this));
-    this.getFragmented = this.cache.memoize('getFragmented', this.getFragmented.bind(this));
-    this.getEmpty = this.cache.memoize('getEmpty', this.getEmpty.bind(this));
-    this.findItemByKey = this.cache.memoize('findItemByKey', this.findItemByKey.bind(this));
-    this.list = this.cache.memoize('list', this.list.bind(this));
+    this.count = this.cache.memoize('acc:count', this.count.bind(this));
+    this.size = this.cache.memoize('acc:size', this.size.bind(this));
+    this.used = this.cache.memoize('acc:used', this.used.bind(this));
+    this.getFragmented = this.cache.memoize('acc:getFragmented', this.getFragmented.bind(this));
+    this.getEmpty = this.cache.memoize('acc:getEmpty', this.getEmpty.bind(this));
+    this.findItemByKey = this.cache.memoize('acc:findItemByKey', this.findItemByKey.bind(this));
+    this.list = this.cache.memoize('acc:list', this.list.bind(this));
   }
 
   registerCrafter(storageName: string, host: number, type: RecipeType): boolean {
@@ -74,13 +74,13 @@ export default class StorageManager {
     }
 
     this.storagePool.set(storageName, storage);
-    this.cache.flush();
+    this.cache.delete('acc:*');
 
     return true;
   }
 
   removeStorage(storageName: string): boolean {
-    this.cache.flush();
+    this.cache.delete('acc:*');
 
     return this.storagePool.delete(storageName);
   }
@@ -172,8 +172,8 @@ export default class StorageManager {
         }
       }
     }
-
-    this.cache.flush();
+    
+    this.cache.delete('acc:*');
 
     return freed;
   }
@@ -236,7 +236,7 @@ export default class StorageManager {
       total += this.store(storageName, slot, count);
     }
 
-    this.cache.flush();
+    this.cache.delete('acc:*');
 
     return total;
   }
@@ -248,8 +248,8 @@ export default class StorageManager {
       return 0;
     }
 
-    this.cache.flush();
-
+    this.cache.delete('acc:*');
+    
     let total = 0;
 
     for (const [_, storage] of this.storagePool) {
@@ -279,8 +279,8 @@ export default class StorageManager {
           slot
         ) ?? 0;
     }
-
-    this.cache.flush();
+    
+    this.cache.delete('acc:*');
 
     return sent;
   }
@@ -388,8 +388,8 @@ export default class StorageManager {
 
     this.storeAll(crafter.storageName);
 
-    this.cache.flush();
-
+    this.cache.delete('acc:*');
+    
     return count;
   }
 }
