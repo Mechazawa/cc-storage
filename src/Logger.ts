@@ -26,7 +26,7 @@ export default class Logger {
     }
   }
 
-  log(message: string, color: number = colors.white, tag: string = 'L'): void {
+  log(message: string, color: number = colors.white, tag: string = "L"): void {
     if (this.timestamp) {
       message = os.date(this.timestampFormat) + message;
     }
@@ -38,22 +38,22 @@ export default class Logger {
     term.setTextColor(prevColor);
     this._writeLine(`[${tag}]${message}`);
   }
-  
+
   debug(message: string): void {
     if (this.showDebug) {
-      this.log(message, colors.purple, 'D');
+      this.log(message, colors.purple, "D");
     }
   }
-  
+
   info(message: string): void {
-    this.log(message, colors.lightBlue, 'I');
+    this.log(message, colors.lightBlue, "I");
   }
-  
+
   warn(message: string): void {
-    this.log(message, colors.yellow, 'W');
+    this.log(message, colors.yellow, "W");
   }
 
   error(message: string): void {
-    this.log(message, colors.red, 'E');
+    this.log(message, colors.red, "E");
   }
 }

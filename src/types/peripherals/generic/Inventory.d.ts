@@ -35,12 +35,7 @@ declare interface Inventory extends WrappedPeripheral {
    * @param toSlot   The slot in the target inventory to move to. If not given, the item will be inserted into any slot.
    * @returns The number of transferred items.
    */
-  pushItems(
-    toName: string,
-    fromSlot: number,
-    limit?: number,
-    toSlot?: number
-  ): number;
+  pushItems(toName: string, fromSlot: number, limit?: number, toSlot?: number): number;
 
   /**
    * Pull items from a connected inventory into this one.
@@ -51,10 +46,5 @@ declare interface Inventory extends WrappedPeripheral {
    * @param toSlot   The slot in current inventory to move to. If not given, the item will be inserted into any slot.
    * @returns The number of transferred items.
    */
-  pullItems(
-    fromName: string,
-    fromSlot: number,
-    limit?: number,
-    toSlot?: number
-  ): number;
+  pullItems(fromName: string, fromSlot: number, limit?: number, toSlot?: number): number;
 }

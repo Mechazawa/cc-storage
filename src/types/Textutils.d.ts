@@ -19,10 +19,7 @@ declare interface Textutils {
   /** Prints tables in a structured form, stopping and prompting for input should the result not fit on the terminal. */
   pagedTabulate(...data: (number | string[])[]): void;
   /** Convert a Lua object into a textual representation, suitable for saving in a file or pretty-printing. */
-  serialize(
-    t: object | LuaMap,
-    opts?: { compact?: boolean; allow_repetitions?: boolean }
-  ): string;
+  serialize(t: object | LuaMap, opts?: { compact?: boolean; allow_repetitions?: boolean }): string;
   /** Converts a serialised string back into a reassembled Lua object. */
   unserialise(s: string): undefined | object | LuaMap;
   /** Returns a JSON representation of the given data. */

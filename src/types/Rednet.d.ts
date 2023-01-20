@@ -36,21 +36,21 @@
  * @noSelf
  */
 declare interface Rednet {
-   /** 
-    * The channel used by the Rednet API to @{broadcast} messages. 
-    */
+  /**
+   * The channel used by the Rednet API to @{broadcast} messages.
+   */
   CHANNEL_BROADCAST: number;
-  
-   /** 
-    * The channel used by the Rednet API to repeat messages. 
-    */
+
+  /**
+   * The channel used by the Rednet API to repeat messages.
+   */
   CHANNEL_REPEAT: number;
-  
-   /** The number of channels rednet reserves for computer IDs. Computers with IDs
+
+  /** The number of channels rednet reserves for computer IDs. Computers with IDs
    * greater or equal to this limit wrap around to 0.
    */
   MAX_ID_CHANNELS: number;
-  
+
   /** Opens a modem with the given @{peripheral} name, allowing it to send and
    * receive messages over rednet.
    * This will open the modem on two channels: one which has the same
@@ -68,8 +68,8 @@ declare interface Rednet {
    * @see rednet.isOpen
    */
   open(modem: string): void;
-  
-   /** Close a modem with the given @{peripheral} name, meaning it can no longer
+
+  /** Close a modem with the given @{peripheral} name, meaning it can no longer
    * send and receive rednet messages.
    *
    * @param modem The side the modem exists on. If not given, all open modems will be closed.
@@ -77,8 +77,8 @@ declare interface Rednet {
    * @see rednet.open
    */
   close(modem?: string): void;
-  
-   /** Determine if rednet is currently open.
+
+  /** Determine if rednet is currently open.
    *
    * @param modem Which modem to check. If not given, all connected
    * modems will be checked.
@@ -87,31 +87,31 @@ declare interface Rednet {
    * @see rednet.open
    */
   isOpen(modem: string): boolean;
-  
- /** Allows a computer or turtle with an attached modem to send a message
-  * intended for a sycomputer with a specific ID. At least one such modem must first
-  * be @{rednet.open|opened} before sending is possible.
-  * Assuming the target was in range and also had a correctly opened modem, the
-  * target computer may then use @{rednet.receive} to collect the message.
-  * @param recipient The ID of the receiving computer.
-  * @param message The message to send. Like with @{modem.transmit}, this can
-  * contain any primitive type (numbers, booleans and strings) as well as
-  * tables. Other types (like functions), as well as metatables, will not be
-  * transmitted.
-  * @tparam[opt] string protocol The "protocol" to send this message under. When
-  * using @{rednet.receive} one can filter to only receive messages sent under a
-  * particular protocol.
-  * @return If this message was successfully sent (i.e. if rednet is
-  * currently @{rednet.open|open}). Note, this does not guarantee the message was
-  * actually _received_.
-  * @changed 1.6 Added protocol parameter.
-  * @changed 1.82.0 Now returns whether the message was successfully sent.
-  * @see rednet.receive
-  * @usage Send a message to computer #2.
-  *     rednet.send(2, "Hello from rednet!")
-  */
+
+  /** Allows a computer or turtle with an attached modem to send a message
+   * intended for a sycomputer with a specific ID. At least one such modem must first
+   * be @{rednet.open|opened} before sending is possible.
+   * Assuming the target was in range and also had a correctly opened modem, the
+   * target computer may then use @{rednet.receive} to collect the message.
+   * @param recipient The ID of the receiving computer.
+   * @param message The message to send. Like with @{modem.transmit}, this can
+   * contain any primitive type (numbers, booleans and strings) as well as
+   * tables. Other types (like functions), as well as metatables, will not be
+   * transmitted.
+   * @tparam[opt] string protocol The "protocol" to send this message under. When
+   * using @{rednet.receive} one can filter to only receive messages sent under a
+   * particular protocol.
+   * @return If this message was successfully sent (i.e. if rednet is
+   * currently @{rednet.open|open}). Note, this does not guarantee the message was
+   * actually _received_.
+   * @changed 1.6 Added protocol parameter.
+   * @changed 1.82.0 Now returns whether the message was successfully sent.
+   * @see rednet.receive
+   * @usage Send a message to computer #2.
+   *     rednet.send(2, "Hello from rednet!")
+   */
   send(recipient: number, message: object | LuaMap | string | number | boolean, protocol?: string): boolean;
-  
+
   /** Broadcasts a string message over the predefined @{CHANNEL_BROADCAST}
    * channel. The message will be received by every device listening to rednet.
    * @param message The message to send. This should not contain coroutines or
@@ -125,7 +125,7 @@ declare interface Rednet {
    *     rednet.broadcast("Hello, world!")
    */
   broadcast(message: LuaMap | string | number | boolean, protocol?: string): boolean;
-  
+
   /** Wait for a rednet message to be received, or until `nTimeout` seconds have
    * elapsed.
    * @param protocol_filter The protocol the received message must be
@@ -153,8 +153,11 @@ declare interface Rednet {
    *     until id == 2
    *     print(message)
    */
-  receive(protocol_filter?: string, timeout?: number): undefined|LuaMultiReturn<[number, string|number|boolean|LuaMap, string|undefined]>;
-  
+  receive(
+    protocol_filter?: string,
+    timeout?: number
+  ): undefined | LuaMultiReturn<[number, string | number | boolean | LuaMap, string | undefined]>;
+
   /** Register the system as "hosting" the desired protocol under the specified
    * name. If a rednet @{rednet.lookup|lookup} is performed for that protocol (and
    * maybe name) on the same network, the registered system will automatically
@@ -173,15 +176,15 @@ declare interface Rednet {
    * @since 1.6
    */
   host(protocol: string, hostname: string): void;
-  
-   /** Stop @{rednet.host|hosting} a specific protocol, meaning it will no longer
+
+  /** Stop @{rednet.host|hosting} a specific protocol, meaning it will no longer
    * respond to @{rednet.lookup} requests.
    *
    * @param protocol The protocol to unregister your self from.
    * @since 1.6
    */
   unhost(protocol: string): void;
-  
+
   /** Search the local rednet network for systems @{rednet.host|hosting} the
    * desired protocol and returns any computer IDs that respond as "registered"
    * against it.
@@ -207,8 +210,8 @@ declare interface Rednet {
    *       printError("Cannot find my_host")
    *     end
    */
-  lookup(protocol: string, hostname?: string): LuaMultiReturn<number[]>|number|undefined;
-  
+  lookup(protocol: string, hostname?: string): LuaMultiReturn<number[]> | number | undefined;
+
   /** Listen for modem messages and converts them into rednet messages, which may
    * then be @{receive|received}.
    *

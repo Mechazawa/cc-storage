@@ -1,4 +1,3 @@
-
 export interface Ingredient {
   name: string;
   count: number;
@@ -24,4 +23,3 @@ export default interface Recipe {
    */
   craft(mapping: string[], count?: number): boolean;
 }
-

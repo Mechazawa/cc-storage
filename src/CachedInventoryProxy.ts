@@ -5,7 +5,7 @@ export default class CachedInventoryProxy implements Inventory {
   cache: Cache;
   name: string;
 
-  readonly prefix = 'inventory';
+  readonly prefix = "inventory";
 
   constructor(target: Inventory, cache: Cache, name?: string) {
     this.target = target;
@@ -22,31 +22,23 @@ export default class CachedInventoryProxy implements Inventory {
   }
 
   getItemDetail(slot: number): ItemStack | undefined {
-    return this.cache.remember(`${this.prefix}:${this.name}:slot:${slot}:detail`, () => this.target.getItemDetail(slot));
+    return this.cache.remember(`${this.prefix}:${this.name}:slot:${slot}:detail`, () =>
+      this.target.getItemDetail(slot)
+    );
   }
 
   getItemLimit(slot: number): number {
     return this.cache.remember(`${this.prefix}:${this.name}:slot:${slot}:limit`, () => this.target.getItemLimit(slot));
   }
 
-  pushItems(
-    toName: string,
-    fromSlot: number,
-    limit?: number | undefined,
-    toSlot?: number | undefined
-  ): number {
+  pushItems(toName: string, fromSlot: number, limit?: number | undefined, toSlot?: number | undefined): number {
     this.flushSlot(toSlot, toName);
     this.flushSlot(fromSlot);
-    
+
     return this.target.pushItems(toName, fromSlot, limit, toSlot);
   }
 
-  pullItems(
-    fromName: string,
-    fromSlot: number,
-    limit?: number | undefined,
-    toSlot?: number | undefined
-  ): number {
+  pullItems(fromName: string, fromSlot: number, limit?: number | undefined, toSlot?: number | undefined): number {
     this.flushSlot(fromSlot, fromName);
     this.flushSlot(toSlot);
 

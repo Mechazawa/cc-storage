@@ -19,8 +19,8 @@ declare interface Colors {
 
   combine(...colors: number[]): number;
   subtract(color: number, ...colors: number[]): number;
-  test(colors: number|number[], color: number): boolean;
-  packRGB(r: number, g: number, b: number):  number;
+  test(colors: number | number[], color: number): boolean;
+  packRGB(r: number, g: number, b: number): number;
   unpackRGB(rgb: number): LuaMultiReturn<[number, number, number]>;
   toBlit(color: number): string;
 }

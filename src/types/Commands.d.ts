@@ -4,5 +4,13 @@ declare class Commands {
   execAsync(command: string): number;
   list(...subCommand: string[]): string[];
   getBlockPosition(): LuaMultiReturn<[number, number, number]>;
-  getBlockInfos(minX: number, minY: number, minZ: number, maxX: number, maxY: number, maxZ: number , dimension?: string): LuaMap;
+  getBlockInfos(
+    minX: number,
+    minY: number,
+    minZ: number,
+    maxX: number,
+    maxY: number,
+    maxZ: number,
+    dimension?: string
+  ): LuaMap;
 }

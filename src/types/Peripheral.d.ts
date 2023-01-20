@@ -13,15 +13,15 @@ declare interface Peripheral {
   /**
    * Get the types of a named or wrapped peripheral.
    */
-  getType(peripheral: string|WrappedPeripheral): string[];
+  getType(peripheral: string | WrappedPeripheral): string[];
   /**
    * peripheral_type)	Check if a peripheral is of a particular type.
    */
-  hasType(peripheral: string|WrappedPeripheral, peripheral_type: string): boolean|undefined;
+  hasType(peripheral: string | WrappedPeripheral, peripheral_type: string): boolean | undefined;
   /**
    * Get all available methods for the peripheral with the given name.
    */
-  getMethods(name: string): string[]|undefined;
+  getMethods(name: string): string[] | undefined;
   /**
    * Get the name of a peripheral wrapped with peripheral.wrap.
    */
@@ -37,12 +37,11 @@ declare interface Peripheral {
   /**
    * Find all peripherals of a specific type, and return the wrapped peripherals.
    */
-  find(ty: string, filter: (name: string, wrapped: WrappedPeripheral)=>boolean): LuaMultiReturn<WrappedPeripheral[]>
+  find(ty: string, filter: (name: string, wrapped: WrappedPeripheral) => boolean): LuaMultiReturn<WrappedPeripheral[]>;
 }
 
 /** @noSelf */
-declare interface WrappedPeripheral {
-}
+declare interface WrappedPeripheral {}
 
 declare interface GenericPeripheral extends WrappedPeripheral {
   [name: string]: Function;

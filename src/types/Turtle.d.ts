@@ -44,21 +44,21 @@ declare interface Turtle {
   suckUp(count?: number): LuaMultiReturn<[boolean, string?]>;
   suckDown(count?: number): LuaMultiReturn<[boolean, string?]>;
 
-  getFuelLevel(): number|string;
-  refuel(count?: number): LuaMultiReturn<[boolean, string?]>
+  getFuelLevel(): number | string;
+  refuel(count?: number): LuaMultiReturn<[boolean, string?]>;
 
   compareTo(slot: number): boolean;
   transferTo(slot: number, count?: number): boolean;
 
   getSelectedSlot(): number;
-  getFuelLimit(): number|string;
+  getFuelLimit(): number | string;
 
   equipLeft(): LuaMultiReturn<[boolean, string?]>;
   equipRight(): LuaMultiReturn<[boolean, string?]>;
 
-  inspect(): LuaMultiReturn<[boolean, string|LuaMap]>;
-  inspectUp(): LuaMultiReturn<[boolean, string|LuaMap]>;
-  inspectDown(): LuaMultiReturn<[boolean, string|LuaMap]>;
+  inspect(): LuaMultiReturn<[boolean, string | LuaMap]>;
+  inspectUp(): LuaMultiReturn<[boolean, string | LuaMap]>;
+  inspectDown(): LuaMultiReturn<[boolean, string | LuaMap]>;
 
-  getItemDetail(slot?: number, detailed?: boolean): undefined|ItemStack;
+  getItemDetail(slot?: number, detailed?: boolean): undefined | ItemStack;
 }

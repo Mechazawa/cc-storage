@@ -1,1 +1,15 @@
-{"private":true,"scripts":{"build":"tstl -p tsconfig.json","dev":"tstl -p tsconfig.json --watch"},"devDependencies":{"typescript-to-lua":"^1.12.0"},"dependencies":{"@typescript-to-lua/language-extensions":"^1.0.0"}}
+{
+  "private": true,
+  "scripts": {
+    "build": "tstl -p tsconfig.json",
+    "dev": "tstl -p tsconfig.json --watch",
+    "lint": "prettier --write src"
+  },
+  "devDependencies": {
+    "typescript-to-lua": "^1.12.0"
+  },
+  "dependencies": {
+    "@typescript-to-lua/language-extensions": "^1.0.0",
+    "prettier": "^2.8.3"
+  }
+}

@@ -1,6 +1,6 @@
 export interface Job {
   method: string;
-  params: (string|number|boolean)[]
+  params: (string | number | boolean)[];
 }
 
 export default class Queue {
@@ -16,12 +16,9 @@ export default class Queue {
     this.restore();
   }
 
-  save() {
+  save() {}
 
-  }
-
-  restore() {
-  }
+  restore() {}
 
   push(job: Job): boolean {
     if (this.queue.length < this.MAX_SIZE) {
@@ -31,5 +28,4 @@ export default class Queue {
 
     return false;
   }
-
 }

@@ -12,8 +12,6 @@ export default class RecipeManager {
   }
 
   findRecipes(item: string): Recipe[] {
-    return Object.values(this.recipes).filter((r: Recipe) =>
-      r.getOutput().find((i: string) => i.includes(item))
-    );
+    return Object.values(this.recipes).filter((r: Recipe) => r.getOutput().find((i: string) => i.includes(item)));
   }
 }
