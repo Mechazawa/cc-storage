@@ -2,7 +2,7 @@ import Logger from "./Logger";
 import StorageManager from "./StorageManager";
 import RecipeManager from "./crafting/RecipeManager";
 import initRecipes from "./crafting/recipes/craftingTable";
-import * as RPC from './RPC';
+import * as RPC from "./RPC";
 
 const logger = new Logger(true, "log.txt");
 
@@ -11,8 +11,7 @@ logger.log("Initialising");
 const recipeManager = new RecipeManager();
 const storageManager = new StorageManager(recipeManager, logger);
 
-
-for (const name of (peripheral.wrap('back') as GenericPeripheral).getNamesRemote() as string[]) {
+for (const name of (peripheral.wrap("back") as GenericPeripheral).getNamesRemote() as string[]) {
   if (name.startsWith("minecraft:chest_")) {
     logger.log(`Found ${name}`);
 
@@ -20,26 +19,25 @@ for (const name of (peripheral.wrap('back') as GenericPeripheral).getNamesRemote
   }
 }
 
-
 initRecipes(recipeManager);
 logger.log(`Loaded ${Object.keys(recipeManager.recipes).length} recipes`);
 
-logger.log('Defragmenting...')
+logger.log("Defragmenting...");
 logger.log(`Freed ${storageManager.defragment()} slots`);
-logger.log('checking stats...');
+logger.log("checking stats...");
 
-for(const resource of storageManager.list()) {
+for (const resource of storageManager.list()) {
   logger.log(`[${resource.count}] ${resource.displayName}`);
 }
 logger.log(`Slots used: ${storageManager.used()}/${storageManager.size()} (${storageManager.count()} items)`);
 
-for (const key of ['item:minecraft:grass_block', 'create:belt_connector']) {
+for (const key of ["item:minecraft:grass_block", "create:belt_connector"]) {
   logger.debug(`${key}: ${storageManager.count(key)}`);
 }
 
 // the passed object doesn't seem to be properly self-wrapped
 RPC.init();
-RPC.host('storage', {
+RPC.host("storage", {
   defragment: storageManager.defragment.bind(storageManager),
   storeAll: storageManager.storeAll.bind(storageManager),
   store: storageManager.store.bind(storageManager),
@@ -53,4 +51,4 @@ RPC.host('storage', {
   findItemByKey: storageManager.findItemByKey.bind(storageManager),
 });
 
-export default storageManager
+export default storageManager;
