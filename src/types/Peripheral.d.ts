@@ -42,5 +42,8 @@ declare interface Peripheral {
 
 /** @noSelf */
 declare interface WrappedPeripheral {
+}
+
+declare interface GenericPeripheral extends WrappedPeripheral {
   [name: string]: Function;
 }

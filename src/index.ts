@@ -12,7 +12,7 @@ const recipeManager = new RecipeManager();
 const storageManager = new StorageManager(recipeManager, logger);
 
 
-for (const name of peripheral.wrap('back').getNamesRemote() as string[]) {
+for (const name of (peripheral.wrap('back') as GenericPeripheral).getNamesRemote() as string[]) {
   if (name.startsWith("minecraft:chest_")) {
     logger.log(`Found ${name}`);
 

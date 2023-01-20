@@ -3,6 +3,7 @@ import Logger from "./Logger";
 import Recipe, { RecipeType } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 import * as RPC from "./RPC";
+import CachedInventoryProxy from "./CachedInventoryProxy";
 
 export interface StorageLocation {
   peripheral: string;
@@ -23,41 +24,41 @@ export interface Resource {
 export interface Crafter {
   storageName: string;
   host: number;
-  type: RecipeType; 
+  type: RecipeType;
 }
 
 export default class StorageManager {
-  storagePool: LuaMap<string, Inventory> = new LuaMap<string, Inventory>();
+  storagePool: LuaMap<string, CachedInventoryProxy> = new LuaMap<string, CachedInventoryProxy>();
   logger: Logger;
   recipeManager: RecipeManager;
   cache: Cache;
   crafters: Crafter[];
 
-  constructor(recipeManager: RecipeManager, logger?: Logger, cache?: Cache) {
+  constructor(recipeManager: RecipeManager, logger?: Logger) {
     this.logger = logger ?? new Logger();
-    this.cache = cache ?? new Cache();
+    this.cache = new Cache();
     this.recipeManager = recipeManager;
     this.crafters = [];
 
-    this.count = this.cache.memoize('acc:count', this.count.bind(this));
-    this.size = this.cache.memoize('acc:size', this.size.bind(this));
-    this.used = this.cache.memoize('acc:used', this.used.bind(this));
-    this.getFragmented = this.cache.memoize('acc:getFragmented', this.getFragmented.bind(this));
-    this.getEmpty = this.cache.memoize('acc:getEmpty', this.getEmpty.bind(this));
-    this.findItemByKey = this.cache.memoize('acc:findItemByKey', this.findItemByKey.bind(this));
-    this.list = this.cache.memoize('acc:list', this.list.bind(this));
+    // todo: use some sort of decorator
+    this.count = this.cache.memoize("acc:count", this.count.bind(this));
+    this.size = this.cache.memoize("acc:size", this.size.bind(this));
+    this.used = this.cache.memoize("acc:used", this.used.bind(this));
+    this.getFragmented = this.cache.memoize("acc:getFragmented", this.getFragmented.bind(this));
+    this.getEmpty = this.cache.memoize("acc:getEmpty", this.getEmpty.bind(this));
+    this.findItemByKey = this.cache.memoize("acc:findItemByKey", this.findItemByKey.bind(this));
+    this.list = this.cache.memoize("acc:list", this.list.bind(this));
   }
 
   registerCrafter(storageName: string, host: number, type: RecipeType): boolean {
-    const exists = this.crafters.findIndex(
-      c => c.host === host && c.storageName === storageName && c.type === type
-    ) !== -1;
+    const exists =
+      this.crafters.findIndex((c) => c.host === host && c.storageName === storageName && c.type === type) !== -1;
 
     if (exists) {
       return false;
     }
 
-    this.crafters.push({storageName, host, type});
+    this.crafters.push({ storageName, host, type });
 
     return true;
   }
@@ -73,19 +74,19 @@ export default class StorageManager {
       return false;
     }
 
-    this.storagePool.set(storageName, storage);
-    this.cache.delete('acc:*');
+    this.storagePool.set(storageName, new CachedInventoryProxy(storage, this.cache, storageName));
+    this.cache.flush();
 
     return true;
   }
 
   removeStorage(storageName: string): boolean {
-    this.cache.delete('acc:*');
+    this.cache.flush();
 
     return this.storagePool.delete(storageName);
   }
 
-  getStorage(storageName: string): Inventory | undefined {
+  getStorage(storageName: string): CachedInventoryProxy | undefined {
     return this.storagePool.get(storageName);
   }
 
@@ -140,26 +141,16 @@ export default class StorageManager {
 
     while (fragmented.length > 0) {
       const target = fragmented.shift();
-      const targetStack = this.getStorage(
-        target?.peripheral ?? ""
-      )?.getItemDetail(target?.slot ?? 1);
 
-      for (
-        let i = 0;
-        i < fragmented.length &&
-        target &&
-        targetStack &&
-        target.count < targetStack.maxCount;
-        i++
-      ) {
-        if (fragmented[i].name === targetStack.name) {
+      if (!target) break;
+
+      const targetStorage = this.getStorage(target.peripheral);
+      const targetStack = targetStorage?.getItemDetail(target.slot);
+
+      for (let i = 0; i < fragmented.length && target.count < (targetStack?.maxCount ?? 0); i++) {
+        if (fragmented[i].name === targetStack?.name) {
           const count =
-            this.getStorage(target.peripheral)?.pullItems(
-              fragmented[i].peripheral,
-              fragmented[i].slot,
-              undefined,
-              target.slot
-            ) ?? 0;
+            targetStorage?.pullItems(fragmented[i].peripheral, fragmented[i].slot, undefined, target.slot) ?? 0;
 
           target.count += count;
           fragmented[i].count -= count;
@@ -172,8 +163,6 @@ export default class StorageManager {
         }
       }
     }
-    
-    this.cache.delete('acc:*');
 
     return freed;
   }
@@ -236,8 +225,6 @@ export default class StorageManager {
       total += this.store(storageName, slot, count);
     }
 
-    this.cache.delete('acc:*');
-
     return total;
   }
 
@@ -248,8 +235,8 @@ export default class StorageManager {
       return 0;
     }
 
-    this.cache.delete('acc:*');
-    
+    this.cache.delete("acc:*");
+
     let total = 0;
 
     for (const [_, storage] of this.storagePool) {
@@ -261,26 +248,15 @@ export default class StorageManager {
     return total;
   }
 
-  withdrawl(
-    storageName: string,
-    key: string,
-    count: number,
-    slot?: number
-  ): number {
+  withdrawl(storageName: string, key: string, count: number, slot?: number): number {
     let sent = 0;
     const sources = this.findItemByKey(key, count);
 
     for (const source of sources) {
-      sent +=
-        this.getStorage(source.peripheral)?.pushItems(
-          storageName,
-          source.slot,
-          source.count,
-          slot
-        ) ?? 0;
+      sent += this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
     }
-    
-    this.cache.delete('acc:*');
+
+    this.cache.delete("acc:*");
 
     return sent;
   }
@@ -292,7 +268,7 @@ export default class StorageManager {
       for (const [slot, __] of storage.list()) {
         const stack = storage.getItemDetail(slot);
 
-        if(stack) {
+        if (stack) {
           const key = stack.nbt !== undefined ? `nbt:${stack.nbt}` : `name:${stack.name}`;
 
           if (resources.has(key)) {
@@ -356,11 +332,11 @@ export default class StorageManager {
     }
 
     // We gotta iterate through everything anyways so why not do it this way?
-    return this.list().find(resource => this.testKey(key, resource))?.count ?? 0;
+    return this.list().find((resource) => this.testKey(key, resource))?.count ?? 0;
   }
 
   craft(recipe: Recipe, count: number): number {
-    const crafter = this.crafters.find(x => x.type === recipe.type);
+    const crafter = this.crafters.find((x) => x.type === recipe.type);
 
     if (!crafter) {
       this.logger.error(`Missing crafter for "${recipe.name}"`);
@@ -378,18 +354,18 @@ export default class StorageManager {
       }
     }
 
-    const itemLocations = inputItems.map(key => this.findItemByKey(key, count)).flat();
+    const itemLocations = inputItems.map((key) => this.findItemByKey(key, count)).flat();
 
     for (const location of itemLocations) {
       this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count);
     }
 
-    RPC.call(crafter.host, 'craft', { recipeName: recipe.name, inputItems });
+    RPC.call(crafter.host, "craft", { recipeName: recipe.name, inputItems });
 
     this.storeAll(crafter.storageName);
 
-    this.cache.delete('acc:*');
-    
+    this.cache.delete("acc:*");
+
     return count;
   }
 }
