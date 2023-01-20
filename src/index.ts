@@ -24,18 +24,18 @@ for (const name of (peripheral.wrap('back') as GenericPeripheral).getNamesRemote
 initRecipes(recipeManager);
 logger.log(`Loaded ${Object.keys(recipeManager.recipes).length} recipes`);
 
-// logger.log('Defragmenting...')
-// logger.log(`Freed ${storageManager.defragment()} slots`);
-// logger.log('checking stats...');
+logger.log('Defragmenting...')
+logger.log(`Freed ${storageManager.defragment()} slots`);
+logger.log('checking stats...');
 
-// for(const resource of storageManager.list()) {
-//   logger.log(`[${resource.count}] ${resource.displayName}`);
-// }
-// logger.log(`Slots used: ${storageManager.used()}/${storageManager.size()} (${storageManager.count()} items)`);
+for(const resource of storageManager.list()) {
+  logger.log(`[${resource.count}] ${resource.displayName}`);
+}
+logger.log(`Slots used: ${storageManager.used()}/${storageManager.size()} (${storageManager.count()} items)`);
 
-// for (const key of ['item:minecraft:grass_block', 'create:belt_connector']) {
-//   logger.debug(`${key}: ${storageManager.count(key)}`);
-// }
+for (const key of ['item:minecraft:grass_block', 'create:belt_connector']) {
+  logger.debug(`${key}: ${storageManager.count(key)}`);
+}
 
 // the passed object doesn't seem to be properly self-wrapped
 RPC.init();
