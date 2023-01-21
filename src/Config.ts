@@ -1,60 +1,32 @@
-type ConfigSchema = { [key: string]: ((value: any) => boolean) | string };
+import { RecipeType } from "./crafting/Recipe";
 
-export default class Config {
-  fileName: string;
-  data = new LuaMap<string, any>();
+export enum DeviceType {
+  SERVER = "server",
+  CLIENT = "client",
+  CRAFTER = "crafter",
+}
 
-  readonly serializers = {
-    to: textutils.serializeJSON,
-    from: textutils.unserializeJSON,
-  };
+export interface AppConfig {
+  type: DeviceType;
+  storage: string[];
 
-  /**
-   * Configuration schema
-   * If the value is a string the `type` method will be used for validation. If it ends with `[]` the type will be an array.
-   * If the value is a function it will be called for validation
-   */
-  readonly schema: ConfigSchema = {
-    storage: "string[]",
-  };
+  logTimestamp?: boolean;
+  logFile?: string;
+}
 
-  constructor(fileName: string) {
-    this.fileName = fileName;
+type minutes = number;
 
-    this.load();
-  }
+export interface ServerConfig extends AppConfig {
+  type: DeviceType.SERVER;
+  defragInterval: minutes;
+}
 
-  save(): void {
-    const file = fs.open(this.fileName, "r") as ReadHandle;
+export interface ClientConfig extends AppConfig {
+  type: DeviceType.CLIENT;
+  host: string;
+}
 
-    this.data = this.serializers.from(file.readAll() ?? "{}") as LuaMap<string, any>;
-
-    file.close();
-  }
-
-  load(): void {
-    this.data = new LuaMap<string, any>();
-  }
-
-  get(key: string): any {}
-
-  validate(key: string, value: any): boolean {
-    let validator = this.schema[key];
-
-    if (!validator) {
-      return false;
-    }
-
-    if (typeof validator === "string" && validator.endsWith("[]")) {
-      validator = validator.slice(0, validator.length - 2);
-
-      return Array.isArray(validator) && value.every((x: any) => typeof x === validator);
-    } else if (typeof validator === "string") {
-      return typeof value === validator;
-    } else if (typeof validator === "function") {
-      return validator(value);
-    } else {
-      return false;
-    }
-  }
+export interface CrafterConfig extends AppConfig {
+  type: DeviceType.CRAFTER;
+  recipeTypes: RecipeType[];
 }

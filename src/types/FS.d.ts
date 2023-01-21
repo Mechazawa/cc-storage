@@ -32,7 +32,7 @@ declare interface FS {
   // Copies a file or directory to a new path.
   copy(path: string, dest: string): void;
   // Deletes a file or directory.
-  //delete(path: string): void;
+  delete(path: string): void;
   // Opens a file for reading or writing at a path.
   open(path: string, mode: string): WriteHandle | BinaryWriteHandle | ReadHandle | BinaryReadHandle; // TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   // Returns the name of the mount that the specified path is located on.

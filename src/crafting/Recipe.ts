@@ -1,11 +1,5 @@
-export interface Ingredient {
-  name: string;
-  count: number;
-  source: string;
-}
-
 export enum RecipeType {
-  CRAFTING_TABLE,
+  CRAFTING_TABLE = "crafting",
 }
 
 export default interface Recipe {

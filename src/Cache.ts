@@ -1,4 +1,6 @@
-export default class Cache {
+import Serializable from "./Serializable";
+
+export default class Cache extends Serializable {
   cache = new LuaMap<string, any>();
 
   set(name: string, value: any) {
@@ -49,5 +51,17 @@ export default class Cache {
 
       return this.remember(key, () => fn(...args));
     }) as unknown as T;
+  }
+
+  serialise(): LuaMap<string, any> {
+    return this.cache;
+  }
+
+  static deserialize(input: LuaMap<string, any>): Cache {
+    const instance = new this();
+
+    instance.cache = input;
+
+    return instance;
   }
 }
