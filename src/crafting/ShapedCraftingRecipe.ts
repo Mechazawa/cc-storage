@@ -58,8 +58,8 @@ export default class ShapedCraftingRecipe implements Recipe {
     let output = [];
 
     for (let i = 0; i < this.MAX_HEIGHT; i++) {
-      for (let j = 0; j < this.MAX_WIDTH; i++) {
-        let item = this.grid[i][j];
+      for (let j = 0; j < this.MAX_WIDTH; j++) {
+        let item = this.grid[i]?.[j];
 
         if (item && item !== "") {
           output.push(item);

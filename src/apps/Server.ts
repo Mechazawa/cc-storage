@@ -64,6 +64,16 @@ export default class Server extends App {
       count: this.storage.count.bind(this.storage),
       craft: this.storage.craft.bind(this.storage),
       findItemByKey: this.storage.findItemByKey.bind(this.storage),
+      findRecipes: (name: string) => {
+        const recipes = this.storage.recipeManager.findRecipes(name);
+
+        return recipes.map((recipe) => ({
+          type: recipe.type,
+          name: recipe.name,
+          input: recipe.getInput(),
+          output: recipe.getOutput(),
+        }));
+      },
     });
   }
 }
