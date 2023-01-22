@@ -52,7 +52,7 @@ export default class RPC {
     while (true) {
       const [client, request] = rednet.receive(this.protocol, timeout);
 
-      if (client === undefined || request === undefined) {
+      if (client === undefined) {
         throw new Error("RPC Timeout Exceeded!");
       }
 
@@ -117,13 +117,11 @@ export default class RPC {
 
   static _expect(client: number, id: ID, timeout?: number): any {
     while (true) {
-      const packet = rednet.receive(this.protocol, timeout);
+      const [from, body] = rednet.receive(this.protocol, timeout);
 
-      if (packet === undefined) {
+      if (from === undefined) {
         throw new Error("RPC Timeout Exceeded!");
       }
-
-      const [from, body] = packet;
 
       // I hate that there is no continue statement in lua
       if (from === client && typeof body === "object" && body.get("id") === id) {
