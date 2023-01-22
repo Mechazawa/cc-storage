@@ -24,7 +24,8 @@ let app: App;
 
 switch (config.type) {
   case DeviceType.SERVER:
-    app = recovering ? stateManager.load(Server) : new Server(config);
+    app = new Server(config);
+    app = recovering ? stateManager.load(Server, app) : new Server(config);
     break;
   case DeviceType.CRAFTER:
   case DeviceType.CLIENT:

@@ -53,8 +53,8 @@ function RPC.host(hostname, methods)
 				if data.method == '?' then
 					response.result = table.pack(RPC._get_keys(methods))
 				else 
-					-- response.result = table.pack(methods[data.method](table.unpack(data.args or {})))
-					response.result = table.pack(methods[data.method]({}, table.unpack(data.args or {})))
+					response.result = table.pack(methods[data.method](table.unpack(data.args or {})))
+					-- response.result = table.pack(methods[data.method]({}, table.unpack(data.args or {})))
 				end
 			end
 			

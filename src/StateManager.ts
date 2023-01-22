@@ -1,3 +1,4 @@
+import Logger from "./Logger";
 import Serializable from "./Serializable";
 
 export default class StateManager {
@@ -19,12 +20,24 @@ export default class StateManager {
     file.close();
   }
 
-  load<T extends Serializable>(C: { deserialize(input: LuaMap<string, any>): T }): T {
-    const file = fs.open(this.fileName, "r") as ReadHandle;
-    const state = textutils.unserialise(file.readAll() ?? "{}") as LuaMap<string, any>;
+  load<T extends Serializable>(C: { deserialize(input: LuaMap<string, any>): T }, fallback: T): T {
+    try {
+      const file = fs.open(this.fileName, "r") as ReadHandle;
+      const state = textutils.unserialise(file.readAll() ?? "{}") as LuaMap<string, any>;
+  
+      file.close();
+  
+      if (state === undefined) {
+        fs.delete(this.fileName);
+  
+        return fallback;
+      }
+  
+      return C.deserialize(state);
+    } catch (error) {
+      (new Logger()).error("Failed loading state: " + error);
 
-    file.close();
-
-    return C.deserialize(state);
+      return fallback;
+    }
   }
 }

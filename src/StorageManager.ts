@@ -2,7 +2,7 @@ import Cache from "./Cache";
 import Logger from "./Logger";
 import Recipe, { RecipeType } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
-import * as RPC from "./RPC";
+import RPC from "./RPC";
 import CachedInventoryProxy from "./CachedInventoryProxy";
 
 export interface StorageLocation {

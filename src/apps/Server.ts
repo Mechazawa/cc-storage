@@ -4,7 +4,7 @@ import StorageManager from "../StorageManager";
 import RecipeManager from "../crafting/RecipeManager";
 import initCraftingRecipes from "../crafting/recipes/craftingTable";
 import App from "./App";
-import * as RPC from "../RPC";
+import RPC from "../RPC";
 
 export default class Server extends App {
   storage: StorageManager;
@@ -51,20 +51,50 @@ export default class Server extends App {
 
     this.logger.log(`Slots used: ${this.storage.used()}/${this.storage.size()} (${this.storage.count()} items)`);
 
-    RPC.init();
+    parallel.waitForAny(
+      () => this.runRPC(),
+      () => this.runQueueWorker()
+    );
+  }
+
+  runRPC() {
+    RPC.openModems();
     RPC.host("storage", {
-      defragment: this.storage.defragment.bind(this.storage),
-      storeAll: this.storage.storeAll.bind(this.storage),
-      store: this.storage.store.bind(this.storage),
-      withdrawl: this.storage.withdrawl.bind(this.storage),
-      list: this.storage.list.bind(this.storage),
-      size: this.storage.size.bind(this.storage),
-      free: this.storage.free.bind(this.storage),
-      used: this.storage.used.bind(this.storage),
-      count: this.storage.count.bind(this.storage),
-      craft: this.storage.craft.bind(this.storage),
-      findItemByKey: this.storage.findItemByKey.bind(this.storage),
-      findRecipes: (name: string) => {
+      ping: () => "pong",
+      defragment: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "defragment", params, callback, callbackArgs: [request] });
+      },
+      storeAll: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "storeAll", params, callback, callbackArgs: [request] });
+      },
+      store: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "store", params, callback, callbackArgs: [request] });
+      },
+      withdrawl: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "withdrawl", params, callback, callbackArgs: [request] });
+      },
+      list: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "list", params, callback, callbackArgs: [request] });
+      },
+      size: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "size", params, callback, callbackArgs: [request] });
+      },
+      free: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "free", params, callback, callbackArgs: [request] });
+      },
+      used: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "used", params, callback, callbackArgs: [request] });
+      },
+      count: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "count", params, callback, callbackArgs: [request] });
+      },
+      craft: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "craft", params, callback, callbackArgs: [request] });
+      },
+      findItemByKey: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "findItemByKey", params, callback, callbackArgs: [request] });
+      },
+      findRecipes: (request, callback, name: string) => {
         const recipes = this.storage.recipeManager.findRecipes(name);
 
         return recipes.map((recipe) => ({
@@ -75,5 +105,16 @@ export default class Server extends App {
         }));
       },
     });
+  }
+
+  runQueueWorker() {
+    // todo: why?????
+    this.queue.handler = this.storage;
+
+    while (true) {
+      this.queue.work();
+
+      os.sleep(0.5);
+    }
   }
 }

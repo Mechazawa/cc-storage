@@ -37,7 +37,7 @@ declare interface Peripheral {
   /**
    * Find all peripherals of a specific type, and return the wrapped peripherals.
    */
-  find(ty: string, filter: (name: string, wrapped: WrappedPeripheral) => boolean): LuaMultiReturn<WrappedPeripheral[]>;
+  find(ty: string, filter?: (name: string, wrapped: WrappedPeripheral) => boolean): LuaMultiReturn<WrappedPeripheral[]>;
 }
 
 /** @noSelf */

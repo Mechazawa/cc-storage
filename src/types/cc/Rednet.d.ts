@@ -156,7 +156,7 @@ declare interface Rednet {
   receive(
     protocol_filter?: string,
     timeout?: number
-  ): undefined | LuaMultiReturn<[number, string | number | boolean | LuaMap, string | undefined]>;
+  ): LuaMultiReturn<[number | undefined, string | number | boolean | LuaMap | undefined, string | undefined]>;
 
   /** Register the system as "hosting" the desired protocol under the specified
    * name. If a rednet @{rednet.lookup|lookup} is performed for that protocol (and

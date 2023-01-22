@@ -3,6 +3,8 @@ import Serializable from "./Serializable";
 export interface Job<T> {
   method: keyof T;
   params: (string | number | boolean)[];
+  callback?: (...args: any[]) => any | void;
+  callbackArgs?: any[],
 }
 
 export interface RunningJob<T> extends Job<T> {
@@ -27,24 +29,44 @@ export default class Queue<T extends object> extends Serializable {
     this.handler = handler;
   }
 
+  serialiseJob(job: Job<T>): object {
+    const data: any = { ...job };
+
+    if (typeof data.callback === 'function') {
+      data.callback = string.dump(data.callback);
+    }
+
+    return data;
+  }
+
   serialise(): LuaMap<string, any> {
     return {
-      failed: this.failed,
-      queue: this.queue,
-      running: this.running,
+      failed: this.failed.map(this.serialiseJob),
+      queue: this.queue.map(this.serialiseJob),
+      running: this.running !== undefined ? this.serialiseJob(this.running) : undefined,
     } as object as LuaMap<string, any>;
+  }
+
+  static deserializeJob<T>(job: any): Job<T> {
+    const output = {...job};
+
+    if (typeof output.callback === 'string') {
+      output.callback = loadstring(output.callback);
+    }
+    
+    return output as Job<T>;
   }
 
   static deserialize(input: LuaMap<string, any>) {
     const instance: Queue<object> = new this<object>(input.get("fileName"));
     const running: RunningJob<object> = input.get("running");
 
-    instance.failed = input.get("failed") ?? [];
-    instance.queue = input.get("queue") ?? [];
+    instance.failed = (input.get("failed") ?? []).map(this.deserializeJob);
+    instance.queue = (input.get("queue") ?? []).map(this.deserializeJob);
 
     if (running !== undefined) {
       instance.failed.push({
-        ...running,
+        ...this.deserializeJob(running),
         reason: "unexpected_reboot",
         endTime: os.epoch("local"),
       } as FailedJob<object>);
@@ -71,21 +93,29 @@ export default class Queue<T extends object> extends Serializable {
       ...this.queue.shift(),
       startTime: os.epoch("local"),
     } as RunningJob<T>;
+    const methodName = this.running.method;
 
-    if (this.running === undefined) {
+    if (this.running === undefined || methodName === undefined) {
       return;
     }
 
     try {
-      const methodName = this.running.method;
       const fn = this.handler[methodName];
 
+      print(`work: ${methodName as string}`);
+
       if (typeof fn === "function") {
-        fn(...this.running.params);
+        const output = fn(...this.running.params);
+
+        this.running.callbackArgs = this.running.callbackArgs ?? [];
+
+        this.running.callbackArgs.push(output);
+        this.running.callback?.(...this.running.callbackArgs);
       } else {
         throw new Error(`Expected "${methodName as string}" of handler to be "function", got "${typeof fn}" instead.`);
       }
     } catch (e) {
+      print("fail: " + e);
       this.failed.push({
         ...this.running,
         reason: e,
