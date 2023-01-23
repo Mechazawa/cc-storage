@@ -70,7 +70,7 @@ export default class Queue<T extends object> extends Serializable {
     const running: RunningJob<T> = input.get("running");
 
     instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map(job => this.deserializeJob(job));
-    instance.queue = (input.get("queue") ?? []).map(this.deserializeJob);
+    instance.queue = ((input.get("queue") ?? []) as FailedJob<T>[]).map(this.deserializeJob);
 
     if (running !== undefined) {
       instance.failed.push({

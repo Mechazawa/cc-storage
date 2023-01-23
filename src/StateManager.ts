@@ -12,7 +12,7 @@ export default class StateManager {
     const file = fs.open(this.fileName, "w") as WriteHandle;
     const data = textutils.serialise(instance.serialise(), {
       compact: true,
-      allow_repetitions: false,
+      allow_repetitions: true, // Can be disabled
     });
 
     file.write(data);

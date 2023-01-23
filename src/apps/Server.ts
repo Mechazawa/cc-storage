@@ -5,6 +5,7 @@ import RecipeManager from "../crafting/RecipeManager";
 import initCraftingRecipes from "../crafting/recipes/craftingTable";
 import App from "./App";
 import RPC from "../RPC";
+import Cache from "../Cache";
 
 export default class Server extends App {
   storage: StorageManager;
@@ -26,6 +27,8 @@ export default class Server extends App {
       queue: this.queue.serialise(),
       config: this.config,
       nextDefrag: this.nextDefrag,
+
+      cache: this.storage.cache.serialise(),
     } as object as LuaMap<string, any>;
   }
 
@@ -34,6 +37,12 @@ export default class Server extends App {
 
     instance.queue = Queue.deserialize(input.get("queue")) as Queue<StorageManager>;
     instance.nextDefrag = input.get("nextDefrag");
+
+    if (input.has("cache")) {
+      print("Recovered cache")
+
+      instance.storage.cache = Cache.deserialize(input.get("cache"));
+    }
 
     return instance;
   }
