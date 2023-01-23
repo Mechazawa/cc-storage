@@ -40,8 +40,9 @@ parallel.waitForAny(
   () => app.run(),
   () => {
     while (true) {
-      sleep(1);
       stateManager.dump(app);
+      sleep(1);
+      os.pullEventRaw();
     }
   }
 );
