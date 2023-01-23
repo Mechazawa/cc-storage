@@ -48,5 +48,6 @@ parallel.waitForAny(
 );
 
 fs.delete(lockFileName);
+stateManager.cleanup();
 
 print("Exited safely");

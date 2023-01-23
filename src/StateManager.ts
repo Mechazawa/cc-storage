@@ -40,4 +40,8 @@ export default class StateManager {
       return fallback;
     }
   }
+
+  cleanup() {
+    fs.delete(this.fileName);
+  }
 }
