@@ -103,7 +103,8 @@ export default class RPC {
 
     const response: RPCResponse = success ? { id: request.id, result: [value] } : { id: request.id, error: value };
 
-    rednet.send(request.client, response, this.protocol);
+    // rednet.send(request.client, response, this.protocol);
+    rednet.send(request.client, response, "rpc");
   };
 
   static call(client: number, method: string, args?: any[] | any, timeout?: number): any {
