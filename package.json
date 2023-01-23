@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@typescript-to-lua/language-extensions": "^1.0.0",
+    "glob": "^8.1.0",
     "lua-types": "^2.13.1",
     "prettier": "^2.8.3",
     "ts-node": "^10.9.1"

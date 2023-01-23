@@ -1,9 +1,11 @@
 import Serializable from "./Serializable";
 
+type JobCallback = (...args: any[]) => any;
+
 export interface Job<T> {
   method: keyof T;
   params: (string | number | boolean)[];
-  callback?: (...args: any[]) => any | void;
+  callback?: JobCallback | void;
   callbackArgs?: any[];
 }
 
@@ -47,21 +49,27 @@ export default class Queue<T extends object> extends Serializable {
     } as object as LuaMap<string, any>;
   }
 
-  static deserializeJob<T>(job: any): Job<T> {
+  static deserializeJob<T extends Job<any>>(job: T): T {
     const output = { ...job };
 
     if (typeof output.callback === "string") {
-      output.callback = loadstring(output.callback);
+      const [fn, failReason] = loadstring(output.callback);
+
+      if (fn !== undefined) {
+        output.callback = (...args: any[]) => (fn as JobCallback)(...args);
+      } else {
+        throw new Error('Failed Queue job callback deserialization: ' + failReason);
+      }
     }
 
-    return output as Job<T>;
+    return output;
   }
 
-  static deserialize(input: LuaMap<string, any>) {
-    const instance: Queue<object> = new this<object>(input.get("fileName"));
-    const running: RunningJob<object> = input.get("running");
+  static deserialize<T extends object=object>(input: LuaMap<string, any>): Queue<T> {
+    const instance: Queue<T> = new this<T>(input.get("fileName"));
+    const running: RunningJob<T> = input.get("running");
 
-    instance.failed = (input.get("failed") ?? []).map(this.deserializeJob);
+    instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map(job => this.deserializeJob(job));
     instance.queue = (input.get("queue") ?? []).map(this.deserializeJob);
 
     if (running !== undefined) {
@@ -69,7 +77,7 @@ export default class Queue<T extends object> extends Serializable {
         ...this.deserializeJob(running),
         reason: "unexpected_reboot",
         endTime: os.epoch("local"),
-      } as FailedJob<object>);
+      } as FailedJob<T>);
     }
 
     return instance;
