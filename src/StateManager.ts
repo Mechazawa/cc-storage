@@ -24,18 +24,18 @@ export default class StateManager {
     try {
       const file = fs.open(this.fileName, "r") as ReadHandle;
       const state = textutils.unserialise(file.readAll() ?? "{}") as LuaMap<string, any>;
-  
+
       file.close();
-  
+
       if (state === undefined) {
         fs.delete(this.fileName);
-  
+
         return fallback;
       }
-  
+
       return C.deserialize(state);
     } catch (error) {
-      (new Logger()).error("Failed loading state: " + error);
+      new Logger().error("Failed loading state: " + error);
 
       return fallback;
     }

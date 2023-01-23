@@ -94,7 +94,7 @@ export default class RPC {
   }
 
   static callback(request: RPCRequest, value: any, success: boolean = true) {
-    if (request.id === 'undefined') {
+    if (request.id === "undefined") {
       return;
     }
 
@@ -105,7 +105,7 @@ export default class RPC {
 
     // rednet.send(request.client, response, this.protocol);
     rednet.send(request.client, response, "rpc");
-  };
+  }
 
   static call(client: number, method: string, args?: any[] | any, timeout?: number): any {
     const id = this._generate_id();

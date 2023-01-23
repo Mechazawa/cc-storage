@@ -4,7 +4,7 @@ export interface Job<T> {
   method: keyof T;
   params: (string | number | boolean)[];
   callback?: (...args: any[]) => any | void;
-  callbackArgs?: any[],
+  callbackArgs?: any[];
 }
 
 export interface RunningJob<T> extends Job<T> {
@@ -32,7 +32,7 @@ export default class Queue<T extends object> extends Serializable {
   serialiseJob(job: Job<T>): object {
     const data: any = { ...job };
 
-    if (typeof data.callback === 'function') {
+    if (typeof data.callback === "function") {
       data.callback = string.dump(data.callback);
     }
 
@@ -48,12 +48,12 @@ export default class Queue<T extends object> extends Serializable {
   }
 
   static deserializeJob<T>(job: any): Job<T> {
-    const output = {...job};
+    const output = { ...job };
 
-    if (typeof output.callback === 'string') {
+    if (typeof output.callback === "string") {
       output.callback = loadstring(output.callback);
     }
-    
+
     return output as Job<T>;
   }
 
