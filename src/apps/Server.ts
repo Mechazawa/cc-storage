@@ -28,7 +28,8 @@ export default class Server extends App {
       config: this.config,
       nextDefrag: this.nextDefrag,
 
-      cache: this.storage.cache.serialise(),
+      // Optional, todo: benchmark
+      // cache: this.storage.cache.serialise(),
     } as object as LuaMap<string, any>;
   }
 
