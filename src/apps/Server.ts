@@ -10,7 +10,7 @@ import Cache from "../Cache";
 export default class Server extends App {
   storage: StorageManager;
   queue: Queue<StorageManager>;
-  nextDefrag: number;
+  nextDefrag: number = 0;
 
   constructor(config: ServerConfig) {
     super(config);
@@ -19,7 +19,6 @@ export default class Server extends App {
 
     this.storage = new StorageManager(recipeManager, this.logger);
     this.queue = new Queue(this.storage);
-    this.nextDefrag = os.epoch("utc") + (config.defragInterval ?? 600) * 1000;
   }
 
   serialise(): LuaMap<string, any> {
@@ -40,7 +39,7 @@ export default class Server extends App {
     instance.nextDefrag = input.get("nextDefrag");
 
     if (input.has("cache")) {
-      print("Recovered cache")
+      print("Recovered cache");
 
       instance.storage.cache = Cache.deserialize(input.get("cache"));
     }
@@ -125,6 +124,26 @@ export default class Server extends App {
       this.queue.work();
 
       os.sleep(0.5);
+    }
+  }
+
+  runDefragLoop() {
+    while (true) {
+      if (this.nextDefrag <= 0) {
+        this.nextDefrag = (this.config as ServerConfig).defragInterval ?? 600;
+      }
+
+      this.nextDefrag--;
+
+      if (this.nextDefrag === 0) {
+        this.logger.info("Running defragmentation...");
+        
+        const count = this.storage.defragment();
+
+        this.logger.info(`Freed ${count} slots`);
+      }
+
+      os.sleep(1);
     }
   }
 }
