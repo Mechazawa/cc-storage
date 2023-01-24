@@ -101,6 +101,9 @@ export default class Queue<T extends object> extends Serializable {
       ...this.queue.shift(),
       startTime: os.epoch("local"),
     } as RunningJob<T>;
+
+    this.running.callbackArgs = this.running.callbackArgs ?? [];
+
     const methodName = this.running.method;
 
     if (this.running === undefined || methodName === undefined) {
@@ -108,27 +111,31 @@ export default class Queue<T extends object> extends Serializable {
     }
 
     try {
-      const fn = this.handler[methodName];
-
       print(`work: ${methodName as string}`);
 
-      if (typeof fn === "function") {
-        const output = fn(...this.running.params);
+      const keyType = typeof this.handler[methodName];
 
-        this.running.callbackArgs = this.running.callbackArgs ?? [];
+      if (keyType === "function") {
+        // note that I'm not placing the method in a temp 
+        // var because it breaks the self reference in lua.
+        const output = (this.handler[methodName] as Function)(...this.running.params);
 
         this.running.callbackArgs.push(output);
         this.running.callback?.(...this.running.callbackArgs);
       } else {
-        throw new Error(`Expected "${methodName as string}" of handler to be "function", got "${typeof fn}" instead.`);
+        throw new Error(`Expected "${methodName as string}" of handler to be "function", got "${keyType}" instead.`);
       }
-    } catch (e) {
-      print("fail: " + e);
+    } catch (error) {
+      print("fail: " + error);
+      this.running.callbackArgs.push(error);
       this.failed.push({
         ...this.running,
-        reason: e,
+        reason: error,
         endTime: os.epoch("local"),
       } as FailedJob<T>);
+
+      // todo: setting the last param to let the callback know if it's successful is pretty jank
+      this.running.callback?.(...this.running.callbackArgs);
     } finally {
       this.running = undefined;
     }

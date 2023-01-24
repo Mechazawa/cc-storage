@@ -42,7 +42,7 @@ parallel.waitForAny(
     while (true) {
       stateManager.dump(app);
       sleep(1);
-      os.pullEventRaw();
+      while(os.pullEventRaw() === undefined);
     }
   }
 );

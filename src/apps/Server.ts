@@ -28,7 +28,7 @@ export default class Server extends App {
       nextDefrag: this.nextDefrag,
 
       // Optional, todo: benchmark
-      // cache: this.storage.cache.serialise(),
+      cache: this.storage.cache.serialise(),
     } as object as LuaMap<string, any>;
   }
 
@@ -54,15 +54,19 @@ export default class Server extends App {
 
     this.logger.info(`Loaded ${recipeCount} recipes`);
 
+    let storageCount = 0;
+
     for (const storageName of this.config.storage) {
-      this.storage.addStorage(storageName);
+      storageCount += this.storage.addStorage(storageName) ? 1 : 0;
     }
 
-    this.logger.log(`Slots used: ${this.storage.used()}/${this.storage.size()} (${this.storage.count()} items)`);
+    this.logger.info(`Initialised ${storageCount} storage containers`);
+    this.logger.info(`Slots used: ${this.storage.used()}/${this.storage.size()} (${this.storage.count()} items)`);
 
     parallel.waitForAny(
       () => this.runRPC(),
-      () => this.runQueueWorker()
+      () => this.runQueueWorker(),
+      () => this.runDefragLoop(),
     );
   }
 
@@ -113,6 +117,11 @@ export default class Server extends App {
           output: recipe.getOutput(),
         }));
       },
+      flushCache: () => {
+        this.storage.cache.flush();
+
+        return true;
+      }
     });
   }
 
@@ -129,19 +138,17 @@ export default class Server extends App {
 
   runDefragLoop() {
     while (true) {
-      if (this.nextDefrag <= 0) {
-        this.nextDefrag = (this.config as ServerConfig).defragInterval ?? 600;
-      }
-
-      this.nextDefrag--;
-
       if (this.nextDefrag === 0) {
         this.logger.info("Running defragmentation...");
 
         const count = this.storage.defragment();
 
         this.logger.info(`Freed ${count} slots`);
+
+        this.nextDefrag = (this.config as ServerConfig).defragInterval ?? 600;
       }
+
+      this.nextDefrag--;
 
       os.sleep(1);
     }
