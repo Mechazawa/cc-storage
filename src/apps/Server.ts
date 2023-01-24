@@ -137,7 +137,7 @@ export default class Server extends App {
 
       if (this.nextDefrag === 0) {
         this.logger.info("Running defragmentation...");
-        
+
         const count = this.storage.defragment();
 
         this.logger.info(`Freed ${count} slots`);

@@ -58,18 +58,18 @@ export default class Queue<T extends object> extends Serializable {
       if (fn !== undefined) {
         output.callback = (...args: any[]) => (fn as JobCallback)(...args);
       } else {
-        throw new Error('Failed Queue job callback deserialization: ' + failReason);
+        throw new Error("Failed Queue job callback deserialization: " + failReason);
       }
     }
 
     return output;
   }
 
-  static deserialize<T extends object=object>(input: LuaMap<string, any>): Queue<T> {
+  static deserialize<T extends object = object>(input: LuaMap<string, any>): Queue<T> {
     const instance: Queue<T> = new this<T>(input.get("fileName"));
     const running: RunningJob<T> = input.get("running");
 
-    instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map(job => this.deserializeJob(job));
+    instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map((job) => this.deserializeJob(job));
     instance.queue = ((input.get("queue") ?? []) as FailedJob<T>[]).map(this.deserializeJob);
 
     if (running !== undefined) {
