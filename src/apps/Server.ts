@@ -107,6 +107,9 @@ export default class Server extends App {
       findItemByKey: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "findItemByKey", params, callback, callbackArgs: [request] });
       },
+      getMaxCraftable: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "getMaxCraftable", params, callback, callbackArgs: [request] });
+      },
       findRecipes: (request, callback, name: string) => {
         const recipes = this.storage.recipeManager.findRecipes(name);
 

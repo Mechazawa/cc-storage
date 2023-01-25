@@ -335,6 +335,25 @@ export default class StorageManager {
     return this.list().find((resource) => this.testKey(key, resource))?.count ?? 0;
   }
 
+  getMaxCraftable(recipe: Recipe): number {
+    // Group input items
+    const input = new LuaMap<string, number>();
+
+    for (const item of recipe.getInput()) {
+      input.set(item, (input.get('item') ?? 0) + 1);
+    }
+
+    let count = Infinity;
+
+    for (const [item, amount] of input) {
+      const availible = this.count(item);
+
+      count = Math.min(count, availible / amount);
+    }
+
+    return Math.floor(count);
+  }
+
   craft(recipe: Recipe, count: number): number {
     const crafter = this.crafters.find((x) => x.type === recipe.type);
 
