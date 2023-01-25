@@ -10,7 +10,7 @@ import Cache from "../Cache";
 export default class Server extends App {
   storage: StorageManager;
   queue: Queue<StorageManager>;
-  nextDefrag: number = 0;
+  nextDefrag: number = -1;
 
   constructor(config: ServerConfig) {
     super(config);
@@ -147,7 +147,10 @@ export default class Server extends App {
         const count = this.storage.defragment();
 
         this.logger.info(`Freed ${count} slots`);
+      }
 
+      // By default it's set to -1 so this will initialise it if needed aswell
+      if (this.nextDefrag <= 0) {
         this.nextDefrag = (this.config as ServerConfig).defragInterval ?? 600;
       }
 

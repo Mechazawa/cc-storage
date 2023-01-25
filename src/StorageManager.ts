@@ -164,10 +164,12 @@ export default class StorageManager {
       }
     }
 
+    this.cache.delete("acc:*");
+
     return freed;
   }
 
-  findItemByKey(key: string, count: number): StorageLocation[] {
+  findItemByKey(key: string, count: number = Infinity): StorageLocation[] {
     const output = [];
     let found = 0;
 
@@ -193,6 +195,10 @@ export default class StorageManager {
       }
     }
 
+    if (count === Infinity) {
+      return output;
+    }
+
     return [];
   }
 
@@ -201,8 +207,13 @@ export default class StorageManager {
 
     if (key.startsWith("tag:")) {
       key = key.substring(4);
+
+      if (key.startsWith('items:')) {
+        key = key.substring(6);
+      }
+
       return stack.tags.get(key) === true;
-    } else if (key.startsWith("item:")) {
+    } else if (key.startsWith("item:") || key.startsWith("name:")) {
       return stack.name === key.substring(5);
     } else if (key.startsWith("nbt:")) {
       return stack.nbt === key.substring(4);
@@ -212,7 +223,6 @@ export default class StorageManager {
   }
 
   storeAll(storageName: string): number {
-    this.logger.debug(storageName);
     const storage = peripheral.wrap(storageName) as Inventory;
 
     if (!storage) {
@@ -332,10 +342,24 @@ export default class StorageManager {
     }
 
     // We gotta iterate through everything anyways so why not do it this way?
-    return this.list().find((resource) => this.testKey(key, resource))?.count ?? 0;
+    return this.findItemByKey(key).reduce((acc: number, v: StorageLocation) => acc + v.count, 0);
   }
 
-  getMaxCraftable(recipe: Recipe): number {
+  _resolveRecipe(recipe: string|Recipe): Recipe {
+    if (typeof recipe === 'string') {
+      if (!this.recipeManager.has(recipe)) {
+        throw new Error('Could not find recipe: ' + recipe);
+      }
+
+      return this.recipeManager.get(recipe) as Recipe;
+    }
+    
+    return recipe;
+  }
+
+  getMaxCraftable(recipe: Recipe|string): number {
+    recipe = this._resolveRecipe(recipe);
+
     // Group input items
     const input = new LuaMap<string, number>();
 
@@ -354,8 +378,11 @@ export default class StorageManager {
     return Math.floor(count);
   }
 
-  craft(recipe: Recipe, count: number): number {
-    const crafter = this.crafters.find((x) => x.type === recipe.type);
+  craft(recipe: Recipe|string, count: number): number {
+    recipe = this._resolveRecipe(recipe);
+
+    const recipeType = recipe.type; // gotta do this outside the lambda because the compiler hates it otherwise
+    const crafter = this.crafters.find((x) => x.type === recipeType);
 
     if (!crafter) {
       this.logger.error(`Missing crafter for "${recipe.name}"`);
