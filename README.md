@@ -12,3 +12,4 @@
  - [x] Caching
  - [x] Defragmenting
  - [x] Networking
+ - [x] Asynchronous RPC server
