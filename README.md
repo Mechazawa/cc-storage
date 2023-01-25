@@ -1,6 +1,6 @@
  cc-storage
  ---------
-Computercraft extensible storage system
+**This is still a work in progress and not ready for usage**
 
 ## Documentation:
 
