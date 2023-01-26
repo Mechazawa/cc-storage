@@ -21,6 +21,10 @@ export default class StateManager {
   }
 
   load<T extends Serializable>(C: { deserialize(input: LuaMap<string, any>): T }, fallback: T): T {
+    if (!this.found()) {
+      return fallback;
+    }
+
     try {
       const file = fs.open(this.fileName, "r") as ReadHandle;
       const state = textutils.unserialise(file.readAll() ?? "{}") as LuaMap<string, any>;
@@ -43,5 +47,9 @@ export default class StateManager {
 
   cleanup() {
     fs.delete(this.fileName);
+  }
+
+  found(): boolean {
+    return fs.exists(this.fileName);
   }
 }

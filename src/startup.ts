@@ -3,31 +3,28 @@ import { DeviceType } from "./Config";
 import StateManager from "./StateManager";
 import Server from "./apps/Server";
 import App from "./apps/App";
+import setup from "./setup";
+import Crafter from "./apps/Crafter";
 
-const lockFileName = "running.lock";
+const configFile = new ConfigFile("config.json")
 
-const config = new ConfigFile("config.json").load();
-const recovering = fs.exists(lockFileName);
+let config = configFile.load();
+
+if (config === undefined) {
+  config = setup();
+  configFile.save(config);
+}
 
 const stateManager = new StateManager();
-
-if (!recovering) {
-  const lockFile = fs.open(lockFileName, "w") as WriteHandle;
-
-  lockFile.write("" + os.epoch("utc"));
-  lockFile.close();
-} else {
-  print("!!DETECTED UNEXPECTED SHUTDOWN!!");
-}
 
 let app: App;
 
 switch (config.type) {
   case DeviceType.SERVER:
-    app = new Server(config);
-    app = recovering ? stateManager.load(Server, app) : new Server(config);
+    app = stateManager.load(Server, new Server(config))
     break;
   case DeviceType.CRAFTER:
+    app = stateManager.load(Crafter, new Crafter(config))
   case DeviceType.CLIENT:
   default:
     throw new Error("Invalid config type: " + config.type);
@@ -47,7 +44,6 @@ parallel.waitForAny(
   }
 );
 
-fs.delete(lockFileName);
 stateManager.cleanup();
 
 print("Exited safely");

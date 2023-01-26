@@ -6,7 +6,7 @@ export enum DeviceType {
   CRAFTER = "crafter",
 }
 
-export interface AppConfig {
+interface BaseConfig {
   hostname: string;
   type: DeviceType;
   storage: string[];
@@ -16,18 +16,19 @@ export interface AppConfig {
 }
 
 type minutes = number;
+export type AppConfig = ServerConfig | ClientConfig | CrafterConfig;
 
-export interface ServerConfig extends AppConfig {
+export interface ServerConfig extends BaseConfig {
   type: DeviceType.SERVER;
   defragInterval: minutes;
 }
 
-export interface ClientConfig extends AppConfig {
+export interface ClientConfig extends BaseConfig {
   type: DeviceType.CLIENT;
   host: string;
 }
 
-export interface CrafterConfig extends AppConfig {
+export interface CrafterConfig extends BaseConfig {
   type: DeviceType.CRAFTER;
   recipeTypes: RecipeType[];
 }

@@ -40,4 +40,12 @@ export default class Crafter extends App {
       },
     });
   }
+
+  serialise(): LuaMap<string, any> {
+    return new LuaMap<string, any>();
+  }
+
+  static deserialize(input: LuaMap<string, any>): Crafter {
+    return new this(input.get("config"));
+  }
 }
