@@ -116,7 +116,7 @@ export default class Queue<T extends object> extends Serializable {
       const keyType = typeof this.handler[methodName];
 
       if (keyType === "function") {
-        // note that I'm not placing the method in a temp 
+        // note that I'm not placing the method in a temp
         // var because it breaks the self reference in lua.
         const output = (this.handler[methodName] as Function)(...this.running.params);
 

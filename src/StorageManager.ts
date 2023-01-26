@@ -208,7 +208,7 @@ export default class StorageManager {
     if (key.startsWith("tag:")) {
       key = key.substring(4);
 
-      if (key.startsWith('items:')) {
+      if (key.startsWith("items:")) {
         key = key.substring(6);
       }
 
@@ -345,26 +345,26 @@ export default class StorageManager {
     return this.findItemByKey(key).reduce((acc: number, v: StorageLocation) => acc + v.count, 0);
   }
 
-  _resolveRecipe(recipe: string|Recipe): Recipe {
-    if (typeof recipe === 'string') {
+  _resolveRecipe(recipe: string | Recipe): Recipe {
+    if (typeof recipe === "string") {
       if (!this.recipeManager.has(recipe)) {
-        throw new Error('Could not find recipe: ' + recipe);
+        throw new Error("Could not find recipe: " + recipe);
       }
 
       return this.recipeManager.get(recipe) as Recipe;
     }
-    
+
     return recipe;
   }
 
-  getMaxCraftable(recipe: Recipe|string): number {
+  getMaxCraftable(recipe: Recipe | string): number {
     recipe = this._resolveRecipe(recipe);
 
     // Group input items
     const input = new LuaMap<string, number>();
 
     for (const item of recipe.getInput()) {
-      input.set(item, (input.get('item') ?? 0) + 1);
+      input.set(item, (input.get("item") ?? 0) + 1);
     }
 
     let count = Infinity;
@@ -378,7 +378,7 @@ export default class StorageManager {
     return Math.floor(count);
   }
 
-  craft(recipe: Recipe|string, count: number): number {
+  craft(recipe: Recipe | string, count: number): number {
     recipe = this._resolveRecipe(recipe);
 
     const recipeType = recipe.type; // gotta do this outside the lambda because the compiler hates it otherwise
