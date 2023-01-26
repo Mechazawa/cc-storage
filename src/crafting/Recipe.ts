@@ -2,9 +2,12 @@ export enum RecipeType {
   CRAFTING_TABLE = "crafting",
 }
 
-export default interface Recipe {
+export interface TransferableRecipe {
   readonly type: RecipeType;
   name: string;
+}
+
+export default interface Recipe extends TransferableRecipe {
   getInput(): string[];
   getOutput(): string[];
 

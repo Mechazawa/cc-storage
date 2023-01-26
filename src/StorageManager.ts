@@ -1,9 +1,9 @@
 import Cache from "./Cache";
+import CachedInventoryProxy from "./CachedInventoryProxy";
 import Logger from "./Logger";
+import RPC from "./RPC";
 import Recipe, { RecipeType } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
-import RPC from "./RPC";
-import CachedInventoryProxy from "./CachedInventoryProxy";
 
 export interface StorageLocation {
   peripheral: string;
@@ -27,6 +27,7 @@ export interface Crafter {
   type: RecipeType;
 }
 
+// todo: cc yields when communicating with peripherals, so running in parralel makes the application go brrrrr...
 export default class StorageManager {
   storagePool: LuaMap<string, CachedInventoryProxy> = new LuaMap<string, CachedInventoryProxy>();
   logger: Logger;
@@ -312,10 +313,13 @@ export default class StorageManager {
 
   size(): number {
     let total = 0;
+    const fns = [];
 
     for (const [_, storage] of this.storagePool) {
-      total += storage.size();
+      fns.push(() => total += storage.size());
     }
+
+    parallel.waitForAll(...fns);
 
     return total;
   }
@@ -326,12 +330,17 @@ export default class StorageManager {
 
   used(): number {
     let total = 0;
+    const fns = [];
 
     for (const [_, storage] of this.storagePool) {
-      for (const [_, __] of storage.list()) {
-        total++;
-      }
+      fns.push(() => {
+        for (const [_, __] of storage.list()) {
+          total++;
+        }
+      });
     }
+
+    parallel.waitForAll(...fns);
 
     return total;
   }
@@ -400,6 +409,7 @@ export default class StorageManager {
       }
     }
 
+    // todo: make the crafter take the items out of storage, not the other way round
     const itemLocations = inputItems.map((key) => this.findItemByKey(key, count)).flat();
 
     for (const location of itemLocations) {

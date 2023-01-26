@@ -105,9 +105,10 @@ export default class Server extends App {
       craft: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "craft", params, callback, callbackArgs: [request] });
       },
-      findItemByKey: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "findItemByKey", params, callback, callbackArgs: [request] });
-      },
+      // For debugging
+      // findItemByKey: (request, callback, ...params: any[]) => {
+      //   this.queue.push({ method: "findItemByKey", params, callback, callbackArgs: [request] });
+      // },
       getMaxCraftable: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "getMaxCraftable", params, callback, callbackArgs: [request] });
       },

@@ -20,7 +20,9 @@ export default class Crafter extends App {
 
     this.logger.info(`Loaded ${recipeCount} recipes`);
 
-    parallel.waitForAny(() => this.runRPC());
+    parallel.waitForAny(
+      () => this.runRPC(),
+    );
   }
 
   runRPC() {
