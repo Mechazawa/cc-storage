@@ -385,9 +385,6 @@ export default class StorageManager {
     const crafter = this.findCrafter(recipe.type);
     const inputItems = recipe.getInput();
 
-    this.logger.debug("Found crafter:");
-    this.logger.debug(crafter);
-
     for (const item of inputItems) {
       count = Math.min(this.count(item), count);
 

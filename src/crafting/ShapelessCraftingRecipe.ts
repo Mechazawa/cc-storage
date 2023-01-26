@@ -18,15 +18,20 @@ export default class ShapelessCraftingRecipe implements Recipe {
   }
 
   craft(mapping: string[], count: number = 1): boolean {
+    const usedSlots = [];
+
     for (let i = 0; i < this.grid.length; i++) {
-      turtle.select(i + 1);
+      const slot = i + 1;
+
+      usedSlots.push(slot)
+      turtle.select(slot);
       turtle.suck(count);
     }
 
     const output = turtle.craft(count)[0];
-
-    for (let i = 1; i <= this.MAX_HEIGHT * this.MAX_WIDTH; i++) {
-      turtle.select(i);
+  
+    for (const slot of usedSlots) {
+      turtle.select(slot);
       turtle.drop();
     }
 
