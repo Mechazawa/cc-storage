@@ -3,7 +3,7 @@ import { RecipeType } from "./crafting/Recipe";
 
 const deviceTypes = Object.values(DeviceType) as string[];
 
-function deviceCompleteFn(partial: string) {
+function deviceCompleteFn(partial: string): string[] {
   return deviceTypes.filter((t) => t.toLowerCase().startsWith(partial)).map((t) => t.substring(partial.length));
 }
 
