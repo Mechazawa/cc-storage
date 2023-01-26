@@ -18,43 +18,61 @@ export default class ShapedCraftingRecipe implements Recipe {
     this.grid = grid;
   }
 
-  craft(mapping: string[], count: number = 1, workSlot = 16): boolean {
-    const progress: number[][] = [];
+  craft(mapping: string[], count: number = 1): boolean {
+    const progress: boolean[][] = [];
 
     for (let i = 0; i < this.MAX_HEIGHT; i++) {
       const row = [];
       for (let j = 0; j < this.MAX_WIDTH; j++) {
-        row.push(0);
+        row.push(false);
       }
 
       progress.push(row);
     }
 
+    const usedSlots = [];
+
+    (new Logger()).debug(count);
+
     for (const item of mapping) {
-      turtle.select(workSlot);
-      turtle.suck();
+      let found = false;
 
-      for (let i = 0; i < this.MAX_HEIGHT && turtle.getItemCount() > 0; i++) {
-        for (let j = 0; j < this.MAX_WIDTH && this.grid[i]?.[j] !== undefined && turtle.getItemCount() > 0; i++) {
-          if (progress[i][j] < count && this.grid[i][j] !== '') {
-            const transferCount = count - progress[i][j];
+      for (let i = 0; !found && i < this.MAX_HEIGHT; i++) {
+        for (let j = 0; !found && j < this.MAX_WIDTH; j++) {
+          const gridItem = this.grid[i]?.[j];
 
-            progress[i][j] += turtle.getItemCount();
+          if (progress[i][j] === false && gridItem === item) {
+            const slot = 1 + j + i * TURTLE_INVENTORY_COLS;
 
-            turtle.transferTo(1 + j + i * TURTLE_INVENTORY_COLS, transferCount);
+            turtle.select(slot);
+            turtle.suck(count);
+            usedSlots.push(slot);
+
+            progress[i][j] = true;
+            found = true;
           }
         }
+      }
+
+      if (!found) {
+        throw new Error(`Could not find where to place ${item}`);
       }
     }
 
     const output = turtle.craft(count)[0];
 
-    for (let i = 1; i <= 16; i++) {
-      turtle.select(i);
+    // No need to iterate over all slots if the crafting was successful
+    if (output) {
+      turtle.drop();
+      return true;
+    }
+
+    for(const slot of usedSlots) {
+      turtle.select(slot);
       turtle.drop();
     }
 
-    return output;
+    return false;
   }
 
   getInput(): string[] {

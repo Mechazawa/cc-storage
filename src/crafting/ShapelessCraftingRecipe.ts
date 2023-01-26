@@ -18,8 +18,10 @@ export default class ShapelessCraftingRecipe implements Recipe {
   }
 
   craft(mapping: string[], count: number = 1): boolean {
-    turtle.select(0);
-    while (turtle.suck()[0]);
+    for (let i = 0; i < this.grid.length; i++) {
+      turtle.select(i + 1);
+      turtle.suck(count);
+    }
 
     const output = turtle.craft(count)[0];
 

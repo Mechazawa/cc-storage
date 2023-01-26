@@ -399,17 +399,19 @@ export default class StorageManager {
 
     // todo: make the crafter take the items out of storage, not the other way round
     const itemLocations = inputItems.map((key) => this.findItemByKey(key, count)).flat();
+    let slot = 1;
 
     for (const location of itemLocations) {
-      this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count);
+      this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
+      slot++;
     }
 
-    RPC.call(crafter.host, "craft", [recipe.name, inputItems]);
+    const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, count]);
 
     this.storeAll(crafter.storageName);
 
     this.cache.delete("acc:*");
 
-    return count;
+    return success ? count : 0;
   }
 }
