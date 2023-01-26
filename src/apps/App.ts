@@ -15,7 +15,7 @@ export default abstract class App extends Serializable {
   }
 
   abstract run(): void;
-  
+
   teardown(): void {
     rednet.unhost(RPC.protocol);
   }

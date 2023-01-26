@@ -32,7 +32,7 @@ export default class ShapedCraftingRecipe implements Recipe {
 
     const usedSlots = [];
 
-    (new Logger()).debug(count);
+    new Logger().debug(count);
 
     for (const item of mapping) {
       let found = false;
@@ -67,7 +67,7 @@ export default class ShapedCraftingRecipe implements Recipe {
       return true;
     }
 
-    for(const slot of usedSlots) {
+    for (const slot of usedSlots) {
       turtle.select(slot);
       turtle.drop();
     }

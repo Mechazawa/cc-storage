@@ -51,7 +51,7 @@ export default class StorageManager {
 
   findCrafter(type: RecipeType): CrafterHost {
     // Todo fix multi return unpacking
-    return RPC.broadcastCall('lookupCrafter', [type], 5)[1];
+    return RPC.broadcastCall("lookupCrafter", [type], 5)[1];
   }
 
   addStorage(storageName: string): boolean {

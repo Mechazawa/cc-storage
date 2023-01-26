@@ -54,7 +54,7 @@ export default class Crafter extends App {
 
   serialise(): LuaMap<string, any> {
     return {
-      config: this.config
+      config: this.config,
     } as object as LuaMap<string, any>;
   }
 

@@ -1,4 +1,4 @@
-import { pretty_print } from 'cc.pretty';
+import { pretty_print } from "cc.pretty";
 
 export default class Logger {
   timestampFormat: string = "[%H:%M:%S] ";
@@ -41,12 +41,12 @@ export default class Logger {
     this._writeLine(`[${tag}]${message}`);
   }
 
-  debug(message: any, options?: {function_args?: boolean, function_source?: boolean}, ribbon_frac?: number): void {
+  debug(message: any, options?: { function_args?: boolean; function_source?: boolean }, ribbon_frac?: number): void {
     if (!this.showDebug) {
       return;
     }
-    
-    if (typeof message === 'string') {
+
+    if (typeof message === "string") {
       this.log(message, colors.purple, "D");
     } else {
       pretty_print(message, options, ribbon_frac);
