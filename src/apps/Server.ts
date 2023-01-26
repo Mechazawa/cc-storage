@@ -2,7 +2,7 @@ import { ServerConfig } from "../Config";
 import Queue from "../Queue";
 import StorageManager from "../StorageManager";
 import RecipeManager from "../crafting/RecipeManager";
-import initCraftingRecipes from "../crafting/recipes/craftingTable";
+import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import App from "./App";
 import RPC from "../RPC";
 import Cache from "../Cache";
@@ -48,7 +48,7 @@ export default class Server extends App {
   }
 
   run(): void {
-    initCraftingRecipes(this.storage.recipeManager);
+    loadCraftingTableRecipes(this.storage.recipeManager);
 
     const recipeCount = Object.keys(this.storage.recipeManager.recipes).length;
 
@@ -72,7 +72,7 @@ export default class Server extends App {
 
   runRPC() {
     RPC.openModems();
-    RPC.host("storage", {
+    RPC.host(this.config.hostname ?? "storage", {
       ping: (request, callback) => callback(request, "pong"),
       defragment: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "defragment", params, callback, callbackArgs: [request] });

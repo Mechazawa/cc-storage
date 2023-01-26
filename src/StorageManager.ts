@@ -406,7 +406,7 @@ export default class StorageManager {
       this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count);
     }
 
-    RPC.call(crafter.host, "craft", { recipeName: recipe.name, inputItems });
+    RPC.call(crafter.host, "craft", [recipe.name, inputItems]);
 
     this.storeAll(crafter.storageName);
 

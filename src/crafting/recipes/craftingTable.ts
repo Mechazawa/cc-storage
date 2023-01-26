@@ -2,7 +2,7 @@ import RecipeManager from "../RecipeManager";
 import ShapedCraftingRecipe from "../ShapedCraftingRecipe";
 import ShapelessCraftingRecipe from "../ShapelessCraftingRecipe";
 
-export default function (manager: RecipeManager) {
+export default function loadCraftingTableRecipes(manager: RecipeManager) {
   manager.add(
     new ShapedCraftingRecipe("create:mechanical_crafting/crushing_wheel", "item:create:crushing_wheel", 2, [
       ["", "item:create:andesite_alloy", "item:create:andesite_alloy", "item:create:andesite_alloy", ""],

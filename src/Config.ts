@@ -7,6 +7,7 @@ export enum DeviceType {
 }
 
 export interface AppConfig {
+  hostname: string;
   type: DeviceType;
   storage: string[];
 
