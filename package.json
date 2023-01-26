@@ -13,7 +13,7 @@
     "typescript-to-lua": "^1.12.0"
   },
   "dependencies": {
-    "@mechazawa/cc-types": "^1.0.1",
+    "@mechazawa/cc-types": "file:../cc-types",
     "@typescript-to-lua/language-extensions": "^1.0.0",
     "lua-types": "^2.13.1",
     "prettier": "^2.8.3"

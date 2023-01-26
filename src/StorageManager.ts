@@ -21,7 +21,7 @@ export interface Resource {
   count: number;
 }
 
-export interface Crafter {
+export interface CrafterHost {
   storageName: string;
   host: number;
   type: RecipeType;
@@ -33,13 +33,11 @@ export default class StorageManager {
   logger: Logger;
   recipeManager: RecipeManager;
   cache: Cache;
-  crafters: Crafter[];
 
   constructor(recipeManager: RecipeManager, logger?: Logger) {
     this.logger = logger ?? new Logger();
     this.cache = new Cache();
     this.recipeManager = recipeManager;
-    this.crafters = [];
 
     // todo: use some sort of decorator
     this.count = this.cache.memoize("acc:count", this.count.bind(this));
@@ -51,17 +49,9 @@ export default class StorageManager {
     this.list = this.cache.memoize("acc:list", this.list.bind(this));
   }
 
-  registerCrafter(storageName: string, host: number, type: RecipeType): boolean {
-    const exists =
-      this.crafters.findIndex((c) => c.host === host && c.storageName === storageName && c.type === type) !== -1;
-
-    if (exists) {
-      return false;
-    }
-
-    this.crafters.push({ storageName, host, type });
-
-    return true;
+  findCrafter(type: RecipeType): CrafterHost {
+    // Todo fix multi return unpacking
+    return RPC.broadcastCall('lookupCrafter', [type], 5)[1];
   }
 
   addStorage(storageName: string): boolean {
@@ -259,6 +249,7 @@ export default class StorageManager {
     return total;
   }
 
+  // todo: not updating cache properly when withdrawling all all
   withdrawl(storageName: string, key: string, count: number, slot?: number): number {
     let sent = 0;
     const sources = this.findItemByKey(key, count);
@@ -387,18 +378,15 @@ export default class StorageManager {
     return Math.floor(count);
   }
 
-  craft(recipe: Recipe | string, count: number): number {
+  craft(recipe: Recipe | string, count: number = 1): number {
     recipe = this._resolveRecipe(recipe);
 
     const recipeType = recipe.type; // gotta do this outside the lambda because the compiler hates it otherwise
-    const crafter = this.crafters.find((x) => x.type === recipeType);
-
-    if (!crafter) {
-      this.logger.error(`Missing crafter for "${recipe.name}"`);
-      return 0;
-    }
-
+    const crafter = this.findCrafter(recipe.type);
     const inputItems = recipe.getInput();
+
+    this.logger.debug("Found crafter:");
+    this.logger.debug(crafter);
 
     for (const item of inputItems) {
       count = Math.min(this.count(item), count);

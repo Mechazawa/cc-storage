@@ -1,5 +1,6 @@
 import { AppConfig } from "../Config";
 import Logger from "../Logger";
+import RPC from "../RPC";
 import Serializable from "../Serializable";
 
 export default abstract class App extends Serializable {
@@ -14,6 +15,10 @@ export default abstract class App extends Serializable {
   }
 
   abstract run(): void;
+  
+  teardown(): void {
+    rednet.unhost(RPC.protocol);
+  }
 
   static generateConfig(): AppConfig {
     throw new Error("unimplemented generateConfig");

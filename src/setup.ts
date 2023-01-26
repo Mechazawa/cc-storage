@@ -2,6 +2,7 @@ import { AppConfig, ClientConfig, CrafterConfig, DeviceType, ServerConfig } from
 import { RecipeType } from "./crafting/Recipe";
 
 const deviceTypes = Object.values(DeviceType) as string[];
+const invalidPeripherals = ["bottom", "top", "left", "right", "front", "back"];
 
 function deviceCompleteFn(partial: string): string[] {
   return deviceTypes.filter((t) => t.toLowerCase().startsWith(partial)).map((t) => t.substring(partial.length));
@@ -17,7 +18,10 @@ export default function setup(): AppConfig {
   write("Press return to continue");
   read();
 
-  const storage = peripheral.find("inventory").map((x) => peripheral.getName(x));
+  const storage = peripheral
+    .find("inventory")
+    .map((x) => peripheral.getName(x))
+    .filter((x) => !invalidPeripherals.includes(x));
 
   print(`Found ${storage.length} storage containers`);
 

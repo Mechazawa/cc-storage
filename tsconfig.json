@@ -8,6 +8,7 @@
       "@typescript-to-lua/language-extensions", 
       "@mechazawa/cc-types",
       "lua-types/core/string", 
+      "lua-types/core/modules", 
       "lua-types/special/5.0"
     ],
     "strict": true,

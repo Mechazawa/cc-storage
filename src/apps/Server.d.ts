@@ -14,7 +14,7 @@ export interface ServerRPC extends WrappedRPC {
   free(): number;
   used(): number;
   count(key?: string): number;
-  craft(recipeName: string, count: number): number;
+  craft(recipeName: string, count?: number): number;
   getMaxCraftable(recipeName: string): number;
   findRecipes(name: string): TransferableRecipe[];
   flushCache(): boolean;

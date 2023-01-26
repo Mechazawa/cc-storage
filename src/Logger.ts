@@ -1,3 +1,5 @@
+import { pretty_print } from 'cc.pretty';
+
 export default class Logger {
   timestampFormat: string = "[%H:%M:%S] ";
   file?: WriteHandle;
@@ -39,9 +41,15 @@ export default class Logger {
     this._writeLine(`[${tag}]${message}`);
   }
 
-  debug(message: string): void {
-    if (this.showDebug) {
+  debug(message: any, options?: {function_args?: boolean, function_source?: boolean}, ribbon_frac?: number): void {
+    if (!this.showDebug) {
+      return;
+    }
+    
+    if (typeof message === 'string') {
       this.log(message, colors.purple, "D");
+    } else {
+      pretty_print(message, options, ribbon_frac);
     }
   }
 

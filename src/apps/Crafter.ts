@@ -3,6 +3,8 @@ import RecipeManager from "../crafting/RecipeManager";
 import App from "./App";
 import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import RPC from "../RPC";
+import { RecipeType } from "../crafting/Recipe";
+import { CrafterHost } from "../StorageManager";
 
 export default class Crafter extends App {
   recipeManager: RecipeManager;
@@ -25,7 +27,7 @@ export default class Crafter extends App {
 
   runRPC() {
     RPC.openModems();
-    RPC.host(this.config.hostname ?? "crafter", {
+    RPC.host(this.config.hostname, {
       ping: () => "pong",
       craft: (request, callback, recipeName: string, input: string[], count?: number) => {
         const recipe = this.recipeManager.get(recipeName);
@@ -36,11 +38,24 @@ export default class Crafter extends App {
 
         return recipe.craft(input, count);
       },
+      lookupCrafter: (request, callback, type: RecipeType): CrafterHost | undefined => {
+        const recipeTypes = (this.config as CrafterConfig).recipeTypes;
+
+        if (recipeTypes.includes(type)) {
+          return {
+            host: os.getComputerID(),
+            storageName: this.config.storage[0],
+            type,
+          };
+        }
+      },
     });
   }
 
   serialise(): LuaMap<string, any> {
-    return new LuaMap<string, any>();
+    return {
+      config: this.config
+    } as object as LuaMap<string, any>;
   }
 
   static deserialize(input: LuaMap<string, any>): Crafter {

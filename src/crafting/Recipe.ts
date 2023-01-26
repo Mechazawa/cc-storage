@@ -7,6 +7,10 @@ export interface TransferableRecipe {
   name: string;
 }
 
+// todo: move somewhere more sane
+export const TURTLE_INVENTORY_ROWS = 4;
+export const TURTLE_INVENTORY_COLS = 4;
+
 export default interface Recipe extends TransferableRecipe {
   getInput(): string[];
   getOutput(): string[];

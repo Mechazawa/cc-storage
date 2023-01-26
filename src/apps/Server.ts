@@ -73,7 +73,7 @@ export default class Server extends App {
 
   runRPC() {
     RPC.openModems();
-    RPC.host(this.config.hostname ?? "storage", {
+    RPC.host(this.config.hostname, {
       ping: (request, callback) => callback(request, "pong"),
       defragment: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "defragment", params, callback, callbackArgs: [request] });

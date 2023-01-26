@@ -25,6 +25,7 @@ switch (config.type) {
     break;
   case DeviceType.CRAFTER:
     app = stateManager.load(Crafter, new Crafter(config));
+    break;
   case DeviceType.CLIENT:
   default:
     throw new Error("Invalid config type: " + config.type);

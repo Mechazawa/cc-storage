@@ -59,9 +59,11 @@ export default class RPC {
       /**
        * async/await is janky at best in the lua
        * transpiler, that's why I'm using callbacks.
+       * It also allows me to keep the state seperate
+       * on the queue which makes serialisation possible.
        */
 
-      if (typeof request === "object") {
+      if (typeof request === "object" && !request.has("error") && !request.has("result")) {
         const id: ID = request.get("id");
 
         try {
@@ -107,6 +109,18 @@ export default class RPC {
     rednet.send(request.client, response, "rpc");
   }
 
+  /**
+   * @returns First response received
+   */
+  static broadcastCall(method: string, args?: any[] | any, timeout?: number): any {
+    const id = this._generate_id();
+    const request = { id, method, args };
+
+    rednet.broadcast(request, this.protocol);
+
+    return this._expect(undefined, id, timeout);
+  }
+
   static call(client: number, method: string, args?: any[] | any, timeout?: number): any {
     const id = this._generate_id();
     const request = { id, method, args };
@@ -116,7 +130,7 @@ export default class RPC {
     return this._expect(client, id, timeout);
   }
 
-  static _expect(client: number, id: ID, timeout?: number): any {
+  static _expect(client: number | undefined, id: ID, timeout?: number): any {
     while (true) {
       const [from, body] = rednet.receive(this.protocol, timeout);
 
@@ -125,7 +139,7 @@ export default class RPC {
       }
 
       // I hate that there is no continue statement in lua
-      if (from === client && typeof body === "object" && body.get("id") === id) {
+      if (from === (client ?? from) && typeof body === "object" && body.get("id") === id) {
         if (body.has("error")) {
           throw body.get("error");
         } else {
@@ -135,7 +149,13 @@ export default class RPC {
     }
   }
 
-  static notify(client: number, method: string, args: any[]): void {
+  static broadcastNotify(method: string, args?: any[] | any): any {
+    const request = { method, args };
+
+    rednet.broadcast(request, this.protocol);
+  }
+
+  static notify(client: number, method: string, args?: any[]): void {
     const request = { method, args };
 
     rednet.send(client, request, this.protocol);

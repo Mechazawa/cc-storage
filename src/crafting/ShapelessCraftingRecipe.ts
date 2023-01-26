@@ -17,7 +17,7 @@ export default class ShapelessCraftingRecipe implements Recipe {
     this.grid = grid;
   }
 
-  craft(mapping: string[], count?: number): boolean {
+  craft(mapping: string[], count: number = 1): boolean {
     turtle.select(0);
     while (turtle.suck()[0]);
 
