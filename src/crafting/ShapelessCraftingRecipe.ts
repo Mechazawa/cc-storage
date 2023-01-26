@@ -23,13 +23,13 @@ export default class ShapelessCraftingRecipe implements Recipe {
     for (let i = 0; i < this.grid.length; i++) {
       const slot = i + 1;
 
-      usedSlots.push(slot)
+      usedSlots.push(slot);
       turtle.select(slot);
       turtle.suck(count);
     }
 
     const output = turtle.craft(count)[0];
-  
+
     for (const slot of usedSlots) {
       turtle.select(slot);
       turtle.drop();
