@@ -407,6 +407,8 @@ export default class StorageManager {
 
     this.storeAll(crafter.storageName);
 
+    // todo: this doesn't seem to clear the cache properly... WHY!?
+    this.logger.debug("craft cache acc del");
     this.cache.delete("acc:*");
 
     return success ? count : 0;

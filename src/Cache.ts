@@ -1,3 +1,4 @@
+import Logger from "./Logger";
 import Serializable from "./Serializable";
 
 export default class Cache extends Serializable {
@@ -11,16 +12,16 @@ export default class Cache extends Serializable {
     this.cache = new LuaMap<string, any>();
   }
 
-  delete(name: string): boolean {
+  delete(name: string): number {
     if (name.endsWith("*")) {
       name = name.slice(0, name.length - 1);
 
       const keys = Object.keys(this.cache).filter((key) => key.startsWith(name));
 
-      return keys.map((key) => this.cache.delete(key)).includes(true);
+      return keys.map((key) => this.cache.delete(key)).filter((x) => x).length;
     }
 
-    return this.cache.delete(name);
+    return this.cache.delete(name) ? 1 : 0;
   }
 
   get(name: string): any | undefined {
