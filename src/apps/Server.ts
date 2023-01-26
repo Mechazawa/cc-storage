@@ -61,6 +61,7 @@ export default class Server extends App {
     }
 
     this.logger.info(`Initialised ${storageCount} storage containers`);
+    this.logger.log(`Populating cache...`)
     this.logger.info(`Slots used: ${this.storage.used()}/${this.storage.size()} (${this.storage.count()} items)`);
 
     parallel.waitForAny(
