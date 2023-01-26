@@ -6,7 +6,7 @@ import App from "./apps/App";
 import setup from "./setup";
 import Crafter from "./apps/Crafter";
 
-const configFile = new ConfigFile("config.json")
+const configFile = new ConfigFile("config.json");
 
 let config = configFile.load();
 
@@ -21,10 +21,10 @@ let app: App;
 
 switch (config.type) {
   case DeviceType.SERVER:
-    app = stateManager.load(Server, new Server(config))
+    app = stateManager.load(Server, new Server(config));
     break;
   case DeviceType.CRAFTER:
-    app = stateManager.load(Crafter, new Crafter(config))
+    app = stateManager.load(Crafter, new Crafter(config));
   case DeviceType.CLIENT:
   default:
     throw new Error("Invalid config type: " + config.type);

@@ -16,6 +16,6 @@ export default abstract class App extends Serializable {
   abstract run(): void;
 
   static generateConfig(): AppConfig {
-    throw new Error('unimplemented generateConfig');
-  };
+    throw new Error("unimplemented generateConfig");
+  }
 }

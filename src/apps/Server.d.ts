@@ -1,6 +1,6 @@
-import { WrappedRPC } from '../RPC';
-import { Resource } from '../StorageManager';
-import { TransferableRecipe } from '../crafting/Recipe';
+import { WrappedRPC } from "../RPC";
+import { Resource } from "../StorageManager";
+import { TransferableRecipe } from "../crafting/Recipe";
 
 /** @noSelf */
 export interface ServerRPC extends WrappedRPC {

@@ -17,11 +17,11 @@ export default function setup(): AppConfig {
   write("Press return to continue");
   read();
 
-  const storage = peripheral.find("inventory").map(x => peripheral.getName(x));
+  const storage = peripheral.find("inventory").map((x) => peripheral.getName(x));
 
   print(`Found ${storage.length} storage containers`);
 
-  switch(deviceType) {
+  switch (deviceType) {
     case DeviceType.SERVER:
       return {
         hostname: "storage",
@@ -40,7 +40,7 @@ export default function setup(): AppConfig {
       return {
         hostname: "client",
         type: DeviceType.CLIENT,
-        host: "storage", 
+        host: "storage",
         storage,
       } as ClientConfig;
     default:

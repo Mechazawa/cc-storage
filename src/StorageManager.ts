@@ -316,7 +316,7 @@ export default class StorageManager {
     const fns = [];
 
     for (const [_, storage] of this.storagePool) {
-      fns.push(() => total += storage.size());
+      fns.push(() => (total += storage.size()));
     }
 
     parallel.waitForAll(...fns);
