@@ -9,6 +9,8 @@ import { CrafterHost } from "../StorageManager";
 export default class Crafter extends App {
   recipeManager: RecipeManager;
 
+  declare config: CrafterConfig;
+
   constructor(config: CrafterConfig) {
     super(config);
 

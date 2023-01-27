@@ -1,10 +1,11 @@
 import ConfigFile from "./ConfigFile";
-import { DeviceType } from "./Config";
+import { AppConfig, DeviceType } from "./Config";
 import StateManager from "./StateManager";
 import Server from "./apps/Server";
 import App from "./apps/App";
 import setup from "./setup";
 import Crafter from "./apps/Crafter";
+import Client from "./apps/Client";
 
 const configFile = new ConfigFile("config.json");
 
@@ -27,8 +28,12 @@ switch (config.type) {
     app = stateManager.load(Crafter, new Crafter(config));
     break;
   case DeviceType.CLIENT:
-  default:
-    throw new Error("Invalid config type: " + config.type);
+    app = stateManager.load(Client, new Client(config));
+    break;
+}
+
+if (app === undefined) {
+  throw new Error("Invalid config type: " + config.type);
 }
 
 parallel.waitForAny(

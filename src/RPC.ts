@@ -162,7 +162,8 @@ export default class RPC {
   }
 
   static wrap(client: number, timeout?: number): WrappedRPC {
-    const methods = this.call(client, "?", undefined, timeout);
+    // @todo why wrap!?
+    const [methods] = this.call(client, "?", undefined, timeout) as LuaMultiReturn<string[]>;
     const output: WrappedRPC = {};
 
     for (const method of methods) {

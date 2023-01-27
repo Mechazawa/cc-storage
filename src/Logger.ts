@@ -23,15 +23,15 @@ export default class Logger {
       return;
     }
 
-    const fileName = (x: number) => `${this.fileName}.${x}`
+    const fileName = (x: number) => `${this.fileName}.${x}`;
 
-    for(let i = keep; i > 0; i--) {
+    for (let i = keep; i > 0; i--) {
       if (fs.exists(fileName(i))) {
-        fs.move(fileName(i), fileName(i + 1))
+        fs.move(fileName(i), fileName(i + 1));
       }
     }
 
-    if (fs.exists(fileName(keep + 1))){
+    if (fs.exists(fileName(keep + 1))) {
       fs.delete(fileName(keep + 1));
     }
 

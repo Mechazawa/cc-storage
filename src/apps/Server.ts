@@ -12,6 +12,8 @@ export default class Server extends App {
   queue: Queue<StorageManager>;
   nextDefrag: number = -1;
 
+  declare config: ServerConfig;
+
   constructor(config: ServerConfig) {
     super(config);
 
