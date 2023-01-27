@@ -5,13 +5,18 @@ export enum RecipeType {
 export interface TransferableRecipe {
   readonly type: RecipeType;
   name: string;
+  input: string[];
+  output: string[];
 }
 
 // todo: move somewhere more sane
 export const TURTLE_INVENTORY_ROWS = 4;
 export const TURTLE_INVENTORY_COLS = 4;
 
-export default interface Recipe extends TransferableRecipe {
+export default interface Recipe {
+  readonly type: RecipeType;
+  name: string;
+  
   getInput(): string[];
   getOutput(): string[];
 
