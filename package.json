@@ -4,7 +4,7 @@
     "build": "tstl -p tsconfig.json",
     "dev": "tstl -p tsconfig.json --watch",
     "lint": "prettier --write src",
-    "clean": "rm -r dist"
+    "clean": "rm -r dist; mkdir dist"
   },
   "devDependencies": {
     "glob": "^8.1.0",
