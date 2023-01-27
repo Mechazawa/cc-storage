@@ -3,15 +3,41 @@ import { pretty_print } from "cc.pretty";
 export default class Logger {
   timestampFormat: string = "[%H:%M:%S] ";
   file?: WriteHandle;
+  fileName?: string;
   timestamp: boolean;
   showDebug = true;
 
   constructor(timestamp: boolean = false, fileName?: string) {
-    if (fileName) {
-      this.file = fs.open(fileName, "a") as WriteHandle;
+    this.timestamp = timestamp;
+    this.fileName = fileName;
+
+    if (!fileName) {
+      return;
     }
 
-    this.timestamp = timestamp;
+    this.file = fs.open(fileName, "a") as WriteHandle;
+  }
+
+  rotate(keep: number = 10) {
+    if (this.fileName === undefined) {
+      return;
+    }
+
+    const fileName = (x: number) => `${this.fileName}.${x}`
+
+    for(let i = keep; i > 0; i--) {
+      if (fs.exists(fileName(i))) {
+        fs.move(fileName(i), fileName(i + 1))
+      }
+    }
+
+    if (fs.exists(fileName(keep + 1))){
+      fs.delete(fileName(keep + 1));
+    }
+
+    this.file?.close();
+    fs.move(this.fileName, fileName(1));
+    this.file = fs.open(this.fileName, "a") as WriteHandle;
   }
 
   _write(message: string): void {

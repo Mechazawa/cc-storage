@@ -13,6 +13,7 @@ interface BaseConfig {
 
   logTimestamp?: boolean;
   logFile?: string;
+  logRotate?: number;
 }
 
 type minutes = number;

@@ -12,6 +12,10 @@ export default abstract class App extends Serializable {
 
     this.config = config;
     this.logger = new Logger(config.logTimestamp, config.logFile);
+
+    if (config.logRotate !== undefined && config.logRotate > 0) {
+      this.logger.rotate(config.logRotate);
+    }
   }
 
   abstract run(): void;

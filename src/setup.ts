@@ -9,7 +9,7 @@ function deviceCompleteFn(partial: string): string[] {
 }
 
 export default function setup(): AppConfig {
-  print("No config found, starting setup procedure");
+  print("No valid config found, starting setup procedure");
   write("Config type: ");
 
   const deviceType = read(undefined, undefined, (x) => deviceCompleteFn(x));
