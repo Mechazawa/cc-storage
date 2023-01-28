@@ -191,6 +191,8 @@ export default class Logger {
             break;
         }
 
+        write(" ");
+
         index++;
       } else {
         align = col;

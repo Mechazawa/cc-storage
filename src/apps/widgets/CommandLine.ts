@@ -16,6 +16,21 @@ export class CommandLine {
   history: string[] = [];
   cache = new Cache();
 
+  prefixMap = [
+    ["minecraft", "mc"],
+    ["chipped", "ch"],
+    ["computercraft", "cc"],
+    ["create", "cr"],
+    ["farmersdelight", "fd"],
+    ["betteranimalsplus", "ap"],
+    ["mcwbridges", "mcwb"],
+    ["mcwfences", "mcwf"],
+    ["mcwdoors", "mcwd"],
+    ["mcwpaths", "mcwp"],
+    ["mcwroofs", "mcwr"],
+    ["mcwwindows", "mcww"],
+  ];
+
   constructor(server: ServerRPC, storageName: string) {
     this.server = server;
     this.storageName = storageName;
@@ -37,6 +52,27 @@ export class CommandLine {
         .filter((s) => s.startsWith(partial))
         .map((s) => s.substring(partial.length));
     }
+  }
+
+  _shortenPrefix(str: string): string {
+    for (const [long, short] of this.prefixMap) {
+      str = str.replace(long + ":", short + ":");
+    }
+
+    return str;
+  }
+
+  _expandPrefix(str: string): string {
+    for (const [long, short] of this.prefixMap) {
+      let old = str;
+      str = str.replace(short + ":", long + ":");
+
+      if (str !== old) {
+        return str;
+      }
+    }
+
+    return str;
   }
 
   exec(commandLine: string = ""): string {
@@ -80,59 +116,73 @@ Total ${this.server.count()} items
       {
         keywords: ["list", "l"],
         completeFn: (partial: string) => {
+          partial = partial.toLowerCase();
+
           return this.cache
             .remember("list", () => this.server.list())
-            .map((resource) => resource.name)
-            .filter((name) => name.startsWith(partial));
+            .flatMap((resource) => [resource.name, resource.displayName, this._shortenPrefix(resource.name)])
+            .filter((name) => name.toLowerCase().startsWith(partial));
         },
-        action: (name: string) => {
+        action: (name: string = "") => {
+          name = name.toLowerCase();
+
           const rows = this.cache
             .remember("list", () => this.server.list())
-            .filter((resource) => resource.name.startsWith(name ?? ""))
+            .filter(
+              (resource) =>
+                resource.name.startsWith(name ?? "") ||
+                resource.displayName.toLowerCase().startsWith(name ?? "") ||
+                this._shortenPrefix(resource.name).startsWith(name ?? "")
+            )
             .sort((a, b) => b.count - a.count)
-            .map((r) => [r.count, r.name.replace('minecraft:', 'mc:'), r.displayName].map((v) => `${v}`));
+            .map((r) => [r.count, this._shortenPrefix(r.name), r.displayName].map((v) => `${v}`));
 
-          (new Logger()).tabulate(8, colors.lightBlue, ["Count", "Display Name", "Name"], colors.lightGray, ...rows);
+          new Logger().tabulate(8, colors.lightBlue, ["Count", "Display Name", "Name"], colors.lightGray, ...rows);
         },
       },
       {
         keywords: ["listCraftable", "lc"],
-        completeFn: (partial: string) => {
+        completeFn: (partial: string = "") => {
           return this.cache
             .remember("listCraftable", () => this.server.listCraftable())
-            .map((recipe) => recipe.name)
+            .flatMap((recipe) => [this._shortenPrefix(recipe.name), recipe.name])
             .filter((name) => name.startsWith(partial));
         },
-        action: (name: string) => {
+        action: (name: string = "") => {
           const rows = this.cache
             .remember("listCraftable", () => this.server.listCraftable())
             .filter((recipe) => recipe.name.startsWith(name ?? ""))
             .sort((a, b) => b.count - a.count)
-            .map((r) => [r.name.replace('minecraft:', 'mc:'), r.count].map((v) => `${v}`));
+            .map((r) => [this._shortenPrefix(r.name), r.count].map((v) => `${v}`));
 
-            (new Logger()).tabulate(8, colors.lightBlue, ["Name", "Count"], colors.lightGray, ...rows);
+          new Logger().tabulate(8, colors.lightBlue, ["Name", "Count"], colors.lightGray, ...rows);
         },
       },
       {
         keywords: ["store", "s"],
-        completeFn: (partial: string) => [],
+        completeFn: () => [],
         action: () => {
           return `stored ${this.server.storeAll(this.storageName)} items`;
         },
       },
       {
         keywords: ["take", "t"],
-        completeFn: (partial: string) => {
+        completeFn: (partial: string = "") => {
           return this.cache
             .remember("list", () => this.server.list())
-            .map((resource) => resource.name)
+            .flatMap((resource) => [this._shortenPrefix(resource.name), resource.name])
             .filter((name) => name.startsWith(partial));
         },
-        action: (name: string, countStr: string = "1") => {
-          const key = name.startsWith("nbt:") ? name : `item:${name}`;
+        action: (name: string = "", countStr: string = "1") => {
+          if (name === "") {
+            return `Usage: take [item] [count=1]`;
+          }
+
+          const key = name.startsWith("nbt:") ? name : `item:${this._expandPrefix(name)}`;
+          const displayName = name.startsWith("nbt:") ? name : this._expandPrefix(name);
           const count = Number(countStr);
 
-          return `Took ${this.server.take(this.storageName, key, count)} ${name}`;
+          return `Took ${this.server.take(this.storageName, key, count)} ${displayName}`;
         },
       },
       {
@@ -140,10 +190,16 @@ Total ${this.server.count()} items
         completeFn: (partial: string) => {
           return this.cache
             .remember("listCraftable", () => this.server.listCraftable())
-            .map((resource) => resource.name)
+            .flatMap((recipe) => [this._shortenPrefix(recipe.name), recipe.name])
             .filter((name) => name.startsWith(partial));
         },
-        action: (name: string, count?: string) => `crafted ${this.server.craft(name, Number(count ?? 1))} times`,
+        action: (name: string = "", count: string = "1") => {
+          if (name === "") {
+            return `Usage: craft [recipe] [count=1]`;
+          }
+
+          return `crafted ${this.server.craft(this._expandPrefix(name), Number(count))} times`;
+        },
       },
     ];
   }
