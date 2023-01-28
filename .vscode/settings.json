@@ -3,6 +3,7 @@
     "Craftable",
     "Crafter",
     "crafters",
-    "defragment"
+    "defragment",
+    "textutils"
   ]
 }

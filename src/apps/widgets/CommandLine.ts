@@ -49,16 +49,68 @@ export class CommandLine {
       return `Unknown command "${keyword}"`;
     }
 
-    return command?.action(...args) ?? "ok";
+    return command?.action(...args);
   }
 
   getCommands(): Command[] {
     return [
       {
+        keywords: [""],
+        completeFn: (partial: string) => [],
+        action: () => undefined,
+      },
+      {
         keywords: ["defrag"],
         completeFn: (partial: string) => [],
         action: () => {
           return `freed ${this.server.defragment()} slots`;
+        },
+      },
+      {
+        keywords: ["status"],
+        completeFn: (partial: string) => [],
+        action: () => {
+          return `
+Storage usage: ${this.server.used()}/${this.server.size()}
+${this.server.list().length} item types
+Total ${this.server.count()} items
+          `.trim();
+        },
+      },
+      {
+        keywords: ["list", "l"],
+        completeFn: (partial: string) => {
+          return this.cache
+            .remember("list", () => this.server.list())
+            .map((resource) => resource.name)
+            .filter((name) => name.startsWith(partial));
+        },
+        action: (name: string) => {
+          const rows = this.cache
+            .remember("list", () => this.server.list())
+            .filter((resource) => resource.name.startsWith(name ?? ""))
+            .sort((a, b) => b.count - a.count)
+            .map((r) => [r.count, r.name.replace('minecraft:', 'mc:'), r.displayName].map((v) => `${v}`));
+
+          (new Logger()).tabulate(8, colors.lightBlue, ["Count", "Display Name", "Name"], colors.lightGray, ...rows);
+        },
+      },
+      {
+        keywords: ["listCraftable", "lc"],
+        completeFn: (partial: string) => {
+          return this.cache
+            .remember("listCraftable", () => this.server.listCraftable())
+            .map((recipe) => recipe.name)
+            .filter((name) => name.startsWith(partial));
+        },
+        action: (name: string) => {
+          const rows = this.cache
+            .remember("listCraftable", () => this.server.listCraftable())
+            .filter((recipe) => recipe.name.startsWith(name ?? ""))
+            .sort((a, b) => b.count - a.count)
+            .map((r) => [r.name.replace('minecraft:', 'mc:'), r.count].map((v) => `${v}`));
+
+            (new Logger()).tabulate(8, colors.lightBlue, ["Name", "Count"], colors.lightGray, ...rows);
         },
       },
       {
@@ -71,15 +123,10 @@ export class CommandLine {
       {
         keywords: ["take", "t"],
         completeFn: (partial: string) => {
-          const possible = [];
-          const listing = this.cache.remember("list", () => this.server.list());
-          for (const resource of listing) {
-            if (resource.name.startsWith(partial)) {
-              possible.push(resource.name);
-            }
-          }
-
-          return possible;
+          return this.cache
+            .remember("list", () => this.server.list())
+            .map((resource) => resource.name)
+            .filter((name) => name.startsWith(partial));
         },
         action: (name: string, countStr: string = "1") => {
           const key = name.startsWith("nbt:") ? name : `item:${name}`;
@@ -91,16 +138,10 @@ export class CommandLine {
       {
         keywords: ["craft", "c"],
         completeFn: (partial: string) => {
-          const possible = [];
-          const listing = this.cache.remember("listCraftable", () => this.server.listCraftable());
-
-          for (const recipe of listing) {
-            if (recipe.name.startsWith(partial)) {
-              possible.push(recipe.name);
-            }
-          }
-
-          return possible;
+          return this.cache
+            .remember("listCraftable", () => this.server.listCraftable())
+            .map((resource) => resource.name)
+            .filter((name) => name.startsWith(partial));
         },
         action: (name: string, count?: string) => `crafted ${this.server.craft(name, Number(count ?? 1))} times`,
       },

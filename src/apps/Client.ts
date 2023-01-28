@@ -19,8 +19,8 @@ export default class Client extends App {
 
     const uri = `${RPC.protocol}://${this.config.host}`;
     let hostId: number;
-    
-    while(true) {
+
+    while (true) {
       tries -= 1;
       hostId = rednet.lookup(RPC.protocol, this.config.host) as number;
 
@@ -28,15 +28,15 @@ export default class Client extends App {
         break;
       }
 
-      this.logger.warn('Failed to connect')
+      this.logger.warn("Failed to connect");
 
       if (hostId === undefined && tries === 0) {
         break;
       }
 
-      this.logger.log('Retrying connection...')
+      this.logger.log("Retrying connection...");
       sleep(1);
-    };
+    }
 
     if (hostId === undefined) {
       throw new Error(`Could not find ${uri}`);
@@ -75,7 +75,9 @@ export default class Client extends App {
 
       commandLine.cache.flush();
 
-      this.logger.log(output);
+      if (output !== undefined) {
+        this.logger.log(output);
+      }
     }
   }
 

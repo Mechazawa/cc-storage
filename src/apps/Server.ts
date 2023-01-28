@@ -30,7 +30,7 @@ export default class Server extends App {
       nextDefrag: this.nextDefrag,
 
       // Optional, todo: benchmark
-      cache: this.storage.cache.serialise(),
+      // cache: this.storage.cache.serialise(),
     } as object as LuaMap<string, any>;
   }
 
@@ -63,9 +63,7 @@ export default class Server extends App {
     }
 
     this.logger.info(`Initialised ${storageCount} storage containers`);
-    this.logger.log(`Populating cache...`);
-    this.logger.info(`Slots used: ${this.storage.used()}/${this.storage.size()} (${this.storage.count()} items)`);
-
+    
     parallel.waitForAny(
       () => this.runRPC(),
       () => this.runQueueWorker(),

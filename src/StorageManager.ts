@@ -66,14 +66,17 @@ export default class StorageManager {
       return false;
     }
 
-    this.storagePool.set(storageName, new CachedInventoryProxy(storage, this.cache, storageName));
-    this.cache.flush();
+    const proxy = new CachedInventoryProxy(storage, this.cache, storageName);
+
+    this.storagePool.set(storageName, proxy);
+    this.cache.delete("acc:*");
+    proxy.flush();
 
     return true;
   }
 
   removeStorage(storageName: string): boolean {
-    this.cache.flush();
+    this.cache.delete("acc:*");
 
     return this.storagePool.delete(storageName);
   }
@@ -306,10 +309,13 @@ export default class StorageManager {
   size(): number {
     let total = 0;
     const fns = [];
+    const genFn = (storageName: string) => () => (total += this.getStorage(storageName)?.size() ?? 0);
 
-    for (const [_, storage] of this.storagePool) {
-      fns.push(() => (total += storage.size()));
+    for (const [storageName, _] of this.storagePool) {
+      fns.push(genFn(storageName));
     }
+
+    this.logger.debug(fns.length);
 
     parallel.waitForAll(...fns);
 
