@@ -2,7 +2,7 @@ import Cache from "./Cache";
 import CachedInventoryProxy from "./CachedInventoryProxy";
 import Logger from "./Logger";
 import RPC from "./RPC";
-import Recipe, { RecipeType } from "./crafting/Recipe";
+import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 
 export interface StorageLocation {
@@ -47,6 +47,7 @@ export default class StorageManager {
     this.getEmpty = this.cache.memoize("acc:getEmpty", this.getEmpty.bind(this));
     this.findItemByKey = this.cache.memoize("acc:findItemByKey", this.findItemByKey.bind(this));
     this.list = this.cache.memoize("acc:list", this.list.bind(this));
+    this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
   }
 
   findCrafter(type: RecipeType): CrafterHost {
@@ -249,8 +250,8 @@ export default class StorageManager {
     return total;
   }
 
-  // todo: not updating cache properly when withdrawling all all
-  withdrawl(storageName: string, key: string, count: number, slot?: number): number {
+  // todo: not updating cache properly when taking all
+  take(storageName: string, key: string, count: number, slot?: number): number {
     let sent = 0;
     const sources = this.findItemByKey(key, count);
 
@@ -357,27 +358,6 @@ export default class StorageManager {
     return recipe;
   }
 
-  getMaxCraftable(recipe: Recipe | string): number {
-    recipe = this._resolveRecipe(recipe);
-
-    // Group input items
-    const input = new LuaMap<string, number>();
-
-    for (const item of recipe.getInput()) {
-      input.set(item, (input.get("item") ?? 0) + 1);
-    }
-
-    let count = Infinity;
-
-    for (const [item, amount] of input) {
-      const availible = this.count(item);
-
-      count = Math.min(count, availible / amount);
-    }
-
-    return Math.floor(count);
-  }
-
   craft(recipe: Recipe | string, count: number = 1): number {
     recipe = this._resolveRecipe(recipe);
 
@@ -412,5 +392,53 @@ export default class StorageManager {
     this.cache.delete("acc:*");
 
     return success ? count : 0;
+  }
+
+  listCraftable(): TransferableRecipe[] {
+    const resources = new LuaMap<string, number>();
+
+    this.logger.log("Build map");
+
+    const record = (key: string, count: number) => resources.set(key, (resources.get(key) ?? 0) + count);
+
+    for (const resource of this.list()) {
+      record(`item:${resource.name}`, resource.count);
+
+      for (const [tag, _] of resource.tags) {
+        record(`tag:${tag}`, resource.count);
+      }
+    }
+
+    this.logger.log("Build output");
+
+    const output: TransferableRecipe[] = [];
+
+    for (const [_, recipe] of this.recipeManager.recipes) {
+      const input = new LuaMap<string, number>();
+
+      for (const item of recipe.getInput()) {
+        input.set(item, (input.get(item) ?? 0) + 1);
+      }
+
+      let count = Infinity;
+
+      for (const [item, needed] of input) {
+        count = Math.min(count, (resources.get(item) ?? 0) / needed);
+        count = Math.floor(count);
+
+        if (count === 0) break;
+      }
+
+      if (count > 0) {
+        output.push({
+          name: recipe.name,
+          input: recipe.getInput(),
+          output: recipe.getOutput(),
+          count,
+        } as TransferableRecipe);
+      }
+    }
+
+    return output;
   }
 }

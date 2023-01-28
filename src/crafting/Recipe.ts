@@ -2,11 +2,13 @@ export enum RecipeType {
   CRAFTING_TABLE = "crafting",
 }
 
+// todo: make name less generic, and move to StorageManager?
 export interface TransferableRecipe {
   readonly type: RecipeType;
   name: string;
   input: string[];
   output: string[];
+  count: number;
 }
 
 // todo: move somewhere more sane
@@ -16,7 +18,7 @@ export const TURTLE_INVENTORY_COLS = 4;
 export default interface Recipe {
   readonly type: RecipeType;
   name: string;
-  
+
   getInput(): string[];
   getOutput(): string[];
 

@@ -143,7 +143,18 @@ export default class RPC {
         if (body.has("error")) {
           throw body.get("error");
         } else {
-          return body.get("result");
+          const result = body.get("result");
+
+          // todo: nesting too deep here for my taste
+          if (Array.isArray(result)) {
+            if (result.length === 1) {
+              return result[0];
+            } else if (result.length > 1) {
+              return $multi(...result);
+            }
+          }
+
+          return;
         }
       }
     }
@@ -162,8 +173,7 @@ export default class RPC {
   }
 
   static wrap(client: number, timeout?: number): WrappedRPC {
-    // @todo why wrap!?
-    const [methods] = this.call(client, "?", undefined, timeout) as LuaMultiReturn<string[]>;
+    const methods = this.call(client, "?", undefined, timeout) as LuaMultiReturn<string[]>;
     const output: WrappedRPC = {};
 
     for (const method of methods) {

@@ -1,18 +1,18 @@
 import Recipe from "./Recipe";
 
 export default class RecipeManager {
-  recipes: { [index: string]: Recipe } = {};
+  recipes = new LuaMap<string, Recipe>();
 
   add(recipe: Recipe): void {
-    this.recipes[recipe.name] = recipe;
+    this.recipes.set(recipe.name, recipe);
   }
 
   get(name: string): Recipe | undefined {
-    return this.recipes[name];
+    return this.recipes.get(name);
   }
 
   has(name: string): boolean {
-    return this.get(name) !== undefined;
+    return this.recipes.has(name);
   }
 
   findRecipes(item: string): Recipe[] {

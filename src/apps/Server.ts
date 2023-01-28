@@ -86,8 +86,8 @@ export default class Server extends App {
       store: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "store", params, callback, callbackArgs: [request] });
       },
-      withdrawl: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "withdrawl", params, callback, callbackArgs: [request] });
+      take: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "take", params, callback, callbackArgs: [request] });
       },
       list: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "list", params, callback, callbackArgs: [request] });
@@ -111,18 +111,8 @@ export default class Server extends App {
       // findItemByKey: (request, callback, ...params: any[]) => {
       //   this.queue.push({ method: "findItemByKey", params, callback, callbackArgs: [request] });
       // },
-      getMaxCraftable: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "getMaxCraftable", params, callback, callbackArgs: [request] });
-      },
-      findRecipes: (request, callback, name: string) => {
-        const recipes = this.storage.recipeManager.findRecipes(name);
-
-        return recipes.map((recipe) => ({
-          type: recipe.type,
-          name: recipe.name,
-          input: recipe.getInput(),
-          output: recipe.getOutput(),
-        }));
+      listCraftable: (request, callback, ...params: any[]) => {
+        this.queue.push({ method: "listCraftable", params, callback, callbackArgs: [request] });
       },
       flushCache: () => {
         this.storage.cache.flush();
