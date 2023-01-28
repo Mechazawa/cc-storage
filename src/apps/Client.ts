@@ -14,11 +14,29 @@ export default class Client extends App {
     super(config);
   }
 
-  connect() {
+  connect(tries = 5) {
     RPC.openModems();
 
     const uri = `${RPC.protocol}://${this.config.host}`;
-    let hostId = rednet.lookup(RPC.protocol, this.config.host);
+    let hostId: number;
+    
+    while(true) {
+      tries -= 1;
+      hostId = rednet.lookup(RPC.protocol, this.config.host) as number;
+
+      if (hostId !== undefined) {
+        break;
+      }
+
+      this.logger.warn('Failed to connect')
+
+      if (hostId === undefined && tries === 0) {
+        break;
+      }
+
+      this.logger.log('Retrying connection...')
+      sleep(1);
+    };
 
     if (hostId === undefined) {
       throw new Error(`Could not find ${uri}`);
