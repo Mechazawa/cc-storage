@@ -53,9 +53,11 @@ export default class CachedInventoryProxy implements Inventory {
     }
 
     this.cache.delete(`${this.prefix}:${storageName}:list`);
+    this.cache.delete('acc:*');
   }
 
   flush(storageName: string = this.name) {
     this.cache.delete(`${this.prefix}:${storageName}:*`);
+    this.cache.delete('acc:*');
   }
 }
