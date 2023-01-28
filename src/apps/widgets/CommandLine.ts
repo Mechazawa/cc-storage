@@ -55,6 +55,13 @@ export class CommandLine {
   getCommands(): Command[] {
     return [
       {
+        keywords: ["defrag"],
+        completeFn: (partial: string) => [],
+        action: () => {
+          return `freed ${this.server.defragment()} slots`;
+        },
+      },
+      {
         keywords: ["store", "s"],
         completeFn: (partial: string) => [],
         action: () => {
