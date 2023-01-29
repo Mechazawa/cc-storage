@@ -277,7 +277,7 @@ export default class StorageManager {
   list(): Resource[] {
     const resources = new LuaMap<string, Resource>();
     const storageFns = [];
-    const stacks: (ItemStack|string)[] = [];
+    const stacks: (ItemStack | string)[] = [];
     const stackFns: (() => void)[] = [];
 
     for (const [storageName, _] of this.storagePool) {
@@ -290,7 +290,7 @@ export default class StorageManager {
 
         for (const [slot, __] of storage.list() ?? []) {
           stackFns[stackFns.length] = ((i) => () => {
-            stacks[i] = this.getStorage(storageName)?.getItemDetail(slot) ?? 'empty';
+            stacks[i] = this.getStorage(storageName)?.getItemDetail(slot) ?? "empty";
           })(stackFns.length);
         }
       });
@@ -298,9 +298,9 @@ export default class StorageManager {
 
     const threadPool = [];
 
-    for (let i = 0; i < 80; i ++) {
+    for (let i = 0; i < 80; i++) {
       threadPool.push(() => {
-        while(true) {
+        while (true) {
           const fn = stackFns.pop();
 
           if (fn === undefined) {
@@ -309,14 +309,14 @@ export default class StorageManager {
 
           fn();
         }
-      })
+      });
     }
 
     parallel.waitForAll(...storageFns);
     parallel.waitForAll(...threadPool);
 
     for (const stack of stacks) {
-      if (typeof stack === 'object') {
+      if (typeof stack === "object") {
         const key = stack.nbt !== undefined ? `nbt:${stack.nbt}` : `name:${stack.name}`;
 
         if (resources.has(key)) {
@@ -406,6 +406,15 @@ export default class StorageManager {
   craft(recipe: Recipe | string, count: number = 1): number {
     recipe = this._resolveRecipe(recipe);
 
+    let outputCount = 0;
+    const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
+
+    while (count > maxChunkSize) {
+      this.logger.debug('Chunk craft')
+      outputCount += this.craft(recipe, maxChunkSize);
+      count -= maxChunkSize;
+    }
+
     const crafter = this.findCrafter(recipe.type);
 
     if (crafter === undefined) {
@@ -436,7 +445,7 @@ export default class StorageManager {
 
     this.storeAll(crafter.storageName);
 
-    return success ? count : 0;
+    return outputCount + (success ? count : 0);
   }
 
   listCraftable(): TransferableRecipe[] {
@@ -448,6 +457,7 @@ export default class StorageManager {
 
     for (const resource of this.list()) {
       record(`item:${resource.name}`, resource.count);
+      record(`tag:items:${resource.name}s`, resource.count); // <- this is dumb
 
       for (const [tag, _] of resource.tags) {
         record(`tag:${tag}`, resource.count);

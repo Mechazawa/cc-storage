@@ -112,10 +112,19 @@ export class CommandLine {
         keywords: ["status"],
         completeFn: (partial: string) => [],
         action: () => {
+          let used, size, types, count;
+
+          parallel.waitForAll(
+            () => used = this.server.used(),
+            () => size = this.server.size(),
+            () => types = this.server.list().length,
+            () => count = this.server.count(),
+          );
+
           return `
-Storage usage: ${this.server.used()}/${this.server.size()}
-${this.server.list().length} item types
-Total ${this.server.count()} items
+Storage usage: ${used}/${size}
+${types} item types
+Total ${count} items
           `.trim();
         },
       },
@@ -129,8 +138,8 @@ Total ${this.server.count()} items
             .flatMap((resource) => [resource.name, resource.displayName, this._shortenPrefix(resource.name)])
             .filter((name) => name.toLowerCase().startsWith(partial));
         },
-        action: (name: string = "") => {
-          name = name.toLowerCase();
+        action: (...parts: string[]) => {
+          const name = parts.join(' ').toLowerCase();
 
           const rows = this.cache
             .remember("list", () => this.server.list())
@@ -154,10 +163,12 @@ Total ${this.server.count()} items
             .flatMap((recipe) => [this._shortenPrefix(recipe.name), recipe.name])
             .filter((name) => name.startsWith(partial));
         },
-        action: (name: string = "") => {
+        action: (...parts: string[]) => {
+          const name = parts.join(' ');
+
           const rows = this.cache
             .remember("listCraftable", () => this.server.listCraftable())
-            .filter((recipe) => recipe.name.startsWith(name ?? ""))
+            .filter((recipe) => recipe.name.startsWith(this._expandPrefix(name ?? "")))
             .sort((a, b) => b.count - a.count)
             .map((r) => [this._shortenPrefix(r.name), r.count].map((v) => `${v}`));
 
@@ -174,21 +185,36 @@ Total ${this.server.count()} items
       {
         keywords: ["take", "t"],
         completeFn: (partial: string = "") => {
+          partial = partial.toLowerCase();
+
           return this.cache
             .remember("list", () => this.server.list())
-            .flatMap((resource) => [this._shortenPrefix(resource.name), resource.name])
-            .filter((name) => name.startsWith(partial));
+            .flatMap((resource) => [this._shortenPrefix(resource.name), resource.name, resource.displayName])
+            .filter((name) => name.toLowerCase().startsWith(partial));
         },
-        action: (name: string = "", countStr: string = "1") => {
+        action: (...parts: string[]) => {
+          const countStr = parts.pop();
+          const name = parts.join(' ');
+
           if (name === "") {
             return `Usage: take [item] [count=1]`;
           }
 
-          const key = name.startsWith("nbt:") ? name : `item:${this._expandPrefix(name)}`;
+          let key: string = name;
+
+          if (!name.includes(":")) {
+            const resource = this.cache
+              .remember("list", () => this.server.list())
+              .find((resource) => resource.displayName.toLowerCase().trim() === name.toLowerCase().trim());
+
+            key = 'item:' + (resource?.name ?? key);
+          } else if (!name.startsWith("nbt:")) {
+            key = `item:${this._expandPrefix(name)}`;
+          }
           const displayName = name.startsWith("nbt:") ? name : this._expandPrefix(name);
           const count = Number(countStr);
 
-          return `Took ${this.server.take(this.storageName, key, count)} ${displayName}`;
+          return `Took ${this.server.take(this.storageName, key, count)} ${key}`;
         },
       },
       {
