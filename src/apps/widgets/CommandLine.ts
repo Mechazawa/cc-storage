@@ -207,7 +207,7 @@ Total ${count} items
               .remember("list", () => this.server.list())
               .find((resource) => resource.displayName.toLowerCase().trim() === name.toLowerCase().trim());
 
-            key = 'item:' + (resource?.name ?? key);
+            key = resource?.nbt !== undefined ? `nbt:${resource.nbt}` : `item:${resource?.name ?? name}`;
           } else if (!name.startsWith("nbt:")) {
             key = `item:${this._expandPrefix(name)}`;
           }
