@@ -1,0 +1,29 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "types": [
+      "@typescript-to-lua/language-extensions", 
+      "@mechazawa/cc-types", 
+      "lua-types/core/metatable",
+      "lua-types/core/global",
+      "lua-types/core/string", 
+      "lua-types/core/modules", 
+      "lua-types/core/coroutine",
+      "lua-types/special/5.0"
+    ],
+    "strict": true,
+    "outDir": "dist"
+  },
+  "tstl": {
+    "buildMode": "default",
+    "luaTarget": "universal",
+    "measurePerformance": true,
+    "noHeader": true,
+    "luaPlugins": [{ "name": "./listingPlugin.ts" }],
+    "luaBundleEntry": "src/startup.ts",
+    "luaBundle": "startup.lua"
+  }
+}

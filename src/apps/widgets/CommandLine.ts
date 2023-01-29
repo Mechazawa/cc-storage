@@ -152,7 +152,7 @@ Total ${count} items
             .sort((a, b) => b.count - a.count)
             .map((r) => [r.count, this._shortenPrefix(r.name), r.displayName].map((v) => `${v}`));
 
-          new Logger().tabulate(8, colors.lightBlue, ["Count", "Display Name", "Name"], colors.lightGray, ...rows);
+          new Logger().tabulate(8, colors.lightBlue, ["Count", "Name", "Display Name"], colors.lightGray, ...rows);
         },
       },
       {
