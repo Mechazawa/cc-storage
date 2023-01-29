@@ -413,7 +413,7 @@ export default class StorageManager {
       this.logger.debug("Chunk craft");
       outputCount += this.craft(recipe, maxChunkSize);
       count -= maxChunkSize;
-      this.logger.debug(`${Math.ceil(count / maxChunkSize)} chunks left`)
+      this.logger.info(`${Math.ceil(count / maxChunkSize)} crafting chunks left`)
     }
 
     const crafter = this.findCrafter(recipe.type);
@@ -433,14 +433,21 @@ export default class StorageManager {
       }
     }
 
+    this.logger.info("Got item list for crafting");
+    this.logger.debug(inputItems);
+
     // todo: make the crafter take the items out of storage, not the other way round
     const itemLocations = inputItems.flatMap((key) => this.findItemByKey(key, count));
     let slot = 1;
+
+    this.logger.info(`Found ${itemLocations.length} item locations`);
 
     for (const location of itemLocations) {
       this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
       slot++;
     }
+
+    this.logger.info(`Crafting...`);
 
     const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, count]);
 
