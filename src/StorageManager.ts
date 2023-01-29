@@ -410,7 +410,7 @@ export default class StorageManager {
     const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
 
     while (count > maxChunkSize) {
-      this.logger.debug('Chunk craft')
+      this.logger.debug("Chunk craft");
       outputCount += this.craft(recipe, maxChunkSize);
       count -= maxChunkSize;
     }

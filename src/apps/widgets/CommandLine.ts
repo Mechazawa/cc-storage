@@ -115,10 +115,10 @@ export class CommandLine {
           let used, size, types, count;
 
           parallel.waitForAll(
-            () => used = this.server.used(),
-            () => size = this.server.size(),
-            () => types = this.server.list().length,
-            () => count = this.server.count(),
+            () => (used = this.server.used()),
+            () => (size = this.server.size()),
+            () => (types = this.server.list().length),
+            () => (count = this.server.count())
           );
 
           return `
@@ -139,7 +139,7 @@ Total ${count} items
             .filter((name) => name.toLowerCase().startsWith(partial));
         },
         action: (...parts: string[]) => {
-          const name = parts.join(' ').toLowerCase();
+          const name = parts.join(" ").toLowerCase();
 
           const rows = this.cache
             .remember("list", () => this.server.list())
@@ -164,7 +164,7 @@ Total ${count} items
             .filter((name) => name.startsWith(partial));
         },
         action: (...parts: string[]) => {
-          const name = parts.join(' ');
+          const name = parts.join(" ");
 
           const rows = this.cache
             .remember("listCraftable", () => this.server.listCraftable())
@@ -194,7 +194,7 @@ Total ${count} items
         },
         action: (...parts: string[]) => {
           const countStr = parts.pop();
-          const name = parts.join(' ');
+          const name = parts.join(" ");
 
           if (name === "") {
             return `Usage: take [item] [count=1]`;

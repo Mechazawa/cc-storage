@@ -71,7 +71,7 @@ export default class Client extends App {
       term.setTextColor(colors.white);
 
       const command = read(undefined, commandLine.history, (x) => commandLine.completeFn(x));
-      
+
       try {
         const output = commandLine.exec(command);
 
