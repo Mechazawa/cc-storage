@@ -112,19 +112,21 @@ export class CommandLine {
         keywords: ["status"],
         completeFn: (partial: string) => [],
         action: () => {
-          let used, size, types, count;
+          let used, size, types, count, cacheSize;
 
           parallel.waitForAll(
             () => (used = this.server.used()),
             () => (size = this.server.size()),
             () => (types = this.server.list().length),
-            () => (count = this.server.count())
+            () => (count = this.server.count()),
+            () => (cacheSize = this.server.cacheSize()),
           );
 
           return `
 Storage usage: ${used}/${size}
 ${types} item types
 Total ${count} items
+Cache contains ${cacheSize} records
           `.trim();
         },
       },

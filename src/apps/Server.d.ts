@@ -15,5 +15,6 @@ export interface ServerRPC extends WrappedRPC {
   count(key?: string): number;
   craft(recipeName: string, count?: number): number;
   listCraftable(): TransferableRecipe[];
+  cacheSize(): number;
   flushCache(): boolean;
 }
