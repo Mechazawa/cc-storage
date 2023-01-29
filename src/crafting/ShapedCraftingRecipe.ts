@@ -32,8 +32,6 @@ export default class ShapedCraftingRecipe implements Recipe {
 
     const usedSlots = [];
 
-    new Logger().debug(count);
-
     for (const item of mapping) {
       let found = false;
 

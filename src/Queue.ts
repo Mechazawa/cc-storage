@@ -1,3 +1,4 @@
+import Logger from "./Logger";
 import Serializable from "./Serializable";
 
 type JobCallback = (...args: any[]) => any;
@@ -25,10 +26,12 @@ export default class Queue<T extends object> extends Serializable {
   // only set while `work()` is running, used for checking if we got intterupted during work
   running?: RunningJob<T>;
   handler?: T;
+  logger: Logger;
 
-  constructor(handler?: T) {
+  constructor(handler?: T, logger: Logger = new Logger()) {
     super();
     this.handler = handler;
+    this.logger = logger;
   }
 
   serialiseJob(job: Job<T>): object {
@@ -111,7 +114,7 @@ export default class Queue<T extends object> extends Serializable {
     }
 
     try {
-      print(`work: ${methodName as string}`);
+      this.logger.log(`[q] work: ${methodName as string}`);
 
       const keyType = typeof this.handler[methodName];
 
@@ -126,7 +129,7 @@ export default class Queue<T extends object> extends Serializable {
         throw new Error(`Expected "${methodName as string}" of handler to be "function", got "${keyType}" instead.`);
       }
     } catch (error) {
-      print("fail: " + error);
+      this.logger.error("[q] fail: " + error);
       this.running.callbackArgs.push(error);
       this.failed.push({
         ...this.running,

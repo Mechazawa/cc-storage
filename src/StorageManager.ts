@@ -50,9 +50,8 @@ export default class StorageManager {
     this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
   }
 
-  findCrafter(type: RecipeType): CrafterHost {
-    // Todo fix multi return unpacking
-    return RPC.broadcastCall("lookupCrafter", [type], 5)[1];
+  findCrafter(type: RecipeType): CrafterHost | undefined {
+    return RPC.broadcastCall("lookupCrafter", [type], 5);
   }
 
   addStorage(storageName: string): boolean {
@@ -224,13 +223,21 @@ export default class StorageManager {
       return 0;
     }
 
-    let total = 0;
+    const fns = [];
+    const results: number[] = [];
+    const genFn = (index: number, slot: number, count: number) => () => {
+      results[index] = this.store(storageName, slot, count);
+    };
 
-    for (const [slot, { count }] of storage.list()) {
-      total += this.store(storageName, slot, count);
+    let index = 0;
+    for (const [slot, item] of storage.list()) {
+      fns.push(genFn(index, slot, item.count));
+      index++;
     }
 
-    return total;
+    parallel.waitForAll(...fns);
+
+    return results.reduce((a, b) => a + b, 0);
   }
 
   store(storageName: string, slot: number, _count?: number): number {
@@ -269,30 +276,64 @@ export default class StorageManager {
 
   list(): Resource[] {
     const resources = new LuaMap<string, Resource>();
+    const storageFns = [];
+    const stacks: (ItemStack|string)[] = [];
+    const stackFns: (() => void)[] = [];
 
-    for (const [_, storage] of this.storagePool) {
-      for (const [slot, __] of storage.list()) {
-        const stack = storage.getItemDetail(slot);
+    for (const [storageName, _] of this.storagePool) {
+      storageFns.push(() => {
+        const storage = this.getStorage(storageName);
 
-        if (stack) {
-          const key = stack.nbt !== undefined ? `nbt:${stack.nbt}` : `name:${stack.name}`;
+        if (storage === undefined) {
+          throw new Error(`Invalid storage for list ${storageName}`);
+        }
 
-          if (resources.has(key)) {
-            const resource = resources.get(key) as Resource;
+        for (const [slot, __] of storage.list() ?? []) {
+          stackFns[stackFns.length] = ((i) => () => {
+            stacks[i] = this.getStorage(storageName)?.getItemDetail(slot) ?? 'empty';
+          })(stackFns.length);
+        }
+      });
+    }
 
-            resource.count += stack.count;
+    const threadPool = [];
 
-            resources.set(key, resource);
-          } else {
-            resources.set(key, {
-              key: key,
-              name: stack.name,
-              displayName: stack.displayName,
-              tags: stack.tags,
-              nbt: stack.nbt,
-              count: stack.count,
-            });
+    for (let i = 0; i < 80; i ++) {
+      threadPool.push(() => {
+        while(true) {
+          const fn = stackFns.pop();
+
+          if (fn === undefined) {
+            return;
           }
+
+          fn();
+        }
+      })
+    }
+
+    parallel.waitForAll(...storageFns);
+    parallel.waitForAll(...threadPool);
+
+    for (const stack of stacks) {
+      if (typeof stack === 'object') {
+        const key = stack.nbt !== undefined ? `nbt:${stack.nbt}` : `name:${stack.name}`;
+
+        if (resources.has(key)) {
+          const resource = resources.get(key) as Resource;
+
+          resource.count += stack.count;
+
+          resources.set(key, resource);
+        } else {
+          resources.set(key, {
+            key: key,
+            name: stack.name,
+            displayName: stack.displayName,
+            tags: stack.tags,
+            nbt: stack.nbt,
+            count: stack.count,
+          });
         }
       }
     }
@@ -314,8 +355,6 @@ export default class StorageManager {
     for (const [storageName, _] of this.storagePool) {
       fns.push(genFn(storageName));
     }
-
-    this.logger.debug(fns.length);
 
     parallel.waitForAll(...fns);
 
@@ -367,8 +406,12 @@ export default class StorageManager {
   craft(recipe: Recipe | string, count: number = 1): number {
     recipe = this._resolveRecipe(recipe);
 
-    const recipeType = recipe.type; // gotta do this outside the lambda because the compiler hates it otherwise
     const crafter = this.findCrafter(recipe.type);
+
+    if (crafter === undefined) {
+      throw new Error(`Missing crafter for "${recipe.type}"`);
+    }
+
     const inputItems = recipe.getInput();
 
     for (const item of inputItems) {
@@ -381,7 +424,7 @@ export default class StorageManager {
     }
 
     // todo: make the crafter take the items out of storage, not the other way round
-    const itemLocations = inputItems.map((key) => this.findItemByKey(key, count)).flat();
+    const itemLocations = inputItems.flatMap((key) => this.findItemByKey(key, count));
     let slot = 1;
 
     for (const location of itemLocations) {
@@ -392,10 +435,6 @@ export default class StorageManager {
     const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, count]);
 
     this.storeAll(crafter.storageName);
-
-    // todo: this doesn't seem to clear the cache properly... WHY!?
-    this.logger.debug("craft cache acc del");
-    this.cache.delete("acc:*");
 
     return success ? count : 0;
   }

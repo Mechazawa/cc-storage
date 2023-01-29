@@ -39,8 +39,7 @@ export class CommandLine {
   completeFn(partial: string = ""): string[] {
     if (partial === "") {
       return [];
-    }
-    if (partial.includes(" ")) {
+    } else if (partial.includes(" ")) {
       const [keyword, ...args] = partial.split(" ");
       const command = this.getCommands().find((c) => c.keywords.includes(keyword));
       const completions = command?.completeFn(args.join(" ")) ?? [];
@@ -100,6 +99,13 @@ export class CommandLine {
         completeFn: (partial: string) => [],
         action: () => {
           return `freed ${this.server.defragment()} slots`;
+        },
+      },
+      {
+        keywords: ["flush"],
+        completeFn: (partial: string) => [],
+        action: () => {
+          return this.server.flushCache() ? "Flushed cache" : "Failed to flush cache";
         },
       },
       {
