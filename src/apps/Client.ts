@@ -66,23 +66,27 @@ export default class Client extends App {
     const commandLine = new CommandLine(this.server, this.config.storage[0]);
 
     while (true) {
-      term.setTextColor(colors.orange);
-      write("] ");
-      term.setTextColor(colors.white);
+      parallel.waitForAll(
+        () => commandLine.cache.set("list", this.server?.list()),
+        () => commandLine.cache.set("listCraftable", this.server?.listCraftable()),
+        () => {
+          term.setTextColor(colors.orange);
+          write("] ");
+          term.setTextColor(colors.white);
 
-      const command = read(undefined, commandLine.history, (x) => commandLine.completeFn(x));
+          const command = read(undefined, commandLine.history, (x) => commandLine.completeFn(x));
 
-      try {
-        const output = commandLine.exec(command);
+          try {
+            const output = commandLine.exec(command);
 
-        if (output !== undefined) {
-          this.logger.log(output);
+            if (output !== undefined) {
+              this.logger.log(output);
+            }
+          } catch (e) {
+            this.logger.error(e as string);
+          }
         }
-      } catch (e) {
-        this.logger.error(e as string);
-      }
-
-      commandLine.cache.flush();
+      );
     }
   }
 
