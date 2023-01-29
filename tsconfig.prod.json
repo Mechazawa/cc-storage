@@ -22,7 +22,6 @@
     "luaTarget": "universal",
     "measurePerformance": true,
     "noHeader": true,
-    "luaPlugins": [{ "name": "./listingPlugin.ts" }],
     "luaBundleEntry": "src/startup.ts",
     "luaBundle": "startup.lua"
   }
