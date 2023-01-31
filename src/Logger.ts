@@ -141,8 +141,10 @@ export default class Logger {
               return;
             }
 
-            term.scroll(-2);
-            print("");
+            const [, y] = term.getCursorPos();
+            term.setCursorPos(1, y - 1);
+            
+            term.clearLine();
 
             pageDelay = typeof paged === "number" ? paged : height - 1;
           } else {
