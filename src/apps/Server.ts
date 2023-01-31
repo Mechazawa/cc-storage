@@ -112,7 +112,7 @@ export default class Server extends App {
       listCraftable: (request, callback, ...params: any[]) => {
         this.queue.push({ method: "listCraftable", params, callback, callbackArgs: [request] });
       },
-      cacheSize: () => Object.keys(this.storage.cache).length,
+      cacheSize: () => this.storage.cache.size(),
       flushCache: () => {
         this.storage.cache.flush();
 

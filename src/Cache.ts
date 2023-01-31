@@ -19,6 +19,16 @@ class TimedValue<T> {
 export default class Cache<T = any> extends Serializable {
   store = new LuaMap<string, TimedValue<T>>();
 
+  size(): number {
+    let count = 0;
+
+    for(const [_, __] of this.store) {
+      count++;
+    }
+
+    return count;
+  }
+
   set(name: string, value: T, seconds?: number): T {
     this.store.set(name, new TimedValue(value, seconds));
 
