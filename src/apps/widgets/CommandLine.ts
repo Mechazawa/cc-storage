@@ -95,6 +95,14 @@ export class CommandLine {
         action: () => undefined,
       },
       {
+        keywords: ["clear", "cls"],
+        completeFn: (partial: string) => [],
+        action: () => {
+          term.clear();
+          term.setCursorPos(1, 1);
+        }
+      },
+      {
         keywords: ["defrag"],
         completeFn: (partial: string) => [],
         action: () => {
