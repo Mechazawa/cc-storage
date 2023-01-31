@@ -6,9 +6,9 @@ import { RecipeType } from "../crafting/Recipe";
 export interface ServerRPC extends WrappedRPC {
   ping(): "pong";
   craft(recipeName: string, input: string[], count?: number): boolean;
-  /** 
-   * idea: only respond id not reserved 
+  /**
+   * idea: only respond id not reserved
    * */
-  lookupCrafter(type: RecipeType): CrafterHost | undefined; 
+  lookupCrafter(type: RecipeType): CrafterHost | undefined;
   // reserve(timeout?: number): boolean;// todo
 }

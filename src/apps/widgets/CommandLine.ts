@@ -119,7 +119,7 @@ export class CommandLine {
             () => (size = this.server.size()),
             () => (types = this.server.list().length),
             () => (count = this.server.count()),
-            () => (cacheSize = this.server.cacheSize()),
+            () => (cacheSize = this.server.cacheSize())
           );
 
           return `

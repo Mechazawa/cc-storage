@@ -51,7 +51,7 @@ export default class Client extends App {
     if (this.server === undefined) {
       throw new Error(`Could not connect to ${uri}`);
     }
-    
+
     this.logger.log(`Connected to ${uri}`);
     this.runCommandLine();
   }

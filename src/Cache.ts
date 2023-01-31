@@ -22,7 +22,7 @@ export default class Cache<T = any> extends Serializable {
   size(): number {
     let count = 0;
 
-    for(const [_, __] of this.store) {
+    for (const [_, __] of this.store) {
       count++;
     }
 

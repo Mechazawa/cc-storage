@@ -413,7 +413,7 @@ export default class StorageManager {
       this.logger.debug("Chunk craft");
       outputCount += this.craft(recipe, maxChunkSize);
       count -= maxChunkSize;
-      this.logger.info(`${Math.ceil(count / maxChunkSize)} crafting chunks left`)
+      this.logger.info(`${Math.ceil(count / maxChunkSize)} crafting chunks left`);
     }
 
     const crafter = this.findCrafter(recipe.type);
