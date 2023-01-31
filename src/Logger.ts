@@ -143,7 +143,7 @@ export default class Logger {
 
             const [, y] = term.getCursorPos();
             term.setCursorPos(1, y - 1);
-            
+
             term.clearLine();
 
             pageDelay = typeof paged === "number" ? paged : height - 1;

@@ -100,7 +100,21 @@ export class CommandLine {
         action: () => {
           term.clear();
           term.setCursorPos(1, 1);
-        }
+        },
+      },
+      {
+        keywords: ["help", "?"],
+        completeFn: (partial: string) => [],
+        action: () => {
+          const commands = this.getCommands()
+            .map((x) => x.keywords)
+            .map(([a, ...b]) => (b.length > 0 ? `${a} (${b.join(", ")})` : a))
+            .filter((row) => row.length > 0)
+            .map((row) => ` - ${row}`)
+            .join("\n");
+
+          return `Available commands:\n${commands}`;
+        },
       },
       {
         keywords: ["defrag"],
