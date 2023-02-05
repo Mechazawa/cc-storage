@@ -27,13 +27,13 @@ export default class Lib {
   }
 
   static fetch(url: string, force = false): void {
-    if (Lib.store.has(url)) {
+    if (!force && Lib.store.has(url)) {
       return;
     }
 
     const fileName = this.basePath + Hash.fnv32b(url);
 
-    if (fs.exists(fileName + ".lua")) {
+    if (!force && fs.exists(fileName + ".lua")) {
       Lib.store.set(url, fileName);
       return;
     }
