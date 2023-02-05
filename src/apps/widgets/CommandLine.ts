@@ -1,5 +1,4 @@
 import Cache from "../../Cache";
-import Logger from "../../Logger";
 import { ServerRPC } from "../Server.d";
 
 type TextCompleter = (partial: string) => string[];

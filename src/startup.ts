@@ -1,13 +1,21 @@
 import ConfigFile from "./ConfigFile";
-import { AppConfig, DeviceType } from "./Config";
+import { DeviceType } from "./Config";
 import StateManager from "./StateManager";
 import Server from "./apps/Server";
 import App from "./apps/App";
 import setup from "./setup";
 import Crafter from "./apps/Crafter";
 import Client from "./apps/Client";
+import Lib from "./Lib";
+import Logger from "./Logger";
+import { Basalt } from "../types/Basalt/Basalt.d";
 
 const configFile = new ConfigFile("config.json");
+
+Lib.basePath = "/disk/lib-";
+const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
+
+basalt.debug(basalt);
 
 let config = configFile.load();
 

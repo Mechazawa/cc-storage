@@ -63,8 +63,7 @@ export default class Client extends App {
   runCommandLine(): void {
     if (this.server === undefined) throw Error("Failed to start command line");
 
-    const container = window.create(term.native(), 1, 1, 40, 15, true);
-    const commandLine = new CommandLine(container, this.server, this.config.storage[0]);
+    const commandLine = new CommandLine(term.native(), this.server, this.config.storage[0]);
 
     commandLine.run();
   }
