@@ -17,9 +17,9 @@ export default class Logger {
   file?: WriteHandle;
   fileName?: string;
   timestamp: boolean;
-  showDebug = true;
   redirect: Redirect = term.current();
-  tag = true;
+  showDebug = true;
+  tag = false;
 
   constructor(timestamp: boolean = false, fileName?: string) {
     this.timestamp = timestamp;
@@ -89,7 +89,7 @@ export default class Logger {
     } else {
       this.print(message);
     }
-    
+
     this.redirect.setTextColor(prevColor);
   }
 
