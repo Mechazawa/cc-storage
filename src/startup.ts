@@ -15,7 +15,7 @@ const configFile = new ConfigFile("config.json");
 Lib.basePath = "lib-";
 const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
 
-print(basalt.getVersion())
+print(basalt.getVersion());
 
 let config = configFile.load();
 

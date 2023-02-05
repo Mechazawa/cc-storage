@@ -12,10 +12,10 @@ export default class Lib {
   static requireRemote<T>(url: string): T {
     if (Lib.store.has(url)) {
       const path = Lib.store.get(url) as string;
-      const [fn] = loadfile(path + '.lua');
+      const [fn] = loadfile(path + ".lua");
 
       if (!fn) {
-        throw new Error('Invalid lib ' + path + ' for ' + url);
+        throw new Error("Invalid lib " + path + " for " + url);
       }
 
       return fn();
