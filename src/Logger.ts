@@ -18,6 +18,8 @@ export default class Logger {
   fileName?: string;
   timestamp: boolean;
   showDebug = true;
+  redirect: Redirect = term.current();
+  tag = true;
 
   constructor(timestamp: boolean = false, fileName?: string) {
     this.timestamp = timestamp;
@@ -28,6 +30,10 @@ export default class Logger {
     }
 
     this.file = fs.open(fileName, "a") as WriteHandle;
+  }
+
+  setRedirect(redirect: Redirect): void {
+    this.redirect = redirect;
   }
 
   rotate(keep: number = 10) {
@@ -52,18 +58,21 @@ export default class Logger {
     this.file = fs.open(this.fileName, "a") as WriteHandle;
   }
 
-  _write(message: string): void {
-    if (this.file !== undefined) {
+  write(message: string, store = true): void {
+    if (store && this.file !== undefined) {
       this.file.write(message);
       this.file.flush();
     }
+
+    const oldRedirect = term.current();
+
+    term.redirect(this.redirect);
+    write(message);
+    term.redirect(oldRedirect);
   }
 
-  _writeLine(message: string): void {
-    if (this.file !== undefined) {
-      this.file.writeLine(message);
-      this.file.flush();
-    }
+  print(message: string, store = true): void {
+    this.write(message + '\n', store);
   }
 
   log(message: string, color: number = colors.white, tag: string = "L"): void {
@@ -71,12 +80,17 @@ export default class Logger {
       message = os.date(this.timestampFormat) + message;
     }
 
-    const prevColor: number = term.getTextColor();
+    const prevColor: number = this.redirect.getTextColor();
 
-    term.setTextColor(color);
-    print(message);
-    term.setTextColor(prevColor);
-    this._writeLine(`[${tag}]${message}`);
+    this.redirect.setTextColor(color);
+
+    if (this.tag) {
+      this.print(`[${tag}]${message}`);
+    } else {
+      this.print(message);
+    }
+    
+    this.redirect.setTextColor(prevColor);
   }
 
   debug(message: any, options?: { function_args?: boolean; function_source?: boolean }, ribbon_frac?: number): void {
@@ -119,47 +133,60 @@ export default class Logger {
       }
     }
 
-    const [_, height] = term.getSize();
+    const [_, height] = this.redirect.getSize();
     let pageDelay = typeof paged === "number" ? paged : height - 1;
 
     for (const row of data) {
       switch (typeof row) {
         case "number":
-          term.setTextColor(row);
+          this.redirect.setTextColor(row);
           break;
         case "object":
           this._tabulateRow(sizes, row);
           pageDelay--;
           if (paged && pageDelay <= 0) {
             // todo move to method
-            print("");
+            this.print("", false);
 
-            write("Continue? [Y/n] ");
-            const answer = read();
+            this.write("Continue? [Y/n] ", false);
+            const answer = this.read();
 
             if (answer.toLowerCase().trim() === "n") {
               return;
             }
 
-            const [, y] = term.getCursorPos();
-            term.setCursorPos(1, y - 1);
+            const [, y] = this.redirect.getCursorPos();
+            this.redirect.setCursorPos(1, y - 1);
 
-            term.clearLine();
+            this.redirect.clearLine();
 
             pageDelay = typeof paged === "number" ? paged : height - 1;
           } else {
-            print("");
-            this._writeLine("");
+            this.print("");
           }
           break;
       }
     }
   }
 
+  read(
+    replaceChar?: string,
+    history?: string[],
+    completeFn?: (partial: string) => string[] | undefined,
+    _default?: string
+  ): string {
+    const oldRedirect = term.current();
+
+    term.redirect(this.redirect);
+    const output = read(replaceChar, history, completeFn, _default);
+    term.redirect(oldRedirect);
+
+    return output;
+  }
+
   _pad(count: number, char: string = " ") {
     for (let i = 0; i < count; i++) {
-      write(char);
-      this._write(char);
+      this.write(char);
     }
   }
 
@@ -176,24 +203,21 @@ export default class Logger {
         switch (align) {
           case Alignments.LEFT:
           default:
-            write(col);
-            this._write(col);
+            this.write(col);
             this._pad(pad);
             break;
           case Alignments.CENTER:
             this._pad(Math.floor(pad / 2));
-            write(col);
-            this._write(col);
+            this.write(col);
             this._pad(Math.ceil(pad / 2));
             break;
           case Alignments.RIGHT:
-            this._write(col);
             this._pad(pad);
-            write(col);
+            this.write(col);
             break;
         }
 
-        write(" ");
+        this.write(" ");
 
         index++;
       } else {

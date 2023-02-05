@@ -2,7 +2,7 @@ import { ClientConfig } from "../Config";
 import App from "./App";
 import { ServerRPC } from "./Server.d";
 import RPC from "../RPC";
-import { CommandLine } from "./widgets/CommandLine";
+import CommandLine from "./fragments/CommandLine";
 import Logger from "../Logger";
 
 export default class Client extends App {
@@ -53,41 +53,20 @@ export default class Client extends App {
     }
 
     this.logger.log(`Connected to ${uri}`);
-    this.runCommandLine();
   }
 
   run(): void {
     this.connect();
+    this.runCommandLine();
   }
 
   runCommandLine(): void {
     if (this.server === undefined) throw Error("Failed to start command line");
 
-    const commandLine = new CommandLine(this.server, this.config.storage[0]);
+    const container = window.create(term.native(), 1, 1, 40, 15, true);
+    const commandLine = new CommandLine(container, this.server, this.config.storage[0]);
 
-    while (true) {
-      parallel.waitForAll(
-        () => commandLine.cache.set("list", this.server?.list()),
-        () => commandLine.cache.set("listCraftable", this.server?.listCraftable()),
-        () => {
-          term.setTextColor(colors.orange);
-          write("] ");
-          term.setTextColor(colors.white);
-
-          const command = read(undefined, commandLine.history, (x) => commandLine.completeFn(x));
-
-          try {
-            const output = commandLine.exec(command);
-
-            if (output !== undefined) {
-              this.logger.log(output);
-            }
-          } catch (e) {
-            this.logger.error(e as string);
-          }
-        }
-      );
-    }
+    commandLine.run();
   }
 
   serialise(): LuaMap<string, any> {

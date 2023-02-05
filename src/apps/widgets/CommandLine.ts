@@ -10,7 +10,7 @@ interface Command {
   action: (...args: string[]) => any;
 }
 
-export class CommandLine {
+export default class CommandLine {
   server: ServerRPC;
   storageName: string;
   history: string[] = [];
@@ -176,7 +176,7 @@ Cache contains ${cacheSize} records
             .sort((a, b) => b.count - a.count)
             .map((r) => [r.count, this._shortenPrefix(r.name), r.displayName].map((v) => `${v}`));
 
-          new Logger().tabulate(8, colors.lightBlue, ["Count", "Name", "Display Name"], colors.lightGray, ...rows);
+          return [8, colors.lightBlue, ["Count", "Name", "Display Name"], colors.lightGray, ...rows];
         },
       },
       {
@@ -196,7 +196,7 @@ Cache contains ${cacheSize} records
             .sort((a, b) => b.count - a.count)
             .map((r) => [this._shortenPrefix(r.name), r.count].map((v) => `${v}`));
 
-          new Logger().tabulate(8, colors.lightBlue, ["Name", "Count"], colors.lightGray, ...rows);
+          return [8, colors.lightBlue, ["Name", "Count"], colors.lightGray, ...rows];
         },
       },
       {
