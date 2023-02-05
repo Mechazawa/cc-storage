@@ -32,7 +32,6 @@ export default class Lib {
     }
 
     const fileName = this.basePath + Hash.fnv32b(url);
-    print(fileName)
 
     if (fs.exists(fileName + ".lua")) {
       Lib.store.set(url, fileName);
