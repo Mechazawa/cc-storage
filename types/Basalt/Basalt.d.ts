@@ -58,7 +58,7 @@ You can always switch between your base frames.
    * basalt.debug("Hello!")
    * ```
    */
-  debug(): void;
+  debug(...values: any[]): void;
 
   /**
    * Returns the currently active/visible base frame.
