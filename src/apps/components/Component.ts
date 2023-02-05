@@ -3,12 +3,12 @@ export interface WindowSize {
     height: number;
 }
 
-export default abstract class Fragment {
+export default abstract class Component {
     redirect: Redirect;
     focus: boolean = false;
 
-    constructor(window: Redirect) {
-        this.redirect = window;
+    constructor(redirect: Redirect) {
+        this.redirect = redirect;
     }
 
     abstract run(): void;

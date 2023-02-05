@@ -2,7 +2,7 @@ import { ClientConfig } from "../Config";
 import App from "./App";
 import { ServerRPC } from "./Server.d";
 import RPC from "../RPC";
-import CommandLine from "./fragments/CommandLine";
+import CommandLine from "./components/CommandLine";
 import Logger from "../Logger";
 
 export default class Client extends App {

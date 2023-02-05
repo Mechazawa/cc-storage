@@ -1,9 +1,9 @@
-import Fragment from "./Fragment";
+import Component from "./Component";
 import CommandLineWidget from '../widgets/CommandLine';
 import Logger from "../../Logger";
 import { ServerRPC } from "../Server.d";
 
-export default class CommandLine extends Fragment {
+export default class CommandLine extends Component {
     repl: CommandLineWidget;
     logger: Logger;
     server: ServerRPC;
