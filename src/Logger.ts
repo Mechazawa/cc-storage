@@ -72,7 +72,7 @@ export default class Logger {
   }
 
   print(message: string, store = true): void {
-    this.write(message + '\n', store);
+    this.write(message + "\n", store);
   }
 
   log(message: string, color: number = colors.white, tag: string = "L"): void {
