@@ -9,8 +9,8 @@ export default class Lib {
   static basePath = "/lib";
   static store = new LuaMap<string, string>();
 
-  static requireRemote<T>(url: string): T {
-    if (Lib.store.has(url)) {
+  static requireRemote<T>(url: string, force = false): T {
+    if (!force && Lib.store.has(url)) {
       const path = Lib.store.get(url) as string;
       const [fn] = loadfile(path + ".lua");
 
@@ -21,7 +21,7 @@ export default class Lib {
       return fn();
     }
 
-    this.fetch(url);
+    this.fetch(url, force);
 
     return this.requireRemote<T>(url);
   }
