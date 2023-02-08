@@ -1,5 +1,8 @@
 import { Frame } from "./Frame.d";
 
+// todo figure out
+type Event = string;
+
 declare interface BObject {
   /**
    * Disables the object's event listeners
@@ -149,107 +152,116 @@ declare interface BObject {
    * basalt.debug(aButton:isVisible()) -- returns true
    * ```
    */
-  isVisible(): void;
+  isVisible(): boolean;
 
   /**
    * `onChange(self)`
    *
    */
-  onChange(): void;
+  onChange(fn: (self: this) => void): this;
 
   /**
    * `onChar(self, event, char)`
    *
    */
-  onChar(): void;
-
-  /**
-   * unknown
-   *
-   */
-  unknown(): void;
+  onChar(fn: (self: this, event: Event, char: string) => void | boolean): this;
 
   /**
    * `onClickUp(self, event, button, x, y)`
    *
    */
-  onClickUp(): void;
+  onClickUp(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
+
+  /**
+   * `onClick(self, event, button, x, y)`
+   *
+   */
+  onClick(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onDrag(self, event, button, x, y, xOffset, yOffset)`
    *
    */
-  onDrag(): void;
+  onDrag(
+    fn: (
+      self: this,
+      event: Event,
+      button: BObject,
+      x: number,
+      y: number,
+      xOffset: number,
+      yOffset: number
+    ) => void | boolean
+  ): this;
 
   /**
    * `onEvent(self, event, ...)`
    *
    */
-  onEvent(): void;
+  onEvent(fn: (self: this, event: Event, ...args: any[]) => void | boolean): this;
 
   /**
    * `onGetFocus(self)`
    *
    */
-  onGetFocus(): void;
+  onGetFocus(fn: (self: this) => void | boolean): this;
 
   /**
    * `onHover(self, event, button, x, y)`
    *
    */
-  onHover(): void;
+  onHover(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onKey(self, event, key)`
    *
    */
-  onKey(): void;
+  onKey(fn: (self: this, event: Event, key: number) => void | boolean): this;
 
   /**
    * `onKeyUp(self, event, key)`
    *
    */
-  onKeyUp(): void;
+  onKeyUp(fn: (self: this, event: Event, key: number) => void | boolean): this;
 
   /**
    * `onLeave(self, event, button, x, y)`
    *
    */
-  onLeave(): void;
+  onLeave(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onLoseFocus(self)`
    *
    */
-  onLoseFocus(): void;
+  onLoseFocus(fn: (self: this) => void | boolean): this;
 
   /**
    * `onRelease(self, event, button, x, y)`
    *
    */
-  onRelease(): void;
+  onRelease(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onReposition(self)`
    *
    */
-  onReposition(): void;
+  onReposition(fn: (self: this) => void | boolean): this;
 
   /**
    * `onResize(self)`
    *
    */
-  onResize(): void;
+  onResize(fn: (self: this) => void | boolean): this;
 
   /**
    * `onScroll(self, event, direction, x, y)`
    *
    */
-  onScroll(): void;
+  onScroll(fn: (self: this, event: Event, direction: -1 | 1, x: number, y: number) => void | boolean): this;
 
   /**
    * Removes the object from it's parent frame. This won't 'destroy' the object, It will continue to exist as long as you still have pointers to it.
-   *
    */
   remove(): void;
 
@@ -313,18 +325,18 @@ declare interface BObject {
   setBorder(color: number | string, ...sides: string[]): this;
 
   /**
- * Sets the object to be the focused object.
-If you click on an object, it's normally automatically the focused object. For example, if you call :show() on a frame, and you want this particular frame to be in
-the foreground, you should also use :setFocus()
- *
- * @returns {this} The object in use
- * @usage Sets the button to the focused object
- * 
- * ```lua
- * local mainFrame = basalt.createFrame()
- * local aButton = mainFrame:addButton():setFocus()
- * ```
- */
+   * Sets the object to be the focused object.
+   *If you click on an object, it's normally automatically the focused object. For example, if you call :show() on a frame, and you want this particular frame to be in
+   *the foreground, you should also use :setFocus()
+   *
+   * @returns {this} The object in use
+   * @usage Sets the button to the focused object
+   *
+   * ```lua
+   * local mainFrame = basalt.createFrame()
+   * local aButton = mainFrame:addButton():setFocus()
+   * ```
+   */
   setFocus(): this;
 
   /**
