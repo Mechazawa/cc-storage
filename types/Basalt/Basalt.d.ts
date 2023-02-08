@@ -259,7 +259,7 @@ A list of base-theme keys can be found [here](https://github.com/Pyroxenium/Basa
    * end))
    * ```
    */
-  schedule(a: Function): Function;
+  schedule<T extends Function>(a: T): T;
 
   /**
    * Sets what should be the active baseframe.
