@@ -158,25 +158,25 @@ declare interface BObject {
    * `onChange(self)`
    *
    */
-  onChange(fn: (self: this) => void): this;
+  onChange(fn: () => void): this;
 
   /**
    * `onChar(self, event, char)`
    *
    */
-  onChar(fn: (self: this, event: Event, char: string) => void | boolean): this;
+  onChar(fn: (event: Event, char: string) => void | boolean): this;
 
   /**
    * `onClickUp(self, event, button, x, y)`
    *
    */
-  onClickUp(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
+  onClickUp(fn: (event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onClick(self, event, button, x, y)`
    *
    */
-  onClick(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
+  onClick(fn: (event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onDrag(self, event, button, x, y, xOffset, yOffset)`
@@ -184,7 +184,6 @@ declare interface BObject {
    */
   onDrag(
     fn: (
-      self: this,
       event: Event,
       button: BObject,
       x: number,
@@ -198,67 +197,67 @@ declare interface BObject {
    * `onEvent(self, event, ...)`
    *
    */
-  onEvent(fn: (self: this, event: Event, ...args: any[]) => void | boolean): this;
+  onEvent(fn: (event: Event, ...args: any[]) => void | boolean): this;
 
   /**
    * `onGetFocus(self)`
    *
    */
-  onGetFocus(fn: (self: this) => void | boolean): this;
+  onGetFocus(fn: () => void | boolean): this;
 
   /**
    * `onHover(self, event, button, x, y)`
    *
    */
-  onHover(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
+  onHover(fn: (event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onKey(self, event, key)`
    *
    */
-  onKey(fn: (self: this, event: Event, key: number) => void | boolean): this;
+  onKey(fn: (event: Event, key: number) => void | boolean): this;
 
   /**
    * `onKeyUp(self, event, key)`
    *
    */
-  onKeyUp(fn: (self: this, event: Event, key: number) => void | boolean): this;
+  onKeyUp(fn: (event: Event, key: number) => void | boolean): this;
 
   /**
    * `onLeave(self, event, button, x, y)`
    *
    */
-  onLeave(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
+  onLeave(fn: (event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onLoseFocus(self)`
    *
    */
-  onLoseFocus(fn: (self: this) => void | boolean): this;
+  onLoseFocus(fn: () => void | boolean): this;
 
   /**
    * `onRelease(self, event, button, x, y)`
    *
    */
-  onRelease(fn: (self: this, event: Event, button: BObject, x: number, y: number) => void | boolean): this;
+  onRelease(fn: (event: Event, button: BObject, x: number, y: number) => void | boolean): this;
 
   /**
    * `onReposition(self)`
    *
    */
-  onReposition(fn: (self: this) => void | boolean): this;
+  onReposition(fn: () => void | boolean): this;
 
   /**
    * `onResize(self)`
    *
    */
-  onResize(fn: (self: this) => void | boolean): this;
+  onResize(fn: () => void | boolean): this;
 
   /**
    * `onScroll(self, event, direction, x, y)`
    *
    */
-  onScroll(fn: (self: this, event: Event, direction: -1 | 1, x: number, y: number) => void | boolean): this;
+  onScroll(fn: (event: Event, direction: -1 | 1, x: number, y: number) => void | boolean): this;
 
   /**
    * Removes the object from it's parent frame. This won't 'destroy' the object, It will continue to exist as long as you still have pointers to it.
