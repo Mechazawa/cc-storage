@@ -1,4 +1,18 @@
 import { BObject } from "./BObject";
+import { Progressbar } from "./Progressbar.d";
+import { Scrollbar } from "./Scrollbar.d";
+import { Program } from "./Program.d";
+import { Slider } from "./Slider.d";
+import { Input } from "./Input.d";
+import { Dropdown } from "./Dropdown.d";
+import { Checkbox } from "./Checkbox.d";
+import { Textfield } from "./Textfield.d";
+import { Menubar } from "./Menubar.d";
+import { Button } from "./Button.d";
+import { List } from "./List.d";
+import { Radio } from "./Radio.d";
+import { Label } from "./Label.d";
+import { Image } from "./Image.d";
 
 declare interface Frame {
   /**
@@ -29,21 +43,35 @@ declare interface Frame {
   addLayoutFromString(xml: string): Frame;
 
   /**
- * Adds a new object. Don't use add&#60;Object&#62; please use addTheObjectYouNeed For example if you want a new Frame, use
-addFrame, if you want to add a button, use addButton
- *
- * @deprecated
- * @param optional - the id if you don't add a id it will autimatically generate one for you
- * @returns The new object you've created
- * @usage Creates some example objects
- * ```lua
- * local main = basalt.createFrame()
- * local button = main:addButton()
- * local label = main:addLabel()
- * local frame = main:addFrame()
- * ```
- */
-  add<T extends BObject>(optional: string): T;
+   * Adds a new object. Don't use add<Object> please use addTheObjectYouNeed For example if you want a new Frame, use
+   *addFrame, if you want to add a button, use addButton
+   *
+   * @param optional - the id if you don't add a id it will autimatically generate one for you
+   * @returns The new object you've created
+   * @usage Creates some example objects
+   * ```lua
+   * local main = basalt.createFrame()
+   * local button = main:addButton()
+   * local label = main:addLabel()
+   * local frame = main:addFrame()
+   * ```
+   */
+  // add<T extends BObject>(optional: string): T;
+  addProgressbar(id?: string): Progressbar;
+  addScrollbar(id?: string): Scrollbar;
+  addProgram(id?: string): Program;
+  addSlider(id?: string): Slider;
+  addInput(id?: string): Input;
+  addDropdown(id?: string): Dropdown;
+  addCheckbox(id?: string): Checkbox;
+  addTextfield(id?: string): Textfield;
+  addMenubar(id?: string): Menubar;
+  addButton(id?: string): Button;
+  addList(id?: string): List;
+  addRadio(id?: string): Radio;
+  addFrame(id?: string): Frame;
+  addLabel(id?: string): Label;
+  addImage(id?: string): Image;
 
   /**
    * Gets the currently focused object

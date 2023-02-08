@@ -294,7 +294,7 @@ declare interface BObject {
   /**
    * Sets the border of that objects, if false the border will be removed
    *
-   * @param optional - sides. If you don't set sides, all 4 sides will have a border
+   * @param sides If you don't set sides, all 4 sides will have a border
    * @returns {this} The object in use
    * @usage Sets the border to green and shows it:
    *
@@ -310,7 +310,7 @@ declare interface BObject {
    * <frame width="18" height="6" borderColor="green" movable="true" />
    * ```
    */
-  setBorder(optional?: string): this;
+  setBorder(color: number | string, ...sides: string[]): this;
 
   /**
  * Sets the object to be the focused object.
@@ -341,7 +341,7 @@ the foreground, you should also use :setFocus()
    * <button fg="green" />
    * ```
    */
-  setForeground(): this;
+  setForeground(color: number | string): this;
 
   /**
    * Sets the parent frame of the object
@@ -387,7 +387,7 @@ the foreground, you should also use :setFocus()
    * <button x="parent.w * 0.5" y="3" />
    * ```
    */
-  setPosition(Whether: boolean): this;
+  setPosition(x: number | string, y: number | string, offset?: boolean): this;
 
   /**
    * Sets the shadow color - default: false
@@ -409,7 +409,7 @@ the foreground, you should also use :setFocus()
    * <frame width="18" height="6" shadowColor="green" movable="true" />
    * ```
    */
-  setShadow(): this;
+  setShadow(color: string | number): this;
 
   /**
    * Changes the object size
@@ -426,7 +426,7 @@ the foreground, you should also use :setFocus()
    * <frame width="15" height="12" />
    * ```
    */
-  setSize(): this;
+  setSize(width: number | string, height: number | string): this;
 
   /**
    * Sets the value of that object (input, label, checkbox, textfield, scrollbar,...)
