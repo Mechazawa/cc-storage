@@ -58,14 +58,19 @@ export default class Client extends App {
   run(): void {
     this.connect();
     this.runCommandLine();
+    // this.runGui();
   }
 
   runCommandLine(): void {
     if (this.server === undefined) throw Error("Failed to start command line");
 
-    const commandLine = new CommandLine(term.native(), this.server, this.config.storage[0]);
+    const commandLine = new CommandLine(term.current(), this.server, this.config.storage[0]);
 
     commandLine.run();
+  }
+
+  runGui(): void {
+
   }
 
   serialise(): LuaMap<string, any> {

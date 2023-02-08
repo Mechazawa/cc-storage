@@ -28,7 +28,7 @@ export default class CommandLine extends Component {
           this.logger.write("] ", false);
           this.logger.redirect.setTextColor(colors.white);
 
-          const command = this.logger.read(undefined, this.repl.history, (x) => this.repl.completeFn(x));
+          const command = read(undefined, this.repl.history, (x) => this.repl.completeFn(x));
 
           try {
             const output = this.repl.exec(command);

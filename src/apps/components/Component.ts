@@ -1,3 +1,6 @@
+/**
+ * @deprecated
+ */
 export default abstract class Component {
   redirect: Redirect;
   focus: boolean = false;

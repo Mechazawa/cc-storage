@@ -149,7 +149,7 @@ export default class Logger {
             this.print("", false);
 
             this.write("Continue? [Y/n] ", false);
-            const answer = this.read();
+            const answer = read();
 
             if (answer.toLowerCase().trim() === "n") {
               return;
@@ -167,21 +167,6 @@ export default class Logger {
           break;
       }
     }
-  }
-
-  read(
-    replaceChar?: string,
-    history?: string[],
-    completeFn?: (partial: string) => string[] | undefined,
-    _default?: string
-  ): string {
-    const oldRedirect = term.current();
-
-    term.redirect(this.redirect);
-    const output = read(replaceChar, history, completeFn, _default);
-    term.redirect(oldRedirect);
-
-    return output;
   }
 
   _pad(count: number, char: string = " ") {
