@@ -75,14 +75,25 @@ export default class Client extends App {
   runGui(): void {
     const main = basalt.createFrame();
 
-    const button = main.addButton(); // Here we add our first button
-    button.setPosition(4, 4); // of course we want to change the default position of our button
-    button.setSize(16, 3); // and the default size.
-    button.setText("Click me!"); // This method displays what the text of our button should look like
-    button.setShadow(colors.blue);
+    const btn = main.addButton();
 
-    // Now we just need to register a function to the buttons onClick event handlers, this is how we can achieve that:
-    button.onClick(() => basalt.debug("I got clicked!"));
+    btn.setText('clickMe').setPosition(3, 1).setSize(9, 1);
+
+    btn.onClick(basalt.schedule(()=>{
+      btn.disable();
+      const [x, y] = btn.getPosition();
+
+      btn.setBackground(colors.red);
+      btn.setPosition(x - 1, y);
+      sleep(0.05);
+      btn.setPosition(x, y);
+      sleep(0.05);
+      btn.setPosition(x + 1, y);
+      sleep(0.05);
+      btn.setPosition(x, y);
+      btn.setBackground(colors.gray);
+      btn.enable();
+    }));
 
     basalt.autoUpdate();
   }
