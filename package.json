@@ -3,7 +3,7 @@
   "scripts": {
     "build": "npm run clean && tstl -p tsconfig.prod.json",
     "dev": "tstl -p tsconfig.json --watch",
-    "lint": "prettier --write src types",
+    "lint": "prettier --write src/**/*.ts types/**/*.ts",
     "clean": "rm -r dist; mkdir dist"
   },
   "devDependencies": {
