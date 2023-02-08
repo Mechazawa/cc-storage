@@ -248,7 +248,7 @@ declare interface Menubar extends BObject {
    * </menubar>
    * ```
    */
-  setScrollable(scrollable: boolean): this;
+  setScrollable(scrollable?: boolean): this;
 
   /**
    * Sets the background and the foreground of the item which is currently selected

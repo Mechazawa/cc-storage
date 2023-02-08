@@ -23,7 +23,7 @@ declare interface List extends BObject {
    * </list>
    * ```
    */
-  addItem(name: string, value: any): this;
+  addItem(name: string, bg?: number, fg?: number, value?: any): this;
 
   /**
    * Removes all items.
@@ -248,7 +248,7 @@ declare interface List extends BObject {
    * </dropdown>
    * ```
    */
-  setScrollable(value: boolean): this;
+  setScrollable(value?: boolean): this;
 
   /**
    * Sets the background and the foreground of the item which is currently selected

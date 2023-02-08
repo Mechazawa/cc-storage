@@ -300,7 +300,7 @@ Objects are also able to ignore the offset by using :ignoreOffset() (For example
    * <frame scrollable="true"></frame>
    * ```
    */
-  setScrollable(scrollable: boolean): Frame;
+  setScrollable(scrollable?: boolean): Frame;
 
   /**
    * Sets the maximum offset it is allowed to scroll
