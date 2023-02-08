@@ -21,7 +21,6 @@ declare interface Button extends BObject {
 
   /**
  * Sets the displayed button text
-1. `string` the text the button should show
  *
  * @param text text the button should show
  * @returns {this} The object in use
