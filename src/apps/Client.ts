@@ -3,7 +3,10 @@ import App from "./App";
 import { ServerRPC } from "./Server.d";
 import RPC from "../RPC";
 import CommandLine from "./components/CommandLine";
-import Logger from "../Logger";
+import Lib from "../Lib";
+import { Basalt } from "../../types/Basalt/Basalt.d";
+
+const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
 
 export default class Client extends App {
   server?: ServerRPC;
@@ -57,8 +60,8 @@ export default class Client extends App {
 
   run(): void {
     this.connect();
-    this.runCommandLine();
-    // this.runGui();
+    // this.runCommandLine();
+    this.runGui();
   }
 
   runCommandLine(): void {
@@ -70,7 +73,18 @@ export default class Client extends App {
   }
 
   runGui(): void {
+    const main = basalt.createFrame();
 
+    const button = main.addButton(); // Here we add our first button
+    button.setPosition(4, 4); // of course we want to change the default position of our button
+    button.setSize(16, 3); // and the default size.
+    button.setText("Click me!"); // This method displays what the text of our button should look like
+    button.setShadow(colors.blue);
+
+    // Now we just need to register a function to the buttons onClick event handlers, this is how we can achieve that:
+    button.onClick(() => basalt.debug("I got clicked!"));
+
+    basalt.autoUpdate();
   }
 
   serialise(): LuaMap<string, any> {
