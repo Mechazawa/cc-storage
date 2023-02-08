@@ -6,15 +6,8 @@ import App from "./apps/App";
 import setup from "./setup";
 import Crafter from "./apps/Crafter";
 import Client from "./apps/Client";
-import Lib from "./Lib";
-import Logger from "./Logger";
-import { Basalt } from "../types/Basalt/Basalt.d";
 
 const configFile = new ConfigFile("config.json");
-
-const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
-
-print(basalt.getVersion());
 
 let config = configFile.load();
 
