@@ -13,6 +13,7 @@ import { List } from "./List.d";
 import { Radio } from "./Radio.d";
 import { Label } from "./Label.d";
 import { Image } from "./Image.d";
+import { BAnimation } from "./BAnimation.d";
 
 declare interface Frame {
   /**
@@ -72,6 +73,7 @@ declare interface Frame {
   addFrame(id?: string): Frame;
   addLabel(id?: string): Label;
   addImage(id?: string): Image;
+  addAnimation(id?: string): BAnimation;
 
   /**
    * Gets the currently focused object

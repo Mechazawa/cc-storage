@@ -1,4 +1,4 @@
-import "./BObject.d";
+import { BObject } from "./BObject.d";
 
 declare interface Menubar extends BObject {
   /**
