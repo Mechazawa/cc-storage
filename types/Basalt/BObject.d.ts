@@ -183,14 +183,7 @@ declare interface BObject {
    *
    */
   onDrag(
-    fn: (
-      event: Event,
-      button: BObject,
-      x: number,
-      y: number,
-      xOffset: number,
-      yOffset: number
-    ) => void | boolean
+    fn: (event: Event, button: BObject, x: number, y: number, xOffset: number, yOffset: number) => void | boolean
   ): this;
 
   /**

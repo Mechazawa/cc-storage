@@ -77,23 +77,25 @@ export default class Client extends App {
 
     const btn = main.addButton();
 
-    btn.setText('clickMe').setPosition(3, 1).setSize(9, 1);
+    btn.setText("clickMe").setPosition(3, 1).setSize(9, 1);
 
-    btn.onClick(basalt.schedule(()=>{
-      btn.disable();
-      const [x, y] = btn.getPosition();
+    btn.onClick(
+      basalt.schedule(() => {
+        btn.disable();
+        const [x, y] = btn.getPosition();
 
-      btn.setBackground(colors.red);
-      btn.setPosition(x - 1, y);
-      sleep(0.05);
-      btn.setPosition(x, y);
-      sleep(0.05);
-      btn.setPosition(x + 1, y);
-      sleep(0.05);
-      btn.setPosition(x, y);
-      btn.setBackground(colors.gray);
-      btn.enable();
-    }));
+        btn.setBackground(colors.red);
+        btn.setPosition(x - 1, y);
+        sleep(0.05);
+        btn.setPosition(x, y);
+        sleep(0.05);
+        btn.setPosition(x + 1, y);
+        sleep(0.05);
+        btn.setPosition(x, y);
+        btn.setBackground(colors.gray);
+        btn.enable();
+      })
+    );
 
     basalt.autoUpdate();
   }
