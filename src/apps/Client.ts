@@ -74,6 +74,111 @@ export default class Client extends App {
 
   runGui(): void {
     const main = basalt.createFrame();
+    // TODO needs refactoring in separate components
+    // ** I'm probably going to mess up conventions here, feel free to refactor **
+    // Components:
+    // Title bar
+    // Search bar
+    // Item list table:
+    //  -Header
+    //  -Row
+    // Side bar:
+    //  -List toggle
+    //  -Take item button group
+    //  -Craft item button group
+    //  -Store all button
+
+    // TITLE BAR
+    // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
+    // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
+    const titleBar = main.addLabel();
+
+    titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(0, 0).setSize(51, 1);
+
+    // SEARCH BAR
+    const searchBar = main.addTextfield();
+    let searchQuery = "";
+
+    searchBar.setBackground(colors.gray).setPosition(0, 1).setSize(30, 1);
+    searchBar.onChange(() => {
+      // Maybe we want to implement a waiting function to avoid searching on every keystroke
+      searchQuery = searchBar.getValue();
+      // Set filtering in item table
+    });
+
+    // TODO implement search, ideally with some placeholder text
+
+    // ITEM LIST TABLE
+    // itemTable contains a header row and an itemRow for each item, item amount is reduced
+    // NOTE: itemTable is the only scrollable element in the UI
+    const itemTable = { x: 0, y: 3 };
+
+    const headerRow = main.addLabel();
+
+    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y);
+
+    const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
+
+    // SIDE/ACTION MENU
+    // sideMenu contains all functional buttons dealing with moving items
+    const sideMenu = { x: 30, y: 1, width: 10, background: colors.gray };
+
+    // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
+    const listToggleLabel = main.addLabel();
+
+    listToggleLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y);
+
+    const listToggle = main.addButton();
+
+    const listToggleStateLabels = ["All", "Craftable", "Stored"];
+    let listToggleState = 0;
+
+    listToggle
+      .setText("All")
+      .setBackground(colors.orange)
+      .setPosition(sideMenu.x, sideMenu.y + 1);
+
+    listToggle.onClick(() => {
+      this.logger.debug("Clicked list toggle button");
+      // cycle state to next state (out of 3 possible states)
+      listToggleState = (listToggleState + 1) % 3;
+      // set text of button according to new state
+      listToggle.setText(listToggleStateLabels[listToggleState]);
+      // TODO filter itemTable according to new state
+    });
+
+    // Button group taking care of retrieving items, pressing the buttons takes items to the client chest (1,16,64,all respectively)
+    // if there is not enough items, retrieve whatever is present
+    const takeButtonGroupLabel = main.addLabel();
+
+    takeButtonGroupLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y + 2);
+
+    const takeButtonGroup = {};
+    // Button group taking care of kicking of crafts, pressing the buttons kicks of crafts (1,16,64 respectively), the user needs to retrieve them afterwards
+    // If not enough items are available, cancel craft and present feedback in the title bar (Not enough items to craft <x>, missing <y>)
+    // Maybe we want to disable the buttons beforehand if there is no recipe available and/or there is no materials
+    const craftButtonGroupLabel = main.addLabel();
+
+    craftButtonGroupLabel.setText("Craft:").setPosition(sideMenu.x, sideMenu.y + 4);
+
+    const craftButtongroup = {};
+
+    // Store button empties client chest into the network
+    const storeAllButtonLabel = main.addLabel();
+
+    storeAllButtonLabel.setText("Store:").setPosition(sideMenu.x, sideMenu.y + 7);
+
+    const storeAllButton = main.addButton();
+
+    storeAllButton
+      .setText("Store all")
+      .setBackground(colors.orange)
+      .setPosition(sideMenu.x, sideMenu.y + 8);
+
+    storeAllButton.onClick(() => {
+      this.logger.debug("Clicked store all button");
+      // Implement function here to empty client into network
+    });
 
     const btn = main.addButton();
 

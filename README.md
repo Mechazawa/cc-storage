@@ -23,6 +23,12 @@ The client is the terminal where you actually interface with items and can store
 
 A crafter runs on a crafting turtle. It can load recipes from a file (somehwere?). The crafter crafts items and puts them back in the network.
 
+### Client UI (WIP)
+
+The client is the most used interface in the system.
+
+![Client screenshot]{./img/Client.png}
+
 ### Features
 
 - [x] Crash recovery (when unloading chunks for example)
