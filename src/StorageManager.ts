@@ -458,6 +458,8 @@ export default class StorageManager {
 
     const inputItems = recipe.getInput();
 
+    this.logger.debug(`count: ${crafter.host}`);
+
     for (const item of inputItems) {
       times = Math.min(Math.max(...item.split("|").map((x) => this.count(x))), times);
 
@@ -468,6 +470,7 @@ export default class StorageManager {
     }
 
     let slot = 1;
+    this.logger.debug(`locate: ${crafter.host}`);
 
     for (const key of inputItems) {
       // todo: split craft call based on item availability ex: `items:a|items:b`
@@ -477,6 +480,7 @@ export default class StorageManager {
       }
     }
 
+    this.logger.debug(`craft: ${crafter.host}`);
     const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, times]);
     this.logger.debug(`unlock: ${crafter.host}`);
 
