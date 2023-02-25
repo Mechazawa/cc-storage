@@ -60,8 +60,7 @@ export default class Client extends App {
 
   run(): void {
     this.connect();
-    // this.runCommandLine();
-    this.runGui();
+    this.runCommandLine();
   }
 
   runCommandLine(): void {
@@ -71,33 +70,7 @@ export default class Client extends App {
 
     commandLine.run();
   }
-
-  runGui(): void {
-    const main = basalt.createFrame();
-
-    const btn = main.addButton();
-
-    btn.setText('clickMe').setPosition(3, 1).setSize(9, 1);
-
-    btn.onClick(basalt.schedule(()=>{
-      btn.disable();
-      const [x, y] = btn.getPosition();
-
-      btn.setBackground(colors.red);
-      btn.setPosition(x - 1, y);
-      sleep(0.05);
-      btn.setPosition(x, y);
-      sleep(0.05);
-      btn.setPosition(x + 1, y);
-      sleep(0.05);
-      btn.setPosition(x, y);
-      btn.setBackground(colors.gray);
-      btn.enable();
-    }));
-
-    basalt.autoUpdate();
-  }
-
+  
   serialise(): LuaMap<string, any> {
     return {
       config: this.config,
