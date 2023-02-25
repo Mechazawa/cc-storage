@@ -8,7 +8,7 @@ WORKDIR /home/static
 
 # Copy the static website
 # Use the .dockerignore file to control what ends up inside the image!
-COPY dist/* ./
+COPY dist/ ./
 
 EXPOSE 3000
 
