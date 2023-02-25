@@ -19,6 +19,7 @@ export interface Resource {
   tags: LuaMap<string, boolean>;
   nbt?: string;
   count: number;
+  locations: StorageLocation[];
 }
 
 export interface CrafterHost {
@@ -65,8 +66,8 @@ export default class StorageManager {
           }
         }
       } catch (e) {
-        if (!`${e}`.includes('RPC Timeout Exceeded')) {
-          this.logger.warn('Got error while looking for crafter: ' + e);
+        if (!`${e}`.includes("RPC Timeout Exceeded")) {
+          this.logger.warn("Got error while looking for crafter: " + e);
         }
       }
 
@@ -184,33 +185,30 @@ export default class StorageManager {
     return freed;
   }
 
-  findItemByKey(key: string, count: number = Infinity): StorageLocation[] {
-    const output = [];
-    let found = 0;
+  findItemByKey(key: string, count: number, allowMissing = false): StorageLocation[] {
+    const output: StorageLocation[] = [];
+    const items = this.list(key);
 
-    for (const [storageName, storage] of this.storagePool) {
-      for (const [slot, _] of storage.list()) {
-        const stack = storage.getItemDetail(slot);
+    for (const item of items) {
+      for (const location of item.locations) {
+        if (location.count > count) {
+          const outputLoc = { ...location };
 
-        if (stack && this.testKey(key, stack)) {
-          const loc: StorageLocation = {
-            peripheral: storageName,
-            slot: slot,
-            count: Math.max(0, Math.min(count - found, stack.count)),
-          };
+          outputLoc.count = count;
+          count = 0;
 
-          found += loc.count;
+          output.push(outputLoc);
+          
+          return output;
+        } else {
+          output.push(location);
 
-          output.push(loc);
-
-          if (found >= count) {
-            return output;
-          }
+          count -= location.count;
         }
       }
     }
 
-    if (count === Infinity) {
+    if (allowMissing) {
       return output;
     }
 
@@ -295,10 +293,14 @@ export default class StorageManager {
     return sent;
   }
 
-  list(): Resource[] {
+  list(key?: string): Resource[] {
+    if (key !== undefined) {
+      return this.list().filter((r) => this.testKey(key, r));
+    }
+
     const resources = new LuaMap<string, Resource>();
     const storageFns = [];
-    const stacks: (ItemStack | string)[] = [];
+    const stacks: ((ItemStack & { locations: StorageLocation[] }) | string)[] = [];
     const stackFns: (() => void)[] = [];
 
     for (const [storageName, _] of this.storagePool) {
@@ -311,7 +313,22 @@ export default class StorageManager {
 
         for (const [slot, __] of storage.list() ?? []) {
           stackFns[stackFns.length] = ((i) => () => {
-            stacks[i] = this.getStorage(storageName)?.getItemDetail(slot) ?? "empty";
+            const stack = this.getStorage(storageName)?.getItemDetail(slot);
+
+            if (stack === undefined) {
+              stacks[i] = "empty";
+            } else {
+              stacks[i] = {
+                ...stack,
+                locations: [
+                  {
+                    peripheral: storageName,
+                    slot,
+                    count: stack.count,
+                  },
+                ],
+              };
+            }
           })(stackFns.length);
         }
       });
@@ -345,6 +362,10 @@ export default class StorageManager {
 
           resource.count += stack.count;
 
+          for (const location of stack.locations) {
+            resource.locations.push(location);
+          }
+
           resources.set(key, resource);
         } else {
           resources.set(key, {
@@ -354,6 +375,7 @@ export default class StorageManager {
             tags: stack.tags,
             nbt: stack.nbt,
             count: stack.count,
+            locations: [...stack.locations],
           });
         }
       }
@@ -409,7 +431,7 @@ export default class StorageManager {
     }
 
     // We gotta iterate through everything anyways so why not do it this way?
-    return this.findItemByKey(key).reduce((acc: number, v: StorageLocation) => acc + v.count, 0);
+    return this.list(key).reduce((acc: number, v: Resource) => acc + v.count, 0);
   }
 
   _resolveRecipe(recipe: string | Recipe): Recipe {
@@ -440,12 +462,12 @@ export default class StorageManager {
 
     const fns = chunks.map(([out, count], i) => () => {
       out[i] = this._craft(recipe, count, timeout);
-      this.logger.log(`done ${out.reduce((a,c) => a+c, 0)} ${i + 1}/${chunks.length}`);
+      this.logger.log(`done ${out.reduce((a, c) => a + c, 0)} ${i + 1}/${chunks.length}`);
     });
 
     parallel.waitForAll(...fns);
 
-    return outputs.reduce((a,c) => a+c, 0);
+    return outputs.reduce((a, c) => a + c, 0);
   }
 
   _craft(recipe: Recipe, times: number = 1, timeout: number = 120): number {
