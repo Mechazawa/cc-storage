@@ -19,6 +19,9 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
+      if: {{ github.ref == 'refs/heads/master' }}
+    - run: npm run build-prod
+      if: {{ github.ref != 'refs/heads/master' }}
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
