@@ -69,8 +69,6 @@ export default class StorageManager {
           this.logger.warn('Got error while looking for crafter: ' + e);
         }
       }
-
-      sleep(1);
     }
   }
 

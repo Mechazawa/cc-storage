@@ -55,7 +55,7 @@ export default class Crafter extends App {
         const recipeTypes = (this.config as CrafterConfig).recipeTypes;
 
         if (!this.craftLock.locked && recipeTypes.includes(type)) {
-          sleep(Math.random() / 100);
+          parallel.waitForAll(() => sleep(Math.random() / 100));
 
           return {
             host: os.getComputerID(),
