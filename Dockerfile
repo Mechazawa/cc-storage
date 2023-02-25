@@ -11,6 +11,8 @@ WORKDIR /home/static
 COPY dist/listing.txt ./index.html
 COPY dist/* ./
 
+RUN tree
+
 EXPOSE 3000
 
 # Run BusyBox httpd
