@@ -53,10 +53,10 @@ export default class StorageManager {
   findCrafter(type: RecipeType, lockTimeout = 0, tries = 5): CrafterHost | undefined {
     for (let i = 0; i < tries; i++) {
       try {
-        const crafter = RPC.broadcastCall("lookupCrafter", [type], 2);
+        const crafter = RPC.broadcastCall("lookupCrafter", [type], 4);
 
         if (crafter !== undefined) {
-          const lock = RPC.call(crafter.host, "lock", [lockTimeout], 2);
+          const lock = RPC.call(crafter.host, "lock", [lockTimeout], 4);
 
           this.logger.debug(`req lock ${crafter.host} ${lock}`);
 
@@ -69,6 +69,9 @@ export default class StorageManager {
           this.logger.warn('Got error while looking for crafter: ' + e);
         }
       }
+
+      // use parallel so the queue doesn't get messed up
+      parallel.waitForAll(() => sleep(1));
     }
   }
 
