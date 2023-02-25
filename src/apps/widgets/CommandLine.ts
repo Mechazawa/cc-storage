@@ -14,6 +14,8 @@ export default class CommandLine {
   server: ServerRPC;
   storageName: string;
   history: string[] = [];
+  keepHistory: boolean;
+  historyLocation: string;
   cache = new Cache();
 
   prefixMap = [
@@ -31,9 +33,37 @@ export default class CommandLine {
     ["mcwwindows", "mcww"],
   ];
 
-  constructor(server: ServerRPC, storageName: string) {
+  constructor(server: ServerRPC, storageName: string, keepHistory = true, historyLocation = '/.history') {
     this.server = server;
     this.storageName = storageName;
+    this.keepHistory = keepHistory;
+    this.historyLocation = historyLocation;
+
+    if (keepHistory) {
+      this.restoreHistory();
+    }
+  }
+  
+  restoreHistory() {
+    if (!fs.exists(this.historyLocation)) {
+      return;
+    }
+
+    const hFile = fs.open(this.historyLocation, 'r') as ReadHandle;
+    
+    this.history = textutils.unserialise(hFile.readAll() ?? '[]') as string[];
+
+    hFile.close();
+  }
+  
+  saveHistory() {
+    //todo:magic number
+    while(this.history.length > 1000) this.history.shift();
+
+    const hFile = fs.open(this.historyLocation, 'w') as WriteHandle;
+    
+    hFile.write(textutils.serialise(this.history, {compact: false, allow_repetitions: true}));
+    hFile.close();
   }
 
   completeFn(partial: string = ""): string[] {
@@ -76,6 +106,7 @@ export default class CommandLine {
 
   exec(commandLine: string = ""): string {
     this.history.push(commandLine);
+    this.saveHistory();
 
     const [keyword, ...args] = commandLine.split(" ");
     const command = this.getCommands().find((c) => c.keywords.includes(keyword));
