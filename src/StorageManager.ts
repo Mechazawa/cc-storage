@@ -50,8 +50,28 @@ export default class StorageManager {
     this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
   }
 
-  findCrafter(type: RecipeType): CrafterHost | undefined {
-    return RPC.broadcastCall("lookupCrafter", [type], 5);
+  findCrafter(type: RecipeType, lockTimeout = 0, tries = 5): CrafterHost | undefined {
+    for (let i = 0; i < tries; i++) {
+      try {
+        const crafter = RPC.broadcastCall("lookupCrafter", [type], 2);
+
+        if (crafter !== undefined) {
+          const lock = RPC.call(crafter.host, "lock", [lockTimeout], 2);
+
+          this.logger.debug(`req lock ${crafter.host} ${lock}`);
+
+          if (lock) {
+            return crafter;
+          }
+        }
+      } catch (e) {
+        if (!`${e}`.includes('RPC Timeout Exceeded')) {
+          this.logger.warn('Got error while looking for crafter: ' + e);
+        }
+      }
+
+      sleep(1);
+    }
   }
 
   addStorage(storageName: string): boolean {
@@ -198,6 +218,9 @@ export default class StorageManager {
 
   testKey(key: string, stack: ItemStack | Resource): boolean {
     if (key === undefined) return false;
+    if (key.includes("|")) {
+      return key.split("|").some((x) => this.testKey(x, stack));
+    }
 
     if (key.startsWith("tag:")) {
       key = key.substring(4);
@@ -247,8 +270,6 @@ export default class StorageManager {
       return 0;
     }
 
-    this.cache.delete("acc:*");
-
     let total = 0;
 
     for (const [_, storage] of this.storagePool) {
@@ -260,16 +281,15 @@ export default class StorageManager {
     return total;
   }
 
-  // todo: not updating cache properly when taking all
+  // todo: not updating cache properly when taking all (verify?)
   take(storageName: string, key: string, count: number, slot?: number): number {
     let sent = 0;
     const sources = this.findItemByKey(key, count);
 
     for (const source of sources) {
+      this.logger.debug(source);
       sent += this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
     }
-
-    this.cache.delete("acc:*");
 
     return sent;
   }
@@ -403,63 +423,70 @@ export default class StorageManager {
     return recipe;
   }
 
-  craft(recipe: Recipe | string, count: number = 1): number {
-    recipe = this._resolveRecipe(recipe);
-
-    let outputCount = 0;
+  craft(_recipe: Recipe | string, times = 1, timeout = 120): number {
+    const recipe = this._resolveRecipe(_recipe);
     const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
 
-    while (count > maxChunkSize) {
-      this.logger.debug("Chunk craft");
-      outputCount += this.craft(recipe, maxChunkSize);
-      count -= maxChunkSize;
-      this.logger.info(`${Math.ceil(count / maxChunkSize)} crafting chunks left`);
+    const outputs: number[] = [];
+    const chunks: [number[], number][] = [[outputs, times % maxChunkSize]];
+
+    for (let i = 1; i < times / maxChunkSize; i++) {
+      chunks.push([outputs, maxChunkSize]);
+      outputs.push(0);
     }
 
-    const crafter = this.findCrafter(recipe.type);
+    assert(chunks.reduce((a, c) => a + c[1], 0) > 0);
+
+    const fns = chunks.map(([out, count], i) => () => {
+      out[i] = this._craft(recipe, count, timeout);
+      this.logger.log(`done ${out.reduce((a,c) => a+c, 0)} ${i + 1}/${chunks.length}`);
+    });
+
+    parallel.waitForAll(...fns);
+
+    return outputs.reduce((a,c) => a+c, 0);
+  }
+
+  _craft(recipe: Recipe, times: number = 1, timeout: number = 120): number {
+    const crafter = this.findCrafter(recipe.type, 30, timeout);
 
     if (crafter === undefined) {
       throw new Error(`Missing crafter for "${recipe.type}"`);
     }
 
+    this.logger.debug(`lock: ${crafter.host}`);
+
     const inputItems = recipe.getInput();
 
     for (const item of inputItems) {
-      count = Math.min(this.count(item), count);
+      times = Math.min(Math.max(...item.split("|").map((x) => this.count(x))), times);
 
-      if (count === 0) {
+      if (times === 0) {
         this.logger.error(`Not enough resources to craft "${recipe.name}"`);
         return 0;
       }
     }
 
-    this.logger.info("Got item list for crafting");
-    this.logger.debug(inputItems);
-
-    // todo: make the crafter take the items out of storage, not the other way round
-    const itemLocations = inputItems.flatMap((key) => this.findItemByKey(key, count));
     let slot = 1;
 
-    this.logger.info(`Found ${itemLocations.length} item locations`);
-
-    for (const location of itemLocations) {
-      this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
-      slot++;
+    for (const key of inputItems) {
+      // todo: split craft call based on item availability ex: `items:a|items:b`
+      for (const location of this.findItemByKey(key, times)) {
+        this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
+        slot++;
+      }
     }
 
-    this.logger.info(`Crafting...`);
-
-    const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, count]);
+    const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, times]);
+    this.logger.debug(`unlock: ${crafter.host}`);
 
     this.storeAll(crafter.storageName);
 
-    return outputCount + (success ? count : 0);
+    return success ? times : 0;
   }
 
   listCraftable(): TransferableRecipe[] {
     const resources = new LuaMap<string, number>();
-
-    this.logger.log("Build map");
 
     const record = (key: string, count: number) => resources.set(key, (resources.get(key) ?? 0) + count);
 
@@ -471,8 +498,6 @@ export default class StorageManager {
         record(`tag:${tag}`, resource.count);
       }
     }
-
-    this.logger.log("Build output");
 
     const output: TransferableRecipe[] = [];
 
@@ -486,7 +511,12 @@ export default class StorageManager {
       let count = Infinity;
 
       for (const [item, needed] of input) {
-        count = Math.min(count, (resources.get(item) ?? 0) / needed);
+        const found = item
+          .split("|")
+          .map((key) => resources.get(key) ?? 0)
+          .reduce((a, c) => a + c, 0);
+
+        count = Math.min(count, found / needed);
         count = Math.floor(count);
 
         if (count === 0) break;

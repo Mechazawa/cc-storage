@@ -1,4 +1,5 @@
 import Cache from "../../Cache";
+import RPC from "../../RPC";
 import { ServerRPC } from "../Server.d";
 
 type TextCompleter = (partial: string) => string[];
@@ -130,6 +131,14 @@ export default class CommandLine {
         },
       },
       {
+        keywords: ["rebootAll"],
+        completeFn: (partial: string) => [],
+        action: () => {
+          RPC.broadcastNotify('reboot');
+          os.reboot();
+        },
+      },
+      {
         keywords: ["status"],
         completeFn: (partial: string) => [],
         action: () => {
@@ -250,7 +259,7 @@ Cache contains ${cacheSize} records
         },
         action: (name: string = "", count: string = "1") => {
           if (name === "") {
-            return `Usage: craft [recipe] [count=1]`;
+            return `Usage: craft [recipe] [times=1]`;
           }
 
           return `crafted ${this.server.craft(this._expandPrefix(name), Number(count))} times`;

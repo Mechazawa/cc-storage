@@ -70,7 +70,7 @@ export default class Client extends App {
 
     commandLine.run();
   }
-  
+
   serialise(): LuaMap<string, any> {
     return {
       config: this.config,

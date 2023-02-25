@@ -20,19 +20,19 @@ declare interface Button extends BObject {
   setHorizontalAlign(position: string): this;
 
   /**
- * Sets the displayed button text
- *
- * @param text text the button should show
- * @returns {this} The object in use
- * @usage Creates a button with "Click me!" as text.
- * ```lua
- * local mainFrame = basalt.createFrame()
- * local button = mainFrame:addButton():setText("Click me!")
- * ```
- * ```xml
- * <button text="Click me!" />
- * ```
- */
+   * Sets the displayed button text
+   *
+   * @param text text the button should show
+   * @returns {this} The object in use
+   * @usage Creates a button with "Click me!" as text.
+   * ```lua
+   * local mainFrame = basalt.createFrame()
+   * local button = mainFrame:addButton():setText("Click me!")
+   * ```
+   * ```xml
+   * <button text="Click me!" />
+   * ```
+   */
   setText(text: string): this;
 
   /**

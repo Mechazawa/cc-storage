@@ -2,14 +2,17 @@ import { CrafterConfig } from "../Config";
 import RecipeManager from "../crafting/RecipeManager";
 import App from "./App";
 import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
-import RPC from "../RPC";
+import RPC, { RPCRequest } from "../RPC";
 import { RecipeType } from "../crafting/Recipe";
 import { CrafterHost } from "../StorageManager";
+import ExpiringLock from "../ExpiringLock";
 
 export default class Crafter extends App {
   recipeManager: RecipeManager;
 
   declare config: CrafterConfig;
+
+  craftLock = new ExpiringLock();
 
   constructor(config: CrafterConfig) {
     super(config);
@@ -31,6 +34,10 @@ export default class Crafter extends App {
     RPC.openModems();
     RPC.host(this.config.hostname, {
       ping: () => "pong",
+      reboot: (request, callback) => {
+        callback(request, true);
+        os.reboot();
+      },
       craft: (request, callback, recipeName: string, input: string[], count?: number) => {
         const recipe = this.recipeManager.get(recipeName);
 
@@ -38,18 +45,27 @@ export default class Crafter extends App {
           throw new Error("Unknown recipe: " + recipeName);
         }
 
-        return recipe.craft(input, count);
+        try {
+          return recipe.craft(input, count);
+        } finally {
+          this.craftLock.unlock();
+        }
       },
       lookupCrafter: (request, callback, type: RecipeType): CrafterHost | undefined => {
         const recipeTypes = (this.config as CrafterConfig).recipeTypes;
 
-        if (recipeTypes.includes(type)) {
+        if (!this.craftLock.locked && recipeTypes.includes(type)) {
+          sleep(Math.random() / 100);
+
           return {
             host: os.getComputerID(),
             storageName: this.config.storage[0],
             type,
           };
         }
+      },
+      lock: (request, callback, timeout: number): boolean => {
+        return this.craftLock.lock(timeout);
       },
     });
   }

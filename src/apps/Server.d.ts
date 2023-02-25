@@ -4,6 +4,7 @@ import { TransferableRecipe } from "../crafting/Recipe";
 
 export interface ServerRPC extends WrappedRPC {
   ping(): "pong";
+  reboot(): boolean;
   defragment(): number;
   storeAll(storageName: string): number;
   store(storageName: string, slot: number, count?: number): number;
