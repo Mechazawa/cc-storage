@@ -10,6 +10,7 @@ WORKDIR /home/static
 # Use the .dockerignore file to control what ends up inside the image!
 COPY dist/listing.txt ./index.html
 COPY dist/* ./
+RUN ls -l
 
 EXPOSE 3000
 
