@@ -23,6 +23,7 @@
     "measurePerformance": true,
     "noHeader": true,
     "luaBundleEntry": "src/startup.ts",
-    "luaBundle": "startup.lua"
+    "luaBundle": "startup.lua",
+    "luaPlugins": [{ "name": "./listingPlugin.ts" }]
   }
 }
