@@ -21,10 +21,6 @@ export default class Crafter extends App {
   }
 
   run(): void {
-    if (this.config.storage.length === 0) {
-      throw new Error('No storage configured');
-    }
-
     loadCraftingTableRecipes(this.recipeManager);
 
     const recipeCount = Object.keys(this.recipeManager.recipes).length;
