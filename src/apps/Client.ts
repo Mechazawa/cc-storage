@@ -75,21 +75,6 @@ export default class Client extends App {
     const main = basalt.createFrame();
     const listToggleStateLabels = ["All", "Craftable", "Stored"];
     let listToggleState = 0;
-
-    // TODO needs refactoring in separate components
-    // ** I'm probably going to mess up conventions here, feel free to refactor **
-    // Components:
-    // Title bar
-    // Search bar
-    // Item list table:
-    //  -Header
-    //  -Row
-    // Side bar:
-    //  -List toggle
-    //  -Take item button group
-    //  -Craft item button group
-    //  -Store all button
-
     // TITLE BAR
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
@@ -120,7 +105,7 @@ export default class Client extends App {
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(40,1);
+    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(41,1);
 
     let itemList = main.addList();
     itemList.setScrollable(true);
@@ -228,7 +213,7 @@ export default class Client extends App {
     });
 
     storeAllButton.onClick(() => {
-      this.logger.debug("Clicked store all button");
+      // this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
       this.server?.storeAll(this.config.storage[0]);
     });
