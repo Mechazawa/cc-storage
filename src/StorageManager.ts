@@ -2,6 +2,7 @@ import Cache from "./Cache";
 import CachedInventoryProxy from "./CachedInventoryProxy";
 import Logger from "./Logger";
 import RPC from "./RPC";
+import ThreadPool from "./ThreadPool";
 import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 
@@ -198,7 +199,7 @@ export default class StorageManager {
           count = 0;
 
           output.push(outputLoc);
-          
+
           return output;
         } else {
           output.push(location);
@@ -226,6 +227,8 @@ export default class StorageManager {
 
       if (key.startsWith("items:")) {
         key = key.substring(6);
+
+        return stack.tags.get(key) === true || stack.name == key;
       }
 
       return stack.tags.get(key) === true;
@@ -334,24 +337,8 @@ export default class StorageManager {
       });
     }
 
-    const threadPool = [];
-
-    for (let i = 0; i < 80; i++) {
-      threadPool.push(() => {
-        while (true) {
-          const fn = stackFns.pop();
-
-          if (fn === undefined) {
-            return;
-          }
-
-          fn();
-        }
-      });
-    }
-
-    parallel.waitForAll(...storageFns);
-    parallel.waitForAll(...threadPool);
+    new ThreadPool(20, storageFns).run();
+    new ThreadPool(80, stackFns).run();
 
     for (const stack of stacks) {
       if (typeof stack === "object") {
@@ -461,39 +448,40 @@ export default class StorageManager {
     assert(chunks.reduce((a, c) => a + c[1], 0) > 0);
 
     const fns = chunks.map(([out, count], i) => () => {
-      out[i] = this._craft(recipe, count, timeout);
-      this.logger.log(`done ${out.reduce((a, c) => a + c, 0)} ${i + 1}/${chunks.length}`);
+      const crafter = this.findCrafter(recipe.type, 30, timeout);
+
+      if (crafter === undefined) {
+        throw new Error(`Missing crafter for "${recipe.type}"`);
+      }
+
+      out[i] = this._craft(crafter, recipe, count, timeout);
+      this.logger.log(`done ${out.reduce((a, c) => a + (c ?? 0), 0)} ${i + 1}/${chunks.length}`);
     });
 
-    parallel.waitForAll(...fns);
+    const pool = new ThreadPool(4, fns);
 
-    return outputs.reduce((a, c) => a + c, 0);
+    pool.logger.showDebug = true;
+    pool.run();
+
+    return outputs.reduce((a, c) => a + (c ?? 0), 0);
   }
 
-  _craft(recipe: Recipe, times: number = 1, timeout: number = 120): number {
-    const crafter = this.findCrafter(recipe.type, 30, timeout);
-
-    if (crafter === undefined) {
-      throw new Error(`Missing crafter for "${recipe.type}"`);
-    }
-
+  _craft(crafter: CrafterHost, recipe: Recipe, times: number = 1, timeout: number = 120): number {
     this.logger.debug(`lock: ${crafter.host}`);
 
     const inputItems = recipe.getInput();
 
-    this.logger.debug(`count: ${crafter.host}`);
-
     for (const item of inputItems) {
-      times = Math.min(Math.max(...item.split("|").map((x) => this.count(x))), times);
+      const counts = item.split("|").map((x) => this.count(x));
+      times = Math.min(Math.max(...counts), times);
 
       if (times === 0) {
-        this.logger.error(`Not enough resources to craft "${recipe.name}"`);
+        this.logger.error(`Not enough "${item}"(${counts.join('|')}) to craft "${recipe.name}"`);
         return 0;
       }
     }
 
     let slot = 1;
-    this.logger.debug(`locate: ${crafter.host}`);
 
     for (const key of inputItems) {
       // todo: split craft call based on item availability ex: `items:a|items:b`
@@ -504,12 +492,16 @@ export default class StorageManager {
     }
 
     this.logger.debug(`craft: ${crafter.host}`);
-    const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, times]);
-    this.logger.debug(`unlock: ${crafter.host}`);
+    try {
+      const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, times], 30);
+      
+      return success ? times : 0;
+    } finally {
+      this.storeAll(crafter.storageName);
 
-    this.storeAll(crafter.storageName);
-
-    return success ? times : 0;
+      this.logger.debug(`unlock: ${crafter.host}`);
+      RPC.call(crafter.host, "unlock", [recipe.name, inputItems, times], 30);
+    }
   }
 
   listCraftable(): TransferableRecipe[] {

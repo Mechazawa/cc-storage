@@ -140,7 +140,7 @@ export default class RPC {
       const [from, body] = rednet.receive(this.protocol, timeout);
 
       if (typeof timeout === "number") {
-        timeout -= os.epoch("utc") - start;
+        timeout -= (os.epoch("utc") - start) / 1000;
       }
 
       if (from === undefined) {

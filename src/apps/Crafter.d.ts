@@ -9,4 +9,5 @@ export interface ServerRPC extends WrappedRPC {
   craft(recipeName: string, input: string[], count?: number): boolean;
   lookupCrafter(type: RecipeType): CrafterHost | undefined;
   lock(timeout: number): boolean;
+  unlock(): boolean;
 }

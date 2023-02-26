@@ -45,11 +45,7 @@ export default class Crafter extends App {
           throw new Error("Unknown recipe: " + recipeName);
         }
 
-        try {
-          return recipe.craft(input, count);
-        } finally {
-          this.craftLock.unlock();
-        }
+        return recipe.craft(input, count);
       },
       lookupCrafter: (request, callback, type: RecipeType): CrafterHost | undefined => {
         const recipeTypes = (this.config as CrafterConfig).recipeTypes;
@@ -66,6 +62,9 @@ export default class Crafter extends App {
       },
       lock: (request, callback, timeout: number): boolean => {
         return this.craftLock.lock(timeout);
+      },
+      unlock: (): boolean => {
+        return this.craftLock.unlock();
       },
     });
   }

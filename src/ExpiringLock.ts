@@ -10,7 +10,7 @@ export default class ExpiringLock {
     }
 
     if (this.expires <= os.epoch('utc')) {
-      this.unlock();
+      this.expires = 0
       return false;
     }
 
@@ -31,7 +31,9 @@ export default class ExpiringLock {
     return true;
   }
 
-  unlock(): void {
-    this.expires = 0;
+  unlock(): boolean {
+    this.expires = 0
+
+    return true;
   }
 }
