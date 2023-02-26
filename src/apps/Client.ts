@@ -109,7 +109,7 @@ export default class Client extends App {
     this.server?.take(this.config.storage[0], itemKey.toString(), amount);
   }
 
-  listItems(listObject: List filter?: string | number): void {
+  listItems(listObject: List, filter?: string | number): void {
     const norm = (s: any) => ('' + s).toLowerCase().trim().replace('_', ' ');
     const query = norm(filter ?? "");
     listObject.clear();

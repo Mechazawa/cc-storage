@@ -1,4 +1,4 @@
-export function lpad(input: string, size: number, char: string = ' ') {
+export function lpad(input: string, size: number, char: string = " ") {
   while (input.length < size) {
     input = char + input;
   }
@@ -6,7 +6,7 @@ export function lpad(input: string, size: number, char: string = ' ') {
   return input;
 }
 
-export function rpad(input: string, size: number, char: string = ' ') {
+export function rpad(input: string, size: number, char: string = " ") {
   while (input.length < size) {
     input += char;
   }
@@ -14,7 +14,7 @@ export function rpad(input: string, size: number, char: string = ' ') {
   return input;
 }
 
-export function ellipsis(input: string, maxLength: number, end = '...') {
+export function ellipsis(input: string, maxLength: number, end = "...") {
   if (input.length < maxLength) {
     return input;
   }
