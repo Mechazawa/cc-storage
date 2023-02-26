@@ -135,7 +135,11 @@ export default class Client extends App {
         this.logger.error("list toggle state encountered illegal value");
     }
 
-    let searchResults = this.server?.list().values ?? "Storage is empty";
+    let searchResults = this.server?.list() ?? "Storage is empty";
+
+    for (const result in searchResults as any) {
+      itemList.addItem(result.valueOf());
+    };
 
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 14);
 
