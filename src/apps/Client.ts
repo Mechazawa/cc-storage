@@ -108,7 +108,7 @@ export default class Client extends App {
   }
 
   listItems(listObject: List, filter?: string | number): void {
-    const norm = (s: any) => ('' + s).toLowerCase().trim().replace('_', ' ').replace(new RegExp('\s+', 'g'), ' ');
+    const norm = (s: any) => ('' + s).toLowerCase().trim().replace('_', ' ');
     const query = norm(filter ?? "");
     listObject.clear();
     let searchResults = this.server?.list().filter(function (el) {
