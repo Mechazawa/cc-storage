@@ -113,27 +113,27 @@ export default class Client extends App {
     const norm = (s: any) => ('' + s).toLowerCase().trim().replace('_', ' ');
     const query = norm(filter ?? "");
     listObject.clear();
-    let searchResults = this.server?.list().filter(function (el) {
-      return  norm(el.displayName).includes(query) || 
-              norm(el.key).includes(query) || 
-              norm(el.count).includes(query);
-    });
-    // let listCraftable = this.server?.listCraftable();
-    if (searchResults) {
-      // quick and dirty, the list itself needs to be sortable with better ui etc
-      if (this.sortCount) {
-        searchResults.sort((a, b) => a.count - b.count);
-      } else {
-        searchResults.sort((a, b) => b.count - a.count);
-      }
-
-      // Check whether list exists
-      searchResults.forEach((e) => {
-        listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 30), colors.black, colors.white, { key: e.key });
+    let searchResults = this.server?.list() ?? [];
+    
+    if (query !== '') {
+      searchResults = searchResults.filter(function (el) {
+        return  norm(el.displayName).includes(query) || 
+                norm(el.key).includes(query) || 
+                norm(el.count).includes(query);
       });
-    } else {
-      this.logger.error("item list not found");
     }
+    // let listCraftable = this.server?.listCraftable();
+    // quick and dirty, the list itself needs to be sortable with better ui etc
+    if (this.sortCount) {
+      searchResults.sort((a, b) => a.count - b.count);
+    } else {
+      searchResults.sort((a, b) => b.count - a.count);
+    }
+
+    // Check whether list exists
+    searchResults.forEach((e) => {
+      listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 30), colors.black, colors.white, { key: e.key });
+    });
   }
 
   runGui(): void {
@@ -159,7 +159,7 @@ export default class Client extends App {
     const searchBar = main.addInput();
     let searchQuery = "";
 
-    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(39, 2).setDefaultText("Search...");
+    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(39, 1).setDefaultText("Search...");
     searchBar.onChange(() => {
       // Maybe we want to implement a waiting function to avoid searching on every keystroke
       searchQuery = searchBar.getValue();
@@ -177,7 +177,7 @@ export default class Client extends App {
     // ITEM LIST TABLE
     // itemTable contains a header row and an itemRow for each item, item amount is reduced
     // NOTE: itemTable is the only scrollable element in the UI
-    const itemTable = { x: 2, y: 4 };
+    const itemTable = { x: 1, y: 3 };
 
     const headerRow = main.addLabel();
     let sortCount = false;
