@@ -17,6 +17,8 @@ export default class Client extends App {
 
   declare config: ClientConfig;
 
+  sortCount = false;
+
   constructor(config: ClientConfig) {
     super(config);
   }
@@ -107,7 +109,7 @@ export default class Client extends App {
     this.server?.take(this.config.storage[0], itemKey.toString(), amount);
   }
 
-  listItems(listObject: List, filter?: string | number): void {
+  listItems(listObject: List filter?: string | number): void {
     const norm = (s: any) => ('' + s).toLowerCase().trim().replace('_', ' ');
     const query = norm(filter ?? "");
     listObject.clear();
@@ -118,6 +120,13 @@ export default class Client extends App {
     });
     // let listCraftable = this.server?.listCraftable();
     if (searchResults) {
+      // quick and dirty, the list itself needs to be sortable with better ui etc
+      if (this.sortCount) {
+        searchResults.sort((a, b) => a.count - b.count);
+      } else {
+        searchResults.sort((a, b) => b.count - a.count);
+      }
+
       // Check whether list exists
       searchResults.forEach((e) => {
         listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 32), colors.black, colors.white, { key: e.key });
@@ -171,19 +180,24 @@ export default class Client extends App {
     const itemTable = { x: 2, y: 4 };
 
     const headerRow = main.addLabel();
+    let sortCount = false;
 
     headerRow
       .setText("#     Name")
       .setPosition(itemTable.x, itemTable.y)
-      .setForeground(colors.white)
+      .setForeground(colors.lightGray)
       .setBackground(colors.black)
-      .setSize(38, 1);
+      .setSize(38, 1)
+      .onClick(() => {
+        sortCount = !sortCount;
+        this.listItems(itemList, searchQuery);
+      })
 
     let itemList = main.addList().setSelectedItem(colors.red, colors.black);
     itemList.setScrollable(true);
 
     this.listItems(itemList);
-    itemList.setPosition(itemTable.x + 1, itemTable.y + 1).setSize(37, 15);
+    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(37, 15);
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
