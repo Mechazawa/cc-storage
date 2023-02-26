@@ -94,7 +94,7 @@ export default class Client extends App {
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
-    main.addLayoutFromString('<pane width="30" height="10" bg="yellow" />')
+    main.addLayoutFromString('<pane width="51" height="19" bg="gray" />')
 
     titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
 
@@ -147,9 +147,7 @@ export default class Client extends App {
       this.logger.error("item list not found")
     }
 
-    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 14);
-
-    const startItem = '{text= "2342 Apple",bgCol= colors.black,fgCol= colors.white,args= {}}';
+    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 15);
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
@@ -161,8 +159,7 @@ export default class Client extends App {
     listToggleLabel
       .setText("List:")
       .setPosition(sideMenu.x, sideMenu.y)
-      .setSize(sideMenu.width, 1)
-      .setBackground(colors.gray);
+      .setSize(sideMenu.width, 1);
 
     const listToggle = main.addButton();
 
@@ -180,11 +177,11 @@ export default class Client extends App {
       // TODO filter itemTable according to new state
     });
 
-    listToggle.onGetFocus(() => {
+    listToggle.onClick(() => {
       listToggle.setBackground(colors.lightBlue);
     });
 
-    listToggle.onLoseFocus(() => {
+    listToggle.onClickUp(() => {
       listToggle.setBackground(colors.orange);
     })
 
@@ -195,8 +192,7 @@ export default class Client extends App {
     takeButtonGroupLabel
       .setText("List:")
       .setPosition(sideMenu.x, sideMenu.y + 2)
-      .setSize(sideMenu.width, 1)
-      .setBackground(colors.gray);
+      .setSize(sideMenu.width, 1);
 
     const takeButtonGroup = {};
     // Button group taking care of kicking of crafts, pressing the buttons kicks of crafts (1,16,64 respectively), the user needs to retrieve them afterwards
@@ -207,8 +203,7 @@ export default class Client extends App {
     craftButtonGroupLabel
       .setText("Craft:")
       .setPosition(sideMenu.x, sideMenu.y + 4)
-      .setSize(sideMenu.width, 1)
-      .setBackground(colors.gray);
+      .setSize(sideMenu.width, 1);
 
     const craftButtongroup = {};
 
@@ -218,8 +213,7 @@ export default class Client extends App {
     storeAllButtonLabel
       .setText("Store:")
       .setPosition(sideMenu.x, sideMenu.y + 7)
-      .setSize(sideMenu.width, 1)
-      .setBackground(colors.gray);
+      .setSize(sideMenu.width, 1);
 
     const storeAllButton = main.addButton();
 
