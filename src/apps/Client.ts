@@ -119,11 +119,13 @@ export default class Client extends App {
     const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
 
     let itemList = main.addList();
+    
+    let searchResults = this.server?.list() ?? 'Storage is empty';
 
-    itemList.setPosition(itemTable.x, itemTable.y + 1)
+    itemList.setPosition(itemTable.x, itemTable.y + 1);
 
-    const startItem = '{text= "1.   Apple",bgCol= colors.black,fgCol= colors.white,args= {}}';
-    itemList.addItem(startItem.toString());
+    const startItem = '{text= "2342 Apple",bgCol= colors.black,fgCol= colors.white,args= {}}';
+    itemList.addItem(searchResults.toString());
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
