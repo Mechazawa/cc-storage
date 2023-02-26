@@ -272,5 +272,5 @@ declare interface List extends BObject {
    * </list>
    * ```
    */
-  setSelectedItem(): this;
+  setSelectedItem(bg: number, fg: number): this;
 }

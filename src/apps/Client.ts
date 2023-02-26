@@ -5,6 +5,8 @@ import RPC from "../RPC";
 import CommandLine from "./components/CommandLine";
 import Lib from "../Lib";
 import { Basalt } from "../../types/Basalt/Basalt.d";
+import { List } from "../../types/Basalt/List";
+import Logger from "../Logger";
 
 const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
 
@@ -75,30 +77,57 @@ export default class Client extends App {
     this.server?.take(this.config.storage[0], itemKey.toString(), amount);
   }
 
+  listItems(listObject: List, filter?: string | number): void {
+    const query = filter?.toString() ?? "";
+    listObject.clear();
+    let searchResults = this.server?.list().filter(function (el) {
+      return el.displayName.includes(query) || el.key.includes(query) || el.count.toString().includes(query);
+    });
+    // let listCraftable = this.server?.listCraftable();
+    if (searchResults) {
+      // Check whether list exists
+      searchResults.forEach((e) => {
+        listObject.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white, { key: e.key });
+      });
+    } else {
+      this.logger.error("item list not found");
+    }
+  }
+
   runGui(): void {
     const main = basalt.createFrame();
     const listToggleStateLabels = ["All", "Craftable", "Stored"];
     let listToggleState = 0;
-    let selectedItemKey = "None";
     // TITLE BAR
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
 
-    titleBar.setText(" cc-cloud-storage : hold button to complete action").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
+    titleBar
+      .setText(" cc-cloud-storage : hold button to complete action")
+      .setBackground(colors.orange)
+      .setPosition(1, 1)
+      .setSize(51, 1);
+
     main.addLayoutFromString(
       '<pane width="51" height="19" bg="black" /><pane width="13" height="19" x="39" y="1" bg="gray" />'
     );
 
     // SEARCH BAR
-    const searchBar = main.addTextfield();
+    const searchBar = main.addInput();
     let searchQuery = "";
 
-    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(40, 2);
+    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(40, 2).setDefaultText("Search...");
     searchBar.onChange(() => {
       // Maybe we want to implement a waiting function to avoid searching on every keystroke
       searchQuery = searchBar.getValue();
+      this.listItems(itemList, searchQuery);
       // Set filtering in item table
+    });
+    searchBar.onKey((e, key) => {
+      if (key === keys.enter) {
+        // this.listItems(itemList,searchQuery)
+      }
     });
 
     // TODO implement search, ideally with some placeholder text
@@ -110,32 +139,17 @@ export default class Client extends App {
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(43, 1);
+    headerRow
+      .setText("#    Name")
+      .setPosition(itemTable.x, itemTable.y)
+      .setForeground(colors.white)
+      .setBackground(colors.black)
+      .setSize(38, 1);
 
-    let itemList = main.addList();
+    let itemList = main.addList().setSelectedItem(colors.red, colors.black);
     itemList.setScrollable(true);
 
-    switch (listToggleState) {
-      case 0:
-        break;
-
-      case 1:
-        break;
-      case 2:
-        break;
-      default:
-        this.logger.error("list toggle state encountered illegal value");
-    }
-    let searchResults = this.server?.list();
-    // let listCraftable = this.server?.listCraftable();
-    if (searchResults) {
-      // Check whether list exists
-      searchResults.forEach((e) => {
-        itemList.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white, { key: e.key });
-      });
-    } else {
-      this.logger.error("item list not found");
-    }
+    this.listItems(itemList);
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 15);
 
     // SIDE/ACTION MENU
@@ -223,18 +237,27 @@ export default class Client extends App {
       takeButtonSingle.setBackground(colors.yellow).setBorder(colors.black);
       const itemKey = itemList.getValue().args[1].key;
       this.takeItem(itemKey.toString(), 1);
+      const currentSelected = itemList.getItemIndex();
+      this.listItems(itemList, searchQuery);
+      itemList.selectItem(currentSelected);
     });
 
     takeButtonSixteen.onClick(() => {
       takeButtonSixteen.setBackground(colors.yellow).setBorder(colors.black);
       const itemKey = itemList.getValue().args[1].key;
       this.takeItem(itemKey.toString(), 16);
+      const currentSelected = itemList.getItemIndex();
+      this.listItems(itemList, searchQuery);
+      itemList.selectItem(currentSelected);
     });
 
     takeButtonSixtyfour.onClick(() => {
       takeButtonSixtyfour.setBackground(colors.yellow).setBorder(colors.black);
       const itemKey = itemList.getValue().args[1].key;
       this.takeItem(itemKey.toString(), 64);
+      const currentSelected = itemList.getItemIndex();
+      this.listItems(itemList, searchQuery);
+      itemList.selectItem(currentSelected);
     });
 
     takeButtonSingle.onClickUp(() => {
@@ -270,6 +293,7 @@ export default class Client extends App {
       // Implement function here to empty client into network
       storeAllButton.setBackground(colors.yellow).setBorder(colors.black);
       this.server?.storeAll(this.config.storage[0]);
+      this.listItems(itemList, searchQuery);
     });
 
     storeAllButton.onClickUp(() => {
