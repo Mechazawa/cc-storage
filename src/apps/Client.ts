@@ -71,17 +71,21 @@ export default class Client extends App {
     commandLine.run();
   }
 
+  takeItem(itemKey: string, amount: number): void {
+    this.server?.take(this.config.storage[0], itemKey.toString(), amount);
+  }
+
   runGui(): void {
     const main = basalt.createFrame();
     const listToggleStateLabels = ["All", "Craftable", "Stored"];
     let listToggleState = 0;
-    let selectedItemKey = 'None';
+    let selectedItemKey = "None";
     // TITLE BAR
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
 
-    titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
+    titleBar.setText(" cc-cloud-storage : hold button to complete action").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
     main.addLayoutFromString(
       '<pane width="51" height="19" bg="black" /><pane width="13" height="19" x="39" y="1" bg="gray" />'
     );
@@ -122,24 +126,21 @@ export default class Client extends App {
       default:
         this.logger.error("list toggle state encountered illegal value");
     }
-
     let searchResults = this.server?.list();
     // let listCraftable = this.server?.listCraftable();
     if (searchResults) {
       // Check whether list exists
       searchResults.forEach((e) => {
         itemList.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white, { key: e.key });
-        // itemList.addItem(`${e.key}`, colors.black, colors.white);
       });
     } else {
       this.logger.error("item list not found");
     }
-
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 15);
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
-    const sideMenu = { x: 41, y: 2, width: 10, background: colors.gray };
+    const sideMenu = { x: 41, y: 3, width: 10 };
 
     // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
     const listToggleLabel = main.addLabel();
@@ -151,7 +152,8 @@ export default class Client extends App {
     listToggle
       .setText("All")
       .setBackground(colors.orange)
-      .setPosition(sideMenu.x, sideMenu.y + 1);
+      .setPosition(sideMenu.x, sideMenu.y + 1)
+      .setBorder(colors.gray);
 
     listToggle.onClick(() => {
       this.logger.debug("Clicked list toggle button");
@@ -163,11 +165,11 @@ export default class Client extends App {
     });
 
     listToggle.onClick(() => {
-      listToggle.setBackground(colors.lightBlue);
+      listToggle.setBackground(colors.lightBlue).setBorder(colors.black);
     });
 
     listToggle.onClickUp(() => {
-      listToggle.setBackground(colors.orange);
+      listToggle.setBackground(colors.orange).setBorder(colors.gray);
     });
     // TODO REFACTOR TO REFLECT PROPER FUNCTIONS
     // Button group taking care of retrieving items, pressing the buttons takes items to the client chest (1,16,64,all respectively)
@@ -177,7 +179,8 @@ export default class Client extends App {
     takeButtonGroupLabel
       .setText("List:")
       .setPosition(sideMenu.x, sideMenu.y + 2)
-      .setSize(sideMenu.width, 1);
+      .setSize(sideMenu.width, 1)
+      .setBorder(colors.gray);
 
     const takeButtonGroup = {};
     // Button group taking care of kicking of crafts, pressing the buttons kicks of crafts (1,16,64 respectively), the user needs to retrieve them afterwards
@@ -187,23 +190,63 @@ export default class Client extends App {
 
     craftButtonGroupLabel
       .setText("Take:")
-      .setPosition(sideMenu.x, sideMenu.y + 4)
+      .setPosition(sideMenu.x, sideMenu.y + 5)
       .setSize(sideMenu.width, 1);
 
     const craftButtongroup = {};
 
     const takeButtonSingle = main.addButton();
-    takeButtonSingle.setText("1")
-      .setPosition(sideMenu.x, sideMenu.y + 5);
+    takeButtonSingle
+      .setText("1")
+      .setPosition(sideMenu.x, sideMenu.y + 6)
+      .setSize(3, 3)
+      .setBackground(colors.orange)
+      .setBorder(colors.gray);
 
+    const takeButtonSixteen = main.addButton();
+    takeButtonSixteen
+      .setText("16")
+      .setPosition(sideMenu.x + 3, sideMenu.y + 6)
+      .setSize(4, 3)
+      .setBackground(colors.orange)
+      .setBorder(colors.gray);
+
+    const takeButtonSixtyfour = main.addButton();
+    takeButtonSixtyfour
+      .setText("64")
+      .setPosition(sideMenu.x + 7, sideMenu.y + 6)
+      .setSize(4, 3)
+      .setBackground(colors.orange)
+      .setBorder(colors.gray);
 
     takeButtonSingle.onClick(() => {
-      // this.logger.debug("Clicked store all button");
-      // Implement function here to empty client into network
-      takeButtonSingle.setBackground(colors.lightBlue);
+      takeButtonSingle.setBackground(colors.yellow).setBorder(colors.black);
       const itemKey = itemList.getValue().args[1].key;
-      this.logger.debug(itemKey);
-      this.server?.take(this.config.storage[0], itemKey.toString(), 1);
+      this.takeItem(itemKey.toString(), 1);
+    });
+
+    takeButtonSixteen.onClick(() => {
+      takeButtonSixteen.setBackground(colors.yellow).setBorder(colors.black);
+      const itemKey = itemList.getValue().args[1].key;
+      this.takeItem(itemKey.toString(), 16);
+    });
+
+    takeButtonSixtyfour.onClick(() => {
+      takeButtonSixtyfour.setBackground(colors.yellow).setBorder(colors.black);
+      const itemKey = itemList.getValue().args[1].key;
+      this.takeItem(itemKey.toString(), 64);
+    });
+
+    takeButtonSingle.onClickUp(() => {
+      takeButtonSingle.setBackground(colors.orange).setBorder(colors.gray);
+    });
+
+    takeButtonSixteen.onClickUp(() => {
+      takeButtonSixteen.setBackground(colors.orange).setBorder(colors.gray);
+    });
+
+    takeButtonSixtyfour.onClickUp(() => {
+      takeButtonSixtyfour.setBackground(colors.orange).setBorder(colors.gray);
     });
 
     // Store button empties client chest into the network
@@ -211,7 +254,7 @@ export default class Client extends App {
 
     storeAllButtonLabel
       .setText("Store:")
-      .setPosition(sideMenu.x, sideMenu.y + 7)
+      .setPosition(sideMenu.x, sideMenu.y + 10)
       .setSize(sideMenu.width, 1);
 
     const storeAllButton = main.addButton();
@@ -219,19 +262,18 @@ export default class Client extends App {
     storeAllButton
       .setText("Store all")
       .setBackground(colors.orange)
-      .setPosition(sideMenu.x, sideMenu.y + 8);
-
-
+      .setPosition(sideMenu.x, sideMenu.y + 11)
+      .setBorder(colors.gray);
 
     storeAllButton.onClick(() => {
       // this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
-      storeAllButton.setBackground(colors.lightBlue);
-
+      storeAllButton.setBackground(colors.yellow).setBorder(colors.black);
       this.server?.storeAll(this.config.storage[0]);
     });
+
     storeAllButton.onClickUp(() => {
-      storeAllButton.setBackground(colors.orange);
+      storeAllButton.setBackground(colors.orange).setBorder(colors.gray);
     });
 
     basalt.autoUpdate();
