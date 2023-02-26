@@ -98,7 +98,7 @@ export default class Client extends App {
     const searchBar = main.addTextfield();
     let searchQuery = "";
 
-    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(41, 1);
+    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(40, 1);
     searchBar.onChange(() => {
       // Maybe we want to implement a waiting function to avoid searching on every keystroke
       searchQuery = searchBar.getValue();
@@ -120,7 +120,7 @@ export default class Client extends App {
 
     let itemList = main.addList();
     
-    let searchResults = this.server?.list() ?? 'Storage is empty';
+    let searchResults = this.server?.list().toLocaleString ?? 'Storage is empty';
 
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38,14);
 
