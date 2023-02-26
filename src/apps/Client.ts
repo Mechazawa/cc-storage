@@ -125,7 +125,11 @@ export default class Client extends App {
     // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
     const listToggleLabel = main.addLabel();
 
-    listToggleLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y).setBackground(colors.gray);
+    listToggleLabel
+      .setText("List:")
+      .setPosition(sideMenu.x, sideMenu.y)
+      .setSize(sideMenu.width, 1)
+      .setBackground(colors.gray);
 
     const listToggle = main.addButton();
 
@@ -157,6 +161,7 @@ export default class Client extends App {
     takeButtonGroupLabel
       .setText("List:")
       .setPosition(sideMenu.x, sideMenu.y + 2)
+      .setSize(sideMenu.width, 1)
       .setBackground(colors.gray);
 
     const takeButtonGroup = {};
@@ -168,6 +173,7 @@ export default class Client extends App {
     craftButtonGroupLabel
       .setText("Craft:")
       .setPosition(sideMenu.x, sideMenu.y + 4)
+      .setSize(sideMenu.width, 1)
       .setBackground(colors.gray);
 
     const craftButtongroup = {};
@@ -178,6 +184,7 @@ export default class Client extends App {
     storeAllButtonLabel
       .setText("Store:")
       .setPosition(sideMenu.x, sideMenu.y + 7)
+      .setSize(sideMenu.width, 1)
       .setBackground(colors.gray);
 
     const storeAllButton = main.addButton();
@@ -194,6 +201,7 @@ export default class Client extends App {
     storeAllButton.onClick(() => {
       this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
+      this.server?.storeAll(this.config.storage[0]);
     });
 
     basalt.autoUpdate();
