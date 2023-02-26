@@ -201,7 +201,7 @@ export default class Client extends App {
       // this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
       takeButtonSingle.setBackground(colors.lightBlue);
-      const itemKey = itemList.getValue().args;
+      const itemKey = itemList.getValue()['key'];
       this.logger.debug(itemKey);
       this.server?.take(this.config.storage[0], itemKey, 1);
     });
