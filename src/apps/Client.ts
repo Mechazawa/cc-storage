@@ -94,9 +94,11 @@ export default class Client extends App {
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
-    main.addLayoutFromString('<pane width="51" height="19" bg="black" /><pane width="10" height="19" x="43" y="3" bg="gray" />')
 
     titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
+    main.addLayoutFromString(
+      '<pane width="51" height="19" bg="black" /><pane width="10" height="19" x="39" y="1" bg="gray" />'
+    );
 
     // SEARCH BAR
     const searchBar = main.addTextfield();
@@ -118,11 +120,10 @@ export default class Client extends App {
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y);
-
-    const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
+    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white);
 
     let itemList = main.addList();
+    itemList.setScrollable(true);
 
     switch (listToggleState) {
       case 0:
@@ -137,14 +138,14 @@ export default class Client extends App {
     }
 
     let searchResults = this.server?.list();
+    let listCraftable = this.server?.listCraftable();
     if (searchResults) {
       // Check whether list exists
       searchResults.forEach((e) => {
-        itemList.addItem(`${e.count}  ${e.displayName}`)
-      }
-      )
+        itemList.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white);
+      });
     } else {
-      this.logger.error("item list not found")
+      this.logger.error("item list not found");
     }
 
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 15);
@@ -156,10 +157,7 @@ export default class Client extends App {
     // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
     const listToggleLabel = main.addLabel();
 
-    listToggleLabel
-      .setText("List:")
-      .setPosition(sideMenu.x, sideMenu.y)
-      .setSize(sideMenu.width, 1);
+    listToggleLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y).setSize(sideMenu.width, 1);
 
     const listToggle = main.addButton();
 
@@ -183,7 +181,7 @@ export default class Client extends App {
 
     listToggle.onClickUp(() => {
       listToggle.setBackground(colors.orange);
-    })
+    });
 
     // Button group taking care of retrieving items, pressing the buttons takes items to the client chest (1,16,64,all respectively)
     // if there is not enough items, retrieve whatever is present
@@ -222,8 +220,11 @@ export default class Client extends App {
       .setBackground(colors.orange)
       .setPosition(sideMenu.x, sideMenu.y + 8);
 
-    storeAllButton.onHover(() => {
+    storeAllButton.onClick(() => {
       storeAllButton.setBackground(colors.lightBlue);
+    });
+    storeAllButton.onClickUp(() => {
+      storeAllButton.setBackground(colors.orange);
     });
 
     storeAllButton.onClick(() => {
