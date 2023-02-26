@@ -122,7 +122,7 @@ export default class Client extends App {
     
     let searchResults = this.server?.list() ?? 'Storage is empty';
 
-    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(41,14);
+    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38,14);
 
     const startItem = '{text= "2342 Apple",bgCol= colors.black,fgCol= colors.white,args= {}}';
     itemList.addItem(searchResults.toString());
