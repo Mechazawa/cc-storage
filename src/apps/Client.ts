@@ -120,7 +120,7 @@ export default class Client extends App {
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white);
+    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(40,1);
 
     let itemList = main.addList();
     itemList.setScrollable(true);
