@@ -139,9 +139,10 @@ export default class Client extends App {
     let searchResults = this.server?.list();
     if (searchResults) {
       // Check whether list exists
-      for (let i = 0; i < searchResults.length; i++) {
-        itemList.addItem(searchResults.at(i)!.displayName);
-      };
+      searchResults.forEach((e) => {
+        itemList.addItem(`${e.count}  ${e.displayName}`)
+      }
+      )
     } else {
       this.logger.error("item list not found")
     }
