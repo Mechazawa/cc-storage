@@ -117,7 +117,7 @@ export default class Client extends App {
     const searchBar = main.addInput();
     let searchQuery = "";
 
-    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(40, 2).setDefaultText("Search...");
+    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(39, 2).setDefaultText("Search...");
     searchBar.onChange(() => {
       // Maybe we want to implement a waiting function to avoid searching on every keystroke
       searchQuery = searchBar.getValue();
@@ -150,23 +150,24 @@ export default class Client extends App {
     itemList.setScrollable(true);
 
     this.listItems(itemList);
-    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 15);
+    itemList.setPosition(itemTable.x+1, itemTable.y + 1).setSize(37, 15);
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
-    const sideMenu = { x: 41, y: 3, width: 10 };
+    const sideMenu = { x: 40, y: 3, width: 11 };
 
     // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
     const listToggleLabel = main.addLabel();
 
-    listToggleLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y).setSize(sideMenu.width, 1);
+    listToggleLabel.setText("List:").setPosition(sideMenu.x+1, sideMenu.y).setSize(sideMenu.width, 1);
 
     const listToggle = main.addButton();
 
     listToggle
       .setText("All")
       .setBackground(colors.orange)
-      .setPosition(sideMenu.x, sideMenu.y + 1)
+      .setPosition(sideMenu.x+1, sideMenu.y + 1)
+      .setSize(sideMenu.width,3)
       .setBorder(colors.gray);
 
     listToggle.onClick(() => {
@@ -192,7 +193,7 @@ export default class Client extends App {
 
     takeButtonGroupLabel
       .setText("List:")
-      .setPosition(sideMenu.x, sideMenu.y + 2)
+      .setPosition(sideMenu.x+1, sideMenu.y + 2)
       .setSize(sideMenu.width, 1)
       .setBorder(colors.gray);
 
@@ -204,7 +205,7 @@ export default class Client extends App {
 
     craftButtonGroupLabel
       .setText("Take:")
-      .setPosition(sideMenu.x, sideMenu.y + 5)
+      .setPosition(sideMenu.x+1, sideMenu.y + 5)
       .setSize(sideMenu.width, 1);
 
     const craftButtongroup = {};
@@ -212,7 +213,7 @@ export default class Client extends App {
     const takeButtonSingle = main.addButton();
     takeButtonSingle
       .setText("1")
-      .setPosition(sideMenu.x, sideMenu.y + 6)
+      .setPosition(sideMenu.x+1, sideMenu.y + 6)
       .setSize(3, 3)
       .setBackground(colors.orange)
       .setBorder(colors.gray);
@@ -220,7 +221,7 @@ export default class Client extends App {
     const takeButtonSixteen = main.addButton();
     takeButtonSixteen
       .setText("16")
-      .setPosition(sideMenu.x + 3, sideMenu.y + 6)
+      .setPosition(sideMenu.x + 4, sideMenu.y + 6)
       .setSize(4, 3)
       .setBackground(colors.orange)
       .setBorder(colors.gray);
@@ -228,7 +229,7 @@ export default class Client extends App {
     const takeButtonSixtyfour = main.addButton();
     takeButtonSixtyfour
       .setText("64")
-      .setPosition(sideMenu.x + 7, sideMenu.y + 6)
+      .setPosition(sideMenu.x + 8, sideMenu.y + 6)
       .setSize(4, 3)
       .setBackground(colors.orange)
       .setBorder(colors.gray);
@@ -277,7 +278,7 @@ export default class Client extends App {
 
     storeAllButtonLabel
       .setText("Store:")
-      .setPosition(sideMenu.x, sideMenu.y + 10)
+      .setPosition(sideMenu.x+1, sideMenu.y + 10)
       .setSize(sideMenu.width, 1);
 
     const storeAllButton = main.addButton();
@@ -285,7 +286,8 @@ export default class Client extends App {
     storeAllButton
       .setText("Store all")
       .setBackground(colors.orange)
-      .setPosition(sideMenu.x, sideMenu.y + 11)
+      .setPosition(sideMenu.x+1, sideMenu.y + 11)
+      .setSize(sideMenu.width,3)
       .setBorder(colors.gray);
 
     storeAllButton.onClick(() => {
