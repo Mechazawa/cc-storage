@@ -73,6 +73,9 @@ export default class Client extends App {
 
   runGui(): void {
     const main = basalt.createFrame();
+    const listToggleStateLabels = ["All", "Craftable", "Stored"];
+    let listToggleState = 0;
+
     // TODO needs refactoring in separate components
     // ** I'm probably going to mess up conventions here, feel free to refactor **
     // Components:
@@ -119,10 +122,22 @@ export default class Client extends App {
     const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
 
     let itemList = main.addList();
-    
-    let searchResults = this.server?.list().toLocaleString ?? 'Storage is empty';
 
-    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38,14);
+    switch (listToggleState) {
+      case 0:
+        break;
+
+      case 1:
+        break;
+      case 2:
+        break;
+      default:
+        this.logger.error("list toggle state encountered illegal value");
+    }
+
+    let searchResults = this.server?.list().values ?? "Storage is empty";
+
+    itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 14);
 
     const startItem = '{text= "2342 Apple",bgCol= colors.black,fgCol= colors.white,args= {}}';
     itemList.addItem(searchResults.toString());
@@ -141,9 +156,6 @@ export default class Client extends App {
       .setBackground(colors.gray);
 
     const listToggle = main.addButton();
-
-    const listToggleStateLabels = ["All", "Craftable", "Stored"];
-    let listToggleState = 0;
 
     listToggle
       .setText("All")
