@@ -175,9 +175,13 @@ export default class Client extends App {
       // TODO filter itemTable according to new state
     });
 
-    listToggle.onHover(() => {
+    listToggle.onGetFocus(() => {
       listToggle.setBackground(colors.lightBlue);
     });
+
+    listToggle.onLoseFocus(()=>{
+      listToggle.setBackground(colors.orange);
+    })
 
     // Button group taking care of retrieving items, pressing the buttons takes items to the client chest (1,16,64,all respectively)
     // if there is not enough items, retrieve whatever is present
