@@ -94,6 +94,7 @@ export default class Client extends App {
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
+    main.addLayoutFromString('<pane width="30" height="10" bg="yellow" />')
 
     titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
 
@@ -135,16 +136,15 @@ export default class Client extends App {
         this.logger.error("list toggle state encountered illegal value");
     }
 
-    let searchResults = this.server?.list() ?? "Storage is empty";
+    let searchResults = this.server?.list();
 
-    for (const result in searchResults as any) {
+    for (const result in searchResults) {
       itemList.addItem(result.valueOf());
     };
 
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 14);
 
     const startItem = '{text= "2342 Apple",bgCol= colors.black,fgCol= colors.white,args= {}}';
-    itemList.addItem(searchResults.toString());
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
