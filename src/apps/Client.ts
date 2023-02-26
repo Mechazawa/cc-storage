@@ -108,12 +108,13 @@ export default class Client extends App {
   }
 
   listItems(listObject: List, filter?: string | number): void {
-    const query = filter?.toString().toLowerCase().trim() ?? "";
+    const norm = (s: any) => ('' + s).toLowerCase().trim().replace('_', ' ').replace(new RegExp('\s+', 'g'), ' ');
+    const query = norm(filter ?? "");
     listObject.clear();
     let searchResults = this.server?.list().filter(function (el) {
-      return el.displayName.toLowerCase().includes(query) || 
-              el.key.toLowerCase().includes(query) || 
-              el.count.toString().toLowerCase().includes(query);
+      return  norm(el.displayName).includes(query) || 
+              norm(el.key).includes(query) || 
+              norm(el.count).includes(query);
     });
     // let listCraftable = this.server?.listCraftable();
     if (searchResults) {
