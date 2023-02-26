@@ -476,7 +476,7 @@ export default class StorageManager {
       times = Math.min(Math.max(...counts), times);
 
       if (times === 0) {
-        this.logger.error(`Not enough "${item}"(${counts.join('|')}) to craft "${recipe.name}"`);
+        this.logger.error(`Not enough "${item}"(${counts.join("|")}) to craft "${recipe.name}"`);
         return 0;
       }
     }
@@ -494,7 +494,7 @@ export default class StorageManager {
     this.logger.debug(`craft: ${crafter.host}`);
     try {
       const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, times], 30);
-      
+
       return success ? times : 0;
     } finally {
       this.storeAll(crafter.storageName);

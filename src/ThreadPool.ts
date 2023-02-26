@@ -20,23 +20,28 @@ export default class ThreadPool {
   run() {
     const threads = [];
 
-    for(let i = 0; i < this.size; i++) {
-      threads.push(((threadId): Function => () => {
-        while (true) {
-          const task = this.pool.pop();
+    for (let i = 0; i < this.size; i++) {
+      threads.push(
+        (
+          (threadId): Function =>
+          () => {
+            while (true) {
+              const task = this.pool.pop();
 
-          if (typeof task !== 'function') {
-            this.logger.debug(`thread ${threadId}/${threads.length} done`);
-            return;
+              if (typeof task !== "function") {
+                this.logger.debug(`thread ${threadId}/${threads.length} done`);
+                return;
+              }
+
+              task();
+
+              os.pullEvent();
+            }
           }
-
-          task();
-          
-          os.pullEvent();
-        }
-      })(i));
+        )(i)
+      );
     }
-   
+
     parallel.waitForAll(...threads);
   }
 }

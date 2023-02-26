@@ -17,7 +17,7 @@ if (config === undefined) {
 }
 
 if (config.storage.length === 0) {
-  throw new Error('No storage configured');
+  throw new Error("No storage configured");
 }
 
 const stateManager = new StateManager();

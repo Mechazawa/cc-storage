@@ -33,7 +33,7 @@ export default class CommandLine {
     ["mcwwindows", "mcww"],
   ];
 
-  constructor(server: ServerRPC, storageName: string, keepHistory = true, historyLocation = '/.history') {
+  constructor(server: ServerRPC, storageName: string, keepHistory = true, historyLocation = "/.history") {
     this.server = server;
     this.storageName = storageName;
     this.keepHistory = keepHistory;
@@ -43,26 +43,26 @@ export default class CommandLine {
       this.restoreHistory();
     }
   }
-  
+
   restoreHistory() {
     if (!fs.exists(this.historyLocation)) {
       return;
     }
 
-    const hFile = fs.open(this.historyLocation, 'r') as ReadHandle;
-    
-    this.history = textutils.unserialise(hFile.readAll() ?? '[]') as string[];
+    const hFile = fs.open(this.historyLocation, "r") as ReadHandle;
+
+    this.history = textutils.unserialise(hFile.readAll() ?? "[]") as string[];
 
     hFile.close();
   }
-  
+
   saveHistory() {
     //todo:magic number
-    while(this.history.length > 1000) this.history.shift();
+    while (this.history.length > 1000) this.history.shift();
 
-    const hFile = fs.open(this.historyLocation, 'w') as WriteHandle;
-    
-    hFile.write(textutils.serialise(this.history, {compact: false, allow_repetitions: true}));
+    const hFile = fs.open(this.historyLocation, "w") as WriteHandle;
+
+    hFile.write(textutils.serialise(this.history, { compact: false, allow_repetitions: true }));
     hFile.close();
   }
 
@@ -165,7 +165,7 @@ export default class CommandLine {
         keywords: ["rebootAll"],
         completeFn: (partial: string) => [],
         action: () => {
-          RPC.broadcastNotify('reboot');
+          RPC.broadcastNotify("reboot");
           os.reboot();
         },
       },

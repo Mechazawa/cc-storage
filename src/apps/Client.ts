@@ -92,7 +92,7 @@ export default class Client extends App {
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
 
-    titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1,1).setSize(51, 1);
+    titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
 
     // SEARCH BAR
     const searchBar = main.addTextfield();
@@ -114,7 +114,7 @@ export default class Client extends App {
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("\#    Name").setPosition(itemTable.x, itemTable.y);
+    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y);
 
     const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
 
@@ -125,7 +125,7 @@ export default class Client extends App {
     // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
     const listToggleLabel = main.addLabel();
 
-    listToggleLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y);
+    listToggleLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y).setBackground(colors.gray);
 
     const listToggle = main.addButton();
 
@@ -146,11 +146,18 @@ export default class Client extends App {
       // TODO filter itemTable according to new state
     });
 
+    listToggle.onHover(() => {
+      listToggle.setBackground(colors.lightBlue);
+    });
+
     // Button group taking care of retrieving items, pressing the buttons takes items to the client chest (1,16,64,all respectively)
     // if there is not enough items, retrieve whatever is present
     const takeButtonGroupLabel = main.addLabel();
 
-    takeButtonGroupLabel.setText("List:").setPosition(sideMenu.x, sideMenu.y + 2);
+    takeButtonGroupLabel
+      .setText("List:")
+      .setPosition(sideMenu.x, sideMenu.y + 2)
+      .setBackground(colors.gray);
 
     const takeButtonGroup = {};
     // Button group taking care of kicking of crafts, pressing the buttons kicks of crafts (1,16,64 respectively), the user needs to retrieve them afterwards
@@ -158,14 +165,20 @@ export default class Client extends App {
     // Maybe we want to disable the buttons beforehand if there is no recipe available and/or there is no materials
     const craftButtonGroupLabel = main.addLabel();
 
-    craftButtonGroupLabel.setText("Craft:").setPosition(sideMenu.x, sideMenu.y + 4);
+    craftButtonGroupLabel
+      .setText("Craft:")
+      .setPosition(sideMenu.x, sideMenu.y + 4)
+      .setBackground(colors.gray);
 
     const craftButtongroup = {};
 
     // Store button empties client chest into the network
     const storeAllButtonLabel = main.addLabel();
 
-    storeAllButtonLabel.setText("Store:").setPosition(sideMenu.x, sideMenu.y + 7);
+    storeAllButtonLabel
+      .setText("Store:")
+      .setPosition(sideMenu.x, sideMenu.y + 7)
+      .setBackground(colors.gray);
 
     const storeAllButton = main.addButton();
 
@@ -173,6 +186,10 @@ export default class Client extends App {
       .setText("Store all")
       .setBackground(colors.orange)
       .setPosition(sideMenu.x, sideMenu.y + 8);
+
+    storeAllButton.onHover(() => {
+      storeAllButton.setBackground(colors.lightBlue);
+    });
 
     storeAllButton.onClick(() => {
       this.logger.debug("Clicked store all button");
