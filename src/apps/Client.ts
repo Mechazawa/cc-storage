@@ -97,14 +97,14 @@ export default class Client extends App {
 
     titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
     main.addLayoutFromString(
-      '<pane width="51" height="19" bg="black" /><pane width="10" height="19" x="39" y="1" bg="gray" />'
+      '<pane width="51" height="19" bg="black" /><pane width="13" height="19" x="39" y="1" bg="gray" />'
     );
 
     // SEARCH BAR
     const searchBar = main.addTextfield();
     let searchQuery = "";
 
-    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(40, 1);
+    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(40, 2);
     searchBar.onChange(() => {
       // Maybe we want to implement a waiting function to avoid searching on every keystroke
       searchQuery = searchBar.getValue();
@@ -116,7 +116,7 @@ export default class Client extends App {
     // ITEM LIST TABLE
     // itemTable contains a header row and an itemRow for each item, item amount is reduced
     // NOTE: itemTable is the only scrollable element in the UI
-    const itemTable = { x: 2, y: 3 };
+    const itemTable = { x: 2, y: 4 };
 
     const headerRow = main.addLabel();
 
@@ -138,7 +138,7 @@ export default class Client extends App {
     }
 
     let searchResults = this.server?.list();
-    let listCraftable = this.server?.listCraftable();
+    // let listCraftable = this.server?.listCraftable();
     if (searchResults) {
       // Check whether list exists
       searchResults.forEach((e) => {
@@ -182,7 +182,7 @@ export default class Client extends App {
     listToggle.onClickUp(() => {
       listToggle.setBackground(colors.orange);
     });
-
+    // TODO REFACTOR TO REFLECT PROPER FUNCTIONS
     // Button group taking care of retrieving items, pressing the buttons takes items to the client chest (1,16,64,all respectively)
     // if there is not enough items, retrieve whatever is present
     const takeButtonGroupLabel = main.addLabel();
@@ -199,7 +199,7 @@ export default class Client extends App {
     const craftButtonGroupLabel = main.addLabel();
 
     craftButtonGroupLabel
-      .setText("Craft:")
+      .setText("Take:")
       .setPosition(sideMenu.x, sideMenu.y + 4)
       .setSize(sideMenu.width, 1);
 
