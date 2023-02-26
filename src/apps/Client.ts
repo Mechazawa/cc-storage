@@ -120,7 +120,7 @@ export default class Client extends App {
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
-    const sideMenu = { x: 30, y: 1, width: 10, background: colors.gray };
+    const sideMenu = { x: 41, y: 1, width: 10, background: colors.gray };
 
     // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
     const listToggleLabel = main.addLabel();
@@ -178,28 +178,6 @@ export default class Client extends App {
       this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
     });
-
-    const btn = main.addButton();
-
-    btn.setText("clickMe").setPosition(3, 1).setSize(9, 1);
-
-    btn.onClick(
-      basalt.schedule(() => {
-        btn.disable();
-        const [x, y] = btn.getPosition();
-
-        btn.setBackground(colors.red);
-        btn.setPosition(x - 1, y);
-        sleep(0.05);
-        btn.setPosition(x, y);
-        sleep(0.05);
-        btn.setPosition(x + 1, y);
-        sleep(0.05);
-        btn.setPosition(x, y);
-        btn.setBackground(colors.gray);
-        btn.enable();
-      })
-    );
 
     basalt.autoUpdate();
   }
