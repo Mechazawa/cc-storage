@@ -128,7 +128,7 @@ export default class Client extends App {
     if (searchResults) {
       // Check whether list exists
       searchResults.forEach((e) => {
-        itemList.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white, e.key);
+        itemList.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white, { key: e.key });
         // itemList.addItem(`${e.key}`, colors.black, colors.white);
       });
     } else {
@@ -201,7 +201,7 @@ export default class Client extends App {
       // this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
       takeButtonSingle.setBackground(colors.lightBlue);
-      const itemKey = itemList.getValue().args;
+      const itemKey = itemList.getValue().args.key;
       this.logger.debug(itemKey);
       this.server?.take(this.config.storage[0], itemKey, 1);
     });
