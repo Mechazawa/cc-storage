@@ -6,12 +6,13 @@ import CommandLine from "./components/CommandLine";
 import Lib from "../Lib";
 import { Basalt } from "../../types/Basalt/Basalt.d";
 import { List } from "../../types/Basalt/List";
-import Logger from "../Logger";
+import Cache from "../Cache";
 
 const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
 
 export default class Client extends App {
   server?: ServerRPC;
+  cache = new Cache();
 
   declare config: ClientConfig;
 
@@ -57,8 +58,36 @@ export default class Client extends App {
       throw new Error(`Could not connect to ${uri}`);
     }
 
-    this.logger.log(`Connected to ${uri}`);
+    this.server.list = this.cache.memoize("acc:list", this.server.list.bind(this));
+
+    this.logger.log(`Connected to ${uri}`);    
+
+    const cacheSeconds = 60;
+    
+    this.server.count = this.cache.memoize("acc:count", this.server.count.bind(this.server), cacheSeconds);
+    this.server.size = this.cache.memoize("acc:size", this.server.size.bind(this.server), cacheSeconds);
+    this.server.used = this.cache.memoize("acc:used", this.server.used.bind(this.server), cacheSeconds);
+    this.server.free = this.cache.memoize("acc:free", this.server.free.bind(this.server), cacheSeconds);
+    this.server.list = this.cache.memoize("acc:list", this.server.list.bind(this.server), cacheSeconds);
+    this.server.listCraftable = this.cache.memoize("acc:listCraftable", this.server.listCraftable.bind(this.server), cacheSeconds);
+
+    this.server.defragment = this._invalidates("acc:*", this.server.defragment.bind(this.server));
+    this.server.storeAll = this._invalidates("acc:*", this.server.storeAll.bind(this.server));
+    this.server.store = this._invalidates("acc:*", this.server.store.bind(this.server));
+    this.server.take = this._invalidates("acc:*", this.server.take.bind(this.server));
+    this.server.craft = this._invalidates("acc:*", this.server.craft.bind(this.server));
+    this.server.flushCache = this._invalidates("*", this.server.flushCache.bind(this.server));
   }
+
+  _invalidates<T extends Function>(key: string, fn: T): T {
+    return ((...args: any[]) => {
+      const out = fn(...args);
+      this.cache.delete('acc:*');
+      
+      return out;
+    }) as unknown as T;
+  }
+
 
   run(): void {
     this.connect();

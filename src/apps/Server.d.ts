@@ -9,7 +9,7 @@ export interface ServerRPC extends WrappedRPC {
   storeAll(storageName: string): number;
   store(storageName: string, slot: number, count?: number): number;
   take(storageName: string, key: string, count: number, slot?: number): number;
-  list(): Resource[];
+  list(key?: string): Resource[];
   size(): number;
   free(): number;
   used(): number;
