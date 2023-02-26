@@ -94,7 +94,7 @@ export default class Client extends App {
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
-    main.addLayoutFromString('<pane width="51" height="19" bg="gray" />')
+    main.addLayoutFromString('<pane width="51" height="19" bg="black" /><pane width="10" height="19" x="43" y="3" bg="gray" />')
 
     titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1, 1).setSize(51, 1);
 
