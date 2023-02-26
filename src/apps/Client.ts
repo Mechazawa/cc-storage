@@ -110,13 +110,22 @@ export default class Client extends App {
     // ITEM LIST TABLE
     // itemTable contains a header row and an itemRow for each item, item amount is reduced
     // NOTE: itemTable is the only scrollable element in the UI
-    const itemTable = { x: 1, y: 3 };
+    const itemTable = { x: 2, y: 3 };
 
     const headerRow = main.addLabel();
 
     headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y);
 
     const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
+
+    let itemList = main.addList();
+    const startItem = {
+      text: "1.   Apple",
+      bgCol: colors.black,
+      fgCol: colors.white,
+      args: {},
+    };
+    itemList.addItem(startItem.toString());
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
