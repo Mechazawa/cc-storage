@@ -92,13 +92,13 @@ export default class Client extends App {
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
 
-    titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(0, 0).setSize(51, 1);
+    titleBar.setText("cc-cloud-storage").setBackground(colors.orange).setPosition(1,1).setSize(51, 1);
 
     // SEARCH BAR
     const searchBar = main.addTextfield();
     let searchQuery = "";
 
-    searchBar.setBackground(colors.gray).setPosition(0, 1).setSize(30, 1);
+    searchBar.setBackground(colors.gray).setPosition(1, 2).setSize(41, 1);
     searchBar.onChange(() => {
       // Maybe we want to implement a waiting function to avoid searching on every keystroke
       searchQuery = searchBar.getValue();
@@ -110,17 +110,17 @@ export default class Client extends App {
     // ITEM LIST TABLE
     // itemTable contains a header row and an itemRow for each item, item amount is reduced
     // NOTE: itemTable is the only scrollable element in the UI
-    const itemTable = { x: 0, y: 3 };
+    const itemTable = { x: 1, y: 3 };
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y);
+    headerRow.setText("\#    Name").setPosition(itemTable.x, itemTable.y);
 
     const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
 
     // SIDE/ACTION MENU
     // sideMenu contains all functional buttons dealing with moving items
-    const sideMenu = { x: 41, y: 1, width: 10, background: colors.gray };
+    const sideMenu = { x: 41, y: 2, width: 10, background: colors.gray };
 
     // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
     const listToggleLabel = main.addLabel();
