@@ -119,12 +119,10 @@ export default class Client extends App {
     const itemRow = { amount: "64k", name: "mc:apple" }; // new row for each item row
 
     let itemList = main.addList();
-    const startItem = {
-      text: "1.   Apple",
-      bgCol: colors.black,
-      fgCol: colors.white,
-      args: {},
-    };
+
+    itemList.setPosition(itemTable.x, itemTable.y + 1)
+
+    const startItem = '{text= "1.   Apple",bgCol= colors.black,fgCol= colors.white,args= {}}';
     itemList.addItem(startItem.toString());
 
     // SIDE/ACTION MENU
