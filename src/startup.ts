@@ -16,6 +16,10 @@ if (config === undefined) {
   configFile.save(config);
 }
 
+if (config.storage.length === 0) {
+  throw new Error('No storage configured');
+}
+
 const stateManager = new StateManager();
 
 let app: App;

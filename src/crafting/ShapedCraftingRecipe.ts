@@ -57,20 +57,20 @@ export default class ShapedCraftingRecipe implements Recipe {
       }
     }
 
-    const output = turtle.craft(count)[0];
+    const [output, failReason] = turtle.craft(count);
 
-    // No need to iterate over all slots if the crafting was successful
-    if (output) {
-      turtle.drop();
-      return true;
+    for (let slot = 1; slot <= 16; slot++) {
+      if (turtle.getItemCount(slot) > 0) {
+        turtle.select(slot);
+        turtle.drop();
+      }
     }
 
-    for (const slot of usedSlots) {
-      turtle.select(slot);
-      turtle.drop();
+    if (failReason !== undefined) {
+      throw new Error(failReason);
     }
 
-    return false;
+    return output;
   }
 
   getInput(): string[] {

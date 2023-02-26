@@ -1,4 +1,5 @@
 import { AppConfig, ClientConfig, CrafterConfig, DeviceType, ServerConfig } from "./Config";
+import Hash from "./Hash";
 import { RecipeType } from "./crafting/Recipe";
 
 const deviceTypes = Object.values(DeviceType) as string[];
@@ -35,7 +36,7 @@ export default function setup(): AppConfig {
       } as ServerConfig;
     case DeviceType.CRAFTER:
       return {
-        hostname: "crafter",
+        hostname: "crafter-" + os.getComputerID(),
         type: DeviceType.CRAFTER,
         storage,
         recipeTypes: [RecipeType.CRAFTING_TABLE],

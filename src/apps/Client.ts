@@ -60,7 +60,6 @@ export default class Client extends App {
 
   run(): void {
     this.connect();
-    // this.runCommandLine();
     this.runGui();
   }
 

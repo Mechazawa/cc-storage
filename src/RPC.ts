@@ -43,7 +43,6 @@ export default class RPC {
     const log = (s: string) => (logger !== undefined ? logger.log(s) : print(s));
 
     log(`Starting server...`);
-
     rednet.host(this.protocol, hostname);
 
     log(`Host: ${this.protocol}://${hostname}`);
@@ -132,7 +131,17 @@ export default class RPC {
 
   static _expect(client: number | undefined, id: ID, timeout?: number): any {
     while (true) {
+      const start = os.epoch("utc");
+
+      if (typeof timeout === "number" && timeout <= 0) {
+        throw new Error("RPC Timeout Exceeded!");
+      }
+
       const [from, body] = rednet.receive(this.protocol, timeout);
+
+      if (typeof timeout === "number") {
+        timeout -= (os.epoch("utc") - start) / 1000;
+      }
 
       if (from === undefined) {
         throw new Error("RPC Timeout Exceeded!");

@@ -28,11 +28,17 @@ export default class ShapelessCraftingRecipe implements Recipe {
       turtle.suck(count);
     }
 
-    const output = turtle.craft(count)[0];
+    const [output, failReason] = turtle.craft(count);
 
-    for (const slot of usedSlots) {
-      turtle.select(slot);
-      turtle.drop();
+    for (let slot = 1; slot <= 16; slot++) {
+      if (turtle.getItemCount(slot) > 0) {
+        turtle.select(slot);
+        turtle.drop();
+      }
+    }
+
+    if (failReason !== undefined) {
+      throw new Error(failReason);
     }
 
     return output;
