@@ -7,6 +7,7 @@ import Lib from "../Lib";
 import { Basalt } from "../../types/Basalt/Basalt.d";
 import { List } from "../../types/Basalt/List";
 import Cache from "../Cache";
+import { ellipsis, rpad } from "../util/string";
 
 const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
 
@@ -116,7 +117,7 @@ export default class Client extends App {
     if (searchResults) {
       // Check whether list exists
       searchResults.forEach((e) => {
-        listObject.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white, { key: e.key });
+        listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 32), colors.black, colors.white, { key: e.key });
       });
     } else {
       this.logger.error("item list not found");
@@ -169,7 +170,7 @@ export default class Client extends App {
     const headerRow = main.addLabel();
 
     headerRow
-      .setText("#    Name")
+      .setText("#     Name")
       .setPosition(itemTable.x, itemTable.y)
       .setForeground(colors.white)
       .setBackground(colors.black)
