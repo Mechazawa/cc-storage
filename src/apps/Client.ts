@@ -75,6 +75,7 @@ export default class Client extends App {
     const main = basalt.createFrame();
     const listToggleStateLabels = ["All", "Craftable", "Stored"];
     let listToggleState = 0;
+    let selectedItemKey = 'None';
     // TITLE BAR
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
@@ -105,7 +106,7 @@ export default class Client extends App {
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(41,1);
+    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(41, 1);
 
     let itemList = main.addList();
     itemList.setScrollable(true);
@@ -127,7 +128,7 @@ export default class Client extends App {
     if (searchResults) {
       // Check whether list exists
       searchResults.forEach((e) => {
-        itemList.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white);
+        itemList.addItem(`${e.count}  ${e.displayName}`, colors.black, colors.white,e.key);
       });
     } else {
       this.logger.error("item list not found");
@@ -190,6 +191,18 @@ export default class Client extends App {
 
     const craftButtongroup = {};
 
+    const takeButtonSingle = main.addButton();
+    takeButtonSingle.setText("1")
+      .setPosition(sideMenu.x, sideMenu.y + 5);
+
+
+    takeButtonSingle.onClick(() => {
+      // this.logger.debug("Clicked store all button");
+      // Implement function here to empty client into network
+      takeButtonSingle.setBackground(colors.lightBlue);
+      this.server?.take(this.config.storage[0] ,selectedItemKey,1)
+    });
+
     // Store button empties client chest into the network
     const storeAllButtonLabel = main.addLabel();
 
@@ -205,17 +218,17 @@ export default class Client extends App {
       .setBackground(colors.orange)
       .setPosition(sideMenu.x, sideMenu.y + 8);
 
-    storeAllButton.onClick(() => {
-      storeAllButton.setBackground(colors.lightBlue);
-    });
-    storeAllButton.onClickUp(() => {
-      storeAllButton.setBackground(colors.orange);
-    });
+
 
     storeAllButton.onClick(() => {
       // this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
+      storeAllButton.setBackground(colors.lightBlue);
+
       this.server?.storeAll(this.config.storage[0]);
+    });
+    storeAllButton.onClickUp(() => {
+      storeAllButton.setBackground(colors.orange);
     });
 
     basalt.autoUpdate();
