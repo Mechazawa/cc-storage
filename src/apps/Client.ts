@@ -129,7 +129,7 @@ export default class Client extends App {
 
       // Check whether list exists
       searchResults.forEach((e) => {
-        listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 32), colors.black, colors.white, { key: e.key });
+        listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 30), colors.black, colors.white, { key: e.key });
       });
     } else {
       this.logger.error("item list not found");
