@@ -137,10 +137,14 @@ export default class Client extends App {
     }
 
     let searchResults = this.server?.list();
-
-    for (const result in searchResults) {
-      itemList.addItem(result.valueOf());
-    };
+    if (searchResults) {
+      // Check whether list exists
+      for (let i = 0; i < searchResults.length; i++) {
+        itemList.addItem(searchResults.at(i)!.displayName);
+      };
+    } else {
+      this.logger.error("item list not found")
+    }
 
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(38, 14);
 
@@ -179,7 +183,7 @@ export default class Client extends App {
       listToggle.setBackground(colors.lightBlue);
     });
 
-    listToggle.onLoseFocus(()=>{
+    listToggle.onLoseFocus(() => {
       listToggle.setBackground(colors.orange);
     })
 
