@@ -106,7 +106,7 @@ export default class Client extends App {
 
     const headerRow = main.addLabel();
 
-    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(41, 1);
+    headerRow.setText("#    Name").setPosition(itemTable.x, itemTable.y).setForeground(colors.white).setSize(42, 1);
 
     let itemList = main.addList();
     itemList.setScrollable(true);
@@ -200,8 +200,9 @@ export default class Client extends App {
       // this.logger.debug("Clicked store all button");
       // Implement function here to empty client into network
       takeButtonSingle.setBackground(colors.lightBlue);
-      const itemKey = itemList.getItem(itemList.getItemIndex()).get('value')
-      this.server?.take(this.config.storage[0], itemKey, 1)
+      const itemKey = itemList.getItem(itemList.getItemIndex()).get('value');
+      this.logger.debug(itemKey);
+      this.server?.take(this.config.storage[0], itemKey, 1);
     });
 
     // Store button empties client chest into the network
