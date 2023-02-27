@@ -141,9 +141,14 @@ export default class Client extends App {
 
   runGui(): void {
     const main = basalt.createFrame();
-    const listToggleStateLabels = ["All", "Craftable", "Stored"];
+    const listToggleStateLabels = ["Stored", "Craftable" ];
     let listToggleState = 0;
-    // TITLE BAR
+    // Background panes
+    main.addLayoutFromString(
+      '<pane width="51" height="19" bg="black" /><pane width="13" height="19" x="39" y="1" bg="gray" />'
+    );
+
+    // Title bar
     // The title bar is also the place to return errors/user feedback. Turn the bar a different color when feedback is available
     // For example: "Not enough materials to craft <x>", "16 <item name> retrieved sucesfully"
     const titleBar = main.addLabel();
@@ -154,11 +159,8 @@ export default class Client extends App {
       .setPosition(1, 1)
       .setSize(51, 1);
 
-    main.addLayoutFromString(
-      '<pane width="51" height="19" bg="black" /><pane width="13" height="19" x="39" y="1" bg="gray" />'
-    );
 
-    // SEARCH BAR
+    // Search bar
     const searchBar = main.addInput();
     let searchQuery = "";
 
@@ -169,15 +171,8 @@ export default class Client extends App {
       this.listItems(itemList, searchQuery);
       // Set filtering in item table
     });
-    searchBar.onKey((e, key) => {
-      if (key === keys.enter) {
-        // this.listItems(itemList,searchQuery)
-      }
-    });
 
-    // TODO implement search, ideally with some placeholder text
-
-    // ITEM LIST TABLE
+    // Item list
     // itemTable contains a header row and an itemRow for each item, item amount is reduced
     // NOTE: itemTable is the only scrollable element in the UI
     const itemTable = { x: 1, y: 3 };
@@ -202,31 +197,31 @@ export default class Client extends App {
     this.listItems(itemList);
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(37, 15);
 
-    // SIDE/ACTION MENU
+    // Side menu
     // sideMenu contains all functional buttons dealing with moving items
     const sideMenu = { x: 40, y: 3, width: 11 };
 
-    // Button toggeling which items to display, states are: All, Craftable, Stored. Pressing the button toggles the display of each item
-    const listToggleLabel = main.addLabel();
+    // List toggle toggles from Stored to Craftable and list those items 
+    const listButtonGroupLabel = main.addLabel();
 
-    listToggleLabel
+    listButtonGroupLabel
       .setText("List:")
       .setPosition(sideMenu.x + 1, sideMenu.y)
-      .setSize(sideMenu.width, 1);
+      .setSize(sideMenu.width, 1)
+      .setBorder(colors.gray);
 
     const listToggle = main.addButton();
 
     listToggle
-      .setText("All")
+      .setText("Stored")
       .setBackground(colors.orange)
       .setPosition(sideMenu.x + 1, sideMenu.y + 1)
       .setSize(sideMenu.width, 3)
       .setBorder(colors.gray);
 
     listToggle.onClick(() => {
-      this.logger.debug("Clicked list toggle button");
-      // cycle state to next state (out of 3 possible states)
-      listToggleState = (listToggleState + 1) % 3;
+      // cycle state to next state (out of 2 possible states)
+      listToggleState = (listToggleState + 1) % 2;
       // set text of button according to new state
       listToggle.setText(listToggleStateLabels[listToggleState]);
       // TODO filter itemTable according to new state
@@ -239,91 +234,43 @@ export default class Client extends App {
     listToggle.onClickUp(() => {
       listToggle.setBackground(colors.orange).setBorder(colors.gray);
     });
-    // TODO REFACTOR TO REFLECT PROPER FUNCTIONS
-    // Button group taking care of retrieving items, pressing the buttons takes items to the client chest (1,16,64,all respectively)
-    // if there is not enough items, retrieve whatever is present
+
     const takeButtonGroupLabel = main.addLabel();
 
     takeButtonGroupLabel
-      .setText("List:")
-      .setPosition(sideMenu.x + 1, sideMenu.y + 2)
-      .setSize(sideMenu.width, 1)
-      .setBorder(colors.gray);
-
-    const takeButtonGroup = {};
-    // Button group taking care of kicking of crafts, pressing the buttons kicks of crafts (1,16,64 respectively), the user needs to retrieve them afterwards
-    // If not enough items are available, cancel craft and present feedback in the title bar (Not enough items to craft <x>, missing <y>)
-    // Maybe we want to disable the buttons beforehand if there is no recipe available and/or there is no materials
-    const craftButtonGroupLabel = main.addLabel();
-
-    craftButtonGroupLabel
       .setText("Take:")
       .setPosition(sideMenu.x + 1, sideMenu.y + 5)
       .setSize(sideMenu.width, 1);
 
-    const craftButtongroup = {};
-
-    const takeButtonSingle = main.addButton();
-    takeButtonSingle
-      .setText("1")
+    const takeAmountInput = main.addInput();
+    takeAmountInput
       .setPosition(sideMenu.x + 1, sideMenu.y + 6)
-      .setSize(3, 3)
-      .setBackground(colors.orange)
-      .setBorder(colors.gray);
+      .setInputType("number")
+      .setBackground(colors.black)
+      .setForeground(colors.orange)
+      .setBorder(colors.gray)
+      .setSize(11, 1)
+      .setDefaultText("Amount");
 
-    const takeButtonSixteen = main.addButton();
-    takeButtonSixteen
-      .setText("16")
-      .setPosition(sideMenu.x + 4, sideMenu.y + 6)
-      .setSize(4, 3)
+    const takeSubmitButton = main.addButton();
+    takeSubmitButton
+      .setText("Take")
       .setBackground(colors.orange)
-      .setBorder(colors.gray);
+      .setBorder(colors.gray)
+      .setPosition(sideMenu.x + 1, sideMenu.y + 7)
+      .setSize(11, 3);
 
-    const takeButtonSixtyfour = main.addButton();
-    takeButtonSixtyfour
-      .setText("64")
-      .setPosition(sideMenu.x + 8, sideMenu.y + 6)
-      .setSize(4, 3)
-      .setBackground(colors.orange)
-      .setBorder(colors.gray);
-
-    takeButtonSingle.onClick(() => {
-      takeButtonSingle.setBackground(colors.yellow).setBorder(colors.black);
+    takeSubmitButton.onClick(() => {
+      takeSubmitButton.setBackground(colors.yellow).setBorder(colors.black);
       const itemKey = itemList.getValue().args[1].key;
-      this.takeItem(itemKey.toString(), 1);
+      this.takeItem(itemKey.toString(), parseInt(takeAmountInput.getValue()));
       const currentSelected = itemList.getItemIndex();
       this.listItems(itemList, searchQuery);
       itemList.selectItem(currentSelected);
     });
 
-    takeButtonSixteen.onClick(() => {
-      takeButtonSixteen.setBackground(colors.yellow).setBorder(colors.black);
-      const itemKey = itemList.getValue().args[1].key;
-      this.takeItem(itemKey.toString(), 16);
-      const currentSelected = itemList.getItemIndex();
-      this.listItems(itemList, searchQuery);
-      itemList.selectItem(currentSelected);
-    });
-
-    takeButtonSixtyfour.onClick(() => {
-      takeButtonSixtyfour.setBackground(colors.yellow).setBorder(colors.black);
-      const itemKey = itemList.getValue().args[1].key;
-      this.takeItem(itemKey.toString(), 64);
-      const currentSelected = itemList.getItemIndex();
-      this.listItems(itemList, searchQuery);
-      itemList.selectItem(currentSelected);
-    });
-
-    takeButtonSingle.onClickUp(() => {
-      takeButtonSingle.setBackground(colors.orange).setBorder(colors.gray);
-    });
-
-    takeButtonSixteen.onClickUp(() => {
-      takeButtonSixteen.setBackground(colors.orange).setBorder(colors.gray);
-    });
-
-    takeButtonSixtyfour.onClickUp(() => {
-      takeButtonSixtyfour.setBackground(colors.orange).setBorder(colors.gray);
+    takeSubmitButton.onClickUp(() => {
+      takeSubmitButton.setBackground(colors.orange).setBorder(colors.gray);
     });
 
     // Store button empties client chest into the network
@@ -331,7 +278,7 @@ export default class Client extends App {
 
     storeAllButtonLabel
       .setText("Store:")
-      .setPosition(sideMenu.x + 1, sideMenu.y + 10)
+      .setPosition(sideMenu.x + 1, sideMenu.y + 11)
       .setSize(sideMenu.width, 1);
 
     const storeAllButton = main.addButton();
@@ -339,13 +286,12 @@ export default class Client extends App {
     storeAllButton
       .setText("Store all")
       .setBackground(colors.orange)
-      .setPosition(sideMenu.x + 1, sideMenu.y + 11)
+      .setPosition(sideMenu.x + 1, sideMenu.y + 12)
       .setSize(sideMenu.width, 3)
       .setBorder(colors.gray);
 
     storeAllButton.onClick(() => {
-      // this.logger.debug("Clicked store all button");
-      // Implement function here to empty client into network
+      // Tore all items in client chest
       storeAllButton.setBackground(colors.yellow).setBorder(colors.black);
       this.server?.storeAll(this.config.storage[0]);
       this.listItems(itemList, searchQuery);
