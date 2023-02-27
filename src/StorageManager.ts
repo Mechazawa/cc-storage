@@ -5,6 +5,7 @@ import RPC from "./RPC";
 import ThreadPool from "./ThreadPool";
 import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
+import ItemAllocator, { ReservedLocation } from "./storage/ItemAllocator";
 
 export interface StorageLocation {
   peripheral: string;
@@ -35,6 +36,7 @@ export default class StorageManager {
   logger: Logger;
   recipeManager: RecipeManager;
   cache: Cache;
+  allocator = new ItemAllocator(this);
 
   constructor(recipeManager: RecipeManager, logger?: Logger) {
     this.logger = logger ?? new Logger();
@@ -47,7 +49,6 @@ export default class StorageManager {
     this.used = this.cache.memoize("acc:used", this.used.bind(this));
     this.getFragmented = this.cache.memoize("acc:getFragmented", this.getFragmented.bind(this));
     this.getEmpty = this.cache.memoize("acc:getEmpty", this.getEmpty.bind(this));
-    this.findItemByKey = this.cache.memoize("acc:findItemByKey", this.findItemByKey.bind(this));
     this.list = this.cache.memoize("acc:list", this.list.bind(this));
     this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
   }
@@ -186,34 +187,6 @@ export default class StorageManager {
     return freed;
   }
 
-  findItemByKey(key: string, count: number, allowMissing = false): StorageLocation[] {
-    this.logger.debug(`searching for ${count} "${key}" (cache: ${this.cache.size()})`);
-  
-    const output: StorageLocation[] = [];
-    const items = this.list(key);
-
-    for (const item of items) {
-      for (const location of item.locations) {
-        if (location.count >= count) {
-          const outputLoc = { ...location };
-
-          outputLoc.count = count;
-          count = 0;
-
-          output.push(outputLoc);
-
-          return output;
-        } else {
-          output.push(location);
-
-          count -= location.count;
-        }
-      }
-    }
-
-    return allowMissing ? output : [];
-  }
-
   testKey(key: string, stack: ItemStack | Resource): boolean {
     if (key === undefined) return false;
     if (key.includes("|")) {
@@ -284,11 +257,12 @@ export default class StorageManager {
   // todo: not updating cache properly when taking all (verify?)
   take(storageName: string, key: string, count: number, slot?: number): number {
     let sent = 0;
-    const sources = this.findItemByKey(key, count);
+    const sources = this.allocator.reserve(key, count);
 
     for (const source of sources) {
-      this.logger.debug(source);
       sent += this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
+
+      source.release();
     }
 
     return sent;
@@ -431,7 +405,7 @@ export default class StorageManager {
     return recipe;
   }
 
-  craft(_recipe: Recipe | string, times = 1, timeout = 120, threads = 6): number {
+  craft(_recipe: Recipe | string, times = 1, timeout = 120, threads = 4): number {
     const recipe = this._resolveRecipe(_recipe);
     const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
 
@@ -470,19 +444,25 @@ export default class StorageManager {
     const inputItems = recipe.getInput();
 
     let slot = 1;
+    const locations: ReservedLocation[] = [];
 
     for (const key of inputItems) {
-      const locations = this.findItemByKey(key, times);
+      const reserved = this.allocator.reserve(key, times);
 
-      if (locations.length === 0) {
+      if (reserved.length === 0) {
         throw new Error(`Unable to find ${times}x "${key}" for crafting`);
       }
 
-      // todo: split craft call based on item availability ex: `items:a|items:b`
-      for (const location of locations) {
-        this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
-        slot++;
+      for (const r of reserved) {
+        locations.push(r);
       }
+    }
+
+    // todo: split craft call based on item availability ex: `items:a|items:b`
+    for (const location of locations) {
+      this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
+      location.release();
+      slot++;
     }
 
     this.logger.debug(`craft: ${crafter.host}`);
