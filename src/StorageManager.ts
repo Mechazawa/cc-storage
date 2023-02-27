@@ -192,7 +192,7 @@ export default class StorageManager {
 
     for (const item of items) {
       for (const location of item.locations) {
-        if (location.count > count) {
+        if (location.count >= count) {
           const outputLoc = { ...location };
 
           outputLoc.count = count;
@@ -209,11 +209,7 @@ export default class StorageManager {
       }
     }
 
-    if (allowMissing) {
-      return output;
-    }
-
-    return [];
+    return allowMissing ? output : [];
   }
 
   testKey(key: string, stack: ItemStack | Resource): boolean {
