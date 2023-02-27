@@ -123,7 +123,6 @@ export default class Client extends App {
         return norm(el.displayName).includes(query) || norm(el.key).includes(query) || norm(el.count).includes(query);
       });
     }
-    // let listCraftable = this.server?.listCraftable();
     // quick and dirty, the list itself needs to be sortable with better ui etc
     if (this.sortCount) {
       searchResults.sort((a, b) => a.count - b.count);
@@ -139,9 +138,19 @@ export default class Client extends App {
     });
   }
 
+  listCraftable(listObject: List): void {
+    listObject.clear();
+    const craftableList = this.server?.listCraftable() ?? [];
+    craftableList.forEach((e) => {
+      listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.name, 30), colors.black, colors.white, {
+        key: e.name,
+      });
+    });
+  }
+
   runGui(): void {
     const main = basalt.createFrame();
-    const listToggleStateLabels = ["Stored", "Craftable" ];
+    const listToggleStateLabels = ["Stored", "Craftable"];
     let listToggleState = 0;
     // Background panes
     main.addLayoutFromString(
@@ -158,7 +167,6 @@ export default class Client extends App {
       .setBackground(colors.orange)
       .setPosition(1, 1)
       .setSize(51, 1);
-
 
     // Search bar
     const searchBar = main.addInput();
@@ -193,15 +201,15 @@ export default class Client extends App {
 
     let itemList = main.addList().setSelectedItem(colors.red, colors.black);
     itemList.setScrollable(true);
-
     this.listItems(itemList);
+
     itemList.setPosition(itemTable.x, itemTable.y + 1).setSize(37, 15);
 
     // Side menu
     // sideMenu contains all functional buttons dealing with moving items
     const sideMenu = { x: 40, y: 3, width: 11 };
 
-    // List toggle toggles from Stored to Craftable and list those items 
+    // List toggle toggles from Stored to Craftable and list those items
     const listButtonGroupLabel = main.addLabel();
 
     listButtonGroupLabel
@@ -224,15 +232,20 @@ export default class Client extends App {
       listToggleState = (listToggleState + 1) % 2;
       // set text of button according to new state
       listToggle.setText(listToggleStateLabels[listToggleState]);
-      // TODO filter itemTable according to new state
-    });
-
-    listToggle.onClick(() => {
-      listToggle.setBackground(colors.lightBlue).setBorder(colors.black);
-    });
-
-    listToggle.onClickUp(() => {
-      listToggle.setBackground(colors.orange).setBorder(colors.gray);
+      switch (listToggleState) {
+        case 0:
+          this.listItems(itemList);
+          takeSubmitButton.setText("Take").setBackground(colors.orange).setBorder(colors.gray);
+          listToggle.setBackground(colors.orange).setBorder(colors.gray);
+          break;
+        case 1:
+          this.listCraftable(itemList);
+          takeSubmitButton.setText("Craft").setBackground(colors.lightBlue).setBorder(colors.black);
+          listToggle.setBackground(colors.lightBlue).setBorder(colors.black);
+          break;
+        default:
+          this.logger.error("Invalid list toggle state");
+      }
     });
 
     // Take items
@@ -264,9 +277,20 @@ export default class Client extends App {
     takeSubmitButton.onClick(() => {
       takeSubmitButton.setBackground(colors.yellow).setBorder(colors.black);
       const itemKey = itemList.getValue().args[1].key;
-      this.takeItem(itemKey.toString(), parseInt(takeAmountInput.getValue()));
+      const takeAmount = parseInt(takeAmountInput.getValue());
       const currentSelected = itemList.getItemIndex();
-      this.listItems(itemList, searchQuery);
+      switch (listToggleState) {
+        case 0:
+          this.takeItem(itemKey.toString(), takeAmount);
+          this.listItems(itemList, searchQuery);
+          break;
+        case 1:
+          this.server?.craft(itemKey.toString(), takeAmount);
+          this.listCraftable(itemList);
+          break;
+        default:
+          this.logger.error("Invalid list toggle state");
+      }
       itemList.selectItem(currentSelected);
     });
 
