@@ -1,5 +1,5 @@
 import { AppConfig } from "../Config";
-import Logger from "../Logger";
+import Logger from "../util/Logger";
 import RPC from "../RPC";
 import Serializable from "../Serializable";
 

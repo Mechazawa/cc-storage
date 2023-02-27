@@ -1,4 +1,4 @@
-import Logger from "../Logger";
+import Logger from "../util/Logger";
 import Recipe, { RecipeType, TURTLE_INVENTORY_COLS } from "./Recipe";
 
 export default class ShapedCraftingRecipe implements Recipe {

@@ -1,6 +1,6 @@
 import Component from "./Component";
 import CommandLineWidget from "../widgets/CommandLine";
-import Logger from "../../Logger";
+import Logger from "../../util/Logger";
 import { ServerRPC } from "../Server.d";
 
 export default class CommandLine extends Component {

@@ -1,4 +1,4 @@
-import Logger from "./Logger";
+import Logger from "./util/Logger";
 import Serializable from "./Serializable";
 
 export default class StateManager {

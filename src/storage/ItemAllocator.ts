@@ -1,4 +1,4 @@
-import Logger from "../Logger";
+import Logger from "../util/Logger";
 import StorageManager, { StorageLocation } from "../StorageManager";
 
 export class ReservedLocation implements StorageLocation {

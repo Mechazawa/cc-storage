@@ -1,8 +1,8 @@
 import Cache from "./Cache";
 import CachedInventoryProxy from "./CachedInventoryProxy";
-import Logger from "./Logger";
+import Logger from "./util/Logger";
 import RPC from "./RPC";
-import ThreadPool from "./ThreadPool";
+import ThreadPool from "./util/threading/ThreadPool";
 import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 import ItemAllocator, { ReservedLocation } from "./storage/ItemAllocator";
