@@ -187,12 +187,14 @@ export default class StorageManager {
   }
 
   findItemByKey(key: string, count: number, allowMissing = false): StorageLocation[] {
+    this.logger.debug(`searching for ${count} "${key}" (cache: ${this.cache.size()})`);
+  
     const output: StorageLocation[] = [];
     const items = this.list(key);
 
     for (const item of items) {
       for (const location of item.locations) {
-        if (location.count > count) {
+        if (location.count >= count) {
           const outputLoc = { ...location };
 
           outputLoc.count = count;
@@ -209,11 +211,7 @@ export default class StorageManager {
       }
     }
 
-    if (allowMissing) {
-      return output;
-    }
-
-    return [];
+    return allowMissing ? output : [];
   }
 
   testKey(key: string, stack: ItemStack | Resource): boolean {
@@ -433,7 +431,7 @@ export default class StorageManager {
     return recipe;
   }
 
-  craft(_recipe: Recipe | string, times = 1, timeout = 120): number {
+  craft(_recipe: Recipe | string, times = 1, timeout = 120, threads = 6): number {
     const recipe = this._resolveRecipe(_recipe);
     const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
 
@@ -458,7 +456,7 @@ export default class StorageManager {
       this.logger.log(`done ${out.reduce((a, c) => a + (c ?? 0), 0)} ${i + 1}/${chunks.length}`);
     });
 
-    const pool = new ThreadPool(4, fns);
+    const pool = new ThreadPool(threads, fns);
 
     pool.logger.showDebug = true;
     pool.run();
@@ -471,21 +469,17 @@ export default class StorageManager {
 
     const inputItems = recipe.getInput();
 
-    for (const item of inputItems) {
-      const counts = item.split("|").map((x) => this.count(x));
-      times = Math.min(Math.max(...counts), times);
-
-      if (times === 0) {
-        this.logger.error(`Not enough "${item}"(${counts.join("|")}) to craft "${recipe.name}"`);
-        return 0;
-      }
-    }
-
     let slot = 1;
 
     for (const key of inputItems) {
+      const locations = this.findItemByKey(key, times);
+
+      if (locations.length === 0) {
+        throw new Error(`Unable to find ${times}x "${key}" for crafting`);
+      }
+
       // todo: split craft call based on item availability ex: `items:a|items:b`
-      for (const location of this.findItemByKey(key, times)) {
+      for (const location of locations) {
         this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
         slot++;
       }
