@@ -235,6 +235,7 @@ export default class Client extends App {
       listToggle.setBackground(colors.orange).setBorder(colors.gray);
     });
 
+    // Take items
     const takeButtonGroupLabel = main.addLabel();
 
     takeButtonGroupLabel
@@ -291,7 +292,7 @@ export default class Client extends App {
       .setBorder(colors.gray);
 
     storeAllButton.onClick(() => {
-      // Tore all items in client chest
+      // Store all items in client chest
       storeAllButton.setBackground(colors.yellow).setBorder(colors.black);
       this.server?.storeAll(this.config.storage[0]);
       this.listItems(itemList, searchQuery);
