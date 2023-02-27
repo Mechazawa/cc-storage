@@ -273,8 +273,6 @@ export default class StorageManager {
       return this.list().filter((r) => this.testKey(key, r));
     }
 
-    this.logger.debug("list");
-
     const resources = new LuaMap<string, Resource>();
     const storageFns = [];
     const stacks: ((ItemStack & { locations: StorageLocation[] }) | string)[] = [];
@@ -407,7 +405,7 @@ export default class StorageManager {
     return recipe;
   }
 
-  craft(_recipe: Recipe | string, times = 1, timeout = 120, threads = 6): number {
+  craft(_recipe: Recipe | string, times = 1, timeout = 120, threads = 4): number {
     const recipe = this._resolveRecipe(_recipe);
     const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
 
