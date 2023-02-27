@@ -63,16 +63,20 @@ export default class Client extends App {
 
     this.server.list = this.cache.memoize("acc:list", this.server.list.bind(this));
 
-    this.logger.log(`Connected to ${uri}`);    
+    this.logger.log(`Connected to ${uri}`);
 
     const cacheSeconds = 60;
-    
+
     this.server.count = this.cache.memoize("acc:count", this.server.count.bind(this.server), cacheSeconds);
     this.server.size = this.cache.memoize("acc:size", this.server.size.bind(this.server), cacheSeconds);
     this.server.used = this.cache.memoize("acc:used", this.server.used.bind(this.server), cacheSeconds);
     this.server.free = this.cache.memoize("acc:free", this.server.free.bind(this.server), cacheSeconds);
     this.server.list = this.cache.memoize("acc:list", this.server.list.bind(this.server), cacheSeconds);
-    this.server.listCraftable = this.cache.memoize("acc:listCraftable", this.server.listCraftable.bind(this.server), cacheSeconds);
+    this.server.listCraftable = this.cache.memoize(
+      "acc:listCraftable",
+      this.server.listCraftable.bind(this.server),
+      cacheSeconds
+    );
 
     this.server.defragment = this._invalidates("acc:*", this.server.defragment.bind(this.server));
     this.server.storeAll = this._invalidates("acc:*", this.server.storeAll.bind(this.server));
@@ -85,12 +89,11 @@ export default class Client extends App {
   _invalidates<T extends Function>(key: string, fn: T): T {
     return ((...args: any[]) => {
       const out = fn(...args);
-      this.cache.delete('acc:*');
-      
+      this.cache.delete("acc:*");
+
       return out;
     }) as unknown as T;
   }
-
 
   run(): void {
     this.connect();
@@ -110,16 +113,14 @@ export default class Client extends App {
   }
 
   listItems(listObject: List, filter?: string | number): void {
-    const norm = (s: any) => ('' + s).toLowerCase().trim().replace('_', ' ');
+    const norm = (s: any) => ("" + s).toLowerCase().trim().replace("_", " ");
     const query = norm(filter ?? "");
     listObject.clear();
     let searchResults = this.server?.list() ?? [];
-    
-    if (query !== '') {
+
+    if (query !== "") {
       searchResults = searchResults.filter(function (el) {
-        return  norm(el.displayName).includes(query) || 
-                norm(el.key).includes(query) || 
-                norm(el.count).includes(query);
+        return norm(el.displayName).includes(query) || norm(el.key).includes(query) || norm(el.count).includes(query);
       });
     }
     // let listCraftable = this.server?.listCraftable();
@@ -132,7 +133,9 @@ export default class Client extends App {
 
     // Check whether list exists
     searchResults.forEach((e) => {
-      listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 30), colors.black, colors.white, { key: e.key });
+      listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.displayName, 30), colors.black, colors.white, {
+        key: e.key,
+      });
     });
   }
 
@@ -191,7 +194,7 @@ export default class Client extends App {
       .onClick(() => {
         sortCount = !sortCount;
         this.listItems(itemList, searchQuery);
-      })
+      });
 
     let itemList = main.addList().setSelectedItem(colors.red, colors.black);
     itemList.setScrollable(true);
