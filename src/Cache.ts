@@ -48,6 +48,8 @@ export default class Cache<T = any> extends Serializable {
   }
 
   delete(name: string): number {
+    (new Logger).debug("delete: " + name);
+
     if (name.endsWith("*")) {
       name = name.slice(0, name.length - 1);
 
