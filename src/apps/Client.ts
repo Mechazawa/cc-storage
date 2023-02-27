@@ -243,7 +243,7 @@ export default class Client extends App {
           this.listCraftable(itemList);
           takeButtonGroupLabel.setText("Craft:")
           takeSubmitButton.setText("Craft").setBackground(colors.lightBlue);
-          listToggle.setBackground(colors.lightBlue).setBorder(colors.black);
+          listToggle.setBackground(colors.lightBlue).setBorder(colors.gray);
           break;
         default:
           this.logger.error("Invalid list toggle state");
