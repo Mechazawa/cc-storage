@@ -1,42 +1,46 @@
 import Logger from "../Logger";
+import Thread from "./Thread";
 
 export default class ThreadPool {
   size: number;
-  pool: Function[];
+  pool: Thread<any>[] = [];
 
   logger = new Logger();
 
-  constructor(size: number, pool: Function[] = []) {
+  constructor(size: number, pool: (Function | Thread<any>)[] = []) {
     this.size = size;
-    this.pool = pool;
+
+    this.push(...pool);
 
     this.logger.showDebug = false;
   }
 
-  push(...fn: Function[]) {
-    this.pool.push(...fn);
+  push(...input: (Function | Thread<any>)[]) {
+    for (const item of input) {
+      if (typeof item === "function") {
+        this.pool.push(new Thread<any>(item));
+      } else {
+        this.pool.push(item);
+      }
+    }
   }
 
   run() {
-    const threads = [];
+    const threads: (Thread<any> | undefined)[] = [];
+    let running = true;
 
-    for(let i = 0; i < this.size; i++) {
-      threads.push(((threadId): Function => () => {
-        while (true) {
-          const task = this.pool.pop();
+    while (running) {
+      running = false;
 
-          if (typeof task !== 'function') {
-            this.logger.debug(`thread ${threadId}/${threads.length} done`);
-            return;
-          }
+      for (let i = 0; i < this.size; i++) {
+        const thread = threads[i];
 
-          task();
-          
-          os.pullEvent();
+        if (thread === undefined || !thread.resume()) {
+          threads[i] = this.pool.pop();
         }
-      })(i));
+
+        running = running || threads[i] !== undefined;
+      }
     }
-   
-    parallel.waitForAll(...threads);
   }
 }
