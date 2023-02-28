@@ -7,6 +7,8 @@ export default class Thread<T extends (...args: any[]) => any> {
   lastEnvId = 0;
   thread?: LuaThread;
 
+  _filter: any;
+
   constructor(fn: T) {
     this.thread = coroutine.create(() => fn());
   }
@@ -22,15 +24,23 @@ export default class Thread<T extends (...args: any[]) => any> {
     }
 
     if (this.lastEnvId === Thread.envId) {
-      Thread.env = [...os.pullEventRaw()];
+      // Thread.env = [...os.pullEventRaw()];
+      Thread.env = [...os.pullEvent()];
       Thread.envId++;
     }
 
-    const [ok, err] = coroutine.resume(this.thread, ...Thread.env);
     this.lastEnvId = Thread.envId;
 
+    if (!(this._filter === undefined || this._filter === Thread.env[0] || Thread.env[0] === 'terminate')) {
+      return this.alive();
+    }
+
+    const [ok, params] = coroutine.resume(this.thread, ...Thread.env);
+
     if (!ok) {
-      throw err;
+      throw params;
+    } else {
+      this._filter = params;
     }
 
     return this.alive();
