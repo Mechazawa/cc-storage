@@ -5,7 +5,7 @@ import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import RPC, { RPCRequest } from "../RPC";
 import { RecipeType } from "../crafting/Recipe";
 import { CrafterHost } from "../StorageManager";
-import ExpiringLock from "../ExpiringLock";
+import ExpiringLock from "../util/ExpiringLock";
 
 export default class Crafter extends App {
   recipeManager: RecipeManager;
