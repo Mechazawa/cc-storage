@@ -1,4 +1,4 @@
-import { AppConfig, ClientConfig, CrafterConfig, DeviceType, ServerConfig } from "./Config";
+import { AppConfig, ClientConfig, CrafterConfig, DeviceType, ServerConfig, InterfaceConfig } from "./Config";
 import Hash from "./Hash";
 import { RecipeType } from "./crafting/Recipe";
 
@@ -48,6 +48,13 @@ export default function setup(): AppConfig {
         host: "storage",
         storage,
       } as ClientConfig;
+    case DeviceType.INTERFACE:
+      return {
+        hostname: "interface",
+        type: DeviceType.INTERFACE,
+        host: "storage",
+        storage,
+      } as InterfaceConfig;
     default:
       throw new Error(`Could not generate config for "${deviceType}"`);
   }
