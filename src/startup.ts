@@ -6,6 +6,7 @@ import App from "./apps/App";
 import setup from "./setup";
 import Crafter from "./apps/Crafter";
 import Client from "./apps/Client";
+import Interface from "./apps/Interface";
 
 const configFile = new ConfigFile("config.json");
 
@@ -34,6 +35,8 @@ switch (config.type) {
   case DeviceType.CLIENT:
     app = stateManager.load(Client, new Client(config));
     break;
+  case DeviceType.INTERFACE:
+    app = stateManager.load(Interface, new Interface(config));
 }
 
 if (app === undefined) {

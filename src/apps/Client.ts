@@ -143,7 +143,8 @@ export default class Client extends App {
     const craftableList = this.server?.listCraftable() ?? [];
     craftableList.forEach((e) => {
       listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.name, 30), colors.black, colors.white, {
-        key: e.name, outputN: e.output.length
+        key: e.name,
+        outputN: e.output.length,
       });
     });
   }
@@ -235,13 +236,13 @@ export default class Client extends App {
       switch (listToggleState) {
         case 0:
           this.listItems(itemList);
-          takeButtonGroupLabel.setText("Take:")
+          takeButtonGroupLabel.setText("Take:");
           takeSubmitButton.setText("Take").setBackground(colors.orange).setBorder(colors.gray);
           listToggle.setBackground(colors.orange).setBorder(colors.gray);
           break;
         case 1:
           this.listCraftable(itemList);
-          takeButtonGroupLabel.setText("Craft:")
+          takeButtonGroupLabel.setText("Craft:");
           takeSubmitButton.setText("Craft").setBackground(colors.lightBlue);
           listToggle.setBackground(colors.lightBlue).setBorder(colors.gray);
           break;
@@ -287,8 +288,8 @@ export default class Client extends App {
           this.listItems(itemList, searchQuery);
           break;
         case 1:
-          const numberOutPerCraft = parseInt(itemList.getValue().args[1].outputN)
-          const numberOfCrafts = Math.ceil(takeAmount/numberOutPerCraft);
+          const numberOutPerCraft = parseInt(itemList.getValue().args[1].outputN);
+          const numberOfCrafts = Math.ceil(takeAmount / numberOutPerCraft);
           this.server?.craft(itemKey.toString(), numberOfCrafts);
           this.listCraftable(itemList);
           break;
