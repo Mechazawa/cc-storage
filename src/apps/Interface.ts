@@ -8,6 +8,7 @@ import { Basalt } from "../../types/Basalt/Basalt.d";
 import { List } from "../../types/Basalt/List";
 import Cache from "../Cache";
 import { ellipsis, rpad } from "../util/string";
+import StorageManager, { StorageLocation } from "../StorageManager";
 
 const basalt = Lib.requireRemote<Basalt>("https://github.com/Pyroxenium/Basalt/releases/download/v1.6.5/basalt.lua");
 
@@ -138,23 +139,34 @@ export default class Interface extends App {
     });
   }
 
-  listCraftable(listObject: List): void {
-    listObject.clear();
-    const craftableList = this.server?.listCraftable() ?? [];
-    craftableList.forEach((e) => {
-      listObject.addItem(rpad(`${e.count}`, 6) + ellipsis(e.name, 30), colors.black, colors.white, {
-        key: e.name,
-        outputN: e.output.length,
-      });
-    });
-  }
-
   runGui(): void {
+    const chest = peripheral.wrap(this.config.storage[0]) as Inventory;
+
     const main = basalt.createFrame();
+
     // Background panes
     main.addLayoutFromString(
       '<pane width="51" height="19" bg="black" /><pane width="17" height="19" x="35" y="1" bg="gray" />'
     );
+
+    //List
+
+    const headerRow = main.addLabel();
+    let sortCount = false;
+
+    headerRow
+      .setText("Items in buffer: ")
+      .setPosition(1, 2)
+      .setForeground(colors.lightGray)
+      .setBackground(colors.black)
+      .setSize(34, 1);
+
+    const currentStoredList = main.addList();
+    currentStoredList.setPosition(1, 3).setSize(34, 17).setBackground(colors.black);
+
+    for (const [name, count] of chest.list()) {
+      currentStoredList.addItem(ellipsis(count.name.toString(), 30), colors.black, colors.white);
+    }
 
     // Interface handles automatic importing, exporting, and stocking of items.
     // Modes: Passive provider, active provider, requester, level emitter(future)
@@ -175,7 +187,8 @@ export default class Interface extends App {
       .setSize(14, 1)
       .selectItem(1)
       .setSelectedItem(colors.lime, colors.white)
-      .setBackground(colors.lime).setBorder(colors.lime);
+      .setBackground(colors.lime)
+      .setBorder(colors.lime);
 
     basalt.autoUpdate();
   }
