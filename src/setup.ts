@@ -54,6 +54,7 @@ export default function setup(): AppConfig {
         type: DeviceType.INTERFACE,
         host: "storage",
         storage,
+        mode: "1",
       } as InterfaceConfig;
     default:
       throw new Error(`Could not generate config for "${deviceType}"`);

@@ -33,6 +33,7 @@ export interface ClientConfig extends BaseConfig {
 export interface InterfaceConfig extends BaseConfig {
   type: DeviceType.INTERFACE;
   host: string;
+  mode: string;
 }
 
 export interface CrafterConfig extends BaseConfig {

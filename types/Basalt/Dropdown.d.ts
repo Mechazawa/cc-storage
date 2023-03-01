@@ -23,7 +23,7 @@ declare interface Dropdown extends BObject {
    * </dropdown>
    * ```
    */
-  addItem(name: string, value: any): this;
+  addItem(name: string, bg?: number, fg?: number, value?: any): this;
 
   /**
    * Removes all items.

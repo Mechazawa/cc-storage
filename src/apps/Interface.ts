@@ -152,7 +152,6 @@ export default class Interface extends App {
     //List
 
     const headerRow = main.addLabel();
-    let sortCount = false;
 
     headerRow
       .setText("Items in buffer: ")
@@ -179,16 +178,35 @@ export default class Interface extends App {
 
     const modeDropdown = main.addDropdown();
     modeDropdown
-      .addItem("Passive Provider", colors.green)
-      .addItem("Active Provider", colors.green)
-      .addItem("Requester", colors.green);
+      .addItem("Passive Provider", colors.green, colors.black, { mode: "1" })
+      .addItem("Active Provider", colors.green, colors.black, { mode: "2" })
+      .addItem("Requester", colors.green, colors.black, { mode: "3" });
     modeDropdown
       .setPosition(36, 5)
       .setSize(14, 1)
-      .selectItem(1)
       .setSelectedItem(colors.lime, colors.white)
       .setBackground(colors.lime)
-      .setBorder(colors.lime);
+      .selectItem(parseInt(this.config.mode));
+
+    modeDropdown.onChange(() => (this.config.mode = modeDropdown.getValue().args[1].mode));
+
+    switch (modeDropdown.getValue().args[1].mode) {
+      case "1":
+        // Make items known to server network but don't import TODO figure out how
+        break;
+      case "2":
+        // Store all if any items present
+        this.logger.log(currentStoredList.getItemCount().toString());
+        if (currentStoredList.getItemCount() > 0) {
+          this.server?.storeAll(this.config.storage[0]);
+        }
+        break;
+      case "3":
+        // Check if items which are in request list are present, if not get missing values. (maybe store anything not in the list)
+        break;
+      default:
+        throw new Error(`Invalid operation mode: "${this.config.mode}"`);
+    }
 
     basalt.autoUpdate();
   }
