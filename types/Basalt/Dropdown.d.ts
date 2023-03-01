@@ -258,5 +258,5 @@ declare interface Dropdown extends BObject {
    * </dropdown>
    * ```
    */
-  setSelectedItem(): this;
+  setSelectedItem(bg: number, fg: number): this;
 }

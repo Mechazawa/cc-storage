@@ -151,11 +151,9 @@ export default class Interface extends App {
 
   runGui(): void {
     const main = basalt.createFrame();
-    const listToggleStateLabels = ["Stored", "Craftable"];
-    let listToggleState = 0;
     // Background panes
     main.addLayoutFromString(
-      '<pane width="51" height="19" bg="black" /><pane width="13" height="19" x="39" y="1" bg="gray" />'
+      '<pane width="51" height="19" bg="black" /><pane width="17" height="19" x="35" y="1" bg="gray" />'
     );
 
     // Interface handles automatic importing, exporting, and stocking of items.
@@ -163,6 +161,21 @@ export default class Interface extends App {
     const titleBar = main.addLabel();
 
     titleBar.setText(" cc-cloud-storage : Interface").setBackground(colors.lime).setPosition(1, 1).setSize(51, 1);
+
+    const modeDropdownLabel = main.addLabel();
+    modeDropdownLabel.setText("Mode:").setPosition(36, 3).setForeground(colors.black);
+
+    const modeDropdown = main.addDropdown();
+    modeDropdown
+      .addItem("Passive Provider", colors.green)
+      .addItem("Active Provider", colors.green)
+      .addItem("Requester", colors.green);
+    modeDropdown
+      .setPosition(36, 5)
+      .setSize(14, 1)
+      .selectItem(1)
+      .setSelectedItem(colors.lime, colors.white)
+      .setBackground(colors.lime).setBorder(colors.lime);
 
     basalt.autoUpdate();
   }
