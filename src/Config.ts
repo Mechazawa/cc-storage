@@ -34,6 +34,7 @@ export interface InterfaceConfig extends BaseConfig {
   type: DeviceType.INTERFACE;
   host: string;
   mode: string;
+  stockList: Array<{ name: string, count: number }>;
 }
 
 export interface CrafterConfig extends BaseConfig {

@@ -164,7 +164,7 @@ export default class Interface extends App {
     currentStoredList.setPosition(1, 3).setSize(34, 17).setBackground(colors.black);
 
     for (const [name, item] of chest.list()) {
-      currentStoredList.addItem(ellipsis(item.name.toString(), 30), colors.black, colors.white, {
+      currentStoredList.addItem(rpad(`${item.count}`, 4) + ellipsis(item.name, 30), colors.black, colors.white, {
         name: item.name,
         count: item.count,
       });
@@ -186,7 +186,7 @@ export default class Interface extends App {
       .addItem("Requester", colors.green, colors.black, { mode: "3" });
     modeDropdown
       .setPosition(36, 5)
-      .setSize(14, 1)
+      .setSize(15, 1)
       .setSelectedItem(colors.lime, colors.white)
       .setBackground(colors.lime)
       .selectItem(parseInt(this.config.mode));
@@ -194,6 +194,18 @@ export default class Interface extends App {
     modeDropdown.onChange(() => (this.config.mode = modeDropdown.getValue().args[1].mode));
 
     if (this.config.mode === "3") {
+      const currentStockedItemLabel = main.addLabel();
+      currentStockedItemLabel.setPosition(36, 13).setText("Stocking:");
+
+      const currentStockedItemList = main.addList();
+      currentStockedItemList.setPosition(36, 14).setSize(15, 4).setScrollable(true);
+
+      // Load stock items from config
+      for (const item of this.config.stockList) {
+        currentStockedItemList.addItem(`${item.count} ${item.name}`, colors.black, colors.white, item);
+      }
+
+      // Form to add item to be stocked
       const addStockedItemLabel = main.addLabel();
       addStockedItemLabel.setPosition(36, 7).setText("Request:");
 
@@ -208,16 +220,21 @@ export default class Interface extends App {
         .setForeground(colors.gray);
 
       const addStockedItemButton = main.addButton();
-      addStockedItemButton.setPosition(36, 9).setText("Add stocked").setSize(14, 3).setBackground(colors.lime);
+      addStockedItemButton.setPosition(36, 9).setText("Add stocked").setSize(15, 3).setBackground(colors.lime);
       addStockedItemButton.onClick(() => {
-        // TODO implement add item to currentStockedItemList
+        // Add item to stocked items
+        const itemName = currentStoredList.getValue().args[1].name;
+        const desiredCount = addStockedItemAmount.getValue();
+        const newStockElement = {
+          name: itemName as string,
+          count: parseInt(desiredCount),
+        }
+        currentStockedItemList.addItem(`${desiredCount} ${itemName}`, colors.black, colors.white, newStockElement);
+        this.logger.log(newStockElement.toString());
+        this.config.stockList.push(newStockElement);
       });
 
-      const currentStockedItemLabel = main.addLabel();
-      currentStockedItemLabel.setPosition(36, 13).setText("Stocking:");
 
-      const currentStockedItemList = main.addList();
-      currentStockedItemList.setPosition(36, 14).setSize(14, 4).setScrollable(true);
     }
 
     switch (modeDropdown.getValue().args[1].mode) {

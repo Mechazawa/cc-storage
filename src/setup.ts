@@ -55,6 +55,7 @@ export default function setup(): AppConfig {
         host: "storage",
         storage,
         mode: "1",
+        stockList: {},
       } as InterfaceConfig;
     default:
       throw new Error(`Could not generate config for "${deviceType}"`);
