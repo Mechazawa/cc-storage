@@ -163,8 +163,11 @@ export default class Interface extends App {
     const currentStoredList = main.addList();
     currentStoredList.setPosition(1, 3).setSize(34, 17).setBackground(colors.black);
 
-    for (const [name, count] of chest.list()) {
-      currentStoredList.addItem(ellipsis(count.name.toString(), 30), colors.black, colors.white);
+    for (const [name, item] of chest.list()) {
+      currentStoredList.addItem(ellipsis(item.name.toString(), 30), colors.black, colors.white, {
+        name: item.name,
+        count: item.count,
+      });
     }
 
     // Interface handles automatic importing, exporting, and stocking of items.
@@ -189,6 +192,33 @@ export default class Interface extends App {
       .selectItem(parseInt(this.config.mode));
 
     modeDropdown.onChange(() => (this.config.mode = modeDropdown.getValue().args[1].mode));
+
+    if (this.config.mode === "3") {
+      const addStockedItemLabel = main.addLabel();
+      addStockedItemLabel.setPosition(36, 7).setText("Request:");
+
+      const addStockedItemAmount = main.addInput();
+
+      addStockedItemAmount
+        .setInputType("number")
+        .setPosition(36, 8)
+        .setSize(10, 1)
+        .setDefaultText("Amount")
+        .setBackground(colors.black)
+        .setForeground(colors.gray);
+
+      const addStockedItemButton = main.addButton();
+      addStockedItemButton.setPosition(36, 9).setText("Add stocked").setSize(14, 3).setBackground(colors.lime);
+      addStockedItemButton.onClick(() => {
+        // TODO implement add item to currentStockedItemList
+      });
+
+      const currentStockedItemLabel = main.addLabel();
+      currentStockedItemLabel.setPosition(36, 13).setText("Stocking:");
+
+      const currentStockedItemList = main.addList();
+      currentStockedItemList.setPosition(36, 14).setSize(14, 4).setScrollable(true);
+    }
 
     switch (modeDropdown.getValue().args[1].mode) {
       case "1":
