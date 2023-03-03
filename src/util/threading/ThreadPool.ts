@@ -1,5 +1,4 @@
 import Logger from "../Logger";
-import benchmark from "../benchmark";
 import AutoYield from "./AutoYield";
 import Thread from "./Thread";
 
@@ -9,14 +8,13 @@ export default class ThreadPool {
 
   logger = new Logger();
 
+  running: (Thread<any> | undefined)[] = [];
+  yielder = new AutoYield();
+
   constructor(size: number, pool: (Function | Thread<any>)[] = []) {
     this.size = size;
 
     this.push(...pool);
-
-    const run = this.run.bind(this);
-
-    this.run = benchmark(this.logger, () => run(), 'p'+size)
   }
 
   push(...input: (Function | Thread<any>)[]) {
@@ -29,35 +27,25 @@ export default class ThreadPool {
     }
   }
 
-  run() {
-    const threads: (Thread<any> | undefined)[] = [];
-    const yielder = new AutoYield();
-    let running = true;
-
-    let lastLength = 0;
-    let ticksSinceLast = 0;
-
-    while (running) {
-      running = false;
-
-      yielder.tick();
-      ticksSinceLast++;
-
-      if (lastLength != this.pool.length) {
-        lastLength = this.pool.length
-        this.logger.debug(`pool ${lastLength} in ${ticksSinceLast}`);
-        ticksSinceLast = 0;
-      }
-
-      for (let i = 0; i < this.size; i++) {
-        const thread = threads[i];
-
-        if (thread === undefined || !thread.resume()) {
-          threads[i] = this.pool.pop();
-        }
-
-        running = running || threads[i] !== undefined;
-      }
+  join() {
+    while (this.resume()) {
+      this.yielder.tick();
     }
+  }
+
+  resume() {
+    let running = false;
+
+    for (let i = 0; i < this.size; i++) {
+      const thread = this.running[i];
+
+      if (thread === undefined || !thread.resume()) {
+        this.running[i] = this.pool.pop();
+      }
+
+      running = running || this.running[i] !== undefined;
+    }
+
+    return running;
   }
 }

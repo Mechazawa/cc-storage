@@ -6,6 +6,7 @@ import ThreadPool from "./util/threading/ThreadPool";
 import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 import ItemAllocator, { ReservedLocation } from "./storage/ItemAllocator";
+import benchmark from "./util/benchmark";
 
 export interface StorageLocation {
   peripheral: string;
@@ -309,8 +310,8 @@ export default class StorageManager {
       });
     }
 
-    new ThreadPool(20, storageFns).run();
-    new ThreadPool(20, stackFns).run();
+    new ThreadPool(20, storageFns).join();
+    new ThreadPool(20, stackFns).join();
 
     for (const stack of stacks) {
       if (typeof stack === "object") {
@@ -451,10 +452,7 @@ export default class StorageManager {
       locations.forEach(l => l.release());
     });
 
-    const pool = new ThreadPool(threads, fns);
-
-    pool.logger.showDebug = true;
-    pool.run();
+    (new ThreadPool(threads, fns)).join();
 
     return outputs.reduce((a, c) => a + (c ?? 0), 0);
   }
