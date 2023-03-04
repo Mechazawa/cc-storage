@@ -9,10 +9,10 @@ local container = peripheral.wrap(containerName);
 print("ready")
 
 while true do
-    local items = container.list()
+    local slots = container.list()
 
-    if #items > 0 then
-        print("Storing " .. #items .. " items")
+    if #slots > 0 then
+        print("Storing " .. #slots .. " slots")
         rednet.send(host, {
             method = 'storeAll',
             args = {containerName}
