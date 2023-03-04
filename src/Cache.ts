@@ -1,5 +1,6 @@
-import Logger from "./Logger";
+import Logger from "./util/Logger";
 import Serializable from "./Serializable";
+import AutoYield from "./util/threading/AutoYield";
 
 const expireEpoch = Symbol("expireEpoch");
 
@@ -99,10 +100,6 @@ export default class Cache<T = any> extends Serializable {
       return this.remember(key, () => fn(...args), seconds);
     }) as unknown as T2;
   }
-
-  // debounce(name: string, fn: () => T, seconds: number): T {
-  //   return this.set(name, this.get(name) ?? fn(), seconds);
-  // }
 
   serialise(): LuaMap<string, TimedValue<T>> {
     return this.store;

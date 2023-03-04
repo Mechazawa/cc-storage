@@ -6,18 +6,18 @@ export default class ExpiringLock {
       case 0:
         return false;
       case -1:
-        return true;   
+        return true;
     }
 
-    if (this.expires <= os.epoch('utc')) {
-      this.expires = 0
+    if (this.expires <= os.epoch("utc")) {
+      this.expires = 0;
       return false;
     }
 
     return true;
   }
 
-  lock (seconds?: number): boolean {
+  lock(seconds?: number): boolean {
     if (this.locked) {
       return false;
     }
@@ -25,14 +25,14 @@ export default class ExpiringLock {
     if (seconds === undefined) {
       this.expires = -1;
     } else {
-      this.expires = os.epoch('utc') + (seconds * 1000);
+      this.expires = os.epoch("utc") + seconds * 1000;
     }
 
     return true;
   }
 
   unlock(): boolean {
-    this.expires = 0
+    this.expires = 0;
 
     return true;
   }

@@ -1,4 +1,4 @@
-import Logger from "../Logger";
+import Logger from "../util/Logger";
 import StorageManager, { StorageLocation } from "../StorageManager";
 
 export class ReservedLocation implements StorageLocation {
@@ -57,7 +57,13 @@ export default class ItemAllocator {
       }
     }
 
-    return allowPartial ? output : [];
+    if (allowPartial) {
+      return output;
+    }
+
+    output.forEach((x) => x.release());
+
+    return [];
   }
 
   getAvailable(location: StorageLocation): number {
