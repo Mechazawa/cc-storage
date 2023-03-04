@@ -72,9 +72,9 @@ export default class Queue<T extends object> extends Serializable {
 
   static deserialize<T extends object = object>(input: LuaMap<string, any>): Queue<T> {
     const instance: Queue<T> = new this<T>(input.get("fileName"));
-    const running: RunningJob<T>[] = input.get("running");
+    const running: RunningJob<T>[] =((input.get("running") ?? []) as RunningJob<T>[]).map(this.deserializeJob);
 
-    instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map((job) => this.deserializeJob(job));
+    instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map(this.deserializeJob);
     instance.queue = ((input.get("queue") ?? []) as Job<T>[]).map(this.deserializeJob);
 
     // @todo notify client about failed job
@@ -100,10 +100,18 @@ export default class Queue<T extends object> extends Serializable {
   }
 
   notifyFailed() {
+    this.logger.info(`[q] Total ${this.failed.length} failed jobs`);
+
     for (const fail of this.failed) {
       if (!fail.notified) {
         this.logger.warn(`[q] Notifying failed job (${fail.reason})`);
-        fail.callback?.(...(fail.callbackArgs ?? []), fail.reason, false);
+        
+        fail.callbackArgs ??= [];
+
+        fail.callbackArgs.push(fail.reason);
+        fail.callbackArgs.push(false);
+
+        fail.callback?.(...fail.callbackArgs);
 
         fail.notified = true;
       }

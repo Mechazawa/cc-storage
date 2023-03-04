@@ -65,6 +65,8 @@ export default class Server extends App {
 
     this.logger.info(`Initialised ${storageCount} storage containers`);
 
+    this.queue.notifyFailed();
+
     parallel.waitForAny(
       () => this.runRPC(),
       () => this.runQueueWorker(),
