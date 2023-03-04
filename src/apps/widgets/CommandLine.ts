@@ -1,5 +1,6 @@
 import Cache from "../../Cache";
 import RPC from "../../RPC";
+import { ellipsis } from "../../util/string";
 import { ServerRPC } from "../Server.d";
 
 type TextCompleter = (partial: string) => string[];
@@ -33,7 +34,7 @@ export default class CommandLine {
     ["mcwwindows", "mcww"],
   ];
 
-  constructor(server: ServerRPC, storageName: string, keepHistory = true, historyLocation = '/.history') {
+  constructor(server: ServerRPC, storageName: string, keepHistory = true, historyLocation = "/.history") {
     this.server = server;
     this.storageName = storageName;
     this.keepHistory = keepHistory;
@@ -43,26 +44,26 @@ export default class CommandLine {
       this.restoreHistory();
     }
   }
-  
+
   restoreHistory() {
     if (!fs.exists(this.historyLocation)) {
       return;
     }
 
-    const hFile = fs.open(this.historyLocation, 'r') as ReadHandle;
-    
-    this.history = textutils.unserialise(hFile.readAll() ?? '[]') as string[];
+    const hFile = fs.open(this.historyLocation, "r") as ReadHandle;
+
+    this.history = textutils.unserialise(hFile.readAll() ?? "[]") as string[];
 
     hFile.close();
   }
-  
+
   saveHistory() {
     //todo:magic number
-    while(this.history.length > 1000) this.history.shift();
+    while (this.history.length > 1000) this.history.shift();
 
-    const hFile = fs.open(this.historyLocation, 'w') as WriteHandle;
-    
-    hFile.write(textutils.serialise(this.history, {compact: false, allow_repetitions: true}));
+    const hFile = fs.open(this.historyLocation, "w") as WriteHandle;
+
+    hFile.write(textutils.serialise(this.history, { compact: false, allow_repetitions: true }));
     hFile.close();
   }
 
@@ -165,7 +166,7 @@ export default class CommandLine {
         keywords: ["rebootAll"],
         completeFn: (partial: string) => [],
         action: () => {
-          RPC.broadcastNotify('reboot');
+          RPC.broadcastNotify("reboot");
           os.reboot();
         },
       },
@@ -213,7 +214,8 @@ Cache contains ${cacheSize} records
                 this._shortenPrefix(resource.name).startsWith(name ?? "")
             )
             .sort((a, b) => b.count - a.count)
-            .map((r) => [r.count, this._shortenPrefix(r.name), r.displayName].map((v) => `${v}`));
+            // todo replace with something better
+            .map((r) => [r.count, ellipsis(this._shortenPrefix(r.name), 20), ellipsis(r.displayName,20)].map((v) => `${v}`));
 
           return [8, colors.lightBlue, ["Count", "Name", "Display Name"], colors.lightGray, ...rows];
         },
@@ -233,7 +235,7 @@ Cache contains ${cacheSize} records
             .remember("listCraftable", () => this.server.listCraftable())
             .filter((recipe) => recipe.name.startsWith(this._expandPrefix(name ?? "")))
             .sort((a, b) => b.count - a.count)
-            .map((r) => [this._shortenPrefix(r.name), r.count].map((v) => `${v}`));
+            .map((r) => [ellipsis(this._shortenPrefix(r.name), 42), r.count].map((v) => `${v}`));
 
           return [8, colors.lightBlue, ["Name", "Count"], colors.lightGray, ...rows];
         },
