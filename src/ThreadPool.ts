@@ -45,3 +45,4 @@ export default class ThreadPool {
     parallel.waitForAll(...threads);
   }
 }
+

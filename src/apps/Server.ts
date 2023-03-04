@@ -6,6 +6,7 @@ import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import App from "./App";
 import RPC from "../RPC";
 import Cache from "../Cache";
+import ThreadPool from "../util/threading/ThreadPool";
 
 export default class Server extends App {
   storage: StorageManager;
@@ -29,7 +30,7 @@ export default class Server extends App {
       config: this.config,
       nextDefrag: this.nextDefrag,
 
-      // Optional, todo: benchmark
+      // Optional
       // cache: this.storage.cache.serialise(),
     } as object as LuaMap<string, any>;
   }
@@ -64,8 +65,12 @@ export default class Server extends App {
 
     this.logger.info(`Initialised ${storageCount} storage containers`);
 
+    this.queue.notifyFailed();
+
     parallel.waitForAny(
       () => this.runRPC(),
+      // @todo decide if I want to have queue worker count configurable
+      () => this.runQueueWorker(),  
       () => this.runQueueWorker(),
       () => this.runDefragLoop()
     );
@@ -127,7 +132,6 @@ export default class Server extends App {
 
     while (true) {
       this.queue.work();
-
       os.sleep(0.5);
     }
   }

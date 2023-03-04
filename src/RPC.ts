@@ -1,4 +1,4 @@
-import Logger from "./Logger";
+import Logger from "./util/Logger";
 
 export type ID = string | number;
 

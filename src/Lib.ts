@@ -1,4 +1,4 @@
-import Hash from "./Hash";
+import Hash from "./util/Hash";
 
 /** @noSelf */
 declare namespace http {

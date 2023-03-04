@@ -1,11 +1,13 @@
 import Cache from "./Cache";
 import CachedInventoryProxy from "./CachedInventoryProxy";
-import Logger from "./Logger";
+import Logger from "./util/Logger";
 import RPC from "./RPC";
-import ThreadPool from "./ThreadPool";
+import ThreadPool from "./util/threading/ThreadPool";
 import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 import ItemAllocator, { ReservedLocation } from "./storage/ItemAllocator";
+import benchmark from "./util/benchmark";
+import Thread from "./util/threading/Thread";
 
 export interface StorageLocation {
   peripheral: string;
@@ -30,7 +32,6 @@ export interface CrafterHost {
   type: RecipeType;
 }
 
-// todo: cc yields when communicating with peripherals, so running in parralel makes the application go brrrrr...
 export default class StorageManager {
   storagePool: LuaMap<string, CachedInventoryProxy> = new LuaMap<string, CachedInventoryProxy>();
   logger: Logger;
@@ -48,8 +49,7 @@ export default class StorageManager {
     this.size = this.cache.memoize("acc:size", this.size.bind(this));
     this.used = this.cache.memoize("acc:used", this.used.bind(this));
     this.getFragmented = this.cache.memoize("acc:getFragmented", this.getFragmented.bind(this));
-    this.getEmpty = this.cache.memoize("acc:getEmpty", this.getEmpty.bind(this));
-    this.list = this.cache.memoize("acc:list", this.list.bind(this));
+    this.list = this.cache.memoize("acc:list", benchmark(this.logger, this.list.bind(this), 'list'));
     this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
   }
 
@@ -74,7 +74,7 @@ export default class StorageManager {
       }
 
       // use parallel so the queue doesn't get messed up
-      parallel.waitForAll(() => sleep(1));
+      parallel.waitForAll(() => sleep(Math.random()));
     }
   }
 
@@ -129,26 +129,6 @@ export default class StorageManager {
     return output;
   }
 
-  getEmpty(): StorageLocation[] {
-    const output = [];
-
-    for (const [storageName, storage] of this.storagePool) {
-      for (let slot = 1; slot <= storage.size(); slot++) {
-        const stack = storage.getItemDetail(slot);
-
-        if (!stack) {
-          output.push({
-            peripheral: storageName,
-            slot: slot,
-            count: 0,
-          });
-        }
-      }
-    }
-
-    return output;
-  }
-
   /**
    * Defragment storage
    * @returns Amount of slots freed
@@ -187,6 +167,9 @@ export default class StorageManager {
     return freed;
   }
 
+  /**
+   * @todo extract from class or make static
+   */
   testKey(key: string, stack: ItemStack | Resource): boolean {
     if (key === undefined) return false;
     if (key.includes("|")) {
@@ -212,6 +195,11 @@ export default class StorageManager {
     return false;
   }
 
+  /**
+   * Stores all items from an external location into the storage system
+   * @param storageName 
+   * @returns 
+   */
   storeAll(storageName: string): number {
     const storage = peripheral.wrap(storageName) as Inventory;
 
@@ -236,6 +224,13 @@ export default class StorageManager {
     return results.reduce((a, b) => a + b, 0);
   }
 
+  /**
+   * Stores items from an external location into the storage system
+   * @param storageName Peripheral name
+   * @param slot Slot nr
+   * @param _count Maximum amount to store, stores all if undefined
+   * @returns Amount of items successfully stored
+   */
   store(storageName: string, slot: number, _count?: number): number {
     const count = _count ?? peripheral.call(storageName, "getItemDetail")?.count ?? 0;
 
@@ -309,8 +304,8 @@ export default class StorageManager {
       });
     }
 
-    new ThreadPool(20, storageFns).run();
-    new ThreadPool(80, stackFns).run();
+    new ThreadPool(20, storageFns).join();
+    new ThreadPool(20, stackFns).join();
 
     for (const stack of stacks) {
       if (typeof stack === "object") {
@@ -358,7 +353,7 @@ export default class StorageManager {
       fns.push(genFn(storageName));
     }
 
-    parallel.waitForAll(...fns);
+    (new ThreadPool(30, fns)).join();
 
     return total;
   }
@@ -379,7 +374,7 @@ export default class StorageManager {
       });
     }
 
-    parallel.waitForAll(...fns);
+    (new ThreadPool(30, fns)).join();
 
     return total;
   }
@@ -410,58 +405,68 @@ export default class StorageManager {
     const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
 
     const outputs: number[] = [];
-    const chunks: [number[], number][] = [[outputs, times % maxChunkSize]];
+    const chunks: [number[], number, ReservedLocation[]][] = [[outputs, times % maxChunkSize, []]];
 
     for (let i = 1; i < times / maxChunkSize; i++) {
-      chunks.push([outputs, maxChunkSize]);
+      chunks.push([outputs, maxChunkSize, []]);
       outputs.push(0);
     }
 
     assert(chunks.reduce((a, c) => a + c[1], 0) > 0);
 
-    const fns = chunks.map(([out, count], i) => () => {
+    // todo: merge with loop below
+    for (let i = 0; i < chunks.length; i++) {
+      const locations: ReservedLocation[] = [];
+
+      for (const key of recipe.getInput()) {
+        const reserved = this.allocator.reserve(key, chunks[i][1]);
+
+        if (reserved.length === 0) {
+          throw new Error(`Unable to find ${times}x "${key}" for crafting`);
+        }
+
+        for (const r of reserved) {
+          locations.push(r);
+        }
+      }
+
+      chunks[i][2] = locations;
+    }
+
+    const fns = chunks.map(([out, count, locations], i) => () => {
       const crafter = this.findCrafter(recipe.type, 30, timeout);
 
       if (crafter === undefined) {
         throw new Error(`Missing crafter for "${recipe.type}"`);
       }
 
-      out[i] = this._craft(crafter, recipe, count, timeout);
+      out[i] = this._craft(crafter, recipe, locations, count, timeout);
       this.logger.log(`done ${out.reduce((a, c) => a + (c ?? 0), 0)} ${i + 1}/${chunks.length}`);
+
+      locations.forEach(l => l.release());
     });
 
-    const pool = new ThreadPool(threads, fns);
-
-    pool.logger.showDebug = true;
-    pool.run();
+    (new ThreadPool(threads, fns)).join();
 
     return outputs.reduce((a, c) => a + (c ?? 0), 0);
   }
 
-  _craft(crafter: CrafterHost, recipe: Recipe, times: number = 1, timeout: number = 120): number {
+  _craft(
+    crafter: CrafterHost,
+    recipe: Recipe,
+    locations: StorageLocation[],
+    times: number = 1,
+    timeout: number = 120
+  ): number {
     this.logger.debug(`lock: ${crafter.host}`);
 
     const inputItems = recipe.getInput();
 
     let slot = 1;
-    const locations: ReservedLocation[] = [];
-
-    for (const key of inputItems) {
-      const reserved = this.allocator.reserve(key, times);
-
-      if (reserved.length === 0) {
-        throw new Error(`Unable to find ${times}x "${key}" for crafting`);
-      }
-
-      for (const r of reserved) {
-        locations.push(r);
-      }
-    }
 
     // todo: split craft call based on item availability ex: `items:a|items:b`
     for (const location of locations) {
       this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
-      location.release();
       slot++;
     }
 

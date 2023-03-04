@@ -1,5 +1,4 @@
 import { AppConfig, ClientConfig, CrafterConfig, DeviceType, ServerConfig, InterfaceConfig } from "./Config";
-import Hash from "./Hash";
 import { RecipeType } from "./crafting/Recipe";
 
 const deviceTypes = Object.values(DeviceType) as string[];
