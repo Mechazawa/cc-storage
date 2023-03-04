@@ -18,6 +18,7 @@ export interface RunningJob<T> extends Job<T> {
 export interface FailedJob<T> extends RunningJob<T> {
   reason: string;
   endTime: number;
+  notified: boolean;
 }
 
 export default class Queue<T extends object> extends Serializable {
@@ -49,7 +50,7 @@ export default class Queue<T extends object> extends Serializable {
     return {
       failed: this.failed.map(this.serialiseJob),
       queue: this.queue.map(this.serialiseJob),
-      running: this.running.map(x => this.serialiseJob(x)),
+      running: this.running.map((x) => this.serialiseJob(x)),
     } as object as LuaMap<string, any>;
   }
 
@@ -74,12 +75,13 @@ export default class Queue<T extends object> extends Serializable {
     const running: RunningJob<T>[] = input.get("running");
 
     instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map((job) => this.deserializeJob(job));
-    instance.queue = ((input.get("queue") ?? []) as FailedJob<T>[]).map(this.deserializeJob);
+    instance.queue = ((input.get("queue") ?? []) as Job<T>[]).map(this.deserializeJob);
 
     // @todo notify client about failed job
-    for(const job of running) {
+    for (const job of running) {
       instance.failed.push({
         ...job,
+        notified: false,
         reason: "unexpected_reboot",
         endTime: os.epoch("local"),
       } as FailedJob<T>);
@@ -97,6 +99,17 @@ export default class Queue<T extends object> extends Serializable {
     return false;
   }
 
+  notifyFailed() {
+    for (const fail of this.failed) {
+      if (!fail.notified) {
+        this.logger.warn(`[q] Notifying failed job (${fail.reason})`);
+        fail.callback?.(...(fail.callbackArgs ?? []), fail.reason, false);
+
+        fail.notified = true;
+      }
+    }
+  }
+
   work(): void {
     const job = this.queue.shift();
 
@@ -108,7 +121,7 @@ export default class Queue<T extends object> extends Serializable {
       ...job,
       startTime: os.epoch("local"),
     };
-    
+
     this.running.push(running);
 
     running.callbackArgs = running.callbackArgs ?? [];
@@ -127,7 +140,11 @@ export default class Queue<T extends object> extends Serializable {
       if (keyType === "function") {
         // note that I'm not placing the method in a temp
         // var because it breaks the self reference in lua.
-        const output = benchmark(this.logger, () => (this.handler[methodName] as Function)(...running.params), methodName as string)();
+        const output = benchmark(
+          this.logger,
+          () => (this.handler[methodName] as Function)(...running.params),
+          methodName as string
+        )();
 
         running.callbackArgs.push(output);
         running.callback?.(...running.callbackArgs);
@@ -136,17 +153,19 @@ export default class Queue<T extends object> extends Serializable {
       }
     } catch (error) {
       this.logger.error("[q] fail: " + error);
-      running.callbackArgs.push(error);
+      running.callbackArgs.push(`${error}`);
+      running.callbackArgs.push(false);
       this.failed.push({
         ...running,
         reason: error,
+        notified: true,
         endTime: os.epoch("local"),
       } as FailedJob<T>);
 
       // todo: setting the last param to let the callback know if it's successful is pretty jank
       running.callback?.(...running.callbackArgs);
     } finally {
-      this.running = this.running.filter(x => x !== running);
+      this.running = this.running.filter((x) => x !== running);
     }
   }
 }
