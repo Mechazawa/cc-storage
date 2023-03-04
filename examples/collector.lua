@@ -1,19 +1,24 @@
 local server = 'storage'
-local container = 'minecraft:chest_1'
+local containerName = 'minecraft:chest_166'
 
 peripheral.find("modem", rednet.open)
 
 local host = rednet.lookup('rpc', server);
+local container = peripheral.wrap(containerName);
 
-container = peripheral.wrap(container);
+print("ready")
 
 while true do
-  local items = container.list()
+    local items = container.list()
 
-  if #items > 0 then
-    print("Storing " .. #items .. " items")
-    rednet.call(host, {method = 'storeAll'}, 'rpc');
-  end
-
-  sleep(0.5)
+    if #items > 0 then
+        print("Storing " .. #items .. " items")
+        rednet.send(host, {
+            method = 'storeAll',
+            args = {containerName}
+        }, 'rpc');
+        sleep(3)
+    else
+        sleep(0.5)
+    end
 end
