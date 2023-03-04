@@ -7,6 +7,7 @@ import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
 import RecipeManager from "./crafting/RecipeManager";
 import ItemAllocator, { ReservedLocation } from "./storage/ItemAllocator";
 import benchmark from "./util/benchmark";
+import Thread from "./util/threading/Thread";
 
 export interface StorageLocation {
   peripheral: string;
@@ -31,7 +32,6 @@ export interface CrafterHost {
   type: RecipeType;
 }
 
-// todo: cc yields when communicating with peripherals, so running in parralel makes the application go brrrrr...
 export default class StorageManager {
   storagePool: LuaMap<string, CachedInventoryProxy> = new LuaMap<string, CachedInventoryProxy>();
   logger: Logger;
@@ -49,8 +49,7 @@ export default class StorageManager {
     this.size = this.cache.memoize("acc:size", this.size.bind(this));
     this.used = this.cache.memoize("acc:used", this.used.bind(this));
     this.getFragmented = this.cache.memoize("acc:getFragmented", this.getFragmented.bind(this));
-    this.getEmpty = this.cache.memoize("acc:getEmpty", this.getEmpty.bind(this));
-    this.list = this.cache.memoize("acc:list", this.list.bind(this));
+    this.list = this.cache.memoize("acc:list", benchmark(this.logger, this.list.bind(this), 'list'));
     this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
   }
 
@@ -75,7 +74,7 @@ export default class StorageManager {
       }
 
       // use parallel so the queue doesn't get messed up
-      parallel.waitForAll(() => sleep(1));
+      parallel.waitForAll(() => sleep(Math.random()));
     }
   }
 
@@ -130,26 +129,6 @@ export default class StorageManager {
     return output;
   }
 
-  getEmpty(): StorageLocation[] {
-    const output = [];
-
-    for (const [storageName, storage] of this.storagePool) {
-      for (let slot = 1; slot <= storage.size(); slot++) {
-        const stack = storage.getItemDetail(slot);
-
-        if (!stack) {
-          output.push({
-            peripheral: storageName,
-            slot: slot,
-            count: 0,
-          });
-        }
-      }
-    }
-
-    return output;
-  }
-
   /**
    * Defragment storage
    * @returns Amount of slots freed
@@ -188,6 +167,9 @@ export default class StorageManager {
     return freed;
   }
 
+  /**
+   * @todo extract from class or make static
+   */
   testKey(key: string, stack: ItemStack | Resource): boolean {
     if (key === undefined) return false;
     if (key.includes("|")) {
@@ -213,6 +195,11 @@ export default class StorageManager {
     return false;
   }
 
+  /**
+   * Stores all items from an external location into the storage system
+   * @param storageName 
+   * @returns 
+   */
   storeAll(storageName: string): number {
     const storage = peripheral.wrap(storageName) as Inventory;
 
@@ -237,6 +224,13 @@ export default class StorageManager {
     return results.reduce((a, b) => a + b, 0);
   }
 
+  /**
+   * Stores items from an external location into the storage system
+   * @param storageName Peripheral name
+   * @param slot Slot nr
+   * @param _count Maximum amount to store, stores all if undefined
+   * @returns Amount of items successfully stored
+   */
   store(storageName: string, slot: number, _count?: number): number {
     const count = _count ?? peripheral.call(storageName, "getItemDetail")?.count ?? 0;
 
@@ -359,7 +353,7 @@ export default class StorageManager {
       fns.push(genFn(storageName));
     }
 
-    parallel.waitForAll(...fns);
+    (new ThreadPool(30, fns)).join();
 
     return total;
   }
@@ -380,7 +374,7 @@ export default class StorageManager {
       });
     }
 
-    parallel.waitForAll(...fns);
+    (new ThreadPool(30, fns)).join();
 
     return total;
   }

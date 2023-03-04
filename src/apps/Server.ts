@@ -6,6 +6,7 @@ import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import App from "./App";
 import RPC from "../RPC";
 import Cache from "../Cache";
+import ThreadPool from "../util/threading/ThreadPool";
 
 export default class Server extends App {
   storage: StorageManager;
@@ -29,7 +30,7 @@ export default class Server extends App {
       config: this.config,
       nextDefrag: this.nextDefrag,
 
-      // Optional, todo: benchmark
+      // Optional
       // cache: this.storage.cache.serialise(),
     } as object as LuaMap<string, any>;
   }
@@ -66,6 +67,7 @@ export default class Server extends App {
 
     parallel.waitForAny(
       () => this.runRPC(),
+      () => this.runQueueWorker(),
       () => this.runQueueWorker(),
       () => this.runDefragLoop()
     );
@@ -127,7 +129,6 @@ export default class Server extends App {
 
     while (true) {
       this.queue.work();
-
       os.sleep(0.5);
     }
   }

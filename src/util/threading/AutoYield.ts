@@ -10,17 +10,18 @@ export default class AutoYield {
   }
 
   tick() {
-    const timestamp = os.epoch('utc');
+    const timestamp = os.epoch("utc");
 
     if (this._nextYield <= timestamp) {
-      const [name, ...data] = os.pullEvent()
-      // // print("yield " + name)
-      os.queueEvent(name, ...data);
+      AutoYield.yield();
 
-      // Thread.env = [name, ...data];
-      // Thread.envId++;
-
-      this._nextYield = os.epoch('utc') + this.timeout;
+      this._nextYield = os.epoch("utc") + this.timeout;
     }
+  }
+
+  static yield() {
+    const [name, ...data] = os.pullEvent();
+
+    os.queueEvent(name, ...data);
   }
 }

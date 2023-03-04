@@ -43,7 +43,9 @@ export default class ThreadPool {
         this.running[i] = this.pool.pop();
       }
 
-      running = running || this.running[i] !== undefined;
+      const threadActive = this.running[i] !== undefined;
+
+      running = running || threadActive;
     }
 
     return running;

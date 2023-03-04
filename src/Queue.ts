@@ -1,5 +1,6 @@
 import Logger from "./util/Logger";
 import Serializable from "./Serializable";
+import benchmark from "./util/benchmark";
 
 type JobCallback = (...args: any[]) => any;
 
@@ -24,11 +25,11 @@ export default class Queue<T extends object> extends Serializable {
   queue: Job<T>[] = [];
   failed: FailedJob<T>[] = [];
   // only set while `work()` is running, used for checking if we got intterupted during work
-  running?: RunningJob<T>;
-  handler?: T;
+  running: RunningJob<T>[] = [];
+  handler: T;
   logger: Logger;
 
-  constructor(handler?: T, logger: Logger = new Logger()) {
+  constructor(handler: T, logger: Logger = new Logger()) {
     super();
     this.handler = handler;
     this.logger = logger;
@@ -48,7 +49,7 @@ export default class Queue<T extends object> extends Serializable {
     return {
       failed: this.failed.map(this.serialiseJob),
       queue: this.queue.map(this.serialiseJob),
-      running: this.running !== undefined ? this.serialiseJob(this.running) : undefined,
+      running: this.running.map(x => this.serialiseJob(x)),
     } as object as LuaMap<string, any>;
   }
 
@@ -70,14 +71,15 @@ export default class Queue<T extends object> extends Serializable {
 
   static deserialize<T extends object = object>(input: LuaMap<string, any>): Queue<T> {
     const instance: Queue<T> = new this<T>(input.get("fileName"));
-    const running: RunningJob<T> = input.get("running");
+    const running: RunningJob<T>[] = input.get("running");
 
     instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map((job) => this.deserializeJob(job));
     instance.queue = ((input.get("queue") ?? []) as FailedJob<T>[]).map(this.deserializeJob);
 
-    if (running !== undefined) {
+    // @todo notify client about failed job
+    for(const job of running) {
       instance.failed.push({
-        ...this.deserializeJob(running),
+        ...job,
         reason: "unexpected_reboot",
         endTime: os.epoch("local"),
       } as FailedJob<T>);
@@ -96,18 +98,22 @@ export default class Queue<T extends object> extends Serializable {
   }
 
   work(): void {
-    if (this.handler === undefined) {
-      throw new Error("No handler defined");
+    const job = this.queue.shift();
+
+    if (job === undefined) {
+      return;
     }
 
-    this.running = {
-      ...this.queue.shift(),
+    const running: RunningJob<T> = {
+      ...job,
       startTime: os.epoch("local"),
-    } as RunningJob<T>;
+    };
+    
+    this.running.push(running);
 
-    this.running.callbackArgs = this.running.callbackArgs ?? [];
+    running.callbackArgs = running.callbackArgs ?? [];
 
-    const methodName = this.running.method;
+    const methodName = running.method;
 
     if (this.running === undefined || methodName === undefined) {
       return;
@@ -121,26 +127,26 @@ export default class Queue<T extends object> extends Serializable {
       if (keyType === "function") {
         // note that I'm not placing the method in a temp
         // var because it breaks the self reference in lua.
-        const output = (this.handler[methodName] as Function)(...this.running.params);
+        const output = benchmark(this.logger, () => (this.handler[methodName] as Function)(...running.params), methodName as string)();
 
-        this.running.callbackArgs.push(output);
-        this.running.callback?.(...this.running.callbackArgs);
+        running.callbackArgs.push(output);
+        running.callback?.(...running.callbackArgs);
       } else {
         throw new Error(`Expected "${methodName as string}" of handler to be "function", got "${keyType}" instead.`);
       }
     } catch (error) {
       this.logger.error("[q] fail: " + error);
-      this.running.callbackArgs.push(error);
+      running.callbackArgs.push(error);
       this.failed.push({
-        ...this.running,
+        ...running,
         reason: error,
         endTime: os.epoch("local"),
       } as FailedJob<T>);
 
       // todo: setting the last param to let the callback know if it's successful is pretty jank
-      this.running.callback?.(...this.running.callbackArgs);
+      running.callback?.(...running.callbackArgs);
     } finally {
-      this.running = undefined;
+      this.running = this.running.filter(x => x !== running);
     }
   }
 }

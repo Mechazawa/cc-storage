@@ -57,7 +57,13 @@ export default class ItemAllocator {
       }
     }
 
-    return allowPartial ? output : [];
+    if (allowPartial) {
+      return output;
+    }
+
+    output.forEach(x => x.release());
+
+    return [];
   }
 
   getAvailable(location: StorageLocation): number {
