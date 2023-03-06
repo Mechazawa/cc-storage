@@ -46,13 +46,16 @@ export default class ItemAllocator {
 
           if (available > 0) {
             const rCount = Math.min(count, available);
+            const reservation = this._reserve(location, rCount);
 
-            output.push(this._reserve(location, rCount));
+            if (reservation !== undefined) {
+              output.push(reservation);
 
-            count -= rCount;
+              count -= rCount;
 
-            if (count <= 0) {
-              return output;
+              if (count <= 0) {
+                return output;
+              }
             }
           }
         }
@@ -75,14 +78,13 @@ export default class ItemAllocator {
     return Math.max(0, location.count - reserved);
   }
 
-  _reserve(location: StorageLocation, count: number): ReservedLocation {
+  _reserve(location: StorageLocation, count: number): ReservedLocation | void {
     const key = this._getReservationKey(location);
     const reserved = this.reservations.get(key) ?? 0;
+    const available = location.count - reserved;
 
-    if (location.count - reserved < count) {
-      throw new Error(
-        `Tried to reserve ${count} items but ${reserved}/${location.count} of ${location.slot}@${location.peripheral} used`
-      );
+    if (available < count) {
+      return;
     }
 
     this.reservations.set(key, reserved + count);
