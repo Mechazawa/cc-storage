@@ -9,6 +9,8 @@ export class ReservedLocation implements StorageLocation {
   count: number;
   name?: string | undefined;
 
+  released = false;
+
   constructor(parent: ItemAllocator, location: StorageLocation, count: number) {
     this.parent = parent;
 
@@ -88,17 +90,21 @@ export default class ItemAllocator {
     return new ReservedLocation(this, location, count);
   }
 
-  release(...locations: StorageLocation[]) {
+  release(...locations: ReservedLocation[]) {
     for (const location of locations) {
-      const key = this._getReservationKey(location);
-      let reserved = this.reservations.get(key) ?? 0;
+      if (!location.released) {
+        const key = this._getReservationKey(location);
+        let reserved = this.reservations.get(key) ?? 0;
 
-      reserved = Math.max(0, reserved - location.count);
+        reserved = Math.max(0, reserved - location.count);
 
-      if (reserved > 0) {
-        this.reservations.set(key, reserved);
-      } else {
-        this.reservations.delete(key);
+        if (reserved > 0) {
+          this.reservations.set(key, reserved);
+        } else {
+          this.reservations.delete(key);
+        }
+
+        location.released = true;
       }
     }
   }

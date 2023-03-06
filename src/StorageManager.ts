@@ -49,7 +49,7 @@ export default class StorageManager {
     this.size = this.cache.memoize("acc:size", this.size.bind(this));
     this.used = this.cache.memoize("acc:used", this.used.bind(this));
     this.getFragmented = this.cache.memoize("acc:getFragmented", this.getFragmented.bind(this));
-    this.list = this.cache.memoize("acc:list", benchmark(this.logger, this.list.bind(this), 'list'));
+    this.list = this.cache.memoize("acc:list", benchmark(this.logger, this.list.bind(this), "list"));
     this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
   }
 
@@ -197,8 +197,8 @@ export default class StorageManager {
 
   /**
    * Stores all items from an external location into the storage system
-   * @param storageName 
-   * @returns 
+   * @param storageName
+   * @returns
    */
   storeAll(storageName: string): number {
     const storage = peripheral.wrap(storageName) as Inventory;
@@ -254,10 +254,12 @@ export default class StorageManager {
     let sent = 0;
     const sources = this.allocator.reserve(key, count);
 
-    for (const source of sources) {
-      sent += this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
-
-      source.release();
+    try {
+      for (const source of sources) {
+        sent += this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
+      }
+    } finally {
+      this.allocator.release(...sources);
     }
 
     return sent;
@@ -353,7 +355,7 @@ export default class StorageManager {
       fns.push(genFn(storageName));
     }
 
-    (new ThreadPool(30, fns)).join();
+    new ThreadPool(30, fns).join();
 
     return total;
   }
@@ -374,7 +376,7 @@ export default class StorageManager {
       });
     }
 
-    (new ThreadPool(30, fns)).join();
+    new ThreadPool(30, fns).join();
 
     return total;
   }
@@ -443,10 +445,13 @@ export default class StorageManager {
       out[i] = this._craft(crafter, recipe, locations, count, timeout);
       this.logger.log(`done ${out.reduce((a, c) => a + (c ?? 0), 0)} ${i + 1}/${chunks.length}`);
 
-      locations.forEach(l => l.release());
+      locations.forEach((l) => l.release());
     });
 
-    (new ThreadPool(threads, fns)).join();
+    new ThreadPool(threads, fns).join();
+
+    // todo: temp, monitor locks that are dangling
+    this.allocator.release(...chunks.map((x) => x[2]).flat());
 
     return outputs.reduce((a, c) => a + (c ?? 0), 0);
   }
