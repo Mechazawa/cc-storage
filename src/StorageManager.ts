@@ -450,9 +450,6 @@ export default class StorageManager {
 
     new ThreadPool(threads, fns).join();
 
-    // todo: temp, monitor locks that are dangling
-    this.allocator.release(...chunks.map((x) => x[2]).flat());
-
     return outputs.reduce((a, c) => a + (c ?? 0), 0);
   }
 

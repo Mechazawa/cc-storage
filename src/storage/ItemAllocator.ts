@@ -66,7 +66,7 @@ export default class ItemAllocator {
       return output;
     }
 
-    output.forEach((x) => x.release());
+    this.release(...output);
 
     return [];
   }
