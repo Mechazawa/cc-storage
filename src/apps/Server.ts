@@ -71,7 +71,6 @@ export default class Server extends App {
       () => this.runRPC(),
       // @todo decide if I want to have queue worker count configurable
       () => this.runQueueWorker(),
-      () => this.runQueueWorker(),
       () => this.runDefragLoop()
     );
   }
