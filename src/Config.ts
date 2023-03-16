@@ -4,6 +4,7 @@ export enum DeviceType {
   SERVER = "server",
   CLIENT = "client",
   CRAFTER = "crafter",
+  PROVIDER = "provider",
 }
 
 interface BaseConfig {
@@ -17,7 +18,7 @@ interface BaseConfig {
 }
 
 type minutes = number;
-export type AppConfig = ServerConfig | ClientConfig | CrafterConfig;
+export type AppConfig = ServerConfig | ClientConfig | CrafterConfig | ProviderConfig;
 
 export interface ServerConfig extends BaseConfig {
   type: DeviceType.SERVER;
@@ -32,4 +33,7 @@ export interface ClientConfig extends BaseConfig {
 export interface CrafterConfig extends BaseConfig {
   type: DeviceType.CRAFTER;
   recipeTypes: RecipeType[];
+}
+export interface ProviderConfig extends BaseConfig {
+  type: DeviceType.PROVIDER;
 }
