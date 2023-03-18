@@ -1,0 +1,1751 @@
+ 
+[
+  {
+    "name": "farmersdelight:acacia_cabinet",
+    "output": "item:farmersdelight:acacia_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_slab",
+        "item:minecraft:acacia_slab",
+        "item:minecraft:acacia_slab"
+      ],
+      [
+        "item:minecraft:acacia_trapdoor",
+        "",
+        "item:minecraft:acacia_trapdoor"
+      ],
+      [
+        "item:minecraft:acacia_slab",
+        "item:minecraft:acacia_slab",
+        "item:minecraft:acacia_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:apple_pie",
+    "output": "item:farmersdelight:apple_pie",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:wheat",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ],
+      [
+        "item:minecraft:apple",
+        "item:minecraft:apple",
+        "item:minecraft:apple"
+      ],
+      [
+        "item:minecraft:sugar",
+        "item:farmersdelight:pie_crust",
+        "item:minecraft:sugar"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:apple_pie_from_slices",
+    "output": "item:farmersdelight:apple_pie",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:apple_pie_slice",
+        "item:farmersdelight:apple_pie_slice"
+      ],
+      [
+        "item:farmersdelight:apple_pie_slice",
+        "item:farmersdelight:apple_pie_slice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:basket",
+    "output": "item:farmersdelight:basket",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:bamboo",
+        "",
+        "item:minecraft:bamboo"
+      ],
+      [
+        "item:farmersdelight:canvas",
+        "",
+        "item:farmersdelight:canvas"
+      ],
+      [
+        "item:minecraft:bamboo",
+        "item:farmersdelight:canvas",
+        "item:minecraft:bamboo"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:beetroot_crate",
+    "output": "item:farmersdelight:beetroot_crate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:beetroot",
+        "item:minecraft:beetroot",
+        "item:minecraft:beetroot"
+      ],
+      [
+        "item:minecraft:beetroot",
+        "item:minecraft:beetroot",
+        "item:minecraft:beetroot"
+      ],
+      [
+        "item:minecraft:beetroot",
+        "item:minecraft:beetroot",
+        "item:minecraft:beetroot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:birch_cabinet",
+    "output": "item:farmersdelight:birch_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_slab",
+        "item:minecraft:birch_slab",
+        "item:minecraft:birch_slab"
+      ],
+      [
+        "item:minecraft:birch_trapdoor",
+        "",
+        "item:minecraft:birch_trapdoor"
+      ],
+      [
+        "item:minecraft:birch_slab",
+        "item:minecraft:birch_slab",
+        "item:minecraft:birch_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:cabbage_crate",
+    "output": "item:farmersdelight:cabbage_crate",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:cabbage",
+        "item:farmersdelight:cabbage",
+        "item:farmersdelight:cabbage"
+      ],
+      [
+        "item:farmersdelight:cabbage",
+        "item:farmersdelight:cabbage",
+        "item:farmersdelight:cabbage"
+      ],
+      [
+        "item:farmersdelight:cabbage",
+        "item:farmersdelight:cabbage",
+        "item:farmersdelight:cabbage"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:cake_from_milk_bottle",
+    "output": "item:minecraft:cake",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:milk",
+        "tag:items:c:milk",
+        "tag:items:c:milk"
+      ],
+      [
+        "item:minecraft:sugar",
+        "tag:items:c:eggs",
+        "item:minecraft:sugar"
+      ],
+      [
+        "item:minecraft:wheat",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:canvas",
+    "output": "item:farmersdelight:canvas",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw"
+      ],
+      [
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:canvas_sign",
+    "output": "item:farmersdelight:canvas_sign",
+    "count": 3,
+    "grid": [
+      [
+        "tag:items:minecraft:planks",
+        "item:farmersdelight:canvas",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "tag:items:minecraft:planks",
+        "item:farmersdelight:canvas",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:carrot_crate",
+    "output": "item:farmersdelight:carrot_crate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:carrot",
+        "item:minecraft:carrot",
+        "item:minecraft:carrot"
+      ],
+      [
+        "item:minecraft:carrot",
+        "item:minecraft:carrot",
+        "item:minecraft:carrot"
+      ],
+      [
+        "item:minecraft:carrot",
+        "item:minecraft:carrot",
+        "item:minecraft:carrot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:chocolate_pie",
+    "output": "item:farmersdelight:chocolate_pie",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cocoa_beans",
+        "item:minecraft:cocoa_beans",
+        "item:minecraft:cocoa_beans"
+      ],
+      [
+        "tag:items:c:milk",
+        "tag:items:c:milk",
+        "tag:items:c:milk"
+      ],
+      [
+        "item:minecraft:sugar",
+        "item:farmersdelight:pie_crust",
+        "item:minecraft:sugar"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:chocolate_pie_from_slices",
+    "output": "item:farmersdelight:chocolate_pie",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:chocolate_pie_slice",
+        "item:farmersdelight:chocolate_pie_slice"
+      ],
+      [
+        "item:farmersdelight:chocolate_pie_slice",
+        "item:farmersdelight:chocolate_pie_slice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:cooking_pot",
+    "output": "item:farmersdelight:cooking_pot",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:brick",
+        "item:minecraft:wooden_shovel",
+        "item:minecraft:brick"
+      ],
+      [
+        "tag:items:c:iron_ingots",
+        "item:minecraft:water_bucket",
+        "tag:items:c:iron_ingots"
+      ],
+      [
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:crimson_cabinet",
+    "output": "item:farmersdelight:crimson_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_slab",
+        "item:minecraft:crimson_slab",
+        "item:minecraft:crimson_slab"
+      ],
+      [
+        "item:minecraft:crimson_trapdoor",
+        "",
+        "item:minecraft:crimson_trapdoor"
+      ],
+      [
+        "item:minecraft:crimson_slab",
+        "item:minecraft:crimson_slab",
+        "item:minecraft:crimson_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:cutting_board",
+    "output": "item:farmersdelight:cutting_board",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "item:minecraft:stick",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:dark_oak_cabinet",
+    "output": "item:farmersdelight:dark_oak_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:dark_oak_slab"
+      ],
+      [
+        "item:minecraft:dark_oak_trapdoor",
+        "",
+        "item:minecraft:dark_oak_trapdoor"
+      ],
+      [
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:dark_oak_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:diamond_knife",
+    "output": "item:farmersdelight:diamond_knife",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:flint_knife",
+    "output": "item:farmersdelight:flint_knife",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:flint"
+      ],
+      [
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:golden_knife",
+    "output": "item:farmersdelight:golden_knife",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gold_ingot"
+      ],
+      [
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:iron_knife",
+    "output": "item:farmersdelight:iron_knife",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:jungle_cabinet",
+    "output": "item:farmersdelight:jungle_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_slab",
+        "item:minecraft:jungle_slab",
+        "item:minecraft:jungle_slab"
+      ],
+      [
+        "item:minecraft:jungle_trapdoor",
+        "",
+        "item:minecraft:jungle_trapdoor"
+      ],
+      [
+        "item:minecraft:jungle_slab",
+        "item:minecraft:jungle_slab",
+        "item:minecraft:jungle_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:kelp_roll",
+    "output": "item:farmersdelight:kelp_roll",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:cooked_rice",
+        "item:minecraft:carrot",
+        "item:farmersdelight:cooked_rice"
+      ],
+      [
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:lead_from_rope",
+    "output": "item:minecraft:lead",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:rope",
+        "item:farmersdelight:rope",
+        ""
+      ],
+      [
+        "item:farmersdelight:rope",
+        "item:farmersdelight:rope",
+        ""
+      ],
+      [
+        "",
+        "",
+        "item:farmersdelight:rope"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:melon_popsicle",
+    "output": "item:farmersdelight:melon_popsicle",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:melon_slice",
+        "item:minecraft:melon_slice"
+      ],
+      [
+        "item:minecraft:ice",
+        "item:minecraft:melon_slice",
+        "item:minecraft:melon_slice"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:ice",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:oak_cabinet",
+    "output": "item:farmersdelight:oak_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_slab"
+      ],
+      [
+        "item:minecraft:oak_trapdoor",
+        "",
+        "item:minecraft:oak_trapdoor"
+      ],
+      [
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:onion_crate",
+    "output": "item:farmersdelight:onion_crate",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:onion",
+        "item:farmersdelight:onion",
+        "item:farmersdelight:onion"
+      ],
+      [
+        "item:farmersdelight:onion",
+        "item:farmersdelight:onion",
+        "item:farmersdelight:onion"
+      ],
+      [
+        "item:farmersdelight:onion",
+        "item:farmersdelight:onion",
+        "item:farmersdelight:onion"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:painting_from_canvas",
+    "output": "item:minecraft:painting",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:farmersdelight:canvas",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:pie_crust",
+    "output": "item:farmersdelight:pie_crust",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:wheat",
+        "tag:items:c:milk",
+        "item:minecraft:wheat"
+      ],
+      [
+        "",
+        "item:minecraft:wheat",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:potato_crate",
+    "output": "item:farmersdelight:potato_crate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:potato",
+        "item:minecraft:potato",
+        "item:minecraft:potato"
+      ],
+      [
+        "item:minecraft:potato",
+        "item:minecraft:potato",
+        "item:minecraft:potato"
+      ],
+      [
+        "item:minecraft:potato",
+        "item:minecraft:potato",
+        "item:minecraft:potato"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:pumpkin_from_slices",
+    "output": "item:minecraft:pumpkin",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:pumpkin_slice",
+        "item:farmersdelight:pumpkin_slice"
+      ],
+      [
+        "item:farmersdelight:pumpkin_slice",
+        "item:farmersdelight:pumpkin_slice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:rice_bag",
+    "output": "item:farmersdelight:rice_bag",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:rice",
+        "item:farmersdelight:rice",
+        "item:farmersdelight:rice"
+      ],
+      [
+        "item:farmersdelight:rice",
+        "item:farmersdelight:rice",
+        "item:farmersdelight:rice"
+      ],
+      [
+        "item:farmersdelight:rice",
+        "item:farmersdelight:rice",
+        "item:farmersdelight:rice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:rice_bale",
+    "output": "item:farmersdelight:rice_bale",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:rice_panicle",
+        "item:farmersdelight:rice_panicle",
+        "item:farmersdelight:rice_panicle"
+      ],
+      [
+        "item:farmersdelight:rice_panicle",
+        "item:farmersdelight:rice_panicle",
+        "item:farmersdelight:rice_panicle"
+      ],
+      [
+        "item:farmersdelight:rice_panicle",
+        "item:farmersdelight:rice_panicle",
+        "item:farmersdelight:rice_panicle"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:rope",
+    "output": "item:farmersdelight:rope",
+    "count": 3,
+    "grid": [
+      [
+        "item:farmersdelight:straw"
+      ],
+      [
+        "item:farmersdelight:straw"
+      ],
+      [
+        "item:farmersdelight:straw"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:safety_net",
+    "output": "item:farmersdelight:safety_net",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:rope",
+        "item:farmersdelight:rope"
+      ],
+      [
+        "item:farmersdelight:rope",
+        "item:farmersdelight:rope"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:scaffolding_from_canvas",
+    "output": "item:minecraft:scaffolding",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:bamboo",
+        "item:farmersdelight:canvas",
+        "item:minecraft:bamboo"
+      ],
+      [
+        "item:minecraft:bamboo",
+        "",
+        "item:minecraft:bamboo"
+      ],
+      [
+        "item:minecraft:bamboo",
+        "",
+        "item:minecraft:bamboo"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:skillet",
+    "output": "item:farmersdelight:skillet",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots"
+      ],
+      [
+        "",
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots"
+      ],
+      [
+        "item:minecraft:brick",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:spruce_cabinet",
+    "output": "item:farmersdelight:spruce_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_slab"
+      ],
+      [
+        "item:minecraft:spruce_trapdoor",
+        "",
+        "item:minecraft:spruce_trapdoor"
+      ],
+      [
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:stove",
+    "output": "item:farmersdelight:stove",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots"
+      ],
+      [
+        "item:minecraft:bricks",
+        "",
+        "item:minecraft:bricks"
+      ],
+      [
+        "item:minecraft:bricks",
+        "item:minecraft:campfire",
+        "item:minecraft:bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:straw_bale",
+    "output": "item:farmersdelight:straw_bale",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw"
+      ],
+      [
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw"
+      ],
+      [
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw",
+        "item:farmersdelight:straw"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:sweet_berry_cheesecake",
+    "output": "item:farmersdelight:sweet_berry_cheesecake",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:sweet_berries",
+        "item:minecraft:sweet_berries",
+        "item:minecraft:sweet_berries"
+      ],
+      [
+        "item:minecraft:sweet_berries",
+        "item:minecraft:sweet_berries",
+        "item:minecraft:sweet_berries"
+      ],
+      [
+        "tag:items:c:milk",
+        "item:farmersdelight:pie_crust",
+        "tag:items:c:milk"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:sweet_berry_cheesecake_from_slices",
+    "output": "item:farmersdelight:sweet_berry_cheesecake",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:sweet_berry_cheesecake_slice",
+        "item:farmersdelight:sweet_berry_cheesecake_slice"
+      ],
+      [
+        "item:farmersdelight:sweet_berry_cheesecake_slice",
+        "item:farmersdelight:sweet_berry_cheesecake_slice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:tatami",
+    "output": "item:farmersdelight:tatami",
+    "count": 2,
+    "grid": [
+      [
+        "item:farmersdelight:canvas",
+        "item:farmersdelight:straw"
+      ],
+      [
+        "item:farmersdelight:straw",
+        "item:farmersdelight:canvas"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:tomato_crate",
+    "output": "item:farmersdelight:tomato_crate",
+    "count": 1,
+    "grid": [
+      [
+        "item:farmersdelight:tomato",
+        "item:farmersdelight:tomato",
+        "item:farmersdelight:tomato"
+      ],
+      [
+        "item:farmersdelight:tomato",
+        "item:farmersdelight:tomato",
+        "item:farmersdelight:tomato"
+      ],
+      [
+        "item:farmersdelight:tomato",
+        "item:farmersdelight:tomato",
+        "item:farmersdelight:tomato"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:warped_cabinet",
+    "output": "item:farmersdelight:warped_cabinet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_slab",
+        "item:minecraft:warped_slab",
+        "item:minecraft:warped_slab"
+      ],
+      [
+        "item:minecraft:warped_trapdoor",
+        "",
+        "item:minecraft:warped_trapdoor"
+      ],
+      [
+        "item:minecraft:warped_slab",
+        "item:minecraft:warped_slab",
+        "item:minecraft:warped_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:wheat_dough",
+    "output": "item:farmersdelight:wheat_dough",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:wheat",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ],
+      [
+        "",
+        "item:minecraft:water_bucket",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "farmersdelight:bacon_and_eggs",
+    "output": "item:farmersdelight:bacon_and_eggs",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:cooked_bacon",
+      "item:farmersdelight:cooked_bacon",
+      "item:minecraft:bowl",
+      "tag:items:c:cooked_eggs",
+      "tag:items:c:cooked_eggs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:bacon_sandwich",
+    "output": "item:farmersdelight:bacon_sandwich",
+    "count": 1,
+    "grid": [
+      "tag:items:c:bread",
+      "tag:items:c:cooked_bacon",
+      "tag:items:c:salad_ingredients",
+      "tag:items:c:crops/tomato"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:barbecue_stick",
+    "output": "item:farmersdelight:barbecue_stick",
+    "count": 1,
+    "grid": [
+      "tag:items:c:crops/tomato",
+      "tag:items:c:crops/onion",
+      "tag:items:c:cooked_beef|tag:items:c:cooked_pork|tag:items:c:cooked_chicken|tag:items:c:cooked_mutton|tag:items:c:cooked_fishes|item:minecraft:cooked_rabbit",
+      "item:minecraft:stick"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:beetroot_from_crate",
+    "output": "item:minecraft:beetroot",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:beetroot_crate"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:black_canvas_sign",
+    "output": "item:farmersdelight:black_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:black_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:blue_canvas_sign",
+    "output": "item:farmersdelight:blue_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:blue_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:book_from_canvas",
+    "output": "item:minecraft:book",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "item:minecraft:paper",
+      "item:minecraft:paper",
+      "item:farmersdelight:canvas"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:brown_canvas_sign",
+    "output": "item:farmersdelight:brown_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:brown_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:cabbage",
+    "output": "item:farmersdelight:cabbage",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:cabbage_crate"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:cabbage_from_leaves",
+    "output": "item:farmersdelight:cabbage",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:cabbage_leaf",
+      "item:farmersdelight:cabbage_leaf"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:cake_from_slices",
+    "output": "item:minecraft:cake",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:cake_slice",
+      "item:farmersdelight:cake_slice",
+      "item:farmersdelight:cake_slice",
+      "item:farmersdelight:cake_slice",
+      "item:farmersdelight:cake_slice",
+      "item:farmersdelight:cake_slice",
+      "item:farmersdelight:cake_slice"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:canvas_from_canvas_rug",
+    "output": "item:farmersdelight:canvas",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:canvas_rug",
+      "item:farmersdelight:canvas_rug"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:canvas_rug",
+    "output": "item:farmersdelight:canvas_rug",
+    "count": 2,
+    "grid": [
+      "item:farmersdelight:canvas"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:carrot_from_crate",
+    "output": "item:minecraft:carrot",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:carrot_crate"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:chicken_sandwich",
+    "output": "item:farmersdelight:chicken_sandwich",
+    "count": 1,
+    "grid": [
+      "tag:items:c:bread",
+      "tag:items:c:cooked_chicken",
+      "tag:items:c:salad_ingredients",
+      "item:minecraft:carrot"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:cod_roll",
+    "output": "item:farmersdelight:cod_roll",
+    "count": 2,
+    "grid": [
+      "item:farmersdelight:cod_slice",
+      "item:farmersdelight:cod_slice",
+      "item:farmersdelight:cooked_rice"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:cyan_canvas_sign",
+    "output": "item:farmersdelight:cyan_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:cyan_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:egg_sandwich",
+    "output": "item:farmersdelight:egg_sandwich",
+    "count": 1,
+    "grid": [
+      "tag:items:c:bread",
+      "tag:items:c:cooked_eggs",
+      "tag:items:c:cooked_eggs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:fruit_salad",
+    "output": "item:farmersdelight:fruit_salad",
+    "count": 1,
+    "grid": [
+      "item:minecraft:apple",
+      "item:minecraft:melon_slice",
+      "item:minecraft:melon_slice",
+      "tag:items:c:berries",
+      "tag:items:c:berries",
+      "item:farmersdelight:pumpkin_slice",
+      "item:minecraft:bowl"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:full_tatami_mat",
+    "output": "item:farmersdelight:full_tatami_mat",
+    "count": 2,
+    "grid": [
+      "item:farmersdelight:tatami"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:full_tatami_mat_from_halves",
+    "output": "item:farmersdelight:full_tatami_mat",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:half_tatami_mat",
+      "item:farmersdelight:half_tatami_mat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:gray_canvas_sign",
+    "output": "item:farmersdelight:gray_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:gray_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:green_canvas_sign",
+    "output": "item:farmersdelight:green_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:green_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:grilled_salmon",
+    "output": "item:farmersdelight:grilled_salmon",
+    "count": 1,
+    "grid": [
+      "tag:items:c:cooked_fishes/salmon",
+      "item:minecraft:sweet_berries",
+      "item:minecraft:bowl",
+      "tag:items:c:crops/cabbage",
+      "tag:items:c:crops/onion"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:half_tatami_mat",
+    "output": "item:farmersdelight:half_tatami_mat",
+    "count": 2,
+    "grid": [
+      "item:farmersdelight:full_tatami_mat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:hamburger",
+    "output": "item:farmersdelight:hamburger",
+    "count": 1,
+    "grid": [
+      "tag:items:c:bread",
+      "item:farmersdelight:beef_patty",
+      "tag:items:c:salad_ingredients",
+      "tag:items:c:crops/tomato",
+      "tag:items:c:crops/onion"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:honey_cookie",
+    "output": "item:farmersdelight:honey_cookie",
+    "count": 8,
+    "grid": [
+      "item:minecraft:honey_bottle",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:honey_glazed_ham_block",
+    "output": "item:farmersdelight:honey_glazed_ham_block",
+    "count": 1,
+    "grid": [
+      "item:minecraft:sweet_berries",
+      "item:minecraft:honey_bottle",
+      "item:minecraft:sweet_berries",
+      "item:minecraft:sweet_berries",
+      "item:farmersdelight:smoked_ham",
+      "item:minecraft:sweet_berries",
+      "item:farmersdelight:cooked_rice",
+      "item:minecraft:bowl",
+      "item:farmersdelight:cooked_rice"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:horse_feed",
+    "output": "item:farmersdelight:horse_feed",
+    "count": 1,
+    "grid": [
+      "item:minecraft:hay_block|item:farmersdelight:rice_bale",
+      "item:minecraft:apple",
+      "item:minecraft:apple",
+      "item:minecraft:golden_carrot"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:light_blue_canvas_sign",
+    "output": "item:farmersdelight:light_blue_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:light_blue_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:light_gray_canvas_sign",
+    "output": "item:farmersdelight:light_gray_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:light_gray_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:lime_canvas_sign",
+    "output": "item:farmersdelight:lime_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:lime_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:magenta_canvas_sign",
+    "output": "item:farmersdelight:magenta_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:magenta_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:melon_juice",
+    "output": "item:farmersdelight:melon_juice",
+    "count": 1,
+    "grid": [
+      "item:minecraft:melon_slice",
+      "item:minecraft:melon_slice",
+      "item:minecraft:sugar",
+      "item:minecraft:melon_slice",
+      "item:minecraft:melon_slice",
+      "item:minecraft:glass_bottle"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:milk_bottle",
+    "output": "item:farmersdelight:milk_bottle",
+    "count": 4,
+    "grid": [
+      "item:minecraft:milk_bucket",
+      "item:minecraft:glass_bottle",
+      "item:minecraft:glass_bottle",
+      "item:minecraft:glass_bottle",
+      "item:minecraft:glass_bottle"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:milk_bucket_from_bottles",
+    "output": "item:minecraft:milk_bucket",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bucket",
+      "item:farmersdelight:milk_bottle",
+      "item:farmersdelight:milk_bottle",
+      "item:farmersdelight:milk_bottle",
+      "item:farmersdelight:milk_bottle"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:mixed_salad",
+    "output": "item:farmersdelight:mixed_salad",
+    "count": 1,
+    "grid": [
+      "tag:items:c:salad_ingredients",
+      "tag:items:c:crops/tomato",
+      "item:minecraft:beetroot",
+      "item:minecraft:bowl"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:mutton_wrap",
+    "output": "item:farmersdelight:mutton_wrap",
+    "count": 1,
+    "grid": [
+      "tag:items:c:bread",
+      "tag:items:c:cooked_mutton",
+      "tag:items:c:salad_ingredients",
+      "tag:items:c:crops/onion"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:nether_salad",
+    "output": "item:farmersdelight:nether_salad",
+    "count": 1,
+    "grid": [
+      "item:minecraft:crimson_fungus",
+      "item:minecraft:warped_fungus",
+      "item:minecraft:bowl"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:onion",
+    "output": "item:farmersdelight:onion",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:onion_crate"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:orange_canvas_sign",
+    "output": "item:farmersdelight:orange_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:orange_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:organic_compost_from_rotten_flesh",
+    "output": "item:farmersdelight:organic_compost",
+    "count": 1,
+    "grid": [
+      "item:minecraft:dirt",
+      "item:minecraft:rotten_flesh",
+      "item:minecraft:rotten_flesh",
+      "item:farmersdelight:straw",
+      "item:farmersdelight:straw",
+      "item:minecraft:bone_meal",
+      "item:minecraft:bone_meal",
+      "item:minecraft:bone_meal",
+      "item:minecraft:bone_meal"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:organic_compost_from_tree_bark",
+    "output": "item:farmersdelight:organic_compost",
+    "count": 1,
+    "grid": [
+      "item:minecraft:dirt",
+      "item:farmersdelight:straw",
+      "item:farmersdelight:straw",
+      "item:minecraft:bone_meal",
+      "item:minecraft:bone_meal",
+      "item:farmersdelight:tree_bark",
+      "item:farmersdelight:tree_bark",
+      "item:farmersdelight:tree_bark",
+      "item:farmersdelight:tree_bark"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:paper_from_tree_bark",
+    "output": "item:minecraft:paper",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:tree_bark",
+      "item:farmersdelight:tree_bark",
+      "item:farmersdelight:tree_bark"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:pink_canvas_sign",
+    "output": "item:farmersdelight:pink_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:pink_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:potato_from_crate",
+    "output": "item:minecraft:potato",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:potato_crate"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:pumpkin_seeds_from_slice",
+    "output": "item:minecraft:pumpkin_seeds",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:pumpkin_slice"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:purple_canvas_sign",
+    "output": "item:farmersdelight:purple_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:purple_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:raw_pasta_from_eggs",
+    "output": "item:farmersdelight:raw_pasta",
+    "count": 1,
+    "grid": [
+      "tag:items:c:eggs",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:raw_pasta_from_water",
+    "output": "item:farmersdelight:raw_pasta",
+    "count": 2,
+    "grid": [
+      "item:minecraft:water_bucket",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:red_canvas_sign",
+    "output": "item:farmersdelight:red_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:red_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:rice",
+    "output": "item:farmersdelight:rice",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:rice_panicle"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:rice_from_bag",
+    "output": "item:farmersdelight:rice",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:rice_bag"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:rice_panicle",
+    "output": "item:farmersdelight:rice_panicle",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:rice_bale"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:rice_roll_medley_block",
+    "output": "item:farmersdelight:rice_roll_medley_block",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:kelp_roll_slice",
+      "item:farmersdelight:kelp_roll_slice",
+      "item:farmersdelight:kelp_roll_slice",
+      "item:farmersdelight:salmon_roll",
+      "item:farmersdelight:salmon_roll",
+      "item:farmersdelight:salmon_roll",
+      "item:farmersdelight:cod_roll",
+      "item:minecraft:bowl",
+      "item:farmersdelight:cod_roll"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:roast_chicken_block",
+    "output": "item:farmersdelight:roast_chicken_block",
+    "count": 1,
+    "grid": [
+      "tag:items:c:crops/onion",
+      "tag:items:c:eggs",
+      "item:minecraft:bread",
+      "item:minecraft:carrot",
+      "item:minecraft:cooked_chicken",
+      "item:minecraft:baked_potato",
+      "item:minecraft:carrot",
+      "item:minecraft:bowl",
+      "item:minecraft:baked_potato"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:roasted_mutton_chops",
+    "output": "item:farmersdelight:roasted_mutton_chops",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:cooked_mutton_chops",
+      "item:minecraft:beetroot",
+      "item:minecraft:bowl",
+      "item:farmersdelight:cooked_rice",
+      "tag:items:c:crops/tomato"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:rope_from_safety_net",
+    "output": "item:farmersdelight:rope",
+    "count": 4,
+    "grid": [
+      "item:farmersdelight:safety_net"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:salmon_roll",
+    "output": "item:farmersdelight:salmon_roll",
+    "count": 2,
+    "grid": [
+      "item:farmersdelight:salmon_slice",
+      "item:farmersdelight:salmon_slice",
+      "item:farmersdelight:cooked_rice"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:shepherds_pie_block",
+    "output": "item:farmersdelight:shepherds_pie_block",
+    "count": 1,
+    "grid": [
+      "item:minecraft:baked_potato",
+      "tag:items:c:milk",
+      "item:minecraft:baked_potato",
+      "tag:items:c:cooked_mutton",
+      "tag:items:c:cooked_mutton",
+      "tag:items:c:cooked_mutton",
+      "tag:items:c:crops/onion",
+      "item:minecraft:bowl",
+      "tag:items:c:crops/onion"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:steak_and_potatoes",
+    "output": "item:farmersdelight:steak_and_potatoes",
+    "count": 1,
+    "grid": [
+      "item:minecraft:baked_potato",
+      "item:minecraft:cooked_beef",
+      "item:minecraft:bowl",
+      "tag:items:c:crops/onion",
+      "item:farmersdelight:cooked_rice"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:straw",
+    "output": "item:farmersdelight:straw",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:straw_bale"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:stuffed_potato",
+    "output": "item:farmersdelight:stuffed_potato",
+    "count": 1,
+    "grid": [
+      "item:minecraft:baked_potato",
+      "tag:items:c:cooked_beef",
+      "tag:items:c:milk"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:sweet_berry_cookie",
+    "output": "item:farmersdelight:sweet_berry_cookie",
+    "count": 8,
+    "grid": [
+      "item:minecraft:sweet_berries",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:tatami_block_from_full",
+    "output": "item:farmersdelight:tatami",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:full_tatami_mat",
+      "item:farmersdelight:full_tatami_mat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:tomato",
+    "output": "item:farmersdelight:tomato",
+    "count": 9,
+    "grid": [
+      "item:farmersdelight:tomato_crate"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:tomato_seeds",
+    "output": "item:farmersdelight:tomato_seeds",
+    "count": 1,
+    "grid": [
+      "item:farmersdelight:tomato|item:farmersdelight:rotten_tomato"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:wheat_dough_from_eggs",
+    "output": "item:farmersdelight:wheat_dough",
+    "count": 3,
+    "grid": [
+      "tag:items:c:eggs",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:wheat_dough_from_water",
+    "output": "item:farmersdelight:wheat_dough",
+    "count": 3,
+    "grid": [
+      "item:minecraft:water_bucket",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat",
+      "item:minecraft:wheat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:white_canvas_sign",
+    "output": "item:farmersdelight:white_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:white_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "farmersdelight:yellow_canvas_sign",
+    "output": "item:farmersdelight:yellow_canvas_sign",
+    "count": 1,
+    "grid": [
+      "tag:items:farmersdelight:canvas_signs",
+      "tag:items:c:yellow_dyes"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

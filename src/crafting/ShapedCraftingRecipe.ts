@@ -1,4 +1,4 @@
-import Logger from "../util/Logger";
+import Serializable from "../Serializable";
 import Recipe, { RecipeType, TURTLE_INVENTORY_COLS } from "./Recipe";
 
 export default class ShapedCraftingRecipe implements Recipe {
@@ -16,6 +16,25 @@ export default class ShapedCraftingRecipe implements Recipe {
     this.output = output;
     this.count = count;
     this.grid = grid;
+  } 
+  
+  serialize(): LuaMap<string, any> {
+    return {
+      type: this.type + ':shaped',
+      name: this.name,
+      output: this.output,
+      count: this.count,
+      grid: this.grid,
+    } as unknown as LuaMap<string, any>;
+  }
+
+  static deserialize(input: LuaMap<string, any>): ShapedCraftingRecipe {
+    return new this(
+      input.get('name'),
+      input.get('output'),
+      input.get('count'),
+      input.get('grid'),
+    );
   }
 
   craft(mapping: string[], count: number = 1): boolean {

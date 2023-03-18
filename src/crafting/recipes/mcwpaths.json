@@ -1,0 +1,99 @@
+ 
+[
+  {
+    "name": "mcwpaths:acacia_planks_path",
+    "output": "item:mcwpaths:acacia_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:acacia_slab",
+        "item:minecraft:acacia_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwpaths:birch_planks_path",
+    "output": "item:mcwpaths:birch_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:birch_slab",
+        "item:minecraft:birch_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwpaths:crimson_planks_path",
+    "output": "item:mcwpaths:crimson_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:crimson_slab",
+        "item:minecraft:crimson_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwpaths:dark_oak_planks_path",
+    "output": "item:mcwpaths:dark_oak_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:dark_oak_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwpaths:jungle_planks_path",
+    "output": "item:mcwpaths:jungle_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:jungle_slab",
+        "item:minecraft:jungle_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwpaths:oak_planks_path",
+    "output": "item:mcwpaths:oak_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwpaths:spruce_planks_path",
+    "output": "item:mcwpaths:spruce_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwpaths:warped_planks_path",
+    "output": "item:mcwpaths:warped_planks_path",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:warped_slab",
+        "item:minecraft:warped_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

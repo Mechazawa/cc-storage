@@ -1,0 +1,13 @@
+ 
+[
+  {
+    "name": "createplus:vanilla/crafting/limestone",
+    "output": "item:create:limestone",
+    "count": 2,
+    "grid": [
+      "item:minecraft:calcite",
+      "item:minecraft:gravel"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

@@ -1,3 +1,4 @@
+import Serializable from "../Serializable";
 import Recipe, { RecipeType } from "./Recipe";
 
 export default class ShapelessCraftingRecipe implements Recipe {
@@ -15,6 +16,25 @@ export default class ShapelessCraftingRecipe implements Recipe {
     this.output = output;
     this.count = count;
     this.grid = grid;
+  }
+  
+  serialize(): LuaMap<string, any> {
+    return {
+      type: this.type + ':shapeless',
+      name: this.name,
+      output: this.output,
+      count: this.count,
+      grid: this.grid,
+    } as unknown as LuaMap<string, any>;
+  }
+
+  static deserialize(input: LuaMap<string, any>): ShapelessCraftingRecipe {
+    return new this(
+      input.get('name'),
+      input.get('output'),
+      input.get('count'),
+      input.get('grid'),
+    );
   }
 
   craft(mapping: string[], count: number = 1): boolean {

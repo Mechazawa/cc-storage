@@ -1,0 +1,324 @@
+ 
+[
+  {
+    "name": "betteranimalsplus:bear_cape_black",
+    "output": "item:betteranimalsplus:bear_cape_black",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:bear_skin_black",
+        "",
+        "item:betteranimalsplus:bear_skin_black"
+      ],
+      [
+        "item:betteranimalsplus:bear_skin_black",
+        "item:betteranimalsplus:bear_skin_black",
+        "item:betteranimalsplus:bear_skin_black"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:bear_skin_black",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:bear_cape_brown",
+    "output": "item:betteranimalsplus:bear_cape_brown",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:bear_skin_brown",
+        "",
+        "item:betteranimalsplus:bear_skin_brown"
+      ],
+      [
+        "item:betteranimalsplus:bear_skin_brown",
+        "item:betteranimalsplus:bear_skin_brown",
+        "item:betteranimalsplus:bear_skin_brown"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:bear_skin_brown",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:bear_cape_kermode",
+    "output": "item:betteranimalsplus:bear_cape_kermode",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:bear_skin_kermode",
+        "",
+        "item:betteranimalsplus:bear_skin_kermode"
+      ],
+      [
+        "item:betteranimalsplus:bear_skin_kermode",
+        "item:betteranimalsplus:bear_skin_kermode",
+        "item:betteranimalsplus:bear_skin_kermode"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:bear_skin_kermode",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:blubber_torch",
+    "output": "item:minecraft:torch",
+    "count": 4,
+    "grid": [
+      [
+        "item:betteranimalsplus:blubber"
+      ],
+      [
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:wolf_cape_arctic",
+    "output": "item:betteranimalsplus:wolf_cape_arctic",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:wolf_pelt_arctic",
+        "",
+        "item:betteranimalsplus:wolf_pelt_arctic"
+      ],
+      [
+        "item:betteranimalsplus:wolf_pelt_arctic",
+        "item:betteranimalsplus:wolf_pelt_arctic",
+        "item:betteranimalsplus:wolf_pelt_arctic"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:wolf_pelt_arctic",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:wolf_cape_black",
+    "output": "item:betteranimalsplus:wolf_cape_black",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:wolf_pelt_black",
+        "",
+        "item:betteranimalsplus:wolf_pelt_black"
+      ],
+      [
+        "item:betteranimalsplus:wolf_pelt_black",
+        "item:betteranimalsplus:wolf_pelt_black",
+        "item:betteranimalsplus:wolf_pelt_black"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:wolf_pelt_black",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:wolf_cape_brown",
+    "output": "item:betteranimalsplus:wolf_cape_brown",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:wolf_pelt_brown",
+        "",
+        "item:betteranimalsplus:wolf_pelt_brown"
+      ],
+      [
+        "item:betteranimalsplus:wolf_pelt_brown",
+        "item:betteranimalsplus:wolf_pelt_brown",
+        "item:betteranimalsplus:wolf_pelt_brown"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:wolf_pelt_brown",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:wolf_cape_classic",
+    "output": "item:betteranimalsplus:wolf_cape_classic",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:wolf_pelt_snowy",
+        "",
+        "item:betteranimalsplus:wolf_pelt_snowy"
+      ],
+      [
+        "item:betteranimalsplus:wolf_pelt_snowy",
+        "item:betteranimalsplus:wolf_pelt_snowy",
+        "item:betteranimalsplus:wolf_pelt_snowy"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:wolf_pelt_snowy",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:wolf_cape_red",
+    "output": "item:betteranimalsplus:wolf_cape_red",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:wolf_pelt_red",
+        "",
+        "item:betteranimalsplus:wolf_pelt_red"
+      ],
+      [
+        "item:betteranimalsplus:wolf_pelt_red",
+        "item:betteranimalsplus:wolf_pelt_red",
+        "item:betteranimalsplus:wolf_pelt_red"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:wolf_pelt_red",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:wolf_cape_timber",
+    "output": "item:betteranimalsplus:wolf_cape_timber",
+    "count": 1,
+    "grid": [
+      [
+        "item:betteranimalsplus:wolf_pelt_timber",
+        "",
+        "item:betteranimalsplus:wolf_pelt_timber"
+      ],
+      [
+        "item:betteranimalsplus:wolf_pelt_timber",
+        "item:betteranimalsplus:wolf_pelt_timber",
+        "item:betteranimalsplus:wolf_pelt_timber"
+      ],
+      [
+        "",
+        "item:betteranimalsplus:wolf_pelt_timber",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "betteranimalsplus:antler_bonemeal",
+    "output": "item:minecraft:bone_meal",
+    "count": 3,
+    "grid": [
+      "item:betteranimalsplus:antler"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:bear_skin_black_wool",
+    "output": "item:minecraft:black_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:bear_skin_black"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:bear_skin_brown_wool",
+    "output": "item:minecraft:brown_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:bear_skin_brown"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:bear_skin_kermode_wool",
+    "output": "item:minecraft:white_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:bear_skin_kermode"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:pelts_to_leather",
+    "output": "item:minecraft:leather",
+    "count": 2,
+    "grid": [
+      "tag:items:betteranimalsplus:pelts",
+      "tag:items:betteranimalsplus:pelts"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:wolf_pelt_arctic_wool",
+    "output": "item:minecraft:white_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:wolf_pelt_arctic"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:wolf_pelt_black_wool",
+    "output": "item:minecraft:black_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:wolf_pelt_black"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:wolf_pelt_brown_wool",
+    "output": "item:minecraft:brown_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:wolf_pelt_brown"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:wolf_pelt_red_wool",
+    "output": "item:minecraft:red_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:wolf_pelt_red"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:wolf_pelt_snowy_wool",
+    "output": "item:minecraft:white_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:wolf_pelt_snowy"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "betteranimalsplus:wolf_pelt_timber_wool",
+    "output": "item:minecraft:light_gray_wool",
+    "count": 1,
+    "grid": [
+      "item:betteranimalsplus:wolf_pelt_timber"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

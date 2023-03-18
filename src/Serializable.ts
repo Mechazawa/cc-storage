@@ -1,5 +1,5 @@
 export default class Serializable {
-  serialise(): LuaMap<string, any> {
+  serialize(): LuaMap<string, any> {
     return new LuaMap<string, any>();
   }
 

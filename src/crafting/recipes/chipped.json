@@ -1,0 +1,164 @@
+ 
+[
+  {
+    "name": "chipped:benches/alchemy_bench",
+    "output": "item:chipped:alchemy_bench",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:brewing_stand",
+        ""
+      ],
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "item:minecraft:crafting_table",
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "item:minecraft:enchanting_table",
+        "tag:items:minecraft:wooden_slabs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chipped:benches/botanist_workbench",
+    "output": "item:chipped:botanist_workbench",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:flower_pot",
+        "item:minecraft:flower_pot",
+        "item:minecraft:flower_pot"
+      ],
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "item:minecraft:crafting_table",
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chipped:benches/carpenters_table",
+    "output": "item:chipped:carpenters_table",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "item:minecraft:crafting_table",
+        "tag:items:minecraft:logs"
+      ],
+      [
+        "item:minecraft:wooden_axe",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:logs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chipped:benches/glassblower",
+    "output": "item:chipped:glassblower",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:glass",
+        "item:minecraft:blast_furnace",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "item:minecraft:crafting_table",
+        "tag:items:minecraft:logs"
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "item:minecraft:bricks",
+        "tag:items:minecraft:logs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chipped:benches/loom_table",
+    "output": "item:chipped:loom_table",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "item:minecraft:crafting_table",
+        "tag:items:minecraft:logs"
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "tag:items:minecraft:wool",
+        "tag:items:minecraft:logs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chipped:benches/mason_table",
+    "output": "item:chipped:mason_table",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:brick",
+        "",
+        ""
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:crafting_table",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "item:minecraft:clay_ball",
+        "tag:items:minecraft:logs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chipped:benches/mechanist_workbench",
+    "output": "item:chipped:mechanist_workbench",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:redstone_torch",
+        "",
+        ""
+      ],
+      [
+        "item:minecraft:piston",
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_slab"
+      ],
+      [
+        "item:minecraft:stripped_spruce_log",
+        "item:minecraft:tnt",
+        "item:minecraft:stripped_spruce_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

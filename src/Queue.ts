@@ -36,7 +36,7 @@ export default class Queue<T extends object> extends Serializable {
     this.logger = logger;
   }
 
-  serialiseJob(job: Job<T>): object {
+  serializeJob(job: Job<T>): object {
     const data: any = { ...job };
 
     if (typeof data.callback === "function") {
@@ -46,11 +46,11 @@ export default class Queue<T extends object> extends Serializable {
     return data;
   }
 
-  serialise(): LuaMap<string, any> {
+  serialize(): LuaMap<string, any> {
     return {
-      failed: this.failed.map(this.serialiseJob),
-      queue: this.queue.map(this.serialiseJob),
-      running: this.running.map((x) => this.serialiseJob(x)),
+      failed: this.failed.map(this.serializeJob),
+      queue: this.queue.map(this.serializeJob),
+      running: this.running.map((x) => this.serializeJob(x)),
     } as object as LuaMap<string, any>;
   }
 

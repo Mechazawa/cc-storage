@@ -1,0 +1,1738 @@
+ 
+[
+  {
+    "name": "mcwfences:acacia_hedge",
+    "output": "item:mcwfences:acacia_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:acacia_leaves",
+        "item:minecraft:acacia_leaves"
+      ],
+      [
+        "item:minecraft:acacia_leaves",
+        "item:minecraft:acacia_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:acacia_highley_gate",
+    "output": "item:mcwfences:acacia_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:acacia_horse_fence",
+    "output": "item:mcwfences:acacia_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:acacia_log",
+        "item:minecraft:stick",
+        "item:minecraft:acacia_log"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:acacia_picket_fence",
+    "output": "item:mcwfences:acacia_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:acacia_log",
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_log"
+      ],
+      [
+        "item:minecraft:acacia_log",
+        "item:minecraft:stick",
+        "item:minecraft:acacia_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:acacia_pyramid_gate",
+    "output": "item:mcwfences:acacia_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:acacia_stockade_fence",
+    "output": "item:mcwfences:acacia_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:acacia_log",
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_log"
+      ],
+      [
+        "item:minecraft:acacia_log",
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:acacia_wired_fence",
+    "output": "item:mcwfences:acacia_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:andesite_railing_gate",
+    "output": "item:mcwfences:andesite_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_andesite",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_andesite",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:azalea_hedge",
+    "output": "item:mcwfences:azalea_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:azalea_leaves",
+        "item:minecraft:azalea_leaves"
+      ],
+      [
+        "item:minecraft:azalea_leaves",
+        "item:minecraft:azalea_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:bamboo_fence",
+    "output": "item:mcwfences:bamboo_fence",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:bamboo",
+        "",
+        "item:minecraft:bamboo"
+      ],
+      [
+        "item:minecraft:bamboo",
+        "item:minecraft:bamboo",
+        "item:minecraft:bamboo"
+      ],
+      [
+        "",
+        "item:minecraft:bamboo",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:birch_hedge",
+    "output": "item:mcwfences:birch_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:birch_leaves",
+        "item:minecraft:birch_leaves"
+      ],
+      [
+        "item:minecraft:birch_leaves",
+        "item:minecraft:birch_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:birch_highley_gate",
+    "output": "item:mcwfences:birch_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:birch_horse_fence",
+    "output": "item:mcwfences:birch_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:stick",
+        "item:minecraft:birch_log"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:birch_picket_fence",
+    "output": "item:mcwfences:birch_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_log"
+      ],
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:stick",
+        "item:minecraft:birch_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:birch_pyramid_gate",
+    "output": "item:mcwfences:birch_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:birch_stockade_fence",
+    "output": "item:mcwfences:birch_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_log"
+      ],
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:birch_wired_fence",
+    "output": "item:mcwfences:birch_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:blackstone_brick_railing_gate",
+    "output": "item:mcwfences:blackstone_brick_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:blackstone_railing_gate",
+    "output": "item:mcwfences:blackstone_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_blackstone",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_blackstone",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:crimson_highley_gate",
+    "output": "item:mcwfences:crimson_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_stem",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_stem",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:crimson_horse_fence",
+    "output": "item:mcwfences:crimson_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:crimson_stem",
+        "item:minecraft:stick",
+        "item:minecraft:crimson_stem"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_stem",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:crimson_picket_fence",
+    "output": "item:mcwfences:crimson_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:crimson_stem",
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_stem"
+      ],
+      [
+        "item:minecraft:crimson_stem",
+        "item:minecraft:stick",
+        "item:minecraft:crimson_stem"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:crimson_pyramid_gate",
+    "output": "item:mcwfences:crimson_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_stem",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:crimson_stockade_fence",
+    "output": "item:mcwfences:crimson_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:crimson_stem",
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_stem"
+      ],
+      [
+        "item:minecraft:crimson_stem",
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_stem"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:crimson_wired_fence",
+    "output": "item:mcwfences:crimson_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_stem",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:dark_oak_hedge",
+    "output": "item:mcwfences:dark_oak_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_leaves",
+        "item:minecraft:dark_oak_leaves"
+      ],
+      [
+        "item:minecraft:dark_oak_leaves",
+        "item:minecraft:dark_oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:dark_oak_highley_gate",
+    "output": "item:mcwfences:dark_oak_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:dark_oak_horse_fence",
+    "output": "item:mcwfences:dark_oak_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_log"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:dark_oak_picket_fence",
+    "output": "item:mcwfences:dark_oak_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_log"
+      ],
+      [
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:dark_oak_pyramid_gate",
+    "output": "item:mcwfences:dark_oak_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:dark_oak_stockade_fence",
+    "output": "item:mcwfences:dark_oak_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_log"
+      ],
+      [
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:dark_oak_wired_fence",
+    "output": "item:mcwfences:dark_oak_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:deepslate_brick_railing_gate",
+    "output": "item:mcwfences:deepslate_brick_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:deepslate_railing_gate",
+    "output": "item:mcwfences:deepslate_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:deepslate",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:deepslate",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:diorite_railing_gate",
+    "output": "item:mcwfences:diorite_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_diorite",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_diorite",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:end_brick_railing_gate",
+    "output": "item:mcwfences:end_brick_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:flowering_azalea_hedge",
+    "output": "item:mcwfences:flowering_azalea_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:flowering_azalea_leaves",
+        "item:minecraft:flowering_azalea_leaves"
+      ],
+      [
+        "item:minecraft:flowering_azalea_leaves",
+        "item:minecraft:flowering_azalea_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:granite_railing_gate",
+    "output": "item:mcwfences:granite_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_granite",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_granite",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:jungle_hedge",
+    "output": "item:mcwfences:jungle_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:jungle_leaves",
+        "item:minecraft:jungle_leaves"
+      ],
+      [
+        "item:minecraft:jungle_leaves",
+        "item:minecraft:jungle_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:jungle_highley_gate",
+    "output": "item:mcwfences:jungle_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:jungle_horse_fence",
+    "output": "item:mcwfences:jungle_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:jungle_log",
+        "item:minecraft:stick",
+        "item:minecraft:jungle_log"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:jungle_picket_fence",
+    "output": "item:mcwfences:jungle_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:jungle_log",
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_log"
+      ],
+      [
+        "item:minecraft:jungle_log",
+        "item:minecraft:stick",
+        "item:minecraft:jungle_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:jungle_pyramid_gate",
+    "output": "item:mcwfences:jungle_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:jungle_stockade_fence",
+    "output": "item:mcwfences:jungle_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:jungle_log",
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_log"
+      ],
+      [
+        "item:minecraft:jungle_log",
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:jungle_wired_fence",
+    "output": "item:mcwfences:jungle_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_andesite_wall",
+    "output": "item:mcwfences:modern_andesite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_andesite",
+        "item:minecraft:andesite",
+        "item:minecraft:polished_andesite"
+      ],
+      [
+        "item:minecraft:polished_andesite",
+        "item:minecraft:polished_andesite",
+        "item:minecraft:polished_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_blackstone_wall",
+    "output": "item:mcwfences:modern_blackstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:blackstone",
+        "item:minecraft:polished_blackstone_bricks"
+      ],
+      [
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:polished_blackstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_deepslate_brick_wall",
+    "output": "item:mcwfences:modern_deepslate_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:deepslate_tiles",
+        "item:minecraft:deepslate_bricks"
+      ],
+      [
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_deepslate_wall",
+    "output": "item:mcwfences:modern_deepslate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_deepslate",
+        "item:minecraft:deepslate",
+        "item:minecraft:polished_deepslate"
+      ],
+      [
+        "item:minecraft:polished_deepslate",
+        "item:minecraft:polished_deepslate",
+        "item:minecraft:polished_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_diorite_wall",
+    "output": "item:mcwfences:modern_diorite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_diorite",
+        "item:minecraft:diorite",
+        "item:minecraft:polished_diorite"
+      ],
+      [
+        "item:minecraft:polished_diorite",
+        "item:minecraft:polished_diorite",
+        "item:minecraft:polished_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_end_brick_wall",
+    "output": "item:mcwfences:modern_end_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:end_stone",
+        "item:minecraft:end_stone_bricks"
+      ],
+      [
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:end_stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_granite_wall",
+    "output": "item:mcwfences:modern_granite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_granite",
+        "item:minecraft:granite",
+        "item:minecraft:polished_granite"
+      ],
+      [
+        "item:minecraft:polished_granite",
+        "item:minecraft:polished_granite",
+        "item:minecraft:polished_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_nether_brick_wall",
+    "output": "item:mcwfences:modern_nether_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:nether_bricks",
+        "item:minecraft:netherrack",
+        "item:minecraft:nether_bricks"
+      ],
+      [
+        "item:minecraft:nether_bricks",
+        "item:minecraft:nether_bricks",
+        "item:minecraft:nether_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_prismarine_wall",
+    "output": "item:mcwfences:modern_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:prismarine_bricks",
+        "item:minecraft:prismarine",
+        "item:minecraft:prismarine_bricks"
+      ],
+      [
+        "item:minecraft:prismarine_bricks",
+        "item:minecraft:prismarine_bricks",
+        "item:minecraft:prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_quartz_wall",
+    "output": "item:mcwfences:modern_quartz_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:quartz_bricks",
+        "item:minecraft:quartz_block",
+        "item:minecraft:quartz_bricks"
+      ],
+      [
+        "item:minecraft:quartz_bricks",
+        "item:minecraft:quartz_bricks",
+        "item:minecraft:quartz_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_red_sandstone_wall",
+    "output": "item:mcwfences:modern_red_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:smooth_red_sandstone",
+        "item:minecraft:red_sandstone",
+        "item:minecraft:smooth_red_sandstone"
+      ],
+      [
+        "item:minecraft:smooth_red_sandstone",
+        "item:minecraft:smooth_red_sandstone",
+        "item:minecraft:smooth_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_sandstone_wall",
+    "output": "item:mcwfences:modern_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:smooth_sandstone",
+        "item:minecraft:sandstone",
+        "item:minecraft:smooth_sandstone"
+      ],
+      [
+        "item:minecraft:smooth_sandstone",
+        "item:minecraft:smooth_sandstone",
+        "item:minecraft:smooth_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:modern_stone_brick_wall",
+    "output": "item:mcwfences:modern_stone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:cobblestone",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:nether_brick_railing_gate",
+    "output": "item:mcwfences:nether_brick_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:nether_bricks",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:nether_bricks",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:oak_hedge",
+    "output": "item:mcwfences:oak_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:oak_highley_gate",
+    "output": "item:mcwfences:oak_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:oak_horse_fence",
+    "output": "item:mcwfences:oak_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:stick",
+        "item:minecraft:oak_log"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:oak_picket_fence",
+    "output": "item:mcwfences:oak_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_log"
+      ],
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:stick",
+        "item:minecraft:oak_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:oak_pyramid_gate",
+    "output": "item:mcwfences:oak_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:oak_stockade_fence",
+    "output": "item:mcwfences:oak_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_log"
+      ],
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:oak_wired_fence",
+    "output": "item:mcwfences:oak_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:prismarine_railing_gate",
+    "output": "item:mcwfences:prismarine_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:prismarine",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:prismarine",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:quartz_railing_gate",
+    "output": "item:mcwfences:quartz_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:quartz_block",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:quartz_block",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_andesite_wall",
+    "output": "item:mcwfences:railing_andesite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_andesite",
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_andesite"
+      ],
+      [
+        "item:minecraft:polished_andesite",
+        "item:minecraft:polished_andesite",
+        "item:minecraft:polished_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_blackstone_wall",
+    "output": "item:mcwfences:railing_blackstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_blackstone_bricks"
+      ],
+      [
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:polished_blackstone_bricks",
+        "item:minecraft:polished_blackstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_deepslate_brick_wall",
+    "output": "item:mcwfences:railing_deepslate_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:iron_bars",
+        "item:minecraft:deepslate_bricks"
+      ],
+      [
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:deepslate_bricks",
+        "item:minecraft:deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_deepslate_wall",
+    "output": "item:mcwfences:railing_deepslate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:deepslate",
+        "item:minecraft:iron_bars",
+        "item:minecraft:deepslate"
+      ],
+      [
+        "item:minecraft:deepslate",
+        "item:minecraft:deepslate",
+        "item:minecraft:deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_diorite_wall",
+    "output": "item:mcwfences:railing_diorite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_diorite",
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_diorite"
+      ],
+      [
+        "item:minecraft:polished_diorite",
+        "item:minecraft:polished_diorite",
+        "item:minecraft:polished_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_end_brick_wall",
+    "output": "item:mcwfences:railing_end_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:iron_bars",
+        "item:minecraft:end_stone_bricks"
+      ],
+      [
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:end_stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_granite_wall",
+    "output": "item:mcwfences:railing_granite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:polished_granite",
+        "item:minecraft:iron_bars",
+        "item:minecraft:polished_granite"
+      ],
+      [
+        "item:minecraft:polished_granite",
+        "item:minecraft:polished_granite",
+        "item:minecraft:polished_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_nether_brick_wall",
+    "output": "item:mcwfences:railing_nether_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:nether_bricks",
+        "item:minecraft:iron_bars",
+        "item:minecraft:nether_bricks"
+      ],
+      [
+        "item:minecraft:nether_bricks",
+        "item:minecraft:nether_bricks",
+        "item:minecraft:nether_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_prismarine_wall",
+    "output": "item:mcwfences:railing_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:prismarine",
+        "item:minecraft:iron_bars",
+        "item:minecraft:prismarine"
+      ],
+      [
+        "item:minecraft:prismarine",
+        "item:minecraft:prismarine",
+        "item:minecraft:prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_quartz_wall",
+    "output": "item:mcwfences:railing_quartz_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:quartz_block",
+        "item:minecraft:iron_bars",
+        "item:minecraft:quartz_block"
+      ],
+      [
+        "item:minecraft:quartz_block",
+        "item:minecraft:quartz_block",
+        "item:minecraft:quartz_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_red_sandstone_wall",
+    "output": "item:mcwfences:railing_red_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:smooth_red_sandstone",
+        "item:minecraft:iron_bars",
+        "item:minecraft:smooth_red_sandstone"
+      ],
+      [
+        "item:minecraft:smooth_red_sandstone",
+        "item:minecraft:smooth_red_sandstone",
+        "item:minecraft:smooth_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_sandstone_wall",
+    "output": "item:mcwfences:railing_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:smooth_sandstone",
+        "item:minecraft:iron_bars",
+        "item:minecraft:smooth_sandstone"
+      ],
+      [
+        "item:minecraft:smooth_sandstone",
+        "item:minecraft:smooth_sandstone",
+        "item:minecraft:smooth_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:railing_stone_brick_wall",
+    "output": "item:mcwfences:railing_stone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:red_sandstone_railing_gate",
+    "output": "item:mcwfences:red_sandstone_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:red_sandstone",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:red_sandstone",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:sandstone_railing_gate",
+    "output": "item:mcwfences:sandstone_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:sandstone",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:sandstone",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:spruce_hedge",
+    "output": "item:mcwfences:spruce_hedge",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:spruce_highley_gate",
+    "output": "item:mcwfences:spruce_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:spruce_horse_fence",
+    "output": "item:mcwfences:spruce_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:stick",
+        "item:minecraft:spruce_log"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:spruce_picket_fence",
+    "output": "item:mcwfences:spruce_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_log"
+      ],
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:stick",
+        "item:minecraft:spruce_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:spruce_pyramid_gate",
+    "output": "item:mcwfences:spruce_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_log",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:spruce_stockade_fence",
+    "output": "item:mcwfences:spruce_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_log"
+      ],
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:spruce_wired_fence",
+    "output": "item:mcwfences:spruce_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_log",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:stone_brick_railing_gate",
+    "output": "item:mcwfences:stone_brick_railing_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:warped_highley_gate",
+    "output": "item:mcwfences:warped_highley_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_stem",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_stem",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:warped_horse_fence",
+    "output": "item:mcwfences:warped_horse_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:warped_stem",
+        "item:minecraft:stick",
+        "item:minecraft:warped_stem"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_stem",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:warped_picket_fence",
+    "output": "item:mcwfences:warped_picket_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:warped_stem",
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_stem"
+      ],
+      [
+        "item:minecraft:warped_stem",
+        "item:minecraft:stick",
+        "item:minecraft:warped_stem"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:warped_pyramid_gate",
+    "output": "item:mcwfences:warped_pyramid_gate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_stem",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_planks",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:warped_stockade_fence",
+    "output": "item:mcwfences:warped_stockade_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:warped_stem",
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_stem"
+      ],
+      [
+        "item:minecraft:warped_stem",
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_stem"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwfences:warped_wired_fence",
+    "output": "item:mcwfences:warped_wired_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_bars",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_stem",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

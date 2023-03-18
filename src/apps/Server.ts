@@ -2,7 +2,6 @@ import { ServerConfig } from "../Config";
 import Queue from "../Queue";
 import StorageManager from "../StorageManager";
 import RecipeManager from "../crafting/RecipeManager";
-import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import App from "./App";
 import RPC from "../RPC";
 import Cache from "../Cache";
@@ -24,14 +23,14 @@ export default class Server extends App {
     this.queue = new Queue(this.storage);
   }
 
-  serialise(): LuaMap<string, any> {
+  serialize(): LuaMap<string, any> {
     return {
-      queue: this.queue.serialise(),
+      queue: this.queue.serialize(),
       config: this.config,
       nextDefrag: this.nextDefrag,
 
       // Optional
-      // cache: this.storage.cache.serialise(),
+      // cache: this.storage.cache.serialize(),
     } as object as LuaMap<string, any>;
   }
 
@@ -51,7 +50,7 @@ export default class Server extends App {
   }
 
   run(): void {
-    loadCraftingTableRecipes(this.storage.recipeManager);
+    this.storage.recipeManager.load()
 
     const recipeCount = Object.keys(this.storage.recipeManager.recipes).length;
 

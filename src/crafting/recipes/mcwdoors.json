@@ -1,0 +1,3058 @@
+ 
+[
+  {
+    "name": "mcwdoors:acacia_bark_glass_door",
+    "output": "item:mcwdoors:acacia_bark_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:acacia_log",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:acacia_log",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_barn_door",
+    "output": "item:mcwdoors:acacia_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_barn_glass_door",
+    "output": "item:mcwdoors:acacia_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_beach_door",
+    "output": "item:mcwdoors:acacia_beach_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_jungle"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_classic_door",
+    "output": "item:mcwdoors:acacia_classic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_oak"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_cottage_door",
+    "output": "item:mcwdoors:acacia_cottage_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_spruce"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_four_panel_door",
+    "output": "item:mcwdoors:acacia_four_panel_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_dark_oak"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_glass_door",
+    "output": "item:mcwdoors:acacia_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_japanese2_door",
+    "output": "item:mcwdoors:acacia_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:acacia_slab",
+        "item:minecraft:acacia_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_japanese_door",
+    "output": "item:mcwdoors:acacia_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_modern_door",
+    "output": "item:mcwdoors:acacia_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_mystic_door",
+    "output": "item:mcwdoors:acacia_mystic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_nether_door",
+    "output": "item:mcwdoors:acacia_nether_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_paper_door",
+    "output": "item:mcwdoors:acacia_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_birch"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_stable_door",
+    "output": "item:mcwdoors:acacia_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_stable_head_door",
+    "output": "item:mcwdoors:acacia_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:acacia_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_swamp_door",
+    "output": "item:mcwdoors:acacia_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:acacia_western_door",
+    "output": "item:mcwdoors:acacia_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_slab",
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_bark_glass_door",
+    "output": "item:mcwdoors:birch_bark_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_barn_door",
+    "output": "item:mcwdoors:birch_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_barn_glass_door",
+    "output": "item:mcwdoors:birch_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_beach_door",
+    "output": "item:mcwdoors:birch_beach_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_jungle"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_classic_door",
+    "output": "item:mcwdoors:birch_classic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_oak"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_cottage_door",
+    "output": "item:mcwdoors:birch_cottage_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_spruce"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_four_panel_door",
+    "output": "item:mcwdoors:birch_four_panel_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_dark_oak"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_glass_door",
+    "output": "item:mcwdoors:birch_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_japanese2_door",
+    "output": "item:mcwdoors:birch_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:birch_slab",
+        "item:minecraft:birch_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_japanese_door",
+    "output": "item:mcwdoors:birch_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_modern_door",
+    "output": "item:mcwdoors:birch_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_mystic_door",
+    "output": "item:mcwdoors:birch_mystic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_nether_door",
+    "output": "item:mcwdoors:birch_nether_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_stable_door",
+    "output": "item:mcwdoors:birch_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_stable_head_door",
+    "output": "item:mcwdoors:birch_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:birch_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_swamp_door",
+    "output": "item:mcwdoors:birch_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_tropical_door",
+    "output": "item:mcwdoors:birch_tropical_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:mcwdoors:print_acacia"
+      ],
+      [
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:birch_western_door",
+    "output": "item:mcwdoors:birch_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_slab",
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_barn_door",
+    "output": "item:mcwdoors:crimson_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_barn_glass_door",
+    "output": "item:mcwdoors:crimson_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_beach_door",
+    "output": "item:mcwdoors:crimson_beach_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_jungle"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_classic_door",
+    "output": "item:mcwdoors:crimson_classic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_oak"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_cottage_door",
+    "output": "item:mcwdoors:crimson_cottage_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_spruce"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_four_panel_door",
+    "output": "item:mcwdoors:crimson_four_panel_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_dark_oak"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_glass_door",
+    "output": "item:mcwdoors:crimson_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_japanese2_door",
+    "output": "item:mcwdoors:crimson_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:crimson_slab",
+        "item:minecraft:crimson_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_japanese_door",
+    "output": "item:mcwdoors:crimson_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_modern_door",
+    "output": "item:mcwdoors:crimson_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_mystic_door",
+    "output": "item:mcwdoors:crimson_mystic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_nether_door",
+    "output": "item:mcwdoors:crimson_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_paper_door",
+    "output": "item:mcwdoors:crimson_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_birch"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_stable_door",
+    "output": "item:mcwdoors:crimson_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_stable_head_door",
+    "output": "item:mcwdoors:crimson_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:crimson_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_stem_glass_door",
+    "output": "item:mcwdoors:crimson_stem_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:crimson_stem",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:crimson_stem",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_swamp_door",
+    "output": "item:mcwdoors:crimson_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_tropical_door",
+    "output": "item:mcwdoors:crimson_tropical_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:mcwdoors:print_acacia"
+      ],
+      [
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:crimson_western_door",
+    "output": "item:mcwdoors:crimson_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_slab",
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_bark_glass_door",
+    "output": "item:mcwdoors:dark_oak_bark_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:dark_oak_log",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_barn_door",
+    "output": "item:mcwdoors:dark_oak_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_barn_glass_door",
+    "output": "item:mcwdoors:dark_oak_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_beach_door",
+    "output": "item:mcwdoors:dark_oak_beach_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_jungle"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_classic_door",
+    "output": "item:mcwdoors:dark_oak_classic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_oak"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_cottage_door",
+    "output": "item:mcwdoors:dark_oak_cottage_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_spruce"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_glass_door",
+    "output": "item:mcwdoors:dark_oak_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_japanese2_door",
+    "output": "item:mcwdoors:dark_oak_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:dark_oak_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_japanese_door",
+    "output": "item:mcwdoors:dark_oak_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_modern_door",
+    "output": "item:mcwdoors:dark_oak_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_mystic_door",
+    "output": "item:mcwdoors:dark_oak_mystic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_nether_door",
+    "output": "item:mcwdoors:dark_oak_nether_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_paper_door",
+    "output": "item:mcwdoors:dark_oak_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_birch"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_stable_door",
+    "output": "item:mcwdoors:dark_oak_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_stable_head_door",
+    "output": "item:mcwdoors:dark_oak_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:dark_oak_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_swamp_door",
+    "output": "item:mcwdoors:dark_oak_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_tropical_door",
+    "output": "item:mcwdoors:dark_oak_tropical_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_acacia"
+      ],
+      [
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:dark_oak_western_door",
+    "output": "item:mcwdoors:dark_oak_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:garage_black_door",
+    "output": "item:mcwdoors:garage_black_door",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door"
+      ],
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:minecraft:black_dye",
+        "item:mcwdoors:garage_white_door"
+      ],
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:garage_gray_door",
+    "output": "item:mcwdoors:garage_gray_door",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door"
+      ],
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:minecraft:gray_dye",
+        "item:mcwdoors:garage_white_door"
+      ],
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:garage_silver_door",
+    "output": "item:mcwdoors:garage_silver_door",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door"
+      ],
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:minecraft:light_gray_dye",
+        "item:mcwdoors:garage_white_door"
+      ],
+      [
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door",
+        "item:mcwdoors:garage_white_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:garage_white_door",
+    "output": "item:mcwdoors:garage_white_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:glass",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jail_door",
+    "output": "item:mcwdoors:jail_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_bark_glass_door",
+    "output": "item:mcwdoors:jungle_bark_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:jungle_log",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:jungle_log",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_barn_door",
+    "output": "item:mcwdoors:jungle_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_barn_glass_door",
+    "output": "item:mcwdoors:jungle_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_classic_door",
+    "output": "item:mcwdoors:jungle_classic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_oak"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_cottage_door",
+    "output": "item:mcwdoors:jungle_cottage_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_spruce"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_four_panel_door",
+    "output": "item:mcwdoors:jungle_four_panel_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_dark_oak"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_glass_door",
+    "output": "item:mcwdoors:jungle_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_japanese2_door",
+    "output": "item:mcwdoors:jungle_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:jungle_slab",
+        "item:minecraft:jungle_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_japanese_door",
+    "output": "item:mcwdoors:jungle_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_modern_door",
+    "output": "item:mcwdoors:jungle_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_mystic_door",
+    "output": "item:mcwdoors:jungle_mystic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_nether_door",
+    "output": "item:mcwdoors:jungle_nether_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_paper_door",
+    "output": "item:mcwdoors:jungle_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_birch"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_stable_door",
+    "output": "item:mcwdoors:jungle_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_stable_head_door",
+    "output": "item:mcwdoors:jungle_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:jungle_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_swamp_door",
+    "output": "item:mcwdoors:jungle_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_tropical_door",
+    "output": "item:mcwdoors:jungle_tropical_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:mcwdoors:print_acacia"
+      ],
+      [
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:jungle_western_door",
+    "output": "item:mcwdoors:jungle_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_slab",
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:metal_door",
+    "output": "item:mcwdoors:metal_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:metal_hospital_door",
+    "output": "item:mcwdoors:metal_hospital_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:metal_reinforced_door",
+    "output": "item:mcwdoors:metal_reinforced_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:mcwdoors:metal_door",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:metal_warning_door",
+    "output": "item:mcwdoors:metal_warning_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_nugget",
+        "item:mcwdoors:metal_windowed_door",
+        "item:minecraft:iron_nugget"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:metal_windowed_door",
+    "output": "item:mcwdoors:metal_windowed_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:mcwdoors:metal_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_bark_glass_door",
+    "output": "item:mcwdoors:oak_bark_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_barn_door",
+    "output": "item:mcwdoors:oak_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_barn_glass_door",
+    "output": "item:mcwdoors:oak_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_beach_door",
+    "output": "item:mcwdoors:oak_beach_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_jungle"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_cottage_door",
+    "output": "item:mcwdoors:oak_cottage_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_spruce"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_four_panel_door",
+    "output": "item:mcwdoors:oak_four_panel_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_dark_oak"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_glass_door",
+    "output": "item:mcwdoors:oak_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_japanese2_door",
+    "output": "item:mcwdoors:oak_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_japanese_door",
+    "output": "item:mcwdoors:oak_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_modern_door",
+    "output": "item:mcwdoors:oak_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_mystic_door",
+    "output": "item:mcwdoors:oak_mystic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_nether_door",
+    "output": "item:mcwdoors:oak_nether_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_paper_door",
+    "output": "item:mcwdoors:oak_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_birch"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_stable_door",
+    "output": "item:mcwdoors:oak_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_stable_head_door",
+    "output": "item:mcwdoors:oak_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:oak_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_swamp_door",
+    "output": "item:mcwdoors:oak_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_tropical_door",
+    "output": "item:mcwdoors:oak_tropical_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:mcwdoors:print_acacia"
+      ],
+      [
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:oak_western_door",
+    "output": "item:mcwdoors:oak_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_slab",
+        "item:minecraft:oak_planks"
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks",
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_acacia",
+    "output": "item:mcwdoors:print_acacia",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:acacia_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_birch",
+    "output": "item:mcwdoors:print_birch",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:birch_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_dark_oak",
+    "output": "item:mcwdoors:print_dark_oak",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:dark_oak_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_jungle",
+    "output": "item:mcwdoors:print_jungle",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:jungle_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_mystic",
+    "output": "item:mcwdoors:print_mystic",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:warped_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_nether",
+    "output": "item:mcwdoors:print_nether",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:crimson_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_oak",
+    "output": "item:mcwdoors:print_oak",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:oak_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:print_spruce",
+    "output": "item:mcwdoors:print_spruce",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:spruce_door",
+        "item:minecraft:paper"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_bark_glass_door",
+    "output": "item:mcwdoors:spruce_bark_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_barn_door",
+    "output": "item:mcwdoors:spruce_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_barn_glass_door",
+    "output": "item:mcwdoors:spruce_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_beach_door",
+    "output": "item:mcwdoors:spruce_beach_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_jungle"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_classic_door",
+    "output": "item:mcwdoors:spruce_classic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_oak"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_four_panel_door",
+    "output": "item:mcwdoors:spruce_four_panel_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_dark_oak"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_glass_door",
+    "output": "item:mcwdoors:spruce_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_japanese2_door",
+    "output": "item:mcwdoors:spruce_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_japanese_door",
+    "output": "item:mcwdoors:spruce_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_modern_door",
+    "output": "item:mcwdoors:spruce_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_mystic_door",
+    "output": "item:mcwdoors:spruce_mystic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_nether_door",
+    "output": "item:mcwdoors:spruce_nether_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_paper_door",
+    "output": "item:mcwdoors:spruce_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_birch"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_stable_door",
+    "output": "item:mcwdoors:spruce_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_stable_head_door",
+    "output": "item:mcwdoors:spruce_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:spruce_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_swamp_door",
+    "output": "item:mcwdoors:spruce_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_tropical_door",
+    "output": "item:mcwdoors:spruce_tropical_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:mcwdoors:print_acacia"
+      ],
+      [
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:spruce_western_door",
+    "output": "item:mcwdoors:spruce_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_barn_door",
+    "output": "item:mcwdoors:warped_barn_door",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_barn_glass_door",
+    "output": "item:mcwdoors:warped_barn_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_beach_door",
+    "output": "item:mcwdoors:warped_beach_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_jungle"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_classic_door",
+    "output": "item:mcwdoors:warped_classic_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_oak"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_cottage_door",
+    "output": "item:mcwdoors:warped_cottage_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_spruce"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_four_panel_door",
+    "output": "item:mcwdoors:warped_four_panel_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_dark_oak"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_glass_door",
+    "output": "item:mcwdoors:warped_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_japanese2_door",
+    "output": "item:mcwdoors:warped_japanese2_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:warped_slab",
+        "item:minecraft:warped_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_japanese_door",
+    "output": "item:mcwdoors:warped_japanese_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_modern_door",
+    "output": "item:mcwdoors:warped_modern_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:glass_pane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_mystic_door",
+    "output": "item:mcwdoors:warped_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_mystic"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_nether_door",
+    "output": "item:mcwdoors:warped_nether_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_nether"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_paper_door",
+    "output": "item:mcwdoors:warped_paper_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_birch"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_stable_door",
+    "output": "item:mcwdoors:warped_stable_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:iron_bars",
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_stable_head_door",
+    "output": "item:mcwdoors:warped_stable_head_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwdoors:warped_stable_door"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_stem_glass_door",
+    "output": "item:mcwdoors:warped_stem_glass_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:warped_stem",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:glass"
+      ],
+      [
+        "item:minecraft:warped_stem",
+        "item:minecraft:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_swamp_door",
+    "output": "item:mcwdoors:warped_swamp_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_swamp"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_tropical_door",
+    "output": "item:mcwdoors:warped_tropical_door",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:mcwdoors:print_acacia"
+      ],
+      [
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwdoors:warped_western_door",
+    "output": "item:mcwdoors:warped_western_door",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_slab",
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

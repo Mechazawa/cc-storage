@@ -1,0 +1,480 @@
+ 
+[
+  {
+    "name": "computercraft:computer_advanced_upgrade",
+    "output": "item:computercraft:computer_advanced",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "item:computercraft:computer_normal",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:pocket_computer_advanced_upgrade",
+    "output": "item:computercraft:pocket_computer_advanced",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "item:computercraft:pocket_computer_normal",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:turtle_advanced_upgrade",
+    "output": "item:computercraft:turtle_advanced",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "item:computercraft:turtle_normal",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "",
+        "tag:items:c:gold_blocks",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:cable",
+    "output": "item:computercraft:cable",
+    "count": 6,
+    "grid": [
+      [
+        "",
+        "tag:items:c:stones",
+        ""
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:stones"
+      ],
+      [
+        "",
+        "tag:items:c:stones",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:computer_advanced",
+    "output": "item:computercraft:computer_advanced",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:glass_panes",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:computer_command",
+    "output": "item:computercraft:computer_command",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "item:minecraft:command_block",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:glass_panes",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:computer_normal",
+    "output": "item:computercraft:computer_normal",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:glass_panes",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:disk_drive",
+    "output": "item:computercraft:disk_drive",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:monitor_advanced",
+    "output": "item:computercraft:monitor_advanced",
+    "count": 4,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:glass_panes",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:monitor_normal",
+    "output": "item:computercraft:monitor_normal",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:glass_panes",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:pocket_computer_advanced",
+    "output": "item:computercraft:pocket_computer_advanced",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "item:minecraft:golden_apple",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:glass_panes",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:pocket_computer_normal",
+    "output": "item:computercraft:pocket_computer_normal",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "item:minecraft:golden_apple",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:glass_panes",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:printer",
+    "output": "item:computercraft:printer",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:dyes",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:speaker",
+    "output": "item:computercraft:speaker",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "item:minecraft:note_block",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:wired_modem",
+    "output": "item:computercraft:wired_modem",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:redstone_dusts",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:wireless_modem_advanced",
+    "output": "item:computercraft:wireless_modem_advanced",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "item:minecraft:ender_eye",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:wireless_modem_normal",
+    "output": "item:computercraft:wireless_modem_normal",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:ender_pearls",
+        "tag:items:c:stones"
+      ],
+      [
+        "tag:items:c:stones",
+        "tag:items:c:stones",
+        "tag:items:c:stones"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:wired_modem_full_from",
+    "output": "item:computercraft:wired_modem_full",
+    "count": 1,
+    "grid": [
+      "item:computercraft:wired_modem"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "computercraft:wired_modem_full_to",
+    "output": "item:computercraft:wired_modem",
+    "count": 1,
+    "grid": [
+      "item:computercraft:wired_modem_full"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "computercraft:printed_book",
+    "output": "item:computercraft:printed_book",
+    "count": 1,
+    "grid": [
+      "item:minecraft:leather",
+      "item:computercraft:printed_page",
+      "item:minecraft:string"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "computercraft:printed_pages",
+    "output": "item:computercraft:printed_pages",
+    "count": 1,
+    "grid": [
+      "item:computercraft:printed_page",
+      "item:computercraft:printed_page",
+      "item:minecraft:string"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "computercraft:turtle_advanced",
+    "output": "item:computercraft:turtle_advanced",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "item:computercraft:computer_advanced",
+        "tag:items:c:gold_ingots"
+      ],
+      [
+        "tag:items:c:gold_ingots",
+        "tag:items:c:wooden_chests",
+        "tag:items:c:gold_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:turtle_normal",
+    "output": "item:computercraft:turtle_normal",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots",
+        "tag:items:c:iron_ingots"
+      ],
+      [
+        "tag:items:c:iron_ingots",
+        "item:computercraft:computer_normal",
+        "tag:items:c:iron_ingots"
+      ],
+      [
+        "tag:items:c:iron_ingots",
+        "tag:items:c:wooden_chests",
+        "tag:items:c:iron_ingots"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]
