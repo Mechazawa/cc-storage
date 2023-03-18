@@ -17,8 +17,7 @@ while true do
             method = 'storeAll',
             args = {containerName}
         }, 'rpc');
-        sleep(3)
-    else
-        sleep(0.5)
     end
+    
+    sleep(3)
 end
