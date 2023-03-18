@@ -7,7 +7,7 @@ rm index.ts{,.1} 2> /dev/null
 for f in *.json
   set name (echo $f | sed s/\\.json//)
 
-  echo "import $name from \"./$f\";" >> index.ts
+  echo "import * as $name from \"./$f\";" >> index.ts
   echo "  $name," >> index.ts.1
 end
 
