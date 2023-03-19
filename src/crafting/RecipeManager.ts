@@ -30,6 +30,7 @@ export default class RecipeManager {
         .filter((r) => typeof r.get("type") === "string" && (r.get("type") + "").startsWith(prefix))
         .map((r) =>
           ("" + r.get("type")).endsWith(":shapeless")
+          // todo: replace with something that maps the types to classes
             ? ShapelessCraftingRecipe.deserialize(r)
             : ShapedCraftingRecipe.deserialize(r)
         )
