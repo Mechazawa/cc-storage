@@ -1,0 +1,90 @@
+ 
+[
+  {
+    "name": "cccbridge:redrouter_block",
+    "output": "item:cccbridge:redrouter_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "item:minecraft:redstone_torch",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:minecraft:redstone_torch",
+        "item:computercraft:monitor_normal",
+        "item:minecraft:redstone_torch"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:minecraft:redstone_torch",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "cccbridge:scroller_block",
+    "output": "item:cccbridge:scroller_block",
+    "count": 2,
+    "grid": [
+      [
+        "item:create:brass_nugget",
+        "item:create:precision_mechanism",
+        "item:create:brass_nugget"
+      ],
+      [
+        "item:create:brass_nugget",
+        "item:create:brass_casing",
+        "item:create:brass_nugget"
+      ],
+      [
+        "item:create:brass_nugget",
+        "item:computercraft:wired_modem",
+        "item:create:brass_nugget"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "cccbridge:source_block",
+    "output": "item:cccbridge:source_block",
+    "count": 2,
+    "grid": [
+      [
+        "item:create:golden_sheet",
+        "item:computercraft:disk",
+        "item:create:golden_sheet"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:create:brass_casing",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:create:golden_sheet",
+        "item:minecraft:glass",
+        "item:create:golden_sheet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "cccbridge:to_source_block",
+    "output": "item:cccbridge:source_block",
+    "count": 1,
+    "grid": [
+      "item:cccbridge:target_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "cccbridge:to_target_block",
+    "output": "item:cccbridge:target_block",
+    "count": 1,
+    "grid": [
+      "item:cccbridge:source_block"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

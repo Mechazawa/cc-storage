@@ -5,7 +5,8 @@
     "build": "npm run clean && tstl -p tsconfig.json",
     "dev": "tstl -p tsconfig.json --watch",
     "lint": "prettier --write src/**/*.ts types/**/*.ts",
-    "clean": "rm -r dist; mkdir dist"
+    "clean": "rm -r dist; mkdir dist",
+    "generate": "fish src/crafting/recipes/generate_index.fish"
   },
   "devDependencies": {
     "glob": "^8.1.0",

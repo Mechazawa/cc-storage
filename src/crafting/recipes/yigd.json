@@ -1,0 +1,49 @@
+ 
+[
+  {
+    "name": "yigd:death_scroll",
+    "output": "item:minecraft:air",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:candles",
+        "item:minecraft:phantom_membrane",
+        "tag:items:minecraft:candles"
+      ],
+      [
+        "item:minecraft:ender_pearl",
+        "item:minecraft:ender_eye",
+        "item:minecraft:ender_pearl"
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:crying_obsidian",
+        "item:minecraft:amethyst_shard"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "yigd:grave",
+    "output": "item:yigd:grave",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:stone",
+        ""
+      ],
+      [
+        "item:minecraft:stone",
+        "item:minecraft:bone",
+        "item:minecraft:stone"
+      ],
+      [
+        "item:minecraft:gravel",
+        "item:minecraft:gravel",
+        "item:minecraft:gravel"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

@@ -101,7 +101,7 @@ export default class Cache<T = any> extends Serializable {
     }) as unknown as T2;
   }
 
-  serialise(): LuaMap<string, TimedValue<T>> {
+  serialize(): LuaMap<string, TimedValue<T>> {
     return this.store;
   }
 

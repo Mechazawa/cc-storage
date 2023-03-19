@@ -1,3 +1,5 @@
+import Serializable from "../Serializable";
+
 export enum RecipeType {
   CRAFTING_TABLE = "crafting",
 }
@@ -15,7 +17,7 @@ export interface TransferableRecipe {
 export const TURTLE_INVENTORY_ROWS = 4;
 export const TURTLE_INVENTORY_COLS = 4;
 
-export default interface Recipe {
+export default interface Recipe extends Serializable {
   readonly type: RecipeType;
   name: string;
 

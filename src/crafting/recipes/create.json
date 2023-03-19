@@ -1,0 +1,7577 @@
+ 
+[
+  {
+    "name": "create:mechanical_crafting/crushing_wheel",
+    "output": "item:create:crushing_wheel",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        ""
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "tag:items:minecraft:planks",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "tag:items:minecraft:planks",
+        "tag:items:c:stone",
+        "tag:items:minecraft:planks",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "tag:items:minecraft:planks",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:mechanical_crafting/extendo_grip",
+    "output": "item:create:extendo_grip",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:ingots/brass",
+        ""
+      ],
+      [
+        "",
+        "item:create:precision_mechanism",
+        ""
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "tag:items:c:rods/wooden",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "tag:items:c:rods/wooden",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "",
+        "item:create:brass_hand",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:mechanical_crafting/potato_cannon",
+    "output": "item:create:potato_cannon",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "item:create:precision_mechanism",
+        "item:create:fluid_pipe",
+        "item:create:fluid_pipe",
+        "item:create:fluid_pipe"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_ingot",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:mechanical_crafting/wand_of_symmetry",
+    "output": "item:create:wand_of_symmetry",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:glass",
+        ""
+      ],
+      [
+        "tag:items:c:glass",
+        "tag:items:c:ender_pearls",
+        "tag:items:c:glass"
+      ],
+      [
+        "",
+        "item:create:precision_mechanism",
+        ""
+      ],
+      [
+        "",
+        "tag:items:c:ingots/brass",
+        ""
+      ],
+      [
+        "",
+        "tag:items:c:obsidian",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:acacia_window",
+    "output": "item:create:acacia_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:acacia_planks",
+        ""
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:acacia_window_pane",
+    "output": "item:create:acacia_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:acacia_window",
+        "item:create:acacia_window",
+        "item:create:acacia_window"
+      ],
+      [
+        "item:create:acacia_window",
+        "item:create:acacia_window",
+        "item:create:acacia_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:birch_window",
+    "output": "item:create:birch_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:birch_planks",
+        ""
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:birch_window_pane",
+    "output": "item:create:birch_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:birch_window",
+        "item:create:birch_window",
+        "item:create:birch_window"
+      ],
+      [
+        "item:create:birch_window",
+        "item:create:birch_window",
+        "item:create:birch_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:copper_shingle_slab",
+    "output": "item:create:copper_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:copper_shingles",
+        "item:create:copper_shingles",
+        "item:create:copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:copper_shingle_stairs",
+    "output": "item:create:copper_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:copper_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:create:copper_shingles",
+        "item:create:copper_shingles",
+        ""
+      ],
+      [
+        "item:create:copper_shingles",
+        "item:create:copper_shingles",
+        "item:create:copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:copper_tile_slab",
+    "output": "item:create:copper_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:copper_tiles",
+        "item:create:copper_tiles",
+        "item:create:copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:copper_tile_stairs",
+    "output": "item:create:copper_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:copper_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:create:copper_tiles",
+        "item:create:copper_tiles",
+        ""
+      ],
+      [
+        "item:create:copper_tiles",
+        "item:create:copper_tiles",
+        "item:create:copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/appliances/copper_backtank",
+    "output": "item:create:copper_backtank",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "item:create:shaft",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_block",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "",
+        "item:minecraft:copper_ingot",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/appliances/diving_boots",
+    "output": "item:create:diving_boots",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_ingot",
+        "",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/appliances/diving_helmet",
+    "output": "item:create:diving_helmet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "tag:items:c:glass",
+        "item:minecraft:copper_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/appliances/linked_controller",
+    "output": "item:create:linked_controller",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_buttons",
+        "tag:items:minecraft:wooden_buttons",
+        "tag:items:minecraft:wooden_buttons"
+      ],
+      [
+        "",
+        "item:create:redstone_link",
+        ""
+      ],
+      [
+        "tag:items:minecraft:wooden_buttons",
+        "tag:items:minecraft:wooden_buttons",
+        "tag:items:minecraft:wooden_buttons"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/curiosities/brown_toolbox",
+    "output": "item:create:brown_toolbox",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:create:cogwheel",
+        ""
+      ],
+      [
+        "tag:items:c:plates/gold",
+        "tag:items:c:chests/wooden",
+        "tag:items:c:plates/gold"
+      ],
+      [
+        "",
+        "tag:items:c:leather",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/curiosities/cake",
+    "output": "item:minecraft:cake",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:milk_bucket",
+        ""
+      ],
+      [
+        "item:minecraft:sugar",
+        "tag:items:c:eggs",
+        "item:minecraft:sugar"
+      ],
+      [
+        "",
+        "tag:items:c:dough",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/curiosities/minecart_coupling",
+    "output": "item:create:minecart_coupling",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "",
+        "tag:items:c:plates/iron",
+        ""
+      ],
+      [
+        "item:create:andesite_alloy",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/curiosities/peculiar_bell",
+    "output": "item:create:peculiar_bell",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:storage_blocks/brass"
+      ],
+      [
+        "tag:items:c:plates/brass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/analog_lever",
+    "output": "item:create:analog_lever",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "item:create:andesite_casing"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/andesite_ladder",
+    "output": "item:create:andesite_ladder",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/attribute_filter",
+    "output": "item:create:attribute_filter",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/brass",
+        "tag:items:minecraft:wool",
+        "tag:items:c:nuggets/brass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/basin",
+    "output": "item:create:basin",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/belt_connector",
+    "output": "item:create:belt_connector",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp"
+      ],
+      [
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/brass_hand",
+    "output": "item:create:brass_hand",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:create:andesite_alloy",
+        ""
+      ],
+      [
+        "tag:items:c:plates/brass",
+        "tag:items:c:plates/brass",
+        "tag:items:c:plates/brass"
+      ],
+      [
+        "",
+        "tag:items:c:plates/brass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/cart_assembler",
+    "output": "item:create:cart_assembler",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "tag:items:c:dusts/redstone",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "",
+        "tag:items:minecraft:logs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/chute",
+    "output": "item:create:chute",
+    "count": 4,
+    "grid": [
+      [
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "tag:items:c:ingots/iron"
+      ],
+      [
+        "tag:items:c:plates/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/clockwork_bearing",
+    "output": "item:create:clockwork_bearing",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "item:create:brass_casing"
+      ],
+      [
+        "item:create:electron_tube"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/controller_rail",
+    "output": "item:create:controller_rail",
+    "count": 6,
+    "grid": [
+      [
+        "tag:items:c:ingots/gold",
+        "",
+        "tag:items:c:ingots/gold"
+      ],
+      [
+        "tag:items:c:ingots/gold",
+        "tag:items:c:rods/wooden",
+        "tag:items:c:ingots/gold"
+      ],
+      [
+        "tag:items:c:ingots/gold",
+        "item:create:electron_tube",
+        "tag:items:c:ingots/gold"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/controls",
+    "output": "item:create:controls",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:lever"
+      ],
+      [
+        "item:create:railway_casing"
+      ],
+      [
+        "item:create:precision_mechanism"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/copper_valve_handle",
+    "output": "item:create:copper_valve_handle",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/copper",
+        "tag:items:c:plates/copper",
+        "tag:items:c:plates/copper"
+      ],
+      [
+        "",
+        "item:create:andesite_alloy",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/crafter_slot_cover",
+    "output": "item:create:crafter_slot_cover",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/cuckoo_clock",
+    "output": "item:create:cuckoo_clock",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "item:minecraft:clock"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/deployer",
+    "output": "item:create:deployer",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:electron_tube"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "item:create:brass_hand"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/display_board",
+    "output": "item:create:display_board",
+    "count": 2,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "item:create:electron_tube",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/empty_blaze_burner",
+    "output": "item:create:empty_blaze_burner",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:plates/iron",
+        ""
+      ],
+      [
+        "tag:items:c:plates/iron",
+        "tag:items:c:netherrack",
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "",
+        "tag:items:c:plates/iron",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/encased_fan",
+    "output": "item:create:encased_fan",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:shaft"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "item:create:propeller"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/filter",
+    "output": "item:create:filter",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/iron",
+        "tag:items:minecraft:wool",
+        "tag:items:c:nuggets/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/fluid_pipe",
+    "output": "item:create:fluid_pipe",
+    "count": 4,
+    "grid": [
+      [
+        "tag:items:c:plates/copper",
+        "item:minecraft:copper_ingot",
+        "tag:items:c:plates/copper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/fluid_pipe_vertical",
+    "output": "item:create:fluid_pipe",
+    "count": 4,
+    "grid": [
+      [
+        "tag:items:c:plates/copper"
+      ],
+      [
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "tag:items:c:plates/copper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/fluid_tank",
+    "output": "item:create:fluid_tank",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/copper"
+      ],
+      [
+        "tag:items:c:barrels/wooden"
+      ],
+      [
+        "tag:items:c:plates/copper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/flywheel",
+    "output": "item:create:flywheel",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass"
+      ],
+      [
+        "tag:items:c:ingots/brass",
+        "item:create:shaft",
+        "tag:items:c:ingots/brass"
+      ],
+      [
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/gantry_carriage",
+    "output": "item:create:gantry_carriage",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "item:create:cogwheel"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/gantry_shaft",
+    "output": "item:create:gantry_shaft",
+    "count": 8,
+    "grid": [
+      [
+        "item:create:andesite_alloy"
+      ],
+      [
+        "tag:items:c:dusts/redstone"
+      ],
+      [
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/gearbox",
+    "output": "item:create:gearbox",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:create:cogwheel",
+        ""
+      ],
+      [
+        "item:create:cogwheel",
+        "item:create:andesite_casing",
+        "item:create:cogwheel"
+      ],
+      [
+        "",
+        "item:create:cogwheel",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/goggles",
+    "output": "item:create:goggles",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:string",
+        ""
+      ],
+      [
+        "tag:items:c:glass",
+        "tag:items:c:plates/gold",
+        "tag:items:c:glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/hand_crank",
+    "output": "item:create:hand_crank",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "",
+        "",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/hose_pulley",
+    "output": "item:create:hose_pulley",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:copper_casing"
+      ],
+      [
+        "item:minecraft:dried_kelp_block"
+      ],
+      [
+        "tag:items:c:plates/copper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/item_drain",
+    "output": "item:create:item_drain",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_bars"
+      ],
+      [
+        "item:create:copper_casing"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/item_vault",
+    "output": "item:create:item_vault",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "tag:items:c:barrels/wooden"
+      ],
+      [
+        "tag:items:c:plates/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/linear_chassis",
+    "output": "item:create:linear_chassis",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "item:create:andesite_alloy",
+        ""
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "tag:items:minecraft:logs",
+        "tag:items:minecraft:logs"
+      ],
+      [
+        "",
+        "item:create:andesite_alloy",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_arm",
+    "output": "item:create:mechanical_arm",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/brass",
+        "tag:items:c:plates/brass",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "tag:items:c:plates/brass",
+        "",
+        ""
+      ],
+      [
+        "item:create:precision_mechanism",
+        "item:create:brass_casing",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_bearing",
+    "output": "item:create:mechanical_bearing",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "item:create:shaft"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_crafter",
+    "output": "item:create:mechanical_crafter",
+    "count": 3,
+    "grid": [
+      [
+        "item:create:electron_tube"
+      ],
+      [
+        "item:create:brass_casing"
+      ],
+      [
+        "item:minecraft:crafting_table"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_drill",
+    "output": "item:create:mechanical_drill",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:create:andesite_alloy",
+        ""
+      ],
+      [
+        "item:create:andesite_alloy",
+        "tag:items:c:ingots/iron",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "",
+        "item:create:andesite_casing",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_harvester",
+    "output": "item:create:mechanical_harvester",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "tag:items:c:plates/iron",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "tag:items:c:plates/iron",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "",
+        "item:create:andesite_casing",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_mixer",
+    "output": "item:create:mechanical_mixer",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:cogwheel"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "item:create:whisk"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_piston",
+    "output": "item:create:mechanical_piston",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "item:create:piston_extension_pole"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_plough",
+    "output": "item:create:mechanical_plough",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/iron",
+        "tag:items:c:plates/iron",
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "",
+        "item:create:andesite_casing",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_press",
+    "output": "item:create:mechanical_press",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:shaft"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "tag:items:c:storage_blocks/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_saw",
+    "output": "item:create:mechanical_saw",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:plates/iron",
+        ""
+      ],
+      [
+        "tag:items:c:plates/iron",
+        "tag:items:c:ingots/iron",
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "",
+        "item:create:andesite_casing",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/metal_bracket",
+    "output": "item:create:metal_bracket",
+    "count": 4,
+    "grid": [
+      [
+        "tag:items:c:nuggets/iron",
+        "tag:items:c:nuggets/iron",
+        "tag:items:c:nuggets/iron"
+      ],
+      [
+        "tag:items:c:ingots/iron",
+        "item:create:andesite_alloy",
+        "tag:items:c:ingots/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/metal_girder",
+    "output": "item:create:metal_girder",
+    "count": 8,
+    "grid": [
+      [
+        "tag:items:c:plates/iron",
+        "tag:items:c:plates/iron",
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/millstone",
+    "output": "item:create:millstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:cogwheel"
+      ],
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "tag:items:c:stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/mysterious_cuckoo_clock",
+    "output": "item:create:mysterious_cuckoo_clock",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:gunpowder",
+        ""
+      ],
+      [
+        "tag:items:c:gunpowder",
+        "item:create:cuckoo_clock",
+        "tag:items:c:gunpowder"
+      ],
+      [
+        "",
+        "tag:items:c:gunpowder",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/nozzle",
+    "output": "item:create:nozzle",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:create:andesite_alloy",
+        ""
+      ],
+      [
+        "",
+        "tag:items:minecraft:wool",
+        ""
+      ],
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/piston_extension_pole",
+    "output": "item:create:piston_extension_pole",
+    "count": 8,
+    "grid": [
+      [
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "item:create:andesite_alloy"
+      ],
+      [
+        "tag:items:minecraft:planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/propeller",
+    "output": "item:create:propeller",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:c:plates/iron",
+        ""
+      ],
+      [
+        "tag:items:c:plates/iron",
+        "item:create:andesite_alloy",
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "",
+        "tag:items:c:plates/iron",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/radial_chassis",
+    "output": "item:create:radial_chassis",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "tag:items:minecraft:logs",
+        ""
+      ],
+      [
+        "item:create:andesite_alloy",
+        "tag:items:minecraft:logs",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "",
+        "tag:items:minecraft:logs",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/rope_pulley",
+    "output": "item:create:rope_pulley",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_casing"
+      ],
+      [
+        "tag:items:minecraft:wool"
+      ],
+      [
+        "tag:items:c:plates/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/rotation_speed_controller",
+    "output": "item:create:rotation_speed_controller",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:precision_mechanism"
+      ],
+      [
+        "item:create:brass_casing"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/shaft",
+    "output": "item:create:shaft",
+    "count": 8,
+    "grid": [
+      [
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/smart_chute",
+    "output": "item:create:smart_chute",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/brass"
+      ],
+      [
+        "item:create:chute"
+      ],
+      [
+        "item:create:electron_tube"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/smart_fluid_pipe",
+    "output": "item:create:smart_fluid_pipe",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/brass"
+      ],
+      [
+        "item:create:fluid_pipe"
+      ],
+      [
+        "item:create:electron_tube"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/speedometer",
+    "output": "item:create:speedometer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:compass"
+      ],
+      [
+        "item:create:andesite_casing"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/spout",
+    "output": "item:create:spout",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:copper_casing"
+      ],
+      [
+        "item:minecraft:dried_kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/steam_engine",
+    "output": "item:create:steam_engine",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/gold"
+      ],
+      [
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:minecraft:copper_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/steam_whistle",
+    "output": "item:create:steam_whistle",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/gold"
+      ],
+      [
+        "item:minecraft:copper_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/sticker",
+    "output": "item:create:sticker",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "tag:items:c:slimeballs",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "tag:items:c:cobblestone",
+        "tag:items:c:dusts/redstone",
+        "tag:items:c:cobblestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/sticky_mechanical_piston",
+    "output": "item:create:sticky_mechanical_piston",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:slimeballs"
+      ],
+      [
+        "item:create:mechanical_piston"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/super_glue",
+    "output": "item:create:super_glue",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:slimeballs",
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "tag:items:c:nuggets/iron",
+        "tag:items:c:slimeballs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/turntable",
+    "output": "item:create:turntable",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "item:create:shaft"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/water_wheel",
+    "output": "item:create:water_wheel",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "tag:items:minecraft:wooden_slabs",
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "item:create:large_cogwheel",
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "tag:items:minecraft:wooden_slabs",
+        "tag:items:minecraft:wooden_slabs"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/weighted_ejector",
+    "output": "item:create:weighted_ejector",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/gold"
+      ],
+      [
+        "item:create:depot"
+      ],
+      [
+        "item:create:cogwheel"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/whisk",
+    "output": "item:create:whisk",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:create:andesite_alloy",
+        ""
+      ],
+      [
+        "tag:items:c:plates/iron",
+        "item:create:andesite_alloy",
+        "tag:items:c:plates/iron"
+      ],
+      [
+        "tag:items:c:plates/iron",
+        "tag:items:c:plates/iron",
+        "tag:items:c:plates/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/white_sail",
+    "output": "item:create:white_sail",
+    "count": 2,
+    "grid": [
+      [
+        "tag:items:minecraft:wool",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "item:create:andesite_alloy"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/windmill_bearing",
+    "output": "item:create:windmill_bearing",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "tag:items:c:stone"
+      ],
+      [
+        "item:create:shaft"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/wooden_bracket",
+    "output": "item:create:wooden_bracket",
+    "count": 4,
+    "grid": [
+      [
+        "tag:items:c:rods/wooden",
+        "tag:items:c:rods/wooden",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "tag:items:minecraft:planks",
+        "item:create:andesite_alloy",
+        "tag:items:minecraft:planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/kinetics/wrench",
+    "output": "item:create:wrench",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:plates/gold",
+        "tag:items:c:plates/gold"
+      ],
+      [
+        "tag:items:c:plates/gold",
+        "item:create:cogwheel"
+      ],
+      [
+        "",
+        "tag:items:c:rods/wooden"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/andesite_funnel",
+    "output": "item:create:andesite_funnel",
+    "count": 2,
+    "grid": [
+      [
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:minecraft:dried_kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/andesite_tunnel",
+    "output": "item:create:andesite_tunnel",
+    "count": 2,
+    "grid": [
+      [
+        "item:create:andesite_alloy",
+        "item:create:andesite_alloy"
+      ],
+      [
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/brass_funnel",
+    "output": "item:create:brass_funnel",
+    "count": 2,
+    "grid": [
+      [
+        "item:create:electron_tube"
+      ],
+      [
+        "tag:items:c:ingots/brass"
+      ],
+      [
+        "item:minecraft:dried_kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/brass_tunnel",
+    "output": "item:create:brass_tunnel",
+    "count": 2,
+    "grid": [
+      [
+        "item:create:electron_tube",
+        ""
+      ],
+      [
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass"
+      ],
+      [
+        "item:minecraft:dried_kelp",
+        "item:minecraft:dried_kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/content_observer",
+    "output": "item:create:content_observer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:comparator"
+      ],
+      [
+        "item:create:brass_casing"
+      ],
+      [
+        "item:create:electron_tube"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/display_link",
+    "output": "item:create:display_link",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:redstone_torch"
+      ],
+      [
+        "item:create:brass_casing"
+      ],
+      [
+        "tag:items:c:plates/copper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/powered_latch",
+    "output": "item:create:powered_latch",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:redstone_torch",
+        ""
+      ],
+      [
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:lever",
+        "tag:items:c:dusts/redstone"
+      ],
+      [
+        "tag:items:c:stone",
+        "tag:items:c:stone",
+        "tag:items:c:stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/powered_toggle_latch",
+    "output": "item:create:powered_toggle_latch",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:redstone_torch",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:lever",
+        ""
+      ],
+      [
+        "tag:items:c:stone",
+        "tag:items:c:stone",
+        "tag:items:c:stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/pulse_extender",
+    "output": "item:create:pulse_extender",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:redstone_torch"
+      ],
+      [
+        "tag:items:c:dusts/redstone",
+        "tag:items:c:plates/brass",
+        "item:minecraft:redstone_torch"
+      ],
+      [
+        "tag:items:c:stone",
+        "tag:items:c:stone",
+        "tag:items:c:stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/pulse_repeater",
+    "output": "item:create:pulse_repeater",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:dusts/redstone",
+        "tag:items:c:plates/brass",
+        "item:minecraft:redstone_torch"
+      ],
+      [
+        "tag:items:c:stone",
+        "tag:items:c:stone",
+        "tag:items:c:stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/redstone_contact",
+    "output": "item:create:redstone_contact",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "tag:items:c:plates/iron",
+        ""
+      ],
+      [
+        "item:minecraft:cobblestone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:cobblestone"
+      ],
+      [
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/logistics/redstone_link",
+    "output": "item:create:redstone_link",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:redstone_torch"
+      ],
+      [
+        "item:create:brass_casing"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/andesite_alloy",
+    "output": "item:create:andesite_alloy",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/iron",
+        "item:minecraft:andesite"
+      ],
+      [
+        "item:minecraft:andesite",
+        "tag:items:c:nuggets/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/andesite_alloy_from_zinc",
+    "output": "item:create:andesite_alloy",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/zinc",
+        "item:minecraft:andesite"
+      ],
+      [
+        "item:minecraft:andesite",
+        "tag:items:c:nuggets/zinc"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/brass_block_from_compacting",
+    "output": "item:create:brass_block",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass"
+      ],
+      [
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass"
+      ],
+      [
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass",
+        "tag:items:c:ingots/brass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/brass_ingot_from_compacting",
+    "output": "item:create:brass_ingot",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass"
+      ],
+      [
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass"
+      ],
+      [
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass",
+        "tag:items:c:nuggets/brass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/copper_ingot",
+    "output": "item:minecraft:copper_ingot",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/copper",
+        "tag:items:c:nuggets/copper",
+        "tag:items:c:nuggets/copper"
+      ],
+      [
+        "tag:items:c:nuggets/copper",
+        "tag:items:c:nuggets/copper",
+        "tag:items:c:nuggets/copper"
+      ],
+      [
+        "tag:items:c:nuggets/copper",
+        "tag:items:c:nuggets/copper",
+        "tag:items:c:nuggets/copper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/electron_tube",
+    "output": "item:create:electron_tube",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:polished_rose_quartz"
+      ],
+      [
+        "tag:items:c:plates/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/raw_zinc_block",
+    "output": "item:create:raw_zinc_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:create:raw_zinc",
+        "item:create:raw_zinc",
+        "item:create:raw_zinc"
+      ],
+      [
+        "item:create:raw_zinc",
+        "item:create:raw_zinc",
+        "item:create:raw_zinc"
+      ],
+      [
+        "item:create:raw_zinc",
+        "item:create:raw_zinc",
+        "item:create:raw_zinc"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/zinc_block_from_compacting",
+    "output": "item:create:zinc_block",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:ingots/zinc",
+        "tag:items:c:ingots/zinc",
+        "tag:items:c:ingots/zinc"
+      ],
+      [
+        "tag:items:c:ingots/zinc",
+        "tag:items:c:ingots/zinc",
+        "tag:items:c:ingots/zinc"
+      ],
+      [
+        "tag:items:c:ingots/zinc",
+        "tag:items:c:ingots/zinc",
+        "tag:items:c:ingots/zinc"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/materials/zinc_ingot_from_compacting",
+    "output": "item:create:zinc_ingot",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:nuggets/zinc",
+        "tag:items:c:nuggets/zinc",
+        "tag:items:c:nuggets/zinc"
+      ],
+      [
+        "tag:items:c:nuggets/zinc",
+        "tag:items:c:nuggets/zinc",
+        "tag:items:c:nuggets/zinc"
+      ],
+      [
+        "tag:items:c:nuggets/zinc",
+        "tag:items:c:nuggets/zinc",
+        "tag:items:c:nuggets/zinc"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/palettes/scorchia",
+    "output": "item:create:scorchia",
+    "count": 8,
+    "grid": [
+      [
+        "item:create:scoria",
+        "item:create:scoria",
+        "item:create:scoria"
+      ],
+      [
+        "item:create:scoria",
+        "tag:items:c:black_dyes",
+        "item:create:scoria"
+      ],
+      [
+        "item:create:scoria",
+        "item:create:scoria",
+        "item:create:scoria"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/schematics/schematic_table",
+    "output": "item:create:schematic_table",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "tag:items:minecraft:wooden_slabs",
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "",
+        "item:minecraft:smooth_stone",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:smooth_stone",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/schematics/schematicannon",
+    "output": "item:create:schematicannon",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:iron_block",
+        ""
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "item:minecraft:iron_block",
+        "tag:items:minecraft:logs"
+      ],
+      [
+        "item:minecraft:smooth_stone",
+        "item:minecraft:dispenser",
+        "item:minecraft:smooth_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crimson_window",
+    "output": "item:create:crimson_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:crimson_planks",
+        ""
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crimson_window_pane",
+    "output": "item:create:crimson_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:crimson_window",
+        "item:create:crimson_window",
+        "item:create:crimson_window"
+      ],
+      [
+        "item:create:crimson_window",
+        "item:create:crimson_window",
+        "item:create:crimson_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_andesite_brick_slab",
+    "output": "item:create:cut_andesite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_andesite_brick_stairs",
+    "output": "item:create:cut_andesite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_andesite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_andesite_brick_wall",
+    "output": "item:create:cut_andesite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks"
+      ],
+      [
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks",
+        "item:create:cut_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_andesite_slab",
+    "output": "item:create:cut_andesite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_andesite",
+        "item:create:cut_andesite",
+        "item:create:cut_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_andesite_stairs",
+    "output": "item:create:cut_andesite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_andesite",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_andesite",
+        "item:create:cut_andesite",
+        ""
+      ],
+      [
+        "item:create:cut_andesite",
+        "item:create:cut_andesite",
+        "item:create:cut_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_andesite_wall",
+    "output": "item:create:cut_andesite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_andesite",
+        "item:create:cut_andesite",
+        "item:create:cut_andesite"
+      ],
+      [
+        "item:create:cut_andesite",
+        "item:create:cut_andesite",
+        "item:create:cut_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_asurine_brick_slab",
+    "output": "item:create:cut_asurine_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_asurine_brick_stairs",
+    "output": "item:create:cut_asurine_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_asurine_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_asurine_brick_wall",
+    "output": "item:create:cut_asurine_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks"
+      ],
+      [
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks",
+        "item:create:cut_asurine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_asurine_slab",
+    "output": "item:create:cut_asurine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_asurine",
+        "item:create:cut_asurine",
+        "item:create:cut_asurine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_asurine_stairs",
+    "output": "item:create:cut_asurine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_asurine",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_asurine",
+        "item:create:cut_asurine",
+        ""
+      ],
+      [
+        "item:create:cut_asurine",
+        "item:create:cut_asurine",
+        "item:create:cut_asurine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_asurine_wall",
+    "output": "item:create:cut_asurine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_asurine",
+        "item:create:cut_asurine",
+        "item:create:cut_asurine"
+      ],
+      [
+        "item:create:cut_asurine",
+        "item:create:cut_asurine",
+        "item:create:cut_asurine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_calcite_brick_slab",
+    "output": "item:create:cut_calcite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_calcite_brick_stairs",
+    "output": "item:create:cut_calcite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_calcite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_calcite_brick_wall",
+    "output": "item:create:cut_calcite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks"
+      ],
+      [
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks",
+        "item:create:cut_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_calcite_slab",
+    "output": "item:create:cut_calcite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_calcite",
+        "item:create:cut_calcite",
+        "item:create:cut_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_calcite_stairs",
+    "output": "item:create:cut_calcite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_calcite",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_calcite",
+        "item:create:cut_calcite",
+        ""
+      ],
+      [
+        "item:create:cut_calcite",
+        "item:create:cut_calcite",
+        "item:create:cut_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_calcite_wall",
+    "output": "item:create:cut_calcite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_calcite",
+        "item:create:cut_calcite",
+        "item:create:cut_calcite"
+      ],
+      [
+        "item:create:cut_calcite",
+        "item:create:cut_calcite",
+        "item:create:cut_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_crimsite_brick_slab",
+    "output": "item:create:cut_crimsite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_crimsite_brick_stairs",
+    "output": "item:create:cut_crimsite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_crimsite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_crimsite_brick_wall",
+    "output": "item:create:cut_crimsite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks"
+      ],
+      [
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks",
+        "item:create:cut_crimsite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_crimsite_slab",
+    "output": "item:create:cut_crimsite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_crimsite_stairs",
+    "output": "item:create:cut_crimsite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_crimsite",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite",
+        ""
+      ],
+      [
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_crimsite_wall",
+    "output": "item:create:cut_crimsite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite"
+      ],
+      [
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite",
+        "item:create:cut_crimsite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_deepslate_brick_slab",
+    "output": "item:create:cut_deepslate_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_deepslate_brick_stairs",
+    "output": "item:create:cut_deepslate_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_deepslate_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_deepslate_brick_wall",
+    "output": "item:create:cut_deepslate_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks"
+      ],
+      [
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks",
+        "item:create:cut_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_deepslate_slab",
+    "output": "item:create:cut_deepslate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_deepslate_stairs",
+    "output": "item:create:cut_deepslate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_deepslate",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate",
+        ""
+      ],
+      [
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_deepslate_wall",
+    "output": "item:create:cut_deepslate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate"
+      ],
+      [
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate",
+        "item:create:cut_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_diorite_brick_slab",
+    "output": "item:create:cut_diorite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_diorite_brick_stairs",
+    "output": "item:create:cut_diorite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_diorite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_diorite_brick_wall",
+    "output": "item:create:cut_diorite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks"
+      ],
+      [
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks",
+        "item:create:cut_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_diorite_slab",
+    "output": "item:create:cut_diorite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_diorite",
+        "item:create:cut_diorite",
+        "item:create:cut_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_diorite_stairs",
+    "output": "item:create:cut_diorite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_diorite",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_diorite",
+        "item:create:cut_diorite",
+        ""
+      ],
+      [
+        "item:create:cut_diorite",
+        "item:create:cut_diorite",
+        "item:create:cut_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_diorite_wall",
+    "output": "item:create:cut_diorite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_diorite",
+        "item:create:cut_diorite",
+        "item:create:cut_diorite"
+      ],
+      [
+        "item:create:cut_diorite",
+        "item:create:cut_diorite",
+        "item:create:cut_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_dripstone_brick_slab",
+    "output": "item:create:cut_dripstone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_dripstone_brick_stairs",
+    "output": "item:create:cut_dripstone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_dripstone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_dripstone_brick_wall",
+    "output": "item:create:cut_dripstone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks"
+      ],
+      [
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks",
+        "item:create:cut_dripstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_dripstone_slab",
+    "output": "item:create:cut_dripstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_dripstone_stairs",
+    "output": "item:create:cut_dripstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_dripstone",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone",
+        ""
+      ],
+      [
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_dripstone_wall",
+    "output": "item:create:cut_dripstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone"
+      ],
+      [
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone",
+        "item:create:cut_dripstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_granite_brick_slab",
+    "output": "item:create:cut_granite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_granite_brick_stairs",
+    "output": "item:create:cut_granite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_granite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_granite_brick_wall",
+    "output": "item:create:cut_granite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks"
+      ],
+      [
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks",
+        "item:create:cut_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_granite_slab",
+    "output": "item:create:cut_granite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_granite",
+        "item:create:cut_granite",
+        "item:create:cut_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_granite_stairs",
+    "output": "item:create:cut_granite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_granite",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_granite",
+        "item:create:cut_granite",
+        ""
+      ],
+      [
+        "item:create:cut_granite",
+        "item:create:cut_granite",
+        "item:create:cut_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_granite_wall",
+    "output": "item:create:cut_granite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_granite",
+        "item:create:cut_granite",
+        "item:create:cut_granite"
+      ],
+      [
+        "item:create:cut_granite",
+        "item:create:cut_granite",
+        "item:create:cut_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_limestone_brick_slab",
+    "output": "item:create:cut_limestone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_limestone_brick_stairs",
+    "output": "item:create:cut_limestone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_limestone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_limestone_brick_wall",
+    "output": "item:create:cut_limestone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks"
+      ],
+      [
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks",
+        "item:create:cut_limestone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_limestone_slab",
+    "output": "item:create:cut_limestone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_limestone",
+        "item:create:cut_limestone",
+        "item:create:cut_limestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_limestone_stairs",
+    "output": "item:create:cut_limestone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_limestone",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_limestone",
+        "item:create:cut_limestone",
+        ""
+      ],
+      [
+        "item:create:cut_limestone",
+        "item:create:cut_limestone",
+        "item:create:cut_limestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_limestone_wall",
+    "output": "item:create:cut_limestone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_limestone",
+        "item:create:cut_limestone",
+        "item:create:cut_limestone"
+      ],
+      [
+        "item:create:cut_limestone",
+        "item:create:cut_limestone",
+        "item:create:cut_limestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_ochrum_brick_slab",
+    "output": "item:create:cut_ochrum_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_ochrum_brick_stairs",
+    "output": "item:create:cut_ochrum_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_ochrum_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_ochrum_brick_wall",
+    "output": "item:create:cut_ochrum_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks"
+      ],
+      [
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks",
+        "item:create:cut_ochrum_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_ochrum_slab",
+    "output": "item:create:cut_ochrum_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_ochrum_stairs",
+    "output": "item:create:cut_ochrum_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_ochrum",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum",
+        ""
+      ],
+      [
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_ochrum_wall",
+    "output": "item:create:cut_ochrum_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum"
+      ],
+      [
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum",
+        "item:create:cut_ochrum"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scorchia_brick_slab",
+    "output": "item:create:cut_scorchia_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scorchia_brick_stairs",
+    "output": "item:create:cut_scorchia_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_scorchia_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scorchia_brick_wall",
+    "output": "item:create:cut_scorchia_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks"
+      ],
+      [
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks",
+        "item:create:cut_scorchia_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scorchia_slab",
+    "output": "item:create:cut_scorchia_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scorchia_stairs",
+    "output": "item:create:cut_scorchia_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_scorchia",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia",
+        ""
+      ],
+      [
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scorchia_wall",
+    "output": "item:create:cut_scorchia_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia"
+      ],
+      [
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia",
+        "item:create:cut_scorchia"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scoria_brick_slab",
+    "output": "item:create:cut_scoria_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scoria_brick_stairs",
+    "output": "item:create:cut_scoria_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_scoria_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scoria_brick_wall",
+    "output": "item:create:cut_scoria_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks"
+      ],
+      [
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks",
+        "item:create:cut_scoria_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scoria_slab",
+    "output": "item:create:cut_scoria_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scoria",
+        "item:create:cut_scoria",
+        "item:create:cut_scoria"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scoria_stairs",
+    "output": "item:create:cut_scoria_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_scoria",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_scoria",
+        "item:create:cut_scoria",
+        ""
+      ],
+      [
+        "item:create:cut_scoria",
+        "item:create:cut_scoria",
+        "item:create:cut_scoria"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_scoria_wall",
+    "output": "item:create:cut_scoria_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_scoria",
+        "item:create:cut_scoria",
+        "item:create:cut_scoria"
+      ],
+      [
+        "item:create:cut_scoria",
+        "item:create:cut_scoria",
+        "item:create:cut_scoria"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_tuff_brick_slab",
+    "output": "item:create:cut_tuff_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_tuff_brick_stairs",
+    "output": "item:create:cut_tuff_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_tuff_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_tuff_brick_wall",
+    "output": "item:create:cut_tuff_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks"
+      ],
+      [
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks",
+        "item:create:cut_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_tuff_slab",
+    "output": "item:create:cut_tuff_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_tuff",
+        "item:create:cut_tuff",
+        "item:create:cut_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_tuff_stairs",
+    "output": "item:create:cut_tuff_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_tuff",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_tuff",
+        "item:create:cut_tuff",
+        ""
+      ],
+      [
+        "item:create:cut_tuff",
+        "item:create:cut_tuff",
+        "item:create:cut_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_tuff_wall",
+    "output": "item:create:cut_tuff_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_tuff",
+        "item:create:cut_tuff",
+        "item:create:cut_tuff"
+      ],
+      [
+        "item:create:cut_tuff",
+        "item:create:cut_tuff",
+        "item:create:cut_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_veridium_brick_slab",
+    "output": "item:create:cut_veridium_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_veridium_brick_stairs",
+    "output": "item:create:cut_veridium_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_veridium_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks",
+        ""
+      ],
+      [
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_veridium_brick_wall",
+    "output": "item:create:cut_veridium_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks"
+      ],
+      [
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks",
+        "item:create:cut_veridium_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_veridium_slab",
+    "output": "item:create:cut_veridium_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_veridium",
+        "item:create:cut_veridium",
+        "item:create:cut_veridium"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_veridium_stairs",
+    "output": "item:create:cut_veridium_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:cut_veridium",
+        "",
+        ""
+      ],
+      [
+        "item:create:cut_veridium",
+        "item:create:cut_veridium",
+        ""
+      ],
+      [
+        "item:create:cut_veridium",
+        "item:create:cut_veridium",
+        "item:create:cut_veridium"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:cut_veridium_wall",
+    "output": "item:create:cut_veridium_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:cut_veridium",
+        "item:create:cut_veridium",
+        "item:create:cut_veridium"
+      ],
+      [
+        "item:create:cut_veridium",
+        "item:create:cut_veridium",
+        "item:create:cut_veridium"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:dark_oak_window",
+    "output": "item:create:dark_oak_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:dark_oak_planks",
+        ""
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:dark_oak_window_pane",
+    "output": "item:create:dark_oak_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:dark_oak_window",
+        "item:create:dark_oak_window",
+        "item:create:dark_oak_window"
+      ],
+      [
+        "item:create:dark_oak_window",
+        "item:create:dark_oak_window",
+        "item:create:dark_oak_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:exposed_copper_shingle_slab",
+    "output": "item:create:exposed_copper_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:exposed_copper_shingles",
+        "item:create:exposed_copper_shingles",
+        "item:create:exposed_copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:exposed_copper_shingle_stairs",
+    "output": "item:create:exposed_copper_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:exposed_copper_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:create:exposed_copper_shingles",
+        "item:create:exposed_copper_shingles",
+        ""
+      ],
+      [
+        "item:create:exposed_copper_shingles",
+        "item:create:exposed_copper_shingles",
+        "item:create:exposed_copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:exposed_copper_tile_slab",
+    "output": "item:create:exposed_copper_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:exposed_copper_tiles",
+        "item:create:exposed_copper_tiles",
+        "item:create:exposed_copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:exposed_copper_tile_stairs",
+    "output": "item:create:exposed_copper_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:exposed_copper_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:create:exposed_copper_tiles",
+        "item:create:exposed_copper_tiles",
+        ""
+      ],
+      [
+        "item:create:exposed_copper_tiles",
+        "item:create:exposed_copper_tiles",
+        "item:create:exposed_copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:framed_glass_pane",
+    "output": "item:create:framed_glass_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:framed_glass",
+        "item:create:framed_glass",
+        "item:create:framed_glass"
+      ],
+      [
+        "item:create:framed_glass",
+        "item:create:framed_glass",
+        "item:create:framed_glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:horizontal_framed_glass_pane",
+    "output": "item:create:horizontal_framed_glass_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:horizontal_framed_glass",
+        "item:create:horizontal_framed_glass",
+        "item:create:horizontal_framed_glass"
+      ],
+      [
+        "item:create:horizontal_framed_glass",
+        "item:create:horizontal_framed_glass",
+        "item:create:horizontal_framed_glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:jungle_window",
+    "output": "item:create:jungle_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:jungle_planks",
+        ""
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:jungle_window_pane",
+    "output": "item:create:jungle_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:jungle_window",
+        "item:create:jungle_window",
+        "item:create:jungle_window"
+      ],
+      [
+        "item:create:jungle_window",
+        "item:create:jungle_window",
+        "item:create:jungle_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:oak_window",
+    "output": "item:create:oak_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:oak_planks",
+        ""
+      ],
+      [
+        "item:minecraft:oak_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:oak_window_pane",
+    "output": "item:create:oak_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:oak_window",
+        "item:create:oak_window",
+        "item:create:oak_window"
+      ],
+      [
+        "item:create:oak_window",
+        "item:create:oak_window",
+        "item:create:oak_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:ornate_iron_window",
+    "output": "item:create:ornate_iron_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:iron_nugget"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:ornate_iron_window_pane",
+    "output": "item:create:ornate_iron_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:ornate_iron_window",
+        "item:create:ornate_iron_window",
+        "item:create:ornate_iron_window"
+      ],
+      [
+        "item:create:ornate_iron_window",
+        "item:create:ornate_iron_window",
+        "item:create:ornate_iron_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:oxidized_copper_shingle_slab",
+    "output": "item:create:oxidized_copper_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:oxidized_copper_shingles",
+        "item:create:oxidized_copper_shingles",
+        "item:create:oxidized_copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:oxidized_copper_shingle_stairs",
+    "output": "item:create:oxidized_copper_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:oxidized_copper_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:create:oxidized_copper_shingles",
+        "item:create:oxidized_copper_shingles",
+        ""
+      ],
+      [
+        "item:create:oxidized_copper_shingles",
+        "item:create:oxidized_copper_shingles",
+        "item:create:oxidized_copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:oxidized_copper_tile_slab",
+    "output": "item:create:oxidized_copper_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:oxidized_copper_tiles",
+        "item:create:oxidized_copper_tiles",
+        "item:create:oxidized_copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:oxidized_copper_tile_stairs",
+    "output": "item:create:oxidized_copper_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:oxidized_copper_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:create:oxidized_copper_tiles",
+        "item:create:oxidized_copper_tiles",
+        ""
+      ],
+      [
+        "item:create:oxidized_copper_tiles",
+        "item:create:oxidized_copper_tiles",
+        "item:create:oxidized_copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_andesite_slab",
+    "output": "item:create:polished_cut_andesite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_andesite_stairs",
+    "output": "item:create:polished_cut_andesite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_andesite",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite",
+        ""
+      ],
+      [
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_andesite_wall",
+    "output": "item:create:polished_cut_andesite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite"
+      ],
+      [
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite",
+        "item:create:polished_cut_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_asurine_slab",
+    "output": "item:create:polished_cut_asurine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_asurine_stairs",
+    "output": "item:create:polished_cut_asurine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_asurine",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine",
+        ""
+      ],
+      [
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_asurine_wall",
+    "output": "item:create:polished_cut_asurine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine"
+      ],
+      [
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine",
+        "item:create:polished_cut_asurine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_calcite_slab",
+    "output": "item:create:polished_cut_calcite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_calcite_stairs",
+    "output": "item:create:polished_cut_calcite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_calcite",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite",
+        ""
+      ],
+      [
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_calcite_wall",
+    "output": "item:create:polished_cut_calcite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite"
+      ],
+      [
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite",
+        "item:create:polished_cut_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_crimsite_slab",
+    "output": "item:create:polished_cut_crimsite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_crimsite_stairs",
+    "output": "item:create:polished_cut_crimsite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_crimsite",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite",
+        ""
+      ],
+      [
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_crimsite_wall",
+    "output": "item:create:polished_cut_crimsite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite"
+      ],
+      [
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite",
+        "item:create:polished_cut_crimsite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_deepslate_slab",
+    "output": "item:create:polished_cut_deepslate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_deepslate_stairs",
+    "output": "item:create:polished_cut_deepslate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_deepslate",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate",
+        ""
+      ],
+      [
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_deepslate_wall",
+    "output": "item:create:polished_cut_deepslate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate"
+      ],
+      [
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate",
+        "item:create:polished_cut_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_diorite_slab",
+    "output": "item:create:polished_cut_diorite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_diorite_stairs",
+    "output": "item:create:polished_cut_diorite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_diorite",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite",
+        ""
+      ],
+      [
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_diorite_wall",
+    "output": "item:create:polished_cut_diorite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite"
+      ],
+      [
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite",
+        "item:create:polished_cut_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_dripstone_slab",
+    "output": "item:create:polished_cut_dripstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_dripstone_stairs",
+    "output": "item:create:polished_cut_dripstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_dripstone",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone",
+        ""
+      ],
+      [
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_dripstone_wall",
+    "output": "item:create:polished_cut_dripstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone"
+      ],
+      [
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone",
+        "item:create:polished_cut_dripstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_granite_slab",
+    "output": "item:create:polished_cut_granite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_granite_stairs",
+    "output": "item:create:polished_cut_granite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_granite",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite",
+        ""
+      ],
+      [
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_granite_wall",
+    "output": "item:create:polished_cut_granite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite"
+      ],
+      [
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite",
+        "item:create:polished_cut_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_limestone_slab",
+    "output": "item:create:polished_cut_limestone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_limestone_stairs",
+    "output": "item:create:polished_cut_limestone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_limestone",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone",
+        ""
+      ],
+      [
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_limestone_wall",
+    "output": "item:create:polished_cut_limestone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone"
+      ],
+      [
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone",
+        "item:create:polished_cut_limestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_ochrum_slab",
+    "output": "item:create:polished_cut_ochrum_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_ochrum_stairs",
+    "output": "item:create:polished_cut_ochrum_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_ochrum",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum",
+        ""
+      ],
+      [
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_ochrum_wall",
+    "output": "item:create:polished_cut_ochrum_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum"
+      ],
+      [
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum",
+        "item:create:polished_cut_ochrum"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_scorchia_slab",
+    "output": "item:create:polished_cut_scorchia_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_scorchia_stairs",
+    "output": "item:create:polished_cut_scorchia_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_scorchia",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia",
+        ""
+      ],
+      [
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_scorchia_wall",
+    "output": "item:create:polished_cut_scorchia_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia"
+      ],
+      [
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia",
+        "item:create:polished_cut_scorchia"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_scoria_slab",
+    "output": "item:create:polished_cut_scoria_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_scoria_stairs",
+    "output": "item:create:polished_cut_scoria_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_scoria",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria",
+        ""
+      ],
+      [
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_scoria_wall",
+    "output": "item:create:polished_cut_scoria_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria"
+      ],
+      [
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria",
+        "item:create:polished_cut_scoria"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_tuff_slab",
+    "output": "item:create:polished_cut_tuff_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_tuff_stairs",
+    "output": "item:create:polished_cut_tuff_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_tuff",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff",
+        ""
+      ],
+      [
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_tuff_wall",
+    "output": "item:create:polished_cut_tuff_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff"
+      ],
+      [
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff",
+        "item:create:polished_cut_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_veridium_slab",
+    "output": "item:create:polished_cut_veridium_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_veridium_stairs",
+    "output": "item:create:polished_cut_veridium_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:polished_cut_veridium",
+        "",
+        ""
+      ],
+      [
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium",
+        ""
+      ],
+      [
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:polished_cut_veridium_wall",
+    "output": "item:create:polished_cut_veridium_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium"
+      ],
+      [
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium",
+        "item:create:polished_cut_veridium"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_andesite_brick_slab",
+    "output": "item:create:small_andesite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_andesite_brick_stairs",
+    "output": "item:create:small_andesite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_andesite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks",
+        ""
+      ],
+      [
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_andesite_brick_wall",
+    "output": "item:create:small_andesite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks"
+      ],
+      [
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks",
+        "item:create:small_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_asurine_brick_slab",
+    "output": "item:create:small_asurine_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_asurine_brick_stairs",
+    "output": "item:create:small_asurine_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_asurine_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks",
+        ""
+      ],
+      [
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_asurine_brick_wall",
+    "output": "item:create:small_asurine_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks"
+      ],
+      [
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks",
+        "item:create:small_asurine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_calcite_brick_slab",
+    "output": "item:create:small_calcite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_calcite_brick_stairs",
+    "output": "item:create:small_calcite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_calcite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks",
+        ""
+      ],
+      [
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_calcite_brick_wall",
+    "output": "item:create:small_calcite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks"
+      ],
+      [
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks",
+        "item:create:small_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_crimsite_brick_slab",
+    "output": "item:create:small_crimsite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_crimsite_brick_stairs",
+    "output": "item:create:small_crimsite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_crimsite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks",
+        ""
+      ],
+      [
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_crimsite_brick_wall",
+    "output": "item:create:small_crimsite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks"
+      ],
+      [
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks",
+        "item:create:small_crimsite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_deepslate_brick_slab",
+    "output": "item:create:small_deepslate_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_deepslate_brick_stairs",
+    "output": "item:create:small_deepslate_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_deepslate_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks",
+        ""
+      ],
+      [
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_deepslate_brick_wall",
+    "output": "item:create:small_deepslate_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks"
+      ],
+      [
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks",
+        "item:create:small_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_diorite_brick_slab",
+    "output": "item:create:small_diorite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_diorite_brick_stairs",
+    "output": "item:create:small_diorite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_diorite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks",
+        ""
+      ],
+      [
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_diorite_brick_wall",
+    "output": "item:create:small_diorite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks"
+      ],
+      [
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks",
+        "item:create:small_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_dripstone_brick_slab",
+    "output": "item:create:small_dripstone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_dripstone_brick_stairs",
+    "output": "item:create:small_dripstone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_dripstone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks",
+        ""
+      ],
+      [
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_dripstone_brick_wall",
+    "output": "item:create:small_dripstone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks"
+      ],
+      [
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks",
+        "item:create:small_dripstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_granite_brick_slab",
+    "output": "item:create:small_granite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_granite_brick_stairs",
+    "output": "item:create:small_granite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_granite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks",
+        ""
+      ],
+      [
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_granite_brick_wall",
+    "output": "item:create:small_granite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks"
+      ],
+      [
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks",
+        "item:create:small_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_limestone_brick_slab",
+    "output": "item:create:small_limestone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_limestone_brick_stairs",
+    "output": "item:create:small_limestone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_limestone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks",
+        ""
+      ],
+      [
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_limestone_brick_wall",
+    "output": "item:create:small_limestone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks"
+      ],
+      [
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks",
+        "item:create:small_limestone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_ochrum_brick_slab",
+    "output": "item:create:small_ochrum_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_ochrum_brick_stairs",
+    "output": "item:create:small_ochrum_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_ochrum_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks",
+        ""
+      ],
+      [
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_ochrum_brick_wall",
+    "output": "item:create:small_ochrum_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks"
+      ],
+      [
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks",
+        "item:create:small_ochrum_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_scorchia_brick_slab",
+    "output": "item:create:small_scorchia_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_scorchia_brick_stairs",
+    "output": "item:create:small_scorchia_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_scorchia_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks",
+        ""
+      ],
+      [
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_scorchia_brick_wall",
+    "output": "item:create:small_scorchia_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks"
+      ],
+      [
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks",
+        "item:create:small_scorchia_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_scoria_brick_slab",
+    "output": "item:create:small_scoria_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_scoria_brick_stairs",
+    "output": "item:create:small_scoria_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_scoria_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks",
+        ""
+      ],
+      [
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_scoria_brick_wall",
+    "output": "item:create:small_scoria_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks"
+      ],
+      [
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks",
+        "item:create:small_scoria_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_tuff_brick_slab",
+    "output": "item:create:small_tuff_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_tuff_brick_stairs",
+    "output": "item:create:small_tuff_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_tuff_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks",
+        ""
+      ],
+      [
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_tuff_brick_wall",
+    "output": "item:create:small_tuff_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks"
+      ],
+      [
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks",
+        "item:create:small_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_veridium_brick_slab",
+    "output": "item:create:small_veridium_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_veridium_brick_stairs",
+    "output": "item:create:small_veridium_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:small_veridium_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks",
+        ""
+      ],
+      [
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:small_veridium_brick_wall",
+    "output": "item:create:small_veridium_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks"
+      ],
+      [
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks",
+        "item:create:small_veridium_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:spruce_window",
+    "output": "item:create:spruce_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_planks",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:spruce_window_pane",
+    "output": "item:create:spruce_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:spruce_window",
+        "item:create:spruce_window",
+        "item:create:spruce_window"
+      ],
+      [
+        "item:create:spruce_window",
+        "item:create:spruce_window",
+        "item:create:spruce_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:tiled_glass_pane",
+    "output": "item:create:tiled_glass_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:tiled_glass",
+        "item:create:tiled_glass",
+        "item:create:tiled_glass"
+      ],
+      [
+        "item:create:tiled_glass",
+        "item:create:tiled_glass",
+        "item:create:tiled_glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:vertical_framed_glass_pane",
+    "output": "item:create:vertical_framed_glass_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:vertical_framed_glass",
+        "item:create:vertical_framed_glass",
+        "item:create:vertical_framed_glass"
+      ],
+      [
+        "item:create:vertical_framed_glass",
+        "item:create:vertical_framed_glass",
+        "item:create:vertical_framed_glass"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:warped_window",
+    "output": "item:create:warped_window",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:warped_planks",
+        ""
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "tag:items:c:glass/colorless",
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:warped_window_pane",
+    "output": "item:create:warped_window_pane",
+    "count": 16,
+    "grid": [
+      [
+        "item:create:warped_window",
+        "item:create:warped_window",
+        "item:create:warped_window"
+      ],
+      [
+        "item:create:warped_window",
+        "item:create:warped_window",
+        "item:create:warped_window"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:weathered_copper_shingle_slab",
+    "output": "item:create:weathered_copper_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:weathered_copper_shingles",
+        "item:create:weathered_copper_shingles",
+        "item:create:weathered_copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:weathered_copper_shingle_stairs",
+    "output": "item:create:weathered_copper_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:weathered_copper_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:create:weathered_copper_shingles",
+        "item:create:weathered_copper_shingles",
+        ""
+      ],
+      [
+        "item:create:weathered_copper_shingles",
+        "item:create:weathered_copper_shingles",
+        "item:create:weathered_copper_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:weathered_copper_tile_slab",
+    "output": "item:create:weathered_copper_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:create:weathered_copper_tiles",
+        "item:create:weathered_copper_tiles",
+        "item:create:weathered_copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:weathered_copper_tile_stairs",
+    "output": "item:create:weathered_copper_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:create:weathered_copper_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:create:weathered_copper_tiles",
+        "item:create:weathered_copper_tiles",
+        ""
+      ],
+      [
+        "item:create:weathered_copper_tiles",
+        "item:create:weathered_copper_tiles",
+        "item:create:weathered_copper_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "create:crafting/appliances/crafting_blueprint",
+    "output": "item:create:crafting_blueprint",
+    "count": 1,
+    "grid": [
+      "item:minecraft:painting",
+      "item:minecraft:crafting_table"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/appliances/dough",
+    "output": "item:create:dough",
+    "count": 1,
+    "grid": [
+      "tag:items:c:flour/wheat",
+      "item:minecraft:water_bucket"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/appliances/slime_ball",
+    "output": "item:minecraft:slime_ball",
+    "count": 1,
+    "grid": [
+      "item:create:dough",
+      "tag:items:c:lime_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/appliances/tree_fertilizer",
+    "output": "item:create:tree_fertilizer",
+    "count": 2,
+    "grid": [
+      "tag:items:minecraft:small_flowers",
+      "tag:items:minecraft:small_flowers",
+      "item:minecraft:horn_coral|item:minecraft:brain_coral|item:minecraft:tube_coral|item:minecraft:bubble_coral|item:minecraft:fire_coral",
+      "item:minecraft:bone_meal"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_copper_shingle_slab_from_honeycomb",
+    "output": "item:create:waxed_copper_shingle_slab",
+    "count": 1,
+    "grid": [
+      "item:create:copper_shingle_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_copper_shingle_stairs_from_honeycomb",
+    "output": "item:create:waxed_copper_shingle_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:copper_shingle_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_copper_shingles_from_honeycomb",
+    "output": "item:create:waxed_copper_shingles",
+    "count": 1,
+    "grid": [
+      "item:create:copper_shingles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_copper_tile_slab_from_honeycomb",
+    "output": "item:create:waxed_copper_tile_slab",
+    "count": 1,
+    "grid": [
+      "item:create:copper_tile_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_copper_tile_stairs_from_honeycomb",
+    "output": "item:create:waxed_copper_tile_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:copper_tile_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_copper_tiles_from_honeycomb",
+    "output": "item:create:waxed_copper_tiles",
+    "count": 1,
+    "grid": [
+      "item:create:copper_tiles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_exposed_copper_shingle_slab_from_honeycomb",
+    "output": "item:create:waxed_exposed_copper_shingle_slab",
+    "count": 1,
+    "grid": [
+      "item:create:exposed_copper_shingle_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_exposed_copper_shingle_stairs_from_honeycomb",
+    "output": "item:create:waxed_exposed_copper_shingle_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:exposed_copper_shingle_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_exposed_copper_shingles_from_honeycomb",
+    "output": "item:create:waxed_exposed_copper_shingles",
+    "count": 1,
+    "grid": [
+      "item:create:exposed_copper_shingles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_exposed_copper_tile_slab_from_honeycomb",
+    "output": "item:create:waxed_exposed_copper_tile_slab",
+    "count": 1,
+    "grid": [
+      "item:create:exposed_copper_tile_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_exposed_copper_tile_stairs_from_honeycomb",
+    "output": "item:create:waxed_exposed_copper_tile_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:exposed_copper_tile_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_exposed_copper_tiles_from_honeycomb",
+    "output": "item:create:waxed_exposed_copper_tiles",
+    "count": 1,
+    "grid": [
+      "item:create:exposed_copper_tiles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_oxidized_copper_shingle_slab_from_honeycomb",
+    "output": "item:create:waxed_oxidized_copper_shingle_slab",
+    "count": 1,
+    "grid": [
+      "item:create:oxidized_copper_shingle_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_oxidized_copper_shingle_stairs_from_honeycomb",
+    "output": "item:create:waxed_oxidized_copper_shingle_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:oxidized_copper_shingle_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_oxidized_copper_shingles_from_honeycomb",
+    "output": "item:create:waxed_oxidized_copper_shingles",
+    "count": 1,
+    "grid": [
+      "item:create:oxidized_copper_shingles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_oxidized_copper_tile_slab_from_honeycomb",
+    "output": "item:create:waxed_oxidized_copper_tile_slab",
+    "count": 1,
+    "grid": [
+      "item:create:oxidized_copper_tile_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_oxidized_copper_tile_stairs_from_honeycomb",
+    "output": "item:create:waxed_oxidized_copper_tile_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:oxidized_copper_tile_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_oxidized_copper_tiles_from_honeycomb",
+    "output": "item:create:waxed_oxidized_copper_tiles",
+    "count": 1,
+    "grid": [
+      "item:create:oxidized_copper_tiles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_weathered_copper_shingle_slab_from_honeycomb",
+    "output": "item:create:waxed_weathered_copper_shingle_slab",
+    "count": 1,
+    "grid": [
+      "item:create:weathered_copper_shingle_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_weathered_copper_shingle_stairs_from_honeycomb",
+    "output": "item:create:waxed_weathered_copper_shingle_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:weathered_copper_shingle_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_weathered_copper_shingles_from_honeycomb",
+    "output": "item:create:waxed_weathered_copper_shingles",
+    "count": 1,
+    "grid": [
+      "item:create:weathered_copper_shingles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_weathered_copper_tile_slab_from_honeycomb",
+    "output": "item:create:waxed_weathered_copper_tile_slab",
+    "count": 1,
+    "grid": [
+      "item:create:weathered_copper_tile_slab",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_weathered_copper_tile_stairs_from_honeycomb",
+    "output": "item:create:waxed_weathered_copper_tile_stairs",
+    "count": 1,
+    "grid": [
+      "item:create:weathered_copper_tile_stairs",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/copper/waxed_weathered_copper_tiles_from_honeycomb",
+    "output": "item:create:waxed_weathered_copper_tiles",
+    "count": 1,
+    "grid": [
+      "item:create:weathered_copper_tiles",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/adjustable_chain_gearshift",
+    "output": "item:create:adjustable_chain_gearshift",
+    "count": 1,
+    "grid": [
+      "item:create:encased_chain_drive",
+      "item:create:electron_tube"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/black_seat",
+    "output": "item:create:black_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:black_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/black_seat_from_other_seat",
+    "output": "item:create:black_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:black_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/black_valve_handle_from_other_valve_handle",
+    "output": "item:create:black_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:black_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/blue_seat",
+    "output": "item:create:blue_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:blue_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/blue_seat_from_other_seat",
+    "output": "item:create:blue_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:blue_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/blue_valve_handle_from_other_valve_handle",
+    "output": "item:create:blue_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:blue_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/brown_seat",
+    "output": "item:create:brown_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:brown_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/brown_seat_from_other_seat",
+    "output": "item:create:brown_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:brown_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/brown_valve_handle_from_other_valve_handle",
+    "output": "item:create:brown_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:brown_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/clutch",
+    "output": "item:create:clutch",
+    "count": 1,
+    "grid": [
+      "item:create:andesite_casing",
+      "item:create:shaft",
+      "tag:items:c:dusts/redstone"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/cogwheel",
+    "output": "item:create:cogwheel",
+    "count": 1,
+    "grid": [
+      "item:create:shaft",
+      "tag:items:minecraft:planks"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/copper_valve_handle_from_others",
+    "output": "item:create:copper_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/cyan_seat",
+    "output": "item:create:cyan_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:cyan_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/cyan_seat_from_other_seat",
+    "output": "item:create:cyan_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:cyan_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/cyan_valve_handle_from_other_valve_handle",
+    "output": "item:create:cyan_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:cyan_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/depot",
+    "output": "item:create:depot",
+    "count": 1,
+    "grid": [
+      "item:create:andesite_alloy",
+      "item:create:andesite_casing"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/encased_chain_drive",
+    "output": "item:create:encased_chain_drive",
+    "count": 1,
+    "grid": [
+      "item:create:andesite_casing",
+      "tag:items:c:nuggets/iron",
+      "tag:items:c:nuggets/iron",
+      "tag:items:c:nuggets/iron"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/fluid_valve",
+    "output": "item:create:fluid_valve",
+    "count": 1,
+    "grid": [
+      "tag:items:c:plates/iron",
+      "item:create:fluid_pipe"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/framed_glass_door",
+    "output": "item:create:framed_glass_door",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:wooden_doors",
+      "item:create:framed_glass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/framed_glass_trapdoor",
+    "output": "item:create:framed_glass_trapdoor",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:wooden_trapdoors",
+      "item:create:framed_glass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/furnace_minecart_from_contraption_cart",
+    "output": "item:minecraft:furnace_minecart",
+    "count": 1,
+    "grid": [
+      "item:create:furnace_minecart_contraption"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/gearboxfrom_conversion",
+    "output": "item:create:gearbox",
+    "count": 1,
+    "grid": [
+      "item:create:vertical_gearbox"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/gearshift",
+    "output": "item:create:gearshift",
+    "count": 1,
+    "grid": [
+      "item:create:andesite_casing",
+      "item:create:cogwheel",
+      "tag:items:c:dusts/redstone"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/gray_seat",
+    "output": "item:create:gray_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:gray_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/gray_seat_from_other_seat",
+    "output": "item:create:gray_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:gray_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/gray_valve_handle_from_other_valve_handle",
+    "output": "item:create:gray_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:gray_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/green_seat",
+    "output": "item:create:green_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:green_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/green_seat_from_other_seat",
+    "output": "item:create:green_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:green_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/green_valve_handle_from_other_valve_handle",
+    "output": "item:create:green_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:green_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/large_cogwheel",
+    "output": "item:create:large_cogwheel",
+    "count": 1,
+    "grid": [
+      "item:create:shaft",
+      "tag:items:minecraft:planks",
+      "tag:items:minecraft:planks"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/large_cogwheelfrom_little",
+    "output": "item:create:large_cogwheel",
+    "count": 1,
+    "grid": [
+      "item:create:cogwheel",
+      "tag:items:minecraft:planks"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/light_blue_seat",
+    "output": "item:create:light_blue_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:light_blue_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/light_blue_seat_from_other_seat",
+    "output": "item:create:light_blue_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:light_blue_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/light_blue_valve_handle_from_other_valve_handle",
+    "output": "item:create:light_blue_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:light_blue_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/light_gray_seat",
+    "output": "item:create:light_gray_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:light_gray_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/light_gray_seat_from_other_seat",
+    "output": "item:create:light_gray_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:light_gray_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/light_gray_valve_handle_from_other_valve_handle",
+    "output": "item:create:light_gray_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:light_gray_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/lime_seat",
+    "output": "item:create:lime_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:lime_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/lime_seat_from_other_seat",
+    "output": "item:create:lime_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:lime_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/lime_valve_handle_from_other_valve_handle",
+    "output": "item:create:lime_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:lime_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/linear_chassisfrom_conversion",
+    "output": "item:create:linear_chassis",
+    "count": 1,
+    "grid": [
+      "item:create:secondary_linear_chassis"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/magenta_seat",
+    "output": "item:create:magenta_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:magenta_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/magenta_seat_from_other_seat",
+    "output": "item:create:magenta_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:magenta_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/magenta_valve_handle_from_other_valve_handle",
+    "output": "item:create:magenta_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:magenta_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/mechanical_pump",
+    "output": "item:create:mechanical_pump",
+    "count": 1,
+    "grid": [
+      "item:create:cogwheel",
+      "item:create:fluid_pipe"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/minecart_from_contraption_cart",
+    "output": "item:minecraft:minecart",
+    "count": 1,
+    "grid": [
+      "item:create:minecart_contraption"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/nixie_tube",
+    "output": "item:create:nixie_tube",
+    "count": 4,
+    "grid": [
+      "item:create:electron_tube",
+      "item:create:electron_tube"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/orange_seat",
+    "output": "item:create:orange_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:orange_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/orange_seat_from_other_seat",
+    "output": "item:create:orange_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:orange_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/orange_valve_handle_from_other_valve_handle",
+    "output": "item:create:orange_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:orange_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/pink_seat",
+    "output": "item:create:pink_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:pink_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/pink_seat_from_other_seat",
+    "output": "item:create:pink_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:pink_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/pink_valve_handle_from_other_valve_handle",
+    "output": "item:create:pink_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:pink_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/placard",
+    "output": "item:create:placard",
+    "count": 1,
+    "grid": [
+      "item:minecraft:item_frame",
+      "tag:items:c:plates/brass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/portable_fluid_interface",
+    "output": "item:create:portable_fluid_interface",
+    "count": 1,
+    "grid": [
+      "item:create:copper_casing",
+      "item:create:chute"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/portable_storage_interface",
+    "output": "item:create:portable_storage_interface",
+    "count": 1,
+    "grid": [
+      "item:create:andesite_casing",
+      "item:create:chute"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/purple_seat",
+    "output": "item:create:purple_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:purple_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/purple_seat_from_other_seat",
+    "output": "item:create:purple_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:purple_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/purple_valve_handle_from_other_valve_handle",
+    "output": "item:create:purple_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:purple_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/red_seat",
+    "output": "item:create:red_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:red_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/red_seat_from_other_seat",
+    "output": "item:create:red_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:red_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/red_valve_handle_from_other_valve_handle",
+    "output": "item:create:red_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:red_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/rose_quartz_lamp",
+    "output": "item:create:rose_quartz_lamp",
+    "count": 1,
+    "grid": [
+      "item:create:polished_rose_quartz",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:ingots/zinc"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/sail_framefrom_conversion",
+    "output": "item:create:sail_frame",
+    "count": 1,
+    "grid": [
+      "item:create:white_sail"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/schedule",
+    "output": "item:create:schedule",
+    "count": 4,
+    "grid": [
+      "tag:items:c:plates/obsidian",
+      "item:minecraft:paper"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/secondary_linear_chassisfrom_conversion",
+    "output": "item:create:secondary_linear_chassis",
+    "count": 1,
+    "grid": [
+      "item:create:linear_chassis"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/sequenced_gearshift",
+    "output": "item:create:sequenced_gearshift",
+    "count": 1,
+    "grid": [
+      "item:create:brass_casing",
+      "item:create:cogwheel",
+      "item:create:electron_tube"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/speedometerfrom_conversion",
+    "output": "item:create:speedometer",
+    "count": 1,
+    "grid": [
+      "item:create:stressometer"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/stressometerfrom_conversion",
+    "output": "item:create:stressometer",
+    "count": 1,
+    "grid": [
+      "item:create:speedometer"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/track_observer",
+    "output": "item:create:track_observer",
+    "count": 2,
+    "grid": [
+      "item:create:railway_casing",
+      "tag:items:minecraft:wooden_pressure_plates"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/track_observer_from_other_plates",
+    "output": "item:create:track_observer",
+    "count": 2,
+    "grid": [
+      "item:create:railway_casing",
+      "item:minecraft:stone_pressure_plate|item:minecraft:polished_blackstone_pressure_plate|item:minecraft:heavy_weighted_pressure_plate|item:minecraft:light_weighted_pressure_plate"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/track_signal",
+    "output": "item:create:track_signal",
+    "count": 4,
+    "grid": [
+      "item:create:railway_casing",
+      "item:create:electron_tube"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/track_station",
+    "output": "item:create:track_station",
+    "count": 2,
+    "grid": [
+      "item:create:railway_casing",
+      "item:minecraft:compass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/train_door",
+    "output": "item:create:train_door",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:wooden_doors",
+      "tag:items:c:plates/brass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/train_trapdoor",
+    "output": "item:create:train_trapdoor",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:wooden_trapdoors",
+      "tag:items:c:plates/brass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/vertical_gearboxfrom_conversion",
+    "output": "item:create:vertical_gearbox",
+    "count": 1,
+    "grid": [
+      "item:create:gearbox"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/white_sailfrom_conversion",
+    "output": "item:create:white_sail",
+    "count": 1,
+    "grid": [
+      "item:create:sail_frame"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/white_seat",
+    "output": "item:create:white_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:white_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/white_seat_from_other_seat",
+    "output": "item:create:white_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:white_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/white_valve_handle_from_other_valve_handle",
+    "output": "item:create:white_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:white_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/yellow_seat",
+    "output": "item:create:yellow_seat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:yellow_wool",
+      "tag:items:minecraft:wooden_slabs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/yellow_seat_from_other_seat",
+    "output": "item:create:yellow_seat",
+    "count": 1,
+    "grid": [
+      "tag:items:c:yellow_dyes",
+      "tag:items:create:seats"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/kinetics/yellow_valve_handle_from_other_valve_handle",
+    "output": "item:create:yellow_valve_handle",
+    "count": 1,
+    "grid": [
+      "tag:items:c:yellow_dyes",
+      "tag:items:create:valve_handles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/logistics/content_observerfrom_conversion",
+    "output": "item:create:content_observer",
+    "count": 1,
+    "grid": [
+      "item:create:stockpile_switch"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/logistics/stockpile_switchfrom_conversion",
+    "output": "item:create:stockpile_switch",
+    "count": 1,
+    "grid": [
+      "item:create:content_observer"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/brass_ingot_from_decompacting",
+    "output": "item:create:brass_ingot",
+    "count": 9,
+    "grid": [
+      "tag:items:c:storage_blocks/brass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/brass_nugget_from_decompacting",
+    "output": "item:create:brass_nugget",
+    "count": 9,
+    "grid": [
+      "tag:items:c:ingots/brass"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/copper_nugget",
+    "output": "item:create:copper_nugget",
+    "count": 9,
+    "grid": [
+      "item:minecraft:copper_ingot"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/raw_zinc",
+    "output": "item:create:raw_zinc",
+    "count": 9,
+    "grid": [
+      "item:create:raw_zinc_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/red_sand_paper",
+    "output": "item:create:red_sand_paper",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "tag:items:c:sand/red"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/rose_quartz",
+    "output": "item:create:rose_quartz",
+    "count": 1,
+    "grid": [
+      "tag:items:c:gems/quartz",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:dusts/redstone",
+      "tag:items:c:dusts/redstone"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/rose_quartz_tilesfrom_conversion",
+    "output": "item:create:rose_quartz_tiles",
+    "count": 1,
+    "grid": [
+      "item:create:small_rose_quartz_tiles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/sand_paper",
+    "output": "item:create:sand_paper",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "tag:items:c:sand/colorless"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/small_rose_quartz_tilesfrom_conversion",
+    "output": "item:create:small_rose_quartz_tiles",
+    "count": 1,
+    "grid": [
+      "item:create:rose_quartz_tiles"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/zinc_ingot_from_decompacting",
+    "output": "item:create:zinc_ingot",
+    "count": 9,
+    "grid": [
+      "tag:items:c:storage_blocks/zinc"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/materials/zinc_nugget_from_decompacting",
+    "output": "item:create:zinc_nugget",
+    "count": 9,
+    "grid": [
+      "tag:items:c:ingots/zinc"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/schematics/empty_schematic",
+    "output": "item:create:empty_schematic",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "tag:items:c:light_blue_dyes"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:crafting/schematics/schematic_and_quill",
+    "output": "item:create:schematic_and_quill",
+    "count": 1,
+    "grid": [
+      "item:create:empty_schematic",
+      "tag:items:c:feathers"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_andesite_brick_slab_recycling",
+    "output": "item:create:cut_andesite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_andesite_brick_slab",
+      "item:create:cut_andesite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_andesite_slab_recycling",
+    "output": "item:create:cut_andesite",
+    "count": 1,
+    "grid": [
+      "item:create:cut_andesite_slab",
+      "item:create:cut_andesite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_asurine_brick_slab_recycling",
+    "output": "item:create:cut_asurine_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_asurine_brick_slab",
+      "item:create:cut_asurine_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_asurine_slab_recycling",
+    "output": "item:create:cut_asurine",
+    "count": 1,
+    "grid": [
+      "item:create:cut_asurine_slab",
+      "item:create:cut_asurine_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_calcite_brick_slab_recycling",
+    "output": "item:create:cut_calcite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_calcite_brick_slab",
+      "item:create:cut_calcite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_calcite_slab_recycling",
+    "output": "item:create:cut_calcite",
+    "count": 1,
+    "grid": [
+      "item:create:cut_calcite_slab",
+      "item:create:cut_calcite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_crimsite_brick_slab_recycling",
+    "output": "item:create:cut_crimsite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_crimsite_brick_slab",
+      "item:create:cut_crimsite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_crimsite_slab_recycling",
+    "output": "item:create:cut_crimsite",
+    "count": 1,
+    "grid": [
+      "item:create:cut_crimsite_slab",
+      "item:create:cut_crimsite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_deepslate_brick_slab_recycling",
+    "output": "item:create:cut_deepslate_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_deepslate_brick_slab",
+      "item:create:cut_deepslate_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_deepslate_slab_recycling",
+    "output": "item:create:cut_deepslate",
+    "count": 1,
+    "grid": [
+      "item:create:cut_deepslate_slab",
+      "item:create:cut_deepslate_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_diorite_brick_slab_recycling",
+    "output": "item:create:cut_diorite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_diorite_brick_slab",
+      "item:create:cut_diorite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_diorite_slab_recycling",
+    "output": "item:create:cut_diorite",
+    "count": 1,
+    "grid": [
+      "item:create:cut_diorite_slab",
+      "item:create:cut_diorite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_dripstone_brick_slab_recycling",
+    "output": "item:create:cut_dripstone_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_dripstone_brick_slab",
+      "item:create:cut_dripstone_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_dripstone_slab_recycling",
+    "output": "item:create:cut_dripstone",
+    "count": 1,
+    "grid": [
+      "item:create:cut_dripstone_slab",
+      "item:create:cut_dripstone_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_granite_brick_slab_recycling",
+    "output": "item:create:cut_granite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_granite_brick_slab",
+      "item:create:cut_granite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_granite_slab_recycling",
+    "output": "item:create:cut_granite",
+    "count": 1,
+    "grid": [
+      "item:create:cut_granite_slab",
+      "item:create:cut_granite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_limestone_brick_slab_recycling",
+    "output": "item:create:cut_limestone_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_limestone_brick_slab",
+      "item:create:cut_limestone_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_limestone_slab_recycling",
+    "output": "item:create:cut_limestone",
+    "count": 1,
+    "grid": [
+      "item:create:cut_limestone_slab",
+      "item:create:cut_limestone_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_ochrum_brick_slab_recycling",
+    "output": "item:create:cut_ochrum_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_ochrum_brick_slab",
+      "item:create:cut_ochrum_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_ochrum_slab_recycling",
+    "output": "item:create:cut_ochrum",
+    "count": 1,
+    "grid": [
+      "item:create:cut_ochrum_slab",
+      "item:create:cut_ochrum_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_scorchia_brick_slab_recycling",
+    "output": "item:create:cut_scorchia_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_scorchia_brick_slab",
+      "item:create:cut_scorchia_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_scorchia_slab_recycling",
+    "output": "item:create:cut_scorchia",
+    "count": 1,
+    "grid": [
+      "item:create:cut_scorchia_slab",
+      "item:create:cut_scorchia_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_scoria_brick_slab_recycling",
+    "output": "item:create:cut_scoria_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_scoria_brick_slab",
+      "item:create:cut_scoria_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_scoria_slab_recycling",
+    "output": "item:create:cut_scoria",
+    "count": 1,
+    "grid": [
+      "item:create:cut_scoria_slab",
+      "item:create:cut_scoria_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_tuff_brick_slab_recycling",
+    "output": "item:create:cut_tuff_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_tuff_brick_slab",
+      "item:create:cut_tuff_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_tuff_slab_recycling",
+    "output": "item:create:cut_tuff",
+    "count": 1,
+    "grid": [
+      "item:create:cut_tuff_slab",
+      "item:create:cut_tuff_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_veridium_brick_slab_recycling",
+    "output": "item:create:cut_veridium_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:cut_veridium_brick_slab",
+      "item:create:cut_veridium_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:cut_veridium_slab_recycling",
+    "output": "item:create:cut_veridium",
+    "count": 1,
+    "grid": [
+      "item:create:cut_veridium_slab",
+      "item:create:cut_veridium_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_andesite_slab_recycling",
+    "output": "item:create:polished_cut_andesite",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_andesite_slab",
+      "item:create:polished_cut_andesite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_asurine_slab_recycling",
+    "output": "item:create:polished_cut_asurine",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_asurine_slab",
+      "item:create:polished_cut_asurine_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_calcite_slab_recycling",
+    "output": "item:create:polished_cut_calcite",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_calcite_slab",
+      "item:create:polished_cut_calcite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_crimsite_slab_recycling",
+    "output": "item:create:polished_cut_crimsite",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_crimsite_slab",
+      "item:create:polished_cut_crimsite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_deepslate_slab_recycling",
+    "output": "item:create:polished_cut_deepslate",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_deepslate_slab",
+      "item:create:polished_cut_deepslate_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_diorite_slab_recycling",
+    "output": "item:create:polished_cut_diorite",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_diorite_slab",
+      "item:create:polished_cut_diorite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_dripstone_slab_recycling",
+    "output": "item:create:polished_cut_dripstone",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_dripstone_slab",
+      "item:create:polished_cut_dripstone_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_granite_slab_recycling",
+    "output": "item:create:polished_cut_granite",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_granite_slab",
+      "item:create:polished_cut_granite_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_limestone_slab_recycling",
+    "output": "item:create:polished_cut_limestone",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_limestone_slab",
+      "item:create:polished_cut_limestone_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_ochrum_slab_recycling",
+    "output": "item:create:polished_cut_ochrum",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_ochrum_slab",
+      "item:create:polished_cut_ochrum_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_scorchia_slab_recycling",
+    "output": "item:create:polished_cut_scorchia",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_scorchia_slab",
+      "item:create:polished_cut_scorchia_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_scoria_slab_recycling",
+    "output": "item:create:polished_cut_scoria",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_scoria_slab",
+      "item:create:polished_cut_scoria_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_tuff_slab_recycling",
+    "output": "item:create:polished_cut_tuff",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_tuff_slab",
+      "item:create:polished_cut_tuff_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:polished_cut_veridium_slab_recycling",
+    "output": "item:create:polished_cut_veridium",
+    "count": 1,
+    "grid": [
+      "item:create:polished_cut_veridium_slab",
+      "item:create:polished_cut_veridium_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_andesite_brick_slab_recycling",
+    "output": "item:create:small_andesite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_andesite_brick_slab",
+      "item:create:small_andesite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_asurine_brick_slab_recycling",
+    "output": "item:create:small_asurine_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_asurine_brick_slab",
+      "item:create:small_asurine_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_calcite_brick_slab_recycling",
+    "output": "item:create:small_calcite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_calcite_brick_slab",
+      "item:create:small_calcite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_crimsite_brick_slab_recycling",
+    "output": "item:create:small_crimsite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_crimsite_brick_slab",
+      "item:create:small_crimsite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_deepslate_brick_slab_recycling",
+    "output": "item:create:small_deepslate_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_deepslate_brick_slab",
+      "item:create:small_deepslate_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_diorite_brick_slab_recycling",
+    "output": "item:create:small_diorite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_diorite_brick_slab",
+      "item:create:small_diorite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_dripstone_brick_slab_recycling",
+    "output": "item:create:small_dripstone_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_dripstone_brick_slab",
+      "item:create:small_dripstone_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_granite_brick_slab_recycling",
+    "output": "item:create:small_granite_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_granite_brick_slab",
+      "item:create:small_granite_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_limestone_brick_slab_recycling",
+    "output": "item:create:small_limestone_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_limestone_brick_slab",
+      "item:create:small_limestone_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_ochrum_brick_slab_recycling",
+    "output": "item:create:small_ochrum_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_ochrum_brick_slab",
+      "item:create:small_ochrum_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_scorchia_brick_slab_recycling",
+    "output": "item:create:small_scorchia_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_scorchia_brick_slab",
+      "item:create:small_scorchia_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_scoria_brick_slab_recycling",
+    "output": "item:create:small_scoria_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_scoria_brick_slab",
+      "item:create:small_scoria_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_tuff_brick_slab_recycling",
+    "output": "item:create:small_tuff_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_tuff_brick_slab",
+      "item:create:small_tuff_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "create:small_veridium_brick_slab_recycling",
+    "output": "item:create:small_veridium_bricks",
+    "count": 1,
+    "grid": [
+      "item:create:small_veridium_brick_slab",
+      "item:create:small_veridium_brick_slab"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

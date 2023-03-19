@@ -1,7 +1,6 @@
 import { CrafterConfig } from "../Config";
 import RecipeManager from "../crafting/RecipeManager";
 import App from "./App";
-import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import RPC, { RPCRequest } from "../RPC";
 import { RecipeType } from "../crafting/Recipe";
 import { CrafterHost } from "../StorageManager";
@@ -21,7 +20,7 @@ export default class Crafter extends App {
   }
 
   run(): void {
-    loadCraftingTableRecipes(this.recipeManager);
+    this.config.recipeTypes.forEach((type) => this.recipeManager.load(type));
 
     const recipeCount = Object.keys(this.recipeManager.recipes).length;
 
@@ -69,7 +68,7 @@ export default class Crafter extends App {
     });
   }
 
-  serialise(): LuaMap<string, any> {
+  serialize(): LuaMap<string, any> {
     return {
       config: this.config,
     } as object as LuaMap<string, any>;

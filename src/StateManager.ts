@@ -10,7 +10,7 @@ export default class StateManager {
 
   dump<T extends Serializable>(instance: T): void {
     const file = fs.open(this.fileName, "w") as WriteHandle;
-    const data = textutils.serialise(instance.serialise(), {
+    const data = textutils.serialise(instance.serialize(), {
       compact: true,
       allow_repetitions: true, // Can be disabled
     });

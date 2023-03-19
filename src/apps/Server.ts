@@ -2,16 +2,19 @@ import { ServerConfig } from "../Config";
 import Queue from "../Queue";
 import StorageManager from "../StorageManager";
 import RecipeManager from "../crafting/RecipeManager";
-import loadCraftingTableRecipes from "../crafting/recipes/craftingTable";
 import App from "./App";
 import RPC from "../RPC";
 import Cache from "../Cache";
 import ThreadPool from "../util/threading/ThreadPool";
+import CraftingProvider from "../crafting/CraftingProvider";
 
 export default class Server extends App {
   storage: StorageManager;
-  queue: Queue<StorageManager>;
+  crafting: CraftingProvider;
+  storageQueue: Queue<StorageManager>;
+  craftingQueue: Queue<CraftingProvider>;
   nextDefrag: number = -1;
+  cache = new Cache();
 
   declare config: ServerConfig;
 
@@ -20,13 +23,18 @@ export default class Server extends App {
 
     const recipeManager = new RecipeManager();
 
-    this.storage = new StorageManager(recipeManager, this.logger);
-    this.queue = new Queue(this.storage);
+    recipeManager.load();
+
+    this.storage = new StorageManager(this.cache, this.logger);
+    this.crafting = new CraftingProvider(this.storage, recipeManager, this.cache, this.logger);
+
+    this.storageQueue = new Queue(this.storage);
+    this.craftingQueue = new Queue(this.crafting);
   }
 
-  serialise(): LuaMap<string, any> {
+  serialize(): LuaMap<string, any> {
     return {
-      queue: this.queue.serialise(),
+      queue: this.storageQueue.serialize(),
       config: this.config,
       nextDefrag: this.nextDefrag,
 
@@ -38,7 +46,7 @@ export default class Server extends App {
   static deserialize(input: LuaMap<string, any>): Server {
     const instance = new this(input.get("config"));
 
-    instance.queue = Queue.deserialize(input.get("queue")) as Queue<StorageManager>;
+    instance.storageQueue = Queue.deserialize(input.get("queue")) as Queue<StorageManager>;
     instance.nextDefrag = input.get("nextDefrag");
 
     if (input.has("cache")) {
@@ -51,9 +59,7 @@ export default class Server extends App {
   }
 
   run(): void {
-    loadCraftingTableRecipes(this.storage.recipeManager);
-
-    const recipeCount = Object.keys(this.storage.recipeManager.recipes).length;
+    const recipeCount = Object.keys(this.crafting.recipeManager.recipes).length;
 
     this.logger.info(`Loaded ${recipeCount} recipes`);
 
@@ -65,7 +71,7 @@ export default class Server extends App {
 
     this.logger.info(`Initialised ${storageCount} storage containers`);
 
-    this.queue.notifyFailed();
+    this.storageQueue.notifyFailed();
 
     parallel.waitForAny(
       () => this.runRPC(),
@@ -84,37 +90,37 @@ export default class Server extends App {
         os.reboot();
       },
       defragment: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "defragment", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "defragment", params, callback, callbackArgs: [request] });
       },
       storeAll: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "storeAll", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "storeAll", params, callback, callbackArgs: [request] });
       },
       store: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "store", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "store", params, callback, callbackArgs: [request] });
       },
       take: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "take", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "take", params, callback, callbackArgs: [request] });
       },
       list: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "list", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "list", params, callback, callbackArgs: [request] });
       },
       size: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "size", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "size", params, callback, callbackArgs: [request] });
       },
       free: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "free", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "free", params, callback, callbackArgs: [request] });
       },
       used: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "used", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "used", params, callback, callbackArgs: [request] });
       },
       count: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "count", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "count", params, callback, callbackArgs: [request] });
       },
       craft: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "craft", params, callback, callbackArgs: [request] });
+        this.craftingQueue.push({ method: "craft", params, callback, callbackArgs: [request] });
       },
       listCraftable: (request, callback, ...params: any[]) => {
-        this.queue.push({ method: "listCraftable", params, callback, callbackArgs: [request] });
+        this.craftingQueue.push({ method: "list", params, callback, callbackArgs: [request] });
       },
       cacheSize: () => this.storage.cache.size(),
       flushCache: () => {
@@ -127,10 +133,12 @@ export default class Server extends App {
 
   runQueueWorker() {
     // todo: why?????
-    this.queue.handler = this.storage;
+    this.storageQueue.handler = this.storage;
+    this.craftingQueue.handler = this.crafting;
 
     while (true) {
-      this.queue.work();
+      this.storageQueue.work();
+      this.craftingQueue.work();
       os.sleep(0.5);
     }
   }

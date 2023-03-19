@@ -1,0 +1,247 @@
+ 
+[
+  {
+    "name": "chiselsandbits:bit_bag",
+    "output": "item:chiselsandbits:bit_bag",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wool",
+        "tag:items:minecraft:wool",
+        "tag:items:minecraft:wool"
+      ],
+      [
+        "tag:items:minecraft:wool",
+        "item:chiselsandbits:block_bit",
+        "tag:items:minecraft:wool"
+      ],
+      [
+        "tag:items:minecraft:wool",
+        "tag:items:minecraft:wool",
+        "tag:items:minecraft:wool"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:bit_storage",
+    "output": "item:chiselsandbits:bit_storage",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:forge:ingots/iron",
+        "tag:items:forge:glass",
+        "tag:items:forge:ingots/iron"
+      ],
+      [
+        "tag:items:forge:glass",
+        "tag:items:minecraft:logs",
+        "tag:items:forge:glass"
+      ],
+      [
+        "tag:items:forge:ingots/iron",
+        "tag:items:chiselsandbits:chisel",
+        "tag:items:forge:ingots/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:chisel_diamond",
+    "output": "item:chiselsandbits:chisel_diamond",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:forge:rods/wooden",
+        "tag:items:forge:gems/diamond"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:chisel_gold",
+    "output": "item:chiselsandbits:chisel_gold",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:forge:rods/wooden",
+        "tag:items:forge:ingots/gold"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:chisel_iron",
+    "output": "item:chiselsandbits:chisel_iron",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:forge:rods/wooden",
+        "tag:items:forge:ingots/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:chisel_netherite",
+    "output": "item:chiselsandbits:chisel_netherite",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:forge:rods/blaze",
+        "tag:items:forge:ingots/netherite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:chisel_stone",
+    "output": "item:chiselsandbits:chisel_stone",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:forge:rods/wooden",
+        "tag:items:forge:stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:chiseled_printer",
+    "output": "item:chiselsandbits:chiseled_printer",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:chiselsandbits:chisel",
+        ""
+      ],
+      [
+        "tag:items:minecraft:logs",
+        "",
+        "tag:items:minecraft:logs"
+      ],
+      [
+        "item:minecraft:smooth_stone_slab",
+        "item:minecraft:smooth_stone_slab",
+        "item:minecraft:smooth_stone_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:magnifying_glass",
+    "output": "item:chiselsandbits:magnifying_glass",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:chiselsandbits:chisel",
+        "tag:items:forge:glass"
+      ],
+      [
+        "tag:items:forge:rods/wooden",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:measuring_tape",
+    "output": "item:chiselsandbits:measuring_tape",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        "tag:items:forge:string"
+      ],
+      [
+        "tag:items:forge:ingots/iron",
+        "tag:items:forge:string",
+        "tag:items:forge:dyes/yellow"
+      ],
+      [
+        "tag:items:forge:ingots/iron",
+        "tag:items:forge:ingots/iron",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:modification_table",
+    "output": "item:chiselsandbits:modification_table",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:wooden_slabs",
+        "tag:items:chiselsandbits:chisel",
+        "tag:items:minecraft:wooden_slabs"
+      ],
+      [
+        "tag:items:forge:nuggets/iron",
+        "tag:items:minecraft:logs",
+        "tag:items:forge:nuggets/iron"
+      ],
+      [
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:wrench",
+    "output": "item:chiselsandbits:wrench",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:minecraft:planks",
+        "item:chiselsandbits:block_bit"
+      ],
+      [
+        "",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "tag:items:minecraft:planks",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "chiselsandbits:quill",
+    "output": "item:chiselsandbits:quill",
+    "count": 1,
+    "grid": [
+      "tag:items:forge:feathers",
+      "tag:items:forge:dyes/black",
+      "tag:items:forge:dyes/yellow"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "chiselsandbits:sealant",
+    "output": "item:chiselsandbits:sealant",
+    "count": 1,
+    "grid": [
+      "tag:items:forge:slimeballs",
+      "item:minecraft:honey_bottle"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "chiselsandbits:unseal",
+    "output": "item:chiselsandbits:unseal",
+    "count": 1,
+    "grid": [
+      "item:minecraft:wet_sponge"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

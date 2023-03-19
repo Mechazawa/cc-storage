@@ -1,4 +1,7 @@
 import Recipe from "./Recipe";
+import ShapedCraftingRecipe from "./ShapedCraftingRecipe";
+import ShapelessCraftingRecipe from "./ShapelessCraftingRecipe";
+import recipes from "./recipes";
 
 export default class RecipeManager {
   recipes = new LuaMap<string, Recipe>();
@@ -17,5 +20,20 @@ export default class RecipeManager {
 
   findRecipes(item: string): Recipe[] {
     return Object.values(this.recipes).filter((r: Recipe) => r.getOutput().find((i: string) => i.includes(item)));
+  }
+
+  load(prefix: string = ""): void {
+    const candidates = [];
+
+    for (const type of Object.keys(recipes) as string[]) {
+      ((recipes[type] ?? []) as LuaMap<string, any>[])
+        .filter((r) => typeof r.get("type") === "string" && (r.get("type") + "").startsWith(prefix))
+        .map((r) =>
+          ("" + r.get("type")).endsWith(":shapeless")
+            ? ShapelessCraftingRecipe.deserialize(r)
+            : ShapedCraftingRecipe.deserialize(r)
+        )
+        .forEach((r) => this.add(r));
+    }
   }
 }
