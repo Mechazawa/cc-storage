@@ -3,11 +3,9 @@ import CachedInventoryProxy from "./CachedInventoryProxy";
 import Logger from "./util/Logger";
 import RPC from "./RPC";
 import ThreadPool from "./util/threading/ThreadPool";
-import Recipe, { RecipeType, TransferableRecipe } from "./crafting/Recipe";
-import RecipeManager from "./crafting/RecipeManager";
-import ItemAllocator, { ReservedLocation } from "./storage/ItemAllocator";
+import { RecipeType } from "./crafting/Recipe";
+import ItemAllocator from "./storage/ItemAllocator";
 import benchmark from "./util/benchmark";
-import Thread from "./util/threading/Thread";
 
 export interface StorageLocation {
   peripheral: string;
@@ -35,22 +33,21 @@ export interface CrafterHost {
 export default class StorageManager {
   storagePool: LuaMap<string, CachedInventoryProxy> = new LuaMap<string, CachedInventoryProxy>();
   logger: Logger;
-  recipeManager: RecipeManager;
   cache: Cache;
   allocator = new ItemAllocator(this);
 
-  constructor(recipeManager: RecipeManager, logger?: Logger) {
+  constructor(cache?: Cache, logger?: Logger) {
     this.logger = logger ?? new Logger();
-    this.cache = new Cache();
-    this.recipeManager = recipeManager;
+    this.cache = cache ?? new Cache();
+
+    const cachePrefix = "acc:storage:"
 
     // todo: use some sort of decorator
-    this.count = this.cache.memoize("acc:count", this.count.bind(this));
-    this.size = this.cache.memoize("acc:size", this.size.bind(this));
-    this.used = this.cache.memoize("acc:used", this.used.bind(this));
-    this.getFragmented = this.cache.memoize("acc:getFragmented", this.getFragmented.bind(this));
-    this.list = this.cache.memoize("acc:list", benchmark(this.logger, this.list.bind(this), "list"));
-    this.listCraftable = this.cache.memoize("acc:listCraftable", this.listCraftable.bind(this));
+    this.count = this.cache.memoize(cachePrefix + "count", this.count.bind(this));
+    this.size = this.cache.memoize(cachePrefix + "size", this.size.bind(this));
+    this.used = this.cache.memoize(cachePrefix + "used", this.used.bind(this));
+    this.getFragmented = this.cache.memoize(cachePrefix + "getFragmented", this.getFragmented.bind(this));
+    this.list = this.cache.memoize(cachePrefix + "list", benchmark(this.logger, this.list.bind(this), "list"));
   }
 
   findCrafter(type: RecipeType, lockTimeout = 0, tries = 5): CrafterHost | undefined {
@@ -388,150 +385,5 @@ export default class StorageManager {
 
     // We gotta iterate through everything anyways so why not do it this way?
     return this.list(key).reduce((acc: number, v: Resource) => acc + v.count, 0);
-  }
-
-  _resolveRecipe(recipe: string | Recipe): Recipe {
-    if (typeof recipe === "string") {
-      if (!this.recipeManager.has(recipe)) {
-        throw new Error("Could not find recipe: " + recipe);
-      }
-
-      return this.recipeManager.get(recipe) as Recipe;
-    }
-
-    return recipe;
-  }
-
-  craft(_recipe: Recipe | string, times = 1, timeout = 120, threads = 4): number {
-    const recipe = this._resolveRecipe(_recipe);
-    const maxChunkSize = Math.floor(64 / recipe.getOutput().length);
-
-    const outputs: number[] = [];
-    const chunks: [number[], number, ReservedLocation[]][] = [[outputs, times % maxChunkSize, []]];
-
-    for (let i = 1; i < times / maxChunkSize; i++) {
-      chunks.push([outputs, maxChunkSize, []]);
-      outputs.push(0);
-    }
-
-    assert(chunks.reduce((a, c) => a + c[1], 0) > 0);
-
-    // todo: merge with loop below
-    for (let i = 0; i < chunks.length; i++) {
-      const locations: ReservedLocation[] = [];
-
-      for (const key of recipe.getInput()) {
-        const reserved = this.allocator.reserve(key, chunks[i][1]);
-
-        if (reserved.length === 0) {
-          throw new Error(`Unable to find ${times}x "${key}" for crafting`);
-        }
-
-        for (const r of reserved) {
-          locations.push(r);
-        }
-      }
-
-      chunks[i][2] = locations;
-    }
-
-    const fns = chunks.map(([out, count, locations], i) => () => {
-      const crafter = this.findCrafter(recipe.type, 30, timeout);
-
-      if (crafter === undefined) {
-        throw new Error(`Missing crafter for "${recipe.type}"`);
-      }
-
-      out[i] = this._craft(crafter, recipe, locations, count, timeout);
-      this.logger.log(`done ${out.reduce((a, c) => a + (c ?? 0), 0)} ${i + 1}/${chunks.length}`);
-
-      locations.forEach((l) => l.release());
-    });
-
-    new ThreadPool(threads, fns).join();
-
-    return outputs.reduce((a, c) => a + (c ?? 0), 0);
-  }
-
-  _craft(
-    crafter: CrafterHost,
-    recipe: Recipe,
-    locations: StorageLocation[],
-    times: number = 1,
-    timeout: number = 120
-  ): number {
-    this.logger.debug(`lock: ${crafter.host}`);
-
-    const inputItems = recipe.getInput();
-
-    let slot = 1;
-
-    // todo: split craft call based on item availability ex: `items:a|items:b`
-    for (const location of locations) {
-      this.getStorage(location.peripheral)?.pushItems(crafter.storageName, location.slot, location.count, slot);
-      slot++;
-    }
-
-    this.logger.debug(`craft: ${crafter.host}`);
-    try {
-      const success = RPC.call(crafter.host, "craft", [recipe.name, inputItems, times], 30);
-
-      return success ? times : 0;
-    } finally {
-      this.storeAll(crafter.storageName);
-
-      this.logger.debug(`unlock: ${crafter.host}`);
-      RPC.call(crafter.host, "unlock", [recipe.name, inputItems, times], 30);
-    }
-  }
-
-  listCraftable(): TransferableRecipe[] {
-    const resources = new LuaMap<string, number>();
-
-    const record = (key: string, count: number) => resources.set(key, (resources.get(key) ?? 0) + count);
-
-    for (const resource of this.list()) {
-      record(`item:${resource.name}`, resource.count);
-      record(`tag:items:${resource.name}s`, resource.count); // <- this is dumb
-
-      for (const [tag, _] of resource.tags) {
-        record(`tag:${tag}`, resource.count);
-      }
-    }
-
-    const output: TransferableRecipe[] = [];
-
-    for (const [_, recipe] of this.recipeManager.recipes) {
-      const input = new LuaMap<string, number>();
-
-      for (const item of recipe.getInput()) {
-        input.set(item, (input.get(item) ?? 0) + 1);
-      }
-
-      let count = Infinity;
-
-      for (const [item, needed] of input) {
-        const found = item
-          .split("|")
-          .map((key) => resources.get(key) ?? 0)
-          .reduce((a, c) => a + c, 0);
-
-        count = Math.min(count, found / needed);
-        count = Math.floor(count);
-
-        if (count === 0) break;
-      }
-
-      if (count > 0) {
-        output.push({
-          name: recipe.name,
-          input: recipe.getInput(),
-          output: recipe.getOutput(),
-          count,
-        } as TransferableRecipe);
-      }
-    }
-
-    return output;
   }
 }

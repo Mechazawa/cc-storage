@@ -26,12 +26,6 @@ export default class RecipeManager {
     const candidates = [];
 
     for (const type of Object.keys(recipes) as string[]) {
-      if (type.startsWith(prefix)) {
-        candidates.push(type);
-      }
-    }
-
-    for (const type of candidates) {
       ((recipes[type] ?? []) as LuaMap<string, any>[])
         .filter((r) => typeof r.get("type") === "string" && (r.get("type") + "").startsWith(prefix))
         .map((r) =>

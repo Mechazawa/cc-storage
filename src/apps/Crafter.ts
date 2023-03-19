@@ -20,7 +20,7 @@ export default class Crafter extends App {
   }
 
   run(): void {
-    this.config.recipeTypes.forEach(type => this.recipeManager.load(type))
+    this.config.recipeTypes.forEach((type) => this.recipeManager.load(type));
 
     const recipeCount = Object.keys(this.recipeManager.recipes).length;
 

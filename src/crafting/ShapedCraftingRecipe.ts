@@ -16,11 +16,11 @@ export default class ShapedCraftingRecipe implements Recipe {
     this.output = output;
     this.count = count;
     this.grid = grid;
-  } 
-  
+  }
+
   serialize(): LuaMap<string, any> {
     return {
-      type: this.type + ':shaped',
+      type: this.type + ":shaped",
       name: this.name,
       output: this.output,
       count: this.count,
@@ -29,12 +29,7 @@ export default class ShapedCraftingRecipe implements Recipe {
   }
 
   static deserialize(input: LuaMap<string, any>): ShapedCraftingRecipe {
-    return new this(
-      input.get('name'),
-      input.get('output'),
-      input.get('count'),
-      input.get('grid'),
-    );
+    return new this(input.get("name"), input.get("output"), input.get("count"), input.get("grid"));
   }
 
   craft(mapping: string[], count: number = 1): boolean {
