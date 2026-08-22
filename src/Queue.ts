@@ -7,7 +7,8 @@ type JobCallback = (...args: any[]) => any;
 export interface Job<T> {
   method: keyof T;
   params: (string | number | boolean)[];
-  callback?: JobCallback | void;
+  /** Key into {@link Queue.callbacks}. Functions cannot be serialised, so the job stores a name. */
+  callback?: string;
   callbackArgs?: any[];
 }
 
@@ -22,6 +23,8 @@ export interface FailedJob<T> extends RunningJob<T> {
 }
 
 export default class Queue<T extends object> extends Serializable {
+  static readonly callbacks = new LuaMap<string, JobCallback>();
+
   readonly MAX_SIZE = 512;
   queue: Job<T>[] = [];
   failed: FailedJob<T>[] = [];
@@ -36,46 +39,20 @@ export default class Queue<T extends object> extends Serializable {
     this.logger = logger;
   }
 
-  serializeJob(job: Job<T>): object {
-    const data: any = { ...job };
-
-    if (typeof data.callback === "function") {
-      data.callback = string.dump(data.callback);
-    }
-
-    return data;
-  }
-
   serialize(): LuaMap<string, any> {
     return {
-      failed: this.failed.map(this.serializeJob),
-      queue: this.queue.map(this.serializeJob),
-      running: this.running.map((x) => this.serializeJob(x)),
+      failed: this.failed,
+      queue: this.queue,
+      running: this.running,
     } as object as LuaMap<string, any>;
-  }
-
-  static deserializeJob<T extends Job<any>>(job: T): T {
-    const output = { ...job };
-
-    if (typeof output.callback === "string") {
-      const [fn, failReason] = loadstring(output.callback);
-
-      if (fn !== undefined) {
-        output.callback = (...args: any[]) => (fn as JobCallback)(...args);
-      } else {
-        throw new Error("Failed Queue job callback deserialization: " + failReason);
-      }
-    }
-
-    return output;
   }
 
   static deserialize<T extends object = object>(input: LuaMap<string, any>): Queue<T> {
     const instance: Queue<T> = new this<T>(input.get("fileName"));
-    const running: RunningJob<T>[] = ((input.get("running") ?? []) as RunningJob<T>[]).map(this.deserializeJob);
+    const running: RunningJob<T>[] = (input.get("running") ?? []) as RunningJob<T>[];
 
-    instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map(this.deserializeJob);
-    instance.queue = ((input.get("queue") ?? []) as Job<T>[]).map(this.deserializeJob);
+    instance.failed = (input.get("failed") ?? []) as FailedJob<T>[];
+    instance.queue = (input.get("queue") ?? []) as Job<T>[];
 
     // @todo notify client about failed job
     for (const job of running) {
@@ -90,7 +67,27 @@ export default class Queue<T extends object> extends Serializable {
     return instance;
   }
 
+  invoke(job: Job<T>): void {
+    if (job.callback === undefined) {
+      return;
+    }
+
+    const callback = Queue.callbacks.get(job.callback);
+
+    if (callback === undefined) {
+      this.logger.warn(`[q] Dropping reply, unknown callback: ${job.callback}`);
+
+      return;
+    }
+
+    callback(...(job.callbackArgs ?? []));
+  }
+
   push(job: Job<T>): boolean {
+    if (job.callback !== undefined && !Queue.callbacks.has(job.callback)) {
+      throw new Error(`Unknown job callback: ${job.callback}`);
+    }
+
     if (this.queue.length < this.MAX_SIZE) {
       this.queue.push(job);
       return true;
@@ -111,7 +108,7 @@ export default class Queue<T extends object> extends Serializable {
         fail.callbackArgs.push(fail.reason);
         fail.callbackArgs.push(false);
 
-        fail.callback?.(...fail.callbackArgs);
+        this.invoke(fail);
 
         fail.notified = true;
       }
@@ -155,7 +152,7 @@ export default class Queue<T extends object> extends Serializable {
         )();
 
         running.callbackArgs.push(output);
-        running.callback?.(...running.callbackArgs);
+        this.invoke(running);
       } else {
         throw new Error(`Expected "${methodName as string}" of handler to be "function", got "${keyType}" instead.`);
       }
@@ -171,7 +168,7 @@ export default class Queue<T extends object> extends Serializable {
       } as FailedJob<T>);
 
       // todo: setting the last param to let the callback know if it's successful is pretty jank
-      running.callback?.(...running.callbackArgs);
+      this.invoke(running);
     } finally {
       this.running = this.running.filter((x) => x !== running);
     }

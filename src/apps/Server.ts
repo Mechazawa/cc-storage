@@ -3,10 +3,12 @@ import Queue from "../Queue";
 import StorageManager from "../StorageManager";
 import RecipeManager from "../crafting/RecipeManager";
 import App from "./App";
-import RPC from "../RPC";
+import RPC, { RPCRequest } from "../RPC";
 import Cache from "../Cache";
 import ThreadPool from "../util/threading/ThreadPool";
 import CraftingProvider from "../crafting/CraftingProvider";
+
+const RPC_CALLBACK = "rpc";
 
 export default class Server extends App {
   storage: StorageManager;
@@ -20,6 +22,10 @@ export default class Server extends App {
 
   constructor(config: ServerConfig) {
     super(config);
+
+    Queue.callbacks.set(RPC_CALLBACK, (request: RPCRequest, value: any, success?: boolean) =>
+      RPC.callback(request, value, success),
+    );
 
     const recipeManager = new RecipeManager();
 
@@ -90,37 +96,37 @@ export default class Server extends App {
         os.reboot();
       },
       defragment: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "defragment", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "defragment", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       storeAll: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "storeAll", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "storeAll", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       store: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "store", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "store", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       take: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "take", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "take", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       list: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "list", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "list", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       size: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "size", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "size", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       free: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "free", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "free", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       used: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "used", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "used", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       count: (request, callback, ...params: any[]) => {
-        this.storageQueue.push({ method: "count", params, callback, callbackArgs: [request] });
+        this.storageQueue.push({ method: "count", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       craft: (request, callback, ...params: any[]) => {
-        this.craftingQueue.push({ method: "craft", params, callback, callbackArgs: [request] });
+        this.craftingQueue.push({ method: "craft", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       listCraftable: (request, callback, ...params: any[]) => {
-        this.craftingQueue.push({ method: "list", params, callback, callbackArgs: [request] });
+        this.craftingQueue.push({ method: "list", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
       cacheSize: () => this.storage.cache.size(),
       flushCache: () => {
