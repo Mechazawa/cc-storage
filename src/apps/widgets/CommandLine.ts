@@ -215,11 +215,10 @@ Cache contains ${cacheSize} records
 
           const rows = this.cache
             .remember("list", () => this.server.list())
-            .filter(
-              (resource) =>
-                resource.name.startsWith(name ?? "") ||
-                resource.displayName.toLowerCase().startsWith(name ?? "") ||
-                this._shortenPrefix(resource.name).startsWith(name ?? ""),
+            .filter((resource) =>
+              [resource.name, resource.displayName, this._shortenPrefix(resource.name)].some((haystack) =>
+                haystack.toLowerCase().includes(name),
+              ),
             )
             .sort((a, b) => b.count - a.count)
             // todo replace with something better
