@@ -1,0 +1,25 @@
+[
+  {
+    "name": "arcanelanterns:lantern_maker",
+    "output": "item:arcanelanterns:lantern_maker",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:polished_basalt",
+        "item:minecraft:diamond",
+        "item:minecraft:polished_basalt"
+      ],
+      [
+        "",
+        "item:minecraft:polished_basalt",
+        ""
+      ],
+      [
+        "item:minecraft:polished_basalt",
+        "item:minecraft:polished_basalt",
+        "item:minecraft:polished_basalt"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

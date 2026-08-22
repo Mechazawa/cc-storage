@@ -1,0 +1,336 @@
+[
+  {
+    "name": "friendsandfoes:acacia_beehive",
+    "output": "item:friendsandfoes:acacia_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks",
+        "item:minecraft:acacia_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:bamboo_beehive",
+    "output": "item:friendsandfoes:bamboo_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:bamboo_planks",
+        "item:minecraft:bamboo_planks",
+        "item:minecraft:bamboo_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:bamboo_planks",
+        "item:minecraft:bamboo_planks",
+        "item:minecraft:bamboo_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:birch_beehive",
+    "output": "item:friendsandfoes:birch_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks",
+        "item:minecraft:birch_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:cherry_beehive",
+    "output": "item:friendsandfoes:cherry_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cherry_planks",
+        "item:minecraft:cherry_planks",
+        "item:minecraft:cherry_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:cherry_planks",
+        "item:minecraft:cherry_planks",
+        "item:minecraft:cherry_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:copper_button",
+    "output": "item:friendsandfoes:copper_button",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:copper_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:crimson_beehive",
+    "output": "item:friendsandfoes:crimson_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks",
+        "item:minecraft:crimson_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:dark_oak_beehive",
+    "output": "item:friendsandfoes:dark_oak_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks",
+        "item:minecraft:dark_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:jungle_beehive",
+    "output": "item:friendsandfoes:jungle_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks",
+        "item:minecraft:jungle_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:mangrove_beehive",
+    "output": "item:friendsandfoes:mangrove_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:mangrove_planks",
+        "item:minecraft:mangrove_planks",
+        "item:minecraft:mangrove_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:mangrove_planks",
+        "item:minecraft:mangrove_planks",
+        "item:minecraft:mangrove_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:pale_oak_beehive",
+    "output": "item:friendsandfoes:pale_oak_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:pale_oak_planks",
+        "item:minecraft:pale_oak_planks",
+        "item:minecraft:pale_oak_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:pale_oak_planks",
+        "item:minecraft:pale_oak_planks",
+        "item:minecraft:pale_oak_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:spruce_beehive",
+    "output": "item:friendsandfoes:spruce_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks",
+        "item:minecraft:spruce_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:warped_beehive",
+    "output": "item:friendsandfoes:warped_beehive",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ],
+      [
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb",
+        "item:minecraft:honeycomb"
+      ],
+      [
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks",
+        "item:minecraft:warped_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:waxed_copper_button_from_honeycomb",
+    "output": "item:friendsandfoes:waxed_copper_button",
+    "count": 1,
+    "grid": [
+      "item:friendsandfoes:copper_button",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "friendsandfoes:waxed_exposed_copper_button_from_honeycomb",
+    "output": "item:friendsandfoes:waxed_exposed_copper_button",
+    "count": 1,
+    "grid": [
+      "item:friendsandfoes:exposed_copper_button",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "friendsandfoes:waxed_oxidized_copper_button_from_honeycomb",
+    "output": "item:friendsandfoes:waxed_oxidized_copper_button",
+    "count": 1,
+    "grid": [
+      "item:friendsandfoes:oxidized_copper_button",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "friendsandfoes:waxed_weathered_copper_button_from_honeycomb",
+    "output": "item:friendsandfoes:waxed_weathered_copper_button",
+    "count": 1,
+    "grid": [
+      "item:friendsandfoes:weathered_copper_button",
+      "item:minecraft:honeycomb"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "friendsandfoes:wildfire_crown",
+    "output": "item:friendsandfoes:wildfire_crown",
+    "count": 1,
+    "grid": [
+      [
+        "item:friendsandfoes:wildfire_crown_fragment",
+        "item:friendsandfoes:wildfire_crown_fragment",
+        "item:friendsandfoes:wildfire_crown_fragment"
+      ],
+      [
+        "item:friendsandfoes:wildfire_crown_fragment",
+        "",
+        "item:friendsandfoes:wildfire_crown_fragment"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "friendsandfoes:yellow_dye_from_buttercup",
+    "output": "item:minecraft:yellow_dye",
+    "count": 1,
+    "grid": [
+      "item:friendsandfoes:buttercup"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

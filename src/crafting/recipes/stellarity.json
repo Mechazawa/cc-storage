@@ -1,0 +1,245 @@
+[
+  {
+    "name": "stellarity:chorus_plant_from_fruit",
+    "output": "item:minecraft:chorus_plant",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:chorus_fruit",
+        "item:minecraft:chorus_fruit"
+      ],
+      [
+        "item:minecraft:chorus_fruit",
+        "item:minecraft:chorus_fruit"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stellarity:events/spellbooks/use_conveyance",
+    "output": "item:minecraft:structure_void",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:barrier",
+        ""
+      ],
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stellarity:events/spellbooks/use_jinx",
+    "output": "item:minecraft:structure_void",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:barrier",
+        ""
+      ],
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stellarity:events/spellbooks/use_light",
+    "output": "item:minecraft:structure_void",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:barrier",
+        ""
+      ],
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stellarity:events/spellbooks/use_return",
+    "output": "item:minecraft:structure_void",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:barrier",
+        ""
+      ],
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stellarity:events/spellbooks/use_updraft",
+    "output": "item:minecraft:structure_void",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:barrier",
+        ""
+      ],
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stellarity:glass_from_end_stone",
+    "output": "item:minecraft:glass",
+    "count": 3,
+    "grid": [
+      "item:minecraft:end_stone",
+      "item:minecraft:blaze_powder"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:leather_from_membranes",
+    "output": "item:minecraft:leather",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:phantom_membrane",
+        "item:minecraft:phantom_membrane"
+      ],
+      [
+        "item:minecraft:phantom_membrane",
+        "item:minecraft:phantom_membrane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stellarity:papyrus",
+    "output": "item:minecraft:paper",
+    "count": 6,
+    "grid": [
+      "item:minecraft:chorus_plant",
+      "item:minecraft:chorus_plant",
+      "item:minecraft:chorus_plant",
+      "item:minecraft:water_bucket"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:purple_dye_from_chorus_flower",
+    "output": "item:minecraft:purple_dye",
+    "count": 2,
+    "grid": [
+      "item:minecraft:chorus_flower"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:slime_ball_from_ender_eye",
+    "output": "item:minecraft:slime_ball",
+    "count": 3,
+    "grid": [
+      "item:minecraft:water_bucket",
+      "item:minecraft:ender_eye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:spectral_arrow_alt",
+    "output": "item:minecraft:spectral_arrow",
+    "count": 4,
+    "grid": [
+      "item:minecraft:arrow",
+      "item:minecraft:glowstone"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:sugar_from_chorus_fruit",
+    "output": "item:minecraft:sugar",
+    "count": 1,
+    "grid": [
+      "item:minecraft:chorus_fruit"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:suspicious_stew/from_chorus_fruit",
+    "output": "item:minecraft:suspicious_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bowl",
+      "item:minecraft:red_mushroom",
+      "item:minecraft:brown_mushroom",
+      "item:minecraft:chorus_fruit"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:suspicious_stew/from_pink_petals",
+    "output": "item:minecraft:suspicious_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bowl",
+      "item:minecraft:red_mushroom",
+      "item:minecraft:brown_mushroom",
+      "item:minecraft:pink_petals"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "stellarity:suspicious_stew/from_pitcher_pod",
+    "output": "item:minecraft:suspicious_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bowl",
+      "item:minecraft:red_mushroom",
+      "item:minecraft:brown_mushroom",
+      "item:minecraft:pitcher_plant"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

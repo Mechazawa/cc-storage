@@ -1,0 +1,48 @@
+[
+  {
+    "name": "backpacks:crafting_table/ender",
+    "output": "item:minecraft:jigsaw",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:leather",
+        "item:minecraft:leather",
+        "item:minecraft:leather"
+      ],
+      [
+        "item:minecraft:leather",
+        "item:minecraft:ender_chest",
+        "item:minecraft:leather"
+      ],
+      [
+        "item:minecraft:leather",
+        "item:minecraft:leather",
+        "item:minecraft:leather"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "backpacks:crafting_table/small",
+    "output": "item:minecraft:command_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:leather",
+        "item:minecraft:leather",
+        "item:minecraft:leather"
+      ],
+      [
+        "item:minecraft:leather",
+        "item:minecraft:chest",
+        "item:minecraft:leather"
+      ],
+      [
+        "item:minecraft:leather",
+        "item:minecraft:leather",
+        "item:minecraft:leather"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

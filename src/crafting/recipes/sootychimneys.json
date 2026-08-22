@@ -1,0 +1,163 @@
+[
+  {
+    "name": "sootychimneys:brick_chimney",
+    "output": "item:sootychimneys:brick_chimney",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:brick",
+        "",
+        "item:minecraft:brick"
+      ],
+      [
+        "item:minecraft:bricks",
+        "",
+        "item:minecraft:bricks"
+      ],
+      [
+        "item:minecraft:bricks",
+        "tag:items:minecraft:coals",
+        "item:minecraft:bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "sootychimneys:cobblestone_chimney",
+    "output": "item:sootychimneys:cobblestone_chimney",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cobblestone_slab",
+        "",
+        "item:minecraft:cobblestone_slab"
+      ],
+      [
+        "item:minecraft:cobblestone",
+        "",
+        "item:minecraft:cobblestone"
+      ],
+      [
+        "item:minecraft:cobblestone",
+        "tag:items:minecraft:coals",
+        "item:minecraft:cobblestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "sootychimneys:copper_chimney",
+    "output": "item:sootychimneys:copper_chimney",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "tag:items:c:ingots/copper",
+        "",
+        "tag:items:c:ingots/copper"
+      ],
+      [
+        "tag:items:c:storage_blocks/copper",
+        "tag:items:minecraft:coals",
+        "tag:items:c:storage_blocks/copper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "sootychimneys:iron_chimney",
+    "output": "item:sootychimneys:iron_chimney",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:ingots/iron",
+        "",
+        "tag:items:c:ingots/iron"
+      ],
+      [
+        "tag:items:c:nuggets/iron",
+        "",
+        "tag:items:c:nuggets/iron"
+      ],
+      [
+        "tag:items:c:ingots/iron",
+        "tag:items:minecraft:coals",
+        "tag:items:c:ingots/iron"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "sootychimneys:mud_brick_chimney",
+    "output": "item:sootychimneys:mud_brick_chimney",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:mud_bricks",
+        "",
+        "item:minecraft:mud_bricks"
+      ],
+      [
+        "item:minecraft:mud_bricks",
+        "",
+        "item:minecraft:mud_bricks"
+      ],
+      [
+        "item:minecraft:mud_bricks",
+        "tag:items:minecraft:coals",
+        "item:minecraft:mud_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "sootychimneys:stone_brick_chimney",
+    "output": "item:sootychimneys:stone_brick_chimney",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "tag:items:minecraft:coals",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "sootychimneys:terracotta_chimney",
+    "output": "item:sootychimneys:terracotta_chimney",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "item:minecraft:terracotta",
+        "",
+        "item:minecraft:terracotta"
+      ],
+      [
+        "item:minecraft:terracotta",
+        "tag:items:minecraft:coals",
+        "item:minecraft:terracotta"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

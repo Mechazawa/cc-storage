@@ -1,0 +1,25 @@
+[
+  {
+    "name": "kattersstructures:raj_rod_block",
+    "output": "item:minecraft:armor_stand",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:copper_ingot",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:copper_ingot",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:smooth_stone_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

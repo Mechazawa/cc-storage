@@ -1,0 +1,162 @@
+[
+  {
+    "name": "tintedcampfires:black_campfire",
+    "output": "item:tintedcampfires:black_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:black_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:blue_campfire",
+    "output": "item:tintedcampfires:blue_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:blue_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:brown_campfire",
+    "output": "item:tintedcampfires:brown_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:brown_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:cyan_campfire",
+    "output": "item:tintedcampfires:cyan_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:cyan_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:gray_campfire",
+    "output": "item:tintedcampfires:gray_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:gray_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:green_campfire",
+    "output": "item:tintedcampfires:green_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:green_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:light_blue_campfire",
+    "output": "item:tintedcampfires:light_blue_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:light_blue_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:light_gray_campfire",
+    "output": "item:tintedcampfires:light_gray_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:light_gray_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:lime_campfire",
+    "output": "item:tintedcampfires:lime_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:lime_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:magenta_campfire",
+    "output": "item:tintedcampfires:magenta_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:magenta_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:orange_campfire",
+    "output": "item:tintedcampfires:orange_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:orange_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:pink_campfire",
+    "output": "item:tintedcampfires:pink_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:pink_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:purple_campfire",
+    "output": "item:tintedcampfires:purple_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:purple_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:red_campfire",
+    "output": "item:tintedcampfires:red_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:red_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:white_campfire",
+    "output": "item:tintedcampfires:white_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:white_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "tintedcampfires:yellow_campfire",
+    "output": "item:tintedcampfires:yellow_campfire",
+    "count": 1,
+    "grid": [
+      "item:minecraft:yellow_dye",
+      "item:minecraft:campfire"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

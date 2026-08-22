@@ -1,0 +1,83 @@
+[
+  {
+    "name": "illagerinvasion:hallowed_gem",
+    "output": "item:illagerinvasion:hallowed_gem",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:amethyst_shard",
+        "item:illagerinvasion:unusual_dust",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "item:illagerinvasion:illusionary_dust",
+        "item:minecraft:diamond",
+        "item:illagerinvasion:illusionary_dust"
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:illagerinvasion:unusual_dust",
+        "item:minecraft:amethyst_shard"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "illagerinvasion:horn_of_sight",
+    "output": "item:illagerinvasion:horn_of_sight",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:illagerinvasion:hallowed_gem",
+        ""
+      ],
+      [
+        "item:minecraft:gold_ingot",
+        "item:minecraft:goat_horn",
+        "item:minecraft:gold_ingot"
+      ],
+      [
+        "",
+        "item:minecraft:gold_ingot",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "illagerinvasion:imbuing_table",
+    "output": "item:illagerinvasion:imbuing_table",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_block",
+        "item:minecraft:paper",
+        "item:minecraft:copper_block"
+      ],
+      [
+        "item:minecraft:dark_oak_log",
+        "item:illagerinvasion:primal_essence",
+        "item:minecraft:dark_oak_log"
+      ],
+      [
+        "item:minecraft:copper_block",
+        "item:minecraft:experience_bottle",
+        "item:minecraft:copper_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "illagerinvasion:platinum_sheet",
+    "output": "item:illagerinvasion:platinum_sheet",
+    "count": 1,
+    "grid": [
+      "item:illagerinvasion:platinum_chunk",
+      "item:illagerinvasion:platinum_chunk",
+      "item:illagerinvasion:platinum_chunk",
+      "item:illagerinvasion:platinum_chunk"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

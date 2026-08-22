@@ -1,0 +1,129 @@
+[
+  {
+    "name": "moblassos:aqua_lasso",
+    "output": "item:moblassos:aqua_lasso",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:lapis_lazuli",
+        ""
+      ],
+      [
+        "item:minecraft:cod|item:minecraft:salmon|item:minecraft:pufferfish|item:minecraft:tropical_fish",
+        "item:moblassos:golden_lasso",
+        "item:minecraft:cod|item:minecraft:salmon|item:minecraft:pufferfish|item:minecraft:tropical_fish"
+      ],
+      [
+        "",
+        "item:minecraft:lapis_lazuli",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "moblassos:contract",
+    "output": "item:moblassos:contract",
+    "count": 1,
+    "grid": [
+      "item:minecraft:glass_bottle",
+      "item:minecraft:feather",
+      "item:minecraft:ink_sac",
+      "item:minecraft:paper"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "moblassos:diamond_lasso",
+    "output": "item:moblassos:diamond_lasso",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:diamond",
+        ""
+      ],
+      [
+        "item:moblassos:aqua_lasso",
+        "item:minecraft:diamond",
+        "item:moblassos:golden_lasso"
+      ],
+      [
+        "",
+        "item:minecraft:diamond",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "moblassos:emerald_lasso",
+    "output": "item:moblassos:emerald_lasso",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:emerald",
+        ""
+      ],
+      [
+        "item:minecraft:emerald",
+        "item:moblassos:golden_lasso",
+        "item:minecraft:emerald"
+      ],
+      [
+        "",
+        "item:minecraft:emerald",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "moblassos:golden_lasso",
+    "output": "item:moblassos:golden_lasso",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gold_nugget",
+        "item:minecraft:string",
+        "item:minecraft:gold_nugget"
+      ],
+      [
+        "item:minecraft:string",
+        "item:minecraft:ender_pearl",
+        "item:minecraft:string"
+      ],
+      [
+        "item:minecraft:gold_nugget",
+        "item:minecraft:string",
+        "item:minecraft:gold_nugget"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "moblassos:hostile_lasso",
+    "output": "item:moblassos:hostile_lasso",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:leather|item:minecraft:rabbit_hide",
+        "item:minecraft:blaze_rod",
+        "item:minecraft:leather|item:minecraft:rabbit_hide"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:moblassos:golden_lasso",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:leather|item:minecraft:rabbit_hide",
+        "item:minecraft:blaze_rod",
+        "item:minecraft:leather|item:minecraft:rabbit_hide"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

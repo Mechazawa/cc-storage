@@ -1,0 +1,5597 @@
+[
+  {
+    "name": "mcwholidays:bat_doormat",
+    "output": "item:mcwholidays:bat_doormat",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:black_dye",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bat_sleeping",
+    "output": "item:mcwholidays:bat_sleeping",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:brown_wool",
+        ""
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_wool",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bat_wall_deco_1",
+    "output": "item:mcwholidays:bat_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_dye",
+        "",
+        "item:minecraft:black_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bat_wall_deco_2",
+    "output": "item:mcwholidays:bat_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_dye",
+        "item:minecraft:paper",
+        "item:minecraft:black_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bat_wall_deco_3",
+    "output": "item:mcwholidays:bat_wall_deco_3",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_dye",
+        "item:minecraft:paper",
+        "item:minecraft:black_dye"
+      ],
+      [
+        "item:minecraft:black_dye",
+        "",
+        "item:minecraft:black_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bell_wall_deco_1",
+    "output": "item:mcwholidays:bell_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:yellow_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bell_wall_deco_2",
+    "output": "item:mcwholidays:bell_wall_deco_2",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ],
+      [
+        "item:minecraft:yellow_dye",
+        "item:minecraft:paper",
+        "item:minecraft:yellow_dye"
+      ],
+      [
+        "item:minecraft:yellow_dye",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:yellow_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bell_wall_deco_3",
+    "output": "item:mcwholidays:bell_wall_deco_3",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:yellow_dye",
+        "item:minecraft:paper",
+        "item:minecraft:yellow_dye"
+      ],
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:green_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bell_wall_deco_4",
+    "output": "item:mcwholidays:bell_wall_deco_4",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:green_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bells_wall_deco_1",
+    "output": "item:mcwholidays:bells_wall_deco_1",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:bell_wall_deco_1"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:bells_wall_deco_2",
+    "output": "item:mcwholidays:bells_wall_deco_2",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:bell_wall_deco_2"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:big_blue_present",
+    "output": "item:mcwholidays:big_blue_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:light_blue_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:big_cyan_present",
+    "output": "item:mcwholidays:big_cyan_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:red_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:cyan_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:big_dark_blue_present",
+    "output": "item:mcwholidays:big_dark_blue_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:red_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:blue_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:big_green_present",
+    "output": "item:mcwholidays:big_green_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:white_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:green_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:big_magenta_present",
+    "output": "item:mcwholidays:big_magenta_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:magenta_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:big_purple_present",
+    "output": "item:mcwholidays:big_purple_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:purple_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:big_red_present",
+    "output": "item:mcwholidays:big_red_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:red_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:big_yellow_present",
+    "output": "item:mcwholidays:big_yellow_present",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:red_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:black_balloon",
+    "output": "item:mcwholidays:black_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_candy_cane_block",
+    "output": "item:mcwholidays:blue_candy_cane_block",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:minecraft:blue_dye",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_candy_cane_slab",
+    "output": "item:mcwholidays:blue_candy_cane_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:mcwholidays:blue_candy_cane_block",
+        "item:mcwholidays:blue_candy_cane_block",
+        "item:mcwholidays:blue_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_candy_cane_slim",
+    "output": "item:mcwholidays:blue_candy_cane_slim",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:blue_candy_cane_block",
+        "item:mcwholidays:blue_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:blue_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:blue_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_candy_cane_stairs",
+    "output": "item:mcwholidays:blue_candy_cane_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "",
+        "item:mcwholidays:blue_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:blue_candy_cane_block",
+        "item:mcwholidays:blue_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:blue_candy_cane_block",
+        "item:mcwholidays:blue_candy_cane_block",
+        "item:mcwholidays:blue_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_cube_string_lights",
+    "output": "item:mcwholidays:blue_cube_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:blue_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_decorated_christmas_tree_base",
+    "output": "item:mcwholidays:blue_decorated_christmas_tree_base",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_base",
+      "item:minecraft:blue_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:blue_decorated_christmas_tree_bottom",
+    "output": "item:mcwholidays:blue_decorated_christmas_tree_bottom",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_bottom",
+      "item:minecraft:blue_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:blue_decorated_christmas_tree_middle",
+    "output": "item:mcwholidays:blue_decorated_christmas_tree_middle",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_middle",
+      "item:minecraft:blue_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:blue_decorated_christmas_tree_top",
+    "output": "item:mcwholidays:blue_decorated_christmas_tree_top",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_top",
+      "item:minecraft:blue_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:blue_garland_wall_deco_1",
+    "output": "item:mcwholidays:blue_garland_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:blue_dye",
+        "",
+        "item:minecraft:blue_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_garland_wall_deco_2",
+    "output": "item:mcwholidays:blue_garland_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:blue_dye",
+        "item:minecraft:blue_dye",
+        "item:minecraft:blue_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_ornament",
+    "output": "item:mcwholidays:blue_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:blue_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_ornament_wall_deco_1",
+    "output": "item:mcwholidays:blue_ornament_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:blue_dye",
+        "item:minecraft:paper",
+        "item:minecraft:blue_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_ornament_wall_deco_2",
+    "output": "item:mcwholidays:blue_ornament_wall_deco_2",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:blue_ornament_wall_deco_1"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:blue_present",
+    "output": "item:mcwholidays:blue_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_blue_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:blue_stocking",
+    "output": "item:mcwholidays:blue_stocking",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:blue_wool",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_string_lights",
+    "output": "item:mcwholidays:blue_string_lights",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:string",
+        ""
+      ],
+      [
+        "item:minecraft:glowstone_dust",
+        "item:minecraft:blue_dye",
+        "item:minecraft:glowstone_dust"
+      ],
+      [
+        "",
+        "item:minecraft:glowstone_dust",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:blue_tiny_string_lights",
+    "output": "item:mcwholidays:blue_tiny_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:blue_cube_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bottom_garland_wall_deco_1",
+    "output": "item:mcwholidays:bottom_garland_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:paper",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "",
+        "item:minecraft:green_dye",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:green_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:bottom_garland_wall_deco_2",
+    "output": "item:mcwholidays:bottom_garland_wall_deco_2",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:bottom_garland_wall_deco_1"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:brown_oak_leaves",
+    "output": "item:mcwholidays:brown_oak_leaves",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:brown_dye",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:brown_oak_leaves_carpet",
+    "output": "item:mcwholidays:brown_oak_leaves_carpet",
+    "count": 9,
+    "grid": [
+      [
+        "item:mcwholidays:brown_oak_leaves",
+        "item:mcwholidays:brown_oak_leaves",
+        "item:mcwholidays:brown_oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:brown_stocking",
+    "output": "item:mcwholidays:brown_stocking",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:brown_wool",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:candy_cane",
+    "output": "item:mcwholidays:candy_cane",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:sugar",
+        "item:minecraft:sugar",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:sugar",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:sugar",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:candy_cane_balloon",
+    "output": "item:mcwholidays:candy_cane_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:red_dye"
+      ],
+      [
+        "item:minecraft:white_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:carved_evil_pumpkin",
+    "output": "item:mcwholidays:carved_evil_pumpkin",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:wooden_sword",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:carved_friendly_pumpkin",
+    "output": "item:mcwholidays:carved_friendly_pumpkin",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:wooden_pickaxe",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:carved_screaming_pumpkin",
+    "output": "item:mcwholidays:carved_screaming_pumpkin",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:wooden_axe",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:carved_shocked_pumpkin",
+    "output": "item:mcwholidays:carved_shocked_pumpkin",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:wooden_shovel",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:carved_smile_pumpkin",
+    "output": "item:mcwholidays:carved_smile_pumpkin",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:wooden_hoe",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:cat_wall_deco_1",
+    "output": "item:mcwholidays:cat_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:black_dye",
+        ""
+      ],
+      [
+        "item:minecraft:black_dye",
+        "item:minecraft:paper",
+        "item:minecraft:black_dye"
+      ],
+      [
+        "item:minecraft:black_dye",
+        "",
+        "item:minecraft:black_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:chaotic_cobweb",
+    "output": "item:mcwholidays:chaotic_cobweb",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:christmas_tree_base",
+    "output": "item:mcwholidays:christmas_tree_base",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ],
+      [
+        "",
+        "item:minecraft:spruce_log",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:christmas_tree_bottom",
+    "output": "item:mcwholidays:christmas_tree_bottom",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ],
+      [
+        "",
+        "item:minecraft:spruce_log",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:christmas_tree_middle",
+    "output": "item:mcwholidays:christmas_tree_middle",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_log",
+        "item:minecraft:spruce_leaves"
+      ],
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:christmas_tree_top",
+    "output": "item:mcwholidays:christmas_tree_top",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_log",
+        "item:minecraft:spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:colorful_cube_string_lights",
+    "output": "item:mcwholidays:colorful_cube_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:colorful_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:colorful_decorated_christmas_tree_base",
+    "output": "item:mcwholidays:colorful_decorated_christmas_tree_base",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_base",
+      "item:minecraft:yellow_dye",
+      "item:minecraft:blue_dye",
+      "item:minecraft:red_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:colorful_decorated_christmas_tree_bottom",
+    "output": "item:mcwholidays:colorful_decorated_christmas_tree_bottom",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_bottom",
+      "item:minecraft:red_dye",
+      "item:minecraft:blue_dye",
+      "item:minecraft:yellow_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:colorful_decorated_christmas_tree_middle",
+    "output": "item:mcwholidays:colorful_decorated_christmas_tree_middle",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_middle",
+      "item:minecraft:blue_dye",
+      "item:minecraft:red_dye",
+      "item:minecraft:yellow_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:colorful_decorated_christmas_tree_top",
+    "output": "item:mcwholidays:colorful_decorated_christmas_tree_top",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_top",
+      "item:minecraft:yellow_dye",
+      "item:minecraft:red_dye",
+      "item:minecraft:blue_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:colorful_garland_wall_deco_1",
+    "output": "item:mcwholidays:colorful_garland_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:red_dye",
+        "item:minecraft:purple_dye",
+        "item:minecraft:red_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:colorful_garland_wall_deco_2",
+    "output": "item:mcwholidays:colorful_garland_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:red_dye",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:red_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:colorful_string_lights",
+    "output": "item:mcwholidays:colorful_string_lights",
+    "count": 4,
+    "grid": [
+      [
+        "item:mcwholidays:red_string_lights",
+        "item:mcwholidays:blue_string_lights"
+      ],
+      [
+        "item:mcwholidays:yellow_string_lights",
+        "item:mcwholidays:green_string_lights"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:colorful_tiny_string_lights",
+    "output": "item:mcwholidays:colorful_tiny_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:colorful_cube_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:cornered_cobweb",
+    "output": "item:mcwholidays:cornered_cobweb",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb"
+      ],
+      [
+        "item:minecraft:cobweb",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:couple_bells",
+    "output": "item:mcwholidays:couple_bells",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:single_bell",
+      "item:mcwholidays:single_bell"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_blue_presents",
+    "output": "item:mcwholidays:couple_blue_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:blue_present",
+      "item:mcwholidays:blue_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_cyan_presents",
+    "output": "item:mcwholidays:couple_cyan_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:cyan_present",
+      "item:mcwholidays:cyan_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_dark_blue_presents",
+    "output": "item:mcwholidays:couple_dark_blue_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:dark_blue_present",
+      "item:mcwholidays:dark_blue_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_green_presents",
+    "output": "item:mcwholidays:couple_green_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:green_present",
+      "item:mcwholidays:green_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_magenta_presents",
+    "output": "item:mcwholidays:couple_magenta_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:magenta_present",
+      "item:mcwholidays:magenta_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_purple_presents",
+    "output": "item:mcwholidays:couple_purple_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:purple_present",
+      "item:mcwholidays:purple_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_red_presents",
+    "output": "item:mcwholidays:couple_red_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:red_present",
+      "item:mcwholidays:red_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:couple_yellow_presents",
+    "output": "item:mcwholidays:couple_yellow_presents",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:yellow_present",
+      "item:mcwholidays:yellow_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:cyan_ornament",
+    "output": "item:mcwholidays:cyan_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:cyan_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:cyan_present",
+    "output": "item:mcwholidays:cyan_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_cyan_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:dark_blue_present",
+    "output": "item:mcwholidays:dark_blue_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_dark_blue_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:fairy_garland_wall_deco",
+    "output": "item:mcwholidays:fairy_garland_wall_deco",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:paper",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland",
+    "output": "item:mcwholidays:garland",
+    "count": 9,
+    "grid": [
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_blue_lights",
+    "output": "item:mcwholidays:garland_blue_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:blue_string_lights",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_colorful_lights",
+    "output": "item:mcwholidays:garland_colorful_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:colorful_string_lights",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_green_lights",
+    "output": "item:mcwholidays:garland_green_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:green_string_lights",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_orange_lights",
+    "output": "item:mcwholidays:garland_orange_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:orange_string_lights",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_purple_lights",
+    "output": "item:mcwholidays:garland_purple_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:purple_string_lights",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_red_lights",
+    "output": "item:mcwholidays:garland_red_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:red_string_lights",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_wall_deco",
+    "output": "item:mcwholidays:garland_wall_deco",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:paper",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "",
+        "item:minecraft:green_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:garland_yellow_lights",
+    "output": "item:mcwholidays:garland_yellow_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:yellow_string_lights",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:ghost",
+    "output": "item:mcwholidays:ghost",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "item:minecraft:white_carpet",
+        "item:minecraft:white_wool",
+        "item:minecraft:white_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:ghost_balloon",
+    "output": "item:mcwholidays:ghost_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_dye"
+      ],
+      [
+        "item:minecraft:white_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:ghost_doormat",
+    "output": "item:mcwholidays:ghost_doormat",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:white_dye",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:ghost_wall_deco_1",
+    "output": "item:mcwholidays:ghost_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:white_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:ghost_wall_deco_2",
+    "output": "item:mcwholidays:ghost_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:ghost_wall_deco_1"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:golden_balloon",
+    "output": "item:mcwholidays:golden_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:yellow_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:gray_ornament",
+    "output": "item:mcwholidays:gray_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:gray_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_balloon",
+    "output": "item:mcwholidays:green_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_candy_cane_block",
+    "output": "item:mcwholidays:green_candy_cane_block",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:minecraft:green_dye",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_candy_cane_slab",
+    "output": "item:mcwholidays:green_candy_cane_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:mcwholidays:green_candy_cane_block",
+        "item:mcwholidays:green_candy_cane_block",
+        "item:mcwholidays:green_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_candy_cane_slim",
+    "output": "item:mcwholidays:green_candy_cane_slim",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:green_candy_cane_block",
+        "item:mcwholidays:green_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:green_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:green_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_candy_cane_stairs",
+    "output": "item:mcwholidays:green_candy_cane_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "",
+        "item:mcwholidays:green_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:green_candy_cane_block",
+        "item:mcwholidays:green_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:green_candy_cane_block",
+        "item:mcwholidays:green_candy_cane_block",
+        "item:mcwholidays:green_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_cube_string_lights",
+    "output": "item:mcwholidays:green_cube_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:green_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_decorated_christmas_tree_base",
+    "output": "item:mcwholidays:green_decorated_christmas_tree_base",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_base",
+      "item:minecraft:green_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:green_decorated_christmas_tree_bottom",
+    "output": "item:mcwholidays:green_decorated_christmas_tree_bottom",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_bottom",
+      "item:minecraft:green_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:green_decorated_christmas_tree_middle",
+    "output": "item:mcwholidays:green_decorated_christmas_tree_middle",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_middle",
+      "item:minecraft:green_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:green_decorated_christmas_tree_top",
+    "output": "item:mcwholidays:green_decorated_christmas_tree_top",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_top",
+      "item:minecraft:green_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:green_garland_wall_deco_1",
+    "output": "item:mcwholidays:green_garland_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:lime_dye",
+        "",
+        "item:minecraft:lime_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_garland_wall_deco_2",
+    "output": "item:mcwholidays:green_garland_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:lime_dye",
+        "item:minecraft:lime_dye",
+        "item:minecraft:lime_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_ornament",
+    "output": "item:mcwholidays:green_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:green_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_ornament_wall_deco_1",
+    "output": "item:mcwholidays:green_ornament_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:paper",
+        "item:minecraft:green_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_ornament_wall_deco_2",
+    "output": "item:mcwholidays:green_ornament_wall_deco_2",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:green_ornament_wall_deco_1"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:green_present",
+    "output": "item:mcwholidays:green_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_green_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:green_stocking",
+    "output": "item:mcwholidays:green_stocking",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:green_wool",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_string_lights",
+    "output": "item:mcwholidays:green_string_lights",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:string",
+        ""
+      ],
+      [
+        "item:minecraft:glowstone_dust",
+        "item:minecraft:green_dye",
+        "item:minecraft:glowstone_dust"
+      ],
+      [
+        "",
+        "item:minecraft:glowstone_dust",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:green_tiny_string_lights",
+    "output": "item:mcwholidays:green_tiny_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:green_cube_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:ground_skeleton",
+    "output": "item:mcwholidays:ground_skeleton",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:bone_block",
+        ""
+      ],
+      [
+        "item:minecraft:bone",
+        "item:minecraft:bone",
+        "item:minecraft:bone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:half_cobweb",
+    "output": "item:mcwholidays:half_cobweb",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:hanging_cobweb",
+    "output": "item:mcwholidays:hanging_cobweb",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:hay_wheelbarrow",
+    "output": "item:mcwholidays:hay_wheelbarrow",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:hay_block",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "item:minecraft:stick",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:horizontal_garland_wall_deco",
+    "output": "item:mcwholidays:horizontal_garland_wall_deco",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:garland_wall_deco"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:icicle",
+    "output": "item:mcwholidays:icicle",
+    "count": 10,
+    "grid": [
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ],
+      [
+        "item:minecraft:ice",
+        "",
+        "item:minecraft:ice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:icicle_big",
+    "output": "item:mcwholidays:icicle_big",
+    "count": 12,
+    "grid": [
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ],
+      [
+        "item:minecraft:ice",
+        "",
+        "item:minecraft:ice"
+      ],
+      [
+        "item:minecraft:ice",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:icicle_sharp",
+    "output": "item:mcwholidays:icicle_sharp",
+    "count": 12,
+    "grid": [
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ],
+      [
+        "",
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ],
+      [
+        "",
+        "item:minecraft:ice",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:icicle_straight",
+    "output": "item:mcwholidays:icicle_straight",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:icicle_thick",
+    "output": "item:mcwholidays:icicle_thick",
+    "count": 14,
+    "grid": [
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ],
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ],
+      [
+        "",
+        "item:minecraft:ice",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:large_pumpkin",
+    "output": "item:mcwholidays:large_pumpkin",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ],
+      [
+        "item:minecraft:pumpkin",
+        "item:minecraft:pumpkin"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:laying_hay_bale",
+    "output": "item:mcwholidays:laying_hay_bale",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:wheat",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ],
+      [
+        "item:minecraft:wheat",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:light_blue_ornament",
+    "output": "item:mcwholidays:light_blue_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:light_blue_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:lit_evil_pumpkin",
+    "output": "item:mcwholidays:lit_evil_pumpkin",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:carved_evil_pumpkin"
+      ],
+      [
+        "item:minecraft:torch"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:lit_friendly_pumpkin",
+    "output": "item:mcwholidays:lit_friendly_pumpkin",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:carved_friendly_pumpkin"
+      ],
+      [
+        "item:minecraft:torch"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:lit_screaming_pumpkin",
+    "output": "item:mcwholidays:lit_screaming_pumpkin",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:carved_screaming_pumpkin"
+      ],
+      [
+        "item:minecraft:torch"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:lit_shocked_pumpkin",
+    "output": "item:mcwholidays:lit_shocked_pumpkin",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:carved_shocked_pumpkin"
+      ],
+      [
+        "item:minecraft:torch"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:lit_smile_pumpkin",
+    "output": "item:mcwholidays:lit_smile_pumpkin",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:carved_smile_pumpkin"
+      ],
+      [
+        "item:minecraft:torch"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:magenta_ornament",
+    "output": "item:mcwholidays:magenta_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:magenta_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:magenta_present",
+    "output": "item:mcwholidays:magenta_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_magenta_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:medium_pumpkin",
+    "output": "item:mcwholidays:medium_pumpkin",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:large_pumpkin"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:mistletoe",
+    "output": "item:mcwholidays:mistletoe",
+    "count": 1,
+    "grid": [
+      "item:minecraft:spruce_sapling"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:mixed_oak_leaves",
+    "output": "item:mcwholidays:mixed_oak_leaves",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:red_dye",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:orange_dye"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:brown_dye",
+        "item:minecraft:oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:mixed_oak_leaves_carpet",
+    "output": "item:mcwholidays:mixed_oak_leaves_carpet",
+    "count": 9,
+    "grid": [
+      [
+        "item:mcwholidays:mixed_oak_leaves",
+        "item:mcwholidays:mixed_oak_leaves",
+        "item:mcwholidays:mixed_oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orange_balloon",
+    "output": "item:mcwholidays:orange_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:orange_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orange_cube_string_lights",
+    "output": "item:mcwholidays:orange_cube_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:orange_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orange_oak_leaves",
+    "output": "item:mcwholidays:orange_oak_leaves",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:orange_dye",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orange_oak_leaves_carpet",
+    "output": "item:mcwholidays:orange_oak_leaves_carpet",
+    "count": 9,
+    "grid": [
+      [
+        "item:mcwholidays:orange_oak_leaves",
+        "item:mcwholidays:orange_oak_leaves",
+        "item:mcwholidays:orange_oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orange_ornament",
+    "output": "item:mcwholidays:orange_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:orange_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orange_string_lights",
+    "output": "item:mcwholidays:orange_string_lights",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:string",
+        ""
+      ],
+      [
+        "item:minecraft:glowstone_dust",
+        "item:minecraft:orange_dye",
+        "item:minecraft:glowstone_dust"
+      ],
+      [
+        "",
+        "item:minecraft:glowstone_dust",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orange_tiny_string_lights",
+    "output": "item:mcwholidays:orange_tiny_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:orange_cube_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_blue_garland",
+    "output": "item:mcwholidays:orn_blue_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:blue_ornament",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_blue_wavy_garland",
+    "output": "item:mcwholidays:orn_blue_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:blue_ornament",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_golden_garland",
+    "output": "item:mcwholidays:orn_golden_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:yellow_ornament",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_golden_wavy_garland",
+    "output": "item:mcwholidays:orn_golden_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:yellow_ornament",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_red_garland",
+    "output": "item:mcwholidays:orn_red_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:red_ornament",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_red_wavy_garland",
+    "output": "item:mcwholidays:orn_red_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:red_ornament",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_silver_garland",
+    "output": "item:mcwholidays:orn_silver_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:silver_ornament",
+        "item:mcwholidays:garland"
+      ],
+      [
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland",
+        "item:mcwholidays:garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:orn_silver_wavy_garland",
+    "output": "item:mcwholidays:orn_silver_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:silver_ornament",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:outlined_cobweb",
+    "output": "item:mcwholidays:outlined_cobweb",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:cobweb",
+        "",
+        "item:minecraft:cobweb"
+      ],
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "item:minecraft:cobweb",
+        "",
+        "item:minecraft:cobweb"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pair_of_potions",
+    "output": "item:mcwholidays:pair_of_potions",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass_bottle",
+        "item:minecraft:glass_bottle"
+      ],
+      [
+        "",
+        "item:minecraft:green_dye",
+        "item:minecraft:red_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pair_of_pumpkins",
+    "output": "item:mcwholidays:pair_of_pumpkins",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:small_pumpkin",
+      "item:mcwholidays:medium_pumpkin"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:pile_of_birch_wood",
+    "output": "item:mcwholidays:pile_of_birch_wood",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:birch_log",
+        ""
+      ],
+      [
+        "item:minecraft:birch_log",
+        "item:minecraft:birch_log",
+        "item:minecraft:birch_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pile_of_oak_wood",
+    "output": "item:mcwholidays:pile_of_oak_wood",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:oak_log",
+        ""
+      ],
+      [
+        "item:minecraft:oak_log",
+        "item:minecraft:oak_log",
+        "item:minecraft:oak_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pile_of_spruce_wood",
+    "output": "item:mcwholidays:pile_of_spruce_wood",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_log",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_log",
+        "item:minecraft:spruce_log",
+        "item:minecraft:spruce_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pine_bottom",
+    "output": "item:mcwholidays:pine_bottom",
+    "count": 6,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pine_middle",
+    "output": "item:mcwholidays:pine_middle",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ],
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pine_top",
+    "output": "item:mcwholidays:pine_top",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pink_ornament",
+    "output": "item:mcwholidays:pink_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:pink_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:present_doormat",
+    "output": "item:mcwholidays:present_doormat",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:blue_dye",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:yellow_dye"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:present_wall_deco",
+    "output": "item:mcwholidays:present_wall_deco",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:red_dye",
+        "item:minecraft:paper",
+        "item:minecraft:red_dye"
+      ],
+      [
+        "",
+        "item:minecraft:red_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pumpkin_balloon",
+    "output": "item:mcwholidays:pumpkin_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_dye"
+      ],
+      [
+        "item:minecraft:orange_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pumpkin_doormat",
+    "output": "item:mcwholidays:pumpkin_doormat",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:orange_dye",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pumpkin_wall_deco_1",
+    "output": "item:mcwholidays:pumpkin_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:black_dye",
+        ""
+      ],
+      [
+        "item:minecraft:black_dye",
+        "item:minecraft:paper",
+        "item:minecraft:black_dye"
+      ],
+      [
+        "item:minecraft:black_dye",
+        "item:minecraft:black_dye",
+        "item:minecraft:black_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pumpkin_wall_deco_2",
+    "output": "item:mcwholidays:pumpkin_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:pumpkin_wall_deco_1"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pumpkin_wheelbarrow",
+    "output": "item:mcwholidays:pumpkin_wheelbarrow",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:pumpkin",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "item:minecraft:stick",
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:purple_cube_string_lights",
+    "output": "item:mcwholidays:purple_cube_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:purple_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:purple_decorated_christmas_tree_base",
+    "output": "item:mcwholidays:purple_decorated_christmas_tree_base",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_base",
+      "item:minecraft:purple_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:purple_decorated_christmas_tree_bottom",
+    "output": "item:mcwholidays:purple_decorated_christmas_tree_bottom",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_bottom",
+      "item:minecraft:purple_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:purple_decorated_christmas_tree_middle",
+    "output": "item:mcwholidays:purple_decorated_christmas_tree_middle",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_middle",
+      "item:minecraft:purple_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:purple_decorated_christmas_tree_top",
+    "output": "item:mcwholidays:purple_decorated_christmas_tree_top",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_top",
+      "item:minecraft:purple_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:purple_garland_wall_deco_1",
+    "output": "item:mcwholidays:purple_garland_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:purple_dye",
+        "",
+        "item:minecraft:purple_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:purple_garland_wall_deco_2",
+    "output": "item:mcwholidays:purple_garland_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:purple_dye",
+        "item:minecraft:purple_dye",
+        "item:minecraft:purple_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:purple_ornament",
+    "output": "item:mcwholidays:purple_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:purple_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:purple_ornament_wall_deco_1",
+    "output": "item:mcwholidays:purple_ornament_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:purple_dye",
+        "item:minecraft:paper",
+        "item:minecraft:purple_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:purple_ornament_wall_deco_2",
+    "output": "item:mcwholidays:purple_ornament_wall_deco_2",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:purple_ornament_wall_deco_1"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:purple_present",
+    "output": "item:mcwholidays:purple_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_purple_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:purple_string_lights",
+    "output": "item:mcwholidays:purple_string_lights",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:string",
+        ""
+      ],
+      [
+        "item:minecraft:glowstone_dust",
+        "item:minecraft:purple_dye",
+        "item:minecraft:glowstone_dust"
+      ],
+      [
+        "",
+        "item:minecraft:glowstone_dust",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:purple_tiny_string_lights",
+    "output": "item:mcwholidays:purple_tiny_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:purple_cube_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:pyramid_cobweb",
+    "output": "item:mcwholidays:pyramid_cobweb",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:cobweb",
+        ""
+      ],
+      [
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_balloon",
+    "output": "item:mcwholidays:red_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:red_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_candy_cane_block",
+    "output": "item:mcwholidays:red_candy_cane_block",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:candy_cane",
+        "item:mcwholidays:candy_cane"
+      ],
+      [
+        "",
+        "item:mcwholidays:candy_cane",
+        "item:mcwholidays:candy_cane"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_candy_cane_slab",
+    "output": "item:mcwholidays:red_candy_cane_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_candy_cane_slim",
+    "output": "item:mcwholidays:red_candy_cane_slim",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:red_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_candy_cane_stairs",
+    "output": "item:mcwholidays:red_candy_cane_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_cube_string_lights",
+    "output": "item:mcwholidays:red_cube_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:red_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_decorated_christmas_tree_base",
+    "output": "item:mcwholidays:red_decorated_christmas_tree_base",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_base",
+      "item:minecraft:red_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:red_decorated_christmas_tree_bottom",
+    "output": "item:mcwholidays:red_decorated_christmas_tree_bottom",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_bottom",
+      "item:minecraft:red_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:red_decorated_christmas_tree_middle",
+    "output": "item:mcwholidays:red_decorated_christmas_tree_middle",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_middle",
+      "item:minecraft:red_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:red_decorated_christmas_tree_top",
+    "output": "item:mcwholidays:red_decorated_christmas_tree_top",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_top",
+      "item:minecraft:red_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:red_garland_wall_deco_1",
+    "output": "item:mcwholidays:red_garland_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:red_dye",
+        "",
+        "item:minecraft:red_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_garland_wall_deco_2",
+    "output": "item:mcwholidays:red_garland_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:red_dye",
+        "item:minecraft:red_dye",
+        "item:minecraft:red_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_oak_leaves",
+    "output": "item:mcwholidays:red_oak_leaves",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:red_dye",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_oak_leaves_carpet",
+    "output": "item:mcwholidays:red_oak_leaves_carpet",
+    "count": 9,
+    "grid": [
+      [
+        "item:mcwholidays:red_oak_leaves",
+        "item:mcwholidays:red_oak_leaves",
+        "item:mcwholidays:red_oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_ornament",
+    "output": "item:mcwholidays:red_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:red_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_ornament_wall_deco_1",
+    "output": "item:mcwholidays:red_ornament_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:red_dye",
+        "item:minecraft:paper",
+        "item:minecraft:red_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_ornament_wall_deco_2",
+    "output": "item:mcwholidays:red_ornament_wall_deco_2",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:red_ornament_wall_deco_1"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:red_present",
+    "output": "item:mcwholidays:red_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_red_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:red_stocking",
+    "output": "item:mcwholidays:red_stocking",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:red_wool",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_string_lights",
+    "output": "item:mcwholidays:red_string_lights",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:string",
+        ""
+      ],
+      [
+        "item:minecraft:glowstone_dust",
+        "item:minecraft:red_dye",
+        "item:minecraft:glowstone_dust"
+      ],
+      [
+        "",
+        "item:minecraft:glowstone_dust",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:red_tiny_string_lights",
+    "output": "item:mcwholidays:red_tiny_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:red_cube_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:reindeer_doormat",
+    "output": "item:mcwholidays:reindeer_doormat",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_dye",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:santa_balloon",
+    "output": "item:mcwholidays:santa_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:red_dye"
+      ],
+      [
+        "item:minecraft:green_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:santa_hat_wall_deco",
+    "output": "item:mcwholidays:santa_hat_wall_deco",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:red_dye",
+        ""
+      ],
+      [
+        "item:minecraft:red_dye",
+        "item:minecraft:paper",
+        "item:minecraft:red_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:scarecrow",
+    "output": "item:mcwholidays:scarecrow",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:carved_pumpkin",
+        ""
+      ],
+      [
+        "item:minecraft:wheat",
+        "item:minecraft:hay_block",
+        "item:minecraft:wheat"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:silver_ornament",
+    "output": "item:mcwholidays:silver_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:light_gray_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:single_bell",
+    "output": "item:mcwholidays:single_bell",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:gold_nugget",
+        ""
+      ],
+      [
+        "item:minecraft:gold_nugget",
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_nugget"
+      ],
+      [
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:single_potion",
+    "output": "item:mcwholidays:single_potion",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass_bottle",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:green_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:sitting_skeleton",
+    "output": "item:mcwholidays:sitting_skeleton",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:bone_block",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:bone",
+        ""
+      ],
+      [
+        "item:minecraft:bone",
+        "item:minecraft:bone",
+        "item:minecraft:bone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:skeleton_balloon",
+    "output": "item:mcwholidays:skeleton_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gray_dye"
+      ],
+      [
+        "item:minecraft:white_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:small_pumpkin",
+    "output": "item:mcwholidays:small_pumpkin",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:medium_pumpkin"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:snow_covered_pine_bottom",
+    "output": "item:mcwholidays:snow_covered_pine_bottom",
+    "count": 6,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:snowy_spruce_leaves",
+        ""
+      ],
+      [
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves"
+      ],
+      [
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snow_covered_pine_middle",
+    "output": "item:mcwholidays:snow_covered_pine_middle",
+    "count": 3,
+    "grid": [
+      [
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves"
+      ],
+      [
+        "",
+        "item:mcwholidays:snowy_spruce_leaves",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snow_covered_pine_top",
+    "output": "item:mcwholidays:snow_covered_pine_top",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:snowy_spruce_leaves",
+        ""
+      ],
+      [
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman",
+    "output": "item:mcwholidays:snowman",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:snowball",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:snow_block",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman_bottom",
+    "output": "item:mcwholidays:snowman_bottom",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:snow_block",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:snow_block",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman_ear_muffs",
+    "output": "item:mcwholidays:snowman_ear_muffs",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:blue_wool",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:snow_block",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman_grinch",
+    "output": "item:mcwholidays:snowman_grinch",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:green_wool",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:snow_block",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman_with_pan",
+    "output": "item:mcwholidays:snowman_with_pan",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:iron_ingot",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:snow_block",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman_with_santa_hat",
+    "output": "item:mcwholidays:snowman_with_santa_hat",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:red_wool",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:snow_block",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman_with_top_hat",
+    "output": "item:mcwholidays:snowman_with_top_hat",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:black_wool",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:snow_block",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowman_with_ushanka",
+    "output": "item:mcwholidays:snowman_with_ushanka",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:brown_wool",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:snow_block",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowy_fern",
+    "output": "item:mcwholidays:snowy_fern",
+    "count": 1,
+    "grid": [
+      "item:minecraft:fern",
+      "item:minecraft:snowball"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:snowy_grass",
+    "output": "item:mcwholidays:snowy_grass",
+    "count": 1,
+    "grid": [
+      "item:minecraft:short_grass",
+      "item:minecraft:snowball"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:snowy_grass_block",
+    "output": "item:mcwholidays:snowy_grass_block",
+    "count": 1,
+    "grid": [
+      "item:minecraft:dirt",
+      "item:minecraft:snowball"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:snowy_oak_leaves",
+    "output": "item:mcwholidays:snowy_oak_leaves",
+    "count": 1,
+    "grid": [
+      "item:minecraft:oak_leaves",
+      "item:minecraft:snowball"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:snowy_oak_leaves_carpet",
+    "output": "item:mcwholidays:snowy_oak_leaves_carpet",
+    "count": 6,
+    "grid": [
+      [
+        "item:mcwholidays:snowy_oak_leaves",
+        "item:mcwholidays:snowy_oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowy_pine_bottom",
+    "output": "item:mcwholidays:snowy_pine_bottom",
+    "count": 6,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ],
+      [
+        "item:minecraft:snowball",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:snowball"
+      ],
+      [
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowy_pine_middle",
+    "output": "item:mcwholidays:snowy_pine_middle",
+    "count": 3,
+    "grid": [
+      [
+        "item:minecraft:snowball",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:snowball"
+      ],
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowy_pine_top",
+    "output": "item:mcwholidays:snowy_pine_top",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ],
+      [
+        "item:minecraft:snowball",
+        "item:minecraft:spruce_leaves",
+        "item:minecraft:snowball"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowy_spruce_leaves",
+    "output": "item:mcwholidays:snowy_spruce_leaves",
+    "count": 1,
+    "grid": [
+      "item:minecraft:spruce_leaves",
+      "item:minecraft:snowball"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:snowy_spruce_leaves_carpet",
+    "output": "item:mcwholidays:snowy_spruce_leaves_carpet",
+    "count": 6,
+    "grid": [
+      [
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:snowy_tall_fern",
+    "output": "item:mcwholidays:snowy_tall_fern",
+    "count": 1,
+    "grid": [
+      "item:minecraft:large_fern",
+      "item:minecraft:snowball"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:snowy_tall_grass",
+    "output": "item:mcwholidays:snowy_tall_grass",
+    "count": 1,
+    "grid": [
+      "item:minecraft:tall_grass",
+      "item:minecraft:snowball"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:sock_doormat",
+    "output": "item:mcwholidays:sock_doormat",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:red_dye",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:spider_balloon",
+    "output": "item:mcwholidays:spider_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:red_dye"
+      ],
+      [
+        "item:minecraft:black_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:spider_wall_deco_1",
+    "output": "item:mcwholidays:spider_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_dye",
+        "",
+        "item:minecraft:black_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ],
+      [
+        "item:minecraft:black_dye",
+        "",
+        "item:minecraft:black_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:spider_wall_deco_2",
+    "output": "item:mcwholidays:spider_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:spider_wall_deco_1"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:spooky_cobweb",
+    "output": "item:mcwholidays:spooky_cobweb",
+    "count": 5,
+    "grid": [
+      [
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb"
+      ],
+      [
+        "item:minecraft:cobweb",
+        "",
+        "item:minecraft:cobweb"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:standing_broomstick",
+    "output": "item:mcwholidays:standing_broomstick",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:wheat"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:standing_hay_bale",
+    "output": "item:mcwholidays:standing_hay_bale",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ],
+      [
+        "",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ],
+      [
+        "",
+        "item:minecraft:wheat",
+        "item:minecraft:wheat"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:standing_rake",
+    "output": "item:mcwholidays:standing_rake",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:standing_shovel",
+    "output": "item:mcwholidays:standing_shovel",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:iron_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:star_wall_deco",
+    "output": "item:mcwholidays:star_wall_deco",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ],
+      [
+        "item:minecraft:yellow_dye",
+        "item:minecraft:paper",
+        "item:minecraft:yellow_dye"
+      ],
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:stars_wall_deco",
+    "output": "item:mcwholidays:stars_wall_deco",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:yellow_dye",
+        "item:minecraft:paper",
+        "item:minecraft:yellow_dye"
+      ],
+      [
+        "",
+        "item:minecraft:yellow_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:stocking_wall_deco_1",
+    "output": "item:mcwholidays:stocking_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:white_dye",
+        ""
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:red_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:stocking_wall_deco_2",
+    "output": "item:mcwholidays:stocking_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:stocking_wall_deco_1"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:three_potions",
+    "output": "item:mcwholidays:three_potions",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:glass_bottle",
+        "item:minecraft:glass_bottle",
+        "item:minecraft:glass_bottle"
+      ],
+      [
+        "item:minecraft:blue_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:red_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:three_pumpkins",
+    "output": "item:mcwholidays:three_pumpkins",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:small_pumpkin",
+      "item:mcwholidays:small_pumpkin",
+      "item:mcwholidays:medium_pumpkin"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:tree_balloon",
+    "output": "item:mcwholidays:tree_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:white_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:tree_doormat",
+    "output": "item:mcwholidays:tree_doormat",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:green_dye",
+        "item:minecraft:brown_carpet"
+      ],
+      [
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet",
+        "item:minecraft:brown_carpet"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:triangle_cobweb",
+    "output": "item:mcwholidays:triangle_cobweb",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb",
+        "item:minecraft:cobweb"
+      ],
+      [
+        "",
+        "item:minecraft:cobweb",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:unmeltable_snow",
+    "output": "item:mcwholidays:unmeltable_snow",
+    "count": 64,
+    "grid": [
+      [
+        "item:minecraft:snow_block",
+        "item:minecraft:snow_block",
+        "item:minecraft:snow_block"
+      ],
+      [
+        "item:minecraft:snow_block",
+        "item:minecraft:packed_ice",
+        "item:minecraft:snow_block"
+      ],
+      [
+        "item:minecraft:snow_block",
+        "item:minecraft:snow_block",
+        "item:minecraft:snow_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:vertical_garland_wall_deco",
+    "output": "item:mcwholidays:vertical_garland_wall_deco",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:horizontal_garland_wall_deco"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:wavy_garland",
+    "output": "item:mcwholidays:wavy_garland",
+    "count": 9,
+    "grid": [
+      [
+        "item:minecraft:spruce_leaves",
+        "",
+        "item:minecraft:spruce_leaves"
+      ],
+      [
+        "",
+        "item:minecraft:spruce_leaves",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wavy_garland_blue_lights",
+    "output": "item:mcwholidays:wavy_garland_blue_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:blue_string_lights",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wavy_garland_colorful_lights",
+    "output": "item:mcwholidays:wavy_garland_colorful_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:colorful_string_lights",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wavy_garland_green_lights",
+    "output": "item:mcwholidays:wavy_garland_green_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:green_string_lights",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wavy_garland_orange_lights",
+    "output": "item:mcwholidays:wavy_garland_orange_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:orange_string_lights",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wavy_garland_purple_lights",
+    "output": "item:mcwholidays:wavy_garland_purple_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:purple_string_lights",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wavy_garland_red_lights",
+    "output": "item:mcwholidays:wavy_garland_red_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:red_string_lights",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wavy_garland_yellow_lights",
+    "output": "item:mcwholidays:wavy_garland_yellow_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:yellow_string_lights",
+        "item:mcwholidays:wavy_garland"
+      ],
+      [
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland",
+        "item:mcwholidays:wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_balloon",
+    "output": "item:mcwholidays:white_balloon",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:white_wool"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland",
+    "output": "item:mcwholidays:white_garland",
+    "count": 9,
+    "grid": [
+      [
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves",
+        "item:mcwholidays:snowy_spruce_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland_blue_lights",
+    "output": "item:mcwholidays:white_garland_blue_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:blue_string_lights",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland_colorful_lights",
+    "output": "item:mcwholidays:white_garland_colorful_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:colorful_string_lights",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland_green_lights",
+    "output": "item:mcwholidays:white_garland_green_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:green_string_lights",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland_orange_lights",
+    "output": "item:mcwholidays:white_garland_orange_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:orange_string_lights",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland_purple_lights",
+    "output": "item:mcwholidays:white_garland_purple_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:purple_string_lights",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland_red_lights",
+    "output": "item:mcwholidays:white_garland_red_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:red_string_lights",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_garland_yellow_lights",
+    "output": "item:mcwholidays:white_garland_yellow_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:yellow_string_lights",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_blue_garland",
+    "output": "item:mcwholidays:white_orn_blue_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:blue_ornament",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_blue_wavy_garland",
+    "output": "item:mcwholidays:white_orn_blue_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:blue_ornament",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_golden_garland",
+    "output": "item:mcwholidays:white_orn_golden_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:yellow_ornament",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_golden_wavy_garland",
+    "output": "item:mcwholidays:white_orn_golden_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:yellow_ornament",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_red_garland",
+    "output": "item:mcwholidays:white_orn_red_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:red_ornament",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_red_wavy_garland",
+    "output": "item:mcwholidays:white_orn_red_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:red_ornament",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_silver_garland",
+    "output": "item:mcwholidays:white_orn_silver_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:silver_ornament",
+        "item:mcwholidays:white_garland"
+      ],
+      [
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland",
+        "item:mcwholidays:white_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_orn_silver_wavy_garland",
+    "output": "item:mcwholidays:white_orn_silver_wavy_garland",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:silver_ornament",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_stocking",
+    "output": "item:mcwholidays:white_stocking",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:red_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland",
+    "output": "item:mcwholidays:white_wavy_garland",
+    "count": 9,
+    "grid": [
+      [
+        "item:mcwholidays:snowy_spruce_leaves",
+        "",
+        "item:mcwholidays:snowy_spruce_leaves"
+      ],
+      [
+        "",
+        "item:mcwholidays:snowy_spruce_leaves",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland_blue_lights",
+    "output": "item:mcwholidays:white_wavy_garland_blue_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:blue_string_lights",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland_colorful_lights",
+    "output": "item:mcwholidays:white_wavy_garland_colorful_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:colorful_string_lights",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland_green_lights",
+    "output": "item:mcwholidays:white_wavy_garland_green_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:green_string_lights",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland_orange_lights",
+    "output": "item:mcwholidays:white_wavy_garland_orange_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:orange_string_lights",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland_purple_lights",
+    "output": "item:mcwholidays:white_wavy_garland_purple_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:purple_string_lights",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland_red_lights",
+    "output": "item:mcwholidays:white_wavy_garland_red_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:red_string_lights",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:white_wavy_garland_yellow_lights",
+    "output": "item:mcwholidays:white_wavy_garland_yellow_lights",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:yellow_string_lights",
+        "item:mcwholidays:white_wavy_garland"
+      ],
+      [
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland",
+        "item:mcwholidays:white_wavy_garland"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:witch_cauldron",
+    "output": "item:mcwholidays:witch_cauldron",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:cauldron",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:witch_hat",
+    "output": "item:mcwholidays:witch_hat",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:blue_wool",
+        ""
+      ],
+      [
+        "item:minecraft:blue_wool",
+        "item:minecraft:gold_nugget",
+        "item:minecraft:blue_wool"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:witch_hat_wall_deco_1",
+    "output": "item:mcwholidays:witch_hat_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:black_dye",
+        ""
+      ],
+      [
+        "item:minecraft:black_dye",
+        "item:minecraft:paper",
+        "item:minecraft:black_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:witch_hat_wall_deco_2",
+    "output": "item:mcwholidays:witch_hat_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "",
+        "item:minecraft:black_dye"
+      ],
+      [
+        "",
+        "item:minecraft:black_dye",
+        ""
+      ],
+      [
+        "item:minecraft:black_dye",
+        "item:minecraft:paper",
+        "item:minecraft:black_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wooden_sled",
+    "output": "item:mcwholidays:wooden_sled",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_slab",
+        "item:minecraft:spruce_slab"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wreath_wall_deco_1",
+    "output": "item:mcwholidays:wreath_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:green_dye",
+        ""
+      ],
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:paper",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "",
+        "item:minecraft:green_dye",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:wreath_wall_deco_2",
+    "output": "item:mcwholidays:wreath_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:mcwholidays:wreath_wall_deco_1"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_candy_cane_block",
+    "output": "item:mcwholidays:yellow_candy_cane_block",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:minecraft:yellow_dye",
+        "item:mcwholidays:red_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block",
+        "item:mcwholidays:red_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_candy_cane_slab",
+    "output": "item:mcwholidays:yellow_candy_cane_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:mcwholidays:yellow_candy_cane_block",
+        "item:mcwholidays:yellow_candy_cane_block",
+        "item:mcwholidays:yellow_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_candy_cane_slim",
+    "output": "item:mcwholidays:yellow_candy_cane_slim",
+    "count": 8,
+    "grid": [
+      [
+        "item:mcwholidays:yellow_candy_cane_block",
+        "item:mcwholidays:yellow_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:yellow_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:yellow_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_candy_cane_stairs",
+    "output": "item:mcwholidays:yellow_candy_cane_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "",
+        "item:mcwholidays:yellow_candy_cane_block"
+      ],
+      [
+        "",
+        "item:mcwholidays:yellow_candy_cane_block",
+        "item:mcwholidays:yellow_candy_cane_block"
+      ],
+      [
+        "item:mcwholidays:yellow_candy_cane_block",
+        "item:mcwholidays:yellow_candy_cane_block",
+        "item:mcwholidays:yellow_candy_cane_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_cube_string_lights",
+    "output": "item:mcwholidays:yellow_cube_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:yellow_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_decorated_christmas_tree_base",
+    "output": "item:mcwholidays:yellow_decorated_christmas_tree_base",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_base",
+      "item:minecraft:yellow_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:yellow_decorated_christmas_tree_bottom",
+    "output": "item:mcwholidays:yellow_decorated_christmas_tree_bottom",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_bottom",
+      "item:minecraft:yellow_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:yellow_decorated_christmas_tree_middle",
+    "output": "item:mcwholidays:yellow_decorated_christmas_tree_middle",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_middle",
+      "item:minecraft:yellow_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:yellow_decorated_christmas_tree_top",
+    "output": "item:mcwholidays:yellow_decorated_christmas_tree_top",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:christmas_tree_top",
+      "item:minecraft:yellow_dye"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:yellow_garland_wall_deco_1",
+    "output": "item:mcwholidays:yellow_garland_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:yellow_dye",
+        "",
+        "item:minecraft:yellow_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_garland_wall_deco_2",
+    "output": "item:mcwholidays:yellow_garland_wall_deco_2",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye",
+        "item:minecraft:green_dye"
+      ],
+      [
+        "item:minecraft:yellow_dye",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:yellow_dye"
+      ],
+      [
+        "",
+        "item:minecraft:paper",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_oak_leaves",
+    "output": "item:mcwholidays:yellow_oak_leaves",
+    "count": 8,
+    "grid": [
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:oak_leaves"
+      ],
+      [
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves",
+        "item:minecraft:oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_oak_leaves_carpet",
+    "output": "item:mcwholidays:yellow_oak_leaves_carpet",
+    "count": 9,
+    "grid": [
+      [
+        "item:mcwholidays:yellow_oak_leaves",
+        "item:mcwholidays:yellow_oak_leaves",
+        "item:mcwholidays:yellow_oak_leaves"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_ornament",
+    "output": "item:mcwholidays:yellow_ornament",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ],
+      [
+        "item:minecraft:glass",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:glass"
+      ],
+      [
+        "",
+        "item:minecraft:glass",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_ornament_wall_deco_1",
+    "output": "item:mcwholidays:yellow_ornament_wall_deco_1",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:yellow_dye",
+        "item:minecraft:paper",
+        "item:minecraft:yellow_dye"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_ornament_wall_deco_2",
+    "output": "item:mcwholidays:yellow_ornament_wall_deco_2",
+    "count": 1,
+    "grid": [
+      "item:mcwholidays:yellow_ornament_wall_deco_1"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:yellow_present",
+    "output": "item:mcwholidays:yellow_present",
+    "count": 2,
+    "grid": [
+      "item:mcwholidays:big_yellow_present"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "mcwholidays:yellow_string_lights",
+    "output": "item:mcwholidays:yellow_string_lights",
+    "count": 4,
+    "grid": [
+      [
+        "",
+        "item:minecraft:string",
+        ""
+      ],
+      [
+        "item:minecraft:glowstone_dust",
+        "item:minecraft:yellow_dye",
+        "item:minecraft:glowstone_dust"
+      ],
+      [
+        "",
+        "item:minecraft:glowstone_dust",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "mcwholidays:yellow_tiny_string_lights",
+    "output": "item:mcwholidays:yellow_tiny_string_lights",
+    "count": 2,
+    "grid": [
+      [
+        "",
+        "item:mcwholidays:yellow_cube_string_lights",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

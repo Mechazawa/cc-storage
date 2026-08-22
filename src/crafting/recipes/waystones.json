@@ -1,0 +1,863 @@
+[
+  {
+    "name": "waystones:amethyst_portstone",
+    "output": "item:waystones:amethyst_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:amethyst_sharestone",
+    "output": "item:waystones:amethyst_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:waystones:warp_stone",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:amethyst_sharestone_from_ruined",
+    "output": "item:waystones:amethyst_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:amethyst_shard",
+      "item:minecraft:amethyst_shard"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:andesite_waystone",
+    "output": "item:waystones:andesite_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:stone_bricks",
+        ""
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:blackstone_waystone",
+    "output": "item:waystones:blackstone_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:blackstone",
+        ""
+      ],
+      [
+        "item:minecraft:blackstone",
+        "item:waystones:warp_stone",
+        "item:minecraft:blackstone"
+      ],
+      [
+        "item:minecraft:blackstone",
+        "item:minecraft:blackstone",
+        "item:minecraft:blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:blank_scroll",
+    "output": "item:waystones:blank_scroll",
+    "count": 3,
+    "grid": [
+      [
+        "tag:items:c:nuggets/gold",
+        "item:minecraft:feather",
+        "tag:items:c:nuggets/gold"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:copper_portstone",
+    "output": "item:waystones:copper_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:copper_sharestone",
+    "output": "item:waystones:copper_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "item:waystones:warp_stone",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:copper_sharestone_from_ruined",
+    "output": "item:waystones:copper_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:copper_ingot",
+      "item:minecraft:copper_ingot"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:deepslate_waystone",
+    "output": "item:waystones:deepslate_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:deepslate",
+        ""
+      ],
+      [
+        "item:minecraft:deepslate",
+        "item:waystones:warp_stone",
+        "item:minecraft:deepslate"
+      ],
+      [
+        "item:minecraft:deepslate",
+        "item:minecraft:deepslate",
+        "item:minecraft:deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:diamond_portstone",
+    "output": "item:waystones:diamond_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:diamond",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:diamond_sharestone",
+    "output": "item:waystones:diamond_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:diamond",
+        "item:waystones:warp_stone",
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:diamond_sharestone_from_ruined",
+    "output": "item:waystones:diamond_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:diamond",
+      "item:minecraft:diamond"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:dormant_shard",
+    "output": "item:waystones:dormant_shard",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:amethyst_shard",
+        ""
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:flint",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "",
+        "item:minecraft:amethyst_shard",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:emerald_portstone",
+    "output": "item:waystones:emerald_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:emerald",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:emerald"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:emerald_sharestone",
+    "output": "item:waystones:emerald_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:emerald",
+        "item:waystones:warp_stone",
+        "item:minecraft:emerald"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:emerald_sharestone_from_ruined",
+    "output": "item:waystones:emerald_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:emerald",
+      "item:minecraft:emerald"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:end_stone_waystone",
+    "output": "item:waystones:end_stone_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:end_stone_bricks",
+        ""
+      ],
+      [
+        "item:minecraft:end_stone_bricks",
+        "item:waystones:warp_stone",
+        "item:minecraft:end_stone_bricks"
+      ],
+      [
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:end_stone_bricks",
+        "item:minecraft:end_stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:gold_portstone",
+    "output": "item:waystones:gold_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gold_ingot",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:gold_ingot"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:gold_sharestone",
+    "output": "item:waystones:gold_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:gold_ingot",
+        "item:waystones:warp_stone",
+        "item:minecraft:gold_ingot"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:gold_sharestone_from_ruined",
+    "output": "item:waystones:gold_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:gold_ingot",
+      "item:minecraft:gold_ingot"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:lapis_portstone",
+    "output": "item:waystones:lapis_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:lapis_lazuli",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:lapis_lazuli"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:lapis_sharestone",
+    "output": "item:waystones:lapis_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:lapis_lazuli",
+        "item:waystones:warp_stone",
+        "item:minecraft:lapis_lazuli"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:lapis_sharestone_from_ruined",
+    "output": "item:waystones:lapis_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:lapis_lazuli",
+      "item:minecraft:lapis_lazuli"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:mossy_andesite_waystone",
+    "output": "item:waystones:mossy_andesite_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:mossy_stone_bricks",
+        ""
+      ],
+      [
+        "item:minecraft:mossy_stone_bricks",
+        "item:waystones:warp_stone",
+        "item:minecraft:mossy_stone_bricks"
+      ],
+      [
+        "item:minecraft:mossy_stone_bricks",
+        "item:minecraft:mossy_stone_bricks",
+        "item:minecraft:mossy_stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:mossy_waystone_from_moss_blocks",
+    "output": "item:waystones:mossy_andesite_waystone",
+    "count": 1,
+    "grid": [
+      "item:waystones:andesite_waystone",
+      "item:minecraft:moss_block",
+      "item:minecraft:moss_block",
+      "item:minecraft:moss_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:mossy_waystone_from_vines",
+    "output": "item:waystones:mossy_andesite_waystone",
+    "count": 1,
+    "grid": [
+      "item:waystones:andesite_waystone",
+      "item:minecraft:vine",
+      "item:minecraft:vine",
+      "item:minecraft:vine"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:mud_bricks_waystone",
+    "output": "item:waystones:mud_bricks_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:redstone",
+        ""
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:waystones:warp_stone",
+        "item:minecraft:redstone"
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:minecraft:redstone",
+        "item:minecraft:redstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:portstone",
+    "output": "item:waystones:portstone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:stone_brick_slab",
+        ""
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:prismarine_portstone",
+    "output": "item:waystones:prismarine_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:prismarine_shard",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:prismarine_shard"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:prismarine_sharestone",
+    "output": "item:waystones:prismarine_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:prismarine_shard",
+        "item:waystones:warp_stone",
+        "item:minecraft:prismarine_shard"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:prismarine_sharestone_from_ruined",
+    "output": "item:waystones:prismarine_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:prismarine_shard",
+      "item:minecraft:prismarine_shard"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:prismarine_waystone",
+    "output": "item:waystones:prismarine_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:redstone",
+        ""
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:waystones:warp_stone",
+        "item:minecraft:redstone"
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:minecraft:redstone",
+        "item:minecraft:redstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:purpur_waystone",
+    "output": "item:waystones:purpur_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:redstone",
+        ""
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:waystones:warp_stone",
+        "item:minecraft:redstone"
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:minecraft:redstone",
+        "item:minecraft:redstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:red_nether_bricks_waystone",
+    "output": "item:waystones:red_nether_bricks_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:emerald",
+        ""
+      ],
+      [
+        "item:minecraft:emerald",
+        "item:waystones:warp_stone",
+        "item:minecraft:emerald"
+      ],
+      [
+        "item:minecraft:emerald",
+        "item:minecraft:emerald",
+        "item:minecraft:emerald"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:redstone_portstone",
+    "output": "item:waystones:redstone_portstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:redstone",
+        "item:minecraft:stone_brick_slab",
+        "item:minecraft:redstone"
+      ],
+      [
+        "item:minecraft:stone_brick_slab",
+        "item:waystones:warp_stone",
+        "item:minecraft:stone_brick_slab"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:redstone_sharestone",
+    "output": "item:waystones:redstone_sharestone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:waystones:warp_stone",
+        "item:minecraft:redstone"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:redstone_sharestone_from_ruined",
+    "output": "item:waystones:redstone_sharestone",
+    "count": 1,
+    "grid": [
+      "item:waystones:ruined_sharestone",
+      "item:minecraft:redstone",
+      "item:minecraft:redstone"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "waystones:return_scroll",
+    "output": "item:waystones:return_scroll",
+    "count": 3,
+    "grid": [
+      [
+        "tag:items:c:nuggets/gold",
+        "item:minecraft:ink_sac",
+        "tag:items:c:nuggets/gold"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:sandstone_waystone",
+    "output": "item:waystones:sandstone_waystone",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:chiseled_sandstone",
+        ""
+      ],
+      [
+        "item:minecraft:chiseled_sandstone",
+        "item:waystones:warp_stone",
+        "item:minecraft:chiseled_sandstone"
+      ],
+      [
+        "item:minecraft:chiseled_sandstone",
+        "item:minecraft:chiseled_sandstone",
+        "item:minecraft:chiseled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:warp_plate",
+    "output": "item:waystones:warp_plate",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:flint",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:warp_scroll",
+    "output": "item:waystones:warp_scroll",
+    "count": 3,
+    "grid": [
+      [
+        "tag:items:c:nuggets/gold",
+        "item:minecraft:ink_sac",
+        "tag:items:c:nuggets/gold"
+      ],
+      [
+        "tag:items:c:nuggets/gold",
+        "item:minecraft:amethyst_shard",
+        "tag:items:c:nuggets/gold"
+      ],
+      [
+        "item:minecraft:paper",
+        "item:minecraft:paper",
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "waystones:warp_stone",
+    "output": "item:waystones:warp_stone",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:ender_pearl",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "item:minecraft:ender_pearl",
+        "item:minecraft:gold_ingot",
+        "item:minecraft:ender_pearl"
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:ender_pearl",
+        "item:minecraft:amethyst_shard"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "universal_graves:gravestone",
+    "output": "item:universal_graves:visual_grave",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:stone_bricks"
+      ],
+      [
+        "item:minecraft:stone_bricks",
+        "tag:items:minecraft:signs",
+        "item:minecraft:stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

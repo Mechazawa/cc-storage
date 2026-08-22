@@ -1,0 +1,564 @@
+[
+  {
+    "name": "plushables:heart_of_gold",
+    "output": "item:plushables:heart_of_gold",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:flowers",
+        "item:minecraft:gold_nugget",
+        "tag:items:minecraft:flowers"
+      ],
+      [
+        "item:minecraft:gold_nugget",
+        "item:minecraft:honey_bottle",
+        "item:minecraft:gold_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:gold_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "plushables:plushable_animatronic",
+    "output": "item:plushables:plushable_animatronic",
+    "count": 1,
+    "grid": [
+      "item:minecraft:redstone",
+      "item:minecraft:blue_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_beaux",
+    "output": "item:plushables:plushable_beaux",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bone",
+      "item:minecraft:gray_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_big_irritater",
+    "output": "item:plushables:plushable_big_irritater",
+    "count": 1,
+    "grid": [
+      "item:minecraft:potato",
+      "item:minecraft:red_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_big_tater",
+    "output": "item:plushables:plushable_big_tater",
+    "count": 1,
+    "grid": [
+      "item:minecraft:potato",
+      "item:minecraft:pink_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_blahaj",
+    "output": "item:plushables:plushable_blahaj",
+    "count": 1,
+    "grid": [
+      "item:minecraft:pink_petals",
+      "item:minecraft:light_blue_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_clucky",
+    "output": "item:plushables:plushable_clucky",
+    "count": 1,
+    "grid": [
+      "item:minecraft:egg",
+      "item:minecraft:white_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_conductor",
+    "output": "item:plushables:plushable_conductor",
+    "count": 1,
+    "grid": [
+      "item:minecraft:rail",
+      "item:minecraft:gray_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_cooper",
+    "output": "item:plushables:plushable_cooper",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bone",
+      "item:minecraft:black_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_creaky",
+    "output": "item:plushables:plushable_creaky",
+    "count": 1,
+    "grid": [
+      "item:minecraft:cherry_sapling",
+      "item:minecraft:black_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_djungelskog",
+    "output": "item:plushables:plushable_djungelskog",
+    "count": 1,
+    "grid": [
+      "item:minecraft:honeycomb",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_dormouse",
+    "output": "item:plushables:plushable_dormouse",
+    "count": 1,
+    "grid": [
+      "item:minecraft:oak_leaves",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_dragon",
+    "output": "item:plushables:plushable_dragon",
+    "count": 1,
+    "grid": [
+      "item:minecraft:blaze_rod",
+      "item:minecraft:white_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_fox",
+    "output": "item:plushables:plushable_fox",
+    "count": 1,
+    "grid": [
+      "item:minecraft:pumpkin",
+      "item:minecraft:orange_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_froge",
+    "output": "item:plushables:plushable_froge",
+    "count": 1,
+    "grid": [
+      "item:minecraft:lily_pad",
+      "item:minecraft:yellow_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_froglin",
+    "output": "item:plushables:plushable_froglin",
+    "count": 1,
+    "grid": [
+      "item:minecraft:lily_pad",
+      "item:minecraft:green_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_goblin",
+    "output": "item:plushables:plushable_goblin",
+    "count": 1,
+    "grid": [
+      "item:minecraft:red_mushroom",
+      "item:minecraft:lime_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_goldfish",
+    "output": "item:plushables:plushable_goldfish",
+    "count": 1,
+    "grid": [
+      "item:minecraft:gold_ingot",
+      "item:minecraft:orange_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_hamster",
+    "output": "item:plushables:plushable_hamster",
+    "count": 1,
+    "grid": [
+      "item:minecraft:carrot",
+      "item:minecraft:orange_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_kweebec",
+    "output": "item:plushables:plushable_kweebec",
+    "count": 1,
+    "grid": [
+      "item:minecraft:leaf_litter",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_mammoth",
+    "output": "item:plushables:plushable_mammoth",
+    "count": 1,
+    "grid": [
+      "item:minecraft:pointed_dripstone",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_moobloom",
+    "output": "item:plushables:plushable_moobloom",
+    "count": 1,
+    "grid": [
+      "item:minecraft:sunflower",
+      "item:minecraft:yellow_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_octoplushable",
+    "output": "item:plushables:plushable_octoplushable",
+    "count": 1,
+    "grid": [
+      "item:minecraft:ink_sac",
+      "item:minecraft:light_blue_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_orangutan",
+    "output": "item:plushables:plushable_orangutan",
+    "count": 1,
+    "grid": [
+      "item:minecraft:vine",
+      "item:minecraft:orange_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_otter",
+    "output": "item:plushables:plushable_otter",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:fishes",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_owl",
+    "output": "item:plushables:plushable_owl",
+    "count": 1,
+    "grid": [
+      "item:minecraft:glow_berries",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_penguin",
+    "output": "item:plushables:plushable_penguin",
+    "count": 1,
+    "grid": [
+      "item:minecraft:snowball",
+      "item:minecraft:gray_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_pig",
+    "output": "item:plushables:plushable_pig",
+    "count": 1,
+    "grid": [
+      "item:minecraft:mud",
+      "item:minecraft:pink_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_potsy",
+    "output": "item:plushables:plushable_potsy",
+    "count": 1,
+    "grid": [
+      "item:minecraft:cauldron",
+      "item:minecraft:black_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_raptor",
+    "output": "item:plushables:plushable_raptor",
+    "count": 1,
+    "grid": [
+      "item:minecraft:flint",
+      "item:minecraft:blue_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_rattiam",
+    "output": "item:plushables:plushable_rattiam",
+    "count": 1,
+    "grid": [
+      "item:minecraft:wheat",
+      "item:minecraft:light_gray_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_ribbit",
+    "output": "item:plushables:plushable_ribbit",
+    "count": 1,
+    "grid": [
+      "item:minecraft:fishing_rod",
+      "item:minecraft:lime_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_rupert",
+    "output": "item:plushables:plushable_rupert",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:fishes",
+      "item:minecraft:black_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_sea_bunny",
+    "output": "item:plushables:plushable_sea_bunny",
+    "count": 1,
+    "grid": [
+      "item:minecraft:seagrass",
+      "item:minecraft:white_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_shrump",
+    "output": "item:plushables:plushable_shrump",
+    "count": 1,
+    "grid": [
+      "item:minecraft:red_mushroom",
+      "item:minecraft:white_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_snail",
+    "output": "item:plushables:plushable_snail",
+    "count": 1,
+    "grid": [
+      "item:minecraft:slime_ball",
+      "item:minecraft:cyan_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_snowie",
+    "output": "item:plushables:plushable_snowie",
+    "count": 1,
+    "grid": [
+      "item:minecraft:snowball",
+      "item:minecraft:white_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_statuette",
+    "output": "item:plushables:plushable_statuette",
+    "count": 1,
+    "grid": [
+      "item:minecraft:terracotta",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_stoneling",
+    "output": "item:plushables:plushable_stoneling",
+    "count": 1,
+    "grid": [
+      "item:minecraft:stone",
+      "item:minecraft:gray_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_tiger",
+    "output": "item:plushables:plushable_tiger",
+    "count": 1,
+    "grid": [
+      "item:minecraft:porkchop",
+      "item:minecraft:orange_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_trater",
+    "output": "item:plushables:plushable_trater",
+    "count": 1,
+    "grid": [
+      "item:minecraft:poisonous_potato",
+      "item:minecraft:cyan_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_triceratops",
+    "output": "item:plushables:plushable_triceratops",
+    "count": 1,
+    "grid": [
+      "item:minecraft:fern",
+      "item:minecraft:green_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_truffles",
+    "output": "item:plushables:plushable_truffles",
+    "count": 1,
+    "grid": [
+      "item:minecraft:lily_of_the_valley",
+      "item:minecraft:pink_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_unicorn",
+    "output": "item:plushables:plushable_unicorn",
+    "count": 1,
+    "grid": [
+      "item:minecraft:cherry_leaves",
+      "item:minecraft:white_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_walrus",
+    "output": "item:plushables:plushable_walrus",
+    "count": 1,
+    "grid": [
+      "item:minecraft:sea_pickle",
+      "item:minecraft:brown_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_whale",
+    "output": "item:plushables:plushable_whale",
+    "count": 1,
+    "grid": [
+      "item:minecraft:kelp",
+      "item:minecraft:blue_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_whelpling",
+    "output": "item:plushables:plushable_whelpling",
+    "count": 1,
+    "grid": [
+      "item:minecraft:blaze_powder",
+      "item:minecraft:red_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_wisp",
+    "output": "item:plushables:plushable_wisp",
+    "count": 1,
+    "grid": [
+      "item:minecraft:echo_shard",
+      "item:minecraft:light_blue_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_wizard",
+    "output": "item:plushables:plushable_wizard",
+    "count": 1,
+    "grid": [
+      "item:minecraft:gold_ingot",
+      "item:minecraft:purple_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "plushables:plushable_ziggy",
+    "output": "item:plushables:plushable_ziggy",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:fishes",
+      "item:minecraft:white_wool",
+      "item:plushables:heart_of_gold"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

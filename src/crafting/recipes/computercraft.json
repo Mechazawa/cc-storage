@@ -1,74 +1,4 @@
- 
 [
-  {
-    "name": "computercraft:computer_advanced_upgrade",
-    "output": "item:computercraft:computer_advanced",
-    "count": 1,
-    "grid": [
-      [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "tag:items:c:gold_ingots",
-        "item:computercraft:computer_normal",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "tag:items:c:gold_ingots",
-        "",
-        "tag:items:c:gold_ingots"
-      ]
-    ],
-    "type": "crafting:shaped"
-  },
-  {
-    "name": "computercraft:pocket_computer_advanced_upgrade",
-    "output": "item:computercraft:pocket_computer_advanced",
-    "count": 1,
-    "grid": [
-      [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "tag:items:c:gold_ingots",
-        "item:computercraft:pocket_computer_normal",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "tag:items:c:gold_ingots",
-        "",
-        "tag:items:c:gold_ingots"
-      ]
-    ],
-    "type": "crafting:shaped"
-  },
-  {
-    "name": "computercraft:turtle_advanced_upgrade",
-    "output": "item:computercraft:turtle_advanced",
-    "count": 1,
-    "grid": [
-      [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "tag:items:c:gold_ingots",
-        "item:computercraft:turtle_normal",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "",
-        "tag:items:c:gold_blocks",
-        ""
-      ]
-    ],
-    "type": "crafting:shaped"
-  },
   {
     "name": "computercraft:cable",
     "output": "item:computercraft:cable",
@@ -76,17 +6,17 @@
     "grid": [
       [
         "",
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         ""
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
       ],
       [
         "",
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         ""
       ]
     ],
@@ -98,19 +28,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:dusts/redstone",
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
+        "tag:items:c:ingots/gold",
         "tag:items:c:glass_panes",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold"
       ]
     ],
     "type": "crafting:shaped"
@@ -121,19 +51,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
+        "tag:items:c:ingots/gold",
         "item:minecraft:command_block",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
+        "tag:items:c:ingots/gold",
         "tag:items:c:glass_panes",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold"
       ]
     ],
     "type": "crafting:shaped"
@@ -144,19 +74,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         "tag:items:c:glass_panes",
-        "tag:items:c:stones"
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"
@@ -167,19 +97,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"
@@ -190,19 +120,19 @@
     "count": 4,
     "grid": [
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
+        "tag:items:c:ingots/gold",
         "tag:items:c:glass_panes",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold"
       ]
     ],
     "type": "crafting:shaped"
@@ -213,19 +143,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         "tag:items:c:glass_panes",
-        "tag:items:c:stones"
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"
@@ -236,19 +166,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
+        "tag:items:c:ingots/gold",
         "item:minecraft:golden_apple",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
+        "tag:items:c:ingots/gold",
         "tag:items:c:glass_panes",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold"
       ]
     ],
     "type": "crafting:shaped"
@@ -259,19 +189,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         "item:minecraft:golden_apple",
-        "tag:items:c:stones"
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         "tag:items:c:glass_panes",
-        "tag:items:c:stones"
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"
@@ -282,22 +212,65 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         "tag:items:c:dyes",
-        "tag:items:c:stones"
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:redstone_relay",
+    "output": "item:computercraft:redstone_relay",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
+      ],
+      [
+        "tag:items:c:dusts/redstone",
+        "item:computercraft:wired_modem",
+        "tag:items:c:dusts/redstone"
+      ],
+      [
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "computercraft:skull_cloudy",
+    "output": "item:minecraft:player_head",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:skulls",
+      "item:computercraft:monitor_normal"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "computercraft:skull_dan200",
+    "output": "item:minecraft:player_head",
+    "count": 1,
+    "grid": [
+      "tag:items:minecraft:skulls",
+      "item:computercraft:computer_advanced"
+    ],
+    "type": "crafting:shapeless"
   },
   {
     "name": "computercraft:speaker",
@@ -305,19 +278,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         "item:minecraft:note_block",
-        "tag:items:c:stones"
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"
@@ -328,19 +301,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:redstone_dusts",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "tag:items:c:dusts/redstone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"
@@ -351,19 +324,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
+        "tag:items:c:ingots/gold",
         "item:minecraft:ender_eye",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold"
       ],
       [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold",
+        "tag:items:c:ingots/gold"
       ]
     ],
     "type": "crafting:shaped"
@@ -374,105 +347,19 @@
     "count": 1,
     "grid": [
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
+        "item:minecraft:stone",
         "tag:items:c:ender_pearls",
-        "tag:items:c:stones"
+        "item:minecraft:stone"
       ],
       [
-        "tag:items:c:stones",
-        "tag:items:c:stones",
-        "tag:items:c:stones"
-      ]
-    ],
-    "type": "crafting:shaped"
-  },
-  {
-    "name": "computercraft:wired_modem_full_from",
-    "output": "item:computercraft:wired_modem_full",
-    "count": 1,
-    "grid": [
-      "item:computercraft:wired_modem"
-    ],
-    "type": "crafting:shapeless"
-  },
-  {
-    "name": "computercraft:wired_modem_full_to",
-    "output": "item:computercraft:wired_modem",
-    "count": 1,
-    "grid": [
-      "item:computercraft:wired_modem_full"
-    ],
-    "type": "crafting:shapeless"
-  },
-  {
-    "name": "computercraft:printed_book",
-    "output": "item:computercraft:printed_book",
-    "count": 1,
-    "grid": [
-      "item:minecraft:leather",
-      "item:computercraft:printed_page",
-      "item:minecraft:string"
-    ],
-    "type": "crafting:shapeless"
-  },
-  {
-    "name": "computercraft:printed_pages",
-    "output": "item:computercraft:printed_pages",
-    "count": 1,
-    "grid": [
-      "item:computercraft:printed_page",
-      "item:computercraft:printed_page",
-      "item:minecraft:string"
-    ],
-    "type": "crafting:shapeless"
-  },
-  {
-    "name": "computercraft:turtle_advanced",
-    "output": "item:computercraft:turtle_advanced",
-    "count": 1,
-    "grid": [
-      [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "tag:items:c:gold_ingots",
-        "item:computercraft:computer_advanced",
-        "tag:items:c:gold_ingots"
-      ],
-      [
-        "tag:items:c:gold_ingots",
-        "tag:items:c:wooden_chests",
-        "tag:items:c:gold_ingots"
-      ]
-    ],
-    "type": "crafting:shaped"
-  },
-  {
-    "name": "computercraft:turtle_normal",
-    "output": "item:computercraft:turtle_normal",
-    "count": 1,
-    "grid": [
-      [
-        "tag:items:c:iron_ingots",
-        "tag:items:c:iron_ingots",
-        "tag:items:c:iron_ingots"
-      ],
-      [
-        "tag:items:c:iron_ingots",
-        "item:computercraft:computer_normal",
-        "tag:items:c:iron_ingots"
-      ],
-      [
-        "tag:items:c:iron_ingots",
-        "tag:items:c:wooden_chests",
-        "tag:items:c:iron_ingots"
+        "item:minecraft:stone",
+        "item:minecraft:stone",
+        "item:minecraft:stone"
       ]
     ],
     "type": "crafting:shaped"

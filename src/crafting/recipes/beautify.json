@@ -1,0 +1,1188 @@
+[
+  {
+    "name": "beautify:acacia_blinds",
+    "output": "item:beautify:acacia_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:acacia_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:acacia_picture_frame",
+    "output": "item:beautify:acacia_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:acacia_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:acacia_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:acacia_trellis",
+    "output": "item:beautify:acacia_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:acacia_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:birch_blinds",
+    "output": "item:beautify:birch_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:birch_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:birch_picture_frame",
+    "output": "item:beautify:birch_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:birch_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:birch_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:birch_trellis",
+    "output": "item:beautify:birch_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:birch_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:bookstack",
+    "output": "item:beautify:bookstack",
+    "count": 1,
+    "grid": [
+      "item:minecraft:book",
+      "item:minecraft:book",
+      "item:minecraft:book"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "beautify:botanist_workbench",
+    "output": "item:beautify:botanist_workbench",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:flower_pot",
+        "item:minecraft:flower_pot"
+      ],
+      [
+        "tag:items:minecraft:planks",
+        "tag:items:minecraft:planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra",
+    "output": "item:beautify:lamp_candelabra",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:candle",
+        "item:minecraft:candle",
+        "item:minecraft:candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_black",
+    "output": "item:beautify:lamp_candelabra_black",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:black_candle",
+        "item:minecraft:black_candle",
+        "item:minecraft:black_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_blue",
+    "output": "item:beautify:lamp_candelabra_blue",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:blue_candle",
+        "item:minecraft:blue_candle",
+        "item:minecraft:blue_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_brown",
+    "output": "item:beautify:lamp_candelabra_brown",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:brown_candle",
+        "item:minecraft:brown_candle",
+        "item:minecraft:brown_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_cyan",
+    "output": "item:beautify:lamp_candelabra_cyan",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cyan_candle",
+        "item:minecraft:cyan_candle",
+        "item:minecraft:cyan_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_gray",
+    "output": "item:beautify:lamp_candelabra_gray",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gray_candle",
+        "item:minecraft:gray_candle",
+        "item:minecraft:gray_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_green",
+    "output": "item:beautify:lamp_candelabra_green",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:green_candle",
+        "item:minecraft:green_candle",
+        "item:minecraft:green_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_light_blue",
+    "output": "item:beautify:lamp_candelabra_light_blue",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:light_blue_candle",
+        "item:minecraft:light_blue_candle",
+        "item:minecraft:light_blue_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_light_gray",
+    "output": "item:beautify:lamp_candelabra_light_gray",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:light_gray_candle",
+        "item:minecraft:light_gray_candle",
+        "item:minecraft:light_gray_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_lime",
+    "output": "item:beautify:lamp_candelabra_lime",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:lime_candle",
+        "item:minecraft:lime_candle",
+        "item:minecraft:lime_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_magenta",
+    "output": "item:beautify:lamp_candelabra_magenta",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:magenta_candle",
+        "item:minecraft:magenta_candle",
+        "item:minecraft:magenta_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_orange",
+    "output": "item:beautify:lamp_candelabra_orange",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:orange_candle",
+        "item:minecraft:orange_candle",
+        "item:minecraft:orange_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_pink",
+    "output": "item:beautify:lamp_candelabra_pink",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:pink_candle",
+        "item:minecraft:pink_candle",
+        "item:minecraft:pink_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_purple",
+    "output": "item:beautify:lamp_candelabra_purple",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:purple_candle",
+        "item:minecraft:purple_candle",
+        "item:minecraft:purple_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_red",
+    "output": "item:beautify:lamp_candelabra_red",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:red_candle",
+        "item:minecraft:red_candle",
+        "item:minecraft:red_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_white",
+    "output": "item:beautify:lamp_candelabra_white",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:white_candle",
+        "item:minecraft:white_candle",
+        "item:minecraft:white_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:candelabra_yellow",
+    "output": "item:beautify:lamp_candelabra_yellow",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:yellow_candle",
+        "item:minecraft:yellow_candle",
+        "item:minecraft:yellow_candle"
+      ],
+      [
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_nugget"
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:cherry_blinds",
+    "output": "item:beautify:cherry_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:cherry_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:cherry_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:cherry_picture_frame",
+    "output": "item:beautify:cherry_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:cherry_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:cherry_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:cherry_trellis",
+    "output": "item:beautify:cherry_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:cherry_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:crimson_blinds",
+    "output": "item:beautify:crimson_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:crimson_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:crimson_picture_frame",
+    "output": "item:beautify:crimson_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:crimson_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:crimson_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:crimson_trellis",
+    "output": "item:beautify:crimson_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:crimson_stem",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:dark_oak_blinds",
+    "output": "item:beautify:dark_oak_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:dark_oak_picture_frame",
+    "output": "item:beautify:dark_oak_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:dark_oak_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:dark_oak_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:dark_oak_trellis",
+    "output": "item:beautify:dark_oak_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:dark_oak_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:hanging_pot",
+    "output": "item:beautify:hanging_pot",
+    "count": 1,
+    "grid": [
+      [
+        "item:beautify:rope"
+      ],
+      [
+        "item:minecraft:flower_pot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:iron_blinds",
+    "output": "item:beautify:iron_blinds",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:jungle_blinds",
+    "output": "item:beautify:jungle_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:jungle_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:jungle_picture_frame",
+    "output": "item:beautify:jungle_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:jungle_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:jungle_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:jungle_trellis",
+    "output": "item:beautify:jungle_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:jungle_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:lamp_bamboo",
+    "output": "item:beautify:lamp_bamboo",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:bamboo",
+        ""
+      ],
+      [
+        "item:minecraft:string",
+        "item:minecraft:copper_ingot",
+        "item:minecraft:string"
+      ],
+      [
+        "",
+        "item:minecraft:bamboo",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:lamp_jar",
+    "output": "item:beautify:lamp_jar",
+    "count": 1,
+    "grid": [
+      "item:minecraft:glowstone_dust",
+      "item:minecraft:glass_bottle"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "beautify:lamp_light_bulb",
+    "output": "item:beautify:lamp_light_bulb",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:glass_pane",
+        ""
+      ],
+      [
+        "item:minecraft:glass_pane",
+        "item:minecraft:copper_ingot",
+        "item:minecraft:glass_pane"
+      ],
+      [
+        "",
+        "item:minecraft:glass_pane",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:mangrove_blinds",
+    "output": "item:beautify:mangrove_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:mangrove_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:mangrove_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:mangrove_picture_frame",
+    "output": "item:beautify:mangrove_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:mangrove_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:mangrove_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:mangrove_trellis",
+    "output": "item:beautify:mangrove_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:mangrove_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:oak_blinds",
+    "output": "item:beautify:oak_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:oak_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:oak_picture_frame",
+    "output": "item:beautify:oak_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:oak_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:oak_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:oak_trellis",
+    "output": "item:beautify:oak_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:oak_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:quartz_picture_frame",
+    "output": "item:beautify:quartz_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:quartz_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:quartz_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:rope",
+    "output": "item:beautify:rope",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:string"
+      ],
+      [
+        "item:minecraft:string"
+      ],
+      [
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:spruce_blinds",
+    "output": "item:beautify:spruce_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:spruce_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:spruce_picture_frame",
+    "output": "item:beautify:spruce_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:spruce_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:spruce_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:spruce_trellis",
+    "output": "item:beautify:spruce_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:spruce_log",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:warped_blinds",
+    "output": "item:beautify:warped_blinds",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_slab",
+        "item:minecraft:stick"
+      ],
+      [
+        "item:minecraft:stick",
+        "item:minecraft:warped_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:warped_picture_frame",
+    "output": "item:beautify:warped_picture_frame",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:warped_slab",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:white_wool",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:warped_slab",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "beautify:warped_trellis",
+    "output": "item:beautify:warped_trellis",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ],
+      [
+        "",
+        "item:minecraft:warped_stem",
+        ""
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        "item:minecraft:stick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

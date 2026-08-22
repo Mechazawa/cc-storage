@@ -1,0 +1,1474 @@
+[
+  {
+    "name": "ecologics:azalea_boat",
+    "output": "item:ecologics:azalea_boat",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "",
+        "item:ecologics:azalea_planks"
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_button",
+    "output": "item:ecologics:azalea_button",
+    "count": 1,
+    "grid": [
+      "item:ecologics:azalea_planks"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:azalea_button_from_flowering_azalea_planks",
+    "output": "item:ecologics:azalea_button",
+    "count": 1,
+    "grid": [
+      "item:ecologics:flowering_azalea_planks"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:azalea_chest_boat",
+    "output": "item:ecologics:azalea_chest_boat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:chest",
+      "item:ecologics:azalea_boat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:azalea_door",
+    "output": "item:ecologics:azalea_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_fence",
+    "output": "item:ecologics:azalea_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:azalea_planks"
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_fence_gate",
+    "output": "item:ecologics:azalea_fence_gate",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:azalea_planks",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:azalea_planks",
+        "tag:items:c:rods/wooden"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_hanging_sign",
+    "output": "item:ecologics:azalea_hanging_sign",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:iron_chain",
+        "",
+        "item:minecraft:iron_chain"
+      ],
+      [
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log"
+      ],
+      [
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_planks",
+    "output": "item:ecologics:azalea_planks",
+    "count": 4,
+    "grid": [
+      "tag:items:ecologics:azalea_logs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:azalea_pressure_plate",
+    "output": "item:ecologics:azalea_pressure_plate",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_pressure_plate_from_flowering_azalea_planks",
+    "output": "item:ecologics:azalea_pressure_plate",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_shelf",
+    "output": "item:ecologics:azalea_shelf",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log"
+      ],
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_sign",
+    "output": "item:ecologics:azalea_sign",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ],
+      [
+        "",
+        "tag:items:c:rods/wooden",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_slab",
+    "output": "item:ecologics:azalea_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_stairs",
+    "output": "item:ecologics:azalea_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        ""
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_trapdoor",
+    "output": "item:ecologics:azalea_trapdoor",
+    "count": 2,
+    "grid": [
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ],
+      [
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks",
+        "item:ecologics:azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:azalea_wood",
+    "output": "item:ecologics:azalea_wood",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:azalea_log",
+        "item:ecologics:azalea_log"
+      ],
+      [
+        "item:ecologics:azalea_log",
+        "item:ecologics:azalea_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:beetroot_soup_from_coconut_husk",
+    "output": "item:minecraft:beetroot_soup",
+    "count": 1,
+    "grid": [
+      "item:ecologics:coconut_husk",
+      "item:minecraft:beetroot",
+      "item:minecraft:beetroot",
+      "item:minecraft:beetroot",
+      "item:minecraft:beetroot",
+      "item:minecraft:beetroot",
+      "item:minecraft:beetroot"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:coconut_boat",
+    "output": "item:ecologics:coconut_boat",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "",
+        "item:ecologics:coconut_planks"
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_button",
+    "output": "item:ecologics:coconut_button",
+    "count": 1,
+    "grid": [
+      "item:ecologics:coconut_planks"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:coconut_chest_boat",
+    "output": "item:ecologics:coconut_chest_boat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:chest",
+      "item:ecologics:coconut_boat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:coconut_door",
+    "output": "item:ecologics:coconut_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_fence",
+    "output": "item:ecologics:coconut_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:coconut_planks"
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:coconut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_fence_gate",
+    "output": "item:ecologics:coconut_fence_gate",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:coconut_planks",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:coconut_planks",
+        "tag:items:c:rods/wooden"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_hanging_sign",
+    "output": "item:ecologics:coconut_hanging_sign",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:iron_chain",
+        "",
+        "item:minecraft:iron_chain"
+      ],
+      [
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log"
+      ],
+      [
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_planks",
+    "output": "item:ecologics:coconut_planks",
+    "count": 4,
+    "grid": [
+      "tag:items:ecologics:coconut_logs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:coconut_pressure_plate",
+    "output": "item:ecologics:coconut_pressure_plate",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_shelf",
+    "output": "item:ecologics:coconut_shelf",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log"
+      ],
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_sign",
+    "output": "item:ecologics:coconut_sign",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_slab",
+    "output": "item:ecologics:coconut_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_stairs",
+    "output": "item:ecologics:coconut_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        ""
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_trapdoor",
+    "output": "item:ecologics:coconut_trapdoor",
+    "count": 2,
+    "grid": [
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ],
+      [
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks",
+        "item:ecologics:coconut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:coconut_wood",
+    "output": "item:ecologics:coconut_wood",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:coconut_log",
+        "item:ecologics:coconut_log"
+      ],
+      [
+        "item:ecologics:coconut_log",
+        "item:ecologics:coconut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_boat",
+    "output": "item:ecologics:flowering_azalea_boat",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "",
+        "item:ecologics:flowering_azalea_planks"
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_chest_boat",
+    "output": "item:ecologics:flowering_azalea_chest_boat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:chest",
+      "item:ecologics:flowering_azalea_boat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:flowering_azalea_door",
+    "output": "item:ecologics:flowering_azalea_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_fence",
+    "output": "item:ecologics:flowering_azalea_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:flowering_azalea_planks"
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:flowering_azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_fence_gate",
+    "output": "item:ecologics:flowering_azalea_fence_gate",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:flowering_azalea_planks",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:flowering_azalea_planks",
+        "tag:items:c:rods/wooden"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_hanging_sign",
+    "output": "item:ecologics:flowering_azalea_hanging_sign",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:iron_chain",
+        "",
+        "item:minecraft:iron_chain"
+      ],
+      [
+        "item:ecologics:flowering_azalea_log",
+        "item:ecologics:flowering_azalea_log",
+        "item:ecologics:flowering_azalea_log"
+      ],
+      [
+        "item:ecologics:flowering_azalea_log",
+        "item:ecologics:flowering_azalea_log",
+        "item:ecologics:flowering_azalea_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_log_from_azalea_log",
+    "output": "item:ecologics:flowering_azalea_log",
+    "count": 1,
+    "grid": [
+      "item:ecologics:azalea_log",
+      "item:ecologics:azalea_flower"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:flowering_azalea_planks",
+    "output": "item:ecologics:flowering_azalea_planks",
+    "count": 4,
+    "grid": [
+      "tag:items:ecologics:flowering_azalea_logs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:flowering_azalea_sign",
+    "output": "item:ecologics:flowering_azalea_sign",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ],
+      [
+        "",
+        "tag:items:c:rods/wooden",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_slab",
+    "output": "item:ecologics:flowering_azalea_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_stairs",
+    "output": "item:ecologics:flowering_azalea_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        ""
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_trapdoor",
+    "output": "item:ecologics:flowering_azalea_trapdoor",
+    "count": 2,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ],
+      [
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks",
+        "item:ecologics:flowering_azalea_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_wood",
+    "output": "item:ecologics:flowering_azalea_wood",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:flowering_azalea_log",
+        "item:ecologics:flowering_azalea_log"
+      ],
+      [
+        "item:ecologics:flowering_azalea_log",
+        "item:ecologics:flowering_azalea_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:flowering_azalea_wood_from_azalea_wood",
+    "output": "item:ecologics:flowering_azalea_wood",
+    "count": 1,
+    "grid": [
+      "item:ecologics:azalea_wood",
+      "item:ecologics:azalea_flower"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:ice_brick_slab",
+    "output": "item:ecologics:ice_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:ice_brick_stairs",
+    "output": "item:ecologics:ice_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:ice_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks",
+        ""
+      ],
+      [
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:ice_brick_wall",
+    "output": "item:ecologics:ice_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks"
+      ],
+      [
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks",
+        "item:ecologics:ice_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:ice_bricks",
+    "output": "item:ecologics:ice_bricks",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ],
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:magenta_dye_from_azalea_flower",
+    "output": "item:minecraft:magenta_dye",
+    "count": 1,
+    "grid": [
+      "item:ecologics:azalea_flower"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:moss_block",
+    "output": "item:minecraft:moss_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:surface_moss",
+        "item:ecologics:surface_moss",
+        "item:ecologics:surface_moss"
+      ],
+      [
+        "item:ecologics:surface_moss",
+        "item:ecologics:surface_moss",
+        "item:ecologics:surface_moss"
+      ],
+      [
+        "item:ecologics:surface_moss",
+        "item:ecologics:surface_moss",
+        "item:ecologics:surface_moss"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:mushroom_stew_from_coconut_husk",
+    "output": "item:minecraft:mushroom_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:brown_mushroom",
+      "item:minecraft:red_mushroom",
+      "item:ecologics:coconut_husk"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:pot",
+    "output": "item:ecologics:pot",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:brick",
+        ""
+      ],
+      [
+        "item:minecraft:brick",
+        "",
+        "item:minecraft:brick"
+      ],
+      [
+        "tag:items:minecraft:terracotta",
+        "item:minecraft:brick",
+        "tag:items:minecraft:terracotta"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:rabbit_stew_from_brown_mushroom_and_coconut_husk",
+    "output": "item:minecraft:rabbit_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:baked_potato",
+      "item:minecraft:cooked_rabbit",
+      "item:ecologics:coconut_husk",
+      "item:minecraft:carrot",
+      "item:minecraft:brown_mushroom"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:rabbit_stew_from_red_mushroom_and_coconut_husk",
+    "output": "item:minecraft:rabbit_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:baked_potato",
+      "item:minecraft:cooked_rabbit",
+      "item:ecologics:coconut_husk",
+      "item:minecraft:carrot",
+      "item:minecraft:red_mushroom"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:sandcastle",
+    "output": "item:ecologics:sandcastle",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ],
+      [
+        "item:minecraft:sand",
+        "item:ecologics:seashell",
+        "item:minecraft:sand"
+      ],
+      [
+        "item:minecraft:sand",
+        "item:minecraft:sand",
+        "item:minecraft:sand"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:seashell",
+    "output": "item:ecologics:seashell",
+    "count": 9,
+    "grid": [
+      "item:ecologics:seashell_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:seashell_block",
+    "output": "item:ecologics:seashell_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:seashell",
+        "item:ecologics:seashell",
+        "item:ecologics:seashell"
+      ],
+      [
+        "item:ecologics:seashell",
+        "item:ecologics:seashell",
+        "item:ecologics:seashell"
+      ],
+      [
+        "item:ecologics:seashell",
+        "item:ecologics:seashell",
+        "item:ecologics:seashell"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:seashell_tile_slab",
+    "output": "item:ecologics:seashell_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:seashell_tile_stairs",
+    "output": "item:ecologics:seashell_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:seashell_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles",
+        ""
+      ],
+      [
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:seashell_tile_wall",
+    "output": "item:ecologics:seashell_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles"
+      ],
+      [
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles",
+        "item:ecologics:seashell_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:seashell_tiles",
+    "output": "item:ecologics:seashell_tiles",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:seashell",
+        "item:ecologics:seashell"
+      ],
+      [
+        "item:ecologics:seashell",
+        "item:ecologics:seashell"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:snow_brick_slab",
+    "output": "item:ecologics:snow_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:snow_brick_stairs",
+    "output": "item:ecologics:snow_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:snow_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks",
+        ""
+      ],
+      [
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:snow_brick_wall",
+    "output": "item:ecologics:snow_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks"
+      ],
+      [
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks",
+        "item:ecologics:snow_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:snow_bricks",
+    "output": "item:ecologics:snow_bricks",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:snow_block",
+        "item:minecraft:snow_block"
+      ],
+      [
+        "item:minecraft:snow_block",
+        "item:minecraft:snow_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:stripped_azalea_wood",
+    "output": "item:ecologics:stripped_azalea_wood",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log"
+      ],
+      [
+        "item:ecologics:stripped_azalea_log",
+        "item:ecologics:stripped_azalea_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:stripped_coconut_wood",
+    "output": "item:ecologics:stripped_coconut_wood",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log"
+      ],
+      [
+        "item:ecologics:stripped_coconut_log",
+        "item:ecologics:stripped_coconut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:stripped_walnut_wood",
+    "output": "item:ecologics:stripped_walnut_wood",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log"
+      ],
+      [
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:surface_moss",
+    "output": "item:ecologics:surface_moss",
+    "count": 9,
+    "grid": [
+      "item:minecraft:moss_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:suspicious_stew_from_azalea_flower",
+    "output": "item:minecraft:suspicious_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bowl",
+      "item:minecraft:brown_mushroom",
+      "item:minecraft:red_mushroom",
+      "item:ecologics:azalea_flower"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:thin_ice",
+    "output": "item:ecologics:thin_ice",
+    "count": 4,
+    "grid": [
+      [
+        "item:minecraft:ice",
+        "item:minecraft:ice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:tropical_stew",
+    "output": "item:ecologics:tropical_stew",
+    "count": 1,
+    "grid": [
+      "item:ecologics:coconut_slice",
+      "item:ecologics:crab_meat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:walnut_boat",
+    "output": "item:ecologics:walnut_boat",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "",
+        "item:ecologics:walnut_planks"
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_button",
+    "output": "item:ecologics:walnut_button",
+    "count": 1,
+    "grid": [
+      "item:ecologics:walnut_planks"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:walnut_chest_boat",
+    "output": "item:ecologics:walnut_chest_boat",
+    "count": 1,
+    "grid": [
+      "item:minecraft:chest",
+      "item:ecologics:walnut_boat"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:walnut_door",
+    "output": "item:ecologics:walnut_door",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_fence",
+    "output": "item:ecologics:walnut_fence",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:walnut_planks"
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "tag:items:c:rods/wooden",
+        "item:ecologics:walnut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_fence_gate",
+    "output": "item:ecologics:walnut_fence_gate",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:walnut_planks",
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "item:ecologics:walnut_planks",
+        "tag:items:c:rods/wooden"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_hanging_sign",
+    "output": "item:ecologics:walnut_hanging_sign",
+    "count": 6,
+    "grid": [
+      [
+        "item:minecraft:iron_chain",
+        "",
+        "item:minecraft:iron_chain"
+      ],
+      [
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log"
+      ],
+      [
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_planks",
+    "output": "item:ecologics:walnut_planks",
+    "count": 4,
+    "grid": [
+      "tag:items:ecologics:walnut_logs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "ecologics:walnut_pressure_plate",
+    "output": "item:ecologics:walnut_pressure_plate",
+    "count": 1,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_shelf",
+    "output": "item:ecologics:walnut_shelf",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log"
+      ],
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log",
+        "item:ecologics:stripped_walnut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_sign",
+    "output": "item:ecologics:walnut_sign",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ],
+      [
+        "",
+        "tag:items:c:rods/wooden",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_slab",
+    "output": "item:ecologics:walnut_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_stairs",
+    "output": "item:ecologics:walnut_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "",
+        ""
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        ""
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_trapdoor",
+    "output": "item:ecologics:walnut_trapdoor",
+    "count": 2,
+    "grid": [
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ],
+      [
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks",
+        "item:ecologics:walnut_planks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "ecologics:walnut_wood",
+    "output": "item:ecologics:walnut_wood",
+    "count": 3,
+    "grid": [
+      [
+        "item:ecologics:walnut_log",
+        "item:ecologics:walnut_log"
+      ],
+      [
+        "item:ecologics:walnut_log",
+        "item:ecologics:walnut_log"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

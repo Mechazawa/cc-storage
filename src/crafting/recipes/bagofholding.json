@@ -1,0 +1,25 @@
+[
+  {
+    "name": "bagofholding:leather_bag_of_holding",
+    "output": "item:bagofholding:leather_bag_of_holding",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:string",
+        "item:minecraft:leather",
+        "item:minecraft:string"
+      ],
+      [
+        "item:minecraft:leather",
+        "item:minecraft:chest",
+        "item:minecraft:leather"
+      ],
+      [
+        "tag:items:minecraft:wool",
+        "item:minecraft:leather",
+        "tag:items:minecraft:wool"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

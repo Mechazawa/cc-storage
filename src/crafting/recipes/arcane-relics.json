@@ -1,0 +1,48 @@
+[
+  {
+    "name": "arcane-relics:arcane_wand",
+    "output": "item:arcane-relics:arcane_wand",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:lapis_lazuli",
+        "item:minecraft:ender_eye"
+      ],
+      [
+        "",
+        "item:minecraft:redstone",
+        "item:minecraft:lapis_lazuli"
+      ],
+      [
+        "item:minecraft:stick",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "arcane-relics:wand_enchanting_table",
+    "output": "item:arcane-relics:wand_enchanting_table",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:diamond",
+        "item:minecraft:ender_eye",
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:lapis_lazuli",
+        "item:minecraft:redstone",
+        "item:minecraft:lapis_lazuli"
+      ],
+      [
+        "item:minecraft:obsidian",
+        "item:minecraft:obsidian",
+        "item:minecraft:obsidian"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

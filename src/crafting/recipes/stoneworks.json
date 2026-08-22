@@ -1,0 +1,7022 @@
+[
+  {
+    "name": "stoneworks:andesite_brick_slab",
+    "output": "item:stoneworks:andesite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_brick_stairs",
+    "output": "item:stoneworks:andesite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:andesite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_brick_wall",
+    "output": "item:stoneworks:andesite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks"
+      ],
+      [
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks",
+        "item:stoneworks:andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_paver_slab",
+    "output": "item:stoneworks:andesite_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_paver_stairs",
+    "output": "item:stoneworks:andesite_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:andesite_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_paver_wall",
+    "output": "item:stoneworks:andesite_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers"
+      ],
+      [
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers",
+        "item:stoneworks:andesite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_plate_slab",
+    "output": "item:stoneworks:andesite_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_plate_stairs",
+    "output": "item:stoneworks:andesite_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:andesite_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_plate_wall",
+    "output": "item:stoneworks:andesite_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates"
+      ],
+      [
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates",
+        "item:stoneworks:andesite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_shingle_slab",
+    "output": "item:stoneworks:andesite_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_shingle_stairs",
+    "output": "item:stoneworks:andesite_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:andesite_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_shingle_wall",
+    "output": "item:stoneworks:andesite_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles"
+      ],
+      [
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles",
+        "item:stoneworks:andesite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_tile_slab",
+    "output": "item:stoneworks:andesite_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_tile_stairs",
+    "output": "item:stoneworks:andesite_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:andesite_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:andesite_tile_wall",
+    "output": "item:stoneworks:andesite_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles"
+      ],
+      [
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles",
+        "item:stoneworks:andesite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_brick_slab",
+    "output": "item:stoneworks:basalt_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_brick_stairs",
+    "output": "item:stoneworks:basalt_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:basalt_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_brick_wall",
+    "output": "item:stoneworks:basalt_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks"
+      ],
+      [
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks",
+        "item:stoneworks:basalt_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_paver_slab",
+    "output": "item:stoneworks:basalt_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_paver_stairs",
+    "output": "item:stoneworks:basalt_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:basalt_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_paver_wall",
+    "output": "item:stoneworks:basalt_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers"
+      ],
+      [
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers",
+        "item:stoneworks:basalt_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_plate_slab",
+    "output": "item:stoneworks:basalt_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_plate_stairs",
+    "output": "item:stoneworks:basalt_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:basalt_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_plate_wall",
+    "output": "item:stoneworks:basalt_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates"
+      ],
+      [
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates",
+        "item:stoneworks:basalt_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_shingle_slab",
+    "output": "item:stoneworks:basalt_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_shingle_stairs",
+    "output": "item:stoneworks:basalt_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:basalt_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_shingle_wall",
+    "output": "item:stoneworks:basalt_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles"
+      ],
+      [
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles",
+        "item:stoneworks:basalt_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_tile_slab",
+    "output": "item:stoneworks:basalt_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_tile_stairs",
+    "output": "item:stoneworks:basalt_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:basalt_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:basalt_tile_wall",
+    "output": "item:stoneworks:basalt_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles"
+      ],
+      [
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles",
+        "item:stoneworks:basalt_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_paver_slab",
+    "output": "item:stoneworks:blackstone_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_paver_stairs",
+    "output": "item:stoneworks:blackstone_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_paver_wall",
+    "output": "item:stoneworks:blackstone_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers"
+      ],
+      [
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers",
+        "item:stoneworks:blackstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_plate_slab",
+    "output": "item:stoneworks:blackstone_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_plate_stairs",
+    "output": "item:stoneworks:blackstone_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_plate_wall",
+    "output": "item:stoneworks:blackstone_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates"
+      ],
+      [
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates",
+        "item:stoneworks:blackstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_shingle_slab",
+    "output": "item:stoneworks:blackstone_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_shingle_stairs",
+    "output": "item:stoneworks:blackstone_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_shingle_wall",
+    "output": "item:stoneworks:blackstone_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles"
+      ],
+      [
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles",
+        "item:stoneworks:blackstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_tile_slab",
+    "output": "item:stoneworks:blackstone_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_tile_stairs",
+    "output": "item:stoneworks:blackstone_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:blackstone_tile_wall",
+    "output": "item:stoneworks:blackstone_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles"
+      ],
+      [
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles",
+        "item:stoneworks:blackstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_brick_slab",
+    "output": "item:stoneworks:calcite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_brick_stairs",
+    "output": "item:stoneworks:calcite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:calcite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_brick_wall",
+    "output": "item:stoneworks:calcite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks"
+      ],
+      [
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks",
+        "item:stoneworks:calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_paver_slab",
+    "output": "item:stoneworks:calcite_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_paver_stairs",
+    "output": "item:stoneworks:calcite_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:calcite_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_paver_wall",
+    "output": "item:stoneworks:calcite_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers"
+      ],
+      [
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers",
+        "item:stoneworks:calcite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_plate_slab",
+    "output": "item:stoneworks:calcite_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_plate_stairs",
+    "output": "item:stoneworks:calcite_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:calcite_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_plate_wall",
+    "output": "item:stoneworks:calcite_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates"
+      ],
+      [
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates",
+        "item:stoneworks:calcite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_shingle_slab",
+    "output": "item:stoneworks:calcite_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_shingle_stairs",
+    "output": "item:stoneworks:calcite_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:calcite_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_shingle_wall",
+    "output": "item:stoneworks:calcite_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles"
+      ],
+      [
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles",
+        "item:stoneworks:calcite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_tile_slab",
+    "output": "item:stoneworks:calcite_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_tile_stairs",
+    "output": "item:stoneworks:calcite_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:calcite_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:calcite_tile_wall",
+    "output": "item:stoneworks:calcite_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles"
+      ],
+      [
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles",
+        "item:stoneworks:calcite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_andesite_slab",
+    "output": "item:stoneworks:cobbled_andesite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_andesite_stairs",
+    "output": "item:stoneworks:cobbled_andesite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_andesite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_andesite_wall",
+    "output": "item:stoneworks:cobbled_andesite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite"
+      ],
+      [
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite",
+        "item:stoneworks:cobbled_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_basalt_slab",
+    "output": "item:stoneworks:cobbled_basalt_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_basalt_stairs",
+    "output": "item:stoneworks:cobbled_basalt_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_basalt",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_basalt_wall",
+    "output": "item:stoneworks:cobbled_basalt_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt"
+      ],
+      [
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt",
+        "item:stoneworks:cobbled_basalt"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_blackstone_slab",
+    "output": "item:stoneworks:cobbled_blackstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_blackstone_stairs",
+    "output": "item:stoneworks:cobbled_blackstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_blackstone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_blackstone_wall",
+    "output": "item:stoneworks:cobbled_blackstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone"
+      ],
+      [
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone",
+        "item:stoneworks:cobbled_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_calcite_slab",
+    "output": "item:stoneworks:cobbled_calcite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_calcite_stairs",
+    "output": "item:stoneworks:cobbled_calcite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_calcite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_calcite_wall",
+    "output": "item:stoneworks:cobbled_calcite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite"
+      ],
+      [
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite",
+        "item:stoneworks:cobbled_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_dark_prismarine_slab",
+    "output": "item:stoneworks:cobbled_dark_prismarine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_dark_prismarine_stairs",
+    "output": "item:stoneworks:cobbled_dark_prismarine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_dark_prismarine",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_dark_prismarine_wall",
+    "output": "item:stoneworks:cobbled_dark_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine"
+      ],
+      [
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine",
+        "item:stoneworks:cobbled_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_diorite_slab",
+    "output": "item:stoneworks:cobbled_diorite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_diorite_stairs",
+    "output": "item:stoneworks:cobbled_diorite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_diorite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_diorite_wall",
+    "output": "item:stoneworks:cobbled_diorite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite"
+      ],
+      [
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite",
+        "item:stoneworks:cobbled_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_end_stone_slab",
+    "output": "item:stoneworks:cobbled_end_stone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_end_stone_stairs",
+    "output": "item:stoneworks:cobbled_end_stone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_end_stone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_end_stone_wall",
+    "output": "item:stoneworks:cobbled_end_stone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone"
+      ],
+      [
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone",
+        "item:stoneworks:cobbled_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_granite_slab",
+    "output": "item:stoneworks:cobbled_granite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_granite_stairs",
+    "output": "item:stoneworks:cobbled_granite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_granite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_granite_wall",
+    "output": "item:stoneworks:cobbled_granite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite"
+      ],
+      [
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite",
+        "item:stoneworks:cobbled_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_netherrack_slab",
+    "output": "item:stoneworks:cobbled_netherrack_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_netherrack_stairs",
+    "output": "item:stoneworks:cobbled_netherrack_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_netherrack",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_netherrack_wall",
+    "output": "item:stoneworks:cobbled_netherrack_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack"
+      ],
+      [
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack",
+        "item:stoneworks:cobbled_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_prismarine_slab",
+    "output": "item:stoneworks:cobbled_prismarine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_prismarine_stairs",
+    "output": "item:stoneworks:cobbled_prismarine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_prismarine",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_prismarine_wall",
+    "output": "item:stoneworks:cobbled_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine"
+      ],
+      [
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine",
+        "item:stoneworks:cobbled_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_purpur_slab",
+    "output": "item:stoneworks:cobbled_purpur_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_purpur_stairs",
+    "output": "item:stoneworks:cobbled_purpur_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_purpur",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_purpur_wall",
+    "output": "item:stoneworks:cobbled_purpur_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur"
+      ],
+      [
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur",
+        "item:stoneworks:cobbled_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_quartz_slab",
+    "output": "item:stoneworks:cobbled_quartz_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_quartz_stairs",
+    "output": "item:stoneworks:cobbled_quartz_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_quartz",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_quartz_wall",
+    "output": "item:stoneworks:cobbled_quartz_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz"
+      ],
+      [
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz",
+        "item:stoneworks:cobbled_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_red_sandstone_slab",
+    "output": "item:stoneworks:cobbled_red_sandstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_red_sandstone_stairs",
+    "output": "item:stoneworks:cobbled_red_sandstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_red_sandstone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_red_sandstone_wall",
+    "output": "item:stoneworks:cobbled_red_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone"
+      ],
+      [
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone",
+        "item:stoneworks:cobbled_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_sandstone_slab",
+    "output": "item:stoneworks:cobbled_sandstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_sandstone_stairs",
+    "output": "item:stoneworks:cobbled_sandstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_sandstone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_sandstone_wall",
+    "output": "item:stoneworks:cobbled_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone"
+      ],
+      [
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone",
+        "item:stoneworks:cobbled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_tuff_slab",
+    "output": "item:stoneworks:cobbled_tuff_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_tuff_stairs",
+    "output": "item:stoneworks:cobbled_tuff_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_tuff",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff",
+        ""
+      ],
+      [
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:cobbled_tuff_wall",
+    "output": "item:stoneworks:cobbled_tuff_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff"
+      ],
+      [
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff",
+        "item:stoneworks:cobbled_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_brick_slab",
+    "output": "item:stoneworks:dark_prismarine_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_brick_stairs",
+    "output": "item:stoneworks:dark_prismarine_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_brick_wall",
+    "output": "item:stoneworks:dark_prismarine_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks"
+      ],
+      [
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks",
+        "item:stoneworks:dark_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_plate_slab",
+    "output": "item:stoneworks:dark_prismarine_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_plate_stairs",
+    "output": "item:stoneworks:dark_prismarine_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_plate_wall",
+    "output": "item:stoneworks:dark_prismarine_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates"
+      ],
+      [
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates",
+        "item:stoneworks:dark_prismarine_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_shingle_slab",
+    "output": "item:stoneworks:dark_prismarine_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_shingle_stairs",
+    "output": "item:stoneworks:dark_prismarine_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_shingle_wall",
+    "output": "item:stoneworks:dark_prismarine_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles"
+      ],
+      [
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles",
+        "item:stoneworks:dark_prismarine_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_tile_slab",
+    "output": "item:stoneworks:dark_prismarine_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_tile_stairs",
+    "output": "item:stoneworks:dark_prismarine_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:dark_prismarine_tile_wall",
+    "output": "item:stoneworks:dark_prismarine_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles"
+      ],
+      [
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles",
+        "item:stoneworks:dark_prismarine_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_paver_slab",
+    "output": "item:stoneworks:deepslate_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_paver_stairs",
+    "output": "item:stoneworks:deepslate_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_paver_wall",
+    "output": "item:stoneworks:deepslate_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers"
+      ],
+      [
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers",
+        "item:stoneworks:deepslate_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_plate_slab",
+    "output": "item:stoneworks:deepslate_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_plate_stairs",
+    "output": "item:stoneworks:deepslate_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_plate_wall",
+    "output": "item:stoneworks:deepslate_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates"
+      ],
+      [
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates",
+        "item:stoneworks:deepslate_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_shingle_slab",
+    "output": "item:stoneworks:deepslate_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_shingle_stairs",
+    "output": "item:stoneworks:deepslate_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:deepslate_shingle_wall",
+    "output": "item:stoneworks:deepslate_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles"
+      ],
+      [
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles",
+        "item:stoneworks:deepslate_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_brick_slab",
+    "output": "item:stoneworks:diorite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_brick_stairs",
+    "output": "item:stoneworks:diorite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:diorite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_brick_wall",
+    "output": "item:stoneworks:diorite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks"
+      ],
+      [
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks",
+        "item:stoneworks:diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_paver_slab",
+    "output": "item:stoneworks:diorite_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_paver_stairs",
+    "output": "item:stoneworks:diorite_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:diorite_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_paver_wall",
+    "output": "item:stoneworks:diorite_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers"
+      ],
+      [
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers",
+        "item:stoneworks:diorite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_plate_slab",
+    "output": "item:stoneworks:diorite_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_plate_stairs",
+    "output": "item:stoneworks:diorite_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:diorite_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_plate_wall",
+    "output": "item:stoneworks:diorite_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates"
+      ],
+      [
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates",
+        "item:stoneworks:diorite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_shingle_slab",
+    "output": "item:stoneworks:diorite_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_shingle_stairs",
+    "output": "item:stoneworks:diorite_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:diorite_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_shingle_wall",
+    "output": "item:stoneworks:diorite_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles"
+      ],
+      [
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles",
+        "item:stoneworks:diorite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_tile_slab",
+    "output": "item:stoneworks:diorite_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_tile_stairs",
+    "output": "item:stoneworks:diorite_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:diorite_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:diorite_tile_wall",
+    "output": "item:stoneworks:diorite_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles"
+      ],
+      [
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles",
+        "item:stoneworks:diorite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_paver_slab",
+    "output": "item:stoneworks:end_stone_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_paver_stairs",
+    "output": "item:stoneworks:end_stone_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_paver_wall",
+    "output": "item:stoneworks:end_stone_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers"
+      ],
+      [
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers",
+        "item:stoneworks:end_stone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_plate_slab",
+    "output": "item:stoneworks:end_stone_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_plate_stairs",
+    "output": "item:stoneworks:end_stone_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_plate_wall",
+    "output": "item:stoneworks:end_stone_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates"
+      ],
+      [
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates",
+        "item:stoneworks:end_stone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_shingle_slab",
+    "output": "item:stoneworks:end_stone_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_shingle_stairs",
+    "output": "item:stoneworks:end_stone_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_shingle_wall",
+    "output": "item:stoneworks:end_stone_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles"
+      ],
+      [
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles",
+        "item:stoneworks:end_stone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_tile_slab",
+    "output": "item:stoneworks:end_stone_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_tile_stairs",
+    "output": "item:stoneworks:end_stone_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:end_stone_tile_wall",
+    "output": "item:stoneworks:end_stone_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles"
+      ],
+      [
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles",
+        "item:stoneworks:end_stone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_brick_slab",
+    "output": "item:stoneworks:granite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_brick_stairs",
+    "output": "item:stoneworks:granite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:granite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_brick_wall",
+    "output": "item:stoneworks:granite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks"
+      ],
+      [
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks",
+        "item:stoneworks:granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_paver_slab",
+    "output": "item:stoneworks:granite_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_paver_stairs",
+    "output": "item:stoneworks:granite_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:granite_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_paver_wall",
+    "output": "item:stoneworks:granite_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers"
+      ],
+      [
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers",
+        "item:stoneworks:granite_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_plate_slab",
+    "output": "item:stoneworks:granite_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_plate_stairs",
+    "output": "item:stoneworks:granite_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:granite_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_plate_wall",
+    "output": "item:stoneworks:granite_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates"
+      ],
+      [
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates",
+        "item:stoneworks:granite_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_shingle_slab",
+    "output": "item:stoneworks:granite_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_shingle_stairs",
+    "output": "item:stoneworks:granite_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:granite_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_shingle_wall",
+    "output": "item:stoneworks:granite_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles"
+      ],
+      [
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles",
+        "item:stoneworks:granite_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_tile_slab",
+    "output": "item:stoneworks:granite_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_tile_stairs",
+    "output": "item:stoneworks:granite_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:granite_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:granite_tile_wall",
+    "output": "item:stoneworks:granite_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles"
+      ],
+      [
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles",
+        "item:stoneworks:granite_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_andesite_brick_slab",
+    "output": "item:stoneworks:mossy_andesite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_andesite_brick_stairs",
+    "output": "item:stoneworks:mossy_andesite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_andesite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_andesite_brick_wall",
+    "output": "item:stoneworks:mossy_andesite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks",
+        "item:stoneworks:mossy_andesite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_basalt_brick_slab",
+    "output": "item:stoneworks:mossy_basalt_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_basalt_brick_stairs",
+    "output": "item:stoneworks:mossy_basalt_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_basalt_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_basalt_brick_wall",
+    "output": "item:stoneworks:mossy_basalt_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks",
+        "item:stoneworks:mossy_basalt_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_blackstone_brick_slab",
+    "output": "item:stoneworks:mossy_blackstone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_blackstone_brick_stairs",
+    "output": "item:stoneworks:mossy_blackstone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_blackstone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_blackstone_brick_wall",
+    "output": "item:stoneworks:mossy_blackstone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks",
+        "item:stoneworks:mossy_blackstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_calcite_brick_slab",
+    "output": "item:stoneworks:mossy_calcite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_calcite_brick_stairs",
+    "output": "item:stoneworks:mossy_calcite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_calcite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_calcite_brick_wall",
+    "output": "item:stoneworks:mossy_calcite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks",
+        "item:stoneworks:mossy_calcite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_andesite_slab",
+    "output": "item:stoneworks:mossy_cobbled_andesite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_andesite_stairs",
+    "output": "item:stoneworks:mossy_cobbled_andesite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_andesite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_andesite_wall",
+    "output": "item:stoneworks:mossy_cobbled_andesite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite",
+        "item:stoneworks:mossy_cobbled_andesite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_basalt_slab",
+    "output": "item:stoneworks:mossy_cobbled_basalt_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_basalt_stairs",
+    "output": "item:stoneworks:mossy_cobbled_basalt_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_basalt",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_basalt_wall",
+    "output": "item:stoneworks:mossy_cobbled_basalt_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt",
+        "item:stoneworks:mossy_cobbled_basalt"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_blackstone_slab",
+    "output": "item:stoneworks:mossy_cobbled_blackstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_blackstone_stairs",
+    "output": "item:stoneworks:mossy_cobbled_blackstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_blackstone_wall",
+    "output": "item:stoneworks:mossy_cobbled_blackstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone",
+        "item:stoneworks:mossy_cobbled_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_calcite_slab",
+    "output": "item:stoneworks:mossy_cobbled_calcite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_calcite_stairs",
+    "output": "item:stoneworks:mossy_cobbled_calcite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_calcite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_calcite_wall",
+    "output": "item:stoneworks:mossy_cobbled_calcite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite",
+        "item:stoneworks:mossy_cobbled_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_dark_prismarine_slab",
+    "output": "item:stoneworks:mossy_cobbled_dark_prismarine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_dark_prismarine_stairs",
+    "output": "item:stoneworks:mossy_cobbled_dark_prismarine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_dark_prismarine_wall",
+    "output": "item:stoneworks:mossy_cobbled_dark_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine",
+        "item:stoneworks:mossy_cobbled_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_deepslate_slab",
+    "output": "item:stoneworks:mossy_cobbled_deepslate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_deepslate_stairs",
+    "output": "item:stoneworks:mossy_cobbled_deepslate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_deepslate_wall",
+    "output": "item:stoneworks:mossy_cobbled_deepslate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate",
+        "item:stoneworks:mossy_cobbled_deepslate"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_diorite_slab",
+    "output": "item:stoneworks:mossy_cobbled_diorite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_diorite_stairs",
+    "output": "item:stoneworks:mossy_cobbled_diorite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_diorite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_diorite_wall",
+    "output": "item:stoneworks:mossy_cobbled_diorite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite",
+        "item:stoneworks:mossy_cobbled_diorite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_end_stone_slab",
+    "output": "item:stoneworks:mossy_cobbled_end_stone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_end_stone_stairs",
+    "output": "item:stoneworks:mossy_cobbled_end_stone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_end_stone_wall",
+    "output": "item:stoneworks:mossy_cobbled_end_stone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone",
+        "item:stoneworks:mossy_cobbled_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_granite_slab",
+    "output": "item:stoneworks:mossy_cobbled_granite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_granite_stairs",
+    "output": "item:stoneworks:mossy_cobbled_granite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_granite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_granite_wall",
+    "output": "item:stoneworks:mossy_cobbled_granite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite",
+        "item:stoneworks:mossy_cobbled_granite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_netherrack_slab",
+    "output": "item:stoneworks:mossy_cobbled_netherrack_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_netherrack_stairs",
+    "output": "item:stoneworks:mossy_cobbled_netherrack_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_netherrack_wall",
+    "output": "item:stoneworks:mossy_cobbled_netherrack_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack",
+        "item:stoneworks:mossy_cobbled_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_prismarine_slab",
+    "output": "item:stoneworks:mossy_cobbled_prismarine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_prismarine_stairs",
+    "output": "item:stoneworks:mossy_cobbled_prismarine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_prismarine_wall",
+    "output": "item:stoneworks:mossy_cobbled_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine",
+        "item:stoneworks:mossy_cobbled_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_purpur_slab",
+    "output": "item:stoneworks:mossy_cobbled_purpur_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_purpur_stairs",
+    "output": "item:stoneworks:mossy_cobbled_purpur_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_purpur",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_purpur_wall",
+    "output": "item:stoneworks:mossy_cobbled_purpur_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur",
+        "item:stoneworks:mossy_cobbled_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_quartz_slab",
+    "output": "item:stoneworks:mossy_cobbled_quartz_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_quartz_stairs",
+    "output": "item:stoneworks:mossy_cobbled_quartz_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_quartz",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_quartz_wall",
+    "output": "item:stoneworks:mossy_cobbled_quartz_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz",
+        "item:stoneworks:mossy_cobbled_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_red_sandstone_slab",
+    "output": "item:stoneworks:mossy_cobbled_red_sandstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_red_sandstone_stairs",
+    "output": "item:stoneworks:mossy_cobbled_red_sandstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_red_sandstone_wall",
+    "output": "item:stoneworks:mossy_cobbled_red_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone",
+        "item:stoneworks:mossy_cobbled_red_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_sandstone_slab",
+    "output": "item:stoneworks:mossy_cobbled_sandstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_sandstone_stairs",
+    "output": "item:stoneworks:mossy_cobbled_sandstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_sandstone_wall",
+    "output": "item:stoneworks:mossy_cobbled_sandstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone",
+        "item:stoneworks:mossy_cobbled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_tuff_slab",
+    "output": "item:stoneworks:mossy_cobbled_tuff_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_tuff_stairs",
+    "output": "item:stoneworks:mossy_cobbled_tuff_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_tuff",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_cobbled_tuff_wall",
+    "output": "item:stoneworks:mossy_cobbled_tuff_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff"
+      ],
+      [
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff",
+        "item:stoneworks:mossy_cobbled_tuff"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_dark_prismarine_brick_slab",
+    "output": "item:stoneworks:mossy_dark_prismarine_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_dark_prismarine_brick_stairs",
+    "output": "item:stoneworks:mossy_dark_prismarine_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_dark_prismarine_brick_wall",
+    "output": "item:stoneworks:mossy_dark_prismarine_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks",
+        "item:stoneworks:mossy_dark_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_deepslate_brick_slab",
+    "output": "item:stoneworks:mossy_deepslate_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_deepslate_brick_stairs",
+    "output": "item:stoneworks:mossy_deepslate_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_deepslate_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_deepslate_brick_wall",
+    "output": "item:stoneworks:mossy_deepslate_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks",
+        "item:stoneworks:mossy_deepslate_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_diorite_brick_slab",
+    "output": "item:stoneworks:mossy_diorite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_diorite_brick_stairs",
+    "output": "item:stoneworks:mossy_diorite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_diorite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_diorite_brick_wall",
+    "output": "item:stoneworks:mossy_diorite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks",
+        "item:stoneworks:mossy_diorite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_end_stone_brick_slab",
+    "output": "item:stoneworks:mossy_end_stone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_end_stone_brick_stairs",
+    "output": "item:stoneworks:mossy_end_stone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_end_stone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_end_stone_brick_wall",
+    "output": "item:stoneworks:mossy_end_stone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks",
+        "item:stoneworks:mossy_end_stone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_granite_brick_slab",
+    "output": "item:stoneworks:mossy_granite_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_granite_brick_stairs",
+    "output": "item:stoneworks:mossy_granite_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_granite_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_granite_brick_wall",
+    "output": "item:stoneworks:mossy_granite_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks",
+        "item:stoneworks:mossy_granite_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_netherrack_brick_slab",
+    "output": "item:stoneworks:mossy_netherrack_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_netherrack_brick_stairs",
+    "output": "item:stoneworks:mossy_netherrack_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_netherrack_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_netherrack_brick_wall",
+    "output": "item:stoneworks:mossy_netherrack_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks",
+        "item:stoneworks:mossy_netherrack_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_prismarine_brick_slab",
+    "output": "item:stoneworks:mossy_prismarine_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_prismarine_brick_stairs",
+    "output": "item:stoneworks:mossy_prismarine_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_prismarine_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_prismarine_brick_wall",
+    "output": "item:stoneworks:mossy_prismarine_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks",
+        "item:stoneworks:mossy_prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_purpur_brick_slab",
+    "output": "item:stoneworks:mossy_purpur_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_purpur_brick_stairs",
+    "output": "item:stoneworks:mossy_purpur_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_purpur_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_purpur_brick_wall",
+    "output": "item:stoneworks:mossy_purpur_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks",
+        "item:stoneworks:mossy_purpur_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_quartz_brick_slab",
+    "output": "item:stoneworks:mossy_quartz_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_quartz_brick_stairs",
+    "output": "item:stoneworks:mossy_quartz_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_quartz_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_quartz_brick_wall",
+    "output": "item:stoneworks:mossy_quartz_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks",
+        "item:stoneworks:mossy_quartz_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_red_sandstone_brick_slab",
+    "output": "item:stoneworks:mossy_red_sandstone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_red_sandstone_brick_stairs",
+    "output": "item:stoneworks:mossy_red_sandstone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_red_sandstone_brick_wall",
+    "output": "item:stoneworks:mossy_red_sandstone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks",
+        "item:stoneworks:mossy_red_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_sandstone_brick_slab",
+    "output": "item:stoneworks:mossy_sandstone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_sandstone_brick_stairs",
+    "output": "item:stoneworks:mossy_sandstone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_sandstone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_sandstone_brick_wall",
+    "output": "item:stoneworks:mossy_sandstone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks",
+        "item:stoneworks:mossy_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_tuff_brick_slab",
+    "output": "item:stoneworks:mossy_tuff_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_tuff_brick_stairs",
+    "output": "item:stoneworks:mossy_tuff_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:mossy_tuff_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:mossy_tuff_brick_wall",
+    "output": "item:stoneworks:mossy_tuff_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks"
+      ],
+      [
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks",
+        "item:stoneworks:mossy_tuff_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_paver_slab",
+    "output": "item:stoneworks:nether_brick_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_paver_stairs",
+    "output": "item:stoneworks:nether_brick_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_paver_wall",
+    "output": "item:stoneworks:nether_brick_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers"
+      ],
+      [
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers",
+        "item:stoneworks:nether_brick_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_plate_slab",
+    "output": "item:stoneworks:nether_brick_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_plate_stairs",
+    "output": "item:stoneworks:nether_brick_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_plate_wall",
+    "output": "item:stoneworks:nether_brick_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates"
+      ],
+      [
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates",
+        "item:stoneworks:nether_brick_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_shingle_slab",
+    "output": "item:stoneworks:nether_brick_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_shingle_stairs",
+    "output": "item:stoneworks:nether_brick_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:nether_brick_shingle_wall",
+    "output": "item:stoneworks:nether_brick_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles"
+      ],
+      [
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles",
+        "item:stoneworks:nether_brick_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:netherrack_brick_slab",
+    "output": "item:stoneworks:netherrack_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:netherrack_brick_stairs",
+    "output": "item:stoneworks:netherrack_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:netherrack_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:netherrack_brick_wall",
+    "output": "item:stoneworks:netherrack_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks"
+      ],
+      [
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks",
+        "item:stoneworks:netherrack_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_calcite_slab",
+    "output": "item:stoneworks:polished_calcite_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_calcite_stairs",
+    "output": "item:stoneworks:polished_calcite_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:polished_calcite",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_calcite_wall",
+    "output": "item:stoneworks:polished_calcite_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite"
+      ],
+      [
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite",
+        "item:stoneworks:polished_calcite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_dark_prismarine_slab",
+    "output": "item:stoneworks:polished_dark_prismarine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_dark_prismarine_stairs",
+    "output": "item:stoneworks:polished_dark_prismarine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:polished_dark_prismarine",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_dark_prismarine_wall",
+    "output": "item:stoneworks:polished_dark_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine"
+      ],
+      [
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine",
+        "item:stoneworks:polished_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_end_stone_slab",
+    "output": "item:stoneworks:polished_end_stone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_end_stone_stairs",
+    "output": "item:stoneworks:polished_end_stone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:polished_end_stone",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_end_stone_wall",
+    "output": "item:stoneworks:polished_end_stone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone"
+      ],
+      [
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone",
+        "item:stoneworks:polished_end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_netherrack_slab",
+    "output": "item:stoneworks:polished_netherrack_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_netherrack_stairs",
+    "output": "item:stoneworks:polished_netherrack_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:polished_netherrack",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_netherrack_wall",
+    "output": "item:stoneworks:polished_netherrack_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack"
+      ],
+      [
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack",
+        "item:stoneworks:polished_netherrack"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_prismarine_slab",
+    "output": "item:stoneworks:polished_prismarine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_prismarine_stairs",
+    "output": "item:stoneworks:polished_prismarine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:polished_prismarine",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_prismarine_wall",
+    "output": "item:stoneworks:polished_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine"
+      ],
+      [
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine",
+        "item:stoneworks:polished_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_purpur_slab",
+    "output": "item:stoneworks:polished_purpur_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_purpur_stairs",
+    "output": "item:stoneworks:polished_purpur_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:polished_purpur",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_purpur_wall",
+    "output": "item:stoneworks:polished_purpur_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur"
+      ],
+      [
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur",
+        "item:stoneworks:polished_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_quartz_slab",
+    "output": "item:stoneworks:polished_quartz_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_quartz_stairs",
+    "output": "item:stoneworks:polished_quartz_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:polished_quartz",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz",
+        ""
+      ],
+      [
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:polished_quartz_wall",
+    "output": "item:stoneworks:polished_quartz_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz"
+      ],
+      [
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz",
+        "item:stoneworks:polished_quartz"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_brick_slab",
+    "output": "item:stoneworks:prismarine_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_brick_stairs",
+    "output": "item:stoneworks:prismarine_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_brick_wall",
+    "output": "item:stoneworks:prismarine_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks"
+      ],
+      [
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks",
+        "item:stoneworks:prismarine_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_paver_slab",
+    "output": "item:stoneworks:prismarine_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_paver_stairs",
+    "output": "item:stoneworks:prismarine_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_paver_wall",
+    "output": "item:stoneworks:prismarine_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers"
+      ],
+      [
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers",
+        "item:stoneworks:prismarine_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_plate_slab",
+    "output": "item:stoneworks:prismarine_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_plate_stairs",
+    "output": "item:stoneworks:prismarine_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_plate_wall",
+    "output": "item:stoneworks:prismarine_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates"
+      ],
+      [
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates",
+        "item:stoneworks:prismarine_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_tile_slab",
+    "output": "item:stoneworks:prismarine_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_tile_stairs",
+    "output": "item:stoneworks:prismarine_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:prismarine_tile_wall",
+    "output": "item:stoneworks:prismarine_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles"
+      ],
+      [
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles",
+        "item:stoneworks:prismarine_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_brick_slab",
+    "output": "item:stoneworks:purpur_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_brick_stairs",
+    "output": "item:stoneworks:purpur_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:purpur_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_brick_wall",
+    "output": "item:stoneworks:purpur_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks"
+      ],
+      [
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks",
+        "item:stoneworks:purpur_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_paver_slab",
+    "output": "item:stoneworks:purpur_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_paver_stairs",
+    "output": "item:stoneworks:purpur_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:purpur_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_paver_wall",
+    "output": "item:stoneworks:purpur_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers"
+      ],
+      [
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers",
+        "item:stoneworks:purpur_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_shingle_slab",
+    "output": "item:stoneworks:purpur_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_shingle_stairs",
+    "output": "item:stoneworks:purpur_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:purpur_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_shingle_wall",
+    "output": "item:stoneworks:purpur_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles"
+      ],
+      [
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles",
+        "item:stoneworks:purpur_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_tile_slab",
+    "output": "item:stoneworks:purpur_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_tile_stairs",
+    "output": "item:stoneworks:purpur_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:purpur_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:purpur_tile_wall",
+    "output": "item:stoneworks:purpur_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles"
+      ],
+      [
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles",
+        "item:stoneworks:purpur_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_paver_slab",
+    "output": "item:stoneworks:quartz_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_paver_stairs",
+    "output": "item:stoneworks:quartz_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:quartz_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_paver_wall",
+    "output": "item:stoneworks:quartz_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers"
+      ],
+      [
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers",
+        "item:stoneworks:quartz_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_plate_slab",
+    "output": "item:stoneworks:quartz_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_plate_stairs",
+    "output": "item:stoneworks:quartz_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:quartz_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_plate_wall",
+    "output": "item:stoneworks:quartz_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates"
+      ],
+      [
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates",
+        "item:stoneworks:quartz_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_shingle_slab",
+    "output": "item:stoneworks:quartz_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_shingle_stairs",
+    "output": "item:stoneworks:quartz_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:quartz_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_shingle_wall",
+    "output": "item:stoneworks:quartz_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles"
+      ],
+      [
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles",
+        "item:stoneworks:quartz_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_tile_slab",
+    "output": "item:stoneworks:quartz_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_tile_stairs",
+    "output": "item:stoneworks:quartz_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:quartz_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:quartz_tile_wall",
+    "output": "item:stoneworks:quartz_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles"
+      ],
+      [
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles",
+        "item:stoneworks:quartz_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:raw_dark_prismarine_slab",
+    "output": "item:stoneworks:raw_dark_prismarine_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:raw_dark_prismarine_stairs",
+    "output": "item:stoneworks:raw_dark_prismarine_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:raw_dark_prismarine",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine",
+        ""
+      ],
+      [
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:raw_dark_prismarine_wall",
+    "output": "item:stoneworks:raw_dark_prismarine_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine"
+      ],
+      [
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine",
+        "item:stoneworks:raw_dark_prismarine"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:raw_purpur_slab",
+    "output": "item:stoneworks:raw_purpur_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:raw_purpur_stairs",
+    "output": "item:stoneworks:raw_purpur_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:raw_purpur",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur",
+        ""
+      ],
+      [
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:raw_purpur_wall",
+    "output": "item:stoneworks:raw_purpur_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur"
+      ],
+      [
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur",
+        "item:stoneworks:raw_purpur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_brick_slab",
+    "output": "item:stoneworks:red_sandstone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_brick_stairs",
+    "output": "item:stoneworks:red_sandstone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_brick_wall",
+    "output": "item:stoneworks:red_sandstone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks"
+      ],
+      [
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks",
+        "item:stoneworks:red_sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_paver_slab",
+    "output": "item:stoneworks:red_sandstone_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_paver_stairs",
+    "output": "item:stoneworks:red_sandstone_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_paver_wall",
+    "output": "item:stoneworks:red_sandstone_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers"
+      ],
+      [
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers",
+        "item:stoneworks:red_sandstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_plate_slab",
+    "output": "item:stoneworks:red_sandstone_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_plate_stairs",
+    "output": "item:stoneworks:red_sandstone_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_plate_wall",
+    "output": "item:stoneworks:red_sandstone_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates"
+      ],
+      [
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates",
+        "item:stoneworks:red_sandstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_shingle_slab",
+    "output": "item:stoneworks:red_sandstone_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_shingle_stairs",
+    "output": "item:stoneworks:red_sandstone_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_shingle_wall",
+    "output": "item:stoneworks:red_sandstone_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles"
+      ],
+      [
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles",
+        "item:stoneworks:red_sandstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_tile_slab",
+    "output": "item:stoneworks:red_sandstone_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_tile_stairs",
+    "output": "item:stoneworks:red_sandstone_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:red_sandstone_tile_wall",
+    "output": "item:stoneworks:red_sandstone_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles"
+      ],
+      [
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles",
+        "item:stoneworks:red_sandstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_brick_slab",
+    "output": "item:stoneworks:sandstone_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_brick_stairs",
+    "output": "item:stoneworks:sandstone_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_brick_wall",
+    "output": "item:stoneworks:sandstone_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks"
+      ],
+      [
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks",
+        "item:stoneworks:sandstone_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_paver_slab",
+    "output": "item:stoneworks:sandstone_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_paver_stairs",
+    "output": "item:stoneworks:sandstone_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_paver_wall",
+    "output": "item:stoneworks:sandstone_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers"
+      ],
+      [
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers",
+        "item:stoneworks:sandstone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_plate_slab",
+    "output": "item:stoneworks:sandstone_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_plate_stairs",
+    "output": "item:stoneworks:sandstone_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_plate_wall",
+    "output": "item:stoneworks:sandstone_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates"
+      ],
+      [
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates",
+        "item:stoneworks:sandstone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_shingle_slab",
+    "output": "item:stoneworks:sandstone_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_shingle_stairs",
+    "output": "item:stoneworks:sandstone_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_shingle_wall",
+    "output": "item:stoneworks:sandstone_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles"
+      ],
+      [
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles",
+        "item:stoneworks:sandstone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_tile_slab",
+    "output": "item:stoneworks:sandstone_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_tile_stairs",
+    "output": "item:stoneworks:sandstone_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:sandstone_tile_wall",
+    "output": "item:stoneworks:sandstone_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles"
+      ],
+      [
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles",
+        "item:stoneworks:sandstone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_paver_slab",
+    "output": "item:stoneworks:stone_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_paver_stairs",
+    "output": "item:stoneworks:stone_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:stone_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_paver_wall",
+    "output": "item:stoneworks:stone_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers"
+      ],
+      [
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers",
+        "item:stoneworks:stone_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_plate_slab",
+    "output": "item:stoneworks:stone_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_plate_stairs",
+    "output": "item:stoneworks:stone_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:stone_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_plate_wall",
+    "output": "item:stoneworks:stone_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates"
+      ],
+      [
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates",
+        "item:stoneworks:stone_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_shingle_slab",
+    "output": "item:stoneworks:stone_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_shingle_stairs",
+    "output": "item:stoneworks:stone_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:stone_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_shingle_wall",
+    "output": "item:stoneworks:stone_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles"
+      ],
+      [
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles",
+        "item:stoneworks:stone_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_tile_slab",
+    "output": "item:stoneworks:stone_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_tile_stairs",
+    "output": "item:stoneworks:stone_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:stone_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:stone_tile_wall",
+    "output": "item:stoneworks:stone_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles"
+      ],
+      [
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles",
+        "item:stoneworks:stone_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_paver_slab",
+    "output": "item:stoneworks:tuff_paver_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_paver_stairs",
+    "output": "item:stoneworks:tuff_paver_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:tuff_pavers",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_paver_wall",
+    "output": "item:stoneworks:tuff_paver_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers"
+      ],
+      [
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers",
+        "item:stoneworks:tuff_pavers"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_plate_slab",
+    "output": "item:stoneworks:tuff_plate_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_plate_stairs",
+    "output": "item:stoneworks:tuff_plate_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:tuff_plates",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_plate_wall",
+    "output": "item:stoneworks:tuff_plate_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates"
+      ],
+      [
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates",
+        "item:stoneworks:tuff_plates"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_shingle_slab",
+    "output": "item:stoneworks:tuff_shingle_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_shingle_stairs",
+    "output": "item:stoneworks:tuff_shingle_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:tuff_shingles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_shingle_wall",
+    "output": "item:stoneworks:tuff_shingle_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles"
+      ],
+      [
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles",
+        "item:stoneworks:tuff_shingles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_tile_slab",
+    "output": "item:stoneworks:tuff_tile_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_tile_stairs",
+    "output": "item:stoneworks:tuff_tile_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:stoneworks:tuff_tiles",
+        "",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles",
+        ""
+      ],
+      [
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "stoneworks:tuff_tile_wall",
+    "output": "item:stoneworks:tuff_tile_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles"
+      ],
+      [
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles",
+        "item:stoneworks:tuff_tiles"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

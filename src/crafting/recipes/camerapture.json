@@ -1,0 +1,42 @@
+[
+  {
+    "name": "camerapture:album",
+    "output": "item:camerapture:album",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:paper"
+      ],
+      [
+        "item:minecraft:writable_book"
+      ],
+      [
+        "item:minecraft:paper"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "camerapture:camera",
+    "output": "item:camerapture:camera",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:iron_ingot",
+        ""
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "tag:items:c:glass_panes",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:redstone",
+        "item:minecraft:iron_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

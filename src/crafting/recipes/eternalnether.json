@@ -1,0 +1,249 @@
+[
+  {
+    "name": "eternalnether:chiseled_warped_nether_bricks",
+    "output": "item:eternalnether:chiseled_warped_nether_bricks",
+    "count": 1,
+    "grid": [
+      [
+        "item:eternalnether:warped_nether_brick_slab"
+      ],
+      [
+        "item:eternalnether:warped_nether_brick_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:chiseled_withered_blackstone",
+    "output": "item:eternalnether:chiseled_withered_blackstone",
+    "count": 1,
+    "grid": [
+      [
+        "item:eternalnether:withered_blackstone_slab"
+      ],
+      [
+        "item:eternalnether:withered_blackstone_slab"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:cracked_withered_blackstone_slab",
+    "output": "item:eternalnether:cracked_withered_blackstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:cracked_withered_blackstone_stairs",
+    "output": "item:eternalnether:cracked_withered_blackstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:eternalnether:cracked_withered_blackstone",
+        "",
+        ""
+      ],
+      [
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone",
+        ""
+      ],
+      [
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:cracked_withered_blackstone_wall",
+    "output": "item:eternalnether:cracked_withered_blackstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone"
+      ],
+      [
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone",
+        "item:eternalnether:cracked_withered_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:warped_nether_brick_slab",
+    "output": "item:eternalnether:warped_nether_brick_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:warped_nether_brick_stairs",
+    "output": "item:eternalnether:warped_nether_brick_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:eternalnether:warped_nether_bricks",
+        "",
+        ""
+      ],
+      [
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks",
+        ""
+      ],
+      [
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:warped_nether_brick_wall",
+    "output": "item:eternalnether:warped_nether_brick_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks"
+      ],
+      [
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks",
+        "item:eternalnether:warped_nether_bricks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:warped_nether_bricks",
+    "output": "item:eternalnether:warped_nether_bricks",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:nether_brick",
+        "item:minecraft:warped_roots"
+      ],
+      [
+        "item:minecraft:warped_roots",
+        "item:minecraft:nether_brick"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:withered_blackstone_slab",
+    "output": "item:eternalnether:withered_blackstone_slab",
+    "count": 6,
+    "grid": [
+      [
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:withered_blackstone_stairs",
+    "output": "item:eternalnether:withered_blackstone_stairs",
+    "count": 4,
+    "grid": [
+      [
+        "item:eternalnether:withered_blackstone",
+        "",
+        ""
+      ],
+      [
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone",
+        ""
+      ],
+      [
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:withered_blackstone_wall",
+    "output": "item:eternalnether:withered_blackstone_wall",
+    "count": 6,
+    "grid": [
+      [
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone"
+      ],
+      [
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone",
+        "item:eternalnether:withered_blackstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:withered_bone_block",
+    "output": "item:eternalnether:withered_bone_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:eternalnether:withered_bone_meal",
+        "item:eternalnether:withered_bone_meal",
+        "item:eternalnether:withered_bone_meal"
+      ],
+      [
+        "item:eternalnether:withered_bone_meal",
+        "item:eternalnether:withered_bone_meal",
+        "item:eternalnether:withered_bone_meal"
+      ],
+      [
+        "item:eternalnether:withered_bone_meal",
+        "item:eternalnether:withered_bone_meal",
+        "item:eternalnether:withered_bone_meal"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "eternalnether:withered_bone_meal",
+    "output": "item:eternalnether:withered_bone_meal",
+    "count": 3,
+    "grid": [
+      "item:eternalnether:withered_bone"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "eternalnether:withered_bone_meal_from_withered_bone_block",
+    "output": "item:eternalnether:withered_bone_meal",
+    "count": 9,
+    "grid": [
+      "item:eternalnether:withered_bone_block"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

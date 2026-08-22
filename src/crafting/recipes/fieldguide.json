@@ -1,0 +1,12 @@
+[
+  {
+    "name": "fieldguide:field_guide",
+    "output": "item:fieldguide:field_guide",
+    "count": 1,
+    "grid": [
+      "item:minecraft:book",
+      "item:minecraft:spyglass"
+    ],
+    "type": "crafting:shapeless"
+  }
+]

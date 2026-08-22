@@ -1,0 +1,1219 @@
+[
+  {
+    "name": "alexsmobs:animal_dictionary",
+    "output": "item:alexsmobs:animal_dictionary",
+    "count": 1,
+    "grid": [
+      "item:minecraft:book",
+      "tag:items:alexsmobs:animal_dictionary_ingredient",
+      "tag:items:c:dyes/green"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:banana_slug_slime",
+    "output": "item:alexsmobs:banana_slug_slime",
+    "count": 9,
+    "grid": [
+      "item:alexsmobs:banana_slug_slime_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:banana_slug_slime_block",
+    "output": "item:alexsmobs:banana_slug_slime_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:banana_slug_slime",
+        "item:alexsmobs:banana_slug_slime",
+        "item:alexsmobs:banana_slug_slime"
+      ],
+      [
+        "item:alexsmobs:banana_slug_slime",
+        "item:alexsmobs:banana_slug_slime",
+        "item:alexsmobs:banana_slug_slime"
+      ],
+      [
+        "item:alexsmobs:banana_slug_slime",
+        "item:alexsmobs:banana_slug_slime",
+        "item:alexsmobs:banana_slug_slime"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:banner_pattern_australia_0",
+    "output": "item:alexsmobs:banner_pattern_australia_0",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "item:alexsmobs:kangaroo_hide"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:banner_pattern_australia_1",
+    "output": "item:alexsmobs:banner_pattern_australia_1",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "item:alexsmobs:emu_feather"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:banner_pattern_bear",
+    "output": "item:alexsmobs:banner_pattern_bear",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "item:alexsmobs:bear_fur"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:banner_pattern_brazil",
+    "output": "item:alexsmobs:banner_pattern_brazil",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "item:alexsmobs:shed_snake_skin"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:banner_pattern_new_mexico",
+    "output": "item:alexsmobs:banner_pattern_new_mexico",
+    "count": 1,
+    "grid": [
+      "item:minecraft:paper",
+      "item:alexsmobs:tarantula_hawk_wing_fragment"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:bison_carpet",
+    "output": "item:alexsmobs:bison_carpet",
+    "count": 3,
+    "grid": [
+      [
+        "item:alexsmobs:bison_fur_block",
+        "item:alexsmobs:bison_fur_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:bison_fur_block",
+    "output": "item:alexsmobs:bison_fur_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur"
+      ],
+      [
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur"
+      ],
+      [
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:bison_fur_from_block",
+    "output": "item:alexsmobs:bison_fur",
+    "count": 9,
+    "grid": [
+      "item:alexsmobs:bison_fur_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:bison_fur_to_wool",
+    "output": "item:minecraft:brown_wool",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur"
+      ],
+      [
+        "item:alexsmobs:bison_fur",
+        "item:alexsmobs:bison_fur"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:blood_sprayer",
+    "output": "item:alexsmobs:blood_sprayer",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:blood_sac",
+        "item:alexsmobs:blood_sac",
+        ""
+      ],
+      [
+        "item:minecraft:nether_brick",
+        "item:minecraft:nether_brick",
+        "item:alexsmobs:mosquito_proboscis"
+      ],
+      [
+        "item:minecraft:nether_brick",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:bonemeal_from_fish_bones",
+    "output": "item:minecraft:bone_meal",
+    "count": 2,
+    "grid": [
+      "item:alexsmobs:fish_bones"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:centipede_leggings",
+    "output": "item:alexsmobs:centipede_leggings",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:centipede_leg",
+        "item:alexsmobs:centipede_leg",
+        "item:alexsmobs:centipede_leg"
+      ],
+      [
+        "item:alexsmobs:centipede_leg",
+        "",
+        "item:alexsmobs:centipede_leg"
+      ],
+      [
+        "item:alexsmobs:centipede_leg",
+        "",
+        "item:alexsmobs:centipede_leg"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:chorus_on_a_stick",
+    "output": "item:alexsmobs:chorus_on_a_stick",
+    "count": 1,
+    "grid": [
+      "item:minecraft:fishing_rod",
+      "item:minecraft:chorus_fruit"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:cockroach_wing",
+    "output": "item:alexsmobs:cockroach_wing",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:cockroach_wing_fragment",
+        "item:alexsmobs:cockroach_wing_fragment",
+        "item:alexsmobs:cockroach_wing_fragment"
+      ],
+      [
+        "item:alexsmobs:cockroach_wing_fragment",
+        "item:alexsmobs:cockroach_wing_fragment",
+        "item:alexsmobs:cockroach_wing_fragment"
+      ],
+      [
+        "item:alexsmobs:cockroach_wing_fragment",
+        "item:alexsmobs:cockroach_wing_fragment",
+        "item:alexsmobs:cockroach_wing_fragment"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:crocodile_chestplate",
+    "output": "item:alexsmobs:crocodile_chestplate",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:crocodile_scute",
+        "",
+        "item:alexsmobs:crocodile_scute"
+      ],
+      [
+        "item:alexsmobs:crocodile_scute",
+        "item:alexsmobs:crocodile_scute",
+        "item:alexsmobs:crocodile_scute"
+      ],
+      [
+        "item:alexsmobs:crocodile_scute",
+        "item:alexsmobs:crocodile_scute",
+        "item:alexsmobs:crocodile_scute"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:dimensional_carver",
+    "output": "item:alexsmobs:dimensional_carver",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:void_worm_mandible",
+        "item:alexsmobs:void_worm_eye",
+        "item:alexsmobs:void_worm_mandible"
+      ],
+      [
+        "",
+        "tag:items:c:ingots/netherite",
+        ""
+      ],
+      [
+        "",
+        "tag:items:c:ingots/netherite",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:echolocator",
+    "output": "item:alexsmobs:echolocator",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:cachalot_whale_tooth",
+        "tag:items:c:ingots/iron",
+        "item:alexsmobs:cachalot_whale_tooth"
+      ],
+      [
+        "tag:items:c:ingots/iron",
+        "item:alexsmobs:ambergris",
+        "tag:items:c:ingots/iron"
+      ],
+      [
+        "",
+        "tag:items:c:ingots/iron",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:emu_leggings",
+    "output": "item:alexsmobs:emu_leggings",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:emu_feather",
+        "item:alexsmobs:kangaroo_hide",
+        "item:alexsmobs:emu_feather"
+      ],
+      [
+        "item:alexsmobs:kangaroo_hide",
+        "",
+        "item:alexsmobs:kangaroo_hide"
+      ],
+      [
+        "item:alexsmobs:emu_feather",
+        "",
+        "item:alexsmobs:emu_feather"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:enderiophage_rocket",
+    "output": "item:alexsmobs:enderiophage_rocket",
+    "count": 3,
+    "grid": [
+      [
+        "",
+        "item:alexsmobs:capsid",
+        ""
+      ],
+      [
+        "",
+        "tag:items:c:nuggets/iron",
+        ""
+      ],
+      [
+        "item:minecraft:end_stone",
+        "tag:items:c:nuggets/iron",
+        "item:minecraft:end_stone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:endolocator",
+    "output": "item:alexsmobs:endolocator",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:ender_pearl",
+        ""
+      ],
+      [
+        "item:minecraft:ender_pearl",
+        "item:alexsmobs:echolocator",
+        "item:minecraft:ender_pearl"
+      ],
+      [
+        "",
+        "item:minecraft:ender_pearl",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:falconry_glove",
+    "output": "item:alexsmobs:falconry_glove",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:leather",
+        ""
+      ],
+      [
+        "item:minecraft:leather",
+        "item:minecraft:leather",
+        "item:minecraft:leather"
+      ],
+      [
+        "",
+        "item:alexsmobs:bear_fur",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:falconry_hood",
+    "output": "item:alexsmobs:falconry_hood",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:leather",
+        "item:alexsmobs:roadrunner_feather"
+      ],
+      [
+        "item:minecraft:leather",
+        "",
+        "item:minecraft:leather"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:falconry_hood_alt",
+    "output": "item:alexsmobs:falconry_hood",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:roadrunner_feather",
+        "item:minecraft:leather",
+        ""
+      ],
+      [
+        "item:minecraft:leather",
+        "",
+        "item:minecraft:leather"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:fish_oil",
+    "output": "item:alexsmobs:fish_oil",
+    "count": 1,
+    "grid": [
+      "item:minecraft:glass_bottle",
+      "item:alexsmobs:blobfish",
+      "item:alexsmobs:blobfish",
+      "item:alexsmobs:blobfish",
+      "item:alexsmobs:blobfish"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:flint_n_steel_dropbear_claw",
+    "output": "item:minecraft:flint_and_steel",
+    "count": 1,
+    "grid": [
+      "item:alexsmobs:dropbear_claw",
+      "item:minecraft:flint"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:flying_fish_boots",
+    "output": "item:alexsmobs:flying_fish_boots",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:c:strings",
+        "",
+        "tag:items:c:strings"
+      ],
+      [
+        "item:alexsmobs:flying_fish",
+        "",
+        "item:alexsmobs:flying_fish"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:frontier_cap",
+    "output": "item:alexsmobs:frontier_cap",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:bear_fur",
+        "item:alexsmobs:bear_fur",
+        "item:alexsmobs:bear_fur"
+      ],
+      [
+        "item:alexsmobs:bear_fur",
+        "item:minecraft:leather_helmet",
+        "item:alexsmobs:bear_fur"
+      ],
+      [
+        "",
+        "",
+        "item:alexsmobs:raccoon_tail"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:frontier_cap_alt",
+    "output": "item:alexsmobs:frontier_cap",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:bear_fur",
+        "item:alexsmobs:bear_fur",
+        "item:alexsmobs:bear_fur"
+      ],
+      [
+        "item:alexsmobs:bear_fur",
+        "item:minecraft:leather_helmet",
+        "item:alexsmobs:bear_fur"
+      ],
+      [
+        "item:alexsmobs:raccoon_tail",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:froststalker_helmet",
+    "output": "item:alexsmobs:froststalker_helmet",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:alexsmobs:froststalker_horn",
+        ""
+      ],
+      [
+        "item:minecraft:packed_ice",
+        "item:minecraft:packed_ice",
+        "item:minecraft:packed_ice"
+      ],
+      [
+        "item:minecraft:packed_ice",
+        "",
+        "item:minecraft:packed_ice"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:gustmaker",
+    "output": "item:alexsmobs:gustmaker",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cut_sandstone",
+        "item:minecraft:cut_sandstone",
+        "item:minecraft:cut_sandstone"
+      ],
+      [
+        "item:minecraft:cut_sandstone",
+        "item:alexsmobs:guster_eye",
+        "item:minecraft:cut_sandstone"
+      ],
+      [
+        "item:minecraft:cut_sandstone",
+        "item:minecraft:redstone",
+        "item:minecraft:cut_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:hemolymph_blaster",
+    "output": "item:alexsmobs:hemolymph_blaster",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:hemolymph_sac",
+        "item:alexsmobs:hemolymph_sac",
+        "item:alexsmobs:hemolymph_sac"
+      ],
+      [
+        "item:alexsmobs:mimicream",
+        "item:alexsmobs:blood_sprayer",
+        "item:alexsmobs:mosquito_proboscis"
+      ],
+      [
+        "item:alexsmobs:warped_muscle",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:hummingbird_feeder",
+    "output": "item:alexsmobs:hummingbird_feeder",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:copper_ingot",
+        ""
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:glass_bottle",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:sunflower",
+        "item:minecraft:copper_ingot",
+        "item:minecraft:sunflower"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:kangaroo_burger",
+    "output": "item:alexsmobs:kangaroo_burger",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:bread"
+      ],
+      [
+        "item:alexsmobs:cooked_kangaroo_meat"
+      ],
+      [
+        "item:minecraft:bread"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:kangaroo_hide_to_leather",
+    "output": "item:minecraft:leather",
+    "count": 1,
+    "grid": [
+      "item:alexsmobs:kangaroo_hide",
+      "item:alexsmobs:kangaroo_hide"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:komodo_spit_bottle",
+    "output": "item:alexsmobs:komodo_spit_bottle",
+    "count": 1,
+    "grid": [
+      "item:minecraft:glass_bottle",
+      "item:alexsmobs:komodo_spit",
+      "item:alexsmobs:komodo_spit",
+      "item:alexsmobs:komodo_spit",
+      "item:alexsmobs:komodo_spit"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:komodo_spit_to_slime",
+    "output": "item:minecraft:slime_ball",
+    "count": 1,
+    "grid": [
+      "item:alexsmobs:komodo_spit",
+      "item:alexsmobs:komodo_spit",
+      "item:alexsmobs:komodo_spit"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:maraca",
+    "output": "item:alexsmobs:maraca",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "tag:items:minecraft:planks",
+        ""
+      ],
+      [
+        "tag:items:minecraft:planks",
+        "item:alexsmobs:rattlesnake_rattle",
+        "tag:items:minecraft:planks"
+      ],
+      [
+        "",
+        "tag:items:c:rods/wooden",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:moose_headgear",
+    "output": "item:alexsmobs:moose_headgear",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:moose_antler",
+        "tag:items:c:ingots/iron",
+        "item:alexsmobs:moose_antler"
+      ],
+      [
+        "tag:items:c:strings",
+        "",
+        "tag:items:c:strings"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:mosquito_larva",
+    "output": "item:alexsmobs:mosquito_larva",
+    "count": 1,
+    "grid": [
+      "item:alexsmobs:maggot",
+      "item:alexsmobs:mosquito_proboscis"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:mosquito_repellent_stew",
+    "output": "item:alexsmobs:mosquito_repellent_stew",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bowl",
+      "item:alexsmobs:triops_eggs",
+      "item:alexsmobs:stink_bottle",
+      "item:alexsmobs:triops_eggs"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:pocket_sand",
+    "output": "item:alexsmobs:pocket_sand",
+    "count": 1,
+    "grid": [
+      [
+        "tag:items:minecraft:sand",
+        "tag:items:minecraft:sand",
+        "tag:items:minecraft:sand"
+      ],
+      [
+        "item:minecraft:leather",
+        "item:alexsmobs:guster_eye",
+        "item:minecraft:leather"
+      ],
+      [
+        "item:minecraft:leather",
+        "item:minecraft:leather",
+        "item:minecraft:leather"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:pupfish_locator",
+    "output": "item:alexsmobs:pupfish_locator",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:slime_ball",
+        "item:alexsmobs:fish_bones",
+        "item:minecraft:slime_ball"
+      ],
+      [
+        "item:alexsmobs:fish_bones",
+        "item:alexsmobs:echolocator",
+        "item:alexsmobs:fish_bones"
+      ],
+      [
+        "item:minecraft:slime_ball",
+        "item:alexsmobs:fish_bones",
+        "item:minecraft:slime_ball"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:rainbow_glass",
+    "output": "item:alexsmobs:rainbow_glass",
+    "count": 8,
+    "grid": [
+      [
+        "tag:items:c:glass_blocks",
+        "tag:items:c:glass_blocks",
+        "tag:items:c:glass_blocks"
+      ],
+      [
+        "tag:items:c:glass_blocks",
+        "item:alexsmobs:rainbow_jelly",
+        "tag:items:c:glass_blocks"
+      ],
+      [
+        "tag:items:c:glass_blocks",
+        "tag:items:c:glass_blocks",
+        "tag:items:c:glass_blocks"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:roadrunner_boots",
+    "output": "item:alexsmobs:roadrunner_boots",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:roadrunner_feather",
+        "",
+        "item:alexsmobs:roadrunner_feather"
+      ],
+      [
+        "item:alexsmobs:roadrunner_feather",
+        "",
+        "item:alexsmobs:roadrunner_feather"
+      ],
+      [
+        "item:minecraft:chiseled_sandstone",
+        "item:minecraft:leather_boots",
+        "item:minecraft:chiseled_sandstone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:rocky_chestplate",
+    "output": "item:alexsmobs:rocky_chestplate",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:rocky_shell",
+        "",
+        "item:alexsmobs:rocky_shell"
+      ],
+      [
+        "item:alexsmobs:rocky_shell",
+        "item:alexsmobs:rocky_shell",
+        "item:alexsmobs:rocky_shell"
+      ],
+      [
+        "item:alexsmobs:rocky_shell",
+        "item:alexsmobs:rocky_shell",
+        "item:alexsmobs:rocky_shell"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:sculk_boomer",
+    "output": "item:alexsmobs:sculk_boomer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:sculk",
+        "item:minecraft:sculk",
+        "item:minecraft:sculk"
+      ],
+      [
+        "item:alexsmobs:skreecher_soul",
+        "item:alexsmobs:skreecher_soul",
+        "item:alexsmobs:skreecher_soul"
+      ],
+      [
+        "item:minecraft:bone_block",
+        "item:minecraft:bone_block",
+        "item:minecraft:bone_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:shark_tooth_arrow",
+    "output": "item:alexsmobs:shark_tooth_arrow",
+    "count": 6,
+    "grid": [
+      [
+        "item:alexsmobs:shark_tooth"
+      ],
+      [
+        "tag:items:c:rods/wooden"
+      ],
+      [
+        "item:minecraft:kelp"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:shield_of_the_deep",
+    "output": "item:alexsmobs:shield_of_the_deep",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:serrated_shark_tooth",
+        "item:alexsmobs:serrated_shark_tooth",
+        "item:alexsmobs:serrated_shark_tooth"
+      ],
+      [
+        "item:minecraft:prismarine_bricks",
+        "item:minecraft:heart_of_the_sea",
+        "item:minecraft:prismarine_bricks"
+      ],
+      [
+        "item:alexsmobs:shark_tooth",
+        "item:minecraft:prismarine_bricks",
+        "item:alexsmobs:shark_tooth"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:sopa_de_macaco",
+    "output": "item:alexsmobs:sopa_de_macaco",
+    "count": 1,
+    "grid": [
+      "item:minecraft:bowl",
+      "item:alexsmobs:banana_peel",
+      "item:minecraft:brown_mushroom",
+      "item:minecraft:bone"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:spiked_turtle_shell",
+    "output": "item:alexsmobs:spiked_turtle_shell",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:spiked_scute",
+        "item:alexsmobs:spiked_scute",
+        "item:alexsmobs:spiked_scute"
+      ],
+      [
+        "item:alexsmobs:spiked_scute",
+        "item:minecraft:turtle_helmet",
+        "item:alexsmobs:spiked_scute"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:squid_grapple",
+    "output": "item:alexsmobs:squid_grapple",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:lost_tentacle",
+        "item:alexsmobs:lost_tentacle",
+        "item:alexsmobs:lost_tentacle"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:crossbow",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "",
+        "item:minecraft:copper_ingot",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:stink_ray",
+    "output": "item:alexsmobs:stink_ray",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:stink_bottle",
+        "item:alexsmobs:stink_bottle",
+        ""
+      ],
+      [
+        "tag:items:c:ingots/iron",
+        "tag:items:c:ingots/iron",
+        "item:minecraft:hopper"
+      ],
+      [
+        "tag:items:c:ingots/iron",
+        "",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:straddle_helmet",
+    "output": "item:alexsmobs:straddle_helmet",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:alexsmobs:straddlite",
+        ""
+      ],
+      [
+        "item:alexsmobs:straddlite",
+        "",
+        "item:alexsmobs:straddlite"
+      ],
+      [
+        "item:minecraft:string",
+        "",
+        "item:minecraft:string"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:straddle_saddle",
+    "output": "item:alexsmobs:straddle_saddle",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:saddle",
+        "item:minecraft:saddle"
+      ],
+      [
+        "item:alexsmobs:straddlite",
+        "item:alexsmobs:straddlite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:straddleboard",
+    "output": "item:alexsmobs:straddleboard",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:alexsmobs:straddlite",
+        "tag:items:c:ingots/netherite"
+      ],
+      [
+        "item:alexsmobs:straddlite",
+        "tag:items:c:ingots/netherite",
+        "item:alexsmobs:straddlite"
+      ],
+      [
+        "tag:items:c:ingots/netherite",
+        "item:alexsmobs:straddlite",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:straddlite_block",
+    "output": "item:alexsmobs:straddlite_block",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:straddlite",
+        "item:alexsmobs:straddlite",
+        "item:alexsmobs:straddlite"
+      ],
+      [
+        "item:alexsmobs:straddlite",
+        "item:alexsmobs:straddlite",
+        "item:alexsmobs:straddlite"
+      ],
+      [
+        "item:alexsmobs:straddlite",
+        "item:alexsmobs:straddlite",
+        "item:alexsmobs:straddlite"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:straddlite_from_block",
+    "output": "item:alexsmobs:straddlite",
+    "count": 9,
+    "grid": [
+      "item:alexsmobs:straddlite_block"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:tarantula_hawk_elytra",
+    "output": "item:alexsmobs:tarantula_hawk_elytra",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:tarantula_hawk_wing",
+        "item:minecraft:elytra",
+        "item:alexsmobs:tarantula_hawk_wing"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:tarantula_hawk_wing",
+    "output": "item:alexsmobs:tarantula_hawk_wing",
+    "count": 1,
+    "grid": [
+      [
+        "item:alexsmobs:tarantula_hawk_wing_fragment",
+        "item:alexsmobs:tarantula_hawk_wing_fragment",
+        "item:alexsmobs:tarantula_hawk_wing_fragment"
+      ],
+      [
+        "item:alexsmobs:tarantula_hawk_wing_fragment",
+        "item:alexsmobs:tarantula_hawk_wing_fragment",
+        "item:alexsmobs:tarantula_hawk_wing_fragment"
+      ],
+      [
+        "item:alexsmobs:tarantula_hawk_wing_fragment",
+        "item:alexsmobs:tarantula_hawk_wing_fragment",
+        "item:alexsmobs:tarantula_hawk_wing_fragment"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:tendon_whip",
+    "output": "item:alexsmobs:tendon_whip",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:alexsmobs:dropbear_claw",
+        "item:alexsmobs:dropbear_claw"
+      ],
+      [
+        "item:alexsmobs:elastic_tendon",
+        "item:alexsmobs:elastic_tendon",
+        "item:alexsmobs:dropbear_claw"
+      ],
+      [
+        "tag:items:c:rods/wooden",
+        "item:alexsmobs:elastic_tendon",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:transmutation_table",
+    "output": "item:alexsmobs:transmutation_table",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:nether_star",
+        ""
+      ],
+      [
+        "item:alexsmobs:farseer_arm",
+        "",
+        "item:alexsmobs:farseer_arm"
+      ],
+      [
+        "item:minecraft:obsidian",
+        "item:minecraft:obsidian",
+        "item:minecraft:obsidian"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:vine_lasso",
+    "output": "item:alexsmobs:vine_lasso",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:vine",
+        "item:minecraft:lead"
+      ],
+      [
+        "item:minecraft:vine",
+        "item:alexsmobs:shed_snake_skin",
+        "item:minecraft:vine"
+      ],
+      [
+        "item:alexsmobs:shed_snake_skin",
+        "item:minecraft:vine",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "alexsmobs:void_worm_beak",
+    "output": "item:alexsmobs:void_worm_beak",
+    "count": 1,
+    "grid": [
+      "item:alexsmobs:void_worm_mandible",
+      "item:alexsmobs:void_worm_mandible"
+    ],
+    "type": "crafting:shapeless"
+  },
+  {
+    "name": "alexsmobs:void_worm_effigy",
+    "output": "item:alexsmobs:void_worm_effigy",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:alexsmobs:void_worm_beak",
+        ""
+      ],
+      [
+        "item:minecraft:purpur_block",
+        "item:minecraft:ender_pearl",
+        "item:minecraft:purpur_block"
+      ],
+      [
+        "item:minecraft:ender_pearl",
+        "item:minecraft:purpur_block",
+        "item:minecraft:ender_pearl"
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]

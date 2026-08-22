@@ -1,0 +1,415 @@
+[
+  {
+    "name": "hammer_mod:amethyst_hammer",
+    "output": "item:hammer_mod:amethyst_hammer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:stick",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:amethyst_head",
+    "output": "item:hammer_mod:amethyst_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:amethyst_shard"
+      ],
+      [
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:amethyst_shard"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:copper_hammer",
+    "output": "item:hammer_mod:copper_hammer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:stick",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:copper_head",
+    "output": "item:hammer_mod:copper_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_ingot"
+      ],
+      [
+        "item:minecraft:copper_ingot",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:copper_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:diamond_hammer",
+    "output": "item:hammer_mod:diamond_hammer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:diamond",
+        "item:minecraft:diamond",
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:diamond",
+        "item:minecraft:stick",
+        "item:minecraft:diamond"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:diamond_head",
+    "output": "item:hammer_mod:diamond_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:diamond",
+        "item:minecraft:diamond",
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:diamond",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:diamond"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:giant_amethyst_head",
+    "output": "item:hammer_mod:giant_amethyst_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:amethyst_block",
+        "item:minecraft:amethyst_block",
+        "item:minecraft:amethyst_block"
+      ],
+      [
+        "item:minecraft:amethyst_block",
+        "item:minecraft:amethyst_shard",
+        "item:minecraft:amethyst_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:giant_copper_head",
+    "output": "item:hammer_mod:giant_copper_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:copper_block",
+        "item:minecraft:copper_block",
+        "item:minecraft:copper_block"
+      ],
+      [
+        "item:minecraft:copper_block",
+        "item:minecraft:copper_ingot",
+        "item:minecraft:copper_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:giant_diamond_head",
+    "output": "item:hammer_mod:giant_diamond_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:diamond_block",
+        "item:minecraft:diamond_block",
+        "item:minecraft:diamond_block"
+      ],
+      [
+        "item:minecraft:diamond_block",
+        "item:minecraft:diamond",
+        "item:minecraft:diamond_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:giant_gold_head",
+    "output": "item:hammer_mod:giant_gold_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gold_block",
+        "item:minecraft:gold_block",
+        "item:minecraft:gold_block"
+      ],
+      [
+        "item:minecraft:gold_block",
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:giant_iron_head",
+    "output": "item:hammer_mod:giant_iron_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_block",
+        "item:minecraft:iron_block",
+        "item:minecraft:iron_block"
+      ],
+      [
+        "item:minecraft:iron_block",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_block"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:giant_stone_head",
+    "output": "item:hammer_mod:giant_stone_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone"
+      ],
+      [
+        "item:minecraft:cobblestone",
+        "item:minecraft:stone_bricks",
+        "item:minecraft:cobblestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:gold_hammer",
+    "output": "item:hammer_mod:gold_hammer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_ingot"
+      ],
+      [
+        "item:minecraft:gold_ingot",
+        "item:minecraft:stick",
+        "item:minecraft:gold_ingot"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:gold_head",
+    "output": "item:hammer_mod:gold_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_ingot"
+      ],
+      [
+        "item:minecraft:gold_ingot",
+        "item:minecraft:gold_nugget",
+        "item:minecraft:gold_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:hammer_smithing_template",
+    "output": "item:hammer_mod:hammer_smithing_template",
+    "count": 2,
+    "grid": [
+      [
+        "item:minecraft:diamond",
+        "item:hammer_mod:hammer_smithing_template",
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:diamond",
+        "item:hammer_mod:diamond_head",
+        "item:minecraft:diamond"
+      ],
+      [
+        "item:minecraft:diamond",
+        "item:minecraft:diamond",
+        "item:minecraft:diamond"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:iron_hammer",
+    "output": "item:hammer_mod:iron_hammer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:stick",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:iron_head",
+    "output": "item:hammer_mod:iron_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot"
+      ],
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_nugget",
+        "item:minecraft:iron_ingot"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:magnet",
+    "output": "item:hammer_mod:magnet",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:iron_ingot",
+        "item:minecraft:iron_ingot",
+        ""
+      ],
+      [
+        "item:minecraft:redstone",
+        "item:minecraft:redstone",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:stone_hammer",
+    "output": "item:hammer_mod:stone_hammer",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone"
+      ],
+      [
+        "item:minecraft:cobblestone",
+        "item:minecraft:stick",
+        "item:minecraft:cobblestone"
+      ],
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:stone_head",
+    "output": "item:hammer_mod:stone_head",
+    "count": 1,
+    "grid": [
+      [
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone",
+        "item:minecraft:cobblestone"
+      ],
+      [
+        "item:minecraft:cobblestone",
+        "item:minecraft:iron_ingot",
+        "item:minecraft:cobblestone"
+      ]
+    ],
+    "type": "crafting:shaped"
+  },
+  {
+    "name": "hammer_mod:tiny_stick",
+    "output": "item:hammer_mod:tiny_stick",
+    "count": 1,
+    "grid": [
+      [
+        "",
+        "item:minecraft:stick",
+        ""
+      ],
+      [
+        "",
+        "item:minecraft:iron_nugget",
+        ""
+      ]
+    ],
+    "type": "crafting:shaped"
+  }
+]
