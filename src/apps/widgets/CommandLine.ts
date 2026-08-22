@@ -273,7 +273,7 @@ Cache contains ${cacheSize} records
           const name = parts.join(" ");
 
           if (name === "") {
-            return `Usage: take [item] [count=1]`;
+            return `Usage: take [item] [count|all]`;
           }
 
           let key: string = name;
@@ -288,7 +288,7 @@ Cache contains ${cacheSize} records
             key = `item:${this._expandPrefix(name)}`;
           }
           const displayName = name.startsWith("nbt:") ? name : this._expandPrefix(name);
-          const count = Number(countStr);
+          const count = countStr === "all" || countStr === "*" ? "all" : Number(countStr);
 
           return `Took ${this.server.take(this.storageName, key, count)} ${key}`;
         },

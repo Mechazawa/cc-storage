@@ -8,7 +8,7 @@ export interface ServerRPC extends WrappedRPC {
   defragment(): number;
   storeAll(storageName: string): number;
   store(storageName: string, slot: number, count?: number): number;
-  take(storageName: string, key: string, count: number, slot?: number): number;
+  take(storageName: string, key: string, count: number | "all", slot?: number): number;
   list(): Resource[];
   size(): number;
   free(): number;

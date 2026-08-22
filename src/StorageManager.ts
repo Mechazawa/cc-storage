@@ -247,13 +247,21 @@ export default class StorageManager {
   }
 
   // todo: not updating cache properly when taking all (verify?)
-  take(storageName: string, key: string, count: number, slot?: number): number {
+  take(storageName: string, key: string, count: number | "all", slot?: number): number {
     let sent = 0;
-    const sources = this.allocator.reserve(key, count);
+    const takeAll = count === "all";
+    const sources = this.allocator.reserve(key, takeAll ? Infinity : count, takeAll);
 
     try {
       for (const source of sources) {
-        sent += this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
+        const moved = this.getStorage(source.peripheral)?.pushItems(storageName, source.slot, source.count, slot) ?? 0;
+
+        sent += moved;
+
+        // A short push means the destination is out of room, so the remaining sources cannot land either
+        if (moved < source.count) {
+          break;
+        }
       }
     } finally {
       this.allocator.release(...sources);
