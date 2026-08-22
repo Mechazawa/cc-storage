@@ -160,13 +160,14 @@ export default class StorageManager {
    */
   defragment(): number {
     // Counts have to be read fresh: a player moving items by hand leaves cached ones too high,
-    // and the bookkeeping below then never sees a source slot reach empty
+    // and a stack that cannot merge for reasons the item name does not show leaves them too low
     this.cache.delete("inventory:*");
     this.cache.delete("acc:*");
 
+    const occupiedBefore = this.used();
+
     // a copy, because the scan is memoized and this loop consumes what it walks
     const fragmented = [...this.getFragmented()];
-    let freed = 0;
 
     while (fragmented.length > 0) {
       const target = fragmented.shift();
@@ -188,14 +189,15 @@ export default class StorageManager {
         if (fragmented[i].count <= 0) {
           fragmented.splice(i, 1);
           i--;
-          freed++;
         }
       }
     }
 
     this.cache.delete("acc:*");
 
-    return freed;
+    // counted by looking, because tracking it through the loop only reports what the moves
+    // were expected to do rather than what they did
+    return occupiedBefore - this.used();
   }
 
   /**
