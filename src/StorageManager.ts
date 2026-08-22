@@ -127,12 +127,45 @@ export default class StorageManager {
     return output;
   }
 
+  /** Slots a defragment would free: what the partial stacks of an item occupy, less what they need. */
+  fragmented(): number {
+    const slots = new LuaMap<string, number>();
+    const items = new LuaMap<string, number>();
+
+    for (const location of this.getFragmented()) {
+      const name = location.name ?? "";
+
+      slots.set(name, (slots.get(name) ?? 0) + 1);
+      items.set(name, (items.get(name) ?? 0) + location.count);
+    }
+
+    const stackSize = new LuaMap<string, number>();
+
+    for (const resource of this.list()) {
+      stackSize.set(resource.name, resource.maxCount);
+    }
+
+    let freeable = 0;
+
+    for (const [name, held] of slots) {
+      freeable += held - Math.ceil((items.get(name) ?? 0) / (stackSize.get(name) ?? 1));
+    }
+
+    return freeable;
+  }
+
   /**
    * Defragment storage
    * @returns Amount of slots freed
    */
   defragment(): number {
-    const fragmented = this.getFragmented();
+    // Counts have to be read fresh: a player moving items by hand leaves cached ones too high,
+    // and the bookkeeping below then never sees a source slot reach empty
+    this.cache.delete("inventory:*");
+    this.cache.delete("acc:*");
+
+    // a copy, because the scan is memoized and this loop consumes what it walks
+    const fragmented = [...this.getFragmented()];
     let freed = 0;
 
     while (fragmented.length > 0) {
