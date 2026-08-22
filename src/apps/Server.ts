@@ -122,6 +122,9 @@ export default class Server extends App {
       count: (request, callback, ...params: any[]) => {
         this.storageQueue.push({ method: "count", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },
+      index: (request, callback, ...params: any[]) => {
+        this.storageQueue.push({ method: "index", params, callback: RPC_CALLBACK, callbackArgs: [request] });
+      },
       craft: (request, callback, ...params: any[]) => {
         this.craftingQueue.push({ method: "craft", params, callback: RPC_CALLBACK, callbackArgs: [request] });
       },

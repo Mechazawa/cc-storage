@@ -246,6 +246,13 @@ export default class StorageManager {
     return total;
   }
 
+  /** Drops every cached read so the next listing re-reads each container slot by slot. */
+  index(): number {
+    this.cache.flush();
+
+    return this.list().length;
+  }
+
   // todo: not updating cache properly when taking all (verify?)
   take(storageName: string, key: string, count: number | "all", slot?: number): number {
     let sent = 0;

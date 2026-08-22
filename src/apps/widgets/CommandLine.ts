@@ -171,6 +171,13 @@ export default class CommandLine {
         },
       },
       {
+        keywords: ["index"],
+        completeFn: (partial: string) => [],
+        action: () => {
+          return `Indexed ${this.server.index()} item types`;
+        },
+      },
+      {
         keywords: ["rebootAll"],
         completeFn: (partial: string) => [],
         action: () => {
