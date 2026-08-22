@@ -113,6 +113,23 @@ export default class CommandLine {
     return str;
   }
 
+  /** Reads a take count: a bare number, `Ns` for N stacks of the item, or `all`/`*` for everything. */
+  _parseCount(input: string, stackSize?: number): number | "all" | undefined {
+    if (input === "all" || input === "*") {
+      return "all";
+    }
+
+    if (input.length > 1 && input.endsWith("s")) {
+      const stacks = Number(input.slice(0, -1));
+
+      return Number.isNaN(stacks) || stackSize === undefined ? undefined : stacks * stackSize;
+    }
+
+    const count = Number(input);
+
+    return Number.isNaN(count) ? undefined : count;
+  }
+
   exec(commandLine: string = ""): string {
     this.history.push(commandLine);
     this.saveHistory();
@@ -276,26 +293,35 @@ Cache contains ${cacheSize} records
             .filter((name) => name.toLowerCase().startsWith(partial));
         },
         action: (...parts: string[]) => {
-          const countStr = parts.pop();
+          const countStr = parts.pop() ?? "";
           const name = parts.join(" ");
 
           if (name === "") {
-            return `Usage: take [item] [count|all]`;
+            return `Usage: take [item] [count|Ns|all]`;
           }
+
+          const needle = name.toLowerCase().trim();
+          const resource = this.cache
+            .remember("list", () => this.server.list())
+            .find((r) =>
+              [r.displayName, r.name, this._shortenPrefix(r.name)].some(
+                (candidate) => candidate.toLowerCase().trim() === needle,
+              ),
+            );
 
           let key: string = name;
 
           if (!name.includes(":")) {
-            const resource = this.cache
-              .remember("list", () => this.server.list())
-              .find((resource) => resource.displayName.toLowerCase().trim() === name.toLowerCase().trim());
-
             key = resource?.nbt !== undefined ? `nbt:${resource.nbt}` : `item:${resource?.name ?? name}`;
           } else if (!name.startsWith("nbt:")) {
             key = `item:${this._expandPrefix(name)}`;
           }
-          const displayName = name.startsWith("nbt:") ? name : this._expandPrefix(name);
-          const count = countStr === "all" || countStr === "*" ? "all" : Number(countStr);
+
+          const count = this._parseCount(countStr, resource?.maxCount);
+
+          if (count === undefined) {
+            return `Cannot read count "${countStr}"`;
+          }
 
           return `Took ${this.server.take(this.storageName, key, count)} ${key}`;
         },

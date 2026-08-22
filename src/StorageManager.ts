@@ -21,6 +21,7 @@ export interface Resource {
   tags: LuaMap<string, boolean>;
   nbt?: string;
   count: number;
+  maxCount: number;
   locations: StorageLocation[];
 }
 
@@ -343,6 +344,7 @@ export default class StorageManager {
             tags: stack.tags,
             nbt: stack.nbt,
             count: stack.count,
+            maxCount: stack.maxCount,
             locations: [...stack.locations],
           });
         }
