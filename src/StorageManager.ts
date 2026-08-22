@@ -394,17 +394,21 @@ export default class StorageManager {
   }
 
   size(): number {
-    let total = 0;
+    const sizes: number[] = [];
     const fns = [];
-    const genFn = (storageName: string) => () => (total += this.getStorage(storageName)?.size() ?? 0);
+    // each worker gets its own slot: a shared accumulator loses every update but the last,
+    // because reading it happens before the peripheral call in the same expression yields
+    const genFn = (index: number, storageName: string) => () =>
+      (sizes[index] = this.getStorage(storageName)?.size() ?? 0);
 
     for (const [storageName, _] of this.storagePool) {
-      fns.push(genFn(storageName));
+      fns.push(genFn(sizes.length, storageName));
+      sizes.push(0);
     }
 
     new ThreadPool(30, fns).join();
 
-    return total;
+    return sizes.reduce((total, size) => total + size, 0);
   }
 
   free(): number {
