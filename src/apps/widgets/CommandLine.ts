@@ -238,11 +238,13 @@ Cache contains ${cacheSize} records
             .filter((name) => name.startsWith(partial));
         },
         action: (...parts: string[]) => {
-          const name = parts.join(" ");
+          const name = parts.join(" ").toLowerCase();
 
           const rows = this.cache
             .remember("listCraftable", () => this.server.listCraftable())
-            .filter((recipe) => recipe.name.startsWith(this._expandPrefix(name ?? "")))
+            .filter((recipe) =>
+              [recipe.name, this._shortenPrefix(recipe.name)].some((haystack) => haystack.toLowerCase().includes(name)),
+            )
             .sort((a, b) => b.count - a.count)
             .map((r) => [ellipsis(this._shortenPrefix(r.name), 42), r.count].map((v) => `${v}`));
 
