@@ -130,6 +130,15 @@ export default class CommandLine {
     return Number.isNaN(count) ? undefined : count;
   }
 
+  /** Peels a trailing count off the arguments, leaving the rest as the name. */
+  _splitCount(parts: string[]): [string, string | undefined] {
+    const last = parts[parts.length - 1] ?? "";
+
+    return this._parseCount(last, 1) === undefined
+      ? [parts.join(" "), undefined]
+      : [parts.slice(0, -1).join(" "), last];
+  }
+
   exec(commandLine: string = ""): string {
     this.history.push(commandLine);
     this.saveHistory();
@@ -206,7 +215,13 @@ export default class CommandLine {
         keywords: ["status"],
         completeFn: (partial: string) => [],
         action: () => {
-          let used, size, types, count, cacheSize;
+          let used = 0;
+          let size = 0;
+          let types = 0;
+          let count = 0;
+          let cacheSize = 0;
+          let craftable = 0;
+          let fragmented = 0;
 
           parallel.waitForAll(
             () => (used = this.server.used()),
@@ -214,14 +229,23 @@ export default class CommandLine {
             () => (types = this.server.list().length),
             () => (count = this.server.count()),
             () => (cacheSize = this.server.cacheSize()),
+            () => (craftable = this.server.listCraftable().length),
+            () => (fragmented = this.server.fragmented()),
           );
 
-          return `
-Storage usage: ${used}/${size}
-${types} item types
-Total ${count} items
-Cache contains ${cacheSize} records
-          `.trim();
+          const percent = size === 0 ? 0 : Math.floor((used / size) * 100);
+          const perSlot = used === 0 ? 0 : Math.floor(count / used);
+
+          return [
+            colors.lightBlue,
+            ["Slots", `${used} / ${size} used (${percent}%)`],
+            ["Free", `${size - used} slots`],
+            ["Items", `${count} in ${types} types`],
+            ["Density", `${perSlot} per used slot`],
+            ["Fragmented", `${fragmented} slots recoverable`],
+            ["Craftable", `${craftable} recipes`],
+            ["Cache", `${cacheSize} records`],
+          ];
         },
       },
       {
@@ -256,10 +280,12 @@ Cache contains ${cacheSize} records
       {
         keywords: ["listCraftable", "lc"],
         completeFn: (partial: string = "") => {
+          partial = partial.toLowerCase();
+
           return this.cache
             .remember("listCraftable", () => this.server.listCraftable())
             .flatMap((recipe) => [this._shortenPrefix(recipe.name), recipe.name])
-            .filter((name) => name.startsWith(partial));
+            .filter((name) => name.toLowerCase().startsWith(partial));
         },
         action: (...parts: string[]) => {
           const name = parts.join(" ").toLowerCase();
@@ -328,18 +354,37 @@ Cache contains ${cacheSize} records
       },
       {
         keywords: ["craft", "c"],
-        completeFn: (partial: string) => {
+        completeFn: (partial: string = "") => {
+          partial = partial.toLowerCase();
+
           return this.cache
             .remember("listCraftable", () => this.server.listCraftable())
             .flatMap((recipe) => [this._shortenPrefix(recipe.name), recipe.name])
-            .filter((name) => name.startsWith(partial));
+            .filter((name) => name.toLowerCase().startsWith(partial));
         },
-        action: (name: string = "", count: string = "1") => {
+        action: (...parts: string[]) => {
+          const [name, countStr] = this._splitCount(parts);
+
           if (name === "") {
-            return `Usage: craft [recipe] [times=1]`;
+            return `Usage: craft [recipe] [times|all]`;
           }
 
-          return `crafted ${this.server.craft(this._expandPrefix(name), Number(count))} times`;
+          const needle = this._expandPrefix(name).toLowerCase();
+          const recipe = this.cache
+            .remember("listCraftable", () => this.server.listCraftable())
+            .find((r) => r.name.toLowerCase() === needle);
+
+          if (recipe === undefined) {
+            return `Nothing craftable matches "${name}"`;
+          }
+
+          const times = this._parseCount(countStr ?? "1");
+
+          if (times === undefined) {
+            return `Cannot read count "${countStr}"`;
+          }
+
+          return `crafted ${this.server.craft(recipe.name, times === "all" ? recipe.count : times)} times`;
         },
       },
     ];
