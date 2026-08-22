@@ -17,7 +17,7 @@ if (config === undefined) {
 }
 
 if (config.storage.length === 0) {
-  throw new Error('No storage configured');
+  throw new Error("No storage configured");
 }
 
 const stateManager = new StateManager();
@@ -51,7 +51,7 @@ parallel.waitForAny(
       sleep(1);
       while (os.pullEventRaw() === undefined);
     }
-  }
+  },
 );
 
 stateManager.cleanup();

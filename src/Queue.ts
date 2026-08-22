@@ -72,7 +72,7 @@ export default class Queue<T extends object> extends Serializable {
 
   static deserialize<T extends object = object>(input: LuaMap<string, any>): Queue<T> {
     const instance: Queue<T> = new this<T>(input.get("fileName"));
-    const running: RunningJob<T>[] =((input.get("running") ?? []) as RunningJob<T>[]).map(this.deserializeJob);
+    const running: RunningJob<T>[] = ((input.get("running") ?? []) as RunningJob<T>[]).map(this.deserializeJob);
 
     instance.failed = ((input.get("failed") ?? []) as FailedJob<T>[]).map(this.deserializeJob);
     instance.queue = ((input.get("queue") ?? []) as Job<T>[]).map(this.deserializeJob);
@@ -105,7 +105,7 @@ export default class Queue<T extends object> extends Serializable {
     for (const fail of this.failed) {
       if (!fail.notified) {
         this.logger.warn(`[q] Notifying failed job (${fail.reason})`);
-        
+
         fail.callbackArgs ??= [];
 
         fail.callbackArgs.push(fail.reason);
@@ -151,7 +151,7 @@ export default class Queue<T extends object> extends Serializable {
         const output = benchmark(
           this.logger,
           () => (this.handler[methodName] as Function)(...running.params),
-          methodName as string
+          methodName as string,
         )();
 
         running.callbackArgs.push(output);

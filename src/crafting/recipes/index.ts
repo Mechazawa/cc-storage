@@ -36,4 +36,4 @@ export default {
   mcwwindows,
   minecraft,
   yigd,
-}  as unknown as {[key: string]: LuaMap<string, any>[] | undefined};
+} as unknown as { [key: string]: LuaMap<string, any>[] | undefined };

@@ -38,7 +38,7 @@ export default class RPC {
     hostname: string,
     methods: LuaMap<string, RPCMethod> | { [key: string]: RPCMethod },
     logger?: Logger,
-    timeout?: number
+    timeout?: number,
   ): void {
     const log = (s: string) => (logger !== undefined ? logger.log(s) : print(s));
 

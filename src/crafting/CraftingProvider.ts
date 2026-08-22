@@ -130,7 +130,7 @@ export default class CraftingProvider {
     recipe: Recipe,
     locations: StorageLocation[],
     times: number = 1,
-    timeout: number = 120
+    timeout: number = 120,
   ): number {
     this.logger.debug(`lock: ${crafter.host}`);
 

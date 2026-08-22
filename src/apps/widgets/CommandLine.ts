@@ -181,7 +181,7 @@ export default class CommandLine {
             () => (size = this.server.size()),
             () => (types = this.server.list().length),
             () => (count = this.server.count()),
-            () => (cacheSize = this.server.cacheSize())
+            () => (cacheSize = this.server.cacheSize()),
           );
 
           return `
@@ -211,11 +211,13 @@ Cache contains ${cacheSize} records
               (resource) =>
                 resource.name.startsWith(name ?? "") ||
                 resource.displayName.toLowerCase().startsWith(name ?? "") ||
-                this._shortenPrefix(resource.name).startsWith(name ?? "")
+                this._shortenPrefix(resource.name).startsWith(name ?? ""),
             )
             .sort((a, b) => b.count - a.count)
             // todo replace with something better
-            .map((r) => [r.count, ellipsis(this._shortenPrefix(r.name), 20), ellipsis(r.displayName,20)].map((v) => `${v}`));
+            .map((r) =>
+              [r.count, ellipsis(this._shortenPrefix(r.name), 20), ellipsis(r.displayName, 20)].map((v) => `${v}`),
+            );
 
           return [8, colors.lightBlue, ["Count", "Name", "Display Name"], colors.lightGray, ...rows];
         },

@@ -41,7 +41,7 @@ export default class CommandLine extends Component {
           } catch (e) {
             this.logger.error(e as string);
           }
-        }
+        },
       );
     }
   }

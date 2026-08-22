@@ -1,6 +1,6 @@
 import Logger from "../Logger";
 
-export default class Thread<T extends ((...args: any[]) => any)> {
+export default class Thread<T extends (...args: any[]) => any> {
   static env: any[] = [];
   static envId = 0;
 
@@ -31,7 +31,7 @@ export default class Thread<T extends ((...args: any[]) => any)> {
 
     this.lastEnvId = Thread.envId;
 
-    if (!(this._filter === undefined || this._filter === Thread.env[0] || Thread.env[0] === 'terminate')) {
+    if (!(this._filter === undefined || this._filter === Thread.env[0] || Thread.env[0] === "terminate")) {
       return this.alive();
     }
 

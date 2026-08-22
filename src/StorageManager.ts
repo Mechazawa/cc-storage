@@ -40,7 +40,7 @@ export default class StorageManager {
     this.logger = logger ?? new Logger();
     this.cache = cache ?? new Cache();
 
-    const cachePrefix = "acc:storage:"
+    const cachePrefix = "acc:storage:";
 
     // todo: use some sort of decorator
     this.count = this.cache.memoize(cachePrefix + "count", this.count.bind(this));

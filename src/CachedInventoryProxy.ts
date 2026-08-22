@@ -23,7 +23,7 @@ export default class CachedInventoryProxy implements Inventory {
 
   getItemDetail(slot: number): ItemStack | undefined {
     return this.cache.remember(`${this.prefix}:${this.name}:slot:${slot}:detail`, () =>
-      this.target.getItemDetail(slot)
+      this.target.getItemDetail(slot),
     );
   }
 
