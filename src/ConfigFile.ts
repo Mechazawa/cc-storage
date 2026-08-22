@@ -11,7 +11,7 @@ export default class ConfigFile {
   }
 
   load(): AppConfig | undefined {
-    const handler = fs.open(this.fileName, "r") as ReadHandle;
+    const [handler] = fs.open(this.fileName, "r");
 
     if (handler === undefined) {
       return;
@@ -21,14 +21,16 @@ export default class ConfigFile {
 
     handler.close();
 
-    return this.deserializer(rawConfig) as AppConfig;
+    const [config] = this.deserializer(rawConfig);
+
+    return config as AppConfig;
   }
 
   save(config: AppConfig): void {
-    const handler = fs.open(this.fileName, "w") as WriteHandle;
+    const [handler, reason] = fs.open(this.fileName, "w");
 
     if (handler === undefined) {
-      throw new Error("Unable to obtain config file lock");
+      throw new Error(`Unable to obtain config file lock: ${reason}`);
     }
 
     handler.write(this.serializer(config));

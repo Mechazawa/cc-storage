@@ -1,5 +1,8 @@
 import Cache from "./Cache";
 
+/** The inventory peripheral always answers with the detailed form, unlike a turtle's getItemDetail. */
+export type DetailedItemStack = ItemStack & Required<Pick<ItemStack, "displayName" | "maxCount" | "tags">>;
+
 export default class CachedInventoryProxy implements Inventory {
   target: Inventory;
   cache: Cache;
@@ -21,9 +24,10 @@ export default class CachedInventoryProxy implements Inventory {
     return this.cache.remember(`${this.prefix}:${this.name}:list`, () => this.target.list());
   }
 
-  getItemDetail(slot: number): ItemStack | undefined {
-    return this.cache.remember(`${this.prefix}:${this.name}:slot:${slot}:detail`, () =>
-      this.target.getItemDetail(slot),
+  getItemDetail(slot: number): DetailedItemStack | undefined {
+    return this.cache.remember(
+      `${this.prefix}:${this.name}:slot:${slot}:detail`,
+      () => this.target.getItemDetail(slot) as DetailedItemStack | undefined,
     );
   }
 

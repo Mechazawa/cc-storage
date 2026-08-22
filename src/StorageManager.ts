@@ -1,5 +1,5 @@
 import Cache from "./Cache";
-import CachedInventoryProxy from "./CachedInventoryProxy";
+import CachedInventoryProxy, { DetailedItemStack } from "./CachedInventoryProxy";
 import Logger from "./util/Logger";
 import RPC from "./RPC";
 import ThreadPool from "./util/threading/ThreadPool";
@@ -167,7 +167,7 @@ export default class StorageManager {
   /**
    * @todo extract from class or make static
    */
-  testKey(key: string, stack: ItemStack | Resource): boolean {
+  testKey(key: string, stack: DetailedItemStack | Resource): boolean {
     if (key === undefined) return false;
     if (key.includes("|")) {
       return key.split("|").some((x) => this.testKey(x, stack));
@@ -269,7 +269,7 @@ export default class StorageManager {
 
     const resources = new LuaMap<string, Resource>();
     const storageFns = [];
-    const stacks: ((ItemStack & { locations: StorageLocation[] }) | string)[] = [];
+    const stacks: ((DetailedItemStack & { locations: StorageLocation[] }) | string)[] = [];
     const stackFns: (() => void)[] = [];
 
     for (const [storageName, _] of this.storagePool) {

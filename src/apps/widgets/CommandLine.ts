@@ -50,7 +50,11 @@ export default class CommandLine {
       return;
     }
 
-    const hFile = fs.open(this.historyLocation, "r") as ReadHandle;
+    const [hFile] = fs.open(this.historyLocation, "r");
+
+    if (hFile === undefined) {
+      return;
+    }
 
     this.history = textutils.unserialise(hFile.readAll() ?? "[]") as string[];
 
@@ -61,7 +65,11 @@ export default class CommandLine {
     //todo:magic number
     while (this.history.length > 1000) this.history.shift();
 
-    const hFile = fs.open(this.historyLocation, "w") as WriteHandle;
+    const [hFile, reason] = fs.open(this.historyLocation, "w");
+
+    if (hFile === undefined) {
+      throw new Error(`Unable to write command history: ${reason}`);
+    }
 
     hFile.write(textutils.serialise(this.history, { compact: false, allow_repetitions: true }));
     hFile.close();

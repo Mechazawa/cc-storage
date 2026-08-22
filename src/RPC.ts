@@ -22,6 +22,11 @@ export interface RPCError extends RPCPacket {
 
 export type RPCResponse = RPCResult | RPCError;
 
+/** Rednet carries tables verbatim, so every RPC packet arrives as one. */
+function asTable(message: rednet.Message | undefined): LuaMap<string, any> | undefined {
+  return typeof message === "object" ? (message as LuaMap<string, any>) : undefined;
+}
+
 type RPCCallback = (request: RPCRequest, value: any, success?: boolean) => void;
 type RPCMethod = (request: RPCRequest, callback: RPCCallback, ...args: any[]) => any;
 
@@ -49,7 +54,7 @@ export default class RPC {
     log(`Methods: ${Object.keys(methods).join(", ")}`);
 
     while (true) {
-      const [client, request] = rednet.receive(this.protocol, timeout);
+      const [client, message] = rednet.receive(this.protocol, timeout);
 
       if (client === undefined) {
         throw new Error("RPC Timeout Exceeded!");
@@ -62,7 +67,9 @@ export default class RPC {
        * on the queue which makes serialisation possible.
        */
 
-      if (typeof request === "object" && !request.has("error") && !request.has("result")) {
+      const request = asTable(message);
+
+      if (request !== undefined && !request.has("error") && !request.has("result")) {
         const id: ID = request.get("id");
 
         try {
@@ -137,7 +144,8 @@ export default class RPC {
         throw new Error("RPC Timeout Exceeded!");
       }
 
-      const [from, body] = rednet.receive(this.protocol, timeout);
+      const [from, message] = rednet.receive(this.protocol, timeout);
+      const body = asTable(message);
 
       if (typeof timeout === "number") {
         timeout -= (os.epoch("utc") - start) / 1000;
@@ -148,7 +156,7 @@ export default class RPC {
       }
 
       // I hate that there is no continue statement in lua
-      if (from === (client ?? from) && typeof body === "object" && body.get("id") === id) {
+      if (from === (client ?? from) && body !== undefined && body.get("id") === id) {
         if (body.has("error")) {
           throw body.get("error");
         } else {

@@ -56,7 +56,11 @@ export default class Lib {
     }
 
     const response = http.get({ url, binary: true, redirect: true }) as BinaryReadHandle;
-    const file = fs.open(fileName, "wb") as BinaryWriteHandle;
+    const [file, reason] = fs.open(fileName, "wb");
+
+    if (file === undefined) {
+      throw new Error(`Unable to write ${fileName}: ${reason}`);
+    }
 
     file.write(response.readAll() ?? "");
 

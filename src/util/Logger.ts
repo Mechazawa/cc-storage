@@ -29,7 +29,9 @@ export default class Logger {
       return;
     }
 
-    this.file = fs.open(fileName, "a") as WriteHandle;
+    const [file] = fs.open(fileName, "a");
+
+    this.file = file;
   }
 
   setRedirect(redirect: Redirect): void {
@@ -55,7 +57,9 @@ export default class Logger {
 
     this.file?.close();
     fs.move(this.fileName, fileName(1));
-    this.file = fs.open(this.fileName, "a") as WriteHandle;
+    const [file] = fs.open(this.fileName, "a");
+
+    this.file = file;
   }
 
   write(message: string, store = true): void {

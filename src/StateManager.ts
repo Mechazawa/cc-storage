@@ -9,7 +9,12 @@ export default class StateManager {
   }
 
   dump<T extends Serializable>(instance: T): void {
-    const file = fs.open(this.fileName, "w") as WriteHandle;
+    const [file, reason] = fs.open(this.fileName, "w");
+
+    if (file === undefined) {
+      throw new Error(`Unable to write state: ${reason}`);
+    }
+
     const data = textutils.serialise(instance.serialize(), {
       compact: true,
       allow_repetitions: true, // Can be disabled
@@ -26,10 +31,10 @@ export default class StateManager {
     }
 
     try {
-      const file = fs.open(this.fileName, "r") as ReadHandle;
-      const state = textutils.unserialise(file.readAll() ?? "{}") as LuaMap<string, any>;
+      const [file] = fs.open(this.fileName, "r");
+      const state = textutils.unserialise(file?.readAll() ?? "{}") as LuaMap<string, any>;
 
-      file.close();
+      file?.close();
 
       if (state === undefined) {
         fs.delete(this.fileName);
