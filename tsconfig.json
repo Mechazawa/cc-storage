@@ -3,7 +3,8 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext"],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "module": "esnext",
     "types": [
       "@typescript-to-lua/language-extensions", 
       "@mechazawa/cc-types", 
@@ -16,6 +17,7 @@
     ],
     "strict": true,
     "outDir": "dist",
+    "rootDir": "src",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },

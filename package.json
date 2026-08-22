@@ -4,19 +4,19 @@
     "build-prod": "npm run clean && tstl -p tsconfig.prod.json",
     "build": "npm run clean && tstl -p tsconfig.json",
     "dev": "tstl -p tsconfig.json --watch",
-    "lint": "prettier --write src/**/*.ts types/**/*.ts",
+    "lint": "prettier --write 'src/**/*.ts' 'types/**/*.ts'",
     "clean": "rm -r dist; mkdir dist",
     "generate": "fish src/crafting/recipes/generate_index.fish"
   },
   "devDependencies": {
-    "glob": "^8.1.0",
-    "prettier": "^2.8.3",
-    "ts-node": "^10.9.1",
-    "typescript-to-lua": "^1.12.0"
+    "glob": "^13.0.6",
+    "prettier": "^3.9.6",
+    "ts-node": "^10.9.2",
+    "typescript-to-lua": "^1.37.1"
   },
   "dependencies": {
     "@mechazawa/cc-types": "^1.0.8",
-    "@typescript-to-lua/language-extensions": "^1.0.0",
-    "lua-types": "^2.13.1"
+    "@typescript-to-lua/language-extensions": "^1.19.0",
+    "lua-types": "^2.14.1"
   }
 }

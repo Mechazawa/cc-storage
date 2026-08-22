@@ -1,6 +1,7 @@
 import * as ts from "typescript";
 import * as tstl from "typescript-to-lua";
 import { writeFileSync, mkdirSync } from "fs";
+import { globSync } from "glob";
 import * as path from "path";
 
 // messy, but it doesn't need to be pretty
@@ -22,7 +23,7 @@ const plugin: tstl.Plugin = {
     console.log(program.getSourceFiles()[0].fileName);
 
     const outputPath = path.join(outDir, outputFile);
-    let files = [...result.map((x) => x.outputPath), ...require("glob").sync(__dirname + "/dist/**/*.lua", {})];
+    let files = [...result.map((x) => x.outputPath), ...globSync(path.join(outDir, "**/*.lua"))];
 
     files = files.map((x) => x.slice(length)).map((x) => x.replaceAll("\\", "/"));
 

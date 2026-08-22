@@ -3,7 +3,8 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext"],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "module": "esnext",
     "types": [
       "@typescript-to-lua/language-extensions", 
       "@mechazawa/cc-types", 
@@ -15,7 +16,8 @@
       "lua-types/special/5.0"
     ],
     "strict": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "rootDir": "src"
   },
   "tstl": {
     "buildMode": "default",
