@@ -1,6 +1,7 @@
 import { AppConfig, ClientConfig, CrafterConfig, DeviceType, ServerConfig } from "./Config";
 import Hash from "./util/Hash";
 import { RecipeType } from "./crafting/Recipe";
+import { isSmelter } from "./smelting/SmeltingProvider";
 
 const deviceTypes = Object.values(DeviceType) as string[];
 const invalidPeripherals = ["bottom", "top", "left", "right", "front", "back"];
@@ -22,7 +23,9 @@ export default function setup(): AppConfig {
   const storage = peripheral
     .find("inventory")
     .map((x) => peripheral.getName(x))
-    .filter((x) => !invalidPeripherals.includes(x));
+    .filter((x) => !invalidPeripherals.includes(x))
+    // A smelter's slots are input, fuel and output rather than free space
+    .filter((x) => !isSmelter(x));
 
   print(`Found ${storage.length} storage containers`);
 

@@ -16,6 +16,14 @@ export interface RunningJob<T> extends Job<T> {
   startTime: number;
 }
 
+export interface JobProgress {
+  name: string;
+  target: string;
+  done: number;
+  total: number;
+  error?: string;
+}
+
 export interface FailedJob<T> extends RunningJob<T> {
   reason: string;
   endTime: number;
@@ -113,6 +121,15 @@ export default class Queue<T extends object> extends Serializable {
         fail.notified = true;
       }
     }
+  }
+
+  /** Failures nobody has been told about yet, marked as told. */
+  takeFailures(): FailedJob<T>[] {
+    const unreported = this.failed.filter((job) => !job.notified);
+
+    unreported.forEach((job) => (job.notified = true));
+
+    return unreported;
   }
 
   work(): void {

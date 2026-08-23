@@ -4,6 +4,7 @@ import RecipeManager from "./RecipeManager";
 import RPC from "../RPC";
 import ThreadPool from "../util/threading/ThreadPool";
 import Recipe, { TransferableRecipe } from "../crafting/Recipe";
+import { JobProgress } from "../Queue";
 import { ReservedLocation } from "../storage/ItemAllocator";
 import StorageManager, { CrafterHost, StorageLocation } from "../StorageManager";
 
@@ -12,6 +13,9 @@ export default class CraftingProvider {
   logger: Logger;
   cache: Cache;
   storage: StorageManager;
+  target = "";
+  requested = 0;
+  outputs: number[] = [];
 
   constructor(storage: StorageManager, recipeManager: RecipeManager, cache?: Cache, logger?: Logger) {
     this.logger = logger ?? new Logger();
@@ -22,6 +26,15 @@ export default class CraftingProvider {
     const cachePrefix = "acc:crafting:";
 
     this.list = this.cache.memoize(cachePrefix + "list", this.list.bind(this));
+  }
+
+  progress(): JobProgress {
+    return {
+      name: "craft",
+      target: this.target,
+      done: this.outputs.reduce((total, crafted) => total + (crafted ?? 0), 0),
+      total: this.requested,
+    };
   }
 
   list(): TransferableRecipe[] {
@@ -80,6 +93,10 @@ export default class CraftingProvider {
 
     const outputs: number[] = [];
     const chunks: [number[], number, ReservedLocation[]][] = [[outputs, times % maxChunkSize, []]];
+
+    this.target = recipe.name;
+    this.requested = times;
+    this.outputs = outputs;
 
     for (let i = 1; i < times / maxChunkSize; i++) {
       chunks.push([outputs, maxChunkSize, []]);

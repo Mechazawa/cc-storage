@@ -1,6 +1,8 @@
 import { WrappedRPC } from "../RPC";
 import { Resource } from "../StorageManager";
 import { TransferableRecipe } from "../crafting/Recipe";
+import { FuelEntry } from "../smelting/FuelRegistry";
+import { JobProgress } from "../Queue";
 
 export interface ServerRPC extends WrappedRPC {
   ping(): "pong";
@@ -16,7 +18,12 @@ export interface ServerRPC extends WrappedRPC {
   count(key?: string): number;
   index(): number;
   fragmented(): number;
-  craft(recipeName: string, count?: number): number;
+  craft(recipeName: string, count?: number): boolean;
+  smelt(key: string, count: number): boolean;
+  jobs(): JobProgress[];
+  fuelAdd(item: string, minKept?: number, priority?: number): FuelEntry;
+  fuelRemove(item: string): boolean;
+  fuelList(): FuelEntry[];
   listCraftable(): TransferableRecipe[];
   cacheSize(): number;
   flushCache(): boolean;
