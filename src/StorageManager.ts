@@ -107,19 +107,12 @@ export default class StorageManager {
   }
 
   getFragmented(): StorageLocation[] {
-    const output = [];
+    const output: StorageLocation[] = [];
 
-    for (const [storageName, storage] of this.storagePool) {
-      for (const [slot, _] of storage.list()) {
-        const stack = storage.getItemDetail(slot);
-
-        if (stack && stack.count < stack.maxCount) {
-          output.push({
-            peripheral: storageName,
-            slot: slot,
-            count: stack.count,
-            name: stack.name,
-          });
+    for (const resource of this.list()) {
+      for (const location of resource.locations) {
+        if (location.count < resource.maxCount) {
+          output.push({ ...location, name: resource.name });
         }
       }
     }
@@ -318,70 +311,30 @@ export default class StorageManager {
       return this.list().filter((r) => this.testKey(key, r));
     }
 
+    this._warmStacks();
+
     const resources = new LuaMap<string, Resource>();
-    const storageFns = [];
-    const stacks: ((DetailedItemStack & { locations: StorageLocation[] }) | string)[] = [];
-    const stackFns: (() => void)[] = [];
 
-    for (const [storageName, _] of this.storagePool) {
-      storageFns.push(() => {
-        const storage = this.getStorage(storageName);
+    for (const [storageName, storage] of this.storagePool) {
+      for (const { slot, stack } of storage.stacks()) {
+        const resourceKey = stack.nbt !== undefined ? `nbt:${stack.nbt}` : `name:${stack.name}`;
+        const location = { peripheral: storageName, slot, count: stack.count };
+        const resource = resources.get(resourceKey);
 
-        if (storage === undefined) {
-          throw new Error(`Invalid storage for list ${storageName}`);
-        }
-
-        for (const [slot, __] of storage.list() ?? []) {
-          stackFns[stackFns.length] = ((i) => () => {
-            const stack = this.getStorage(storageName)?.getItemDetail(slot);
-
-            if (stack === undefined) {
-              stacks[i] = "empty";
-            } else {
-              stacks[i] = {
-                ...stack,
-                locations: [
-                  {
-                    peripheral: storageName,
-                    slot,
-                    count: stack.count,
-                  },
-                ],
-              };
-            }
-          })(stackFns.length);
-        }
-      });
-    }
-
-    new ThreadPool(20, storageFns).join();
-    new ThreadPool(20, stackFns).join();
-
-    for (const stack of stacks) {
-      if (typeof stack === "object") {
-        const key = stack.nbt !== undefined ? `nbt:${stack.nbt}` : `name:${stack.name}`;
-
-        if (resources.has(key)) {
-          const resource = resources.get(key) as Resource;
-
-          resource.count += stack.count;
-
-          for (const location of stack.locations) {
-            resource.locations.push(location);
-          }
-
-          resources.set(key, resource);
-        } else {
-          resources.set(key, {
-            key: key,
+        if (resource === undefined) {
+          resources.set(resourceKey, {
+            key: resourceKey,
             name: stack.name,
             displayName: stack.displayName,
             tags: stack.tags,
             nbt: stack.nbt,
             count: stack.count,
             maxCount: stack.maxCount,
-            locations: [...stack.locations],
+            locations: [location],
           });
+        } else {
+          resource.count += stack.count;
+          resource.locations.push(location);
         }
       }
     }
@@ -393,6 +346,26 @@ export default class StorageManager {
     }
 
     return output;
+  }
+
+  /**
+   * Asks every container that changed for its listing together. One at a time is fine for the single
+   * container a transfer touches, but a cold system would spend a round trip per container.
+   */
+  _warmStacks(): void {
+    const fns: (() => void)[] = [];
+
+    for (const [_, storage] of this.storagePool) {
+      if (!storage.hasStacks()) {
+        fns.push(() => {
+          storage.list();
+        });
+      }
+    }
+
+    if (fns.length > 1) {
+      new ThreadPool(20, fns).join();
+    }
   }
 
   size(): number {

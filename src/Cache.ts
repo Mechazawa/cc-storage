@@ -49,15 +49,27 @@ export default class Cache<T = any> extends Serializable {
   }
 
   delete(name: string): number {
-    if (name.endsWith("*")) {
-      name = name.slice(0, name.length - 1);
-
-      const keys = Object.keys(this.store).filter((key) => key.startsWith(name));
-
-      return keys.map((key) => this.store.delete(key)).filter((x) => x).length;
+    if (!name.endsWith("*")) {
+      return this.store.delete(name) ? 1 : 0;
     }
 
-    return this.store.delete(name) ? 1 : 0;
+    const prefix = name.slice(0, name.length - 1);
+    // Collected first because a table cannot be deleted from while it is being walked
+    const matches: string[] = [];
+
+    for (const [key, _] of this.store) {
+      if (key.startsWith(prefix)) {
+        matches.push(key);
+      }
+    }
+
+    let deleted = 0;
+
+    for (const key of matches) {
+      deleted += this.store.delete(key) ? 1 : 0;
+    }
+
+    return deleted;
   }
 
   get(name: string): T | undefined {
