@@ -105,14 +105,6 @@ export default class Cache<T = any> extends Serializable {
     return value;
   }
 
-  memoize<T2 extends Function>(name: string, fn: T2, seconds?: number): T2 {
-    return ((...args: any[]): any => {
-      const key = `${name}|${args.map((x: any) => x ?? "nil").join("|")}`;
-
-      return this.remember(key, () => fn(...args), seconds);
-    }) as unknown as T2;
-  }
-
   serialize(): LuaMap<string, TimedValue<T>> {
     return this.store;
   }
@@ -124,4 +116,25 @@ export default class Cache<T = any> extends Serializable {
 
     return instance;
   }
+}
+
+export interface Memoizing {
+  cache: Cache;
+  cachePrefix: string;
+}
+
+/** Caches a method's return per argument list, under the owner's own prefix so it can invalidate its own keys. */
+export function memoized<This extends Memoizing, Args extends any[], Return>(
+  target: (this: This, ...args: Args) => Return,
+  context: ClassMethodDecoratorContext<This, (this: This, ...args: Args) => Return>,
+) {
+  const method = String(context.name);
+
+  // The cache is read per call rather than wrapped once, because the instance holding it does not
+  // exist yet when the decorator runs
+  return function (this: This, ...args: Args): Return {
+    const key = `${this.cachePrefix}${method}|${args.map((x: any) => x ?? "nil").join("|")}`;
+
+    return this.cache.remember(key, () => target.apply(this, args));
+  };
 }

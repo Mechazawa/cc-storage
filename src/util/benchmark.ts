@@ -12,3 +12,14 @@ export default function benchmark<T extends Function>(logger: Logger, fn: T, nam
     return output;
   }) as unknown as T;
 }
+
+export function benchmarked<This extends { logger: Logger }, Args extends any[], Return>(
+  target: (this: This, ...args: Args) => Return,
+  context: ClassMethodDecoratorContext<This, (this: This, ...args: Args) => Return>,
+) {
+  const name = String(context.name);
+
+  return function (this: This, ...args: Args): Return {
+    return benchmark(this.logger, () => target.apply(this, args), name)();
+  };
+}

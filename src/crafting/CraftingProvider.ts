@@ -1,4 +1,4 @@
-import Cache from "../Cache";
+import Cache, { memoized, Memoizing } from "../Cache";
 import Logger from "../util/Logger";
 import RecipeManager from "./RecipeManager";
 import RPC from "../RPC";
@@ -8,7 +8,7 @@ import { JobProgress } from "../Queue";
 import { ReservedLocation } from "../storage/ItemAllocator";
 import StorageManager, { CrafterHost, StorageLocation } from "../StorageManager";
 
-export default class CraftingProvider {
+export default class CraftingProvider implements Memoizing {
   recipeManager: RecipeManager;
   logger: Logger;
   cache: Cache;
@@ -17,15 +17,13 @@ export default class CraftingProvider {
   requested = 0;
   outputs: number[] = [];
 
+  readonly cachePrefix = "acc:crafting:";
+
   constructor(storage: StorageManager, recipeManager: RecipeManager, cache?: Cache, logger?: Logger) {
     this.logger = logger ?? new Logger();
     this.cache = cache ?? new Cache();
     this.recipeManager = recipeManager;
     this.storage = storage;
-
-    const cachePrefix = "acc:crafting:";
-
-    this.list = this.cache.memoize(cachePrefix + "list", this.list.bind(this));
   }
 
   progress(): JobProgress {
@@ -37,6 +35,7 @@ export default class CraftingProvider {
     };
   }
 
+  @memoized
   list(): TransferableRecipe[] {
     const resources = new LuaMap<string, number>();
 

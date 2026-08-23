@@ -1,11 +1,11 @@
-import Cache from "./Cache";
+import Cache, { memoized, Memoizing } from "./Cache";
 import CachedInventoryProxy, { DetailedItemStack } from "./CachedInventoryProxy";
 import Logger from "./util/Logger";
 import RPC from "./RPC";
 import ThreadPool from "./util/threading/ThreadPool";
 import { RecipeType } from "./crafting/Recipe";
 import ItemAllocator from "./storage/ItemAllocator";
-import benchmark from "./util/benchmark";
+import { benchmarked } from "./util/benchmark";
 
 export interface StorageLocation {
   peripheral: string;
@@ -31,24 +31,17 @@ export interface CrafterHost {
   type: RecipeType;
 }
 
-export default class StorageManager {
+export default class StorageManager implements Memoizing {
   storagePool: LuaMap<string, CachedInventoryProxy> = new LuaMap<string, CachedInventoryProxy>();
   logger: Logger;
   cache: Cache;
   allocator = new ItemAllocator(this);
 
+  readonly cachePrefix = "acc:storage:";
+
   constructor(cache?: Cache, logger?: Logger) {
     this.logger = logger ?? new Logger();
     this.cache = cache ?? new Cache();
-
-    const cachePrefix = "acc:storage:";
-
-    // todo: use some sort of decorator
-    this.count = this.cache.memoize(cachePrefix + "count", this.count.bind(this));
-    this.size = this.cache.memoize(cachePrefix + "size", this.size.bind(this));
-    this.used = this.cache.memoize(cachePrefix + "used", this.used.bind(this));
-    this.getFragmented = this.cache.memoize(cachePrefix + "getFragmented", this.getFragmented.bind(this));
-    this.list = this.cache.memoize(cachePrefix + "list", benchmark(this.logger, this.list.bind(this), "list"));
   }
 
   findCrafter(type: RecipeType, lockTimeout = 0, tries = 5): CrafterHost | undefined {
@@ -72,7 +65,7 @@ export default class StorageManager {
       }
 
       // use parallel so the queue doesn't get messed up
-      parallel.waitForAll(() => sleep(Math.random()));
+      parallel.waitForAll(() => sleep(0));
     }
   }
 
@@ -106,6 +99,7 @@ export default class StorageManager {
     return this.storagePool.get(storageName);
   }
 
+  @memoized
   getFragmented(): StorageLocation[] {
     const output: StorageLocation[] = [];
 
@@ -306,6 +300,8 @@ export default class StorageManager {
     return sent;
   }
 
+  @memoized
+  @benchmarked
   list(key?: string): Resource[] {
     if (key !== undefined) {
       return this.list().filter((r) => this.testKey(key, r));
@@ -368,6 +364,7 @@ export default class StorageManager {
     }
   }
 
+  @memoized
   size(): number {
     const sizes: number[] = [];
     const fns = [];
@@ -390,6 +387,7 @@ export default class StorageManager {
     return this.size() - this.used();
   }
 
+  @memoized
   used(): number {
     let total = 0;
     const fns = [];
@@ -407,6 +405,7 @@ export default class StorageManager {
     return total;
   }
 
+  @memoized
   count(key?: string): number {
     if (key === undefined) {
       return this.list().reduce((acc: number, v: Resource) => acc + v.count, 0);
